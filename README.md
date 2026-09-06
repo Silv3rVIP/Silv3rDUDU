@@ -13,8 +13,8 @@ A complete in-car software and modification suite for **DUDU Launcher** (DuduOS)
 
 | Package | File | Size | Description |
 |---|---|---|---|
-| **Passat Boot Mod** | [`dudulauncher_passat_mod.apk`](dudulauncher_passat_mod.apk) | 31 MB | DUDU Launcher with custom Passat boot screen, Chinese text removed, and ViMusic package queries enabled |
-| **VW Chrome Mod** | [`dudulauncher_vw_logo_mod.apk`](dudulauncher_vw_logo_mod.apk) | 30 MB | DUDU Launcher with brushed-chrome VW emblem on pure black, Chinese text removed, and ViMusic queries enabled |
+| **Passat Boot Mod** | [`dudulauncher_passat_mod.apk`](dudulauncher_passat_mod.apk) | 31 MB | DUDU Launcher with custom Passat boot screen, Chinese text removed, and ViViMusic package queries enabled |
+| **VW Chrome Mod** | [`dudulauncher_vw_logo_mod.apk`](dudulauncher_vw_logo_mod.apk) | 30 MB | DUDU Launcher with brushed-chrome VW emblem on pure black, Chinese text removed, and ViViMusic queries enabled |
 | **LED Companion App** | [`dudu_led_bridge.apk`](dudu_led_bridge.apk) | 82 KB | Standalone BLE ambient lighting companion app for generic LEDLAMP / ELK-BLEDOM controllers |
 | **Stock Launcher** | [`dudulauncher.apk`](dudulauncher.apk) | 34 MB | Original unmodified DUDU Launcher APK for backup/reference |
 
@@ -46,16 +46,16 @@ Easily rebrand or replace the boot logo in under 15 seconds with any image:
 ./replace_splash.sh --blank
 ```
 
-### 3. ViMusic & Third-Party Music Widget Support
+### 3. ViViMusic & Third-Party Music Widget Support
 Android 11+ (API 30+) package visibility restrictions hide non-standard music apps from DUDU Launcher. Both modded launcher APKs have `<queries>` package rules and `QUERY_ALL_PACKAGES` injected into `AndroidManifest.xml` so the launcher can query:
-- `com.vivi.vivimusic` (ViMusic)
+- `com.vivi.vivimusic` (ViViMusic)
 - `it.vfsfitvnm.vimusic`
 - `com.spotify.music`
 
-#### Setting up ViMusic:
+#### Setting up ViViMusic:
 1. In Android Settings -> **Special App Access** -> **Notification Access**, enable access for **DUDU Launcher**.
-2. Open DUDU Launcher Settings -> **Music Widget Settings** -> select **"Generic Music"**.
-3. Play music in ViMusic — title, artist, album art, and playback controls will sync with the launcher.
+2. Open DUDU Launcher Settings -> **Music Widget Settings** -> select **"Generic Music"** (or ViViMusic).
+3. Play music in ViViMusic — title, artist, album art, and playback controls will sync with the launcher.
 
 ---
 

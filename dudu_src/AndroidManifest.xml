@@ -46,6 +46,17 @@
             <action android:name="android.intent.action.MEDIA_BUTTON"/>
         </intent>
         <intent>
+            <action android:name="android.intent.action.MAIN"/>
+            <category android:name="android.intent.category.APP_MUSIC"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.MUSIC_PLAYER"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="content" android:mimeType="audio/*"/>
+        </intent>
+        <intent>
             <action android:name="android.intent.action.TTS_SERVICE"/>
         </intent>
     </queries>
