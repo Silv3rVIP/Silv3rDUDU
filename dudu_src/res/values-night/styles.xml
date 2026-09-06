@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="mj" parent="@style/mh" />
+    <style name="mk" parent="@style/mh" />
+    <style name="ml" parent="@style/mq" />
+    <style name="mm" parent="@style/mr" />
+    <style name="mn" parent="@style/ms" />
+    <style name="mo" parent="@style/mt" />
+    <style name="mp" parent="@style/n2" />
+    <style name="nc" parent="@style/n9" />
+    <style name="nd" parent="@style/n_" />
+    <style name="ne" parent="@style/na" />
+    <style name="nf" parent="@style/n9" />
+    <style name="ng" parent="@style/na" />
+    <style name="nh" parent="@style/ns" />
+    <style name="ni" parent="@style/nt" />
+    <style name="nj" parent="@style/nu" />
+    <style name="nk" parent="@style/nv" />
+    <style name="nl" parent="@style/nw" />
+    <style name="nm" parent="@style/nx" />
+    <style name="nn" parent="@style/ny" />
+    <style name="no" parent="@style/nz" />
+    <style name="np" parent="@style/o0" />
+    <style name="nq" parent="@style/oi" />
+    <style name="nr" parent="@style/oj" />
+    <style name="ow" parent="@style/ou" />
+    <style name="sq" parent="@style/ss" />
+    <style name="su" parent="@style/sv" />
+    <style name="t3" parent="@style/t1" />
+    <style name="t6" parent="@style/t4" />
+    <style name="uu" parent="@style/uq" />
+    <style name="v8" parent="@style/v6" />
+    <style name="vu" parent="@style/vv" />
+</resources>

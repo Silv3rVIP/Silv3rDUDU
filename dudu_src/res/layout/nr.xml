@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/b6m" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.dudu.autoui.ui.dnview.view.DnSkinLinearLayout android:gravity="left" android:layout_gravity="left" android:orientation="horizontal" android:id="@id/b5z" android:background="@color/dnskin_ipopup_bg2_l" android:padding="15.0dp" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <FrameLayout android:layout_width="214.0dp" android:layout_height="match_parent" android:layout_marginLeft="8.0dp">
+                <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:textSize="16.0dp" android:textColor="@color/dnskin_widget_text2_l" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="30.0dp" android:layout_marginLeft="9.0dp" android:layout_marginTop="4.0dp" android:text="@string/apu" />
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/a47" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="40.0dp" />
+            </FrameLayout>
+            <com.dudu.autoui.ui.dnview.view.DnSkinView android:background="@color/dnskin_line2_l" android:layout_width="0.5dp" android:layout_height="match_parent" android:layout_marginLeft="23.0dp" android:layout_marginRight="23.0dp" />
+            <FrameLayout android:layout_width="214.0dp" android:layout_height="match_parent" android:layout_marginRight="8.0dp">
+                <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:textSize="16.0dp" android:textColor="@color/dnskin_widget_text2_l" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="30.0dp" android:layout_marginLeft="9.0dp" android:layout_marginTop="4.0dp" android:text="@string/ceu" />
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/a48" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="40.0dp" android:layout_marginBottom="65.0dp" />
+                <LinearLayout android:gravity="right" android:layout_gravity="bottom" android:orientation="horizontal" android:paddingLeft="9.0dp" android:paddingRight="9.0dp" android:layout_width="match_parent" android:layout_height="30.0dp" android:layout_marginBottom="10.0dp">
+                    <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:id="@id/aos" android:background="@drawable/dnskin_dialog_btn_cancel_l" android:layout_width="48.5dp" android:layout_height="30.0dp" />
+                    <View android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+                    <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:id="@id/asg" android:background="@drawable/dnskin_dialog_btn_default_l" android:layout_width="48.5dp" android:layout_height="30.0dp" />
+                    <View android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+                    <com.dudu.autoui.ui.dnview.view.DnSkinImageView android:id="@id/auu" android:background="@drawable/dnskin_dialog_btn_ok_l" android:layout_width="48.5dp" android:layout_height="30.0dp" />
+                </LinearLayout>
+            </FrameLayout>
+        </com.dudu.autoui.ui.dnview.view.DnSkinLinearLayout>
+    </FrameLayout>
+</FrameLayout>

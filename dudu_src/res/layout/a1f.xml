@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/h0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/vk" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="right|bottom" android:id="@id/k1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="15.0dp" app:jk="40.0dp" app:a2y="@mipmap/d1" />
+</FrameLayout>

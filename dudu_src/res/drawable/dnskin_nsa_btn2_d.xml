@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="false" android:drawable="@drawable/dnskin_nsd_nbtn2_d" />
+    <item android:state_pressed="true" android:drawable="@drawable/dnskin_nsd_pbtn2_d" />
+</selector>

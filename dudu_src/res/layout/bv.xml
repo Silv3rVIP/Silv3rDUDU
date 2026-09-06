@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/ft"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/xm" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/fk" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginBottom="5.0dp">
+        <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:id="@id/fx" android:visibility="gone" android:layout_width="240.0dp" android:layout_marginRight="15.0dp" android:text="@string/a08" android:layout_weight="0.0" style="@style/fp" />
+        <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:id="@id/fw" android:visibility="gone" android:layout_width="240.0dp" android:layout_marginRight="15.0dp" android:text="@string/a08" android:layout_weight="0.0" style="@style/fp" />
+        <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:id="@id/a15" android:layout_width="240.0dp" android:text="@string/a09" android:layout_weight="0.0" style="@style/fq" />
+    </LinearLayout>
+</LinearLayout>

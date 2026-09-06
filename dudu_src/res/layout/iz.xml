@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:padding="10.0dp" android:layout_width="220.0dp" android:layout_height="100.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dudu.autoui.common.view.CircleFrameLayout android:layout_width="match_parent" android:layout_height="match_parent" app:a0k="@dimen/bq">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <FrameLayout android:layout_width="200.0dp" android:layout_height="40.0dp">
+                <com.dudu.autoui.ui.dnview.view.DnSkinAppIconImageView android:id="@id/qd" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" />
+                <LinearLayout android:layout_gravity="right|top" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="25.0dp">
+                    <com.dudu.autoui.common.view.NiceImageView android:id="@id/sk" android:layout_width="32.0dp" android:layout_height="18.0dp" android:src="@mipmap/h9" android:scaleType="fitXY" app:x5="@dimen/bq" app:x9="@dimen/bq" />
+                    <com.dudu.autoui.common.view.NiceImageView android:id="@id/re" android:layout_width="32.0dp" android:layout_height="18.0dp" android:layout_marginLeft="3.0dp" android:src="@mipmap/hd" android:scaleType="fitXY" app:x5="@dimen/bq" app:x9="@dimen/bq" />
+                </LinearLayout>
+            </FrameLayout>
+            <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:textSize="14.0dp" android:textColor="@color/dnskin_activity_common_text1_l" android:id="@id/ama" android:layout_width="match_parent" android:layout_height="20.0dp" android:layout_marginTop="10.0dp" android:lines="1" />
+        </LinearLayout>
+    </com.dudu.autoui.common.view.CircleFrameLayout>
+</LinearLayout>

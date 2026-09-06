@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="horizontal" android:id="@id/x3" android:background="#ffffff" android:paddingTop="8.0dp" android:paddingBottom="8.0dp" android:layout_width="match_parent" android:layout_height="40.0dp" android:minHeight="40.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="#333333" android:gravity="center" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="@string/c0y" android:layout_weight="1.0" />
+    <TextView android:textSize="12.0sp" android:textColor="#333333" android:gravity="center" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="@string/awc" android:layout_weight="1.0" />
+    <TextView android:textSize="12.0sp" android:textColor="#333333" android:gravity="center" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="@string/c9m" android:layout_weight="1.0" />
+    <TextView android:textSize="12.0sp" android:gravity="center" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="@string/ch3" android:layout_weight="1.0" />
+    <TextView android:textSize="12.0sp" android:textColor="#333333" android:gravity="center" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="@string/c6p" android:layout_weight="1.0" />
+    <TextView android:textSize="12.0sp" android:textColor="#333333" android:gravity="center" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="@string/a8_" android:layout_weight="1.0" />
+    <TextView android:textSize="12.0sp" android:textColor="#333333" android:gravity="center" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="@string/bla" android:layout_weight="1.0" />
+</merge>

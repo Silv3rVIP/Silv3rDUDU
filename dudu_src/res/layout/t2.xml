@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dudu.autoui.ui.activity.launcher.view.ItemFrameLayout android:background="@drawable/theme_item_trip_bg" android:layout_width="280.0dp" android:layout_height="158.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.wow.libs.duduSkin.view.SkinTextView android:textSize="14.0dp" android:textColor="@color/theme_item_trip_title" android:id="@id/avw" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dp" android:layout_marginTop="8.0dp" android:text="@string/c91" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="98.0dp" android:layout_marginTop="30.0dp">
+        <com.wow.libs.duduSkin.view.SkinImageView android:id="@id/qd" android:layout_width="98.0dp" android:layout_height="98.0dp" android:layout_marginRight="16.0dp" android:src="@drawable/theme_item_trip_icon" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginRight="5.0dp" android:layout_toLeftOf="@id/qd" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <FrameLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="30.0dp">
+                <com.wow.libs.duduSkin.view.SkinTextView android:textSize="14.0dp" android:textColor="@color/theme_item_trip_name" android:gravity="center" android:layout_gravity="left|center" android:id="@id/asp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ai_" />
+                <com.wow.libs.duduSkin.view.SkinTextView android:textSize="14.0dp" android:textColor="@color/theme_item_trip_value" android:gravity="center" android:layout_gravity="right|center" android:id="@id/awp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </FrameLayout>
+            <com.wow.libs.duduSkin.view.SkinView android:background="@drawable/theme_item_trip_split" android:layout_width="match_parent" android:layout_height="1.0dp" />
+            <FrameLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="30.0dp">
+                <com.wow.libs.duduSkin.view.SkinTextView android:textSize="14.0dp" android:textColor="@color/theme_item_trip_name" android:gravity="center" android:layout_gravity="left|center" android:id="@id/asq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ai8" />
+                <com.wow.libs.duduSkin.view.SkinTextView android:textSize="14.0dp" android:textColor="@color/theme_item_trip_value" android:gravity="center" android:layout_gravity="right|center" android:id="@id/awq" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </FrameLayout>
+            <com.wow.libs.duduSkin.view.SkinView android:background="@drawable/theme_item_trip_split" android:layout_width="match_parent" android:layout_height="1.0dp" />
+            <FrameLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="30.0dp">
+                <com.wow.libs.duduSkin.view.SkinTextView android:textSize="14.0dp" android:textColor="@color/theme_item_trip_name" android:gravity="center" android:layout_gravity="left|center" android:id="@id/asr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ai7" />
+                <com.wow.libs.duduSkin.view.SkinTextView android:textSize="14.0dp" android:textColor="@color/theme_item_trip_value" android:gravity="center" android:layout_gravity="right|center" android:id="@id/awr" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </FrameLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="30.0dp" android:layout_marginTop="123.0dp">
+        <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_marginRight="13.0dp" android:layout_weight="1.0">
+            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="13.0dp" android:textColor="@color/theme_item_trip_name2" android:gravity="center" android:id="@id/ass" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="5.0dp" android:text="@string/ai6" />
+            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="13.0dp" android:textColor="@color/theme_item_trip_value2" android:gravity="center" android:id="@id/aws" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="0km/h" />
+        </LinearLayout>
+        <com.wow.libs.duduSkin.view.SkinView android:background="@drawable/theme_item_trip_split2" android:layout_width="1.0dp" android:layout_height="10.0dp" />
+        <LinearLayout android:gravity="left" android:orientation="horizontal" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_marginLeft="13.0dp" android:layout_weight="1.0">
+            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="13.0dp" android:textColor="@color/theme_item_trip_name2" android:gravity="center" android:id="@id/ast" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="5.0dp" android:text="@string/ai9" />
+            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="13.0dp" android:textColor="@color/theme_item_trip_value2" android:gravity="center" android:id="@id/awt" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="0km/h" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.wow.libs.duduSkin.view.SkinView android:background="@drawable/theme_item_trip_front" android:layout_width="match_parent" android:layout_height="match_parent" />
+</com.dudu.autoui.ui.activity.launcher.view.ItemFrameLayout>

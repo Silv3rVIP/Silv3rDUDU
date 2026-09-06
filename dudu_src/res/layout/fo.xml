@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dudu.autoui.common.view.CircleFrameLayout android:layout_gravity="left|bottom" android:layout_width="300.0dp" android:layout_height="wrap_content" android:layout_margin="30.0dp" app:a0k="@dimen/bq">
+        <com.dudu.autoui.ui.dnview.view.DnSkinLinearLayout android:orientation="vertical" android:background="@color/dnskin_dialog_bg_l" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:textSize="18.0dp" android:textColor="@color/dnskin_dialog_text1_l" android:gravity="center" android:id="@id/t2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:layout_marginBottom="5.0dp" android:text="@string/bhd" android:singleLine="true" />
+            <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:textSize="16.0dp" android:textColor="@color/dnskin_dialog_text1_l" android:gravity="center" android:id="@id/p3" android:paddingLeft="6.0dp" android:paddingRight="6.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dp" android:lineSpacingExtra="4.0dp" />
+            <com.dudu.autoui.ui.dnview.view.DnSkinView android:background="@drawable/dnskin_md_line_l" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginLeft="20.0dp" android:layout_marginRight="20.0dp" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="32.0dp" android:layout_marginTop="5.0dp" android:layout_marginBottom="5.0dp">
+                <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:id="@id/aos" android:paddingLeft="20.0dp" android:paddingRight="20.0dp" android:layout_width="wrap_content" android:text="@string/to" style="@style/fu" />
+                <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:id="@id/atd" android:paddingLeft="20.0dp" android:paddingRight="20.0dp" android:layout_width="wrap_content" android:text="@string/cv" style="@style/fv" />
+            </LinearLayout>
+        </com.dudu.autoui.ui.dnview.view.DnSkinLinearLayout>
+    </com.dudu.autoui.common.view.CircleFrameLayout>
+</FrameLayout>

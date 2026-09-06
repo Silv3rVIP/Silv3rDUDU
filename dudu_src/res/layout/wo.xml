@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.wow.libs.duduSkin.view.SkinImageView android:id="@id/ayi" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/theme_widget_strengthen_bg" android:scaleType="centerCrop" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/b4b" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.wow.libs.duduSkin.view.SkinImageView android:layout_width="110.0dp" android:layout_height="110.0dp" android:src="@drawable/theme_widget_pip_icon" />
+        <com.wow.libs.duduSkin.view.SkinTextView android:textSize="20.0dp" android:textColor="@color/theme_widget_pip_title" android:layout_gravity="center" android:id="@id/ash" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dp" android:text="@string/bco" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/b7b" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.wow.libs.duduSkin.view.SkinImageView android:id="@id/b21" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/theme_widget_strengthen_front" android:scaleType="centerCrop" />
+</FrameLayout>

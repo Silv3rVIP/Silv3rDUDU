@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.tabs.TabLayout android:layout_gravity="center_vertical" android:layout_width="match_parent" android:layout_height="match_parent" app:a4i="gc" app:a4t="150.0dp" app:a4v="a4p" app:a56="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

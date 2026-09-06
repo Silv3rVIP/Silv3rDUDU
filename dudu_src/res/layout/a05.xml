@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dudu.autoui.common.view.ScrollViewEx2 android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/mb" android:paddingBottom="@dimen/m4" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/gw">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7">
+            <com.dudu.autoui.ui.activity.nnset.setview.NSetButton2View android:id="@id/a9y" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" app:xt="@drawable/dnskin_nns_r_hud_l" app:xy="@string/ae2" />
+            <com.dudu.autoui.ui.activity.nnset.setview.NSetButton2View android:id="@id/a_0" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" app:xy="@string/a04" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/b0_" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:layout_marginBottom="@dimen/m7" android:text="@string/p8" style="@style/gz" />
+            <com.dudu.autoui.ui.dnview.view.DnSkinLinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/gr">
+                <com.dudu.autoui.ui.activity.nnset.setview.NSetSingleSelectView android:id="@id/a6r" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m6" app:xh="true" app:xy="@string/w0" />
+                <com.dudu.autoui.ui.activity.nnset.setview.NSetNumView android:id="@id/a6q" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m6" app:xh="true" app:xp="@string/c72" app:xq="300" app:xr="0" app:xy="@string/tu" />
+                <com.dudu.autoui.ui.activity.nnset.setview.NSetCheck1View android:id="@id/a6u" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/m7" android:layout_marginBottom="@dimen/m6" app:xy="@string/ae0" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7">
+                    <com.dudu.autoui.ui.activity.nnset.setview.NSetButton2View android:id="@id/a70" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" app:xy="@string/wf" />
+                    <com.dudu.autoui.ui.activity.nnset.setview.NSetButton2View android:id="@id/a6v" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" app:xy="@string/by8" />
+                </LinearLayout>
+            </com.dudu.autoui.ui.dnview.view.DnSkinLinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/b09" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:layout_marginBottom="@dimen/m7" android:text="@string/p9" style="@style/gz" />
+            <com.dudu.autoui.ui.dnview.view.DnSkinLinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/gr">
+                <com.dudu.autoui.ui.activity.nnset.setview.NSetSingleSelectView android:id="@id/a6p" android:layout_width="match_parent" android:layout_height="wrap_content" app:xy="@string/adu" />
+                <com.dudu.autoui.ui.activity.nnset.setview.NSetSingleSelectView android:id="@id/a6n" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m6" app:xy="@string/jm" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/m7" android:layout_marginBottom="@dimen/m7">
+                    <com.dudu.autoui.ui.activity.nnset.setview.NSetCheck2View android:id="@id/a6m" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" app:xy="@string/gh" />
+                    <com.dudu.autoui.ui.activity.nnset.setview.NSetButton2View android:id="@id/a6o" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" app:xy="@string/by7" />
+                </LinearLayout>
+            </com.dudu.autoui.ui.dnview.view.DnSkinLinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/b97" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:layout_marginBottom="@dimen/m7" android:text="@string/ady" style="@style/gz" />
+            <com.dudu.autoui.ui.dnview.view.DnSkinLinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/gr">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7">
+                    <com.dudu.autoui.ui.activity.nnset.setview.NSetCheck2View android:id="@id/agm" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" app:xy="@string/gh" />
+                    <com.dudu.autoui.ui.activity.nnset.setview.NSetButton2View android:id="@id/ago" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" app:xy="@string/by7" />
+                </LinearLayout>
+                <com.dudu.autoui.ui.activity.nnset.setview.NSetSingleSelectView android:id="@id/agn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7" app:xy="@string/jm" />
+            </com.dudu.autoui.ui.dnview.view.DnSkinLinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/b14" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:layout_marginBottom="@dimen/m7" android:text="@string/adx" style="@style/gz" />
+            <com.dudu.autoui.ui.dnview.view.DnSkinLinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/gr">
+                <com.dudu.autoui.ui.activity.nnset.setview.NSetSingleSelectView android:id="@id/a8b" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7" app:xh="true" app:xy="@string/a12" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7">
+                    <com.dudu.autoui.ui.activity.nnset.setview.NSetButton2View android:id="@id/a89" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" app:xy="@string/a4h" />
+                    <com.dudu.autoui.ui.activity.nnset.setview.NSetCheck2View android:id="@id/a8c" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" app:xy="@string/a4k" />
+                </LinearLayout>
+                <com.dudu.autoui.ui.activity.nnset.setview.NSetNumView android:id="@id/a8_" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7" app:xq="10" app:xr="1" app:xy="@string/jm" />
+                <com.dudu.autoui.ui.activity.nnset.setview.NSetNumView android:id="@id/a8a" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7" app:xp="%" app:xq="15" app:xr="1" app:xy="@string/by7" />
+            </com.dudu.autoui.ui.dnview.view.DnSkinLinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/b1g" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:layout_marginBottom="@dimen/m7" android:text="@string/b_x" style="@style/gz" />
+            <com.dudu.autoui.ui.dnview.view.DnSkinLinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/gr">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/m6" android:layout_marginBottom="@dimen/m7">
+                    <com.dudu.autoui.ui.activity.nnset.setview.NSetButton2View android:id="@id/a8q" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7" android:layout_weight="1.0" app:xy="@string/rv" />
+                    <com.dudu.autoui.ui.activity.nnset.setview.NSetButton2View android:id="@id/a8u" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7" android:layout_weight="1.0" app:xy="@string/agv" />
+                </LinearLayout>
+                <com.dudu.autoui.ui.activity.nnset.setview.NSetNumView android:id="@id/a8t" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7" app:xp="%" app:xq="20" app:xr="0" app:xy="@string/by7" />
+                <com.dudu.autoui.ui.activity.nnset.setview.NSetNumView android:id="@id/a8r" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7" app:xq="6" app:xr="0" app:xy="@string/a2x" />
+                <com.dudu.autoui.ui.activity.nnset.setview.NSetNumView android:id="@id/a8s" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7" app:xq="6" app:xr="0" app:xy="@string/a2y" />
+            </com.dudu.autoui.ui.dnview.view.DnSkinLinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</com.dudu.autoui.common.view.ScrollViewEx2>

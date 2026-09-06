@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/a39" android:visibility="gone" android:layout_width="1.0dp" android:layout_height="match_parent" android:layout_marginLeft="10.0dp" android:layout_alignParentRight="true" />
+    <FrameLayout android:id="@id/v0" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toLeftOf="@id/a39" android:layout_alignParentLeft="true" />
+    <FrameLayout android:id="@id/an_" android:layout_width="24.0dp" android:layout_height="match_parent" android:layout_marginRight="-17.0dp" android:layout_toLeftOf="@id/a39">
+        <com.wow.libs.duduSkin.view.SkinView android:layout_gravity="center" android:id="@id/ana" android:background="@drawable/theme_pip_drag" android:visibility="gone" android:layout_width="4.0dp" android:layout_height="100.0dp" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/a1c" android:paddingLeft="10.0dp" android:visibility="gone" android:layout_width="24.0dp" android:layout_height="150.0dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <com.wow.libs.duduSkin.view.SkinView android:layout_gravity="center" android:background="@drawable/theme_pip_drag" android:layout_width="4.0dp" android:layout_height="100.0dp" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/a1b" android:paddingRight="10.0dp" android:visibility="gone" android:layout_width="24.0dp" android:layout_height="150.0dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <com.wow.libs.duduSkin.view.SkinView android:layout_gravity="center" android:background="@drawable/theme_pip_drag" android:layout_width="4.0dp" android:layout_height="100.0dp" />
+    </FrameLayout>
+</RelativeLayout>

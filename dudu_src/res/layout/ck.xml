@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/go">
+        <com.dudu.autoui.ui.activity.nnset.setview.dialog.NDSetButton2Check2View android:id="@id/afn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7" app:xy="@string/cca" />
+    </LinearLayout>
+</ScrollView>

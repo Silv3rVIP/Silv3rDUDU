@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dudu.autoui.ui.activity.launcher.view.ScaleFrameLayout android:id="@id/xu" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.wow.libs.duduSkin.view.SkinFrameLayout android:id="@id/y6" android:background="@drawable/theme_minim_item_nav_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.wow.libs.duduSkin.view.SkinImageView android:layout_gravity="center" android:layout_width="100.0dp" android:layout_height="100.0dp" android:src="@drawable/theme_minim_mark_nav" />
+    </com.wow.libs.duduSkin.view.SkinFrameLayout>
+</FrameLayout>

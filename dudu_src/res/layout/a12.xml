@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/h0">
+        <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:id="@id/b9e" android:text="@string/ef" style="@style/h1" />
+        <com.dudu.autoui.ui.activity.nset.setview.NSetItemView android:id="@id/a5x" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/mr" app:y5="@string/anc" app:y6="6" app:y7="4" app:y9="35.0dp" app:yd="@string/and" app:ye="axi" />
+        <com.dudu.autoui.ui.activity.nset.setview.NSetItemView android:id="@id/a61" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/mr" app:y5="@string/ane" app:y6="5" app:y7="3" app:y9="35.0dp" app:yd="@string/anf" app:ye="axi" />
+        <com.dudu.autoui.ui.activity.nset.setview.NSetItemView android:id="@id/abw" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/mr" app:yc="@string/cd" app:yd="@string/cc" app:ye="axl" />
+        <com.dudu.autoui.ui.activity.nset.setview.NSetItemView android:id="@id/abv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/mr" app:yd="@string/aks" app:ye="axm" />
+        <com.dudu.autoui.ui.activity.nset.setview.NSetItemView android:id="@id/a5g" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/mr" app:yd="@string/cb" app:ye="axk" />
+        <com.dudu.autoui.ui.activity.nset.setview.NSetItemView android:id="@id/a5z" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/mr" app:yd="@string/eg" app:ye="axb" />
+    </LinearLayout>
+</ScrollView>

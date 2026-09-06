@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dudu.autoui.ui.dnview.view.DnSkinFrameLayout android:id="@id/b6m" android:background="@color/dnskin_popup_bg_l" android:paddingLeft="150.0dp" android:paddingTop="50.0dp" android:paddingRight="150.0dp" android:paddingBottom="50.0dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.dudu.autoui.common.view.CircleFrameLayout android:id="@id/b5z" android:layout_width="match_parent" android:layout_height="match_parent" app:a0k="@dimen/bp">
+            <com.dudu.autoui.ui.dnview.view.DnSkinFrameLayout android:id="@id/ayi" android:background="@color/dnskin_nsd_bg3_l" android:layout_width="match_parent" android:layout_height="match_parent">
+                <androidx.viewpager.widget.ViewPager android:id="@id/b5n" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="5.0dp" android:layout_marginBottom="20.0dp" />
+                <com.dudu.autoui.ui.popup.allapp.AllAppsPopupPagePostionView android:layout_gravity="bottom" android:id="@id/b61" android:layout_width="match_parent" android:layout_height="20.0dp" />
+            </com.dudu.autoui.ui.dnview.view.DnSkinFrameLayout>
+        </com.dudu.autoui.common.view.CircleFrameLayout>
+    </com.dudu.autoui.ui.dnview.view.DnSkinFrameLayout>
+</FrameLayout>

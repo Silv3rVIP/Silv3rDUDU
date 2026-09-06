@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/kp" android:focusable="true" android:clickable="true" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+        <FrameLayout android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="25.0dp">
+            <com.dudu.autoui.ui.activity.nset.setview.MySkinSetSeekBar android:layout_gravity="center" android:id="@id/a4f" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent" android:thumb="@drawable/dr" android:paddingStart="0.0dp" android:paddingEnd="0.0dp" />
+            <com.dudu.autoui.ui.dnview.view.DnSkinImageView android:id="@id/qj" android:paddingLeft="12.0dp" android:paddingTop="7.0dp" android:paddingRight="7.0dp" android:paddingBottom="7.0dp" android:layout_width="30.0dp" android:layout_height="25.0dp" android:src="@drawable/dnskin_nset_item_num_jian_l" />
+            <com.dudu.autoui.ui.dnview.view.DnSkinImageView android:layout_gravity="right" android:id="@id/qg" android:paddingLeft="7.0dp" android:paddingTop="7.0dp" android:paddingRight="12.0dp" android:paddingBottom="7.0dp" android:layout_width="30.0dp" android:layout_height="25.0dp" android:src="@drawable/dnskin_nset_item_num_jia_l" />
+        </FrameLayout>
+    </FrameLayout>
+    <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:textSize="14.0dp" android:textColor="@color/dnskin_set_item_value_text_l" android:gravity="right|center" android:id="@id/atn" android:layout_width="52.0dp" android:layout_height="match_parent" android:text="0" />
+</LinearLayout>

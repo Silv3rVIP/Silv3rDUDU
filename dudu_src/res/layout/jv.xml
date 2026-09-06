@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dudu.autoui.common.view.CircleFrameLayout android:layout_width="200.0dp" android:layout_height="124.0dp" app:a0k="@dimen/bq">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_gravity="center" android:id="@id/mo" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+            <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:textSize="14.0dp" android:textColor="@color/dnskin_mypaper_item_type_title_l" android:gravity="center" android:layout_gravity="left|top" android:id="@id/awh" android:background="@color/dnskin_mypaper_item_type_bg_l" android:layout_width="45.0dp" android:layout_height="25.0dp" />
+            <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:textSize="14.0dp" android:textColor="@color/dnskin_mypaper_item_type_title_l" android:gravity="center" android:layout_gravity="right|top" android:id="@id/apq" android:background="@color/dnskin_mypaper_item_type_bg_l" android:layout_width="45.0dp" android:layout_height="25.0dp" />
+        </FrameLayout>
+    </com.dudu.autoui.common.view.CircleFrameLayout>
+</FrameLayout>

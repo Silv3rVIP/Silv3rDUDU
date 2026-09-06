@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dudu.autoui.ui.dnview.view.DnSkinLinearLayout android:orientation="vertical" android:background="@color/dnskin_dialog_bg_l" android:padding="@dimen/da" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/ha" android:layout_width="match_parent" android:layout_height="@dimen/dc" />
+    <TextView android:textSize="16.0dp" android:textColor="@color/dnskin_dialog_text_white" android:gravity="center" android:id="@id/asc" android:background="@drawable/dnskin_dialog_member_go_pay_bg" android:paddingTop="5.0dp" android:paddingBottom="5.0dp" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginTop="20.0dp" android:text="@string/bie" />
+</com.dudu.autoui.ui.dnview.view.DnSkinLinearLayout>

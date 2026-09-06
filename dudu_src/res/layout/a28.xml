@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ke" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dudu.autoui.ui.statebar.NbSkinStatebarAppIconImageView android:id="@id/dg" android:paddingLeft="11.0dp" android:paddingTop="8.0dp" android:paddingRight="11.0dp" android:paddingBottom="8.0dp" style="@style/jj" />
+    <com.dudu.autoui.ui.statebar.NbSkinStatebarAppIconImageView android:id="@id/di" android:paddingLeft="11.0dp" android:paddingTop="8.0dp" android:paddingRight="11.0dp" android:paddingBottom="8.0dp" style="@style/jj" />
+    <com.dudu.autoui.ui.statebar.NbSkinStatebarAppIconImageView android:id="@id/dj" android:paddingLeft="11.0dp" android:paddingTop="8.0dp" android:paddingRight="11.0dp" android:paddingBottom="8.0dp" style="@style/jj" />
+    <com.dudu.autoui.ui.statebar.NbSkinStatebarAppIconImageView android:id="@id/dk" android:paddingLeft="11.0dp" android:paddingTop="8.0dp" android:paddingRight="11.0dp" android:paddingBottom="8.0dp" style="@style/jj" />
+    <com.dudu.autoui.ui.statebar.NbSkinStatebarAppIconImageView android:id="@id/dl" android:paddingLeft="11.0dp" android:paddingTop="8.0dp" android:paddingRight="11.0dp" android:paddingBottom="8.0dp" style="@style/jj" />
+    <com.dudu.autoui.ui.statebar.NbSkinStatebarAppIconImageView android:id="@id/dm" android:paddingLeft="11.0dp" android:paddingTop="8.0dp" android:paddingRight="11.0dp" android:paddingBottom="8.0dp" style="@style/jj" />
+</LinearLayout>

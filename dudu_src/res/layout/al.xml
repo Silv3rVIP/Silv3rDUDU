@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dudu.autoui.ui.base.ActivityBaseFrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dudu.autoui.ui.dnview.view.DnSkinLinearLayout android:orientation="vertical" android:id="@id/b3w" android:background="@drawable/dnskin_activity_common_bg_l" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.dudu.autoui.ui.dnview.view.DnSkinFrameLayout android:id="@id/amo" android:background="@color/dnskin_activity_toolbar_bg_l" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="@dimen/ns">
+            <com.dudu.autoui.ui.dnview.view.DnSkinImageView android:layout_gravity="left" android:id="@id/nz" android:padding="13.0dp" android:focusable="true" android:clickable="true" android:layout_width="@dimen/ns" android:layout_height="@dimen/ns" android:src="@drawable/dnskin_ic_toolbar_back_l" android:scaleType="fitXY" android:contentDescription="@string/el" />
+            <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:textSize="@dimen/nt" android:textColor="@color/dnskin_activity_common_title_l" android:gravity="center" android:id="@id/avw" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/vz" />
+            <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:textSize="16.0dp" android:textColor="@color/dnskin_activity_common_stitle_l" android:gravity="center" android:layout_gravity="right|center" android:id="@id/f5" android:paddingLeft="10.0dp" android:paddingRight="20.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/c5k" />
+        </com.dudu.autoui.ui.dnview.view.DnSkinFrameLayout>
+        <FrameLayout android:id="@id/ci" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+    </com.dudu.autoui.ui.dnview.view.DnSkinLinearLayout>
+</com.dudu.autoui.ui.base.ActivityBaseFrameLayout>

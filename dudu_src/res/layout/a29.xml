@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dudu.autoui.ui.statebar.StateBarViewBgLayout android:background="@drawable/nbskin_statebar_bg" android:layout_width="match_parent" android:layout_height="@dimen/nc"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingRight="20.0dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.wow.libs.duduSkin2.view.SkinLinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/nbskin_statebar1_left_bg" android:paddingLeft="20.0dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="5.0dp">
+            <com.wow.libs.duduSkin2.view.SkinImageView android:id="@id/o1" android:src="@drawable/nbskin_statebar_botton_back" style="@style/jj" />
+            <com.wow.libs.duduSkin2.view.SkinImageView android:id="@id/o2" android:src="@drawable/nbskin_statebar2_botton_home" style="@style/jj" />
+            <com.wow.libs.duduSkin2.view.SkinImageView android:id="@id/o4" android:src="@drawable/nbskin_statebar_botton_task" style="@style/jj" />
+            <FrameLayout android:id="@id/b4e" android:layout_marginLeft="10.0dp" style="@style/jj">
+                <com.dudu.autoui.ui.statebar.NbSkinCustomImageView android:id="@id/r5" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="2.0dp" android:src="@drawable/nbskin_statebar2_music_cover" android:scaleType="fitXY" app:x3="@color/nbskin_statebar_item_music_cover_border" app:x4="1.0dp" app:x7="5.0dp" app:xd="@color/nbskin_statebar_music_cover_mask" />
+            </FrameLayout>
+            <LinearLayout android:gravity="left|center" android:orientation="vertical" android:id="@id/b4y" android:layout_width="100.0dp" android:layout_height="match_parent" android:layout_marginLeft="5.0dp" android:layout_marginRight="5.0dp">
+                <com.dudu.autoui.ui.statebar.NbSkinAutoMarqueeTextView android:textSize="14.0dp" android:textColor="@color/nbskin_statebar2_music_title" android:ellipsize="marquee" android:gravity="center_vertical" android:id="@id/asl" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/cer" android:singleLine="true" android:includeFontPadding="false" android:marqueeRepeatLimit="marquee_forever" />
+                <com.dudu.autoui.ui.statebar.NbSkinAutoMarqueeTextView android:textSize="14.0dp" android:textColor="@color/nbskin_statebar2_music_songer" android:ellipsize="marquee" android:gravity="center_vertical" android:id="@id/asm" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" android:marqueeRepeatLimit="marquee_forever" />
+            </LinearLayout>
+            <com.wow.libs.duduSkin2.view.SkinImageView android:id="@id/r8" android:layout_marginLeft="8.0dp" android:layout_marginRight="12.0dp" android:src="@drawable/nbskin_statebar_music_play" style="@style/jj" />
+        </com.wow.libs.duduSkin2.view.SkinLinearLayout>
+        <View android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+        <com.dudu.autoui.ui.statebar.NbSkinStatebarAppIconImageView android:id="@id/e1" style="@style/jb" />
+        <com.dudu.autoui.ui.statebar.NbSkinStatebarAppIconImageView android:id="@id/e2" style="@style/jb" />
+        <com.dudu.autoui.ui.statebar.NbSkinStatebarAppIconImageView android:id="@id/e3" style="@style/jb" />
+        <com.dudu.autoui.ui.statebar.NbSkinStatebarAppIconImageView android:id="@id/e4" style="@style/jb" />
+        <com.dudu.autoui.ui.statebar.NbSkinStatebarAppIconImageView android:id="@id/e5" style="@style/jb" />
+        <com.dudu.autoui.ui.statebar.NbSkinStatebarAppIconImageView android:id="@id/e6" style="@style/jb" />
+        <com.wow.libs.duduSkin2.view.SkinView android:background="@drawable/nbskin_statebar1_jiange_bg" android:layout_width="1.0dp" android:layout_height="match_parent" android:layout_marginLeft="5.0dp" android:layout_marginTop="8.0dp" android:layout_marginRight="10.0dp" android:layout_marginBottom="8.0dp" />
+        <com.dudu.autoui.ui.statebar.newStatebar.view.NewTimeView android:layout_width="142.0dp" android:layout_height="match_parent" />
+    </LinearLayout>
+    <com.wow.libs.duduSkin2.view.SkinView android:id="@id/t4" android:background="@color/nbskin_statebar_jiange" android:layout_width="match_parent" android:layout_height="1.0px" />
+</com.dudu.autoui.ui.statebar.StateBarViewBgLayout>

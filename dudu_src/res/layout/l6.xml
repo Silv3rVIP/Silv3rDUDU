@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/a00" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/l8" />
+    <FrameLayout android:id="@id/zq" android:paddingLeft="@dimen/i3" android:paddingRight="@dimen/i3" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/i3" android:paddingEnd="@dimen/i3" />
+</LinearLayout>

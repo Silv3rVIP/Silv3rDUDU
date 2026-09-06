@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dudu.autoui.ui.dnview.view.DnSkinLinearLayout android:orientation="vertical" android:background="@color/dnskin_un_left_popup_bg_l" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:textSize="13.0dp" android:textColor="@color/dnskin_un_app_title_l" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="20.0dp" android:layout_marginLeft="10.0dp" android:layout_marginTop="5.0dp" android:layout_marginRight="5.0dp" android:text="@string/acw" />
+    <com.github.mikephil.charting.charts.LineChart android:id="@id/uv" android:layout_width="match_parent" android:layout_height="170.0dp" android:layout_marginLeft="10.0dp" android:layout_marginRight="5.0dp" android:layout_marginBottom="5.0dp" />
+    <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:textSize="13.0dp" android:textColor="@color/dnskin_un_app_title_l" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="20.0dp" android:layout_marginLeft="10.0dp" android:layout_marginTop="5.0dp" android:layout_marginRight="5.0dp" android:text="@string/bh4" />
+    <com.github.mikephil.charting.charts.LineChart android:id="@id/uz" android:layout_width="match_parent" android:layout_height="170.0dp" android:layout_marginLeft="10.0dp" android:layout_marginRight="5.0dp" android:layout_marginBottom="5.0dp" />
+</com.dudu.autoui.ui.dnview.view.DnSkinLinearLayout>

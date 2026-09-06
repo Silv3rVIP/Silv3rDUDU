@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dudu.autoui.common.view.CircleFrameLayout android:layout_width="match_parent" android:layout_height="match_parent" app:a0k="@dimen/bp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dudu.autoui.ui.dnview.view.DnSkinLinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/dnskin_dialog_bg_l" android:padding="@dimen/da" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:textSize="20.0dp" android:textColor="@color/dnskin_dialog_text1_l" android:gravity="center" android:id="@id/ama" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dp" android:text="@string/aph" />
+        <com.dudu.autoui.ui.dnview.view.DnSkinImageView android:id="@id/s2" android:background="@drawable/dnskin_login_dialog_qcode_bg_l" android:padding="15.0dp" android:layout_width="200.0dp" android:layout_height="200.0dp" android:scaleType="fitXY" android:contentDescription="@string/el" />
+        <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:textSize="14.0dp" android:textColor="@color/dnskin_dialog_text3_l" android:gravity="center" android:id="@id/yy" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:text="@string/c0w" />
+    </com.dudu.autoui.ui.dnview.view.DnSkinLinearLayout>
+</com.dudu.autoui.common.view.CircleFrameLayout>

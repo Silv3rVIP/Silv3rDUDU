@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.wow.libs.duduSkin.view.SkinLinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/b44" android:background="@drawable/theme_widget_car3d_menu_bg" android:paddingLeft="8.0dp" android:paddingRight="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.wow.libs.duduSkin.view.SkinImageView android:id="@id/et" android:paddingLeft="8.0dp" android:paddingTop="5.0dp" android:paddingRight="8.0dp" android:paddingBottom="5.0dp" android:layout_width="55.0dp" android:layout_height="49.0dp" android:src="@drawable/theme_widget_car3d_menu_nav" android:contentDescription="@string/el" />
+        <com.wow.libs.duduSkin.view.SkinImageView android:id="@id/eu" android:paddingLeft="8.0dp" android:paddingTop="5.0dp" android:paddingRight="8.0dp" android:paddingBottom="5.0dp" android:layout_width="55.0dp" android:layout_height="49.0dp" android:src="@drawable/theme_widget_car3d_menu_paper" android:contentDescription="@string/el" />
+    </com.wow.libs.duduSkin.view.SkinLinearLayout>
+</FrameLayout>

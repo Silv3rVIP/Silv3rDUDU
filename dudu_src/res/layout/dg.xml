@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/go">
+        <com.dudu.autoui.ui.activity.nnset.setview.dialog.NDSetButton2Check2View android:id="@id/ac9" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7" app:xx="@string/btd" app:xy="@string/btc" />
+        <com.dudu.autoui.ui.activity.nnset.setview.dialog.NDSetButton2Check2View android:id="@id/afj" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7" app:xk="@string/b4h" app:xl="@string/aw8" app:xm="@string/bj6" app:xy="@string/cby" />
+        <com.dudu.autoui.ui.activity.nnset.setview.dialog.NDSetSingleSelectView android:id="@id/aet" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7" app:xx="@string/c7u" app:xy="@string/c7t" />
+        <com.dudu.autoui.ui.activity.nnset.setview.dialog.NDSetSingleSelectView android:id="@id/a9q" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7" app:xy="@string/c7q" />
+        <com.dudu.autoui.ui.activity.nnset.setview.dialog.NDSetButton2Check2View android:id="@id/g4" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7" app:xy="@string/ou" />
+    </LinearLayout>
+</ScrollView>

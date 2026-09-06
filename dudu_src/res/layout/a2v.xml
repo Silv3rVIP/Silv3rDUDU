@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.github.mikephil.charting.charts.LineChart android:id="@id/uv" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="10.0dp" android:layout_marginTop="-5.0dp" android:layout_marginRight="5.0dp" android:layout_marginBottom="5.0dp" />
+    <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="25.0dp" android:baselineAligned="false">
+        <LinearLayout android:gravity="left" android:orientation="horizontal" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_marginLeft="16.0dp" android:layout_weight="1.0">
+            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="12.0dp" android:textColor="@color/theme_un_byd_energy_name" android:gravity="center" android:id="@id/asp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="5.0dp" android:text="@string/bhh" />
+            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="12.0dp" android:textColor="@color/theme_un_byd_energy_value" android:gravity="center" android:id="@id/awp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="--KW" />
+        </LinearLayout>
+        <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_marginRight="20.0dp" android:layout_weight="1.0">
+            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="12.0dp" android:textColor="@color/theme_un_byd_energy_name" android:gravity="center" android:id="@id/asq" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="5.0dp" android:text="@string/acw" />
+            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="12.0dp" android:textColor="@color/theme_un_byd_energy_value" android:gravity="center" android:id="@id/awq" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="--KW" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.wow.libs.duduSkin.view.SkinView android:id="@id/xv" android:background="@drawable/theme_un_byd_energy_front" android:layout_width="match_parent" android:layout_height="match_parent" />
+</FrameLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/g0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dudu.autoui.ui.activity.nset.setview.NSetItemView android:id="@id/a81" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/mr" app:yd="@string/a0s" app:ye="axk" />
+    <com.dudu.autoui.ui.activity.nset.setview.NSetItemView android:id="@id/a7z" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/mr" app:yd="@string/d3" app:ye="axd" />
+    <View android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+    <LinearLayout android:gravity="right|center" android:orientation="horizontal" android:id="@id/azh" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/g2">
+        <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:id="@id/dy" android:text="@string/a08" style="@style/fy" />
+        <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:id="@id/f9" android:text="@string/bjf" style="@style/fz" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wow.libs.duduSkin.view.SkinLinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/theme_minim_byd_control_cell_bg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.wow.libs.duduSkin.view.SkinImageView android:id="@id/mg" android:layout_width="55.0dp" android:layout_height="55.0dp" />
+    <com.wow.libs.duduSkin.view.SkinTextView android:textSize="16.0dp" android:textColor="@color/theme_minim_byd_car_control_value" android:gravity="center" android:id="@id/ama" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:lines="1" android:includeFontPadding="false" />
+</com.wow.libs.duduSkin.view.SkinLinearLayout>

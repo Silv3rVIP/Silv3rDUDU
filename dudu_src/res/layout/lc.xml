@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/i3" android:paddingTop="16.0dp" android:paddingRight="@dimen/i3" android:paddingBottom="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.textfield.TextInputLayout android:id="@id/a07" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <com.google.android.material.textfield.TextInputEditText android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/axf" android:inputType="date" android:imeOptions="flagNoExtractUi" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <Space android:layout_width="8.0dp" android:layout_height="0.0dp" />
+    <com.google.android.material.textfield.TextInputLayout android:id="@id/a06" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <com.google.android.material.textfield.TextInputEditText android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/axe" android:inputType="date" android:imeOptions="flagNoExtractUi" />
+    </com.google.android.material.textfield.TextInputLayout>
+</LinearLayout>

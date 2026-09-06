@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dudu.autoui.ui.activity.launcher.minimalism.item.group.gps.SkinCarSensorView android:layout_width="268.0dp" android:layout_height="105.0dp" android:src="@drawable/theme_minim_sensor_car" android:scaleType="fitXY" />
+    <com.wow.libs.duduSkin.view.SkinTextView android:textSize="20.0dp" android:textColor="@color/theme_minim_sensor_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:text="@string/bru" />
+    <com.wow.libs.duduSkin.view.SkinTextView android:textSize="20.0dp" android:textColor="@color/theme_minim_btn_txt" android:id="@id/au2" android:background="@drawable/theme_minim_item_btn2_bg" android:paddingLeft="18.0dp" android:paddingTop="8.0dp" android:paddingRight="18.0dp" android:paddingBottom="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:text="@string/sj" />
+</LinearLayout>

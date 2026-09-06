@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.wow.libs.duduSkin.view.SkinImageView android:id="@id/ayi" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/theme_widget_dudu_nav_bg" android:scaleType="centerCrop" />
+    <FrameLayout android:id="@id/ha" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.wow.libs.duduSkin.view.SkinImageView android:id="@id/b21" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/theme_widget_nav_front" android:scaleType="centerCrop" />
+</FrameLayout>

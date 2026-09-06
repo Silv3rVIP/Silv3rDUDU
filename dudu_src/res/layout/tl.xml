@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center" android:layout_width="357.0dp" android:layout_height="587.0dp">
+        <com.wow.libs.duduSkin.view.SkinImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/theme_minim_item_music_bt_phone" android:scaleType="fitXY" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="20.0dp" android:layout_marginRight="20.0dp">
+            <View android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="125.0" />
+            <FrameLayout android:layout_width="112.0dp" android:layout_height="201.0dp">
+                <com.wow.libs.duduSkin.view.SkinImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/theme_minim_item_music_bt_dc" android:scaleType="fitXY" />
+                <com.wow.libs.duduSkin.view.SkinView android:layout_gravity="bottom" android:id="@id/b0y" android:background="@drawable/theme_minim_item_music_bt_dc_current" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="2.0dp" android:layout_marginBottom="2.0dp" />
+                <com.wow.libs.duduSkin.view.SkinImageView android:layout_gravity="center" android:id="@id/b0z" android:layout_width="65.0dp" android:layout_height="65.0dp" android:src="@drawable/theme_minim_item_music_bt_dc_wlj" android:scaleType="fitXY" />
+                <com.wow.libs.duduSkin.view.SkinView android:layout_gravity="bottom" android:background="#46a087" android:layout_width="match_parent" android:layout_height="2.0dp" />
+            </FrameLayout>
+            <View android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="40.0" />
+            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="20.0dp" android:textColor="@color/theme_minim_item_music_bt_name" android:gravity="center" android:id="@id/av_" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/cel" />
+            <View android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="40.0" />
+            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="16.0dp" android:textColor="@color/theme_minim_item_music_bt_disconnect" android:gravity="center" android:layout_gravity="center|bottom" android:id="@id/apm" android:background="@drawable/theme_minim_item_btn3_bg" android:visibility="gone" android:layout_width="120.0dp" android:layout_height="36.0dp" android:text="@string/bsv" />
+            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="16.0dp" android:textColor="@color/theme_minim_item_music_bt_connect" android:gravity="center" android:layout_gravity="center|bottom" android:id="@id/ap0" android:background="@drawable/theme_minim_item_btn2_bg" android:layout_width="120.0dp" android:layout_height="36.0dp" android:text="@string/bc2" />
+            <View android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="95.0" />
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

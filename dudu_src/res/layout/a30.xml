@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dudu.autoui.ui.activity.launcher.view.ScaleFrameLayout android:id="@id/xu" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.wow.libs.duduSkin.view.SkinLinearLayout android:layout_gravity="right|bottom" android:orientation="vertical" android:id="@id/b99" android:background="@drawable/theme_map_nav_zoom_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="12.0dp">
+        <com.wow.libs.duduSkin.view.SkinImageView android:id="@id/fh" android:padding="9.0dp" android:layout_width="50.0dp" android:layout_height="50.0dp" android:src="@drawable/theme_map_nav_jia" android:contentDescription="@string/el" />
+        <com.wow.libs.duduSkin.view.SkinImageView android:id="@id/fi" android:padding="9.0dp" android:layout_width="50.0dp" android:layout_height="50.0dp" android:src="@drawable/theme_map_nav_jian" android:contentDescription="@string/el" />
+    </com.wow.libs.duduSkin.view.SkinLinearLayout>
+    <com.wow.libs.duduSkin.view.SkinTextView android:textSize="15.0dp" android:textColor="@color/theme_widget_nav_text1" android:layout_gravity="center|bottom" android:orientation="vertical" android:id="@id/aoa" android:background="@drawable/theme_map_nav_zoom_bg" android:paddingLeft="15.0dp" android:paddingTop="10.0dp" android:paddingRight="15.0dp" android:paddingBottom="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="12.0dp" android:text="@string/chx" />
+    <FrameLayout android:gravity="left" android:layout_gravity="center|bottom" android:orientation="vertical" android:id="@id/ayy" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_margin="12.0dp">
+        <com.wow.libs.duduSkin.view.SkinImageView android:id="@id/dw" android:background="@drawable/theme_map_nav_bottom_bg" android:padding="3.0dp" android:layout_width="40.0dp" android:layout_height="40.0dp" android:src="@drawable/theme_map_nav_search" android:contentDescription="@string/el" />
+        <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <com.wow.libs.duduSkin.view.SkinImageView android:id="@id/ei" android:background="@drawable/theme_map_nav_bottom_bg" android:padding="2.0dp" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_marginRight="12.0dp" android:src="@drawable/theme_map_nav_home" android:contentDescription="@string/el" />
+            <com.wow.libs.duduSkin.view.SkinImageView android:id="@id/eg" android:background="@drawable/theme_map_nav_bottom_bg" android:padding="2.0dp" android:layout_width="40.0dp" android:layout_height="40.0dp" android:src="@drawable/theme_map_nav_gongsi" android:contentDescription="@string/el" />
+        </LinearLayout>
+    </FrameLayout>
+    <com.wow.libs.duduSkin.view.SkinLinearLayout android:gravity="center" android:layout_gravity="left" android:orientation="vertical" android:id="@id/b7t" android:background="@drawable/theme_map_nav_top_bg" android:paddingTop="4.0dp" android:paddingBottom="4.0dp" android:visibility="gone" android:layout_width="260.0dp" android:layout_height="wrap_content" android:layout_margin="12.0dp">
+        <LinearLayout android:orientation="horizontal" android:id="@id/b51" android:paddingLeft="4.0dp" android:paddingRight="12.0dp" android:layout_width="match_parent" android:layout_height="70.0dp">
+            <com.wow.libs.duduSkin.view.SkinImageView android:id="@id/mf" android:layout_width="70.0dp" android:layout_height="70.0dp" android:scaleType="fitXY" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="70.0dp" android:layout_weight="1.0">
+                <com.wow.libs.duduSkin.view.SkinTextView android:textSize="20.0dp" android:textColor="@color/theme_widget_nav_next_dis" android:ellipsize="end" android:gravity="right" android:id="@id/asw" android:layout_width="match_parent" android:layout_height="wrap_content" android:lines="1" />
+                <com.wow.libs.duduSkin.view.SkinTextView android:textSize="16.0dp" android:textColor="@color/theme_widget_nav_next_road" android:ellipsize="end" android:gravity="right" android:id="@id/asx" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/b29" android:layout_width="match_parent" android:layout_height="40.0dp" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/b07" android:layout_width="match_parent" android:layout_height="40.0dp" />
+    </com.wow.libs.duduSkin.view.SkinLinearLayout>
+    <LinearLayout android:gravity="left" android:layout_gravity="left|bottom" android:orientation="vertical" android:id="@id/ayx" android:layout_width="260.0dp" android:layout_height="136.0dp" android:layout_margin="12.0dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="40.0dp" android:layout_height="90.0dp">
+            <com.wow.libs.duduSkin.view.SkinImageView android:id="@id/fc" android:background="@drawable/theme_map_nav_bottom_bg" android:layout_width="40.0dp" android:layout_height="40.0dp" android:src="@drawable/theme_map_nav_bjy" android:contentDescription="@string/el" />
+            <com.wow.libs.duduSkin.view.SkinImageView android:id="@id/e8" android:background="@drawable/theme_map_nav_bottom_bg" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_marginTop="8.0dp" android:src="@drawable/theme_map_nav_exit" android:contentDescription="@string/el" />
+        </LinearLayout>
+        <com.wow.libs.duduSkin.view.SkinLinearLayout android:orientation="horizontal" android:background="@drawable/theme_map_nav_bottom_bg" android:paddingTop="4.0dp" android:paddingBottom="4.0dp" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginTop="8.0dp">
+            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="20.0dp" android:textColor="@color/theme_widget_nav_text1" android:gravity="center" android:id="@id/au0" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_marginLeft="5.0dp" android:lines="1" android:layout_weight="1.0" />
+            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="20.0dp" android:textColor="@color/theme_widget_nav_text1" android:gravity="center" android:id="@id/au1" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_marginLeft="5.0dp" android:layout_marginRight="5.0dp" android:lines="1" android:layout_weight="1.0" />
+        </com.wow.libs.duduSkin.view.SkinLinearLayout>
+    </LinearLayout>
+    <com.wow.libs.duduSkin.view.SkinFrameLayout android:id="@id/y6" android:background="@color/theme_un_pip_load_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20.0dp">
+            <com.wow.libs.duduSkin.view.SkinImageView android:id="@id/qd" android:layout_width="60.0dp" android:layout_height="60.0dp" android:src="@drawable/theme_un_mark_nav" />
+            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="16.0dp" android:textColor="@color/theme_un_pip_load_name" android:layout_gravity="center" android:id="@id/ash" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="@string/ao2" />
+        </LinearLayout>
+    </com.wow.libs.duduSkin.view.SkinFrameLayout>
+</FrameLayout>

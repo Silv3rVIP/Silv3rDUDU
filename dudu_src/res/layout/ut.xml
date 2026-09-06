@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dudu.autoui.ui.activity.launcher.view.PendantFrameLayout android:background="@drawable/theme_pendant_music_bg" android:layout_width="280.0dp" android:layout_height="358.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="50.0dp" android:layout_marginTop="5.0dp">
+        <com.wow.libs.duduSkin.view.SkinTextView android:textSize="18.0dp" android:textColor="@color/theme_pendant_music2_title" android:gravity="center" android:id="@id/avw" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/axn" android:lines="1" />
+        <com.wow.libs.duduSkin.view.SkinTextView android:textSize="14.0dp" android:textColor="@color/theme_pendant_music2_zuozhe" android:gravity="center" android:id="@id/ax8" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/axn" android:lines="1" />
+    </LinearLayout>
+    <com.dudu.autoui.common.view.lrc.LrcView android:id="@id/b3l" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="5.0dp" android:layout_marginTop="240.0dp" android:layout_marginRight="5.0dp" android:layout_marginBottom="52.0dp" app:sh="10.0dp" app:sk="16.0dp" app:so="18.0dp" />
+    <com.dudu.autoui.ui.activity.launcher.view.SkinCustomImageView android:layout_gravity="center_horizontal" android:id="@id/hi" android:layout_width="185.0dp" android:layout_height="185.0dp" android:layout_marginTop="55.0dp" android:src="@drawable/theme_pendant_music_default_music" android:scaleType="centerCrop" app:x7="10.0dp" />
+    <com.wow.libs.duduSkin.view.SkinProgressBar android:layout_gravity="bottom" android:id="@id/b63" android:layout_width="match_parent" android:layout_height="2.0dp" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:layout_marginBottom="50.0dp" android:progressDrawable="@drawable/theme_pendant_music2_progress" style="?android:progressBarStyleHorizontal" />
+    <com.wow.libs.duduSkin.view.SkinLinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/b0k" android:layout_width="match_parent" android:layout_height="50.0dp">
+        <FrameLayout android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+            <com.wow.libs.duduSkin.view.SkinImageView android:layout_gravity="center" android:id="@id/wz" android:layout_width="40.0dp" android:layout_height="40.0dp" android:src="@drawable/theme_pendant_music2_btn_prev" android:scaleType="fitCenter" android:contentDescription="@string/el" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+            <com.wow.libs.duduSkin.view.SkinImageView android:layout_gravity="center" android:id="@id/wy" android:layout_width="40.0dp" android:layout_height="40.0dp" android:src="@drawable/theme_pendant_music2_btn_play" android:scaleType="fitCenter" android:contentDescription="@string/el" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+            <com.wow.libs.duduSkin.view.SkinImageView android:layout_gravity="center" android:id="@id/ws" android:layout_width="40.0dp" android:layout_height="40.0dp" android:src="@drawable/theme_pendant_music2_btn_next" android:scaleType="fitCenter" android:contentDescription="@string/el" />
+        </FrameLayout>
+    </com.wow.libs.duduSkin.view.SkinLinearLayout>
+    <com.wow.libs.duduSkin.view.SkinView android:background="@drawable/theme_pendant_music_front" android:layout_width="match_parent" android:layout_height="match_parent" />
+</com.dudu.autoui.ui.activity.launcher.view.PendantFrameLayout>

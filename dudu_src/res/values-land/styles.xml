@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="sm" parent="@style/ey">
+        <item name="a4i">gc</item>
+        <item name="a4v">kd</item>
+    </style>
+    <style name="uf" parent="@style/s9">
+        <item name="android:textAppearance">?a5k</item>
+        <item name="android:textColor">?fb</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">@integer/v</item>
+    </style>
+</resources>

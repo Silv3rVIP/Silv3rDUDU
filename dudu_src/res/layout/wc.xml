@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.wow.libs.duduSkin.view.SkinImageView android:id="@id/ayi" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/theme_widget_byd_energy_bg" android:scaleType="centerCrop" />
+    <com.wow.libs.duduSkin.view.SkinLinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="vertical" android:background="@drawable/theme_widget_byd_energy_left_bg" android:padding="10.0dp" android:layout_width="200.0dp" android:layout_height="370.0dp" android:layout_margin="5.0dp">
+        <View android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+        <com.wow.libs.duduSkin.view.SkinLinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/b80" android:background="@drawable/theme_widget_byd_energy_select_bg" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="65.0dp">
+            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="14.0dp" android:textColor="@color/theme_widget_byd_energy_name" android:gravity="bottom" android:id="@id/aw6" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/c82" />
+            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="12.0dp" android:textColor="@color/theme_widget_byd_energy_val" android:gravity="top" android:id="@id/aw7" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:text="--km" />
+        </com.wow.libs.duduSkin.view.SkinLinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+        <com.wow.libs.duduSkin.view.SkinLinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/b7w" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="65.0dp">
+            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="14.0dp" android:textColor="@color/theme_widget_byd_energy_name" android:gravity="bottom" android:id="@id/aw1" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/c85" />
+            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="12.0dp" android:textColor="@color/theme_widget_byd_energy_val" android:gravity="top" android:id="@id/aw2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:text="--km" />
+        </com.wow.libs.duduSkin.view.SkinLinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+        <com.wow.libs.duduSkin.view.SkinLinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/b7y" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="65.0dp">
+            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="14.0dp" android:textColor="@color/theme_widget_byd_energy_name" android:gravity="bottom" android:id="@id/aw4" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/c83" />
+            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="12.0dp" android:textColor="@color/theme_widget_byd_energy_val" android:gravity="top" android:id="@id/aw5" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:text="--km" />
+        </com.wow.libs.duduSkin.view.SkinLinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+        <com.wow.libs.duduSkin.view.SkinLinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/b2p" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="65.0dp">
+            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="14.0dp" android:textColor="@color/theme_widget_byd_energy_name" android:gravity="bottom" android:id="@id/arb" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/h0" />
+            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="12.0dp" android:textColor="@color/theme_widget_byd_energy_val" android:gravity="top" android:id="@id/ard" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:text="--km" />
+        </com.wow.libs.duduSkin.view.SkinLinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+        <com.wow.libs.duduSkin.view.SkinLinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/b2r" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="65.0dp">
+            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="14.0dp" android:textColor="@color/theme_widget_byd_energy_name" android:gravity="bottom" android:id="@id/are" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/b61" />
+            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="12.0dp" android:textColor="@color/theme_widget_byd_energy_val" android:gravity="top" android:id="@id/arf" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:text="--km" />
+        </com.wow.libs.duduSkin.view.SkinLinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+    </com.wow.libs.duduSkin.view.SkinLinearLayout>
+    <com.github.mikephil.charting.charts.LineChart android:layout_gravity="center_vertical" android:id="@id/vi" android:visibility="gone" android:layout_width="match_parent" android:layout_height="370.0dp" android:layout_marginLeft="210.0dp" android:layout_marginRight="10.0dp" />
+    <FrameLayout android:layout_gravity="center_vertical" android:id="@id/ayj" android:visibility="gone" android:layout_width="match_parent" android:layout_height="360.0dp" android:layout_marginLeft="210.0dp" android:layout_marginRight="10.0dp">
+        <com.github.mikephil.charting.charts.BarChart android:id="@id/cs" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <com.wow.libs.duduSkin.view.SkinTextView android:textSize="16.0dp" android:textColor="@color/theme_widget_byd_energy_select_month" android:layout_gravity="right|top" android:id="@id/ava" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dp" />
+    </FrameLayout>
+    <com.wow.libs.duduSkin.view.SkinImageView android:id="@id/b21" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/theme_widget_byd_energy_front" android:scaleType="centerCrop" />
+</FrameLayout>

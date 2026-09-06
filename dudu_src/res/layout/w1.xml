@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wow.libs.duduSkin.view.SkinLinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@color/theme_un_pip_load_bg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.wow.libs.duduSkin.view.SkinImageView android:id="@id/qd" android:layout_width="60.0dp" android:layout_height="60.0dp" android:src="@drawable/theme_un_mark_pip" />
+    <com.wow.libs.duduSkin.view.SkinTextView android:textSize="16.0dp" android:textColor="@color/theme_un_pip_load_name" android:gravity="center" android:layout_gravity="center" android:id="@id/ash" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="@string/ao2" />
+    <com.wow.libs.duduSkin.view.SkinTextView android:textSize="12.0dp" android:id="@id/b5l" android:padding="10.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/a82" style="@style/or" />
+</com.wow.libs.duduSkin.view.SkinLinearLayout>

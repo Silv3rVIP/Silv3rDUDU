@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dudu.autoui.ui.base.ActivityBaseFrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dudu.autoui.ui.dnview.view.DnSkinFrameLayout android:id="@id/b3w" android:background="@color/dnskin_content_main_bg_l" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.dudu.autoui.ui.dnview.view.DnSkinFrameLayout android:id="@id/km" android:background="@drawable/dnskin_content_top_menu_bg_l" android:layout_width="match_parent" android:layout_height="55.0dp" android:layout_marginLeft="25.0dp" android:layout_marginTop="15.0dp" android:layout_marginRight="25.0dp">
+            <com.dudu.autoui.ui.dnview.view.DnSkinImageView android:layout_gravity="left" android:id="@id/dx" android:padding="8.0dp" android:layout_width="55.0dp" android:layout_height="55.0dp" android:layout_marginLeft="5.0dp" android:src="@drawable/dnskin_nicon_back_l" />
+            <com.google.android.material.tabs.TabLayout android:layout_gravity="center_vertical" android:id="@id/yv" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="70.0dp" android:layout_marginTop="5.0dp" android:layout_marginBottom="5.0dp" app:a4i="ahu" app:a4t="125.0dp" app:a4u="125.0dp" app:a4v="a4p" app:a56="true" />
+            <LinearLayout android:gravity="right|center" android:layout_gravity="right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent">
+                <com.dudu.autoui.ui.dnview.view.DnSkinImageView android:id="@id/f6" android:padding="5.0dp" android:visibility="gone" android:layout_width="55.0dp" android:layout_height="55.0dp" android:layout_marginRight="5.0dp" android:scaleType="fitXY" />
+                <com.dudu.autoui.ui.dnview.view.DnSkinImageView android:id="@id/f5" android:padding="5.0dp" android:visibility="gone" android:layout_width="55.0dp" android:layout_height="55.0dp" android:layout_marginRight="5.0dp" android:scaleType="fitXY" />
+            </LinearLayout>
+        </com.dudu.autoui.ui.dnview.view.DnSkinFrameLayout>
+        <FrameLayout android:id="@id/ha" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="25.0dp" android:layout_marginTop="80.0dp" android:layout_marginRight="25.0dp" />
+    </com.dudu.autoui.ui.dnview.view.DnSkinFrameLayout>
+</com.dudu.autoui.ui.base.ActivityBaseFrameLayout>

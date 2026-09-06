@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dudu.autoui.ui.dnview.view.DnSkinLinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/dnskin_nset_item_bg_l" android:paddingLeft="20.0dp" android:paddingTop="5.0dp" android:paddingRight="20.0dp" android:paddingBottom="5.0dp" android:layout_width="match_parent" android:layout_height="75.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:textSize="16.0dp" android:textColor="@color/dnskin_activity_common_text1_l" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/aso" android:layout_width="match_parent" android:layout_height="25.0dp" android:singleLine="true" android:includeFontPadding="false" />
+    <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:textSize="14.0dp" android:textColor="@color/dnskin_activity_common_text2_l" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/anz" android:layout_width="match_parent" android:layout_height="20.0dp" android:singleLine="true" android:includeFontPadding="false" />
+    <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:textSize="14.0dp" android:textColor="@color/dnskin_activity_common_text2_l" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/ara" android:layout_width="match_parent" android:layout_height="20.0dp" android:singleLine="true" android:includeFontPadding="false" />
+</com.dudu.autoui.ui.dnview.view.DnSkinLinearLayout>

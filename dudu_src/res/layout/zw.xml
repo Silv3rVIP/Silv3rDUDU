@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dudu.autoui.common.view.ScrollViewEx2 android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/mb" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/gw">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.dudu.autoui.ui.activity.nnset.setview.NSetSingleSelectView android:id="@id/acx" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7" app:xy="@string/bk8" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7">
+                <com.dudu.autoui.ui.activity.nnset.setview.NSetButton2View android:id="@id/adx" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" app:xy="@string/c0n" />
+                <com.dudu.autoui.ui.activity.nnset.setview.NSetButton2View android:id="@id/ad6" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" app:xy="@string/bl8" />
+            </LinearLayout>
+            <com.dudu.autoui.ui.activity.nnset.setview.NSetSingleSelectView android:id="@id/ady" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m6" app:xy="@string/c0m" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7">
+                <com.dudu.autoui.ui.activity.nnset.setview.NSetCheck2View android:id="@id/aak" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" app:xy="@string/apy" />
+                <com.dudu.autoui.ui.activity.nnset.setview.dialog.NDSetButton2View android:id="@id/abv" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" app:xy="@string/fp" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/fq" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7">
+                <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:text="@string/km" style="@style/gz" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7">
+                    <com.dudu.autoui.ui.activity.nnset.setview.NSetCheck2View android:id="@id/agi" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" app:xy="@string/cj9" />
+                    <com.dudu.autoui.ui.activity.nnset.setview.NSetCheck2View android:id="@id/ae5" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" app:xy="@string/ky" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7">
+                    <com.dudu.autoui.ui.activity.nnset.setview.NSetCheck2View android:id="@id/aeg" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" app:xy="@string/lu" />
+                    <com.dudu.autoui.ui.activity.nnset.setview.NSetCheck2View android:id="@id/a9p" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" app:xy="@string/lp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</com.dudu.autoui.common.view.ScrollViewEx2>

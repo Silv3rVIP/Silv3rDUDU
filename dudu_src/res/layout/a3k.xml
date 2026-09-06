@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.wow.libs.duduSkin.view.SkinFrameLayout android:layout_gravity="center|bottom" android:id="@id/b04" android:layout_width="250.0dp" android:layout_height="260.0dp" android:layout_marginBottom="50.0dp">
+        <com.wow.libs.duduSkin.view.SkinImageView android:layout_gravity="center_horizontal" android:layout_width="250.0dp" android:layout_height="250.0dp" android:layout_marginBottom="10.0dp" android:src="@drawable/theme_un_nav_road" android:scaleType="fitXY" />
+        <com.wow.libs.duduSkin.view.SkinImageView android:layout_gravity="center|bottom" android:id="@id/oo" android:layout_width="132.0dp" android:layout_height="150.0dp" android:src="@drawable/theme_un_nav_car" />
+    </com.wow.libs.duduSkin.view.SkinFrameLayout>
+    <com.dudu.autoui.ui.activity.launcher.unbounded.view.UnSimuAdasView android:layout_gravity="center|bottom" android:id="@id/b03" android:visibility="gone" android:layout_width="match_parent" android:layout_height="350.0dp" android:layout_marginBottom="40.0dp" />
+    <com.wow.libs.duduSkin.view.SkinFrameLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/b7t" android:background="@drawable/theme_un_nav_top_bg" android:layout_width="match_parent" android:layout_height="70.0dp" android:layout_marginLeft="40.0dp" android:layout_marginTop="30.0dp" android:layout_marginRight="40.0dp">
+        <com.wow.libs.duduSkin.view.SkinTextView android:textSize="27.0dp" android:textColor="@color/theme_item_adas_warn" android:gravity="center" android:layout_gravity="top" android:id="@id/b8j" android:visibility="gone" android:layout_width="match_parent" android:layout_height="70.0dp" android:includeFontPadding="false" />
+        <RelativeLayout android:layout_gravity="top" android:id="@id/b71" android:layout_width="match_parent" android:layout_height="70.0dp">
+            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="55.0dp" android:textColor="@color/theme_un_car_speed" android:gravity="center" android:id="@id/avh" android:layout_width="95.0dp" android:layout_height="wrap_content" android:text="0" android:includeFontPadding="false" android:layout_centerInParent="true" />
+            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="20.0dp" android:textColor="@color/theme_un_car_speed_dw" android:id="@id/avj" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="km/h" android:includeFontPadding="false" android:layout_toRightOf="@id/avh" android:layout_alignBaseline="@id/avh" />
+        </RelativeLayout>
+    </com.wow.libs.duduSkin.view.SkinFrameLayout>
+    <com.wow.libs.duduSkin.view.SkinView android:background="@drawable/theme_un_nav_front" android:layout_width="match_parent" android:layout_height="match_parent" />
+</FrameLayout>

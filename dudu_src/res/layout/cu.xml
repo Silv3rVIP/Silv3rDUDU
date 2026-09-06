@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/gw">
+        <com.dudu.autoui.ui.activity.nnset.setview.dialog.NDSetButton2Check2View android:id="@id/abb" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7" app:xy="@string/b0e" />
+        <com.dudu.autoui.ui.activity.nnset.setview.dialog.NDSetSingleSelectView android:id="@id/abc" android:layout_width="match_parent" android:layout_height="wrap_content" app:xy="@string/bej" />
+        <com.dudu.autoui.ui.activity.nnset.setview.dialog.NDSetButton2View android:id="@id/ab7" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7" app:xy="@string/c1n" />
+        <com.dudu.autoui.ui.activity.nnset.setview.dialog.NDSetButton2Check2View android:id="@id/ae6" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7" app:xx="@string/azp" app:xy="@string/azo" />
+        <com.dudu.autoui.ui.activity.nnset.setview.dialog.NDSetButton3View android:id="@id/abj" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7" app:xy="@string/ar_" />
+        <com.dudu.autoui.ui.activity.nnset.setview.dialog.NDSetButton2Check2View android:id="@id/a5j" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7" app:xx="@string/c1w" app:xy="@string/c1v" />
+        <com.dudu.autoui.ui.activity.nnset.setview.dialog.NDSetButton2Check2View android:id="@id/aba" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7" app:xx="@string/a0v" app:xy="@string/a0u" />
+        <com.dudu.autoui.ui.activity.nnset.setview.dialog.NDSetSingleSelectView android:id="@id/acf" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7" app:xy="@string/bew" />
+        <LinearLayout android:orientation="vertical" android:id="@id/a27" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.dudu.autoui.ui.activity.nnset.setview.dialog.NDSetButton2View android:id="@id/ab8" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7" app:xy="@string/amx" />
+            <com.dudu.autoui.ui.activity.nnset.setview.dialog.NDSetButton2View android:id="@id/ab9" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7" app:xy="@string/azv" />
+            <com.dudu.autoui.ui.activity.nnset.setview.dialog.NDSetButton2Check2View android:id="@id/abh" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7" app:xy="@string/azy" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

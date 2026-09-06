@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/h0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/vk" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.github.clans.fab.FloatingActionMenu android:layout_gravity="right|bottom" android:id="@id/jz" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="20.0dp" app:u8="@color/ai" app:u9="@color/ai">
+        <com.github.clans.fab.FloatingActionButton android:id="@id/jv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/cx" app:jn="@color/ai" app:jo="@color/ai" app:js="@string/ya" app:k5="z3" />
+        <com.github.clans.fab.FloatingActionButton android:id="@id/jw" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/cx" app:jn="@color/ai" app:jo="@color/ai" app:js="@string/yc" app:k5="z3" />
+        <com.github.clans.fab.FloatingActionButton android:id="@id/ju" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/cv" app:jn="@color/ai" app:jo="@color/ai" app:js="@string/ap" app:k5="z3" />
+        <com.github.clans.fab.FloatingActionButton android:id="@id/jx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/cw" app:jn="@color/ai" app:jo="@color/ai" app:js="@string/cf_" app:k5="z3" />
+    </com.github.clans.fab.FloatingActionMenu>
+</FrameLayout>

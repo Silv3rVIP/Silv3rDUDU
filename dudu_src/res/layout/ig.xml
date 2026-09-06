@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:layout_marginBottom="15.0dp">
+        <FrameLayout android:id="@id/qe" android:layout_width="90.0dp" android:layout_height="90.0dp">
+            <com.dudu.autoui.common.view.NiceImageView android:layout_gravity="center" android:id="@id/qd" android:layout_width="76.0dp" android:layout_height="76.0dp" app:x7="15.0dp" />
+        </FrameLayout>
+        <com.wow.libs.duduSkin.view.SkinTextView android:textSize="16.0dp" android:textColor="@color/theme_pip_app_item" android:ellipsize="end" android:gravity="center" android:id="@id/aso" android:paddingLeft="5.0dp" android:paddingRight="5.0dp" android:layout_width="match_parent" android:layout_height="35.0dp" android:singleLine="true" />
+    </LinearLayout>
+    <View android:layout_width="match_parent" android:layout_height="1.0dp" />
+</FrameLayout>

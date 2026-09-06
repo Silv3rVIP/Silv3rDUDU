@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.wow.libs.duduSkin.view.SkinImageView android:layout_gravity="center" android:id="@id/ol" android:background="@drawable/theme_minim_byd_control_cell_bg" android:padding="10.0dp" android:layout_width="60.0dp" android:layout_height="60.0dp" android:layout_marginLeft="480.0dp" android:layout_marginBottom="60.0dp" android:src="@drawable/theme_minim_car_hbx" android:scaleType="fitXY" />
+    <com.wow.libs.duduSkin.view.SkinImageView android:layout_gravity="center" android:id="@id/om" android:background="@drawable/theme_minim_byd_control_cell_bg" android:padding="10.0dp" android:layout_width="60.0dp" android:layout_height="60.0dp" android:layout_marginLeft="210.0dp" android:layout_marginBottom="140.0dp" android:src="@drawable/theme_minim_car_tc" android:scaleType="fitXY" />
+</FrameLayout>

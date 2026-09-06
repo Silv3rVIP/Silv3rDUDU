@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.airbnb.lottie.LottieAnimationView android:id="@id/ud" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:s8="true" app:sd="0.6" />
+    <com.airbnb.lottie.LottieAnimationView android:id="@id/ue" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:s8="true" app:sd="0.6" />
+    <com.airbnb.lottie.LottieAnimationView android:id="@id/ug" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:s8="true" app:sd="0.6" />
+    <com.airbnb.lottie.LottieAnimationView android:id="@id/uc" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:s8="true" app:sd="0.6" />
+    <com.airbnb.lottie.LottieAnimationView android:id="@id/uh" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:s8="true" app:sd="0.6" />
+    <com.airbnb.lottie.LottieAnimationView android:id="@id/uf" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:s8="true" app:sd="0.6" />
+</FrameLayout>

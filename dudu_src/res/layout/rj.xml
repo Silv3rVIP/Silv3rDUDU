@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dudu.autoui.ui.activity.launcher.view.ItemFrameLayout android:layout_width="241.0dp" android:layout_height="72.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/b0e" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dp" android:layout_marginTop="7.0dp" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="15.0dp" android:textColor="@color/theme_item_taiya_msg" android:id="@id/au3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/aho" android:singleLine="true" />
+            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="12.0dp" android:textColor="@color/theme_item_taiya_info" android:id="@id/au4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dp" android:text="Bar" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dp" android:layout_marginRight="9.0dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="15.0dp" android:textColor="@color/theme_item_taiya_msg" android:id="@id/atr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/aho" android:singleLine="true" />
+            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="12.0dp" android:textColor="@color/theme_item_taiya_info" android:id="@id/ats" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dp" android:text="Bar" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dp" android:layout_marginBottom="7.0dp" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="15.0dp" android:textColor="@color/theme_item_taiya_msg" android:id="@id/aro" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/aho" android:singleLine="true" />
+            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="12.0dp" android:textColor="@color/theme_item_taiya_info" android:id="@id/arp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dp" android:text="Bar" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="9.0dp" android:layout_marginBottom="7.0dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="15.0dp" android:textColor="@color/theme_item_taiya_msg" android:id="@id/arh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/aho" android:singleLine="true" />
+            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="12.0dp" android:textColor="@color/theme_item_taiya_info" android:id="@id/ari" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dp" android:text="Bar" android:singleLine="true" />
+        </LinearLayout>
+    </RelativeLayout>
+</com.dudu.autoui.ui.activity.launcher.view.ItemFrameLayout>

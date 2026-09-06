@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="i2">4.0dp</dimen>
+    <dimen name="i4">18.0dp</dimen>
+    <dimen name="i5">40.0dp</dimen>
+    <dimen name="i6">2.0dp</dimen>
+    <dimen name="i8">2.0dp</dimen>
+    <dimen name="i9">40.0dp</dimen>
+    <dimen name="i_">20.0dp</dimen>
+    <dimen name="ik">128.0dp</dimen>
+    <dimen name="im">4.0dp</dimen>
+</resources>

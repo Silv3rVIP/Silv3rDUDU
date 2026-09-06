@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dudu.autoui.ui.dnview.view.DnSkinLinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dudu.autoui.common.view.ratingbar.CBRatingBar android:id="@id/a2x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" app:a31="true" app:a32="5" app:a33="@color/fg" app:a34="v6" app:a36="@color/dnskin_nsd_skin_bg_l" app:a37="5.0" app:a3_="1.0" app:a3a="true" app:a3b="40.0dp" app:a3c="25.0dp" app:a3e="@color/fg" app:a3f="2.0dp" app:a3g="false" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/fk" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:layout_marginBottom="5.0dp">
+        <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:id="@id/fw" android:layout_marginRight="15.0dp" android:text="@string/a08" style="@style/fp" />
+        <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:id="@id/a15" android:text="@string/a09" style="@style/fq" />
+    </LinearLayout>
+</com.dudu.autoui.ui.dnview.view.DnSkinLinearLayout>

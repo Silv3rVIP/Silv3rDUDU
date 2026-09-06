@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dudu.autoui.ui.activity.launcher.minimalism.item.car.byd.BydMinimCarControlCellView android:id="@id/az6" android:layout_width="0.0dp" android:layout_height="70.0dp" android:layout_margin="15.0dp" android:layout_weight="1.0" />
+    <com.dudu.autoui.ui.activity.launcher.minimalism.item.car.byd.BydMinimCarControlCellView android:id="@id/az8" android:layout_width="0.0dp" android:layout_height="70.0dp" android:layout_margin="15.0dp" android:layout_weight="1.0" />
+</LinearLayout>

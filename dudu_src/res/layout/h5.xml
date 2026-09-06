@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingTop="7.5dp" android:paddingBottom="7.5dp" android:layout_width="match_parent" android:layout_height="80.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dudu.autoui.ui.dnview.view.DnSkinLinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/nd" android:background="@drawable/dnskin_nsd_item_l" android:layout_width="match_parent" android:layout_height="65.0dp">
+        <com.dudu.autoui.ui.dnview.view.DnSkinColorFilterImageView android:id="@id/mg" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_marginLeft="20.0dp" android:scaleType="fitXY" app:id="@color/dnskin_nst_text1_l" />
+        <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:textSize="@dimen/m_" android:textColor="@color/dnskin_nst_text1_l" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/a0e" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_marginLeft="20.0dp" android:layout_marginRight="20.0dp" android:layout_weight="1.0" />
+    </com.dudu.autoui.ui.dnview.view.DnSkinLinearLayout>
+</RelativeLayout>

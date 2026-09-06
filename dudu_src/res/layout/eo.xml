@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dudu.autoui.ui.dnview.view.DnSkinLinearLayout android:orientation="vertical" android:paddingLeft="15.0dp" android:paddingRight="15.0dp" android:paddingBottom="5.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dudu.autoui.ui.activity.nset.setview.NSetItemView android:id="@id/a9h" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/mr" app:yd="档位关联" app:ye="axd" />
+    <LinearLayout android:orientation="vertical" android:id="@id/b24" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/mr">
+            <com.dudu.autoui.ui.activity.nset.setview.NSetItemView android:id="@id/a9i" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginRight="@dimen/mr" android:layout_weight="1.0" app:yd="D档颜色" app:ye="axm" />
+            <com.dudu.autoui.ui.activity.nset.setview.NSetItemView android:id="@id/a9k" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" app:yd="P档颜色" app:ye="axm" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/mr">
+            <com.dudu.autoui.ui.activity.nset.setview.NSetItemView android:id="@id/a9l" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginRight="@dimen/mr" android:layout_weight="1.0" app:yd="R档颜色" app:ye="axm" />
+            <com.dudu.autoui.ui.activity.nset.setview.NSetItemView android:id="@id/a9j" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" app:yd="其他档位颜色" app:ye="axm" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.dudu.autoui.ui.activity.nset.setview.NSetItemView android:id="@id/a5c" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/mr" app:yd="空调关联" app:ye="axd" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ay7" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/mr">
+        <com.dudu.autoui.ui.activity.nset.setview.NSetItemView android:id="@id/a5e" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginRight="@dimen/mr" android:layout_weight="1.0" app:yc="大于等于27度" app:yd="高温区颜色" app:ye="axm" />
+        <com.dudu.autoui.ui.activity.nset.setview.NSetItemView android:id="@id/a5d" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" app:yc="小于等于26度" app:yd="低温区颜色" app:ye="axm" />
+    </LinearLayout>
+</com.dudu.autoui.ui.dnview.view.DnSkinLinearLayout>

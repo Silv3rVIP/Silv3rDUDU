@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dudu.autoui.ui.dnview.view.DnSkinFrameLayout android:layout_gravity="center" android:id="@id/a3j" android:padding="7.0dp" android:layout_width="40.0dp" android:layout_height="40.0dp">
+        <com.dudu.autoui.ui.dnview.view.DnSkinFrameLayout android:layout_gravity="center" android:background="@drawable/dnskin_nsd_cb_l" android:padding="1.0dp" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="match_parent" app:d0="@color/gg" app:d1="100.0dp" app:d2="0.0dp" app:d4="0.0dp">
+                <com.dudu.autoui.ui.dnview.view.DnSkinView android:layout_gravity="center" android:id="@id/h6" android:layout_width="match_parent" android:layout_height="match_parent" />
+            </androidx.cardview.widget.CardView>
+        </com.dudu.autoui.ui.dnview.view.DnSkinFrameLayout>
+    </com.dudu.autoui.ui.dnview.view.DnSkinFrameLayout>
+</FrameLayout>

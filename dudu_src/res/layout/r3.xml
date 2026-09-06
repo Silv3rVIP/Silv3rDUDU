@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dudu.autoui.ui.activity.launcher.view.ItemFrameLayout android:id="@id/ayk" android:background="@drawable/theme_item_weather_bg" android:layout_width="321.0dp" android:layout_height="96.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.wow.libs.duduSkin.view.SkinImageView android:layout_gravity="center_vertical" android:id="@id/te" android:layout_width="85.0dp" android:layout_height="85.0dp" android:layout_marginLeft="17.0dp" android:src="@drawable/theme_item_weather_tq_wz" android:scaleType="fitXY" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="119.0dp" android:layout_marginRight="17.0dp">
+        <com.wow.libs.duduSkin.view.SkinTextView android:textSize="29.0dp" android:textColor="@color/theme_item_weather_wendu" android:gravity="left|center" android:id="@id/awy" android:layout_width="match_parent" android:layout_height="40.0dp" android:text="@string/aig" android:singleLine="true" android:includeFontPadding="false" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="16.0dp" android:textColor="@color/theme_item_weather_tianqi" android:gravity="left|center" android:id="@id/awb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/aib" android:singleLine="true" android:includeFontPadding="false" />
+            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="16.0dp" android:textColor="@color/theme_item_compass_dw" android:gravity="left|center" android:id="@id/apw" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dp" android:text="@string/aib" android:lines="1" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.wow.libs.duduSkin.view.SkinView android:background="@drawable/theme_item_weather_front" android:layout_width="match_parent" android:layout_height="match_parent" />
+</com.dudu.autoui.ui.activity.launcher.view.ItemFrameLayout>

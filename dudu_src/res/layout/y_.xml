@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/mu" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+        <com.wow.libs.duduSkin.view.SkinImageView android:id="@id/q6" android:visibility="gone" android:layout_width="64.0dp" android:layout_height="272.0dp" android:layout_marginRight="15.0dp" android:src="@drawable/theme_minim_sensor_kdl" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="25.0dp" android:textColor="@color/theme_minim_sensor_val" android:id="@id/aql" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" />
+            <com.dudu.autoui.ui.activity.launcher.minimalism.item.group.gps.SkinCarSensorView android:id="@id/q5" android:layout_width="150.0dp" android:layout_height="150.0dp" android:src="@drawable/theme_minim_sensor_fy_car" />
+            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="20.0dp" android:textColor="@color/theme_minim_sensor_name" android:id="@id/aqm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/av8" />
+        </LinearLayout>
+        <View android:id="@id/xv" android:layout_width="15.0dp" android:layout_height="match_parent" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="25.0dp" android:textColor="@color/theme_minim_sensor_val" android:id="@id/ato" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" />
+            <com.dudu.autoui.ui.activity.launcher.minimalism.item.group.gps.SkinCarSensorView android:id="@id/s5" android:layout_width="150.0dp" android:layout_height="150.0dp" android:src="@drawable/theme_minim_sensor_qx_car" />
+            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="20.0dp" android:textColor="@color/theme_minim_sensor_name" android:id="@id/atp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/av_" />
+        </LinearLayout>
+        <com.wow.libs.duduSkin.view.SkinImageView android:id="@id/s6" android:visibility="gone" android:layout_width="64.0dp" android:layout_height="272.0dp" android:layout_marginLeft="15.0dp" android:src="@drawable/theme_minim_sensor_kdr" />
+        <View android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dudu.autoui.ui.activity.launcher.view.PendantFrameLayout android:background="@drawable/theme_pendant_hld_bg" android:layout_width="280.0dp" android:layout_height="84.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/m1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" />
+        <com.wow.libs.duduSkin.view.SkinTextView android:textSize="24.0dp" android:textColor="@color/theme_item_hld_dis" android:id="@id/ig" android:layout_width="wrap_content" android:layout_height="35.0dp" android:layout_marginTop="5.0dp" />
+    </LinearLayout>
+    <com.wow.libs.duduSkin.view.SkinTextView android:textSize="20.0dp" android:textColor="@color/theme_item_hld" android:layout_gravity="center" android:id="@id/zm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/aib" />
+</com.dudu.autoui.ui.activity.launcher.view.PendantFrameLayout>

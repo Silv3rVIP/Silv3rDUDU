@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.wow.libs.duduSkin.view.SkinLinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/theme_widget_btphone_lxr_item_bg" android:layout_width="match_parent" android:layout_height="54.0dp" android:layout_marginTop="3.0dp" android:layout_marginBottom="3.0dp">
+        <com.wow.libs.duduSkin.view.SkinTextView android:textSize="16.0dp" android:textColor="@color/theme_widget_btphone_lxr_rv_frist_code" android:gravity="center" android:id="@id/aqd" android:background="@drawable/theme_widget_btphone_lxr_frist_code" android:layout_width="34.0dp" android:layout_height="34.0dp" android:layout_margin="10.0dp" />
+        <com.wow.libs.duduSkin.view.SkinTextView android:textSize="16.0dp" android:textColor="@color/theme_widget_btphone_lxr_rv_name" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/aso" android:layout_width="0.0dp" android:layout_height="match_parent" android:singleLine="true" android:layout_weight="1.0" />
+    </com.wow.libs.duduSkin.view.SkinLinearLayout>
+    <View android:layout_width="match_parent" android:layout_height="1.0dp" />
+</FrameLayout>

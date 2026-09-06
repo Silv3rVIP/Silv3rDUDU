@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="horizontal" android:tag="all" android:layout_width="80.0dp" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:textAppearance="@style/fl" android:textSize="18.0dp" android:gravity="center" android:id="@id/avw" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/az5" android:lines="1" />
+</FrameLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/g0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/ni" android:layout_width="300.0dp" android:layout_height="300.0dp" android:scaleType="fitCenter" />
+    <com.dudu.autoui.ui.dnview.view.DnSkinView android:background="@color/dnskin_dialog_interval_l" android:layout_width="match_parent" android:layout_height="0.5dp" />
+    <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:textSize="20.0dp" android:id="@id/atd" android:layout_width="match_parent" android:text="@string/b9x" style="@style/fv" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dudu.autoui.ui.dnview.view.DnSkinLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ur" android:layout_width="match_parent" android:layout_height="30.0dp" android:layout_marginBottom="@dimen/m6">
+        <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:textSize="@dimen/m_" android:textColor="@color/dnskin_nst_title_l" android:ellipsize="middle" android:gravity="left|center" android:id="@id/ati" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_marginLeft="20.0dp" android:layout_marginRight="20.0dp" android:singleLine="true" android:layout_weight="1.0" />
+    </com.dudu.autoui.ui.dnview.view.DnSkinLinearLayout>
+    <com.dudu.autoui.common.view.EmptyRecyclerView android:id="@id/a31" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/ur" />
+    <include android:id="@id/je" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/ur" layout="@layout/qg" />
+</RelativeLayout>

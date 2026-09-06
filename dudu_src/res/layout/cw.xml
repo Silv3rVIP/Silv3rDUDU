@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dudu.autoui.ui.dnview.view.DnSkinFrameLayout android:background="#33000000" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:id="@id/ia" style="@style/fo">
+        <com.dudu.autoui.ui.dnview.view.DnSkinFrameLayout android:padding="0.0dp" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/fm">
+            <LinearLayout android:orientation="vertical" android:padding="20.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginRight="300.0dp">
+                <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:textSize="20.0dp" android:textColor="@color/dnskin_nst_text1_l" android:gravity="center" android:id="@id/ama" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/akx" />
+                <ScrollView android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_marginTop="10.0dp" android:layout_weight="1.0">
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <com.dudu.autoui.ui.activity.nnset.setview.dialog.NDSetSingleSelectView android:id="@id/a_w" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7" app:xy="@string/aky" />
+                        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:orientation="vertical" android:id="@id/b2v" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <com.dudu.autoui.ui.activity.nnset.setview.dialog.NDSetSingleSelectView android:id="@id/a_o" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7" app:xy="@string/beu" />
+                                <com.dudu.autoui.ui.activity.nnset.setview.dialog.NDSetButton2Check2View android:id="@id/a_n" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7" app:xy="@string/if" />
+                                <com.dudu.autoui.ui.activity.nnset.setview.dialog.NDSetButton2Check2View android:id="@id/a_m" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7" app:xy="@string/a1b" />
+                                <com.dudu.autoui.ui.activity.nnset.setview.dialog.NDSetNumView android:id="@id/a_p" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7" app:xy="@string/cky" />
+                                <LinearLayout android:orientation="horizontal" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/m7" android:layout_marginBottom="@dimen/m7">
+                                    <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:ellipsize="end" android:gravity="left|center" android:id="@id/anp" android:background="@drawable/dnskin_dialog_mark1_l" android:text="@string/a85" style="@style/fs" />
+                                    <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:ellipsize="end" android:gravity="left|center" android:id="@id/anr" android:background="@drawable/dnskin_dialog_mark1_l" android:text="@string/a7_" style="@style/fs" />
+                                    <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:ellipsize="end" android:gravity="left|center" android:id="@id/ano" android:background="@drawable/dnskin_dialog_mark1_l" android:text="@string/c6g" style="@style/fs" />
+                                    <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:ellipsize="end" android:gravity="left|center" android:id="@id/anq" android:background="@drawable/dnskin_dialog_mark1_l" android:text="@string/a84" style="@style/fs" />
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout android:orientation="vertical" android:id="@id/b2y" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <com.dudu.autoui.ui.activity.nnset.setview.dialog.NDSetSingleSelectView android:id="@id/a58" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7" app:xy="@string/beu" />
+                                <com.dudu.autoui.ui.activity.nnset.setview.dialog.NDSetSingleSelectView android:id="@id/a_u" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7" app:xy="@string/bbf" />
+                                <com.dudu.autoui.ui.activity.nnset.setview.dialog.NDSetButton2Check2View android:id="@id/a_s" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7" app:xy="@string/a1b" />
+                                <com.dudu.autoui.ui.activity.nnset.setview.dialog.NDSetNumView android:id="@id/a59" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7" app:xy="@string/cky" />
+                                <LinearLayout android:orientation="horizontal" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/m7" android:layout_marginBottom="@dimen/m7">
+                                    <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:ellipsize="end" android:gravity="left|center" android:id="@id/ans" android:background="@drawable/dnskin_dialog2_mark1_l" android:text="@string/a85" style="@style/fs" />
+                                    <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:ellipsize="end" android:gravity="left|center" android:id="@id/anu" android:background="@drawable/dnskin_dialog2_mark2_l" android:text="@string/a7_" style="@style/fs" />
+                                    <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:ellipsize="end" android:gravity="left|center" android:id="@id/ant" android:background="@drawable/dnskin_dialog2_mark3_l" android:text="@string/a84" style="@style/fs" />
+                                    <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:ellipsize="end" android:gravity="left|center" android:id="@id/anv" android:background="@drawable/dnskin_dialog2_mark4_l" android:text="@string/aw" style="@style/fs" />
+                                    <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:ellipsize="end" android:gravity="left|center" android:id="@id/anw" android:background="@drawable/dnskin_dialog2_mark5_l" android:text="@string/av" style="@style/fs" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </FrameLayout>
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            <com.dudu.autoui.ui.dnview.view.DnSkinFrameLayout android:layout_gravity="right|center" android:orientation="vertical" android:background="@color/dnskin_nsd_left_bg_l" android:padding="20.0dp" android:layout_width="300.0dp" android:layout_height="match_parent">
+                <com.dudu.autoui.ui.dnview.view.DnSkinImageView android:id="@id/tu" android:layout_width="260.0dp" android:layout_height="159.0dp" android:layout_marginTop="20.0dp" android:src="@drawable/dnskin_set_lp_2d_nd_np_l" />
+                <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:layout_gravity="bottom" android:id="@id/a15" android:layout_width="match_parent" android:text="@string/a09" style="@style/fq" />
+            </com.dudu.autoui.ui.dnview.view.DnSkinFrameLayout>
+        </com.dudu.autoui.ui.dnview.view.DnSkinFrameLayout>
+    </androidx.cardview.widget.CardView>
+</com.dudu.autoui.ui.dnview.view.DnSkinFrameLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/xm" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+    <LinearLayout android:gravity="right" android:orientation="horizontal" android:id="@id/azh" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/g2">
+        <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:id="@id/dy" android:visibility="gone" android:text="@string/a08" style="@style/fu" />
+        <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:id="@id/f9" android:visibility="gone" android:text="@string/v3" style="@style/fv" />
+    </LinearLayout>
+</LinearLayout>

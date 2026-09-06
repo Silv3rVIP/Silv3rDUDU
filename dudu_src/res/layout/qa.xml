@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center" android:layout_width="160.0dp" android:layout_height="160.0dp">
+        <com.wow.libs.duduSkin.view.SkinImageView android:id="@id/p4" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/theme_common_speed_point" android:scaleType="fitXY" />
+        <com.wow.libs.duduSkin.view.SkinImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/theme_common_speed_bg" android:scaleType="fitXY" />
+        <RelativeLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="50.0dp" android:textColor="@color/theme_common_speed_speed" android:gravity="center" android:id="@id/avh" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="0" android:includeFontPadding="false" android:layout_centerInParent="true" />
+            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="10.0dp" android:textColor="@color/theme_common_speed_speed" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-10.0dp" android:text="km/h" android:includeFontPadding="false" android:layout_below="@id/avh" />
+        </RelativeLayout>
+    </FrameLayout>
+</FrameLayout>

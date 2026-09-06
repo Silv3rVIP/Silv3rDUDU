@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:gravity="center" android:orientation="vertical" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/b9v" android:layout_width="match_parent" android:layout_height="0.0dp" android:baselineAligned="false" app:p9="@id/b9w" app:q1="a1m" app:q4="1.0">
+        <com.dudu.autoui.ui.activity.launcher.minimalism.item.car.byd.BydMinimCarControlCellMaxView android:id="@id/az6" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_margin="15.0dp" android:layout_weight="1.0" />
+        <com.dudu.autoui.ui.activity.launcher.minimalism.item.car.byd.BydMinimCarControlCellMaxView android:id="@id/az8" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_margin="15.0dp" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/b9w" android:layout_width="match_parent" android:layout_height="0.0dp" android:baselineAligned="false" app:p9="@id/b9x" app:q0="@id/b9v" app:q4="1.0">
+        <com.dudu.autoui.ui.activity.launcher.minimalism.item.car.byd.BydMinimCarControlCellMaxView android:id="@id/az9" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_margin="15.0dp" android:layout_weight="1.0" />
+        <com.dudu.autoui.ui.activity.launcher.minimalism.item.car.byd.BydMinimCarControlCellMaxView android:id="@id/az_" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_margin="15.0dp" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/b9x" android:layout_width="match_parent" android:layout_height="0.0dp" android:baselineAligned="false" app:p9="@id/b9y" app:q0="@id/b9w" app:q4="1.0">
+        <com.dudu.autoui.ui.activity.launcher.minimalism.item.car.byd.BydMinimCarControlCellMaxView android:id="@id/aza" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_margin="15.0dp" android:layout_weight="1.0" />
+        <com.dudu.autoui.ui.activity.launcher.minimalism.item.car.byd.BydMinimCarControlCellMaxView android:id="@id/azb" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_margin="15.0dp" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/b9y" android:background="@drawable/theme_minim_item_car_right_item" android:layout_width="match_parent" android:layout_height="0.0dp" android:baselineAligned="false" app:p8="@id/b9z" app:q0="@id/b9x" app:q4="1.0">
+        <com.dudu.autoui.ui.activity.launcher.minimalism.item.car.byd.BydMinimCarControlCellMaxView android:id="@id/azc" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_margin="15.0dp" android:layout_weight="1.0" />
+        <com.dudu.autoui.ui.activity.launcher.minimalism.item.car.byd.BydMinimCarControlCellMaxView android:id="@id/azd" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_margin="15.0dp" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/b9z" android:background="@drawable/theme_minim_item_car_right_item" android:layout_width="match_parent" android:layout_height="0.0dp" android:baselineAligned="false" app:p8="a1m" app:q0="@id/b9y" app:q4="1.0">
+        <com.dudu.autoui.ui.activity.launcher.minimalism.item.car.byd.BydMinimCarControlCellMaxView android:id="@id/aze" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_margin="15.0dp" android:layout_weight="1.0" />
+        <com.dudu.autoui.ui.activity.launcher.minimalism.item.car.byd.BydMinimCarControlCellMaxView android:id="@id/az7" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_margin="15.0dp" android:layout_weight="1.0" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

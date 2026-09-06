@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/g0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dudu.autoui.common.view.color.XColorPicker android:id="@id/h7" android:layout_width="200.0dp" android:layout_height="200.0dp" />
+    <com.dudu.autoui.ui.dnview.view.DnSkinEditText android:textColor="@color/dnskin_dialog_text1_l" android:textColorHint="@color/dnskin_dialog_text3_l" android:gravity="center" android:id="@id/jm" android:background="#00000000" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:digits="0123456789abcdefABCDEF" android:textCursorDrawable="@drawable/b3" />
+    <View android:background="@color/dnskin_dialog_edit_bottom" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginBottom="@dimen/mr" />
+    <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/g2">
+        <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:id="@id/dy" android:text="@string/a08" style="@style/fy" />
+        <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:id="@id/auu" android:text="@string/v3" style="@style/fz" />
+    </LinearLayout>
+</LinearLayout>

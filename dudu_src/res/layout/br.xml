@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:layout_gravity="center|bottom" android:id="@id/ia" android:layout_marginBottom="5.0dp" android:alpha="0.95" app:d2="4.0dp" style="@style/fo">
+        <com.dudu.autoui.ui.dnview.view.DnSkinFrameLayout android:id="@id/id" style="@style/fm">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.dudu.autoui.ui.activity.nnset.setview.dialog.NDSetNum2View android:id="@id/a_c" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7" app:xg="@drawable/dnskin_nns_bjsz_l" app:xp="%" app:xq="80" app:xr="0" app:xs="true" app:xy="@string/beo" />
+                <com.dudu.autoui.ui.activity.nnset.setview.dialog.NDSetNum2View android:id="@id/acc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7" app:xg="@drawable/dnskin_nns_bjsz_l" app:xp="%" app:xq="80" app:xr="0" app:xs="true" app:xy="@string/c8i" />
+                <com.dudu.autoui.ui.activity.nnset.setview.dialog.NDSetNum2View android:id="@id/abl" android:layout_width="match_parent" android:layout_height="wrap_content" app:xg="@drawable/dnskin_nns_bjsz_l" app:xp="%" app:xq="80" app:xr="0" app:xs="true" app:xy="@string/bep" />
+            </LinearLayout>
+        </com.dudu.autoui.ui.dnview.view.DnSkinFrameLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

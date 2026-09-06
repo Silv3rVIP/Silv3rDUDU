@@ -1,12 +1,9 @@
-# Build and decompiled files
-dudu_src/
+# Temporary build artifacts
+dudu_src/build/
 /tmp/
 *.idsig
 *.apk copy
 dudu_mod_unsigned*
-dudulauncher.apk
-dudulauncher_passat_mod.apk
-dudulauncher_vw_logo_mod.apk
 
 # OS files
 .DS_Store

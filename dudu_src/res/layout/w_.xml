@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.wow.libs.duduSkin.view.SkinImageView android:id="@id/ayi" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/theme_widget_btphone_bg" android:scaleType="centerCrop" />
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:layout_gravity="center" android:id="@id/ayk" android:layout_width="540.0dp" android:layout_height="335.0dp">
+            <LinearLayout android:layout_gravity="left" android:orientation="vertical" android:layout_width="242.0dp" android:layout_height="match_parent">
+                <FrameLayout android:layout_width="match_parent" android:layout_height="36.0dp">
+                    <com.wow.libs.duduSkin.view.SkinTextView android:textSize="20.0dp" android:textColor="@color/theme_widget_btphone_dial_input" android:textColorHint="@color/theme_widget_btphone_dial_input_hit" android:gravity="center" android:id="@id/at8" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginRight="36.0dp" android:hint="@string/ag7" android:maxLength="15" />
+                    <com.wow.libs.duduSkin.view.SkinImageView android:layout_gravity="right" android:id="@id/ph" android:padding="6.0dp" android:layout_width="36.0dp" android:layout_height="36.0dp" android:src="@drawable/theme_widget_btphone_dial_del_num" />
+                </FrameLayout>
+                <View android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="6.0" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="46.0dp">
+                    <com.wow.libs.duduSkin.view.SkinLinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/vp" android:background="@drawable/theme_widget_btphone_dial_num" android:layout_width="74.0dp" android:layout_height="match_parent">
+                        <com.wow.libs.duduSkin.view.SkinTextView android:textSize="20.0dp" android:textColor="@color/theme_widget_btphone_dial_num" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="1" />
+                        <com.wow.libs.duduSkin.view.SkinTextView android:textSize="10.0dp" android:textColor="@color/theme_widget_btphone_dial_abc" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text=" " />
+                    </com.wow.libs.duduSkin.view.SkinLinearLayout>
+                    <com.wow.libs.duduSkin.view.SkinLinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/vq" android:background="@drawable/theme_widget_btphone_dial_num" android:layout_width="74.0dp" android:layout_height="match_parent" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp">
+                        <com.wow.libs.duduSkin.view.SkinTextView android:textSize="20.0dp" android:textColor="@color/theme_widget_btphone_dial_num" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="2" android:includeFontPadding="false" />
+                        <com.wow.libs.duduSkin.view.SkinTextView android:textSize="10.0dp" android:textColor="@color/theme_widget_btphone_dial_abc" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="ABC" android:includeFontPadding="false" />
+                    </com.wow.libs.duduSkin.view.SkinLinearLayout>
+                    <com.wow.libs.duduSkin.view.SkinLinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/vr" android:background="@drawable/theme_widget_btphone_dial_num" android:layout_width="74.0dp" android:layout_height="match_parent">
+                        <com.wow.libs.duduSkin.view.SkinTextView android:textSize="20.0dp" android:textColor="@color/theme_widget_btphone_dial_num" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="3" android:includeFontPadding="false" />
+                        <com.wow.libs.duduSkin.view.SkinTextView android:textSize="10.0dp" android:textColor="@color/theme_widget_btphone_dial_abc" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="DEF" android:includeFontPadding="false" />
+                    </com.wow.libs.duduSkin.view.SkinLinearLayout>
+                </LinearLayout>
+                <View android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="46.0dp" android:layout_marginTop="8.0dp">
+                    <com.wow.libs.duduSkin.view.SkinLinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/vs" android:background="@drawable/theme_widget_btphone_dial_num" android:layout_width="74.0dp" android:layout_height="match_parent">
+                        <com.wow.libs.duduSkin.view.SkinTextView android:textSize="20.0dp" android:textColor="@color/theme_widget_btphone_dial_num" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="4" />
+                        <com.wow.libs.duduSkin.view.SkinTextView android:textSize="10.0dp" android:textColor="@color/theme_widget_btphone_dial_abc" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="GHI" />
+                    </com.wow.libs.duduSkin.view.SkinLinearLayout>
+                    <com.wow.libs.duduSkin.view.SkinLinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/vt" android:background="@drawable/theme_widget_btphone_dial_num" android:layout_width="74.0dp" android:layout_height="match_parent" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp">
+                        <com.wow.libs.duduSkin.view.SkinTextView android:textSize="20.0dp" android:textColor="@color/theme_widget_btphone_dial_num" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="5" android:includeFontPadding="false" />
+                        <com.wow.libs.duduSkin.view.SkinTextView android:textSize="10.0dp" android:textColor="@color/theme_widget_btphone_dial_abc" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="JKL" android:includeFontPadding="false" />
+                    </com.wow.libs.duduSkin.view.SkinLinearLayout>
+                    <com.wow.libs.duduSkin.view.SkinLinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/vu" android:background="@drawable/theme_widget_btphone_dial_num" android:layout_width="74.0dp" android:layout_height="match_parent">
+                        <com.wow.libs.duduSkin.view.SkinTextView android:textSize="20.0dp" android:textColor="@color/theme_widget_btphone_dial_num" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="6" android:includeFontPadding="false" />
+                        <com.wow.libs.duduSkin.view.SkinTextView android:textSize="10.0dp" android:textColor="@color/theme_widget_btphone_dial_abc" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="MNO" android:includeFontPadding="false" />
+                    </com.wow.libs.duduSkin.view.SkinLinearLayout>
+                </LinearLayout>
+                <View android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="46.0dp" android:layout_marginTop="8.0dp">
+                    <com.wow.libs.duduSkin.view.SkinLinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/vv" android:background="@drawable/theme_widget_btphone_dial_num" android:layout_width="74.0dp" android:layout_height="match_parent">
+                        <com.wow.libs.duduSkin.view.SkinTextView android:textSize="20.0dp" android:textColor="@color/theme_widget_btphone_dial_num" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="7" />
+                        <com.wow.libs.duduSkin.view.SkinTextView android:textSize="10.0dp" android:textColor="@color/theme_widget_btphone_dial_abc" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="PQRS" />
+                    </com.wow.libs.duduSkin.view.SkinLinearLayout>
+                    <com.wow.libs.duduSkin.view.SkinLinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/vw" android:background="@drawable/theme_widget_btphone_dial_num" android:layout_width="74.0dp" android:layout_height="match_parent" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp">
+                        <com.wow.libs.duduSkin.view.SkinTextView android:textSize="20.0dp" android:textColor="@color/theme_widget_btphone_dial_num" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="8" android:includeFontPadding="false" />
+                        <com.wow.libs.duduSkin.view.SkinTextView android:textSize="10.0dp" android:textColor="@color/theme_widget_btphone_dial_abc" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="TUV" android:includeFontPadding="false" />
+                    </com.wow.libs.duduSkin.view.SkinLinearLayout>
+                    <com.wow.libs.duduSkin.view.SkinLinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/vx" android:background="@drawable/theme_widget_btphone_dial_num" android:layout_width="74.0dp" android:layout_height="match_parent">
+                        <com.wow.libs.duduSkin.view.SkinTextView android:textSize="20.0dp" android:textColor="@color/theme_widget_btphone_dial_num" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="9" android:includeFontPadding="false" />
+                        <com.wow.libs.duduSkin.view.SkinTextView android:textSize="10.0dp" android:textColor="@color/theme_widget_btphone_dial_abc" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="WXYZ" android:includeFontPadding="false" />
+                    </com.wow.libs.duduSkin.view.SkinLinearLayout>
+                </LinearLayout>
+                <View android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="46.0dp" android:layout_marginTop="8.0dp">
+                    <com.wow.libs.duduSkin.view.SkinLinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/x6" android:background="@drawable/theme_widget_btphone_dial_num" android:layout_width="74.0dp" android:layout_height="match_parent">
+                        <com.wow.libs.duduSkin.view.SkinTextView android:textSize="20.0dp" android:textColor="@color/theme_widget_btphone_dial_num" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="*" android:includeFontPadding="false" />
+                    </com.wow.libs.duduSkin.view.SkinLinearLayout>
+                    <com.wow.libs.duduSkin.view.SkinLinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/vo" android:background="@drawable/theme_widget_btphone_dial_num" android:layout_width="74.0dp" android:layout_height="match_parent" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp">
+                        <com.wow.libs.duduSkin.view.SkinTextView android:textSize="20.0dp" android:textColor="@color/theme_widget_btphone_dial_num" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="0" android:includeFontPadding="false" />
+                        <com.wow.libs.duduSkin.view.SkinTextView android:textSize="10.0dp" android:textColor="@color/theme_widget_btphone_dial_abc" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="+" android:includeFontPadding="false" />
+                    </com.wow.libs.duduSkin.view.SkinLinearLayout>
+                    <com.wow.libs.duduSkin.view.SkinLinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/wq" android:background="@drawable/theme_widget_btphone_dial_num" android:layout_width="74.0dp" android:layout_height="match_parent">
+                        <com.wow.libs.duduSkin.view.SkinTextView android:textSize="20.0dp" android:textColor="@color/theme_widget_btphone_dial_num" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="#" android:includeFontPadding="false" />
+                    </com.wow.libs.duduSkin.view.SkinLinearLayout>
+                </LinearLayout>
+                <View android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="4.0" />
+                <com.wow.libs.duduSkin.view.SkinImageView android:id="@id/pi" android:background="@drawable/theme_widget_btphone_dial_call_bg" android:padding="7.0dp" android:layout_width="match_parent" android:layout_height="38.0dp" android:layout_marginLeft="5.0dp" android:layout_marginRight="5.0dp" android:src="@drawable/theme_widget_btphone_dial_call" />
+            </LinearLayout>
+            <FrameLayout android:layout_gravity="right" android:layout_width="260.0dp" android:layout_height="match_parent">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="26.0dp" android:layout_marginLeft="30.0dp" android:layout_marginRight="30.0dp">
+                    <com.wow.libs.duduSkin.view.SkinTextView android:textSize="14.0dp" android:gravity="center" android:id="@id/arx" android:background="@drawable/theme_widget_btphone_lxr_top_bg" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="@string/a6m" android:layout_weight="1.0" style="@style/vz" />
+                    <com.wow.libs.duduSkin.view.SkinTextView android:textSize="14.0dp" android:gravity="center" android:id="@id/arz" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:text="@string/bhe" android:layout_weight="1.0" style="@style/vy" />
+                    <com.wow.libs.duduSkin.view.SkinTextView android:textSize="14.0dp" android:gravity="center" android:id="@id/ary" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="@string/v8" android:layout_weight="1.0" style="@style/vy" />
+                </LinearLayout>
+                <com.dudu.autoui.common.view.EmptyRecyclerView android:id="@id/a45" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="36.0dp" android:layout_marginRight="10.0dp" />
+                <com.dudu.autoui.common.view.SkinSideBar android:layout_gravity="right" android:id="@id/ah0" android:visibility="gone" android:layout_width="30.0dp" android:layout_height="match_parent" android:layout_marginTop="60.0dp" />
+                <com.wow.libs.duduSkin.view.SkinTextView android:textSize="50.0dp" android:textColor="@color/theme_widget_btphone_lxr_rv_dialog" android:gravity="center" android:layout_gravity="center" android:id="@id/xo" android:background="@drawable/theme_widget_btphone_code_dialog_bg" android:visibility="gone" android:layout_width="80.0dp" android:layout_height="80.0dp" android:layout_marginTop="36.0dp" android:includeFontPadding="false" />
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/b3u" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="26.0dp">
+                    <com.wow.libs.duduSkin.view.SkinImageView android:id="@id/sf" android:layout_width="160.0dp" android:layout_height="165.0dp" android:src="@drawable/theme_widget_btphone_lxr_nodata_icon" />
+                    <com.wow.libs.duduSkin.view.SkinTextView android:textSize="18.0dp" android:textColor="@color/theme_widget_btphone_lxr_nodata_msg" android:gravity="center" android:id="@id/aus" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="@string/b22" />
+                    <com.wow.libs.duduSkin.view.SkinTextView android:textSize="16.0dp" android:textColor="@color/theme_widget_btphone_lxr_syn" android:gravity="center" android:id="@id/aqv" android:background="@drawable/theme_widget_btphone_lxr_syn_bg" android:layout_width="140.0dp" android:layout_height="28.0dp" android:layout_marginTop="16.0dp" android:text="@string/b6g" />
+                </LinearLayout>
+            </FrameLayout>
+            <com.wow.libs.duduSkin.view.SkinImageView android:id="@id/b21" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/theme_widget_btphone_front" android:scaleType="centerCrop" />
+        </FrameLayout>
+        <com.wow.libs.duduSkin.view.SkinImageView android:layout_gravity="right" android:id="@id/ru" android:paddingLeft="5.0dp" android:paddingRight="5.0dp" android:layout_width="50.0dp" android:layout_height="40.0dp" android:layout_margin="10.0dp" android:src="@drawable/theme_widget_nav_top_open" />
+    </FrameLayout>
+</FrameLayout>

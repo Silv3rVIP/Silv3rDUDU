@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.wow.libs.duduSkin.view.SkinImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/theme_car3d_load_bg" android:scaleType="fitXY" />
+    <com.wow.libs.duduSkin.view.SkinImageView android:layout_gravity="center" android:layout_width="200.0dp" android:layout_height="246.0dp" android:src="@drawable/theme_car3d_load_icon" android:scaleType="fitXY" />
+</FrameLayout>

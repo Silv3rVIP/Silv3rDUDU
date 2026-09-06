@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dudu.autoui.ui.activity.launcher.view.ItemFrameLayout android:gravity="center" android:background="@drawable/theme_item_btphone_bg" android:layout_width="321.0dp" android:layout_height="96.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.wow.libs.duduSkin.view.SkinImageView android:layout_gravity="center_vertical" android:id="@id/su" android:layout_width="85.0dp" android:layout_height="85.0dp" android:layout_marginLeft="13.0dp" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="139.0dp" android:layout_marginRight="17.0dp">
+        <com.wow.libs.duduSkin.view.SkinTextView android:textSize="21.0dp" android:textColor="@color/theme_item_btphone_name" android:gravity="left|center" android:id="@id/atj" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" />
+        <com.wow.libs.duduSkin.view.SkinTextView android:textSize="16.0dp" android:textColor="@color/theme_item_btphone_state" android:gravity="left|center" android:id="@id/avm" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="9.0dp" android:singleLine="true" android:includeFontPadding="false" />
+    </LinearLayout>
+    <com.wow.libs.duduSkin.view.SkinView android:background="@drawable/theme_item_btphone_front" android:layout_width="match_parent" android:layout_height="match_parent" />
+</com.dudu.autoui.ui.activity.launcher.view.ItemFrameLayout>

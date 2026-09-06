@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.wow.libs.duduSkin.view.SkinLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/b9v" android:background="@drawable/theme_un_car_item" android:paddingLeft="20.0dp" android:layout_width="match_parent" android:layout_height="0.0dp" android:baselineAligned="false" app:p9="@id/b9w" app:q1="a1m" app:q4="1.0">
+            <LinearLayout android:gravity="left|center" android:orientation="vertical" android:id="@id/g8" android:paddingLeft="30.0dp" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+                <com.wow.libs.duduSkin.view.SkinTextView android:textSize="20.0dp" android:textColor="@color/theme_un_car_name" android:id="@id/auc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:includeFontPadding="false" />
+                <com.wow.libs.duduSkin.view.SkinTextView android:textSize="38.0dp" android:textColor="@color/theme_un_car_val" android:gravity="center_vertical" android:id="@id/auk" android:layout_width="wrap_content" android:layout_height="46.0dp" android:lines="1" android:includeFontPadding="false" />
+                <com.wow.libs.duduSkin.view.SkinTextView android:textSize="20.0dp" android:textColor="@color/theme_un_car_dw" android:id="@id/au5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:includeFontPadding="false" />
+            </LinearLayout>
+            <LinearLayout android:gravity="left|center" android:orientation="vertical" android:id="@id/g9" android:paddingLeft="30.0dp" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+                <com.wow.libs.duduSkin.view.SkinTextView android:textSize="20.0dp" android:textColor="@color/theme_un_car_name" android:id="@id/aud" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:includeFontPadding="false" />
+                <com.wow.libs.duduSkin.view.SkinTextView android:textSize="38.0dp" android:textColor="@color/theme_un_car_val" android:gravity="center_vertical" android:id="@id/aul" android:layout_width="wrap_content" android:layout_height="46.0dp" android:lines="1" android:includeFontPadding="false" />
+                <com.wow.libs.duduSkin.view.SkinTextView android:textSize="20.0dp" android:textColor="@color/theme_un_car_dw" android:id="@id/au6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:includeFontPadding="false" />
+            </LinearLayout>
+        </com.wow.libs.duduSkin.view.SkinLinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/b9w" android:paddingLeft="20.0dp" android:layout_width="match_parent" android:layout_height="0.0dp" android:baselineAligned="false" app:p8="a1m" app:q0="@id/b9v" app:q4="1.0">
+            <LinearLayout android:gravity="left|center" android:orientation="vertical" android:id="@id/g_" android:paddingLeft="30.0dp" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+                <com.wow.libs.duduSkin.view.SkinTextView android:textSize="20.0dp" android:textColor="@color/theme_un_car_name" android:id="@id/aue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:includeFontPadding="false" />
+                <com.wow.libs.duduSkin.view.SkinTextView android:textSize="38.0dp" android:textColor="@color/theme_un_car_val" android:gravity="center_vertical" android:id="@id/aum" android:layout_width="wrap_content" android:layout_height="46.0dp" android:lines="1" android:includeFontPadding="false" />
+                <com.wow.libs.duduSkin.view.SkinTextView android:textSize="20.0dp" android:textColor="@color/theme_un_car_dw" android:id="@id/au7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:includeFontPadding="false" />
+            </LinearLayout>
+            <LinearLayout android:gravity="left|center" android:orientation="vertical" android:id="@id/ga" android:paddingLeft="30.0dp" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+                <com.wow.libs.duduSkin.view.SkinTextView android:textSize="20.0dp" android:textColor="@color/theme_un_car_name" android:id="@id/auf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:includeFontPadding="false" />
+                <com.wow.libs.duduSkin.view.SkinTextView android:textSize="38.0dp" android:textColor="@color/theme_un_car_val" android:gravity="center_vertical" android:id="@id/aun" android:layout_width="wrap_content" android:layout_height="46.0dp" android:lines="1" android:includeFontPadding="false" />
+                <com.wow.libs.duduSkin.view.SkinTextView android:textSize="20.0dp" android:textColor="@color/theme_un_car_dw" android:id="@id/au8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:includeFontPadding="false" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.wow.libs.duduSkin.view.SkinView android:background="@drawable/theme_un_car_front" android:layout_width="match_parent" android:layout_height="match_parent" />
+</FrameLayout>

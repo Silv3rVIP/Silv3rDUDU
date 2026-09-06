@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="x5">CalendarView</string>
+    <string name="a8_">五</string>
+    <string name="awc">一</string>
+    <string name="bbm">健身运动</string>
+    <string name="bbn">日历</string>
+    <string name="bbo">通话记录</string>
+    <string name="bbp">相机</string>
+    <string name="bbq">手机账号/通讯录</string>
+    <string name="bbr">位置信息</string>
+    <string name="bbs">麦克风</string>
+    <string name="bbt">电话</string>
+    <string name="bbu">身体传感器</string>
+    <string name="bbv">短信</string>
+    <string name="bbw">存储空间</string>
+    <string name="bbx">正在请求授权…</string>
+    <string name="bla">六</string>
+    <string name="c0y">日</string>
+    <string name="c6p">四</string>
+    <string name="c9m">二</string>
+    <string name="ch3">三</string>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="sm" parent="@style/ey">
+        <item name="a4i">gc</item>
+        <item name="a4v">kd</item>
+    </style>
+</resources>

@@ -1,0 +1,17 @@
+version: 3.0.3
+apkFileName: dudulauncher.apk
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: 21
+  targetSdkVersion: 28
+versionInfo:
+  versionCode: 1015031
+  versionName: As1.015031
+resourcesInfo:
+  packageId: 127
+doNotCompress:
+- mp3
+- webp
+- assets/.jgapp

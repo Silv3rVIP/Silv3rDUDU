@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/h0">
+        <LinearLayout android:orientation="vertical" android:id="@id/b1l" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:text="@string/a4b" style="@style/h1" />
+            <com.dudu.autoui.ui.activity.nset.setview.NSetItemView android:id="@id/a92" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/mr" app:yd="@string/a4d" app:ye="axk" />
+            <com.dudu.autoui.ui.activity.nset.setview.NSetItemView android:id="@id/a94" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/mr" app:yd="@string/a4c" app:ye="axd" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/b9n" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:text="@string/fm" style="@style/h1" />
+            <com.dudu.autoui.ui.activity.nset.setview.NSetItemView android:id="@id/a__" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/mr" app:yd="@string/fn" app:ye="axk" />
+            <com.dudu.autoui.ui.activity.nset.setview.NSetItemView android:id="@id/a_b" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/mr" app:yd="@string/av4" app:ye="axk" />
+            <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:text="@string/c70" style="@style/h1" />
+            <com.dudu.autoui.ui.activity.nset.setview.NSetItemView android:id="@id/aet" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/mr" app:yc="@string/c7u" app:yd="@string/c7t" app:ye="axk" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/b8a" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:text="@string/c8m" style="@style/h1" />
+            <com.dudu.autoui.ui.activity.nset.setview.NSetItemView android:id="@id/aey" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/mr" app:yc="@string/c8o" app:yd="@string/c8n" app:ye="axl" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/ayk" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:text="@string/j5" style="@style/h1" />
+            <com.dudu.autoui.ui.activity.nset.setview.NSetItemView android:id="@id/a7y" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/mr" app:yd="@string/j5" app:ye="axm" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/b9o" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:text="@string/ch2" style="@style/h1" />
+            <com.dudu.autoui.ui.activity.nset.setview.NSetItemView android:id="@id/agc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/mr" app:yd="@string/cgz" app:ye="axk" />
+            <com.dudu.autoui.ui.activity.nset.setview.NSetItemView android:id="@id/agd" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/mr" app:yd="@string/cct" app:ye="axd" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

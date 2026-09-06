@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dudu.autoui.common.view.CircleFrameLayout android:gravity="center" android:orientation="vertical" android:id="@id/x0" android:layout_width="220.0dp" android:layout_height="145.0dp" app:a0k="@dimen/bq">
+        <com.dudu.autoui.ui.dnview.view.DnSkinCustomImageView android:id="@id/a20" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" app:xd="@color/dnskin_dialog_image_mask_l" />
+    </com.dudu.autoui.common.view.CircleFrameLayout>
+</FrameLayout>

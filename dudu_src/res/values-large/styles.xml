@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="bh" parent="@style/bf" />
+    <style name="bo" parent="@style/bm" />
+    <style name="bx" parent="@style/bv" />
+    <style name="c7" parent="@style/c5" />
+</resources>

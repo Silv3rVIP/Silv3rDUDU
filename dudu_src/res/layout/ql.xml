@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/b_6" android:background="@drawable/theme_item_byd_info_warn" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:paddingTop="9.0dp" android:paddingBottom="9.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="13.0dp" android:textColor="@color/theme_item_byd_car_info_value" android:id="@id/b9a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="9.0dp" android:textColor="@color/theme_item_byd_car_info_value" android:id="@id/axv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="/-" android:lines="1" />
+        </LinearLayout>
+        <com.wow.libs.duduSkin.view.SkinTextView android:textSize="12.0dp" android:textColor="@color/theme_item_byd_car_info_title" android:id="@id/ama" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/aib" android:lines="1" />
+    </LinearLayout>
+</FrameLayout>

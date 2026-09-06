@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="match_parent" app:d0="@color/gg" app:d1="200.0dp" app:d2="4.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:textSize="20.0dp" android:textColor="@color/dnskin_dialog_text1_l" android:gravity="center" android:id="@id/zm" android:background="@color/dnskin_dialog_bg_l" android:paddingTop="8.0dp" android:paddingBottom="8.0dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxWidth="1000.0dp" android:paddingStart="25.0dp" android:paddingEnd="25.0dp" />
+</androidx.cardview.widget.CardView>

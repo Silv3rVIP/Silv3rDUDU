@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dudu.autoui.common.view.ScrollViewEx2 android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/a3j" android:paddingTop="@dimen/mb" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/gw" />
+</com.dudu.autoui.common.view.ScrollViewEx2>

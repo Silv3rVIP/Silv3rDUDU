@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.wow.libs.duduSkin.view.SkinImageView android:id="@id/ayi" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/theme_widget_time_bg" android:scaleType="centerCrop" />
+    <FrameLayout android:paddingTop="6.0dp" android:layout_width="match_parent" android:layout_height="46.0dp">
+        <com.wow.libs.duduSkin.view.SkinTextView android:textSize="18.0dp" android:textColor="@color/theme_widget_time_title" android:gravity="center_vertical" android:id="@id/asf" android:layout_width="wrap_content" android:layout_height="40.0dp" android:layout_marginLeft="40.0dp" />
+        <com.wow.libs.duduSkin.view.SkinTextView android:textSize="14.0dp" android:textColor="@color/theme_widget_time_back" android:gravity="center_vertical" android:layout_gravity="right" android:id="@id/aq8" android:layout_width="wrap_content" android:layout_height="40.0dp" android:layout_marginRight="40.0dp" android:text="@string/hm" />
+    </FrameLayout>
+    <com.haibin.calendarview.CalendarLayout android:orientation="vertical" android:id="@id/fu" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="46.0dp" android:layout_marginBottom="10.0dp" app:ct="@id/ha" app:cz="d7" app:hl="jq">
+        <com.dudu.autoui.ui.activity.launcher.widget.time.SkinCalendarView android:id="@id/ft" android:layout_width="match_parent" android:layout_height="match_parent" app:cv="true" app:cw="5.0dp" app:gw="@color/theme_widget_time_cur_lunar" app:gx="@color/theme_widget_time_cur_day" app:gy="@color/theme_widget_time_cur_lunar" app:gz="@color/theme_widget_time_cur_day" app:hh="16.0dp" app:su="12.0dp" app:ty="2100" app:vd="1949" app:vx="com.dudu.autoui.ui.activity.launcher.widget.time.MyMonthViewEx" app:w0="z_" app:yp="@color/theme_widget_time_other_day" app:yq="@color/theme_widget_time_other_day" app:a1b="@color/theme_widget_time_cur_lunar" app:a1c="@color/theme_widget_time_cur_day" app:a1d="@color/ai" app:a8w="@color/gg" app:a8x="36.0dp" app:a90="16.0dp" app:a91="ai_" app:a92="@color/theme_widget_time_week" app:a93="16.0dp" app:a94="com.dudu.autoui.ui.activity.launcher.widget.time.MyWeekViewEx" app:a9l="com.dudu.autoui.ui.activity.launcher.widget.time.MyYearViewEx" app:a9m="@color/gg" app:a9o="#333333" app:a9p="8.0dp" app:a9v="@color/theme_widget_time_year_month" app:a9w="14.0dp" app:a_0="#f17706" app:a_3="10.0dp" app:a_4="#666666" app:a_5="8.0dp" />
+        <LinearLayout android:id="@id/ha" android:paddingLeft="20.0dp" android:paddingTop="5.0dp" android:paddingRight="20.0dp" android:layout_width="match_parent" android:layout_height="100.0dp">
+            <com.wow.libs.duduSkin.view.SkinFrameLayout android:background="@drawable/theme_widget_time_rili_day_panel_bg" android:layout_width="120.0dp" android:layout_height="match_parent" android:layout_marginRight="5.0dp">
+                <LinearLayout android:layout_gravity="center|top" android:orientation="vertical" android:layout_width="100.0dp" android:layout_height="248.0dp" android:layout_marginTop="10.0dp">
+                    <com.wow.libs.duduSkin.view.SkinLinearLayout android:orientation="vertical" android:background="@drawable/theme_widget_time_rili_day_panel_top_bg" android:layout_width="match_parent" android:layout_height="140.0dp">
+                        <com.wow.libs.duduSkin.view.SkinTextView android:textSize="12.0dp" android:textColor="@color/theme_widget_time_day_panel_lunar" android:gravity="center" android:id="@id/apd" android:layout_width="match_parent" android:layout_height="20.0dp" android:layout_marginTop="20.0dp" android:includeFontPadding="false" />
+                        <com.wow.libs.duduSkin.view.SkinTextView android:textSize="45.0dp" android:textColor="@color/theme_widget_time_day_panel_day" android:gravity="center" android:id="@id/apb" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_marginTop="5.0dp" android:text="16" android:includeFontPadding="false" android:layout_weight="1.0" />
+                        <com.wow.libs.duduSkin.view.SkinTextView android:textSize="12.0dp" android:textColor="@color/theme_widget_time_day_panel_week" android:gravity="center" android:id="@id/apg" android:layout_width="match_parent" android:layout_height="20.0dp" android:layout_marginBottom="10.0dp" android:includeFontPadding="false" />
+                    </com.wow.libs.duduSkin.view.SkinLinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/b0u" android:layout_width="match_parent" android:layout_height="108.0dp">
+                        <com.wow.libs.duduSkin.view.SkinImageView android:padding="15.0dp" android:layout_width="80.0dp" android:layout_height="80.0dp" android:src="@drawable/theme_widget_time_rili_day_panel_kaixin" android:scaleType="fitXY" />
+                        <com.wow.libs.duduSkin.view.SkinTextView android:textColor="@color/theme_widget_time_day_panel_nodata2" android:gravity="center" android:layout_width="match_parent" android:layout_height="28.0dp" android:text="@string/b2z" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/b0v" android:visibility="gone" android:layout_width="match_parent" android:layout_height="108.0dp">
+                        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="30.0dp">
+                            <com.wow.libs.duduSkin.view.SkinImageView android:padding="5.0dp" android:layout_width="30.0dp" android:layout_height="30.0dp" android:src="@drawable/theme_widget_time_rili_day_panel_lc" />
+                            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="12.0dp" android:textColor="@color/theme_widget_time_day_panel_info" android:gravity="center_vertical" android:id="@id/apc" android:layout_width="match_parent" android:layout_height="30.0dp" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="30.0dp">
+                            <com.wow.libs.duduSkin.view.SkinImageView android:padding="5.0dp" android:layout_width="30.0dp" android:layout_height="30.0dp" android:src="@drawable/theme_widget_time_rili_day_panel_sj" />
+                            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="12.0dp" android:textColor="@color/theme_widget_time_day_panel_info" android:gravity="center_vertical" android:id="@id/apf" android:layout_width="match_parent" android:layout_height="30.0dp" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="30.0dp">
+                            <com.wow.libs.duduSkin.view.SkinImageView android:padding="5.0dp" android:layout_width="30.0dp" android:layout_height="30.0dp" android:src="@drawable/theme_widget_time_rili_day_panel_sd" />
+                            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="12.0dp" android:textColor="@color/theme_widget_time_day_panel_info" android:gravity="center_vertical" android:id="@id/ape" android:layout_width="match_parent" android:layout_height="30.0dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </com.wow.libs.duduSkin.view.SkinFrameLayout>
+            <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/b0w" android:layout_width="match_parent" android:layout_height="match_parent" />
+                <com.wow.libs.duduSkin.view.SkinLinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/b0x" android:background="@drawable/theme_widget_time_rili_day_trip_panel_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <com.wow.libs.duduSkin.view.SkinImageView android:layout_width="50.0dp" android:layout_height="50.0dp" android:src="@drawable/theme_widget_time_day_nodata" />
+                    <com.wow.libs.duduSkin.view.SkinTextView android:textSize="16.0dp" android:textColor="@color/theme_widget_time_day_nodata" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/b2y" />
+                </com.wow.libs.duduSkin.view.SkinLinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </com.haibin.calendarview.CalendarLayout>
+    <com.wow.libs.duduSkin.view.SkinImageView android:id="@id/b21" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/theme_widget_time_front" android:scaleType="centerCrop" />
+</FrameLayout>

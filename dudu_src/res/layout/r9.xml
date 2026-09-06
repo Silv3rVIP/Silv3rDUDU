@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dudu.autoui.ui.activity.launcher.view.ItemFrameLayout android:background="@drawable/theme_item_compass_bg" android:layout_width="241.0dp" android:layout_height="72.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dudu.autoui.ui.activity.launcher.view.SkinCompassView android:layout_gravity="center_vertical" android:id="@id/b0c" android:layout_width="64.0dp" android:layout_height="64.0dp" android:layout_marginLeft="13.0dp" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="89.0dp" android:layout_marginRight="13.0dp">
+        <com.wow.libs.duduSkin.view.SkinTextView android:textSize="16.0dp" android:textColor="@color/theme_item_compass_fx" android:gravity="left|center" android:id="@id/aqk" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/a0b" android:singleLine="true" android:includeFontPadding="false" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dp">
+            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="12.0dp" android:textColor="@color/theme_item_compass_hb" android:gravity="left|center" android:id="@id/ar0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/aib" android:singleLine="true" android:includeFontPadding="false" />
+            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="12.0dp" android:textColor="@color/theme_item_compass_dw" android:id="@id/apw" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dp" android:text="@string/aib" android:lines="1" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.wow.libs.duduSkin.view.SkinView android:background="@drawable/theme_item_compass_front" android:layout_width="match_parent" android:layout_height="match_parent" />
+</com.dudu.autoui.ui.activity.launcher.view.ItemFrameLayout>

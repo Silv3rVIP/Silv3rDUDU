@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center" android:orientation="horizontal" android:tag="all" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dudu.autoui.ui.dnview.view.DnSkinLinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/w3" android:tag="all" android:background="@drawable/dnskin_nsd_b2_bg_l" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.dudu.autoui.common.view.NiceImageView android:id="@id/qd" android:layout_width="75.0dp" android:layout_height="75.0dp" android:src="@mipmap/b" app:x7="@dimen/bp" />
+        <LinearLayout android:orientation="vertical" android:paddingLeft="10.0dp" android:layout_width="0.0dp" android:layout_height="75.0dp" android:layout_weight="1.0">
+            <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:textSize="@dimen/m_" android:textColor="@color/dnskin_nst_text1_l" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/aso" android:layout_width="match_parent" android:layout_height="28.0dp" android:singleLine="true" />
+            <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:textSize="14.0dp" android:textColor="@color/dnskin_nst_text2_l" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/any" android:layout_width="match_parent" android:layout_height="20.0dp" android:lines="1" android:singleLine="true" />
+            <FrameLayout android:id="@id/kv" android:layout_width="match_parent" android:layout_height="27.0dp">
+                <com.dudu.autoui.ui.activity.store.view.AppUpdateButton android:textSize="14.0dp" android:textColor="@color/dnskin_nst_text3_l" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/awk" android:background="@drawable/dnskin_store_update_btn_lan11_l" android:layout_width="80.0dp" android:layout_height="22.0dp" android:text="@string/cai" android:includeFontPadding="false" />
+            </FrameLayout>
+        </LinearLayout>
+    </com.dudu.autoui.ui.dnview.view.DnSkinLinearLayout>
+</FrameLayout>

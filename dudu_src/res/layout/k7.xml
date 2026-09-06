@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.wow.libs.duduSkin.view.SkinLinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/theme_widget_btphone_contact_item_bg" android:layout_width="match_parent" android:layout_height="60.0dp" android:layout_marginBottom="16.0dp" android:layout_marginStart="12.0dp" android:layout_marginEnd="12.0dp">
+        <com.wow.libs.duduSkin.view.SkinTextView android:textSize="20.0dp" android:textColor="@color/theme_widget_btphone_text3" android:gravity="center" android:id="@id/aq9" android:background="@drawable/theme_widget_btphone_contact_frist_code" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_margin="10.0dp" />
+        <com.wow.libs.duduSkin.view.SkinImageView android:id="@id/aq_" android:visibility="gone" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_margin="10.0dp" android:src="@drawable/theme_widget_btphone_ic_default" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="15.0dp" android:textColor="@color/theme_widget_btphone_type_title" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/aso" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" />
+            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="15.0dp" android:textColor="@color/theme_widget_btphone_type_title" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/atk" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:singleLine="true" android:includeFontPadding="false" />
+        </LinearLayout>
+        <com.wow.libs.duduSkin.view.SkinTextView android:textSize="14.0dp" android:textColor="@color/theme_widget_btphone_text2" android:gravity="right|center" android:id="@id/avt" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="10.0dp" android:minWidth="80.0dp" />
+        <com.wow.libs.duduSkin.view.SkinImageView android:id="@id/ahy" android:visibility="visible" android:layout_width="25.0dp" android:layout_height="25.0dp" android:layout_marginRight="15.0dp" />
+        <com.wow.libs.duduSkin.view.SkinImageView android:id="@id/n8" android:visibility="gone" android:layout_width="35.0dp" android:layout_height="35.0dp" android:layout_marginRight="15.0dp" />
+    </com.wow.libs.duduSkin.view.SkinLinearLayout>
+    <View android:layout_width="match_parent" android:layout_height="1.0dp" />
+</FrameLayout>

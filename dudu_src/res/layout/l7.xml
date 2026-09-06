@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="@dimen/ie"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="top" android:orientation="horizontal" android:id="@id/a01" android:paddingLeft="@dimen/ib" android:paddingRight="@dimen/ib" android:layout_width="match_parent" android:layout_height="@dimen/ie" android:baselineAligned="false" android:paddingStart="@dimen/ib" android:paddingEnd="@dimen/ib" style="?t8">
+        <FrameLayout android:id="@id/a03" android:paddingLeft="@dimen/ih" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" android:paddingStart="@dimen/ih">
+            <include layout="@layout/l_" />
+            <include layout="@layout/l9" />
+        </FrameLayout>
+        <include layout="@layout/la" />
+    </LinearLayout>
+    <View android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="@dimen/id" style="?t7" />
+</merge>

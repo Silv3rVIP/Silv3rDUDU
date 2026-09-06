@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:id="@id/b6m" android:paddingLeft="5.0dp" android:paddingRight="5.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:padding="8.0dp" android:layout_width="@dimen/nc" android:layout_height="@dimen/nc">
+        <com.dudu.autoui.ui.statebar.NbSkinCustomImageView android:id="@id/r5" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/nbskin_statebar_music_cover" android:scaleType="fitXY" app:x4="1.0dp" app:x7="5.0dp" app:xd="@color/nbskin_statebar_music_cover_mask" />
+    </FrameLayout>
+    <com.dudu.autoui.ui.statebar.NbSkinAutoMarqueeTextView android:textSize="16.0dp" android:textColor="@color/nbskin_statebar_music" android:ellipsize="marquee" android:gravity="center" android:id="@id/aso" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="@string/cer" android:singleLine="true" android:layout_weight="1.0" android:marqueeRepeatLimit="marquee_forever" />
+    <com.wow.libs.duduSkin2.view.SkinImageView android:id="@id/rx" android:src="@drawable/nbskin_statebar_music_play" style="@style/jk" />
+    <com.wow.libs.duduSkin2.view.SkinImageView android:id="@id/rd" android:src="@drawable/nbskin_statebar_music_next" style="@style/jk" />
+</LinearLayout>

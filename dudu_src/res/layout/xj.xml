@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/g1" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.dudu.autoui.ui.activity.launcher.minimalism.MinimalismPaperView android:id="@id/a1j" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.wow.libs.duduSkin.view.SkinView android:id="@id/ah8" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <RelativeLayout android:id="@id/b3w" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.dudu.autoui.ui.activity.launcher.DockView android:id="@id/b19" android:visibility="gone" android:layout_width="120.0dp" android:layout_height="match_parent" android:layout_alignParentRight="true" />
+        <FrameLayout android:id="@id/b66" android:layout_width="match_parent" android:layout_height="42.0dp" android:layout_toLeftOf="@id/b19" android:layout_alignParentTop="true">
+            <com.dudu.autoui.ui.activity.launcher.PromptView android:id="@id/b65" android:layout_width="match_parent" android:layout_height="@dimen/f1" />
+        </FrameLayout>
+        <com.dudu.autoui.ui.activity.launcher.minimalism.view.MinimItemRootView android:orientation="horizontal" android:id="@id/b2h" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="0.0dp" android:layout_marginTop="1.0dp" android:layout_marginRight="0.0dp" android:layout_marginBottom="20.0dp" android:layout_toLeftOf="@id/b19" android:layout_below="@id/b66" android:layout_alignParentBottom="true">
+            <FrameLayout android:id="@id/v2" android:visibility="gone" android:layout_width="100.0dp" android:layout_height="match_parent" android:layout_marginLeft="@dimen/eu" />
+            <FrameLayout android:layout_gravity="right" android:id="@id/a3d" android:visibility="gone" android:layout_width="100.0dp" android:layout_height="match_parent" android:layout_marginRight="@dimen/eu" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/b2k" android:layout_width="match_parent" android:layout_height="match_parent">
+                <View android:id="@id/b42" android:layout_width="@dimen/eu" android:layout_height="match_parent" />
+                <com.dudu.autoui.ui.activity.launcher.view.FrameLayoutEx android:id="@id/b82" android:layout_width="@dimen/ew" android:layout_height="match_parent" android:layout_marginLeft="-5.0dp" android:layout_marginRight="-5.0dp">
+                    <com.wow.libs.duduSkin.view.SkinView android:layout_gravity="center" android:id="@id/b83" android:background="@drawable/theme_minim_touch" android:layout_width="6.0dp" android:layout_height="80.0dp" />
+                </com.dudu.autoui.ui.activity.launcher.view.FrameLayoutEx>
+                <com.dudu.autoui.ui.activity.launcher.view.FrameLayoutEx android:id="@id/b85" android:layout_width="@dimen/ew" android:layout_height="match_parent" android:layout_marginLeft="-5.0dp" android:layout_marginRight="-5.0dp">
+                    <com.wow.libs.duduSkin.view.SkinView android:layout_gravity="center" android:id="@id/b86" android:background="@drawable/theme_minim_touch" android:layout_width="6.0dp" android:layout_height="80.0dp" />
+                </com.dudu.autoui.ui.activity.launcher.view.FrameLayoutEx>
+                <View android:id="@id/b41" android:layout_width="@dimen/eu" android:layout_height="match_parent" />
+            </LinearLayout>
+            <androidx.cardview.widget.CardView android:id="@id/l6" android:visibility="gone" android:layout_width="1.0dp" android:layout_height="match_parent" app:d0="@color/gg" app:d1="@dimen/fi" app:d2="0.0dp">
+                <com.wow.libs.duduSkin.view.SkinFrameLayout android:id="@id/la" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <com.wow.libs.duduSkin.view.SkinImageView android:layout_gravity="center" android:id="@id/lb" android:layout_width="100.0dp" android:layout_height="100.0dp" android:src="@mipmap/b" />
+                </com.wow.libs.duduSkin.view.SkinFrameLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:id="@id/l7" android:visibility="gone" android:layout_width="1.0dp" android:layout_height="match_parent" app:d0="@color/gg" app:d1="@dimen/fi" app:d2="0.0dp">
+                <com.wow.libs.duduSkin.view.SkinFrameLayout android:id="@id/l8" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <com.wow.libs.duduSkin.view.SkinImageView android:layout_gravity="center" android:id="@id/l9" android:layout_width="100.0dp" android:layout_height="100.0dp" android:src="@mipmap/b" />
+                </com.wow.libs.duduSkin.view.SkinFrameLayout>
+            </androidx.cardview.widget.CardView>
+            <View android:id="@id/b84" android:visibility="visible" android:layout_width="@dimen/ew" android:layout_height="match_parent" android:alpha="0.0" />
+            <View android:id="@id/b87" android:visibility="visible" android:layout_width="@dimen/ew" android:layout_height="match_parent" android:alpha="0.0" />
+        </com.dudu.autoui.ui.activity.launcher.minimalism.view.MinimItemRootView>
+        <FrameLayout android:id="@id/b5p" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toLeftOf="@id/b19" android:layout_below="@id/b66">
+            <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="@dimen/eu">
+                <com.dudu.autoui.ui.activity.launcher.expendView.ExpendTimeView android:id="@id/z7" android:layout_width="420.0dp" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" />
+                <com.dudu.autoui.common.view.skin.SkinImageView2 android:layout_gravity="bottom" android:id="@id/z6" android:layout_width="60.0dp" android:layout_height="60.0dp" android:src="@drawable/app_icon_minim" />
+            </FrameLayout>
+        </FrameLayout>
+    </RelativeLayout>
+</FrameLayout>

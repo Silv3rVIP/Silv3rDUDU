@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dudu.autoui.ui.activity.launcher.view.ItemFrameLayout android:background="@drawable/theme_item_byd_car_control_bg" android:layout_width="280.0dp" android:layout_height="84.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:padding="4.0dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.dudu.autoui.ui.activity.launcher.item.hw.HwCarControlCellView android:gravity="center" android:id="@id/mv" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+        <com.dudu.autoui.ui.activity.launcher.item.hw.HwCarControlCellView android:gravity="center" android:id="@id/mw" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+        <com.dudu.autoui.ui.activity.launcher.item.hw.HwCarControlCellView android:gravity="center" android:id="@id/mx" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+        <com.dudu.autoui.ui.activity.launcher.item.hw.HwCarControlCellView android:gravity="center" android:id="@id/my" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+    </LinearLayout>
+    <com.wow.libs.duduSkin.view.SkinView android:background="@drawable/theme_item_byd_car_control_front" android:layout_width="match_parent" android:layout_height="match_parent" />
+</com.dudu.autoui.ui.activity.launcher.view.ItemFrameLayout>

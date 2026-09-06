@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingLeft="5.0dp" android:paddingRight="5.0dp" android:layout_width="match_parent" android:layout_height="@dimen/nc"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.wow.libs.duduSkin2.view.SkinImageView android:id="@id/nz" android:src="@drawable/nbskin_statebar_botton_back" style="@style/jj" />
+    <com.wow.libs.duduSkin2.view.SkinImageView android:id="@id/qa" android:src="@drawable/nbskin_statebar_botton_home" style="@style/jj" />
+    <com.wow.libs.duduSkin2.view.SkinImageView android:id="@id/sy" android:src="@drawable/nbskin_statebar_botton_task" style="@style/jj" />
+    <com.wow.libs.duduSkin2.view.SkinImageView android:id="@id/np" android:src="@drawable/nbskin_statebar_botton_all_app" style="@style/jj" />
+    <com.wow.libs.duduSkin2.view.SkinImageView android:id="@id/q0" android:visibility="gone" android:src="@drawable/nbskin_statebar_botton_fenping" style="@style/jj" />
+    <com.wow.libs.duduSkin2.view.SkinImageView android:id="@id/no" android:visibility="gone" android:src="@drawable/nbskin_statebar_botton_air" style="@style/jj" />
+    <com.wow.libs.duduSkin2.view.SkinImageView android:id="@id/nk" android:visibility="gone" android:src="@drawable/nbskin_statebar_botton_360" style="@style/jj" />
+    <com.wow.libs.duduSkin2.view.SkinImageView android:id="@id/t1" android:visibility="gone" android:src="@drawable/nbskin_statebar_botton_tianchuang" style="@style/jj" />
+    <com.wow.libs.duduSkin2.view.SkinImageView android:id="@id/qc" android:visibility="gone" android:src="@drawable/nbskin_statebar_botton_hv" style="@style/jj" />
+</LinearLayout>

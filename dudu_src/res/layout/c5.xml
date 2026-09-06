@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="#33000000" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.cardview.widget.CardView android:id="@id/ia" style="@style/fo">
+        <com.dudu.autoui.ui.dnview.view.DnSkinImageView android:id="@id/hp" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+        <com.dudu.autoui.ui.dnview.view.DnSkinFrameLayout android:id="@id/ib" style="@style/fn">
+            <FrameLayout android:id="@id/b7t" android:layout_width="match_parent" android:layout_height="50.0dp">
+                <com.dudu.autoui.ui.dnview.view.DnSkinImageView android:layout_gravity="right" android:id="@id/se" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_marginRight="55.0dp" android:scaleType="fitXY" />
+                <com.dudu.autoui.ui.dnview.view.DnSkinImageView android:layout_gravity="right" android:id="@id/sd" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_marginRight="5.0dp" android:scaleType="fitXY" />
+            </FrameLayout>
+            <ImageView android:id="@id/mn" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="50.0dp" />
+            <FrameLayout android:id="@id/ha" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="50.0dp" />
+        </com.dudu.autoui.ui.dnview.view.DnSkinFrameLayout>
+        <com.dudu.autoui.ui.dnview.view.DnSkinImageView android:layout_gravity="right|top" android:id="@id/b96" android:padding="15.0dp" android:visibility="gone" android:layout_width="55.0dp" android:layout_height="55.0dp" android:layout_marginTop="5.0dp" android:layout_marginRight="10.0dp" android:src="@drawable/dnskin_nns_yiwen2_l" />
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

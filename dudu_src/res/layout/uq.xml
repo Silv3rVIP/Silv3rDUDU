@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="280.0dp" android:layout_height="135.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.wow.libs.duduSkin.view.SkinImageView android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/theme_pendant_energy_flow_car" android:scaleType="fitXY" />
+    <FrameLayout android:id="@id/ay8" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.wow.libs.duduSkin.view.SkinImageView android:layout_gravity="right|center" android:layout_width="107.0dp" android:layout_height="84.0dp" android:src="@drawable/theme_pendant_energy_flow_device" android:scaleType="fitXY" />
+    <com.dudu.autoui.common.view.CircleFrameLayout android:layout_gravity="right|center" android:layout_width="16.0dp" android:layout_height="29.0dp" android:layout_marginRight="37.5dp" app:a0k="1.5dp">
+        <com.wow.libs.duduSkin.view.SkinView android:layout_gravity="bottom" android:id="@id/ayl" android:background="@color/theme_pendant_energy_flow_battery" android:layout_width="match_parent" android:layout_height="0.0dp" />
+    </com.dudu.autoui.common.view.CircleFrameLayout>
+</FrameLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/h0">
+        <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:text="@string/bfx" style="@style/h1" />
+        <com.dudu.autoui.ui.activity.nset.setview.NSetItemView android:id="@id/ab6" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/mr" app:yd="@string/azu" app:ye="axm" />
+        <com.dudu.autoui.ui.activity.nset.setview.NSetItemView android:id="@id/ab7" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/mr" app:yd="@string/c1n" app:ye="axm" />
+        <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:text="@string/ben" style="@style/h1" />
+        <com.dudu.autoui.ui.activity.nset.setview.NSetItemView android:id="@id/ae6" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/mr" app:yc="@string/azp" app:yd="@string/azo" app:ye="axd" />
+        <LinearLayout android:orientation="vertical" android:id="@id/b5m" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.dudu.autoui.ui.activity.nset.setview.NSetItemView android:id="@id/abj" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/mr" app:yd="@string/anr" app:ye="axl" />
+            <com.dudu.autoui.ui.activity.nset.setview.NSetItemView android:id="@id/abc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/mr" app:yc="@string/bek" app:yd="@string/bej" app:ye="axk" />
+            <com.dudu.autoui.ui.activity.nset.setview.NSetItemView android:id="@id/a5j" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/mr" app:yc="@string/c1w" app:yd="@string/c1v" app:ye="axd" />
+            <com.dudu.autoui.ui.activity.nset.setview.NSetItemView android:id="@id/aba" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/mr" app:yc="@string/a0v" app:yd="@string/a0u" app:ye="axd" />
+            <LinearLayout android:orientation="vertical" android:id="@id/a27" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.dudu.autoui.ui.activity.nset.setview.NSetItemView android:id="@id/ab8" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/mr" app:yd="@string/amx" app:ye="axm" />
+                <com.dudu.autoui.ui.activity.nset.setview.NSetItemView android:id="@id/ab9" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/mr" app:yd="@string/azv" app:ye="axk" />
+                <com.dudu.autoui.ui.activity.nset.setview.NSetItemView android:id="@id/abh" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/mr" app:yd="@string/azy" app:ye="axd" />
+            </LinearLayout>
+            <com.dudu.autoui.ui.activity.nset.setview.NSetItemView android:id="@id/abb" android:layout_width="match_parent" android:layout_height="wrap_content" app:yd="@string/b0e" app:ye="axd" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/b1h" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.dudu.autoui.ui.activity.nset.setview.NSetItemView android:id="@id/a8z" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/mr" app:yd="@string/afd" app:ye="axd" />
+            <com.dudu.autoui.ui.activity.nset.setview.NSetItemView android:id="@id/a_c" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/mr" app:y5="%" app:y6="30" app:y7="0" app:y8="150.0dp" app:yd="@string/beo" app:ye="axi" />
+            <com.dudu.autoui.ui.activity.nset.setview.NSetItemView android:id="@id/a5b" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/mr" app:yd="@string/vx" app:ye="axk" />
+            <com.dudu.autoui.ui.activity.nset.setview.NSetItemView android:id="@id/a90" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/mr" app:yc="@string/afi" app:yd="@string/afh" app:ye="axd" />
+            <com.dudu.autoui.ui.activity.nset.setview.NSetItemView android:id="@id/abi" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/mr" app:yd="@string/b0d" app:ye="axk" />
+            <LinearLayout android:orientation="vertical" android:id="@id/b1i" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.dudu.autoui.ui.activity.nset.setview.NSetItemView android:id="@id/a8v" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/mr" app:yd="@string/b07" app:ye="axm" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/a0f" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/mr">
+                <com.dudu.autoui.ui.activity.nset.setview.NSetItemView android:id="@id/a8y" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginRight="@dimen/mr" android:layout_weight="1.0" app:yd="@string/a34" app:ye="axd" />
+                <com.dudu.autoui.ui.activity.nset.setview.NSetItemView android:id="@id/a8w" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" app:yd="@string/am5" app:ye="axd" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/mr">
+                <com.dudu.autoui.ui.activity.nset.setview.NSetItemView android:id="@id/a68" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginRight="@dimen/mr" android:layout_weight="1.0" app:yc="@string/gm" app:yd="@string/gl" app:ye="axd" />
+                <com.dudu.autoui.ui.activity.nset.setview.NSetItemView android:id="@id/a66" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" app:yd="@string/gq" app:ye="axd" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/mr">
+                <com.dudu.autoui.ui.activity.nset.setview.NSetItemView android:id="@id/a8x" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginRight="@dimen/mr" android:layout_weight="1.0" app:yd="@string/b03" app:ye="axb" />
+                <com.dudu.autoui.ui.activity.nset.setview.NSetItemView android:id="@id/abr" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" app:yd="@string/di" app:ye="axb" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

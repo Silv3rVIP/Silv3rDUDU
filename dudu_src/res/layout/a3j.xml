@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@id/b6s" android:layout_width="100.0dp" android:layout_height="wrap_content" android:layout_marginLeft="30.0dp" android:layout_marginTop="20.0dp">
+            <com.dudu.autoui.ui.activity.launcher.view.SkinCustomImageView android:layout_gravity="left" android:id="@id/sl" android:layout_width="26.0dp" android:layout_height="26.0dp" android:src="@mipmap/ay" app:x7="5.0dp" />
+            <com.wow.libs.duduSkin.view.SkinImageView android:layout_gravity="left|center" android:layout_width="11.0dp" android:layout_height="11.0dp" android:layout_marginLeft="40.0dp" android:src="@drawable/theme_un_down" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_marginTop="10.0dp" android:layout_weight="1.0">
+            <com.dudu.autoui.ui.activity.launcher.view.AutoFitFrameLayout android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.dudu.autoui.ui.activity.launcher.view.SkinCustomImageView android:layout_gravity="center" android:id="@id/r5" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/theme_un_music_icon2" android:scaleType="fitXY" app:x7="@dimen/dz" app:xd="@color/theme_un_music_cover_mask" />
+            </com.dudu.autoui.ui.activity.launcher.view.AutoFitFrameLayout>
+        </FrameLayout>
+        <com.dudu.autoui.common.view.skin.SkinAutoMarqueeTextView android:textSize="20.0dp" android:textColor="@color/theme_un_mini_music_name" android:gravity="center" android:id="@id/ama" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="40.0dp" android:layout_marginTop="15.0dp" android:layout_marginRight="40.0dp" android:layout_marginBottom="15.0dp" android:text="@string/ah_" android:lines="1" android:singleLine="true" />
+        <com.wow.libs.duduSkin.view.SkinProgressBar android:layout_gravity="center" android:id="@id/a0b" android:layout_width="match_parent" android:layout_height="3.0dp" android:layout_marginLeft="40.0dp" android:layout_marginRight="40.0dp" android:progressDrawable="@drawable/theme_un_mini_music_p" style="?android:progressBarStyleHorizontal" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="75.0dp" android:layout_marginLeft="20.0dp" android:layout_marginRight="20.0dp" android:layout_marginBottom="10.0dp">
+            <com.wow.libs.duduSkin.view.SkinImageView android:layout_gravity="center" android:id="@id/wz" android:padding="20.0dp" android:layout_width="75.0dp" android:layout_height="75.0dp" android:src="@drawable/theme_un_mini_music_prev2" android:scaleType="fitXY" android:contentDescription="@string/el" />
+            <View android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+            <com.wow.libs.duduSkin.view.SkinImageView android:layout_gravity="center" android:id="@id/wy" android:padding="20.0dp" android:layout_width="75.0dp" android:layout_height="75.0dp" android:src="@drawable/theme_un_mini_music_play2" android:scaleType="fitXY" android:contentDescription="@string/el" />
+            <View android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+            <com.wow.libs.duduSkin.view.SkinImageView android:layout_gravity="center" android:id="@id/ws" android:padding="20.0dp" android:layout_width="75.0dp" android:layout_height="75.0dp" android:src="@drawable/theme_un_mini_music_next2" android:scaleType="fitXY" android:contentDescription="@string/el" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.wow.libs.duduSkin.view.SkinView android:background="@drawable/theme_un_music_front" android:layout_width="match_parent" android:layout_height="match_parent" />
+</FrameLayout>

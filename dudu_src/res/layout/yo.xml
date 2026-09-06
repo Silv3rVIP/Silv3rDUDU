@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dudu.autoui.common.view.ScrollViewEx2 android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/mb" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/gw">
+        <LinearLayout android:orientation="vertical" android:id="@id/b7m" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:text="@string/c5w" style="@style/gz" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7">
+                <com.dudu.autoui.ui.activity.nnset.setview.NSetCheck2View android:id="@id/afa" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" app:xx="@string/b0" app:xy="@string/az" />
+                <View android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+        <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:text="@string/zx" style="@style/gz" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7">
+            <com.dudu.autoui.ui.activity.nnset.setview.NSetButton2View android:id="@id/a5i" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" app:xy="@string/dd" />
+            <com.dudu.autoui.ui.activity.nnset.setview.NSetCheck2View android:id="@id/aer" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" app:xy="@string/theme_test_model" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7">
+            <com.dudu.autoui.ui.activity.nnset.setview.NSetCheck2View android:id="@id/abx" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" app:xx="@string/aot" app:xy="@string/aos" />
+            <com.dudu.autoui.ui.activity.nnset.setview.NSetCheck2View android:id="@id/a_h" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" app:xx="@string/b0k" app:xy="@string/b93" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7">
+            <com.dudu.autoui.ui.activity.nnset.setview.NSetButton2View android:id="@id/aam" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" app:xy="@string/ay3" />
+            <com.dudu.autoui.ui.activity.nnset.setview.NSetButton2View android:id="@id/a7v" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" app:xy="@string/se" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7">
+            <com.dudu.autoui.ui.activity.nnset.setview.NSetCheck2View android:id="@id/a6a" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" app:xy="@string/k3" />
+            <com.dudu.autoui.ui.activity.nnset.setview.NSetButton2View android:id="@id/a6b" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" app:xy="@string/k2" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7">
+            <com.dudu.autoui.ui.activity.nnset.setview.NSetCheck2View android:id="@id/aan" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" app:xy="@string/a32" />
+            <com.dudu.autoui.ui.activity.nnset.setview.NSetCheck2View android:id="@id/aff" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" app:xx="@string/cbg" app:xy="@string/cbe" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7">
+            <com.dudu.autoui.ui.activity.nnset.setview.NSetButton2View android:id="@id/a91" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" app:xy="@string/ceh" />
+            <com.dudu.autoui.ui.activity.nnset.setview.NSetCheck2View android:id="@id/abm" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" app:xy="@string/bt9" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7">
+            <com.dudu.autoui.ui.activity.nnset.setview.NSetButton2CheckView android:id="@id/aaf" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" app:xk="@string/b4h" app:xl="@string/aw8" app:xm="@string/bj6" app:xy="@string/cb8" />
+            <com.dudu.autoui.ui.activity.nnset.setview.NSetCheck2View android:id="@id/i9" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" app:xk="@string/b4h" app:xl="@string/aw8" app:xm="@string/bj6" app:xx="Some operations will not be confirmed and will be executed directly" app:xy="DEV MODE" />
+        </LinearLayout>
+        <com.dudu.autoui.ui.activity.nnset.setview.NSetCheck2View android:id="@id/ac0" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7" app:xy="Language Switch Popup" />
+        <com.dudu.autoui.ui.activity.nnset.setview.NSetCheck2View android:id="@id/acd" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7" app:xy="@string/rs" />
+        <com.dudu.autoui.ui.activity.nnset.setview.NSetCheck2View android:id="@id/a_i" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7" app:xy="禁止腾讯智驾地图跟随嘟嘟昼夜变化" />
+    </LinearLayout>
+</com.dudu.autoui.common.view.ScrollViewEx2>

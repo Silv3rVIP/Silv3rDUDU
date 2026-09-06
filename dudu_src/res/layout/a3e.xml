@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/b38" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@id/b00" android:layout_width="255.0dp" android:layout_height="360.0dp" app:p8="a1m" app:pr="a1m" app:pv="a1m" app:q1="a1m">
+            <com.wow.libs.duduSkin.view.SkinImageView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="30.0dp" android:layout_marginRight="30.0dp" android:src="@drawable/theme_un_car_car" android:scaleType="fitXY" />
+            <com.wow.libs.duduSkin.view.SkinImageView android:layout_gravity="right|top" android:id="@id/ps" android:layout_width="23.0dp" android:layout_height="71.0dp" android:layout_marginTop="123.0dp" android:layout_marginRight="63.0dp" android:src="@drawable/theme_un_car_door_f" android:scaleType="fitXY" android:transformPivotX="11.5dp" android:transformPivotY="0.0dp" />
+            <com.wow.libs.duduSkin.view.SkinImageView android:layout_gravity="left|top" android:id="@id/pq" android:layout_width="23.0dp" android:layout_height="71.0dp" android:layout_marginLeft="63.0dp" android:layout_marginTop="123.0dp" android:src="@drawable/theme_un_car_door_f" android:scaleType="fitXY" android:transformPivotX="11.5dp" android:transformPivotY="0.0dp" android:scaleX="-1.0" />
+            <com.wow.libs.duduSkin.view.SkinImageView android:layout_gravity="right|top" android:id="@id/pr" android:layout_width="16.0dp" android:layout_height="88.0dp" android:layout_marginTop="185.0dp" android:layout_marginRight="72.0dp" android:src="@drawable/theme_un_car_door_b" android:scaleType="fitXY" android:transformPivotX="8.0dp" android:transformPivotY="0.0dp" />
+            <com.wow.libs.duduSkin.view.SkinImageView android:layout_gravity="left|top" android:id="@id/pp" android:layout_width="16.0dp" android:layout_height="88.0dp" android:layout_marginLeft="72.0dp" android:layout_marginTop="185.0dp" android:src="@drawable/theme_un_car_door_b" android:scaleType="fitXY" android:transformPivotX="8.0dp" android:transformPivotY="0.0dp" android:scaleX="-1.0" />
+        </FrameLayout>
+        <TextView android:gravity="center" android:id="@id/aw9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="45.0dp" android:layout_marginRight="-40.0dp" app:pu="@id/b00" app:q1="@id/b00" />
+        <TextView android:gravity="center" android:id="@id/awa" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-40.0dp" android:layout_marginTop="45.0dp" app:ps="@id/b00" app:q1="@id/b00" />
+        <TextView android:gravity="center" android:id="@id/aw8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="-40.0dp" android:layout_marginBottom="45.0dp" app:p8="@id/b00" app:pu="@id/b00" />
+        <TextView android:gravity="center" android:id="@id/aw_" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-40.0dp" android:layout_marginBottom="45.0dp" app:p8="@id/b00" app:ps="@id/b00" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.wow.libs.duduSkin.view.SkinView android:background="@drawable/theme_un_taiya_front" android:layout_width="match_parent" android:layout_height="match_parent" />
+</FrameLayout>

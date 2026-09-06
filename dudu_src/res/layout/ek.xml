@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="200.0dp" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dudu.autoui.ui.activity.set.setview.SetItemView android:id="@id/aim" android:layout_width="match_parent" android:layout_height="wrap_content" app:a2_="@string/axp" app:a2a="axm" />
+    <com.dudu.autoui.ui.dnview.view.DnSkinView style="@style/fw" />
+    <com.dudu.autoui.ui.activity.set.setview.SetItemView android:id="@id/ain" android:layout_width="match_parent" android:layout_height="wrap_content" app:a2_="@string/axq" app:a2a="axm" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="c5">@drawable/c7</drawable>
+    <drawable name="c6">@drawable/c4</drawable>
+    <drawable name="ct">#3333b5e5</drawable>
+    <drawable name="cu">#0cffffff</drawable>
+</resources>

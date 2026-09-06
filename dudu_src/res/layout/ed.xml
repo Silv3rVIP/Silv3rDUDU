@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dudu.autoui.ui.activity.set.setview.SetItemView android:id="@id/a65" android:layout_width="match_parent" android:layout_height="wrap_content" app:a2_="@string/a77" app:a2a="axd" />
+    <LinearLayout android:orientation="vertical" android:id="@id/b0q" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.dudu.autoui.ui.dnview.view.DnSkinView style="@style/in" />
+        <com.dudu.autoui.ui.activity.set.setview.SetItemView android:id="@id/abn" android:layout_width="match_parent" android:layout_height="wrap_content" app:a2_="@string/bk9" app:a2a="axd" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/b0o" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.dudu.autoui.ui.dnview.view.DnSkinView style="@style/in" />
+        <com.dudu.autoui.ui.activity.set.setview.SetItemView android:id="@id/a81" android:layout_width="match_parent" android:layout_height="wrap_content" app:a2_="@string/a0s" app:a2a="axk" />
+        <com.dudu.autoui.ui.dnview.view.DnSkinView style="@style/in" />
+        <com.dudu.autoui.ui.activity.set.setview.SetItemView android:id="@id/a7z" android:layout_width="match_parent" android:layout_height="wrap_content" app:a2_="@string/d3" app:a2a="axd" />
+    </LinearLayout>
+    <View android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+    <com.dudu.autoui.ui.dnview.view.DnSkinView style="@style/in" />
+    <LinearLayout android:gravity="right|center" android:orientation="horizontal" android:id="@id/azh" android:layout_width="match_parent" android:layout_height="50.0dp" style="@style/g2">
+        <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:id="@id/dy" android:text="@string/a08" style="@style/fu" />
+        <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:id="@id/f9" android:text="@string/bjf" style="@style/fv" />
+    </LinearLayout>
+</LinearLayout>

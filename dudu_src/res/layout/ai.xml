@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dudu.autoui.ui.base.ActivityBaseFrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dudu.autoui.ui.dnview.view.DnSkinFrameLayout android:id="@id/b3w" android:background="@color/dnskin_ncontent_main_bg_l" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:id="@id/a3w" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginTop="20.0dp">
+                <com.dudu.autoui.ui.dnview.view.DnSkinImageView android:id="@id/nz" android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@drawable/dnskin_nns_back_l" />
+                <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:textSize="28.0dp" android:textColor="@color/dnskin_nst_text1_l" android:id="@id/ama" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dp" />
+            </LinearLayout>
+            <com.dudu.autoui.ui.dnview.view.DnSkinImageView android:layout_gravity="right" android:id="@id/f5" android:padding="8.0dp" android:layout_width="55.0dp" android:layout_height="55.0dp" android:layout_marginRight="5.0dp" android:scaleType="fitXY" />
+            <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:textSize="16.0dp" android:textColor="@color/dnskin_activity_common_text2_l" android:layout_gravity="right|center" android:id="@id/f7" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dp" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/a2y" android:paddingTop="@dimen/mb" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.dudu.autoui.ui.dnview.view.DnSkinImageView android:layout_gravity="right" android:id="@id/a3b" android:visibility="gone" android:layout_width="300.0dp" android:layout_height="match_parent" android:src="@drawable/o7" android:scaleType="fitXY" />
+            <FrameLayout android:id="@id/ha" android:layout_width="match_parent" android:layout_height="match_parent" />
+        </FrameLayout>
+    </com.dudu.autoui.ui.dnview.view.DnSkinFrameLayout>
+</com.dudu.autoui.ui.base.ActivityBaseFrameLayout>

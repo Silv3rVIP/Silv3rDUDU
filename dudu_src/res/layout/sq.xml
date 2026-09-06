@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dudu.autoui.ui.activity.launcher.view.ItemFrameLayout android:background="@drawable/theme_item_byd_car_info_bg" android:layout_width="280.0dp" android:layout_height="158.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ha" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="78.75dp">
+            <com.dudu.autoui.ui.activity.launcher.item.ls.LsCarInfoCellView android:gravity="center" android:id="@id/mv" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <com.wow.libs.duduSkin.view.SkinView android:background="@color/theme_item_byd_car_info_interval" android:layout_width="0.5dp" android:layout_height="match_parent" />
+            <com.dudu.autoui.ui.activity.launcher.item.ls.LsCarInfoCellView android:gravity="center" android:id="@id/mw" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <com.wow.libs.duduSkin.view.SkinView android:id="@id/ve" android:background="@color/theme_item_byd_car_info_interval" android:layout_width="0.5dp" android:layout_height="match_parent" />
+            <com.dudu.autoui.ui.activity.launcher.item.ls.LsCarInfoCellView android:gravity="center" android:id="@id/mx" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <com.wow.libs.duduSkin.view.SkinView android:id="@id/vf" android:background="@color/theme_item_byd_car_info_interval" android:layout_width="0.5dp" android:layout_height="match_parent" />
+            <com.dudu.autoui.ui.activity.launcher.item.ls.LsCarInfoCellView android:gravity="center" android:id="@id/my" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        </LinearLayout>
+        <com.wow.libs.duduSkin.view.SkinView android:background="@color/theme_item_byd_car_info_interval" android:layout_width="match_parent" android:layout_height="0.5dp" />
+        <LinearLayout android:gravity="top" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="78.75dp">
+            <com.dudu.autoui.ui.activity.launcher.item.ls.LsCarInfoCellView android:gravity="center" android:id="@id/mz" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <com.wow.libs.duduSkin.view.SkinView android:background="@color/theme_item_byd_car_info_interval" android:layout_width="0.5dp" android:layout_height="match_parent" />
+            <com.dudu.autoui.ui.activity.launcher.item.ls.LsCarInfoCellView android:gravity="center" android:id="@id/n0" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <com.wow.libs.duduSkin.view.SkinView android:id="@id/vg" android:background="@color/theme_item_byd_car_info_interval" android:layout_width="0.5dp" android:layout_height="match_parent" />
+            <com.dudu.autoui.ui.activity.launcher.item.ls.LsCarInfoCellView android:gravity="center" android:id="@id/n1" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <com.wow.libs.duduSkin.view.SkinView android:id="@id/vh" android:background="@color/theme_item_byd_car_info_interval" android:layout_width="0.5dp" android:layout_height="match_parent" />
+            <com.dudu.autoui.ui.activity.launcher.item.ls.LsCarInfoCellView android:gravity="center" android:id="@id/n2" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/zm" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.wow.libs.duduSkin.view.SkinTextView android:textSize="20.0dp" android:textColor="@color/theme_item_byd_car_info_msg1" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/b_d" />
+        <com.wow.libs.duduSkin.view.SkinTextView android:textSize="16.0dp" android:textColor="@color/theme_item_byd_car_info_msg2" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:text="@string/b_e" />
+    </LinearLayout>
+    <com.wow.libs.duduSkin.view.SkinView android:background="@drawable/theme_item_byd_car_info_front" android:layout_width="match_parent" android:layout_height="match_parent" />
+</com.dudu.autoui.ui.activity.launcher.view.ItemFrameLayout>

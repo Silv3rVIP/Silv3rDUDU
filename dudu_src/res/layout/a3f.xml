@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:baselineAligned="false">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="14.0dp" android:textColor="@color/theme_un_trip_value" android:gravity="center" android:id="@id/awp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="13.0dp" android:textColor="@color/theme_un_trip_name" android:gravity="center" android:id="@id/asp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:text="@string/ai_" android:singleLine="true" />
+        </LinearLayout>
+        <com.wow.libs.duduSkin.view.SkinView android:background="@drawable/theme_un_trip_split" android:layout_width="0.5dp" android:layout_height="40.0dp" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="14.0dp" android:textColor="@color/theme_un_trip_value" android:id="@id/awq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="13.0dp" android:textColor="@color/theme_un_trip_name" android:id="@id/asq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:text="@string/ai8" android:singleLine="true" />
+        </LinearLayout>
+        <com.wow.libs.duduSkin.view.SkinView android:background="@drawable/theme_un_trip_split" android:layout_width="0.5dp" android:layout_height="40.0dp" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="14.0dp" android:textColor="@color/theme_un_trip_value" android:id="@id/awr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="13.0dp" android:textColor="@color/theme_un_trip_name" android:id="@id/asr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:text="@string/ai7" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.wow.libs.duduSkin.view.SkinView android:background="@drawable/theme_un_trip_front" android:layout_width="match_parent" android:layout_height="match_parent" />
+</FrameLayout>

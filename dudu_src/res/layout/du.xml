@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="#33000000" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.cardview.widget.CardView android:id="@id/ia" android:layout_width="260.0dp" android:layout_height="110.0dp" style="@style/fo">
+        <com.dudu.autoui.ui.dnview.view.DnSkinLinearLayout android:orientation="horizontal" android:padding="0.0dp" style="@style/fm">
+            <com.dudu.autoui.common.view.CircleProgressBar android:id="@id/a2e" android:layout_width="50.0dp" android:layout_height="50.0dp" android:layout_marginLeft="30.0dp" android:indeterminateTint="@color/fg" />
+            <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:textSize="@dimen/m_" android:textColor="@color/dnskin_nst_text1_l" android:gravity="center" android:layout_gravity="center" android:id="@id/p3" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_marginLeft="15.0dp" android:layout_marginRight="30.0dp" android:maxLines="3" android:layout_weight="1.0" android:lineSpacingExtra="4.0dp" />
+        </com.dudu.autoui.ui.dnview.view.DnSkinLinearLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

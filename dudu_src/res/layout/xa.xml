@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dudu.autoui.ui.activity.launcher.widget.FullWidgetRootLayout android:id="@id/b8m" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <RelativeLayout android:id="@id/b3w" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.dudu.autoui.ui.activity.launcher.widget.FullWidgetRootLayout android:id="@id/b8n" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <com.wow.libs.duduSkin.view.SkinImageView android:id="@id/b52" android:background="@drawable/theme_launcher2_bottom_nav_bg" android:layout_width="match_parent" android:layout_height="@dimen/ea" android:scaleType="centerCrop" android:layout_toLeftOf="@id/b19" android:layout_alignParentBottom="true" />
+        <FrameLayout android:id="@id/b2k" android:paddingBottom="@dimen/ep" android:layout_width="match_parent" android:layout_height="@dimen/e7" android:layout_toLeftOf="@id/b19" android:layout_alignParentBottom="true">
+            <com.dudu.autoui.common.view.HorizontalScrollViewEx android:id="@id/b2i" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/b2m" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </com.dudu.autoui.common.view.HorizontalScrollViewEx>
+        </FrameLayout>
+        <View android:id="@id/b6i" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_alignParentRight="true" />
+        <com.dudu.autoui.ui.activity.launcher.DockView android:id="@id/b19" android:layout_width="@dimen/ef" android:layout_height="match_parent" android:layout_toLeftOf="@id/b6i" />
+        <com.dudu.autoui.ui.activity.launcher.PromptView android:layout_width="match_parent" android:layout_height="@dimen/f1" android:layout_toLeftOf="@id/b19" />
+        <androidx.cardview.widget.CardView android:id="@id/b8o" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/ep" android:layout_marginTop="@dimen/fa" android:layout_marginRight="@dimen/ep" android:layout_marginBottom="@dimen/ep" android:layout_toLeftOf="@id/b6n" android:layout_toRightOf="@id/b3k" android:layout_above="@id/b2k" app:d0="@color/gg" app:d1="10.0dp" app:d2="0.0dp">
+            <ImageView android:id="@id/tf" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <com.dudu.autoui.ui.activity.launcher.widget.WidgetRootLayout android:id="@id/b8l" android:layout_width="match_parent" android:layout_height="match_parent" />
+        </androidx.cardview.widget.CardView>
+        <View android:id="@id/b3_" android:layout_width="0.0dp" android:layout_height="match_parent" />
+        <FrameLayout android:id="@id/b3k" android:visibility="gone" android:layout_width="276.0dp" android:layout_height="match_parent" android:layout_marginLeft="@dimen/ep" android:layout_marginTop="@dimen/ez" android:layout_marginBottom="@dimen/ep" android:layout_toRightOf="@id/b3_" android:layout_above="@id/b2k" />
+        <FrameLayout android:id="@id/b6n" android:visibility="gone" android:layout_width="276.0dp" android:layout_height="match_parent" android:layout_marginTop="@dimen/ez" android:layout_marginRight="@dimen/ep" android:layout_marginBottom="@dimen/ep" android:layout_toLeftOf="@id/b19" android:layout_above="@id/b2k" />
+        <FrameLayout android:id="@id/b8r" android:visibility="gone" android:layout_width="@dimen/fl" android:layout_height="match_parent" android:layout_marginTop="@dimen/fk" android:layout_marginRight="@dimen/en" android:layout_marginBottom="@dimen/ep" android:layout_toLeftOf="@id/b6n" android:layout_above="@id/b2k" />
+        <FrameLayout android:id="@id/b8_" android:layout_width="match_parent" android:layout_height="25.0dp" android:layout_marginBottom="90.0dp" android:layout_toRightOf="@id/b19" android:layout_alignParentBottom="true">
+            <FrameLayout android:layout_gravity="center" android:id="@id/b81" android:paddingLeft="35.0dp" android:paddingTop="10.0dp" android:paddingRight="35.0dp" android:paddingBottom="10.0dp" android:layout_width="240.0dp" android:layout_height="25.0dp">
+                <com.wow.libs.duduSkin.view.SkinView android:id="@id/agw" android:background="@drawable/theme_launcher_touchbar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+            </FrameLayout>
+        </FrameLayout>
+    </RelativeLayout>
+</FrameLayout>

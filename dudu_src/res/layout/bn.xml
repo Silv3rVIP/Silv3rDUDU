@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dudu.autoui.common.view.CircleFrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.dudu.autoui.ui.dnview.view.DnSkinCustomImageView android:layout_gravity="center" android:id="@id/ni" android:layout_width="260.0dp" android:layout_height="260.0dp" android:scaleType="fitXY" app:xd="@color/dnskin_dialog_image_mask_l" />
+        <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:textSize="@dimen/m9" android:textColor="@color/dnskin_nst_text1_l" android:gravity="center" android:id="@id/zm" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" />
+    </LinearLayout>
+</com.dudu.autoui.common.view.CircleFrameLayout>

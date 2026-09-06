@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dudu.autoui.ui.dnview.view.DnSkinFrameLayout android:id="@id/b6m" android:background="@color/dnskin_popup_bg_l" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.dudu.autoui.ui.dnview.view.DnSkinFrameLayout android:id="@id/b5z" android:background="@color/dnskin_nsd_bg3_l" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.dudu.autoui.ui.dnview.view.DnSkinImageView android:id="@id/td" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/dnskin_widget_weather_bg_wz_l" android:scaleType="centerCrop" />
+            <com.dudu.autoui.common.weatherAnim.WeatherAnimView android:id="@id/b8k" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingTop="20.0dp" android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:textSize="90.0dp" android:textColor="@color/dnskin_widget_text2_l" android:id="@id/avr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cif" android:includeFontPadding="false" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:layout_marginBottom="30.0dp">
+                    <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:textSize="32.0dp" android:textColor="@color/dnskin_widget_text2_l" android:id="@id/awz" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cih" android:includeFontPadding="false" />
+                    <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:textSize="30.0dp" android:textColor="@color/dnskin_widget_text1_l" android:id="@id/avs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:text="@string/cig" android:includeFontPadding="false" />
+                </LinearLayout>
+                <com.dudu.autoui.ui.dnview.view.DnSkinFrameLayout android:id="@id/b2c" android:background="@drawable/dnskin_widget_weather_hour_bg_l" android:layout_width="match_parent" android:layout_height="150.0dp" android:layout_margin="20.0dp">
+                    <com.dudu.autoui.common.view.CircleFrameLayout android:layout_width="match_parent" android:layout_height="match_parent" app:a0k="@dimen/fg">
+                        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/b2a" android:paddingLeft="18.0dp" android:paddingRight="18.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+                        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/b2b" android:layout_width="match_parent" android:layout_height="match_parent">
+                            <com.dudu.autoui.ui.dnview.view.DnSkinImageView android:layout_width="65.0dp" android:layout_height="65.0dp" android:src="@drawable/dnskin_widget_weather_hour_nodata_l" />
+                            <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:textSize="18.0dp" android:textColor="@color/dnskin_widget_text1_l" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:text="@string/cen" />
+                        </LinearLayout>
+                    </com.dudu.autoui.common.view.CircleFrameLayout>
+                </com.dudu.autoui.ui.dnview.view.DnSkinFrameLayout>
+            </LinearLayout>
+            <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/b81" android:paddingLeft="@dimen/n7" android:paddingTop="12.0dp" android:paddingRight="@dimen/n7" android:paddingBottom="32.0dp" android:layout_width="@dimen/n8" android:layout_height="50.0dp">
+                <com.dudu.autoui.ui.dnview.view.DnSkinView android:layout_gravity="bottom" android:id="@id/agw" android:background="@drawable/dnskin_pwidget_touchbar_l" android:layout_width="match_parent" android:layout_height="match_parent" />
+            </FrameLayout>
+        </com.dudu.autoui.ui.dnview.view.DnSkinFrameLayout>
+    </com.dudu.autoui.ui.dnview.view.DnSkinFrameLayout>
+</FrameLayout>

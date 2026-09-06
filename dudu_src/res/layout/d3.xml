@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dudu.autoui.common.view.ScrollViewEx2 android:id="@id/a3x" android:background="#33000000" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.cardview.widget.CardView android:id="@id/ia" style="@style/fo">
+        <com.dudu.autoui.ui.dnview.view.DnSkinFrameLayout style="@style/fm">
+            <com.dudu.autoui.ui.dnview.view.DnSkinLinearLayout android:orientation="vertical" android:paddingTop="5.0dp" android:paddingBottom="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="10.0dp" android:paddingEnd="10.0dp">
+                <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:textSize="@dimen/m_" android:textColor="@color/dnskin_register_account_l" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginBottom="8.0dp" android:text="@string/a9" android:includeFontPadding="false" android:layout_marginStart="6.0dp" />
+                <com.dudu.autoui.ui.dnview.view.DnSkinEditText android:textSize="@dimen/m_" android:textColor="@color/dnskin_register_account_l" android:textColorHint="@color/dnskin_register_input_hint_l" android:gravity="center_vertical" android:id="@id/j9" android:background="@drawable/dnskin_dialog_register_accout_bg_l" android:layout_width="match_parent" android:layout_height="50.0dp" android:layout_marginBottom="17.0dp" android:hint="@string/afw" android:maxLines="1" android:singleLine="true" android:inputType="textEmailAddress" android:imeOptions="actionDone" android:paddingStart="15.0dp" android:paddingEnd="15.0dp" />
+                <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:textSize="@dimen/m_" android:textColor="@color/dnskin_register_account_l" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp" android:text="@string/a_" android:includeFontPadding="false" android:layout_marginStart="6.0dp" />
+                <com.dudu.autoui.ui.dnview.view.DnSkinFrameLayout android:background="@drawable/dnskin_dialog_register_accout_bg_l" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="50.0dp" android:layout_marginBottom="7.0dp">
+                    <com.dudu.autoui.ui.dnview.view.DnSkinEditText android:textSize="@dimen/m_" android:textColor="@color/dnskin_register_account_l" android:textColorHint="@color/dnskin_register_input_hint_l" android:id="@id/j_" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent" android:hint="@string/a_" android:maxLines="1" android:inputType="textPassword" android:imeOptions="actionDone" android:paddingStart="15.0dp" android:paddingEnd="44.0dp" />
+                    <com.dudu.autoui.ui.dnview.view.DnSkinImageView android:layout_gravity="right|center" android:id="@id/pj" android:layout_width="28.0dp" android:layout_height="28.0dp" android:src="@drawable/dnskin_ic_hide_pwd_l" android:layout_marginEnd="8.0dp" />
+                </com.dudu.autoui.ui.dnview.view.DnSkinFrameLayout>
+                <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:textSize="@dimen/m_" android:textColor="@color/dnskin_login_forget_pwd_l" android:id="@id/aqb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="35.0dp" android:text="@string/a83" android:includeFontPadding="false" android:layout_marginStart="8.0dp" />
+                <com.dudu.autoui.ui.dnview.view.DnSkinLinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:id="@id/atx" android:text="@string/ab" android:layout_marginEnd="22.0dp" style="@style/fp" />
+                    <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:id="@id/aru" android:text="@string/aou" android:layout_marginEnd="22.0dp" style="@style/fq" />
+                    <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:id="@id/arv" android:layout_width="0.0dp" android:text="@string/h9" style="@style/fp" />
+                </com.dudu.autoui.ui.dnview.view.DnSkinLinearLayout>
+            </com.dudu.autoui.ui.dnview.view.DnSkinLinearLayout>
+        </com.dudu.autoui.ui.dnview.view.DnSkinFrameLayout>
+    </androidx.cardview.widget.CardView>
+</com.dudu.autoui.common.view.ScrollViewEx2>

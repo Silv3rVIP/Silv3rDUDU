@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dudu.autoui.ui.activity.launcher.view.PendantFrameLayout android:background="@drawable/theme_pendant_byd_car_info_bg" android:layout_width="280.0dp" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center|top" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@id/b7e" android:layout_width="280.0dp" android:layout_height="144.0dp">
+            <FrameLayout android:layout_gravity="center" android:id="@id/ha" android:layout_width="174.0dp" android:layout_height="84.0dp" android:scaleX="1.2" android:scaleY="1.2" />
+            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="18.0dp" android:textColor="@color/theme_pendant_car_info_tp" android:gravity="center" android:layout_gravity="left|top" android:id="@id/ann" android:background="@drawable/theme_pendant_car_info_tp_bg" android:layout_width="50.0dp" android:layout_height="30.0dp" android:layout_margin="13.0dp" android:text="-.-" />
+            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="18.0dp" android:textColor="@color/theme_pendant_car_info_tp" android:gravity="center" android:layout_gravity="right|top" android:id="@id/anm" android:background="@drawable/theme_pendant_car_info_tp_bg" android:layout_width="50.0dp" android:layout_height="30.0dp" android:layout_margin="13.0dp" android:text="-.-" />
+            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="18.0dp" android:textColor="@color/theme_pendant_car_info_tp" android:gravity="center" android:layout_gravity="left|bottom" android:id="@id/anl" android:background="@drawable/theme_pendant_car_info_tp_bg" android:layout_width="50.0dp" android:layout_height="30.0dp" android:layout_margin="13.0dp" android:text="-.-" />
+            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="18.0dp" android:textColor="@color/theme_pendant_car_info_tp" android:gravity="center" android:layout_gravity="right|bottom" android:id="@id/ank" android:background="@drawable/theme_pendant_car_info_tp_bg" android:layout_width="50.0dp" android:layout_height="30.0dp" android:layout_margin="13.0dp" android:text="-.-" />
+        </FrameLayout>
+        <com.dudu.autoui.ui.activity.launcher.pendant.ls.LsCarInfoListView android:id="@id/b2f" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+    </LinearLayout>
+    <com.wow.libs.duduSkin.view.SkinView android:background="@drawable/theme_pendant_byd_car_info_front" android:layout_width="match_parent" android:layout_height="match_parent" />
+</com.dudu.autoui.ui.activity.launcher.view.PendantFrameLayout>

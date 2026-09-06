@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:padding="6.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dudu.autoui.common.view.CircleFrameLayout android:id="@id/b6m" android:layout_width="162.0dp" android:layout_height="90.0dp" app:a0k="10.0dp">
+        <FrameLayout android:id="@id/b2d" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_gravity="center" android:id="@id/mo" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+            <com.dudu.autoui.ui.dnview.view.DnSkinImageView android:layout_gravity="right|top" android:id="@id/ax9" android:visibility="gone" android:layout_width="35.0dp" android:layout_height="18.0dp" android:layout_margin="8.0dp" />
+            <com.dudu.autoui.ui.dnview.view.DnSkinImageView android:layout_gravity="right|bottom" android:id="@id/a50" android:visibility="gone" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_margin="10.0dp" android:src="@drawable/dnskin_nnc_xz_l" />
+        </FrameLayout>
+        <com.dudu.autoui.ui.dnview.view.DnSkinLinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ay6" android:background="@color/dnskin_nsd_cbg1_l" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.dudu.autoui.ui.dnview.view.DnSkinImageView android:layout_width="30.0dp" android:layout_height="30.0dp" android:src="@drawable/dnskin_nnsk_dr_l" android:scaleType="fitXY" />
+            <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:textSize="@dimen/m_" android:textColor="@color/dnskin_nst_text1_l" android:gravity="center" android:paddingLeft="20.0dp" android:paddingRight="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/bam" />
+        </com.dudu.autoui.ui.dnview.view.DnSkinLinearLayout>
+    </com.dudu.autoui.common.view.CircleFrameLayout>
+</FrameLayout>

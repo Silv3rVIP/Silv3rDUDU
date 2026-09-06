@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/mu" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@id/b00" android:layout_width="152.0dp" android:layout_height="278.0dp" app:p8="a1m" app:pr="a1m" app:pv="a1m" app:q1="a1m">
+            <com.wow.libs.duduSkin.view.SkinImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/theme_minim_item_ty_car" android:scaleType="fitXY" />
+            <com.wow.libs.duduSkin.view.SkinImageView android:id="@id/qv" android:layout_width="76.0dp" android:layout_height="139.0dp" android:src="@drawable/theme_minim_item_ty_car_lf" android:scaleType="fitXY" />
+            <com.wow.libs.duduSkin.view.SkinImageView android:layout_gravity="right" android:id="@id/sa" android:layout_width="76.0dp" android:layout_height="139.0dp" android:src="@drawable/theme_minim_item_ty_car_rf" android:scaleType="fitXY" />
+            <com.wow.libs.duduSkin.view.SkinImageView android:layout_gravity="bottom" android:id="@id/qr" android:layout_width="76.0dp" android:layout_height="139.0dp" android:src="@drawable/theme_minim_item_ty_car_lb" android:scaleType="fitXY" />
+            <com.wow.libs.duduSkin.view.SkinImageView android:layout_gravity="right|bottom" android:id="@id/s8" android:layout_width="76.0dp" android:layout_height="139.0dp" android:src="@drawable/theme_minim_item_ty_car_rb" android:scaleType="fitXY" />
+        </FrameLayout>
+        <TextView android:gravity="center" android:id="@id/aw9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dp" android:layout_marginRight="25.0dp" app:pu="@id/b00" app:q1="@id/b00" />
+        <TextView android:gravity="center" android:id="@id/awa" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dp" android:layout_marginTop="25.0dp" app:ps="@id/b00" app:q1="@id/b00" />
+        <TextView android:gravity="center" android:id="@id/aw8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="25.0dp" android:layout_marginBottom="25.0dp" app:p8="@id/b00" app:pu="@id/b00" />
+        <TextView android:gravity="center" android:id="@id/aw_" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dp" android:layout_marginBottom="25.0dp" app:p8="@id/b00" app:ps="@id/b00" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

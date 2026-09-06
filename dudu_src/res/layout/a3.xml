@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dudu.autoui.ui.base.ActivityBaseFrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/b3w" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.dudu.autoui.ui.dnview.view.DnSkinFrameLayout android:orientation="horizontal" android:background="@color/dnskin_content_main_bg_l" android:layout_width="match_parent" android:layout_height="match_parent">
+            <FrameLayout android:layout_width="145.0dp" android:layout_height="match_parent">
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/yv" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="10.0dp" android:layout_marginBottom="10.0dp" />
+            </FrameLayout>
+            <com.dudu.autoui.ui.dnview.view.DnSkinFrameLayout android:background="@color/dnskin_content_content_bg_l" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="145.0dp">
+                <com.dudu.autoui.ui.dnview.view.DnSkinImageView android:layout_gravity="right" android:id="@id/a3b" android:visibility="gone" android:layout_width="300.0dp" android:layout_height="match_parent" android:src="@drawable/o7" />
+                <FrameLayout android:id="@id/ha" android:layout_width="match_parent" android:layout_height="match_parent" />
+            </com.dudu.autoui.ui.dnview.view.DnSkinFrameLayout>
+        </com.dudu.autoui.ui.dnview.view.DnSkinFrameLayout>
+    </FrameLayout>
+</com.dudu.autoui.ui.base.ActivityBaseFrameLayout>

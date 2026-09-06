@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="60.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="60.0dp">
+        <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:textSize="30.0dp" android:gravity="center" android:id="@id/alt" android:layout_width="match_parent" android:layout_height="60.0dp" android:text="15" />
+        <com.dudu.autoui.ui.dnview.view.DnSkinImageView android:layout_gravity="right|top" android:id="@id/pt" android:layout_width="12.0dp" android:layout_height="12.0dp" android:layout_marginTop="12.0dp" android:layout_marginRight="5.0dp" android:src="@drawable/dnskin_air_temp_du_l" />
+        <com.dudu.autoui.ui.dnview.view.DnSkinImageView android:layout_gravity="center" android:id="@id/r0" android:padding="13.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="60.0dp" android:src="@drawable/dnskin_air_temp_mark_l" />
+    </FrameLayout>
+    <View android:layout_width="match_parent" android:layout_height="1.0dp" />
+</FrameLayout>

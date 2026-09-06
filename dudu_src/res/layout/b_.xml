@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.github.mikephil.charting.charts.LineChart android:id="@id/uw" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.dudu.autoui.ui.dnview.view.DnSkinLinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/b1o" android:background="@drawable/dnskin_chart_bg_l" android:paddingLeft="10.0dp" android:paddingTop="5.0dp" android:paddingRight="10.0dp" android:paddingBottom="5.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp">
+        <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:textSize="18.0dp" android:textColor="#688cc0" android:gravity="center" android:id="@id/b1q" android:layout_width="match_parent" android:layout_height="wrap_content" android:includeFontPadding="false" />
+        <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:textSize="16.0dp" android:textColor="@color/dnskin_nst_text2_l" android:gravity="center" android:id="@id/b1p" android:layout_width="match_parent" android:layout_height="wrap_content" android:includeFontPadding="false" />
+    </com.dudu.autoui.ui.dnview.view.DnSkinLinearLayout>
+</FrameLayout>

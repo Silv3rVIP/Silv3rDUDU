@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.wow.libs.duduSkin.view.SkinImageView android:id="@id/vb" android:layout_width="32.0dp" android:layout_height="32.0dp" android:scaleType="fitXY" />
+    <com.wow.libs.duduSkin.view.SkinTextView android:textSize="26.0dp" android:textColor="@color/theme_main_item_tl_time" android:gravity="center" android:id="@id/am_" android:layout_width="55.0dp" android:layout_height="32.0dp" android:includeFontPadding="false" />
+</LinearLayout>

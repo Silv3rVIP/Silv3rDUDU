@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dudu.autoui.ui.dnview.view.DnSkinLinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/dnskin_sbp_apps_item_bg_l" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dudu.autoui.ui.dnview.view.DnSkinAppIconImageView android:layout_gravity="center" android:id="@id/qd" android:layout_width="35.0dp" android:layout_height="35.0dp" />
+    <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:textSize="12.0dp" android:textColor="@color/dnskin_widget_apps_item_ls_app_name_l" android:ellipsize="end" android:gravity="center" android:id="@id/avw" android:layout_width="match_parent" android:layout_height="18.0dp" android:layout_marginTop="3.0dp" android:maxLines="1" />
+</com.dudu.autoui.ui.dnview.view.DnSkinLinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="10.0dp" android:paddingTop="5.0dp" android:paddingRight="10.0dp" android:paddingBottom="5.0dp" android:focusable="false" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp">
+        <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:textSize="18.0dp" android:textColor="@color/dnskin_nst_title_l" android:ellipsize="marquee" android:gravity="center_vertical" android:id="@id/ama" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="title" android:singleLine="true" />
+        <com.dudu.autoui.ui.dnview.view.DnSkinImageView android:id="@id/b_n" android:padding="4.0dp" android:layout_width="26.0dp" android:layout_height="26.0dp" android:layout_marginLeft="3.0dp" android:src="@drawable/dnskin_nsc_yiwen_l" />
+    </LinearLayout>
+    <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:textSize="16.0dp" android:textColor="@color/dnskin_nst_text2_l" android:ellipsize="marquee" android:gravity="center_vertical" android:id="@id/ai9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:text="title" android:singleLine="true" />
+    <FrameLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="50.0dp" android:layout_marginTop="10.0dp">
+        <com.dudu.autoui.ui.activity.nnset.setview.view.NNSetSeekBar android:id="@id/a4f" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent" android:maxHeight="50.0dp" android:minHeight="50.0dp" android:thumb="@drawable/dr" android:paddingStart="0.0dp" android:paddingEnd="0.0dp" />
+        <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:textSize="14.0dp" android:textColor="@color/dnskin_nst_text1_l" android:gravity="center_vertical" android:layout_gravity="right|center" android:id="@id/atn" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="20.0dp" android:text="0" />
+        <com.dudu.autoui.ui.dnview.view.DnSkinImageView android:layout_gravity="center_vertical" android:id="@id/mg" android:layout_width="25.0dp" android:layout_height="25.0dp" android:layout_marginLeft="15.0dp" />
+        <View android:id="@id/u3" android:layout_width="80.0dp" android:layout_height="match_parent" />
+        <View android:layout_gravity="right" android:id="@id/u2" android:layout_width="80.0dp" android:layout_height="match_parent" />
+    </FrameLayout>
+</LinearLayout>

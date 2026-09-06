@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dudu.autoui.ui.dnview.view.DnSkinFrameLayout android:id="@id/b6m" android:background="@color/dnskin_popup_bg_l" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.dudu.autoui.ui.dnview.view.DnSkinFrameLayout android:id="@id/b5z" android:background="@color/dnskin_nsd_bg3_l" android:layout_width="match_parent" android:layout_height="match_parent">
+            <FrameLayout android:id="@id/c7" android:layout_width="match_parent" android:layout_height="match_parent">
+                <FrameLayout android:id="@id/b6b" android:layout_width="140.0dp" android:layout_height="match_parent" android:layout_marginTop="5.0dp" android:layout_marginBottom="20.0dp">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/b6c" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="20.0dp" />
+                    <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:textSize="14.0dp" android:textColor="@color/dnskin_widget_apps_item_ls_app_name_l" android:ellipsize="end" android:gravity="center" android:layout_gravity="bottom" android:id="@id/avw" android:layout_width="match_parent" android:layout_height="20.0dp" android:text="@string/bhi" android:singleLine="true" />
+                </FrameLayout>
+                <com.dudu.autoui.ui.dnview.view.DnSkinView android:id="@id/b6d" android:background="@color/dnskin_nsd_i_l" android:layout_width="1.0dp" android:layout_height="match_parent" android:layout_marginLeft="140.0dp" android:layout_marginTop="30.0dp" android:layout_marginBottom="30.0dp" />
+                <FrameLayout android:id="@id/ay_" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="140.0dp" android:layout_marginTop="20.0dp" android:layout_marginBottom="5.0dp">
+                    <androidx.viewpager.widget.ViewPager android:id="@id/b5n" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="5.0dp" android:layout_marginBottom="15.0dp" />
+                    <com.dudu.autoui.ui.popup.allapp.AllAppsPopupPagePostionView android:layout_gravity="bottom" android:id="@id/b61" android:layout_width="match_parent" android:layout_height="20.0dp" />
+                </FrameLayout>
+                <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/b81" android:paddingLeft="@dimen/n7" android:paddingTop="7.0dp" android:paddingRight="@dimen/n7" android:paddingBottom="27.0dp" android:layout_width="@dimen/n8" android:layout_height="40.0dp">
+                    <com.dudu.autoui.ui.dnview.view.DnSkinView android:layout_gravity="bottom" android:id="@id/agw" android:background="@drawable/dnskin_pwidget_touchbar_l" android:layout_width="match_parent" android:layout_height="match_parent" />
+                </FrameLayout>
+            </FrameLayout>
+        </com.dudu.autoui.ui.dnview.view.DnSkinFrameLayout>
+    </com.dudu.autoui.ui.dnview.view.DnSkinFrameLayout>
+</FrameLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dudu.autoui.ui.dnview.view.DnSkinLinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/dnskin_common_ripple128_bg_l" android:paddingTop="20.0dp" android:paddingBottom="20.0dp" android:layout_width="100.0dp" android:layout_height="110.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dudu.autoui.ui.dnview.view.DnSkinAppIconImageView android:id="@id/mg" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_marginLeft="30.0dp" android:layout_marginRight="30.0dp" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="30.0dp">
+        <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:textSize="14.0dp" android:textColor="@color/dnskin_dialog_text1_l" android:ellipsize="end" android:gravity="center" android:id="@id/a0e" android:paddingLeft="5.0dp" android:paddingRight="5.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:singleLine="true" />
+        <ImageView android:id="@id/a50" android:visibility="gone" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginRight="10.0dp" android:src="@mipmap/fu" />
+    </LinearLayout>
+</com.dudu.autoui.ui.dnview.view.DnSkinLinearLayout>

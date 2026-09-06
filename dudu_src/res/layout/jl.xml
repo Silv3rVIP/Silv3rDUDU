@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="80.0dp" android:layout_marginTop="3.0dp" android:layout_marginBottom="3.0dp">
+        <com.wow.libs.duduSkin.view.SkinImageView android:id="@id/qd" android:padding="5.0dp" android:layout_width="40.0dp" android:layout_height="40.0dp" />
+        <com.wow.libs.duduSkin.view.SkinTextView android:textSize="15.0dp" android:textColor="@color/theme_pip_app_item" android:gravity="center" android:id="@id/aso" android:layout_width="match_parent" android:layout_height="wrap_content" android:includeFontPadding="false" />
+    </LinearLayout>
+    <View android:layout_width="match_parent" android:layout_height="1.0dp" />
+</FrameLayout>

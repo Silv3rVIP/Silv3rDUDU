@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="50.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <Button android:id="@id/v9" android:background="@color/gg" android:padding="15.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/am6" />
+        <Button android:id="@id/v8" android:background="@color/gg" android:padding="15.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/aly" />
+        <Button android:id="@id/a3i" android:background="@color/gg" android:padding="15.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bkh" />
+        <Button android:id="@id/a3h" android:background="@color/gg" android:padding="15.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bka" />
+        <Button android:id="@id/amx" android:background="@color/gg" android:padding="15.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/c7s" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <Button android:id="@id/amw" android:background="@color/gg" android:padding="15.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/c7r" />
+        <Button android:id="@id/fp" android:background="@color/gg" android:padding="15.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/j6" />
+        <Button android:id="@id/fn" android:background="@color/gg" android:padding="15.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/j1" />
+        <Button android:id="@id/fm" android:background="@color/gg" android:padding="15.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/so" />
+        <Button android:id="@id/fo" android:background="@color/gg" android:padding="15.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/biw" />
+    </LinearLayout>
+</LinearLayout>

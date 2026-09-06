@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="horizontal" android:paddingLeft="5.0dp" android:paddingRight="5.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dudu.autoui.ui.activity.launcher.unbounded.view.UnTimeView android:textSize="@dimen/fc" android:textColor="@color/theme_un_prompt_assembly" android:gravity="right|center" android:layout_gravity="right" android:id="@id/avt" android:visibility="gone" android:clickable="false" android:longClickable="true" android:layout_width="wrap_content" android:layout_height="25.0dp" android:lines="1" android:includeFontPadding="false" />
+    <com.dudu.autoui.ui.activity.launcher.unbounded.prompt.UnPromptTrayView android:gravity="center_vertical" android:layout_gravity="left|top" android:orientation="horizontal" android:id="@id/an8" android:layout_width="wrap_content" android:layout_height="25.0dp" />
+    <FrameLayout android:layout_gravity="right" android:id="@id/b3a" android:paddingLeft="3.0dp" android:paddingRight="3.0dp" android:layout_width="match_parent" android:layout_height="60.0dp" android:layout_marginTop="23.0dp">
+        <com.wow.libs.duduSkin.view.SkinTextView android:textSize="43.0dp" android:gravity="right|center" android:id="@id/aqn" android:layout_width="wrap_content" android:layout_height="50.0dp" android:layout_marginLeft="-2.0dp" android:text="0" android:includeFontPadding="false" android:alpha="0.0" />
+        <FrameLayout android:layout_gravity="right" android:orientation="vertical" android:id="@id/b71" android:layout_width="200.0dp" android:layout_height="wrap_content">
+            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="43.0dp" android:textColor="@color/theme_un_car_speed" android:gravity="right|center" android:id="@id/avh" android:layout_width="match_parent" android:layout_height="50.0dp" android:layout_marginLeft="-2.0dp" android:text="0" android:includeFontPadding="false" />
+            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="11.0dp" android:textColor="@color/theme_un_car_speed" android:gravity="right|center" android:id="@id/ahj" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="48.0dp" android:text="km/h" android:includeFontPadding="false" />
+        </FrameLayout>
+    </FrameLayout>
+</FrameLayout>

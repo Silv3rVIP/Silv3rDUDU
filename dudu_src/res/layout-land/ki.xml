@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:id="@id/ym" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/lr" android:layout_width="wrap_content" android:layout_height="wrap_content" app:pf="16.0dp" />
+    <include android:id="@id/y_" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" app:p9="@id/ye" app:pr="a1m" app:q1="@id/lr" app:q3="a1i" layout="@layout/k_" />
+    <include android:id="@id/ye" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" app:p8="a1m" app:pr="@id/y_" app:pv="@id/y_" app:q0="@id/y_" app:q3="a1i" layout="@layout/a3m" />
+    <com.google.android.material.timepicker.ClockFaceView android:id="@id/ya" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/bo" app:pw="@id/y_" app:q1="a1m" />
+</merge>

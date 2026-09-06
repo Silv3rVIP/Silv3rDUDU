@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dudu.autoui.ui.dnview.view.DnSkinLinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/dnskin_sbp_state_popup_button_bg_l" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dudu.autoui.ui.dnview.view.DnSkinImageView android:id="@id/mg" android:layout_width="25.0dp" android:layout_height="25.0dp" />
+    <com.dudu.autoui.ui.dnview.view.DnSkinAutoMarqueeTextView android:textSize="14.0dp" android:textColor="@color/dnskin_nst_title_l" android:ellipsize="marquee" android:gravity="center" android:id="@id/a0e" android:paddingLeft="2.0dp" android:paddingRight="2.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:singleLine="true" android:includeFontPadding="false" android:marqueeRepeatLimit="marquee_forever" />
+</com.dudu.autoui.ui.dnview.view.DnSkinLinearLayout>

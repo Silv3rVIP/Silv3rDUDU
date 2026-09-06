@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/g0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.dudu.autoui.ui.activity.nset.setview.NSetItemView android:id="@id/ajv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/mr" app:yd="@string/agc" app:ye="axm" />
+            <com.dudu.autoui.ui.activity.nset.setview.NSetItemView android:id="@id/al6" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/mr" app:yd="@string/cjh" app:ye="axk" />
+            <LinearLayout android:orientation="vertical" android:id="@id/b4_" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.dudu.autoui.ui.activity.nset.setview.NSetItemView android:id="@id/ajt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/mr" app:yd="@string/ab4" app:ye="axm" />
+                <com.dudu.autoui.ui.activity.nset.setview.NSetItemView android:id="@id/aju" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/mr" app:y4="true" app:y6="100" app:y7="0" app:y9="30.0dp" app:yd="@string/ab2" app:ye="axi" />
+            </LinearLayout>
+            <com.dudu.autoui.ui.activity.nset.setview.NSetItemView android:id="@id/aix" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/mr" app:yd="@string/a7c" app:ye="axm" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/g2">
+        <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:id="@id/dy" android:text="@string/a08" style="@style/fy" />
+        <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:id="@id/auu" android:text="@string/v3" style="@style/fz" />
+    </LinearLayout>
+</LinearLayout>

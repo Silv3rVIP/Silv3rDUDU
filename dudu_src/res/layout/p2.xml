@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:focusable="false" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dudu.autoui.ui.statebar.StateBarRootView android:id="@id/ahz" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.dudu.autoui.ui.statebar.StateBarMiniView android:layout_gravity="left" android:id="@id/ai0" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" />
+</FrameLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dudu.autoui.common.view.CircleFrameLayout android:id="@id/a3j" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="40.0dp">
+        <com.wow.libs.duduSkin.view.SkinFrameLayout android:background="@color/theme_pip_appselect_bg" android:paddingTop="20.0dp" android:paddingBottom="20.0dp" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/vk" android:layout_width="match_parent" android:layout_height="match_parent" />
+        </com.wow.libs.duduSkin.view.SkinFrameLayout>
+        <FrameLayout android:id="@id/an_" android:layout_width="match_parent" android:layout_height="20.0dp">
+            <com.wow.libs.duduSkin.view.SkinView android:layout_gravity="center" android:id="@id/agw" android:background="@drawable/theme_pip_app_select_close" android:layout_width="80.0dp" android:layout_height="4.0dp" android:layout_marginTop="8.0dp" />
+        </FrameLayout>
+    </com.dudu.autoui.common.view.CircleFrameLayout>
+</FrameLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wow.libs.duduSkin.view.SkinFrameLayout android:background="@drawable/theme_widget_time_rili_day_trip_panel_bg" android:layout_width="260.0dp" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:padding="15.0dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.dudu.autoui.ui.activity.launcher.view.SkinCustomImageView android:id="@id/qz" android:layout_width="230.0dp" android:layout_height="0.0dp" android:layout_marginBottom="10.0dp" android:scaleType="centerCrop" android:layout_weight="1.0" app:x7="@dimen/bq" app:xd="@color/theme_widget_time_rili_day_trip_img_mask" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="230.0dp" android:layout_height="40.0dp">
+            <com.wow.libs.duduSkin.view.SkinImageView android:layout_width="16.0dp" android:layout_height="20.0dp" android:src="@drawable/theme_widget_time_rili_day_trip_start" android:scaleType="fitXY" />
+            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="14.0dp" android:textColor="@color/theme_widget_time_rili_day_trip_time" android:gravity="center" android:id="@id/avl" android:layout_width="45.0dp" android:layout_height="40.0dp" android:text="11:11" />
+            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="12.0dp" android:textColor="@color/theme_widget_time_rili_day_trip_address" android:gravity="center_vertical" android:id="@id/avk" android:layout_width="0.0dp" android:layout_height="match_parent" android:maxLines="2" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="230.0dp" android:layout_height="40.0dp" android:layout_marginBottom="10.0dp">
+            <com.wow.libs.duduSkin.view.SkinImageView android:layout_width="16.0dp" android:layout_height="20.0dp" android:src="@drawable/theme_widget_time_rili_day_trip_end" android:scaleType="fitXY" />
+            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="14.0dp" android:textColor="@color/theme_widget_time_rili_day_trip_time" android:gravity="center" android:id="@id/aq3" android:layout_width="45.0dp" android:layout_height="40.0dp" android:text="11:11" />
+            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="12.0dp" android:textColor="@color/theme_widget_time_rili_day_trip_address" android:gravity="center_vertical" android:id="@id/aq2" android:layout_width="0.0dp" android:layout_height="match_parent" android:maxLines="2" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="220.0dp" android:layout_height="20.0dp">
+            <com.wow.libs.duduSkin.view.SkinImageView android:layout_width="15.0dp" android:layout_height="15.0dp" android:src="@drawable/theme_widget_time_rili_day_trip_lc" android:scaleType="fitXY" />
+            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="12.0dp" android:textColor="@color/theme_widget_time_rili_day_trip_val" android:gravity="center" android:id="@id/arj" android:layout_width="wrap_content" android:layout_height="20.0dp" android:text="100KM" />
+            <View android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+            <com.wow.libs.duduSkin.view.SkinImageView android:layout_width="15.0dp" android:layout_height="15.0dp" android:src="@drawable/theme_widget_time_rili_day_trip_sj" android:scaleType="fitXY" />
+            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="12.0dp" android:textColor="@color/theme_widget_time_rili_day_trip_val" android:gravity="center" android:id="@id/av_" android:layout_width="wrap_content" android:layout_height="20.0dp" android:text="100KM" />
+            <View android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+            <com.wow.libs.duduSkin.view.SkinImageView android:layout_width="15.0dp" android:layout_height="15.0dp" android:src="@drawable/theme_widget_time_rili_day_trip_sd" android:scaleType="fitXY" />
+            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="12.0dp" android:textColor="@color/theme_widget_time_rili_day_trip_val" android:gravity="center" android:id="@id/auw" android:layout_width="wrap_content" android:layout_height="20.0dp" android:text="100KM" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:layout_width="1.0dp" android:layout_height="match_parent" />
+</com.wow.libs.duduSkin.view.SkinFrameLayout>

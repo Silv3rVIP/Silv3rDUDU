@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dudu.autoui.ui.dnview.view.DnSkinFrameLayout android:paddingBottom="@dimen/mr" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dudu.autoui.ui.dnview.view.DnSkinFrameLayout android:background="@drawable/dnskin_nset_item_bg_l" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="50.0dp">
+        <com.dudu.autoui.ui.dnview.view.DnSkinFrameLayout android:background="@drawable/dnskin_common_ripple1000_bg_l" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:textSize="16.0dp" android:textColor="@color/dnskin_activity_common_text1_l" android:gravity="center_vertical" android:id="@id/ama" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10.0dp" android:minHeight="40.0dp" android:text="title" android:maxLines="2" android:lineSpacingExtra="2.0dp" />
+        </com.dudu.autoui.ui.dnview.view.DnSkinFrameLayout>
+    </com.dudu.autoui.ui.dnview.view.DnSkinFrameLayout>
+    <View android:layout_width="match_parent" android:layout_height="1.0dp" />
+</com.dudu.autoui.ui.dnview.view.DnSkinFrameLayout>

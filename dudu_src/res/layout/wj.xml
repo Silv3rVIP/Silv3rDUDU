@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/b5y" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <FrameLayout android:id="@id/b5o" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.dudu.autoui.ui.activity.launcher.view.PaperMaskView android:id="@id/b43" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <FrameLayout android:id="@id/a1y" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.wow.libs.duduSkin.view.SkinImageView android:id="@id/b21" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/theme_widget_paper_front" android:scaleType="centerCrop" />
+</FrameLayout>

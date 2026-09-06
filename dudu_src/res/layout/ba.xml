@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dudu.autoui.ui.dnview.view.DnSkinLinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.dudu.autoui.ui.activity.nnset.setview.NSetCheck2View android:id="@id/a9h" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7" app:xy="档位关联" />
+        <LinearLayout android:orientation="vertical" android:id="@id/b24" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.dudu.autoui.ui.activity.nnset.setview.NSetButton2View android:id="@id/a9i" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7" app:xy="D档颜色" />
+            <com.dudu.autoui.ui.activity.nnset.setview.NSetButton2View android:id="@id/a9k" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7" app:xy="P档颜色" />
+            <com.dudu.autoui.ui.activity.nnset.setview.NSetButton2View android:id="@id/a9l" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7" app:xy="R档颜色" />
+            <com.dudu.autoui.ui.activity.nnset.setview.NSetButton2View android:id="@id/a9j" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7" app:xy="其他档位颜色" />
+        </LinearLayout>
+        <com.dudu.autoui.ui.activity.nnset.setview.NSetCheck2View android:id="@id/a5c" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7" app:xy="空调关联" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ay7" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.dudu.autoui.ui.activity.nnset.setview.NSetButton2View android:id="@id/a5e" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7" app:xy="高温区颜色" app:yc="大于等于27度" />
+            <com.dudu.autoui.ui.activity.nnset.setview.NSetButton2View android:id="@id/a5d" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7" app:xy="低温区颜色" app:yc="小于等于26度" />
+        </LinearLayout>
+    </com.dudu.autoui.ui.dnview.view.DnSkinLinearLayout>
+</ScrollView>

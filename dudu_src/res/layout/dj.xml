@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/go">
+        <FrameLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/gz">
+            <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:textSize="18.0dp" android:textColor="@color/dnskin_nst_text1_l" android:ellipsize="marquee" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/by9" android:singleLine="true" />
+            <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:textSize="18.0dp" android:textColor="@color/dnskin_nst_text2_l" android:ellipsize="marquee" android:gravity="center_vertical" android:layout_gravity="right|center" android:id="@id/avi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </FrameLayout>
+        <com.dudu.autoui.ui.activity.nnset.setview.dialog.NDSetNumView android:id="@id/acs" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7" app:xf="true" app:xq="255" app:xr="0" />
+        <com.dudu.autoui.ui.activity.nnset.setview.dialog.NDSetNumView android:id="@id/act" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7" app:xf="true" app:xq="255" app:xr="0" />
+        <com.dudu.autoui.ui.activity.nnset.setview.dialog.NDSetNumView android:id="@id/adm" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7" app:xg="@drawable/dnskin_nns_l_sd_l" app:xp="%" app:xq="20" app:xr="0" app:xy="@string/aq3" />
+        <com.dudu.autoui.ui.activity.nnset.setview.dialog.NDSetNumView android:id="@id/adn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7" app:xg="@drawable/dnskin_nns_l_sd_l" app:xp="%" app:xq="20" app:xr="0" app:xy="@string/aun" />
+        <com.dudu.autoui.ui.activity.nnset.setview.dialog.NDSetNumView android:id="@id/ado" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7" app:xg="@drawable/dnskin_nns_l_sd_l" app:xp="%" app:xq="20" app:xr="0" app:xy="@string/acs" />
+    </LinearLayout>
+</ScrollView>

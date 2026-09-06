@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dudu.autoui.common.view.CircleFrameLayout android:layout_gravity="center" android:layout_width="300.0dp" android:layout_height="wrap_content" app:a0k="@dimen/bq">
+        <LinearLayout android:orientation="vertical" android:background="@color/dnskin_dialog_bg_l" android:padding="@dimen/da" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/s4" android:layout_width="260.0dp" android:layout_height="260.0dp" android:scaleType="fitCenter" android:contentDescription="@string/el" />
+            <TextView android:textSize="18.0dp" android:textColor="#4a5061" android:gravity="center" android:id="@id/ash" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/beb" />
+        </LinearLayout>
+    </com.dudu.autoui.common.view.CircleFrameLayout>
+</FrameLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wow.libs.duduSkin.view.SkinFrameLayout android:layout_width="80.0dp" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="80.0dp" android:layout_height="match_parent">
+        <com.wow.libs.duduSkin.view.SkinTextView android:textSize="16.0dp" android:textColor="@color/theme_widget_weather_hour_hour" android:gravity="center" android:id="@id/ar6" android:layout_width="match_parent" android:layout_height="28.0dp" android:text="@string/c6t" />
+        <com.wow.libs.duduSkin.view.SkinImageView android:id="@id/td" android:layout_width="35.0dp" android:layout_height="35.0dp" android:layout_marginTop="-5.0dp" android:contentDescription="@string/el" />
+        <com.wow.libs.duduSkin.view.SkinTextView android:textSize="18.0dp" android:textColor="@color/theme_widget_weather_hour_temp" android:gravity="center" android:id="@id/avr" android:layout_width="match_parent" android:layout_height="28.0dp" android:text="@string/c58" />
+    </LinearLayout>
+    <View android:layout_width="1.0dp" android:layout_height="match_parent" />
+</com.wow.libs.duduSkin.view.SkinFrameLayout>

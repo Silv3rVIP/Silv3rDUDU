@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="k0">0.24</dimen>
+    <dimen name="k1">0.4</dimen>
+    <dimen name="k2">0.4</dimen>
+    <dimen name="k3">0.24</dimen>
+    <dimen name="k5">0.12</dimen>
+    <dimen name="k6">0.2</dimen>
+    <dimen name="k7">0.2</dimen>
+    <dimen name="k8">0.12</dimen>
+</resources>

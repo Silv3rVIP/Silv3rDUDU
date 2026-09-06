@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_width="match_parent" android:layout_height="1.0dp" />
+    <com.dudu.autoui.ui.dnview.view.DnSkinFrameLayout android:background="@drawable/dnskin_sbp_state_popup_item_l" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/mg" android:layout_width="35.0dp" android:layout_height="35.0dp" android:src="@mipmap/b" />
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="45.0dp">
+            <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:textSize="14.0dp" android:textColor="@color/dnskin_dialog_text1_l" android:id="@id/ama" android:paddingRight="60.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" />
+            <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:textSize="12.0dp" android:textColor="@color/dnskin_dialog_text3_l" android:id="@id/yy" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:maxLines="1" />
+        </LinearLayout>
+        <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:textSize="12.0dp" android:textColor="@color/dnskin_dialog_text3_l" android:gravity="right|top" android:id="@id/am_" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" />
+    </com.dudu.autoui.ui.dnview.view.DnSkinFrameLayout>
+</FrameLayout>

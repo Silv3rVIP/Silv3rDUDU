@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dudu.autoui.ui.activity.launcher.view.ItemFrameLayout android:background="@drawable/theme_item_compass_bg" android:layout_width="241.0dp" android:layout_height="72.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/m1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.wow.libs.duduSkin.view.SkinTextView android:textSize="16.0dp" android:textColor="@color/theme_item_hld" android:layout_gravity="center" android:id="@id/zm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/aib" />
+    <com.wow.libs.duduSkin.view.SkinView android:background="@drawable/theme_item_compass_front" android:layout_width="match_parent" android:layout_height="match_parent" />
+</com.dudu.autoui.ui.activity.launcher.view.ItemFrameLayout>

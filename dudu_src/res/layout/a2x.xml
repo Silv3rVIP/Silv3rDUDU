@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:paddingLeft="8.0dp" android:paddingRight="8.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/v7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="90.0dp">
+        <com.wow.libs.duduSkin.view.SkinImageView android:id="@id/ow" android:visibility="invisible" android:layout_width="25.0dp" android:layout_height="25.0dp" android:layout_marginBottom="4.0dp" android:src="@drawable/theme_prompt_car_sk" />
+        <com.wow.libs.duduSkin.view.SkinImageView android:id="@id/ot" android:visibility="invisible" android:layout_width="25.0dp" android:layout_height="25.0dp" android:layout_marginBottom="4.0dp" android:src="@drawable/theme_prompt_car_jg" />
+        <com.wow.libs.duduSkin.view.SkinImageView android:id="@id/oy" android:visibility="invisible" android:layout_width="25.0dp" android:layout_height="25.0dp" android:layout_marginBottom="4.0dp" android:src="@drawable/theme_prompt_car_yg" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="right" android:orientation="vertical" android:id="@id/a3g" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dp">
+        <com.wow.libs.duduSkin.view.SkinImageView android:id="@id/oq" android:visibility="invisible" android:layout_width="25.0dp" android:layout_height="25.0dp" android:layout_marginBottom="4.0dp" android:src="@drawable/theme_prompt_car_auto_hold" />
+        <com.wow.libs.duduSkin.view.SkinImageView android:id="@id/ox" android:visibility="invisible" android:layout_width="25.0dp" android:layout_height="25.0dp" android:layout_marginBottom="4.0dp" android:src="@drawable/theme_prompt_car_ss" />
+        <com.wow.libs.duduSkin.view.SkinImageView android:id="@id/op" android:visibility="invisible" android:layout_width="25.0dp" android:layout_height="25.0dp" android:layout_marginBottom="4.0dp" android:src="@drawable/theme_prompt_car_aqd" />
+        <com.wow.libs.duduSkin.view.SkinImageView android:id="@id/or" android:visibility="invisible" android:layout_width="25.0dp" android:layout_height="25.0dp" android:layout_marginBottom="4.0dp" android:src="@drawable/theme_prompt_car_fdj" />
+    </LinearLayout>
+</FrameLayout>

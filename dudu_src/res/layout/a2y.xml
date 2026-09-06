@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dudu.autoui.ui.activity.launcher.view.SkinDockItemView android:gravity="center" android:id="@id/wa" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+    <com.dudu.autoui.ui.activity.launcher.view.SkinDockItemView android:gravity="center" android:id="@id/wb" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+    <com.dudu.autoui.ui.activity.launcher.view.SkinDockItemView android:gravity="center" android:id="@id/wc" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+    <com.dudu.autoui.ui.activity.launcher.view.SkinDockItemView android:gravity="center" android:id="@id/wd" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="@dimen/if"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center|top" android:orientation="horizontal" android:paddingLeft="@dimen/ic" android:paddingTop="@dimen/ic" android:paddingRight="@dimen/ic" android:layout_width="match_parent" android:layout_height="@dimen/if" android:paddingStart="@dimen/ic" android:paddingEnd="@dimen/ic" style="?t8">
+        <com.google.android.material.button.MaterialButton android:gravity="center" android:layout_gravity="top" android:id="@id/fz" android:padding="12.0dp" android:layout_width="@dimen/k9" android:layout_height="@dimen/k9" android:insetTop="0.0dp" android:insetBottom="0.0dp" android:contentDescription="@string/aww" app:lz="@drawable/c2" app:a0l="@color/e4" style="?t5" />
+        <FrameLayout android:id="@id/a03" android:paddingLeft="@dimen/ih" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" android:paddingStart="@dimen/ih">
+            <TextView android:gravity="start|bottom" android:layout_gravity="start|top" android:id="@id/a08" android:layout_width="match_parent" android:layout_height="wrap_content" app:ka="@dimen/iy" style="?t_" />
+            <TextView android:gravity="start|bottom" android:layout_gravity="start|top" android:id="@id/a02" android:paddingBottom="@dimen/ir" android:layout_width="match_parent" android:layout_height="wrap_content" app:ka="@dimen/is" app:rc="@dimen/ig" style="?t9" />
+        </FrameLayout>
+        <LinearLayout android:orientation="@integer/u" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.google.android.material.button.MaterialButton android:layout_gravity="end|top" android:id="@id/h8" android:layout_width="wrap_content" android:layout_height="@dimen/k9" android:text="@string/axc" android:contentDescription="@string/axc" style="?t6" />
+            <include layout="@layout/la" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="@dimen/id" style="?t7" />
+</merge>

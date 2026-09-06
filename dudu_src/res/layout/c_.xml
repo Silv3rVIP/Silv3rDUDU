@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dudu.autoui.ui.dnview.view.DnSkinFrameLayout android:background="#33000000" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:id="@id/ia" style="@style/fo">
+        <com.dudu.autoui.ui.dnview.view.DnSkinFrameLayout android:padding="0.0dp" style="@style/fm">
+            <com.dudu.autoui.ui.dnview.view.DnSkinRecyclerView android:id="@id/yv" android:background="@color/dnskin_nsd_left_bg_l" android:padding="20.0dp" android:scrollbars="vertical" android:layout_width="300.0dp" android:layout_height="match_parent" />
+            <LinearLayout android:orientation="vertical" android:id="@id/a39" android:paddingLeft="10.0dp" android:paddingTop="10.0dp" android:paddingRight="10.0dp" android:paddingBottom="20.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="300.0dp">
+                <com.google.android.material.tabs.TabLayout android:layout_gravity="center_vertical" android:id="@id/amt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" app:a4i="gc" app:a4t="125.0dp" app:a4u="125.0dp" app:a4v="a4p" app:a56="true" />
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/vk" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_marginTop="10.0dp" android:layout_weight="1.0" />
+            </LinearLayout>
+            <com.dudu.autoui.ui.dnview.view.DnSkinImageView android:layout_gravity="right|top" android:id="@id/a3b" android:padding="15.0dp" android:visibility="gone" android:layout_width="55.0dp" android:layout_height="55.0dp" android:layout_marginTop="8.0dp" android:layout_marginRight="15.0dp" />
+        </com.dudu.autoui.ui.dnview.view.DnSkinFrameLayout>
+    </androidx.cardview.widget.CardView>
+</com.dudu.autoui.ui.dnview.view.DnSkinFrameLayout>

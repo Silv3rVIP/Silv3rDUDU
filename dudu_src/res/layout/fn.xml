@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dudu.autoui.ui.dnview.view.DnSkinLinearLayout android:orientation="vertical" android:paddingLeft="15.0dp" android:paddingRight="15.0dp" android:paddingBottom="5.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dudu.autoui.ui.activity.nset.setview.NSetItemView android:id="@id/abf" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/mr" app:yd="@string/h5" app:ye="axd" />
+    <com.dudu.autoui.ui.activity.nset.setview.NSetItemView android:id="@id/abe" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/mr" app:yd="@string/h6" app:ye="axd" />
+    <com.dudu.autoui.ui.activity.nset.setview.NSetItemView android:id="@id/abd" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/mr" app:yd="@string/h7" app:ye="axd" />
+    <com.dudu.autoui.ui.activity.nset.setview.NSetItemView android:id="@id/abg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/mr" app:yd="@string/a75" app:ye="axd" />
+</com.dudu.autoui.ui.dnview.view.DnSkinLinearLayout>

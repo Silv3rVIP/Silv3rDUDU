@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dudu.autoui.ui.dnview.view.DnSkinLinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/dnskin_dialog_member_package_bg_l" android:layout_width="@dimen/de" android:layout_height="@dimen/dc"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:textSize="18.0dp" android:textColor="@color/dnskin_dialog_text1_l" android:gravity="center" android:id="@id/ap4" android:background="@drawable/dnskin_dialog_member_day_bg_l" android:layout_width="75.0dp" android:layout_height="26.0dp" android:includeFontPadding="false" />
+    <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginTop="15.0dp" android:layout_marginBottom="15.0dp">
+        <TextView android:textSize="30.0dp" android:textStyle="bold" android:textColor="@color/ai" android:id="@id/atq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="100" android:layout_centerInParent="true" />
+        <TextView android:textSize="20.0dp" android:textStyle="bold" android:textColor="@color/ai" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="¥" android:layout_toLeftOf="@id/atq" android:layout_alignBaseline="@id/atq" />
+    </RelativeLayout>
+    <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:textSize="16.0dp" android:textColor="@color/dnskin_dialog_text3_l" android:gravity="center" android:id="@id/ao1" android:layout_width="match_parent" android:layout_height="26.0dp" android:text="¥200" />
+</com.dudu.autoui.ui.dnview.view.DnSkinLinearLayout>

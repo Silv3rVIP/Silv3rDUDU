@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dudu.autoui.ui.activity.launcher.minimalism.view.MinimItemBgView android:id="@id/ayi" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/theme_minim_item_pip_bg" android:scaleType="fitXY" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/b4b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20.0dp">
+        <com.wow.libs.duduSkin.view.SkinImageView android:id="@id/qd" android:layout_width="110.0dp" android:layout_height="110.0dp" android:src="@drawable/theme_minim_mark_nav" />
+        <com.wow.libs.duduSkin.view.SkinTextView android:textSize="22.0dp" android:textColor="@color/theme_minim_item_pip_load_name" android:layout_gravity="center" android:id="@id/ash" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dp" android:text="@string/ao2" />
+    </LinearLayout>
+    <com.wow.libs.duduSkin.view.SkinImageView android:id="@id/b21" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/theme_minim_item_pip_front" android:scaleType="fitXY" />
+</FrameLayout>

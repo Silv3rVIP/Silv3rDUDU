@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wow.libs.duduSkin2.view.SkinFrameLayout android:background="@drawable/nbskin_statebar_bg_mini" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/nc">
+        <com.wow.libs.duduSkin2.view.SkinImageView android:id="@id/tw" android:src="@drawable/nbskin_statebar_botton_zhankai" style="@style/jj" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/b2k" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <com.wow.libs.duduSkin2.view.SkinView android:id="@id/qm" android:background="@color/nbskin_statebar_jiange" android:layout_width="1.0px" android:layout_height="match_parent" android:layout_marginTop="12.0dp" android:layout_marginBottom="12.0dp" />
+            <FrameLayout android:id="@id/b6m" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:layout_width="wrap_content" android:layout_height="match_parent" />
+            <com.wow.libs.duduSkin2.view.SkinView android:id="@id/qn" android:background="@color/nbskin_statebar_jiange" android:layout_width="1.0px" android:layout_height="match_parent" android:layout_marginTop="12.0dp" android:layout_marginBottom="12.0dp" />
+        </LinearLayout>
+        <com.wow.libs.duduSkin2.view.SkinImageView android:id="@id/tx" android:src="@drawable/nbskin_statebar_botton_zhankai" style="@style/jj" />
+    </LinearLayout>
+</com.wow.libs.duduSkin2.view.SkinFrameLayout>

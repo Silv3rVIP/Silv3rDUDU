@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ke" android:paddingLeft="5.0dp" android:paddingRight="5.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/b76" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <FrameLayout android:paddingLeft="2.5dp" android:paddingTop="12.5dp" android:paddingRight="2.5dp" android:paddingBottom="12.5dp" android:layout_width="30.0dp" android:layout_height="@dimen/nc">
+            <com.wow.libs.duduSkin2.view.SkinImageView android:id="@id/tg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/nbskin_statebar_time_wifi0" />
+            <FrameLayout android:id="@id/b6x" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.wow.libs.duduSkin2.view.SkinImageView android:id="@id/sr" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/nbskin_statebar_state_sj5" />
+                <com.wow.libs.duduSkin2.view.SkinImageView android:id="@id/ss" android:layout_width="12.0dp" android:layout_height="12.0dp" android:src="@color/gg" />
+            </FrameLayout>
+            <com.wow.libs.duduSkin2.view.SkinImageView android:id="@id/rs" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/nbskin_statebar2_time_no_net" />
+        </FrameLayout>
+        <com.wow.libs.duduSkin2.view.SkinImageView android:id="@id/sp" android:paddingLeft="2.5dp" android:paddingTop="12.5dp" android:paddingRight="2.5dp" android:paddingBottom="12.5dp" android:layout_width="30.0dp" android:layout_height="@dimen/nc" android:src="@drawable/nbskin_statebar_time_shengyin3" />
+    </LinearLayout>
+    <com.wow.libs.duduSkin2.view.SkinTextView android:textSize="22.0dp" android:textColor="@color/nbskin_statebar_time" android:gravity="right|center" android:id="@id/avt" android:paddingLeft="5.0dp" android:layout_width="wrap_content" android:layout_height="match_parent" />
+</LinearLayout>

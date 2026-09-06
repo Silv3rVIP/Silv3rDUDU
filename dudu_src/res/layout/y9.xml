@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:baselineAligned="false">
+        <RelativeLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+            <FrameLayout android:id="@id/b6s" android:layout_width="160.0dp" android:layout_height="wrap_content" android:layout_marginLeft="40.0dp" android:layout_marginTop="20.0dp">
+                <com.dudu.autoui.ui.activity.launcher.view.SkinCustomImageView android:layout_gravity="left" android:id="@id/sl" android:layout_width="32.0dp" android:layout_height="32.0dp" android:src="@mipmap/ay" app:x7="5.0dp" />
+                <com.wow.libs.duduSkin.view.SkinImageView android:layout_gravity="left|center" android:layout_width="11.0dp" android:layout_height="11.0dp" android:layout_marginLeft="40.0dp" android:src="@drawable/theme_minim_item_music_xia" />
+            </FrameLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/d8" android:layout_width="match_parent" android:layout_height="55.0dp" android:layout_marginBottom="15.0dp" android:layout_alignParentBottom="true">
+                <View android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+                <com.wow.libs.duduSkin.view.SkinImageView android:layout_gravity="center" android:id="@id/wz" android:padding="10.0dp" android:layout_width="55.0dp" android:layout_height="55.0dp" android:src="@drawable/theme_minim_item_music_prev" android:scaleType="fitXY" android:contentDescription="@string/el" />
+                <View android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+                <com.wow.libs.duduSkin.view.SkinImageView android:layout_gravity="center" android:id="@id/wy" android:padding="10.0dp" android:layout_width="55.0dp" android:layout_height="55.0dp" android:src="@drawable/theme_minim_item_music_play" android:scaleType="fitXY" android:contentDescription="@string/el" />
+                <View android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+                <com.wow.libs.duduSkin.view.SkinImageView android:layout_gravity="center" android:id="@id/ws" android:padding="10.0dp" android:layout_width="55.0dp" android:layout_height="55.0dp" android:src="@drawable/theme_minim_item_music_next" android:scaleType="fitXY" android:contentDescription="@string/el" />
+                <View android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+            </LinearLayout>
+            <com.dudu.autoui.common.view.skin.SkinAutoMarqueeTextView android:textSize="25.0dp" android:textColor="@color/theme_minim_item_music_title" android:gravity="center" android:id="@id/ama" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="40.0dp" android:layout_marginTop="15.0dp" android:layout_marginRight="40.0dp" android:layout_marginBottom="15.0dp" android:text="@string/ah_" android:lines="1" android:singleLine="true" android:layout_above="@id/d8" />
+            <FrameLayout android:id="@id/b0l" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="45.0dp" android:layout_above="@id/ama">
+                <com.dudu.autoui.ui.activity.launcher.view.AutoFitFrameLayout android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <com.dudu.autoui.ui.activity.launcher.view.SkinCustomImageView android:layout_gravity="center" android:id="@id/r5" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/theme_minim_item_music_default_music" android:scaleType="fitXY" app:x7="@dimen/dz" app:xd="@color/theme_minim_item_music_cover_mask" />
+                </com.dudu.autoui.ui.activity.launcher.view.AutoFitFrameLayout>
+            </FrameLayout>
+            <com.dudu.autoui.common.view.skin.SkinAutoMarqueeTextView android:textSize="25.0dp" android:textColor="@color/theme_minim_item_music_title" android:gravity="center" android:id="@id/amb" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="40.0dp" android:layout_marginTop="20.0dp" android:layout_marginRight="40.0dp" android:text="@string/ah_" android:lines="1" android:singleLine="true" />
+            <FrameLayout android:gravity="center" android:id="@id/b3m" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/d8" android:layout_below="@id/amb">
+                <com.dudu.autoui.ui.activity.launcher.minimalism.item.music.MusicLrcView android:id="@id/b4p" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="10.0dp" android:layout_marginTop="20.0dp" android:layout_marginRight="10.0dp" android:layout_marginBottom="20.0dp" app:vh="@color/theme_minim_item_music_lrc_current" app:vi="15.0dp" app:vk="@color/theme_minim_item_music_lrc" app:vl="24.0dp" app:vo="gc" app:vp="28.0dp" />
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/b4u" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <com.wow.libs.duduSkin.view.SkinImageView android:layout_width="80.0dp" android:layout_height="80.0dp" android:src="@drawable/theme_minim_item_music_nolrc" android:scaleType="fitXY" />
+                    <com.wow.libs.duduSkin.view.SkinTextView android:textSize="25.0dp" android:textColor="@color/theme_minim_item_music_no" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="@string/aq9" />
+                </LinearLayout>
+            </FrameLayout>
+        </RelativeLayout>
+        <FrameLayout android:gravity="center" android:id="@id/b3l" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+            <com.dudu.autoui.ui.activity.launcher.minimalism.item.music.MusicLrcView android:id="@id/b4o" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="30.0dp" app:vh="@color/theme_minim_item_music_lrc_current" app:vi="30.0dp" app:vk="@color/theme_minim_item_music_lrc" app:vl="24.0dp" app:vo="v0" app:vp="28.0dp" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/b4t" android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.wow.libs.duduSkin.view.SkinImageView android:layout_width="105.0dp" android:layout_height="105.0dp" android:src="@drawable/theme_minim_item_music_nolrc" android:scaleType="fitXY" />
+                <com.wow.libs.duduSkin.view.SkinTextView android:textSize="25.0dp" android:textColor="@color/theme_minim_item_music_no" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dp" android:text="@string/aq9" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@id/b4w" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.wow.libs.duduSkin.view.SkinImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/theme_minim_item_music_bg" android:scaleType="centerCrop" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/b4x" android:paddingLeft="@dimen/ev" android:paddingTop="20.0dp" android:paddingRight="@dimen/ev" android:paddingBottom="20.0dp" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never" />
+    </FrameLayout>
+</FrameLayout>

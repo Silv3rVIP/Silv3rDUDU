@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dudu.autoui.ui.activity.launcher.view.PendantLinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/ha" android:background="@drawable/theme_pendant_byd_control_cell_bg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.wow.libs.duduSkin.view.SkinImageView android:id="@id/mg" android:layout_width="40.0dp" android:layout_height="40.0dp" />
+    <com.wow.libs.duduSkin.view.SkinTextView android:textSize="14.0dp" android:textColor="@color/theme_pendant_byd_car_control_value" android:gravity="center" android:id="@id/ama" android:layout_width="match_parent" android:layout_height="wrap_content" android:lines="1" android:includeFontPadding="false" />
+</com.dudu.autoui.ui.activity.launcher.view.PendantLinearLayout>

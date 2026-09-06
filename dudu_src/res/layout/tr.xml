@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dudu.autoui.ui.activity.launcher.view.ItemFrameLayout android:background="@drawable/theme_item_app_bg" android:layout_width="280.0dp" android:layout_height="84.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:padding="4.0dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+            <com.dudu.autoui.ui.activity.launcher.view.SkinAppItemView android:layout_gravity="center" android:id="@id/bt" android:layout_width="50.0dp" android:layout_height="50.0dp" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+            <com.dudu.autoui.ui.activity.launcher.view.SkinAppItemView android:layout_gravity="center" android:id="@id/bx" android:layout_width="50.0dp" android:layout_height="50.0dp" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/a3o" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+            <com.dudu.autoui.ui.activity.launcher.view.SkinAppItemView android:layout_gravity="center" android:id="@id/by" android:layout_width="50.0dp" android:layout_height="50.0dp" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/a3l" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+            <com.dudu.autoui.ui.activity.launcher.view.SkinAppItemView android:layout_gravity="center" android:id="@id/c2" android:layout_width="50.0dp" android:layout_height="50.0dp" />
+        </FrameLayout>
+    </LinearLayout>
+    <com.wow.libs.duduSkin.view.SkinView android:background="@drawable/theme_item_app_front" android:layout_width="match_parent" android:layout_height="match_parent" />
+</com.dudu.autoui.ui.activity.launcher.view.ItemFrameLayout>

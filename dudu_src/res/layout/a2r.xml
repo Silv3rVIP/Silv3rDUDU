@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dudu.autoui.ui.dnview.view.DnSkinFrameLayout android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dudu.autoui.ui.dnview.view.DnSkinFrameLayout android:id="@id/km" android:background="@drawable/dnskin_content_top_menu_bg_l" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="55.0dp" android:layout_marginLeft="25.0dp" android:layout_marginTop="15.0dp" android:layout_marginRight="25.0dp">
+        <com.google.android.material.tabs.TabLayout android:layout_gravity="center_vertical" android:id="@id/yv" android:layout_width="match_parent" android:layout_height="match_parent" app:a4i="ahu" app:a4t="115.0dp" app:a4v="a4p" app:a56="true" />
+    </com.dudu.autoui.ui.dnview.view.DnSkinFrameLayout>
+    <FrameLayout android:id="@id/ha" android:paddingLeft="25.0dp" android:paddingRight="25.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="80.0dp">
+        <com.dudu.autoui.ui.dnview.view.DnSkinFrameLayout android:background="@drawable/dnskin_content_content_bg_l" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.dudu.autoui.common.view.PullToRefreshView android:layout_gravity="center" android:orientation="vertical" android:id="@id/lt" android:layout_width="wrap_content" android:layout_height="match_parent">
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/vk" android:padding="15.0dp" android:layout_width="wrap_content" android:layout_height="match_parent" />
+            </com.dudu.autoui.common.view.PullToRefreshView>
+        </com.dudu.autoui.ui.dnview.view.DnSkinFrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/jk" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <include layout="@layout/ar" />
+        </FrameLayout>
+    </FrameLayout>
+</com.dudu.autoui.ui.dnview.view.DnSkinFrameLayout>

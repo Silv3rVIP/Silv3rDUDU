@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dudu.autoui.ui.activity.launcher.view.ItemFrameLayout android:background="@drawable/theme_item_mode_bg" android:layout_width="280.0dp" android:layout_height="84.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:baselineAligned="false">
+        <com.wow.libs.duduSkin.view.SkinLinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ay_" android:layout_width="0.0dp" android:layout_height="64.0dp" android:layout_marginRight="10.0dp" android:layout_weight="1.0">
+            <com.wow.libs.duduSkin.view.SkinImageView android:id="@id/dw" android:layout_width="35.0dp" android:layout_height="35.0dp" android:scaleType="fitCenter" android:contentDescription="@string/el" />
+            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="14.0dp" android:textColor="@color/theme_item_mode_name" android:gravity="center" android:id="@id/ao2" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/em" android:singleLine="true" android:includeFontPadding="false" />
+        </com.wow.libs.duduSkin.view.SkinLinearLayout>
+        <com.wow.libs.duduSkin.view.SkinLinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/b5o" android:layout_width="0.0dp" android:layout_height="64.0dp" android:layout_weight="1.0">
+            <com.wow.libs.duduSkin.view.SkinImageView android:id="@id/f2" android:layout_width="35.0dp" android:layout_height="35.0dp" android:scaleType="fitCenter" android:contentDescription="@string/el" />
+            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="14.0dp" android:textColor="@color/theme_item_mode_name" android:gravity="center" android:id="@id/atf" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/bte" android:singleLine="true" android:includeFontPadding="false" />
+        </com.wow.libs.duduSkin.view.SkinLinearLayout>
+        <com.wow.libs.duduSkin.view.SkinLinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/azr" android:layout_width="0.0dp" android:layout_height="64.0dp" android:layout_marginLeft="10.0dp" android:layout_weight="1.0">
+            <com.wow.libs.duduSkin.view.SkinImageView android:id="@id/dz" android:layout_width="35.0dp" android:layout_height="35.0dp" android:scaleType="fitCenter" android:contentDescription="@string/el" />
+            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="14.0dp" android:textColor="@color/theme_item_mode_name" android:gravity="center" android:id="@id/aot" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/c79" android:singleLine="true" android:includeFontPadding="false" />
+        </com.wow.libs.duduSkin.view.SkinLinearLayout>
+        <com.wow.libs.duduSkin.view.SkinLinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/b51" android:layout_width="0.0dp" android:layout_height="64.0dp" android:layout_marginLeft="10.0dp" android:layout_weight="1.0">
+            <com.wow.libs.duduSkin.view.SkinImageView android:id="@id/ey" android:layout_width="35.0dp" android:layout_height="35.0dp" android:scaleType="fitCenter" android:contentDescription="@string/el" />
+            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="14.0dp" android:textColor="@color/theme_item_mode_name" android:gravity="center" android:id="@id/asu" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/asi" android:singleLine="true" android:includeFontPadding="false" />
+        </com.wow.libs.duduSkin.view.SkinLinearLayout>
+    </LinearLayout>
+    <com.wow.libs.duduSkin.view.SkinView android:background="@drawable/theme_item_mode_front" android:layout_width="match_parent" android:layout_height="match_parent" />
+</com.dudu.autoui.ui.activity.launcher.view.ItemFrameLayout>

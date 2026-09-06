@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dudu.autoui.common.view.ScrollViewEx2 android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/mb" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/gw">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7">
+            <com.dudu.autoui.ui.activity.nnset.setview.NSetButton2View android:id="@id/abo" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" app:xt="@drawable/dnskin_nns_r_obd_l" app:xx="@string/b5r" app:xy="@string/b5q" />
+            <com.dudu.autoui.ui.activity.nnset.setview.NSetButton2View android:id="@id/abq" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" app:xy="@string/a04" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/b6t" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.dudu.autoui.ui.activity.nnset.setview.NSetNumView android:id="@id/al3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m6" app:xp="%" app:xq="50" app:xr="1" app:xy="@string/b6b" />
+            <LinearLayout android:orientation="vertical" android:id="@id/b6u" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:text="@string/b_x" style="@style/gz" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7">
+                    <com.dudu.autoui.ui.activity.nnset.setview.NSetButton2View android:id="@id/d3" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" app:xy="@string/awg" />
+                    <com.dudu.autoui.ui.activity.nnset.setview.NSetButton2View android:id="@id/d2" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" app:xj="true" app:xy="@string/b5s" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</com.dudu.autoui.common.view.ScrollViewEx2>

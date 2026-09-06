@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dudu.autoui.common.view.CircleFrameLayout android:layout_width="match_parent" android:layout_height="47.0dp" app:a0k="@dimen/bp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dudu.autoui.ui.activity.launcher.view.ItemFrameLayout android:background="@drawable/theme_launcher_dock_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.dudu.autoui.common.view.spectrum.ColumnarView android:id="@id/b6o" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="2.0dp" app:ha="@color/theme_dock_music_block" app:hb="@color/theme_dock_music_block_end" app:hc="12" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/c6" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.dudu.autoui.ui.activity.launcher.view.SkinDockItemView android:gravity="center" android:id="@id/wa" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+            <com.dudu.autoui.ui.activity.launcher.view.SkinDockItemView android:gravity="center" android:id="@id/wb" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+            <com.dudu.autoui.ui.activity.launcher.view.SkinDockItemView android:gravity="center" android:id="@id/wc" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+            <com.dudu.autoui.ui.activity.launcher.view.SkinDockItemView android:gravity="center" android:id="@id/wd" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+            <com.dudu.autoui.ui.activity.launcher.view.SkinDockItemView android:gravity="center" android:id="@id/we" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+            <com.dudu.autoui.ui.activity.launcher.view.SkinDockItemView android:gravity="center" android:id="@id/wf" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+            <com.dudu.autoui.ui.activity.launcher.view.SkinDockItemView android:gravity="center" android:id="@id/wg" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+        </LinearLayout>
+    </com.dudu.autoui.ui.activity.launcher.view.ItemFrameLayout>
+</com.dudu.autoui.common.view.CircleFrameLayout>

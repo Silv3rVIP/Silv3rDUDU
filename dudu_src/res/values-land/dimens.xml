@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="c">48.0dp</dimen>
+    <dimen name="be">12.0dp</dimen>
+    <dimen name="bg">14.0dp</dimen>
+    <dimen name="gq">450.0dp</dimen>
+    <dimen name="gr">600.0dp</dimen>
+    <dimen name="gt">24.0dp</dimen>
+    <dimen name="gw">24.0dp</dimen>
+    <dimen name="i_">20.0dp</dimen>
+    <dimen name="ib">4.0dp</dimen>
+    <dimen name="if">96.0dp</dimen>
+    <dimen name="ii">0.0dp</dimen>
+    <dimen name="ij">0.0dp</dimen>
+    <dimen name="ik">104.0dp</dimen>
+    <dimen name="is">68.0dp</dimen>
+    <dimen name="iu">28.0dp</dimen>
+    <dimen name="iv">64.0dp</dimen>
+    <dimen name="iw">32.0dp</dimen>
+    <dimen name="ix">24.0dp</dimen>
+    <dimen name="iy">32.0dp</dimen>
+</resources>

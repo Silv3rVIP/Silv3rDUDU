@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="hi" parent="@style/w8" />
+    <style name="hj" parent="@style/w9" />
+    <style name="w8" parent="@android:style/Theme.Material.NoActionBar" />
+    <style name="w9" parent="@android:style/Theme.Material.Light.NoActionBar" />
+</resources>

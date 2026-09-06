@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.wow.libs.duduSkin.view.SkinImageView android:id="@id/ayi" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/theme_widget_weather_bg" android:scaleType="centerCrop" />
+    <com.wow.libs.duduSkin.view.SkinImageView android:id="@id/td" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/theme_widget_weather_bg_wz" android:scaleType="centerCrop" />
+    <com.dudu.autoui.common.weatherAnim.WeatherAnimView android:id="@id/b8k" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="30.0dp" android:layout_marginBottom="150.0dp">
+        <com.wow.libs.duduSkin.view.SkinTextView android:textSize="22.0dp" android:textColor="@color/theme_widget_weather_city" android:id="@id/aov" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cie" />
+        <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-10.0dp">
+            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="80.0dp" android:textColor="@color/theme_widget_weather_temp" android:id="@id/avr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cif" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <com.wow.libs.duduSkin.view.SkinTextView android:textSize="18.0dp" android:textColor="@color/theme_widget_weather_weather" android:id="@id/awz" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cih" />
+        <com.wow.libs.duduSkin.view.SkinTextView android:textSize="18.0dp" android:textColor="@color/theme_widget_weather_temp_minmax" android:id="@id/avs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="@string/cig" />
+    </LinearLayout>
+    <com.wow.libs.duduSkin.view.SkinFrameLayout android:layout_gravity="bottom" android:id="@id/b2c" android:background="@drawable/theme_widget_weather_hour_bg" android:layout_width="match_parent" android:layout_height="120.0dp" android:layout_margin="15.0dp">
+        <com.dudu.autoui.common.view.CircleFrameLayout android:layout_width="match_parent" android:layout_height="match_parent" app:a0k="@dimen/fg">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/b2a" android:paddingLeft="18.0dp" android:paddingRight="18.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/b2b" android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.wow.libs.duduSkin.view.SkinImageView android:layout_width="50.0dp" android:layout_height="50.0dp" android:src="@drawable/theme_widget_weather_hour_nodata" />
+                <TextView android:textSize="14.0dp" android:textColor="@color/theme_widget_weather_hour_nodata" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:text="@string/cen" />
+            </LinearLayout>
+        </com.dudu.autoui.common.view.CircleFrameLayout>
+    </com.wow.libs.duduSkin.view.SkinFrameLayout>
+    <com.wow.libs.duduSkin.view.SkinImageView android:id="@id/b21" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/theme_widget_weather_front" android:scaleType="centerCrop" />
+</FrameLayout>

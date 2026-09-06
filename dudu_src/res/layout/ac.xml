@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dudu.autoui.ui.base.ActivityBaseFrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.wow.libs.duduSkin.view.SkinView android:id="@id/ayi" android:background="@drawable/theme_launcher_bg" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <RelativeLayout android:id="@id/b3w" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.dudu.autoui.ui.activity.launcher.dpip.ShuDoublePipRootView android:id="@id/ir" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </RelativeLayout>
+    <com.dudu.autoui.ui.activity.launcher.TopView android:id="@id/b7v" android:layout_width="match_parent" android:layout_height="match_parent" />
+</com.dudu.autoui.ui.base.ActivityBaseFrameLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dudu.autoui.ui.dnview.view.DnSkinFrameLayout android:paddingLeft="25.0dp" android:paddingRight="25.0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dudu.autoui.ui.dnview.view.DnSkinFrameLayout android:background="@drawable/dnskin_content_content_bg_l" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center" android:id="@id/vk" android:padding="15.0dp" android:layout_width="wrap_content" android:layout_height="match_parent" />
+    </com.dudu.autoui.ui.dnview.view.DnSkinFrameLayout>
+    <com.github.clans.fab.FloatingActionMenu android:layout_gravity="right|bottom" android:id="@id/jz" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="20.0dp" app:u8="@color/ai" app:u9="@color/ai">
+        <com.github.clans.fab.FloatingActionButton android:id="@id/ju" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/cv" app:jn="@color/ai" app:jo="@color/ai" app:js="@string/cfl" app:k5="z3" />
+        <com.github.clans.fab.FloatingActionButton android:id="@id/jx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/cw" app:jn="@color/ai" app:jo="@color/ai" app:js="@string/cf_" app:k5="z3" />
+    </com.github.clans.fab.FloatingActionMenu>
+</com.dudu.autoui.ui.dnview.view.DnSkinFrameLayout>

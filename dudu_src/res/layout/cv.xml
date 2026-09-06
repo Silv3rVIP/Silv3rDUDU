@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/gw"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dudu.autoui.ui.activity.nnset.setview.dialog.NDSetSingleSelectView android:id="@id/a81" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7" app:xy="@string/a0s" />
+    <com.dudu.autoui.ui.activity.nnset.setview.dialog.NDSetButton2Check2View android:id="@id/a7z" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7" app:xy="@string/d3" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/fk" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/m6" android:layout_marginBottom="5.0dp">
+        <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:id="@id/a15" android:layout_width="300.0dp" android:text="@string/a09" android:layout_weight="0.0" style="@style/fq" />
+    </LinearLayout>
+</LinearLayout>

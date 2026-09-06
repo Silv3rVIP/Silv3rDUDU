@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/ft"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dudu.autoui.ui.activity.nnset.setview.dialog.NDSetNumView android:id="@id/a0z" android:layout_width="match_parent" android:layout_height="wrap_content" app:xf="true" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/fk" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/m6" android:layout_marginBottom="5.0dp">
+        <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:id="@id/a15" android:layout_width="300.0dp" android:text="@string/a09" android:layout_weight="0.0" style="@style/fq" />
+    </LinearLayout>
+</LinearLayout>

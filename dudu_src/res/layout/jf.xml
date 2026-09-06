@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dudu.autoui.common.view.CircleFrameLayout android:id="@id/ne" android:paddingBottom="@dimen/ms" android:layout_width="match_parent" android:layout_height="115.0dp" android:paddingEnd="@dimen/ms" app:a0k="5.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dudu.autoui.ui.dnview.view.DnSkinFrameLayout android:id="@id/b17" android:background="@color/dnskin_dn_select_item_bg_l" android:layout_width="match_parent" android:layout_height="115.0dp">
+        <com.dudu.autoui.ui.dnview.view.DnSkinImageView android:id="@id/pg" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/dnskin_nset_dn_select_gd_l" android:scaleType="fitEnd" />
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginTop="10.0dp" android:layout_marginRight="20.0dp" android:layout_marginBottom="10.0dp">
+            <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:textSize="16.0dp" android:textColor="@color/dnskin_nset_text2_l" android:id="@id/apa" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/a7t" />
+            <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:textSize="14.0dp" android:textColor="@color/dnskin_nset_text3_l" android:id="@id/ap_" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dp" android:text="@string/a7u" />
+        </LinearLayout>
+        <com.dudu.autoui.ui.dnview.view.DnSkinImageView android:layout_gravity="bottom" android:id="@id/pn" android:paddingLeft="20.0dp" android:paddingTop="10.0dp" android:paddingRight="20.0dp" android:paddingBottom="10.0dp" android:layout_width="60.0dp" android:layout_height="40.0dp" android:src="@drawable/dnskin_ic_check_select3_l" />
+    </com.dudu.autoui.ui.dnview.view.DnSkinFrameLayout>
+    <com.dudu.autoui.ui.dnview.view.DnSkinView android:id="@id/b18" android:background="@drawable/dnskin_dn_select_item_front_l" android:layout_width="match_parent" android:layout_height="match_parent" />
+</com.dudu.autoui.common.view.CircleFrameLayout>

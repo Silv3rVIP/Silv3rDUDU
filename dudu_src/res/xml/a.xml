@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<usb
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <usb-device class="0" product-id="26197" subclass="0" vendor-id="13090" />
+    <usb-device class="0" product-id="26264" subclass="0" vendor-id="8856" />
+    <usb-device class="0" product-id="4504" subclass="0" vendor-id="152" />
+    <usb-device class="0" product-id="4760" subclass="0" vendor-id="408" />
+    <usb-device class="8" product-id="1" subclass="0" vendor-id="3839" />
+    <usb-device class="0" product-id="12865" subclass="0" vendor-id="6402" />
+    <usb-device class="0" product-id="26197" subclass="0" vendor-id="13090" />
+    <usb-device class="0" product-id="33537" subclass="0" vendor-id="6975" />
+</usb>

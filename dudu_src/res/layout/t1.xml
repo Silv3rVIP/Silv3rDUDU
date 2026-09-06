@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dudu.autoui.ui.activity.launcher.view.ItemFrameLayout android:background="@drawable/theme_item_time_bg" android:layout_width="280.0dp" android:layout_height="158.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.wow.libs.duduSkin.view.SkinTextView android:textSize="14.0dp" android:textColor="@color/theme_item_time_title" android:id="@id/avw" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dp" android:layout_marginTop="8.0dp" android:text="@string/c6t" />
+    <FrameLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="98.0dp" android:layout_marginBottom="5.0dp">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dp" android:layout_marginRight="115.0dp">
+            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="27.0dp" android:textColor="@color/theme_item_time_weak" android:gravity="left|center" android:id="@id/avt" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" />
+            <com.wow.libs.duduSkin.view.SkinTextView android:textSize="15.0dp" android:textColor="@color/theme_item_time_date" android:gravity="left|center" android:id="@id/ap3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:singleLine="true" android:includeFontPadding="false" />
+        </LinearLayout>
+        <com.dudu.autoui.ui.activity.launcher.view.SkinClockView android:layout_gravity="right" android:id="@id/h1" android:layout_width="98.0dp" android:layout_height="98.0dp" android:layout_marginRight="15.0dp" />
+    </FrameLayout>
+    <com.wow.libs.duduSkin.view.SkinTextView android:textSize="15.0dp" android:textColor="@color/theme_item_time_nongli" android:gravity="center_vertical" android:layout_gravity="bottom" android:id="@id/at7" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginLeft="30.0dp" android:layout_marginRight="30.0dp" />
+    <com.wow.libs.duduSkin.view.SkinView android:background="@drawable/theme_item_time_front" android:layout_width="match_parent" android:layout_height="match_parent" />
+</com.dudu.autoui.ui.activity.launcher.view.ItemFrameLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/go">
+        <FrameLayout android:id="@id/b3r" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:id="@id/b6y" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.dudu.autoui.ui.activity.nnset.setview.dialog.NDSetNumView android:id="@id/a7o" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7" app:xg="@drawable/dnskin_nns_l_ld_l" app:xq="1000" app:xr="0" app:xx="@string/jo" app:xy="@string/jn" />
+            <com.dudu.autoui.ui.activity.nnset.setview.dialog.NDSetButton2Check2View android:id="@id/ae8" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7" app:xx="@string/jj" app:xy="@string/ji" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/adb" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <FrameLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/gz">
+                <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:textSize="18.0dp" android:textColor="@color/dnskin_nst_text1_l" android:ellipsize="marquee" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yk" android:singleLine="true" />
+                <com.dudu.autoui.ui.dnview.view.DnSkinTextView android:textSize="18.0dp" android:textColor="@color/dnskin_nst_text2_l" android:ellipsize="marquee" android:gravity="center_vertical" android:layout_gravity="right|center" android:id="@id/avv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            </FrameLayout>
+            <com.dudu.autoui.ui.activity.nnset.setview.dialog.NDSetNumView android:id="@id/adr" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7" app:xf="true" app:xg="@drawable/dnskin_nns_l_sj_l" app:xq="1439" app:xr="0" />
+            <com.dudu.autoui.ui.activity.nnset.setview.dialog.NDSetNumView android:id="@id/a93" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7" app:xf="true" app:xg="@drawable/dnskin_nns_l_sj_l" app:xq="1439" app:xr="0" />
+        </LinearLayout>
+        <com.dudu.autoui.ui.activity.nnset.setview.dialog.NDSetNumView android:id="@id/a86" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/m7" app:xq="20" app:xr="0" app:xy="@string/an0" />
+        <FrameLayout android:id="@id/b3q" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

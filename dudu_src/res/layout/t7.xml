@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.wow.libs.duduSkin.view.SkinTextView android:textSize="13.0dp" android:textColor="@color/theme_item_byd_car_info_value" android:ellipsize="none" android:gravity="center" android:id="@id/b9a" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="--" android:singleLine="true" />
+    <com.wow.libs.duduSkin.view.SkinTextView android:textSize="12.0dp" android:textColor="@color/theme_item_byd_car_info_title" android:gravity="center" android:id="@id/ama" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/aib" android:lines="1" />
+</LinearLayout>

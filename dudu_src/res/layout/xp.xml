@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/b3w" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@id/axp" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <com.wow.libs.duduSkin.view.SkinFrameLayout android:id="@id/axq" android:background="@color/theme_un_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+            <FrameLayout android:id="@id/v0" android:layout_width="350.0dp" android:layout_height="match_parent">
+                <com.wow.libs.duduSkin.view.SkinRelativeLayout android:orientation="vertical" android:background="@drawable/theme_un_left" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <androidx.viewpager2.widget.ViewPager2 android:id="@id/na" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="40.0dp" android:layout_above="@id/z5" />
+                    <com.dudu.autoui.ui.activity.launcher.unbounded.UnPromptView android:id="@id/g3" android:layout_width="match_parent" android:layout_height="90.0dp" />
+                    <com.wow.libs.duduSkin.view.SkinFrameLayout android:id="@id/z5" android:background="@drawable/theme_un_mini_bg" android:layout_width="match_parent" android:layout_height="96.0dp" android:layout_marginLeft="12.0dp" android:layout_marginTop="3.0dp" android:layout_marginRight="12.0dp" android:layout_marginBottom="12.0dp" android:layout_alignParentBottom="true">
+                        <androidx.viewpager2.widget.ViewPager2 android:id="@id/z4" android:layout_width="match_parent" android:layout_height="match_parent" />
+                        <com.dudu.autoui.ui.activity.launcher.unbounded.mini.MiniItemPostionView android:id="@id/b61" android:layout_width="7.5dp" android:layout_height="match_parent" android:layout_marginLeft="4.0dp" />
+                    </com.wow.libs.duduSkin.view.SkinFrameLayout>
+                    <com.dudu.autoui.ui.activity.launcher.unbounded.UnCarInfoView android:layout_width="match_parent" android:layout_height="wrap_content" />
+                </com.wow.libs.duduSkin.view.SkinRelativeLayout>
+                <FrameLayout android:id="@id/v3" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/a39" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="350.0dp">
+                <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/b6j" android:paddingLeft="15.0dp" android:paddingTop="5.0dp" android:paddingRight="15.0dp" android:paddingBottom="10.0dp" android:layout_width="68.0dp" android:layout_height="24.0dp">
+                    <com.wow.libs.duduSkin.view.SkinView android:background="@drawable/theme_un_touch" android:layout_width="match_parent" android:layout_height="match_parent" />
+                </FrameLayout>
+            </FrameLayout>
+        </com.wow.libs.duduSkin.view.SkinFrameLayout>
+        <FrameLayout android:layout_gravity="left|center" android:id="@id/b88" android:padding="8.0dp" android:layout_width="20.0dp" android:layout_height="80.0dp" android:layout_marginLeft="333.0dp" android:layout_marginRight="333.0dp" android:alpha="0.5">
+            <com.wow.libs.duduSkin.view.SkinView android:background="@drawable/theme_un_middle_touch" android:layout_width="match_parent" android:layout_height="match_parent" />
+        </FrameLayout>
+    </FrameLayout>
+</RelativeLayout>

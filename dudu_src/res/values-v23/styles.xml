@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ao" parent="@android:style/TextAppearance.Material.Widget.ActionBar.Menu" />
+    <style name="ay" parent="@android:style/TextAppearance.Material.Widget.Button.Inverse" />
+    <style name="bb" parent="@style/w6" />
+    <style name="bi" parent="@style/w7" />
+    <style name="w6" parent="@style/w4">
+        <item name="d">?android:actionBarItemBackground</item>
+        <item name="q">?android:actionMenuTextAppearance</item>
+        <item name="r">?android:actionMenuTextColor</item>
+        <item name="a7">?android:actionOverflowButtonStyle</item>
+        <item name="gb">@drawable/e1</item>
+        <item name="a06">?android:ratingBarStyleIndicator</item>
+        <item name="a07">?android:ratingBarStyleSmall</item>
+    </style>
+    <style name="w7" parent="@style/w5">
+        <item name="d">?android:actionBarItemBackground</item>
+        <item name="q">?android:actionMenuTextAppearance</item>
+        <item name="r">?android:actionMenuTextColor</item>
+        <item name="a7">?android:actionOverflowButtonStyle</item>
+        <item name="gb">@drawable/e1</item>
+        <item name="a06">?android:ratingBarStyleIndicator</item>
+        <item name="a07">?android:ratingBarStyleSmall</item>
+    </style>
+    <style name="dk" parent="@android:style/Widget.Material.ActionButton.Overflow" />
+    <style name="dq" parent="@android:style/Widget.Material.Button.Borderless.Colored" />
+    <style name="ds" parent="@android:style/Widget.Material.Button.Colored">
+        <item name="android:textAppearance">@style/l6</item>
+    </style>
+    <style name="e2" parent="@android:style/Widget.Material.EditText">
+        <item name="android:breakStrategy">simple</item>
+        <item name="android:hyphenationFrequency">none</item>
+    </style>
+    <style name="em" parent="@android:style/Widget.Material.RatingBar.Indicator" />
+    <style name="en" parent="@android:style/Widget.Material.RatingBar.Small" />
+    <style name="et" parent="@android:style/Widget.Material.Spinner.Underlined" />
+    <style name="eu" parent="@android:style/Widget.Material.TextView">
+        <item name="android:breakStrategy">high_quality</item>
+        <item name="android:hyphenationFrequency">none</item>
+    </style>
+    <style name="fh" parent="@style/r">
+        <item name="d0">?android:colorBackgroundFloating</item>
+    </style>
+    <style name="ux" parent="@style/f4">
+        <item name="android:popupBackground">?zm</item>
+        <item name="android:popupElevation">8.0dp</item>
+    </style>
+    <style name="uy" parent="@style/f5">
+        <item name="android:popupBackground">?zm</item>
+        <item name="android:popupElevation">8.0dp</item>
+    </style>
+</resources>

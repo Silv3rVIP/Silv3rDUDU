@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dudu.autoui.ui.activity.launcher.view.ItemFrameLayout android:id="@id/ayk" android:background="@drawable/theme_item_weather_bg" android:layout_width="280.0dp" android:layout_height="135.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dp" android:layout_marginRight="115.0dp">
+        <com.wow.libs.duduSkin.view.SkinTextView android:textSize="27.0dp" android:textColor="@color/theme_item_weather_wendu" android:gravity="left|center" android:id="@id/awy" android:layout_width="match_parent" android:layout_height="35.0dp" android:text="@string/aig" android:singleLine="true" android:includeFontPadding="false" />
+        <com.wow.libs.duduSkin.view.SkinTextView android:textSize="15.0dp" android:textColor="@color/theme_item_weather_tianqi" android:gravity="left|center" android:id="@id/awb" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:text="@string/aib" android:singleLine="true" android:includeFontPadding="false" />
+        <com.wow.libs.duduSkin.view.SkinTextView android:textSize="15.0dp" android:textColor="@color/theme_item_weather_city" android:gravity="center_vertical" android:id="@id/apw" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:text="@string/aib" android:includeFontPadding="false" />
+    </LinearLayout>
+    <com.wow.libs.duduSkin.view.SkinImageView android:layout_gravity="right|center" android:id="@id/te" android:layout_width="98.0dp" android:layout_height="98.0dp" android:layout_marginRight="15.0dp" android:src="@drawable/theme_item_weather_tq_wz" android:scaleType="fitXY" />
+    <com.wow.libs.duduSkin.view.SkinView android:background="@drawable/theme_item_weather_front" android:layout_width="match_parent" android:layout_height="match_parent" />
+</com.dudu.autoui.ui.activity.launcher.view.ItemFrameLayout>

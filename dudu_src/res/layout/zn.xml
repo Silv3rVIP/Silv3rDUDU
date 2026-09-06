@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:paddingTop="25.0dp" android:paddingBottom="25.0dp" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/gw"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/vm" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@color/gg" android:dividerHeight="0.0dp" />
+    <FrameLayout android:id="@id/a0y" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/as" />
+    </FrameLayout>
+    <FrameLayout android:gravity="center" android:orientation="vertical" android:id="@id/jk" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/ar" />
+    </FrameLayout>
+</FrameLayout>

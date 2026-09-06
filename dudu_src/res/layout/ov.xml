@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dudu.autoui.ui.dnview.view.DnSkinFrameLayout android:background="@color/dnskin_popup_bg_l" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dudu.autoui.common.view.CircleFrameLayout android:id="@id/a2a" android:layout_width="470.0dp" android:layout_height="60.0dp" app:a0k="@dimen/bp" />
+</com.dudu.autoui.ui.dnview.view.DnSkinFrameLayout>
