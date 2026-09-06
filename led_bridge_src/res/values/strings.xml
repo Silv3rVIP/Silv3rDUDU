@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LED Ambient</string>
+    <string name="status_disconnected">DISCONNECTED</string>
+    <string name="status_scanning">SCANNING...</string>
+    <string name="status_connected">CONNECTED</string>
+    <string name="power_on">POWER: ON</string>
+    <string name="power_off">POWER: OFF</string>
+    <string name="brightness">Brightness</string>
+    <string name="presets">Car Presets</string>
+    <string name="music_sync">Music Beat Sync</string>
+    <string name="btn_devices">Devices</string>
+    <string name="btn_scan">Scan</string>
+</resources>

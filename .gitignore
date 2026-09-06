@@ -1,0 +1,13 @@
+# Build and decompiled files
+dudu_src/
+/tmp/
+*.idsig
+*.apk copy
+dudu_mod_unsigned*
+dudulauncher.apk
+dudulauncher_passat_mod.apk
+dudulauncher_vw_logo_mod.apk
+
+# OS files
+.DS_Store
+Thumbs.db
