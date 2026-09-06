@@ -20,7 +20,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.SharedPreferences;
-import android.graphics.Color;
 import android.os.Binder;
 import android.os.Build;
 import android.os.Handler;
@@ -28,6 +27,7 @@ import android.os.IBinder;
 import android.os.Looper;
 import android.util.Log;
 
+import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
@@ -50,19 +50,29 @@ public class LedBleService extends Service {
     private static final String KEY_BRIGHTNESS = "cur_brightness";
     private static final String KEY_POWER = "cur_power";
 
+    // Target MAC for user's LEDCAR-01-2265
+    private static final String DEFAULT_LEDCAR_MAC = "FF:FF:11:8B:22:65";
+
+    // Known UUIDs
+    private static final UUID UUID_LEDCAR_SERVICE = UUID.fromString("0000fff0-0000-1000-8000-00805f9b34fb");
+    private static final UUID UUID_LEDCAR_WRITE   = UUID.fromString("0000fff3-0000-1000-8000-00805f9b34fb");
+    private static final UUID UUID_BLE_SERVICE    = UUID.fromString("0000ffe0-0000-1000-8000-00805f9b34fb");
+    private static final UUID UUID_BLE_WRITE      = UUID.fromString("0000ffe1-0000-1000-8000-00805f9b34fb");
+
     private BluetoothAdapter mBluetoothAdapter;
     private BluetoothLeScanner mScanner;
     private BluetoothGatt mGatt;
-    private final List<BluetoothGattCharacteristic> mWriteCharacteristics = new ArrayList<>();
+    private BluetoothGattCharacteristic mTargetChar = null;
 
     private boolean mIsConnected = false;
     private boolean mIsScanning = false;
     private String mConnectedDeviceName = "";
     private String mConnectedDeviceAddress = "";
 
-    private int curR = 0, curG = 102, curB = 255; // Default VW Blue
+    private int curR = 0, curG = 102, curB = 255;
     private int curBrightness = 100;
     private boolean isPowerOn = true;
+    private boolean isForwardDirection = true;
 
     private final List<BluetoothDevice> mDiscoveredDevices = Collections.synchronizedList(new ArrayList<>());
     private final Map<String, Integer> mDeviceRssi = Collections.synchronizedMap(new HashMap<>());
@@ -73,6 +83,19 @@ public class LedBleService extends Service {
     private SharedPreferences mPrefs;
     private final IBinder mBinder = new LocalBinder();
     private final Handler mHandler = new Handler(Looper.getMainLooper());
+    private VirtualDuocoServer mVirtualDuocoServer;
+
+    private final Runnable mTimeoutWatchdog = new Runnable() {
+        @Override
+        public void run() {
+            if (mIsWriting) {
+                Log.w(TAG, "Write timed out (120ms), clearing busy lock and advancing queue");
+                clearBusyFlag(mGatt);
+                mIsWriting = false;
+                processNextPacket();
+            }
+        }
+    };
 
     public class LocalBinder extends Binder {
         public LedBleService getService() {
@@ -103,18 +126,19 @@ public class LedBleService extends Service {
         filter.addAction("com.dudu.ledbridge.SET_POWER");
         filter.addAction("com.dudu.ledbridge.SET_BRIGHTNESS");
         filter.addAction("com.dudu.ledbridge.SET_PRESET");
+        filter.addAction("com.dudu.ledbridge.SET_EFFECT");
         filter.addAction("com.dudu.ledbridge.CONNECT_MAC");
         filter.addAction("com.dudu.ledbridge.SCAN");
         filter.addAction("com.dudu.ledbridge.DISCONNECT");
         registerReceiver(mCommandReceiver, filter);
 
         startForegroundNotification();
+        initVirtualDuocoServer();
 
-        // Try direct connect to last known MAC or start scan
-        String lastMac = mPrefs.getString(KEY_LAST_MAC, "");
-        if (!lastMac.isEmpty() && BluetoothAdapter.checkBluetoothAddress(lastMac)) {
-            broadcastStatus("Reconnecting to " + mPrefs.getString(KEY_LAST_NAME, "LEDLAMP") + "...");
-            connectToAddress(lastMac);
+        String targetMac = mPrefs.getString(KEY_LAST_MAC, DEFAULT_LEDCAR_MAC);
+        if (BluetoothAdapter.checkBluetoothAddress(targetMac)) {
+            broadcastStatus("Connecting to " + mPrefs.getString(KEY_LAST_NAME, "LEDCAR-01-2265") + "...");
+            connectToAddress(targetMac);
         } else {
             startScan();
         }
@@ -138,119 +162,118 @@ public class LedBleService extends Service {
             .apply();
     }
 
-    private void saveConnectedDevice(String mac, String name) {
-        mPrefs.edit()
-            .putString(KEY_LAST_MAC, mac)
-            .putString(KEY_LAST_NAME, name)
-            .apply();
-    }
-
-    @Override
-    public int onStartCommand(Intent intent, int flags, int startId) {
-        if (intent != null) {
-            handleIntent(intent);
-        }
-        return START_STICKY;
-    }
-
     private void handleIntent(Intent intent) {
         if (intent == null || intent.getAction() == null) return;
         String action = intent.getAction();
 
-        if ("com.dudu.ledbridge.SET_COLOR".equals(action)) {
-            if (intent.hasExtra("color")) {
-                int color = intent.getIntExtra("color", Color.rgb(curR, curG, curB));
-                sendColor(Color.red(color), Color.green(color), Color.blue(color));
-            } else {
+        switch (action) {
+            case "com.dudu.ledbridge.SET_COLOR":
                 int r = intent.getIntExtra("r", curR);
                 int g = intent.getIntExtra("g", curG);
                 int b = intent.getIntExtra("b", curB);
                 sendColor(r, g, b);
-            }
-        } else if ("com.dudu.ledbridge.SET_POWER".equals(action)) {
-            if (intent.hasExtra("toggle") && intent.getBooleanExtra("toggle", false)) {
-                sendPower(!isPowerOn);
-            } else {
-                boolean power = intent.getBooleanExtra("power", true);
+                break;
+
+            case "com.dudu.ledbridge.SET_POWER":
+                boolean power = intent.getBooleanExtra("power", !isPowerOn);
                 sendPower(power);
-            }
-        } else if ("com.dudu.ledbridge.SET_BRIGHTNESS".equals(action)) {
-            int brightness = intent.getIntExtra("brightness", curBrightness);
-            sendBrightness(brightness);
-        } else if ("com.dudu.ledbridge.SET_PRESET".equals(action)) {
-            String preset = intent.getStringExtra("preset");
-            if (preset != null) {
+                break;
+
+            case "com.dudu.ledbridge.SET_BRIGHTNESS":
+                int br = intent.getIntExtra("brightness", curBrightness);
+                sendBrightness(br);
+                break;
+
+            case "com.dudu.ledbridge.SET_EFFECT":
+                int effect = intent.getIntExtra("effect", 1);
+                int speed = intent.getIntExtra("speed", 80);
+                sendEffect(effect, speed);
+                break;
+
+            case "com.dudu.ledbridge.SET_PRESET":
+                String preset = intent.getStringExtra("preset");
                 applyPreset(preset);
-            }
-        } else if ("com.dudu.ledbridge.CONNECT_MAC".equals(action)) {
-            String mac = intent.getStringExtra("mac");
-            if (mac != null) {
-                connectToAddress(mac);
-            }
-        } else if ("com.dudu.ledbridge.SCAN".equals(action)) {
-            startScan();
-        } else if ("com.dudu.ledbridge.DISCONNECT".equals(action)) {
-            disconnect();
+                break;
+
+            case "com.dudu.ledbridge.CONNECT_MAC":
+                String mac = intent.getStringExtra("mac");
+                if (mac != null) connectToAddress(mac);
+                break;
+
+            case "com.dudu.ledbridge.SCAN":
+                startScan();
+                break;
+
+            case "com.dudu.ledbridge.DISCONNECT":
+                disconnect();
+                break;
         }
     }
 
-    public void applyPreset(String presetName) {
-        String p = presetName.toLowerCase();
-        if (p.contains("vw") || p.contains("blue")) {
-            sendColor(0, 102, 255);
-        } else if (p.contains("golf") || p.contains("cyan") || p.contains("ice")) {
-            sendColor(0, 229, 255);
-        } else if (p.contains("audi") || p.contains("red")) {
-            sendColor(255, 0, 51);
-        } else if (p.contains("bmw") || p.contains("amber") || p.contains("orange")) {
-            sendColor(255, 102, 0);
-        } else if (p.contains("merc") || p.contains("purple") || p.contains("violet")) {
-            sendColor(153, 0, 255);
-        } else if (p.contains("porsche") || p.contains("yellow") || p.contains("gold")) {
-            sendColor(255, 204, 0);
-        } else if (p.contains("amg") || p.contains("green") || p.contains("emerald")) {
-            sendColor(0, 255, 102);
-        } else if (p.contains("warm") || p.contains("passat")) {
-            sendColor(255, 230, 204);
-        } else if (p.contains("white")) {
-            sendColor(255, 255, 255);
-        } else if (p.contains("magenta") || p.contains("pink")) {
-            sendColor(255, 0, 119);
+    private void applyPreset(String preset) {
+        if (preset == null) return;
+        switch (preset.toLowerCase()) {
+            case "vw_blue":
+            case "blue":
+                sendColor(0, 102, 255);
+                break;
+            case "audi_red":
+            case "red":
+                sendColor(255, 30, 39);
+                break;
+            case "golf_cyan":
+            case "cyan":
+                sendColor(0, 229, 255);
+                break;
+            case "passat_warm":
+            case "warm":
+            case "passat_gold":
+                sendColor(255, 226, 179);
+                break;
+            case "purple":
+            case "violet":
+                sendColor(153, 51, 255);
+                break;
+            case "green":
+            case "emerald":
+                sendColor(0, 255, 102);
+                break;
+            case "orange":
+            case "amber":
+                sendColor(255, 102, 0);
+                break;
+            case "white":
+                sendColor(255, 255, 255);
+                break;
         }
     }
 
     private void startForegroundNotification() {
-        String channelId = "led_bridge_channel";
-        NotificationManager nm = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O && nm != null) {
+        String channelId = "dudu_led_channel";
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             NotificationChannel channel = new NotificationChannel(
-                channelId, 
-                "LED Ambient Service", 
+                channelId, "Ambient LED Service",
                 NotificationManager.IMPORTANCE_LOW
             );
-            channel.setDescription("Background Bluetooth LE connection for Car Ambient Lights");
-            nm.createNotificationChannel(channel);
+            channel.setDescription("Maintains connection to car ambient lights");
+            NotificationManager nm = getSystemService(NotificationManager.class);
+            if (nm != null) nm.createNotificationChannel(channel);
         }
 
-        Intent openAppIntent = new Intent(this, MainActivity.class);
-        PendingIntent pi = PendingIntent.getActivity(
-            this, 0, openAppIntent, 
+        Intent notificationIntent = new Intent(this, MainActivity.class);
+        PendingIntent pendingIntent = PendingIntent.getActivity(
+            this, 0, notificationIntent,
             Build.VERSION.SDK_INT >= Build.VERSION_CODES.M ? PendingIntent.FLAG_IMMUTABLE : 0
         );
 
-        Notification.Builder builder;
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            builder = new Notification.Builder(this, channelId);
-        } else {
-            builder = new Notification.Builder(this);
-        }
+        Notification notification = new Notification.Builder(this, channelId)
+            .setContentTitle("LED Ambient Bridge")
+            .setContentText("Connected to car ambient lighting")
+            .setSmallIcon(R.drawable.ic_launcher)
+            .setContentIntent(pendingIntent)
+            .build();
 
-        builder.setContentTitle("LED Ambient Bridge")
-               .setContentText(mIsConnected ? "Connected to " + mConnectedDeviceName : "Monitoring LED connection")
-               .setSmallIcon(R.drawable.ic_launcher)
-               .setContentIntent(pi);
-
-        startForeground(1001, builder.build());
+        startForeground(101, notification);
     }
 
     public void startScan() {
@@ -269,20 +292,16 @@ public class LedBleService extends Service {
         mDiscoveredDevices.clear();
         mDeviceRssi.clear();
         mIsScanning = true;
-        broadcastStatus("Scanning for LED devices...");
+        broadcastStatus("Scanning for LEDCAR-01...");
 
-        // Auto stop scan after 12 seconds
-        mHandler.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                if (mIsScanning) {
-                    stopScan();
-                    if (!mIsConnected) {
-                        broadcastStatus("Scan finished (Not connected)");
-                    }
+        mHandler.postDelayed(() -> {
+            if (mIsScanning) {
+                stopScan();
+                if (!mIsConnected) {
+                    broadcastStatus("Scan finished");
                 }
             }
-        }, 12000);
+        }, 15000);
 
         try {
             mScanner.startScan(mScanCallback);
@@ -315,22 +334,16 @@ public class LedBleService extends Service {
             }
             mDeviceRssi.put(address, rssi);
 
-            // Notify UI of discovered device
             Intent intent = new Intent(ACTION_DEVICE_DISCOVERED);
             intent.putExtra("device_name", name != null ? name : "Unknown");
             intent.putExtra("device_address", address);
             intent.putExtra("device_rssi", rssi);
             sendBroadcast(intent);
 
-            // Auto-connect if matches known car ambient lighting names and we are not currently connected
-            if (!mIsConnected && name != null) {
-                String upper = name.toUpperCase();
-                if (upper.contains("LED") || upper.contains("LAMP") || upper.contains("BLE") || 
-                    upper.contains("ELK") || upper.contains("TRIONES") || upper.contains("LOTUS") || 
-                    upper.contains("DUOCO") || upper.contains("LIGHT") || upper.contains("STRIP") || 
-                    upper.contains("QHM") || upper.contains("CAR") || upper.contains("MELK") ||
-                    upper.contains("ILIGHT") || upper.contains("SP110E") || upper.contains("KS03")) {
-                    Log.d(TAG, "Auto-connecting to candidate device: " + name + " (" + address + ")");
+            if (!mIsConnected) {
+                if (DEFAULT_LEDCAR_MAC.equalsIgnoreCase(address) ||
+                    (name != null && name.toUpperCase().contains("LEDCAR"))) {
+                    Log.d(TAG, "Auto-connecting to target LEDCAR: " + name + " (" + address + ")");
                     stopScan();
                     connectToDevice(device);
                 }
@@ -361,14 +374,17 @@ public class LedBleService extends Service {
             mGatt = null;
         }
 
-        mConnectedDeviceName = device.getName() != null ? device.getName() : device.getAddress();
+        mConnectedDeviceName = device.getName() != null ? device.getName() : "LEDCAR-01-2265";
         mConnectedDeviceAddress = device.getAddress();
         broadcastStatus("Connecting to " + mConnectedDeviceName + "...");
 
-        mGatt = device.connectGatt(this, false, mGattCallback);
+        mHandler.post(() -> {
+            mGatt = device.connectGatt(LedBleService.this, false, mGattCallback, BluetoothDevice.TRANSPORT_LE);
+        });
     }
 
     public synchronized void disconnect() {
+        mHandler.removeCallbacks(mTimeoutWatchdog);
         if (mGatt != null) {
             try {
                 mGatt.disconnect();
@@ -377,242 +393,425 @@ public class LedBleService extends Service {
             mGatt = null;
         }
         mIsConnected = false;
-        mWriteCharacteristics.clear();
+        mTargetChar = null;
+        mIsWriting = false;
+        mWriteQueue.clear();
         broadcastStatus("Disconnected");
     }
 
     private final BluetoothGattCallback mGattCallback = new BluetoothGattCallback() {
         @Override
         public void onConnectionStateChange(BluetoothGatt gatt, int status, int newState) {
+            Log.d(TAG, "GATT state change: status=" + status + " newState=" + newState);
             if (newState == BluetoothProfile.STATE_CONNECTED) {
                 mIsConnected = true;
-                saveConnectedDevice(mConnectedDeviceAddress, mConnectedDeviceName);
-                broadcastStatus("Connected to " + mConnectedDeviceName + "! Discovering services...");
-                gatt.discoverServices();
+                broadcastStatus("Discovering services...");
+                mHandler.postDelayed(() -> {
+                    if (mGatt != null) {
+                        mGatt.discoverServices();
+                    }
+                }, 350);
             } else if (newState == BluetoothProfile.STATE_DISCONNECTED) {
                 mIsConnected = false;
-                mWriteCharacteristics.clear();
+                mTargetChar = null;
+                mIsWriting = false;
+                mWriteQueue.clear();
                 broadcastStatus("Disconnected");
-                // Auto reconnect after 4 seconds
-                mHandler.postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        if (!mIsConnected && !mConnectedDeviceAddress.isEmpty()) {
-                            connectToAddress(mConnectedDeviceAddress);
-                        }
+                mHandler.postDelayed(() -> {
+                    if (!mIsConnected && !mConnectedDeviceAddress.isEmpty()) {
+                        connectToAddress(mConnectedDeviceAddress);
                     }
-                }, 4000);
+                }, 3000);
             }
         }
 
         @Override
         public void onServicesDiscovered(BluetoothGatt gatt, int status) {
-            if (status == BluetoothGatt.GATT_SUCCESS) {
-                mWriteCharacteristics.clear();
+            if (status != BluetoothGatt.GATT_SUCCESS) {
+                broadcastStatus("Service discovery failed");
+                return;
+            }
 
-                for (BluetoothGattService service : gatt.getServices()) {
-                    for (BluetoothGattCharacteristic ch : service.getCharacteristics()) {
-                        int props = ch.getProperties();
-                        if ((props & BluetoothGattCharacteristic.PROPERTY_WRITE) != 0 ||
-                            (props & BluetoothGattCharacteristic.PROPERTY_WRITE_NO_RESPONSE) != 0) {
-                            mWriteCharacteristics.add(ch);
-                            Log.d(TAG, "Found writable characteristic: " + ch.getUuid() + " in " + service.getUuid());
-                        }
+            mTargetChar = null;
+            Log.d(TAG, "Services discovered for " + mConnectedDeviceName);
+
+            // Priority 1: Check for LEDCAR service FFF0 -> Characteristic FFF3
+            // Priority 2: Check for UART service FFE0 -> Characteristic FFE1
+            // Explicitly ignore OTA characteristic 5833ff02
+            for (BluetoothGattService service : gatt.getServices()) {
+                UUID serviceUuid = service.getUuid();
+                Log.d(TAG, "Found Service: " + serviceUuid);
+
+                for (BluetoothGattCharacteristic ch : service.getCharacteristics()) {
+                    UUID chUuid = ch.getUuid();
+                    int props = ch.getProperties();
+                    boolean canWrite = (props & BluetoothGattCharacteristic.PROPERTY_WRITE) != 0 ||
+                                       (props & BluetoothGattCharacteristic.PROPERTY_WRITE_NO_RESPONSE) != 0;
+
+                    Log.d(TAG, "  Characteristic: " + chUuid + " props=" + props + " canWrite=" + canWrite);
+
+                    if (UUID_LEDCAR_WRITE.equals(chUuid)) {
+                        mTargetChar = ch;
+                        Log.d(TAG, "-> Selected Primary LEDCAR FFF3 Characteristic");
+                    } else if (UUID_BLE_WRITE.equals(chUuid) && mTargetChar == null) {
+                        mTargetChar = ch;
+                        Log.d(TAG, "-> Selected UART FFE1 Characteristic");
+                    } else if (canWrite && mTargetChar == null && !chUuid.toString().startsWith("5833")) {
+                        mTargetChar = ch;
+                        Log.d(TAG, "-> Selected Fallback Characteristic: " + chUuid);
                     }
                 }
+            }
 
-                if (!mWriteCharacteristics.isEmpty()) {
-                    broadcastStatus("Connected: " + mConnectedDeviceName);
-                    // Restore stored state immediately
-                    mHandler.postDelayed(new Runnable() {
-                        @Override
-                        public void run() {
-                            sendPower(isPowerOn);
-                            sendBrightness(curBrightness);
-                            sendColor(curR, curG, curB);
-                        }
-                    }, 200);
-                } else {
-                    broadcastStatus("Connected (No writable endpoint found)");
-                }
+            if (mTargetChar != null) {
+                mTargetChar.setWriteType(BluetoothGattCharacteristic.WRITE_TYPE_NO_RESPONSE);
+                mIsConnected = true;
+                mPrefs.edit()
+                    .putString(KEY_LAST_MAC, mConnectedDeviceAddress)
+                    .putString(KEY_LAST_NAME, mConnectedDeviceName)
+                    .apply();
+
+                broadcastStatus("Connected: " + mConnectedDeviceName);
+
+                mHandler.postDelayed(() -> {
+                    sendPower(isPowerOn);
+                    if (isPowerOn) {
+                        sendColor(curR, curG, curB);
+                        sendBrightness(curBrightness);
+                    }
+                }, 400);
+            } else {
+                broadcastStatus("No writable characteristic found");
             }
         }
 
         @Override
         public void onCharacteristicWrite(BluetoothGatt gatt, BluetoothGattCharacteristic characteristic, int status) {
-            mIsWriting = false;
-            processWriteQueue();
+            Log.d(TAG, "onCharacteristicWrite status=" + status);
+            clearBusyFlag(gatt);
+            mHandler.removeCallbacks(mTimeoutWatchdog);
+            // Pace subsequent packets by 30ms to allow physical radio + MCU buffer clearance
+            mHandler.postDelayed(() -> {
+                mIsWriting = false;
+                processNextPacket();
+            }, 30);
         }
     };
 
+    private void clearBusyFlag(BluetoothGatt gatt) {
+        if (gatt == null) return;
+        try {
+            Field busyField = gatt.getClass().getDeclaredField("mDeviceBusy");
+            busyField.setAccessible(true);
+            busyField.setBoolean(gatt, false);
+        } catch (Exception ignored) {}
+    }
+
+    /**
+     * Send color across LEDCAR-01 channels
+     */
     public void sendColor(int r, int g, int b) {
         curR = r;
         curG = g;
         curB = b;
+        isPowerOn = true;
         savePreferences();
 
-        // 1. ELK-BLEDOM / LEDLAMP / Lotus Lantern (7e 07 05 03 R G B 00 ef)
-        byte[] cmdElk = new byte[]{
-            (byte) 0x7e, (byte) 0x07, (byte) 0x05, (byte) 0x03,
-            (byte) (r & 0xff), (byte) (g & 0xff), (byte) (b & 0xff),
-            (byte) 0x00, (byte) 0xef
-        };
-        queuePacket(cmdElk);
+        // 1. LEDCAR LED Channel (7B 01 07 R G B 00 FF BF) - Controls both RGB and DMX
+        queuePacket(new byte[]{
+            (byte) 0x7B, (byte) 0x01, (byte) 0x07,
+            (byte) (r & 0xFF), (byte) (g & 0xFF), (byte) (b & 0xFF),
+            (byte) 0x00, (byte) 0xFF, (byte) 0xBF
+        });
 
-        // 2. Triones fallback (56 R G B 00 f0 aa)
-        byte[] cmdTriones = new byte[]{
-            (byte) 0x56, (byte) (r & 0xff), (byte) (g & 0xff), (byte) (b & 0xff),
-            (byte) 0x00, (byte) 0xf0, (byte) 0xaa
-        };
-        queuePacket(cmdTriones);
+        // 2. LEDCAR DMX Channel (7B 00 07 R G B 00 FF BF)
+        queuePacket(new byte[]{
+            (byte) 0x7B, (byte) 0x00, (byte) 0x07,
+            (byte) (r & 0xFF), (byte) (g & 0xFF), (byte) (b & 0xFF),
+            (byte) 0x00, (byte) 0xFF, (byte) 0xBF
+        });
 
-        // 3. duoCo Variant (7e 00 05 03 R G B 00 ef)
-        byte[] cmdDuoco = new byte[]{
-            (byte) 0x7e, (byte) 0x00, (byte) 0x05, (byte) 0x03,
-            (byte) (r & 0xff), (byte) (g & 0xff), (byte) (b & 0xff),
-            (byte) 0x00, (byte) 0xef
-        };
-        queuePacket(cmdDuoco);
+        // 3. LEDCAR BLE Channel (7E FF 05 03 R G B FF EF)
+        queuePacket(new byte[]{
+            (byte) 0x7E, (byte) 0xFF, (byte) 0x05, (byte) 0x03,
+            (byte) (r & 0xFF), (byte) (g & 0xFF), (byte) (b & 0xFF),
+            (byte) 0xFF, (byte) 0xEF
+        });
     }
 
+    /**
+     * Send POWER ON or POWER OFF (Total Blackout sequence when OFF)
+     */
     public void sendPower(boolean on) {
         isPowerOn = on;
         savePreferences();
 
-        // ELK
-        byte val = on ? (byte) 0xf0 : (byte) 0x00;
-        byte[] cmdElk = new byte[]{
-            (byte) 0x7e, (byte) 0x04, (byte) 0x04, val,
-            (byte) 0x00, on ? (byte) 0x01 : (byte) 0x00, (byte) 0xff, (byte) 0x00, (byte) 0xef
-        };
-        queuePacket(cmdElk);
+        if (on) {
+            // Power ON: LED channel + DMX channel + BLE channel
+            queuePacket(new byte[]{
+                (byte) 0x7B, (byte) 0x01, (byte) 0x04, (byte) 0x03,
+                (byte) 0xFF, (byte) 0xFF, (byte) 0xFF, (byte) 0xFF, (byte) 0xBF
+            });
+            queuePacket(new byte[]{
+                (byte) 0x7B, (byte) 0xFF, (byte) 0x04, (byte) 0x03,
+                (byte) 0xFF, (byte) 0xFF, (byte) 0xFF, (byte) 0xFF, (byte) 0xBF
+            });
+            queuePacket(new byte[]{
+                (byte) 0x7E, (byte) 0xFF, (byte) 0x04, (byte) 0x01,
+                (byte) 0xFF, (byte) 0xFF, (byte) 0xFF, (byte) 0xFF, (byte) 0xEF
+            });
+            // Restore color and brightness
+            sendColor(curR, curG, curB);
+            sendBrightness(curBrightness);
 
-        // Triones
-        byte[] cmdTriones = new byte[]{
-            (byte) 0xcc, on ? (byte) 0x23 : (byte) 0x24, (byte) 0x33
-        };
-        queuePacket(cmdTriones);
-
-        // duoCo
-        byte[] cmdDuoco = new byte[]{
-            (byte) 0x7e, (byte) 0x00, (byte) 0x04, val,
-            (byte) 0x00, on ? (byte) 0x01 : (byte) 0x00, (byte) 0xff, (byte) 0x00, (byte) 0xef
-        };
-        queuePacket(cmdDuoco);
+        } else {
+            // Power OFF (Complete Blackout Sequence for both IC ARGB and 5050 RGB strips)
+            // 1. LED Channel Power OFF
+            queuePacket(new byte[]{
+                (byte) 0x7B, (byte) 0x01, (byte) 0x04, (byte) 0x02,
+                (byte) 0xFF, (byte) 0xFF, (byte) 0xFF, (byte) 0xFF, (byte) 0xBF
+            });
+            // 2. DMX Channel Power OFF
+            queuePacket(new byte[]{
+                (byte) 0x7B, (byte) 0xFF, (byte) 0x04, (byte) 0x02,
+                (byte) 0xFF, (byte) 0xFF, (byte) 0xFF, (byte) 0xFF, (byte) 0xBF
+            });
+            // 3. BLE Channel Power OFF
+            queuePacket(new byte[]{
+                (byte) 0x7E, (byte) 0xFF, (byte) 0x04, (byte) 0x00,
+                (byte) 0xFF, (byte) 0xFF, (byte) 0xFF, (byte) 0xFF, (byte) 0xEF
+            });
+            // 4. Pattern 0 (Pattern Off from DMXPatternList)
+            queuePacket(new byte[]{
+                (byte) 0x7B, (byte) 0xFF, (byte) 0x03, (byte) 0x00,
+                (byte) 0xFF, (byte) 0xFF, (byte) 0xFF, (byte) 0xFF, (byte) 0xBF
+            });
+            // 5. Zero brightness across all channels
+            queuePacket(new byte[]{
+                (byte) 0x7B, (byte) 0xFF, (byte) 0x01, (byte) 0x00,
+                (byte) 0x00, (byte) 0x02, (byte) 0xFF, (byte) 0xFF, (byte) 0xBF
+            });
+            queuePacket(new byte[]{
+                (byte) 0x7B, (byte) 0xFF, (byte) 0x01, (byte) 0x00,
+                (byte) 0x00, (byte) 0x00, (byte) 0xFF, (byte) 0xFF, (byte) 0xBF
+            });
+            queuePacket(new byte[]{
+                (byte) 0x7E, (byte) 0xFF, (byte) 0x01, (byte) 0x00,
+                (byte) 0x00, (byte) 0xFF, (byte) 0xFF, (byte) 0xFF, (byte) 0xEF
+            });
+            // 6. Black RGB
+            queuePacket(new byte[]{
+                (byte) 0x7B, (byte) 0x01, (byte) 0x07, (byte) 0x00,
+                (byte) 0x00, (byte) 0x00, (byte) 0x00, (byte) 0xFF, (byte) 0xBF
+            });
+            queuePacket(new byte[]{
+                (byte) 0x7B, (byte) 0x00, (byte) 0x07, (byte) 0x00,
+                (byte) 0x00, (byte) 0x00, (byte) 0x00, (byte) 0xFF, (byte) 0xBF
+            });
+            queuePacket(new byte[]{
+                (byte) 0x7E, (byte) 0xFF, (byte) 0x05, (byte) 0x03,
+                (byte) 0x00, (byte) 0x00, (byte) 0x00, (byte) 0xFF, (byte) 0xEF
+            });
+        }
     }
 
+    /**
+     * Send brightness (0..100)
+     */
     public void sendBrightness(int brightness) {
         curBrightness = Math.max(0, Math.min(100, brightness));
         savePreferences();
 
-        // ELK
-        byte[] cmdElk = new byte[]{
-            (byte) 0x7e, (byte) 0x04, (byte) 0x01, (byte) curBrightness,
-            (byte) 0x01, (byte) 0xff, (byte) 0x00, (byte) 0xef
-        };
-        queuePacket(cmdElk);
+        int adj = (curBrightness * 32) / 100;
 
-        // Triones
-        byte[] cmdTriones = new byte[]{
-            (byte) 0x56, (byte) 0x00, (byte) 0x00, (byte) 0x00,
-            (byte) curBrightness, (byte) 0x0f, (byte) 0xaa
-        };
-        queuePacket(cmdTriones);
+        // LED Channel Brightness
+        queuePacket(new byte[]{
+            (byte) 0x7B, (byte) 0xFF, (byte) 0x01,
+            (byte) adj, (byte) curBrightness, (byte) 0x02,
+            (byte) 0xFF, (byte) 0xFF, (byte) 0xBF
+        });
+
+        // DMX Channel Brightness
+        queuePacket(new byte[]{
+            (byte) 0x7B, (byte) 0xFF, (byte) 0x01,
+            (byte) adj, (byte) curBrightness, (byte) 0x00,
+            (byte) 0xFF, (byte) 0xFF, (byte) 0xBF
+        });
+
+        // BLE Channel Brightness
+        queuePacket(new byte[]{
+            (byte) 0x7E, (byte) 0xFF, (byte) 0x01,
+            (byte) adj, (byte) curBrightness,
+            (byte) 0xFF, (byte) 0xFF, (byte) 0xFF, (byte) 0xEF
+        });
     }
 
-    public void sendEffect(int effectId, int speed) {
-        // ELK Mode: 0x80 to 0x9a
-        byte[] cmdElk = new byte[]{
-            (byte) 0x7e, (byte) 0x05, (byte) 0x03, (byte) effectId,
-            (byte) Math.max(1, Math.min(100, speed)), (byte) 0x00, (byte) 0xef
-        };
-        queuePacket(cmdElk);
+    /**
+     * Send DMX & RGB Dynamic Pattern according to MrMcFlyy/LEDCAR-01
+     * Pattern indices:
+     * 1: Forward Dreaming (Dreamcolor)
+     * 3: Forward 7 Colors (Rainbow Flow)
+     * 23: Forward Trailing (Meteor Chase)
+     * 39: Forward Streaming (Water Stream)
+     * 57: Open Curtain 7 Colors
+     * 82: Gradual 7 Colors (Pulse Breathe)
+     */
+    public void sendEffect(int patternIndex) {
+        sendEffect(patternIndex, 80);
+    }
+
+    public void sendEffect(int patternIndex, int speed) {
+        isPowerOn = true;
+        savePreferences();
+
+        int sp = Math.max(1, Math.min(100, speed));
+
+        // 1. DMX Pattern command: 7B FF 03 <patternIndex> FF FF FF FF BF
+        queuePacket(new byte[]{
+            (byte) 0x7B, (byte) 0xFF, (byte) 0x03,
+            (byte) (patternIndex & 0xFF),
+            (byte) 0xFF, (byte) 0xFF, (byte) 0xFF, (byte) 0xFF, (byte) 0xBF
+        });
+
+        // 2. BLE RGB Pattern command: 7E FF 03 <id> <speed> FF FF FF EF
+        byte rgbId = (byte) (0x80 + (patternIndex % 25));
+        queuePacket(new byte[]{
+            (byte) 0x7E, (byte) 0xFF, (byte) 0x03,
+            rgbId, (byte) sp,
+            (byte) 0xFF, (byte) 0xFF, (byte) 0xFF, (byte) 0xEF
+        });
+    }
+
+    public void sendDirection(boolean forward) {
+        isForwardDirection = forward;
+        // 7B FF 0D <00=Forward / 01=Reverse> FF FF FF FF BF
+        queuePacket(new byte[]{
+            (byte) 0x7B, (byte) 0xFF, (byte) 0x0D,
+            (byte) (forward ? 0x00 : 0x01),
+            (byte) 0xFF, (byte) 0xFF, (byte) 0xFF, (byte) 0xFF, (byte) 0xBF
+        });
     }
 
     private synchronized void queuePacket(byte[] data) {
+        if (data == null || data.length == 0) return;
         mWriteQueue.offer(data);
         if (!mIsWriting) {
-            processWriteQueue();
+            processNextPacket();
         }
     }
 
-    private synchronized void processWriteQueue() {
-        if (mGatt == null || mWriteCharacteristics.isEmpty() || mWriteQueue.isEmpty()) {
+    private synchronized void processNextPacket() {
+        mHandler.removeCallbacks(mTimeoutWatchdog);
+
+        if (mGatt == null || mTargetChar == null || mWriteQueue.isEmpty()) {
             mIsWriting = false;
             return;
         }
 
         byte[] packet = mWriteQueue.poll();
-        if (packet == null) {
-            mIsWriting = false;
-            return;
-        }
-
-        mIsWriting = true;
-        for (BluetoothGattCharacteristic ch : mWriteCharacteristics) {
+        if (packet != null) {
+            mIsWriting = true;
             try {
-                ch.setValue(packet);
-                ch.setWriteType(BluetoothGattCharacteristic.WRITE_TYPE_NO_RESPONSE);
-                mGatt.writeCharacteristic(ch);
+                clearBusyFlag(mGatt);
+                mTargetChar.setWriteType(BluetoothGattCharacteristic.WRITE_TYPE_NO_RESPONSE);
+                mTargetChar.setValue(packet);
+                boolean ok = mGatt.writeCharacteristic(mTargetChar);
+                Log.d(TAG, "Write " + bytesToHex(packet) + " -> ok=" + ok);
+                if (ok) {
+                    // Arm watchdog in case hardware doesn't send callback
+                    mHandler.postDelayed(mTimeoutWatchdog, 120);
+                } else {
+                    mIsWriting = false;
+                    clearBusyFlag(mGatt);
+                    mHandler.postDelayed(this::processNextPacket, 50);
+                }
             } catch (Exception e) {
-                Log.e(TAG, "Error writing packet to characteristic", e);
+                Log.e(TAG, "Error writing BLE packet", e);
+                mIsWriting = false;
+                mHandler.postDelayed(this::processNextPacket, 50);
             }
         }
+    }
 
-        // Small spacing between writes to prevent stack overflow
-        mHandler.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                mIsWriting = false;
-                processWriteQueue();
-            }
-        }, 15);
+    private static String bytesToHex(byte[] bytes) {
+        if (bytes == null) return "";
+        StringBuilder sb = new StringBuilder();
+        for (byte b : bytes) {
+            sb.append(String.format("%02X ", b));
+        }
+        return sb.toString().trim();
     }
 
     private void broadcastStatus(String status) {
         Intent intent = new Intent(ACTION_STATUS_CHANGE);
-        intent.putExtra("status", status);
         intent.putExtra("connected", mIsConnected);
+        intent.putExtra("status", status);
         intent.putExtra("device_name", mConnectedDeviceName);
-        intent.putExtra("device_address", mConnectedDeviceAddress);
         sendBroadcast(intent);
     }
 
-    public boolean isConnected() {
-        return mIsConnected;
-    }
-
-    public String getConnectedDeviceName() {
-        return mConnectedDeviceName;
-    }
-
-    public String getConnectedDeviceAddress() {
-        return mConnectedDeviceAddress;
-    }
-
-    public List<BluetoothDevice> getDiscoveredDevices() {
-        return new ArrayList<>(mDiscoveredDevices);
-    }
-
-    public int getDeviceRssi(String address) {
-        Integer r = mDeviceRssi.get(address);
-        return r != null ? r : -99;
-    }
-
+    public boolean isConnected() { return mIsConnected; }
+    public String getConnectedDeviceName() { return mConnectedDeviceName; }
+    public String getConnectedDeviceAddress() { return mConnectedDeviceAddress; }
     public int getCurR() { return curR; }
     public int getCurG() { return curG; }
     public int getCurB() { return curB; }
     public int getCurBrightness() { return curBrightness; }
     public boolean isPowerOn() { return isPowerOn; }
+    public boolean isForwardDirection() { return isForwardDirection; }
+    public List<BluetoothDevice> getDiscoveredDevices() { return new ArrayList<>(mDiscoveredDevices); }
 
     @Override
     public IBinder onBind(Intent intent) {
         return mBinder;
     }
 
+    private void initVirtualDuocoServer() {
+        try {
+            mVirtualDuocoServer = new VirtualDuocoServer(this, new VirtualDuocoServer.Listener() {
+                @Override
+                public void onVirtualColorReceived(int r, int g, int b) {
+                    Log.i(TAG, "VirtualDuoco (Native DUDU) -> Color: R=" + r + " G=" + g + " B=" + b);
+                    sendColor(r, g, b);
+                }
+
+                @Override
+                public void onVirtualBrightnessReceived(int brightness) {
+                    Log.i(TAG, "VirtualDuoco (Native DUDU) -> Brightness: " + brightness + "%");
+                    sendBrightness(brightness);
+                }
+
+                @Override
+                public void onVirtualPowerReceived(boolean on) {
+                    Log.i(TAG, "VirtualDuoco (Native DUDU) -> Power: " + (on ? "ON" : "OFF"));
+                    sendPower(on);
+                }
+
+                @Override
+                public void onVirtualEffectReceived(int effectId, int speed) {
+                    Log.i(TAG, "VirtualDuoco (Native DUDU) -> Effect: " + effectId + " Speed: " + speed);
+                    int dmxPattern = (effectId >= 0x80) ? (((effectId - 0x80) * 8) + 1) : effectId;
+                    if (dmxPattern <= 0) dmxPattern = 1;
+                    sendEffect(dmxPattern, speed);
+                }
+            });
+            mVirtualDuocoServer.start();
+            Log.i(TAG, "VirtualDuocoServer initialized for DUDU Launcher native control");
+        } catch (Exception e) {
+            Log.e(TAG, "Failed to start VirtualDuocoServer", e);
+        }
+    }
+
     @Override
     public void onDestroy() {
         super.onDestroy();
+        mHandler.removeCallbacks(mTimeoutWatchdog);
+        if (mVirtualDuocoServer != null) {
+            try {
+                mVirtualDuocoServer.stop();
+            } catch (Exception ignored) {}
+            mVirtualDuocoServer = null;
+        }
         try {
             unregisterReceiver(mCommandReceiver);
         } catch (Exception ignored) {}

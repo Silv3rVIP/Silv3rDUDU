@@ -61,76 +61,65 @@ Android 11+ (API 30+) package visibility restrictions hide non-standard music ap
 
 ## 💡 Part 2: DuduLedBridge (In-Car BLE Ambient Lighting)
 
-Generic aftermarket car LED ambient lighting kits (**LEDLAMP**, **ELK-BLEDOM**, **Triones**, **Lotus Lantern**, **duoCo Strip**) sold on AliExpress and Amazon do not communicate with DUDU Launcher's proprietary ambient module.
+Generic aftermarket car LED ambient lighting kits (**LEDLAMP**, **LEDCAR-01**, **ELK-BLEDOM**, **Lotus Lantern**, **duoCo Strip**) sold on AliExpress and Amazon do not communicate natively with DUDU Launcher.
 
-**DuduLedBridge** is an open-source companion app designed specifically for Android car head units to control these strips effortlessly.
+**DuduLedBridge** is an in-car BLE bridge and translator app designed specifically for Android head units to bridge these strips directly into **DUDU Launcher's native interface**.
 
 ### Features:
-1. **Automotive Cockpit Dark UI**:
-   - Custom automotive ambient dashboard app icon.
-   - Status badge indicator (Green `CONNECTED`, Blue `SCANNING...`, Red `DISCONNECTED`).
-   - Real-time RGB glow preview card with HEX readout and live color preview.
-   - Master Brightness slider with one-tap step buttons (`25%`, `50%`, `75%`, `MAX`).
-   - Smooth Red, Green, and Blue sliders.
+1. **Virtual Duoco / ELK-BLEDOM Server (Native DUDU Integration)**:
+   - Emulates an **ELK-BLEDOM (0xFFF0/0xFFF3)** GATT server right on the Android head unit.
+   - Responds to DUDU Launcher's native connection query and periodic handshake heartbeat so DUDU Launcher marks the connection as permanently **ACTIVE**.
+   - Translates incoming commands from **DUDU Launcher's native Ambient Light window, day/night scene switch, and desktop widget** into the exact 9-byte packets (`0x7B ... 0xBF` and `0x7E ... 0xEF`) required by the car's **LEDCAR-01** controller.
+   - No separate app needs to stay open during normal driving!
 
-2. **10 OEM Car Presets**:
-   - **VW Blue** (`#0066FF` - Volkswagen signature)
-   - **Golf R Ice Cyan** (`#00E5FF`)
-   - **Audi Sport Red** (`#FF0033`)
-   - **BMW M Amber** (`#FF6600`)
-   - **Mercedes Ambient Violet** (`#9900FF`)
-   - **Porsche Racing Yellow** (`#FFCC00`)
-   - **AMG Acid Green** (`#00FF66`)
-   - **Passat Warm White** (`#FFE6CC`)
-   - **Pure Diamond White** (`#FFFFFF`)
-   - **Night Magenta** (`#FF0077`)
+2. **Automotive Cockpit Dark UI (1280×720 Native HD)**:
+   - Full 1280×720 widescreen layout with sharp typography (`minSdkVersion="21"`, `targetSdkVersion="29"`).
+   - Real-time RGB glow preview card with HEX readout and color sliders.
+   - Master Brightness slider with step presets (`25%`, `50%`, `75%`, `MAX`).
+   - Quick-access automotive color presets (**VW Blue**, **Golf R Ice Cyan**, **Audi Red**, **BMW Amber**, **Mercedes Violet**, **Passat Warm White**).
 
-3. **Multi-Protocol BLE Engine**:
-   - Transmits simultaneously across **ELK-BLEDOM (`7E 07`)**, **Triones (`56`)**, and **duoCo (`7E 00`)** GATT characteristics.
-   - Works across all writable endpoints automatically.
-   - **Device Picker Dialog**: Tap **DEVICES** to view all nearby discovered Bluetooth devices with RSSI signal strength meters.
+3. **Dynamic Effects & Strip Configuration**:
+   - Built-in triggers for **Dreamcolor**, **Rainbow Flow**, **Meteor Chase**, **Water Stream**, and **Pulse Breathe**.
+   - Strip Flow Direction toggle (`Forward` / `Reverse`).
+   - Speed adjustment slider (1-100%).
 
-4. **Dynamic Effects & Music Reactive Mode**:
-   - **Music Beat Sync**: Uses Android's Audio `Visualizer` API to dynamically pulse ambient brightness to music playback.
-   - **Smooth Breathe** & **Rainbow Flow** atmospheric modes.
-
-5. **Boot Auto-Connect & State Persistence**:
-   - Background service starts on car boot (`BOOT_COMPLETED`, `QUICKBOOT_POWERON`, `ACTION_POWER_CONNECTED`).
-   - Restores the last connected MAC address, color, and brightness automatically every time you start the car.
-
-6. **Broadcast Automation API**:
-   Control lighting from DUDU Launcher gestures, shortcuts, Tasker, or MacroDroid:
-   ```bash
-   # Set to VW Blue
-   adb shell am broadcast -a com.dudu.ledbridge.SET_COLOR --ei r 0 --ei g 102 --ei b 255
-
-   # Set Preset
-   adb shell am broadcast -a com.dudu.ledbridge.SET_PRESET --es preset "vw"
-
-   # Toggle Power
-   adb shell am broadcast -a com.dudu.ledbridge.SET_POWER --ez toggle true
-
-   # Adjust Brightness
-   adb shell am broadcast -a com.dudu.ledbridge.SET_BRIGHTNESS --ei brightness 85
-   ```
+4. **Boot Auto-Connect & State Persistence**:
+   - Background service starts automatically on vehicle ignition (`BOOT_COMPLETED`, `QUICKBOOT_POWERON`, `ACTION_POWER_CONNECTED`).
+   - Maintains continuous link to the car's LED controller.
 
 ---
 
 ## 📲 Installation Guide
 
-### Via ADB:
+### Option 1: One-Click Installer Script (Recommended)
+When your car is parked and connected to Wi-Fi:
 ```bash
-# Install Dudu Launcher (Passat Edition)
-adb install -r dudulauncher_passat_mod.apk
+# Connect and install automatically:
+bash install_led_bridge.sh
 
-# Install LED Ambient Bridge
-adb install -r dudu_led_bridge.apk
+# Or specify a custom head unit IP if needed:
+bash install_led_bridge.sh 10.152.214.120:5555
 ```
 
-### Via USB Drive:
-1. Copy the desired `.apk` files to a USB flash drive.
-2. Plug into your car's USB port.
+### Option 2: Via ADB Manual Install
+```bash
+adb install -r release_apks/dudu_led_bridge.apk
+```
+
+### Option 3: Via USB Flash Drive
+1. Copy `release_apks/dudu_led_bridge.apk` to a USB flash drive.
+2. Plug the drive into your car's USB port.
 3. Open the head unit's **File Manager** and tap the APK to install.
+
+---
+
+## ⚙️ Connecting DUDU Launcher Native Ambient Light
+Once installed:
+1. Open **DUDU Launcher Settings** ➔ **Ambient Light Settings** (氛围灯设置).
+2. Select **BLE / Third-Party Branded Ambient Lights** (Duoco).
+3. Scan for devices: **ELK-BLEDOM** will appear in the list.
+4. Tap **ELK-BLEDOM** to connect. It will connect immediately and stay connected!
+5. Now you can control your car's ambient lighting directly from DUDU Launcher's native desktop widget, day/night auto-brightness, and scenes.
 
 ---
 

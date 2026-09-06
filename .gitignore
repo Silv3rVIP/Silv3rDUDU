@@ -5,6 +5,12 @@ dudu_src/build/
 *.apk copy
 dudu_mod_unsigned*
 
+# Keys and dex
+platform.*
+*.dex
+unpacked_classes.dex
+release_apks/
+
 # OS files
 .DS_Store
 Thumbs.db

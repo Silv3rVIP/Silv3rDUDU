@@ -10,6 +10,7 @@ echo "[*] Compiling resources with aapt2..."
 mkdir -p "$BUILD_DIR/gen" "$BUILD_DIR/obj" "$BUILD_DIR/dex"
 "$TOOLS_DIR/aapt2" compile --dir "$DIR/led_bridge_src/res" -o "$BUILD_DIR/compiled_res.zip"
 "$TOOLS_DIR/aapt2" link -o "$BUILD_DIR/base.apk" -I "$TOOLS_DIR/android.jar" \
+    --min-sdk-version 21 --target-sdk-version 29 \
     --manifest "$DIR/led_bridge_src/AndroidManifest.xml" \
     --java "$BUILD_DIR/gen" \
     "$BUILD_DIR/compiled_res.zip" --auto-add-overlay
