@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packages>
+<!--
+    ######################## disable app self start ########################
+    1). disable all the third party app self start in wake
+        if doesn't click it or doesn't startActivity by app.
+        normally,the apps which doesn't be installed from update.zip
+
+        you can set package_all_third's value 1,yes,or true to disable
+        all the thirds party app self start.
+
+        but,if has package_third_except,so allow it(them) self start
+        such as:
+        <package_third_except id="1" name="cn.qihoo.*"/>
+        <package_third_except id="2" name="com.kugou.playerHD"/>
+
+    2). disable specified apps self start in wake
+        if doesn't click it or doesn't startActivity by app.
+        normally,the apps which are installed from update.zip
+
+        you can set package's full name or part name
+        such as: cn.kuwo.kwmusiccar or cn.kuwo.*
+
+    if has the same name with package_third_except and package,the first
+    rule allow it self start
+
+    sys.wake.app.self.start.enable control enable/disable,value as true or false
+
+    Notice:
+    Don't modify at will,designed by wangcheng
+-->
+    <!-- disable all the third party apps self start -->
+    <package_all_third value="yes"/>
+
+    <!-- allow specified the third party apps self start
+    <package_third_except id="1" name="com.kugou.playerHD"/> -->
+    <!--测试程序 -->
+    <package_third_except id="1" name="com.example.testproject"/>
+    <!--谷歌注音输入法-->
+    <package_third_except id="2" name="com.google.android.apps.inputmethod.zhuyin"/>
+    <!--百度输入法-->
+    <package_third_except id="3" name="com.baidu.input"/>
+    <!--超注音输入法-->
+    <package_third_except id="4" name="tw.chaozhuyin"/>
+    <!--google play-->
+    <package_third_except id="5" name="com.google.android.gms"/>
+    <package_third_except id="6" name="com.google.android.youtube"/>
+    <!--跑分应用安兔兔-->
+    <package_third_except id="7" name="com.antutu.*"/>
+
+    <package_third_except id="8" name="com.hiworld.*"/>
+
+    <package_third_except id="9" name="com.goyourlife.services"/>
+    
+    <package_third_except id="11" name="com.williexing.android.apps.xcdvr1"/>
+    
+    <package_third_except id="12" name="com.gp.dvr"/>
+    
+    <package_third_except id="12" name="com.ankai.cardvr"/>
+    
+    <package_third_except id="13" name="com.building.dvr"/>
+    
+    <package_third_except id="14" name="com.tule.dvr"/>
+    
+    <package_third_except id="15" name="com.nwd.boot.tips"/>
+    
+    <!--升级服务-->
+	  <package_third_except id="16" name="com.nwd.upgrade.mgtservice"/>
+	
+		<!--应用市场服务-->
+	  <package_third_except id="17" name="com.nwd.carstore.service"/>
+	
+		<!--广告服务-->
+	  <package_third_except id="18" name="com.nwd.carad.service"/>
+	  
+	  <!--威威车联服务-->
+	  <package_third_except id="19" name="com.nwd.weiweiclient"/>
+	  
+
+        <package_third_except id="30" name="com.dudu.autoui"/>
+    <package_third_except id="31" name="com.vivi.vivimusic"/>
+    <package_third_except id="32" name="com.llsl.viper4android"/>
+    <package_third_except id="33" name="com.vialsoft.radarbot_free"/>
+
+    <!-- disable specified apps self start -->
+    <package id="1" name="cn.kuwo.kwmusiccar"/>
+    <package id="2" name="com.android.chrome"/>
+    <package id="3" name="com.android.providers.calendar"/>
+    <package id="4" name="com.android.printspooler"/>
+    <package id="5" name="android.ext.services"/>
+    <package id="6" name="com.android.managedprovisioning"/>
+    <package id="7" name="com.android.smspush"/>
+    
+    
+    
+    
+</packages>

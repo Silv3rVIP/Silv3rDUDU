@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packages>
+<!--
+    ################# allow app self start when sleep ##################
+    1). allow specified apps self start up when sleep
+        except of these specified apps,all others will not
+        start process when sleep
+
+        you can set package's full name or part name
+        such as: cn.kuwo.kwmusiccar or com.qihoo.*
+    Notice:
+    Don't modify at will,designed by wangcheng
+-->
+    <!--允许休眠启动的应用包名/通配符-->
+    <package id="1" name="android"/>
+    <package id="2" name="com.android.*"/>
+    <package id="3" name="com.google.*"/>
+    <package id="4" name="com.nwd.*"/>
+    <package id="4" name="com.bt.bc03"/>
+    <package id="5" name="com.borqs.*"/>
+    <package id="6" name="com.txznet.*"/>
+    <package id="7" name="com.qualcomm.*"/>
+    <package id="8" name="com.coagent.*"/>
+    <package id="9" name="com.letv.*"/>
+    <package id="10" name="com.qti.*"/>
+    <package id="11" name="org.codeaurora.bluetooth"/>
+    <package id="12" name="com.iflytek.inputmethod.pad"/>
+	<!--测试程序-->
+	<package id="13" name="com.example.testproject"/>
+	<!--麦古apk-->
+	<package id="14" name="com.mapgoo.diruite"/>
+	<!--凯富隆DVR-->
+    <package id="15" name="com.anwensoft.cardvr"/>
+	<!--6+1 dvr-->
+	<package id="16" name="com.synmoon.usbcamera"/>
+	<!--威威车联-->
+	<package id="17" name="com.nwd.weiweiclient"/>
+	<!--百度输入法-->
+	<package id="18" name="com.baidu.input"/>
+	<!--超注音输入法-->
+	<package id="19" name="tw.chaozhuyin"/>
+	<!--全志激活器-->
+	<package id="19" name="com.allwinnertech.activator"/>
+	
+
+    <!-- 后台监控 -->
+    <package id="1" name="com.anwensoft.cardvr"/>
+    <package id="2" name="com.synmoon.usbcamera"/>
+    <package id="3" name="com.nwd.weiweiclient"/>
+
+        <package id="20" name="com.dudu.autoui"/>
+    <package id="21" name="com.vivi.vivimusic"/>
+    <package id="22" name="com.llsl.viper4android"/>
+    <package id="23" name="com.vialsoft.radarbot_free"/>
+    <!--禁止休眠启动的应用包名/通配符,一般可设置上面通配符中具体的应用,代码中会优先判断此处的TAG-->
+    <!-- 无后台监控 -->
+    <!--<package_except id="1" name="com.nwd.test"/>-->
+
+    <!-- 有后台监控 -->
+    <package_except_background_monitor id="1" name="com.qualcomm.qcrilmsgtunnel"/>
+    <package_except_background_monitor id="2" name="com.nwd.dn.obds"/>
+    <package_except_background_monitor id="3" name="com.nwd.voice.analyze"/>
+    <package_except_background_monitor id="4" name="com.letv.leauto.ecolink"/>
+    <package_except_background_monitor id="5" name="com.txznet.webchat"/>
+    <package_except_background_monitor id="6" name="com.txznet.txz"/>
+    <!-- End -->
+</packages>

@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configList>
+	<!--与Arm设备相关的应用,要启动这个应用,必须对应的设备先打开 -->
+	<!--<ArmDeviceApp Package= DeviceType=/>-->
+	<!--相关IPOD配置说明:（注:如果是串口IPod,不需要将<ArmDeviceApp Package="com.nwd.usb.ipod" DeviceType="33554432"/>注释起来；
+	      如果是USB IPod，则不需要注释<ArmDeviceApp Package="com.nwd.usb.ipod" DeviceType="33554432"/>）-->
+	<!--ArmDeviceApp Package="com.nwd.usb.ipod" DeviceType="33554432"/> -->
+	<!--与MCU设备相关的应用,要启动这个应用,必须对应的设备先打开 -->
+	<McuDeviceApp Package="com.nwd.dvd" DeviceType="128"/>
+	<McuDeviceApp Package="com.nwd.dvd.sd" DeviceType="64"/>
+	<McuDeviceApp Package="com.nwd.dvd.usb" DeviceType="32"/>
+	<McuDeviceApp Package="com.nwd.mp5" DeviceType="1024"/>
+	<!--串口IPOD[叶工说:串口IPOD、USB IPOD现在都是由ARM检测的,因此该标签已经无作用了]-->
+	<!--<McuDeviceApp Package="com.nwd.usb.ipod" DeviceType="16"/>-->
+	<NwdApp Package="com.nwd.audioset"/>
+	<!--Nwd开发的应用,不会发送应用启动的广播 -->
+	<!--音乐 -->
+	<NwdApp Package="com.nwd.android.music.ui"/>
+	<!--视频 -->
+	<NwdApp Package="com.nwd.android.video.ui"/>
+	<!--主界面 -->
+	<NwdApp Package="com.android.launcher"/>
+	<NwdApp Package="com.dudu.autoui"/>
+	<!--DVD -->
+	<NwdApp Package="com.nwd.dvd"/>
+	<!--IPOD -->
+	<NwdApp Package="com.nwd.usb.ipod"/>
+	<!--虚拟碟盒 -->
+	<NwdApp Package="com.nwd.cdc"/>
+	<!--收音机 -->
+	<NwdApp Package="com.nwd.radio"/>
+	<!--AUX -->
+	<NwdApp Package="com.nwd.auxin"/>
+	<!--蓝牙 -->
+	<NwdApp Package="com.nwd.android.phone"/>
+	<!--CMMB -->
+	<NwdApp Package="com.nwd.cmmb"/>
+	<!--胎压检测 -->
+	<NwdApp Package="com.nwd.tpms"/>
+	<!--设置 -->
+	<NwdApp Package="com.android.settings"/>
+	<!--蓝牙音乐 -->
+	<NwdApp Package="com.nwd.bt.music"/>
+	<!--DVD-SD -->
+	<NwdApp Package="com.nwd.dvd.sd"/>
+	<!--DVD-USB -->
+	<NwdApp Package="com.nwd.dvd.usb"/>
+	<!--DVR -->
+	<NwdApp Package="com.nwd.dvr"/>
+	<!--前视 -->
+	<NwdApp Package="com.nwd.dvr.front"/>
+	<!--3G电话 -->
+	<NwdApp Package="com.android.phone"/>
+	<!--来电-->
+	<NwdApp Package="com.android.incallui"/>
+	<!--拨号-->
+	<NwdApp Package="com.android.dialer"/>
+	<!--CAN USB -->
+	<NwdApp Package="com.nwd.can.usb"/>
+	<!--CAN 媒体盒 -->
+	<NwdApp Package="com.nwd.can.mediabox"/>
+	<!--CAN SYNC -->
+	<NwdApp Package="com.nwd.can.sync"/>
+	<!--CAN 设置 -->
+	<NwdApp Package="com.nwd.can.setting"/>
+	<!--CAN 收音机 -->
+	<NwdApp Package="com.nwd.can.radio"/>
+	<!--CAN 安吉星 -->
+	<NwdApp Package="com.nwd.can.onstar.phone"/>
+	<!--CAN 蓝牙音乐 -->
+	<NwdApp Package="com.nwd.can.bt.music"/>
+	<!--MP5 -->
+	<NwdApp Package="com.nwd.mp5"/>
+	<!--CAN CD -->
+	<NwdApp Package="com.nwd.can.cd"/>
+	<!--CAN 虚拟碟盒 -->
+	<NwdApp Package="com.nwd.can.cdc"/>
+	<!--CAN AUX -->
+	<NwdApp Package="com.nwd.can.auxin"/>
+	<!--MHL -->
+	<NwdApp Package="com.ns.carphone"/>
+	<!--车载设置 -->
+	<NwdApp Package="com.android.car.setting"/>
+	<!--屏保 -->
+	<NwdApp Package="com.nwd.android.lock.screen.ui"/>
+	<!--状态栏 -->
+	<NwdApp Package="com.android.systemui"/>
+	<!--Aux2 -->
+	<NwdApp Package="com.nwd.auxin.rear"/>
+	<!--miracast -->
+	<NwdApp Package="com.softwinner.miracastReceiver"/>
+	<!--一键清理 -->
+	<NwdApp Package="com.nwd.android.onekeyclear"/>
+	<!--TV-->
+	<NwdApp Package="com.nwd.tv"/>
+	<!--动态壁纸-->
+	<NwdApp Package="com.android.wallpaper.livepicker"/>	
+	<!--计算器-->
+	<NwdApp Package="com.android2.calculator3"/>
+	<!--新计算器-->
+	<NwdApp Package="com.android.calculator2"/>
+	<!--快速充电-->
+	<NwdApp Package="com.nwd.quickchange"/>
+	<!--文强蓝牙后台应用 --> 
+    <NwdApp Package="com.goodocom.gocsdk"/> 
+	<!--同行者 -->
+	<NwdApp Package="com.txznet.txz"/>
+	<!--把内置的第三方应用的包名加入到AppConfig.xml文件中,避免收音机在后台运行时再进入这些应用导致源被切走了的问题. -Modified on 2015-12-30-->
+	<!--下载-->
+	<NwdApp Package="com.android.providers.downloads.ui"/>
+	<!--说明书-->
+	<NwdApp Package="com.nwd.guidebookskin"/>
+	<!--Play 商店-->
+	<NwdApp Package="com.android.vending"/>
+	<!--重启-->
+	<NwdApp Package="com.nwd.tools.reboot"/>
+	<!--工厂设置-->
+	<NwdApp Package="com.nwd.factory.setting"/>
+	<!--超清3D蘑菇动态壁纸-->
+	<NwdApp Package="com.bizhi.mogudongtai"/>
+	<!--讯飞输入法-->
+	<NwdApp Package="com.iflytek.inputmethod.pad"/>
+	<!---工具箱-->
+	<NwdApp Package="com.nwd.android.toolsmanager"/>
+	<!--缓存清理-->
+	<NwdApp Package="com.nwd.android.cacheclear"/>
+	<!--GPS监视器-->
+	<NwdApp Package="com.android.setting.gps.monitor"/>
+	<!--一键安装-->
+	<NwdApp Package="com.nwd.onekey.installapk"/>
+	<!--地图拷贝-->
+	<NwdApp Package="com.nwd.android.copyfile"/>
+	<!--OBD匹配-->
+	<NwdApp Package="com.nwd.obd"/>
+	<!--ADAS-->
+	<NwdApp Package="com.movon.fcw"/>
+	<!--EQ-->
+	<NwdApp Package="com.nwd.audioset"/>
+	<!--360-->
+	<NwdApp Package="com.nwd.carkit360camera"/>
+	<!--分屏列表应用-->
+	<NwdApp Package="com.nwd.splitscreen"/>
+	<!--同行者精简版-->
+	<NwdApp Package="com.txznet.smartspeechrecognizer"/>	
+	<!--N3合并进程保护-->
+	<NwdApp Package="com.nwd.assistivetouch.voiceanalyze"/>
+	<NwdApp Package="com.nwd.sendkey.oneclear.gpssynctime"/>
+	<!--K3001阿里云项目的配置 Added by ChenKui on 2017.04.21-->
+	<!--主界面 -->
+	<NwdApp Package="com.aliyun.ushell"/>
+	<!--音乐 -->
+	<NwdApp Package="com.yunos4car.music"/>
+	<!--视频 -->
+	<NwdApp Package="com.android.gallery3d"/>
+	<!--蓝牙电话&蓝牙音乐 -->
+	<NwdApp Package="com.aliyun.bluetoothphone"/>
+	<!--行车模式-->
+	<NwdApp Package="com.yunos.gesturecontrol"/>
+	<!--K3001阿里云项目的配置 Added by ChenKui on 2017.04.21-->
+	<!--把内置的第三方应用的包名加入到AppConfig.xml文件中,避免收音机在后台运行时再进入这些应用导致源被切走了的问题. -Modified on 2015-12-30-->
+	<!--高清双录-->
+	<NwdApp Package="com.nwd.hd2camera"/>
+	<!--GMS-->
+	<NwdApp Package="com.google.android.gms"/>
+	<NwdApp Package="com.android.provision"/>
+	
+	<NwdApp Package="com.nwd.rk.quickupdate"/>
+	
+	<NwdApp Package="com.nwd.splitscreen"/>
+	<NwdApp Package="com.nwd.statusbarbottom"/>
+	<NwdApp Package="com.nwd.statusbartop"/>
+	<NwdApp Package="com.nwd.production.test"/>
+	<NwdApp Package="com.nwd.whole.machine"/>
+	<NwdApp Package="com.android.documentsui"/>
+	<NwdApp Package="com.nwd.backcar"/>
+	<NwdApp Package="com.android.packageinstaller"/>
+	<NwdApp Package="com.nwd.wheel.learning"/>
+	<NwdApp Package="com.nwd.volumeview"/>
+	<NwdApp Package="com.nwd.carkithd2cam"/>
+	<NwdApp Package="com.mapswithme.maps.pro"/>
+	<NwdApp Package="com.nwd.filemanager"/>
+	<NwdApp Package="com.nwd.carad.service"/>
+		<!--鑫洋泉360-->
+	<NwdApp Package="com.ivicar.avm"/>
+	<NwdApp Package="com.nwd.stereocar"/>
+
+	<!--受保护的服务,不会被系统回收.也不能被API查询 -->
+	<!--KernelService -->
+	<ProtectedService Package="com.nwd.kernel"/>
+	<!--SettingService -->
+	<ProtectedService Package="com.nwd.setting.service"/>
+	<!--DvdService -->
+	<ProtectedService Package="com.nwd.dvd.service"/>
+	<!--DVR -->
+	<ProtectedService Package="com.nwd.dvr.service"/>
+	<!--AssistiveTouch -->
+	<ProtectedService Package="com.nwd.assistivetouch"/>
+	<!--RadioService -->
+	<ProtectedService Package="com.nwd.radio.service"/>
+	<!--CanService -->
+	<ProtectedService Package="com.nwd.can.setting"/>
+	<!--BtService -->
+	<ProtectedService Package="com.bt.bc03"/>
+	<!--VolumeService -->
+	<ProtectedService Package="com.nwd.volumeview"/>
+	<!--MediaScanService -->
+	<ProtectedService Package="com.nwd.media.scanner"/>
+	<!--BackcarService -->
+	<ProtectedService Package="com.nwd.backcar"/>
+	<!--me.sudar.tpms -->
+	<ProtectedService Package="me.sudar.tpms"/>
+	<ProtectedService Package="me.sudar.tpms:process1"/>
+	<!--UartTestor -->
+	<ProtectedService Package="com.nwd.test.uart"/>
+	<!--VoiceAnalyzeService-->
+	<ProtectedService Package="com.nwd.voice.analyze"/>
+	<!--Canservice-->
+	<ProtectedService Package="com.nwd.can.setting"/>
+	<!--MyService 配置文件检测和升级路径检测服务-->
+	<ProtectedService Package="com.nwd.checkconfig.service.MyService"/>	
+	<!--蓝牙音乐服务-->
+	<ProtectedService Package="com.goodocom.gocsdk"/>	
+	<!--合并后的新服务-->
+	<ProtectedService Package="com.nwd.kernel.setting"/>	
+	<ProtectedService Package="com.nwd.backcak.scanner.volume.bt"/>
+	<!--ipod服务-->
+	<ProtectedService Package="com.android.ipod"/>
+	<!--为滴滴虎打的补丁,启动网络数据开关服务 -Added by ChenKui on 20160530-->
+	<ProtectedService Package="com.nwd.carkit.mobile.data.tool"/>
+	<!--360服务-->
+	<ProtectedService Package="com.nwd.carkit360camera"/>
+	<!--NWD杀进程/转发按键的服务-->
+	<ProtectedService Package="com.android.utils.sendkey"/>
+	<!--语音服务 -Added by ChenKui on 2016-09-05-->
+	<ProtectedService Package="com.nwd.voice.analyze"/>
+	<!--添加国科威的USB DVR服务外部查询不到API -Added by ChenKui on 2016-09-20-->
+    <ProtectedService Package="com.nwd.usb.dvr.service"/>
+	<!--systemui-->
+	<ProtectedService Package="com.android.systemui"/>
+	<!--GPS同步时间服务-->
+	<ProtectedService Package="com.nwd.gps.sync"/>
+	<!--GPS监视器-->
+	<ProtectedService Package="com.android.setting.gps.monitor"/>	
+	<!--添加滴滴虎DDHuVoiceTool-->
+	<ProtectedService Package="com.nwd.ddhuvoicetool"/>
+	<!--添加阿里云蓝牙服务 Added by ChenKui on 2017.04.26-->
+	<ProtectedService Package="com.nwd.aliyunos.define"/>
+	<!--高清双录-->
+	<ProtectedService Package="com.nwd.hd2camera"/>
+	<!--一键清理-->
+	<ProtectedService Package="com.nwd.android.onekeyclear"/>
+	<!--Android 系统应用-->
+	<ProtectedService Package="android"/>
+	<!--加入蓝牙电话app不被杀掉 add by yj.zhang on 20217/6/28 -->
+	<ProtectedService Package="com.nwd.android.phone"/>
+	<!--加入TXZCore的包名,隐藏TXZCoreService不能在设置里面被手动kill-->
+	<ProtectedService Package="com.txznet.txz"/>
+	<ProtectedService Package="com.nwd.carkithd2cam"/>
+	<ProtectedService Package="com.ms.ms2160"/>
+	<ProtectedService Package="com.nwd.usb2cvbs"/>
+	
+	<!--当与设备相关的应用无法启动时,发出的警告提示 -->
+	<WarnningTips Package="com.nwd.dvd" WarnningIntent="com.nwd.ACTION_TIPS_INSERT_DISK"/>
+	<WarnningTips Package="com.nwd.dvd.sd" WarnningIntent="com.nwd.ACTION_TIPS_INSERT_SD"/>
+	<WarnningTips Package="com.nwd.dvd.usb" WarnningIntent="com.nwd.ACTION_TIPS_INSERT_USB"/>
+	<WarnningTips Package="com.nwd.usb.ipod" WarnningIntent="com.nwd.ACTION_TIPS_CONNECT_IPOD"/>
+	<WarnningTips Package="com.nwd.mp5" WarnningIntent="com.nwd.ACTION_TIPS_INSERT_SD_OR_USB"/>
+	<WarnningTips Package="com.nwd.android.music.ui" WarnningIntent="com.nwd.ACTION_TIPS_INSERT_SD_OR_USB"/>
+	<WarnningTips Package="com.nwd.android.video.ui" WarnningIntent="com.nwd.ACTION_TIPS_INSERT_SD_OR_USB"/>
+	
+	<!-- 受限应用--> 
+	<RestrictApp Package="com.nwd.auxin" WarnningIntent="com.nwd.ACTION_TIPS_STOP_360_RECORD"/>
+	<RestrictApp Package="com.nwd.tv" WarnningIntent="com.nwd.ACTION_TIPS_STOP_360_RECORD"/>
+	<RestrictApp Package="com.nwd.tv2" WarnningIntent="com.nwd.ACTION_TIPS_STOP_360_RECORD"/>
+	<RestrictApp Package="com.nwd.auxin.rear" WarnningIntent="com.nwd.ACTION_TIPS_STOP_360_RECORD"/>
+	<RestrictApp Package="com.nwd.dvr" WarnningIntent="com.nwd.ACTION_TIPS_STOP_360_RECORD"/>
+<NwdApp Package="com.nwd.weiweiclient"/>
+<NwdApp Package="com.nwd.carscreen"/>
+<NwdApp Package="com.nwd.tl.sn"/>
+<NwdApp Package="com.nwd.guidebookskin2"/>
+<NwdApp Package="com.nwd.carstore.service"/>
+</configList>

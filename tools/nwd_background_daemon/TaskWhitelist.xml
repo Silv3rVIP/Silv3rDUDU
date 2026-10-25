@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packages>
+<!--
+    ### process task white list: ###
+    kill process after time(unit:s) when exit application
+    which except of the following process.
+
+    sys.whitelist.enable control enable/disable,value as true or false
+-->
+    <delay time="5"/>
+    <package id="1" name="android"/>
+    <package id="2" name="com.android.launcher"/>
+    <package id="3" name="com.android.systemui"/>
+    <package id="3" name="com.android.phone"/>
+    <package id="4" name="com.nwd.bt.music"/>
+    <package id="5" name="com.nwd.android.music.ui"/>
+    <package id="6" name="com.nwd.android.phone"/>
+    <package id="7" name="com.nwd.radio"/>
+    <package id="8" name="com.nwd.auxin"/>
+    <package id="9" name="com.nwd.android.video.ui"/>
+	<!--去掉dvr modify by yewei 20161103-->
+    <!--<package id="10" name="com.nwd.dvr.nomal"/>-->
+    <package id="11" name="com.tima.carnet.vt"/>
+    <package id="12" name="com.android.dialer"/>
+    <package id="13" name="com.glsx.ddbox"/>
+    <package id="14" name="cn.kuwo.kwmusiccar"/>
+    <package id="15" name="com.nwd.factory.copy.autoupdate"/>
+    <package id="16" name="com.nwd.factory.setting"/>
+    <package id="17" name="com.leauto.elink"/>
+    <package id="18" name="com.letv.leauto.ecolink"/>
+    <package id="19" name="com.coagent.ecar"/>
+    <package id="20" name="com.coagent.voip"/>
+    <package id="21" name="com.nwd.android.screenshot"/>
+    <package id="22" name="com.android.wallpaper.livepicker"/>
+    <package id="23" name="com.share.android"/>
+    <package id="24" name="com.nwd.can.setting"/>
+    <package id="25" name="com.nwd.carkit360camera"/>
+    <package id="26" name="com.nwd.assistivetouch"/>
+    <package id="26" name="com.nwd.systemmonitor"/>
+    <package id="27" name="com.nwd.tpms"/>
+    <package id="28" name="com.nwd.dn.obds"/>
+    <!--将同行者车载微信加入到白名单中,解决:按Home键,车载微信在后台被Kill掉了,自动注销了微信 -Added by ChenKui 2016-11-09-->
+    <package id="29" name="com.txznet.webchat"/>
+    <!--<package id="30" name="com.hongfans.rearview"/>-->
+    <package id="31" name="com.bizhi.mogudongtai"/>
+    <package id="32" name="com.android.setting.gps.monitor"/>
+    <package id="33" name="com.android.car.setting"/>
+    <package id="34" name="com.nwd.audioset"/>
+    <package id="35" name="com.nwd.rk.quickupdate"/>
+    <package id="36" name="com.anwensoft.cardvr"/>
+    <package id="37" name="com.nwd.hd2camera"/>
+    <!--行车卫士/6+1-->
+    <package id="38" name="com.synmoon.usbcamera"/>
+    <package id="39" name="com.nwd.tv"/>
+    <package id="40" name="com.nwd.tv2"/>
+    <!--威威车联-->
+    <package id="41" name="com.nwd.weiweiclient"/>
+    <package id="42" name="net.easyconn"/>
+	<!--谷歌注音输入法-->
+	<package id="43" name="com.google.android.apps.inputmethod.zhuyin"/>
+	<!--百度输入法-->
+	<package id="44" name="com.baidu.input"/>
+	<!--超注音输入法-->
+	<package id="45" name="tw.chaozhuyin"/>
+	<!-- carplay -->
+	<package id="45" name="com.zjinnova.zlink"/>
+	<!--平台适配软件-->
+	<package id="46" name="com.nwd.adapt"/>
+	<package id="47" name="com.nwd.whole.machine"/>
+	<package id="48" name="com.nwd.production.test"/>
+	<package id="49" name="com.nwd.onekey.installapk"/>
+	<package id="50" name="com.txznet.music"/>
+	<package id="51" name="com.nwd.backcar"/>
+	<package id="52" name="com.nwd.audioset"/>
+	<package id="53" name="com.nwd.can.help"/>
+	<package id="54" name="com.nwd.carkithd2cam"/>
+	<package id="55" name="com.vialsoft.radarbot_free"/>
+	<!-- 后台监控 -->
+	<package id="1" name="com.anwensoft.cardvr"/>
+	<package id="2" name="com.synmoon.usbcamera"/>
+	<package id="3" name="com.nwd.weiweiclient"/>
+
+	
+ <package id="107" name="com.nwd.carad.service"/>"
+ <package id="108" name="com.nwd.carstore.service"/>"
+    <package id="60" name="com.dudu.autoui"/>
+    <package id="61" name="com.vivi.vivimusic"/>
+    <package id="62" name="com.llsl.viper4android"/>
+</packages>

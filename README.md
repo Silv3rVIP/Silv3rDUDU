@@ -15,10 +15,12 @@ A complete in-car software and modification suite for **DUDU Launcher** (DuduOS)
 | Component | File | Size | Description |
 |---|---|---|---|
 | **AudioSet Unified 6-Tab DSP** | [`dsp_app/audioset_unified_mod.apk`](dsp_app/audioset_unified_mod.apk) | 8.2 MB | Unified 6-tab DSP app with unlocked DTS, 32-band PEQ, and Passat B7 acoustic curve |
+| **DUDU 1.016020 Pure VW Edition** | [`dudulauncher_1.016020_vw_pure.apk`](dudulauncher_1.016020_vw_pure.apk) | 37 MB | Pure official Tencent Legu build with 3D VW emblem splash, System UID 1000, 100% Theme Store/Car models intact, and auto GPS EU weather |
 | **DUDU Launcher 1.016020 VW PiP** | [`dudulauncher_1.016020_vw_pip_vivi_mod.apk`](dudulauncher_1.016020_vw_pip_vivi_mod.apk) | 38 MB | Latest DUDU v1.016020 with PiP multitasking, anti-tamper bypass, and ViViMusic queries |
 | **DUDU Launcher Passat PiP** | [`dudulauncher_passat_pip_mod.apk`](dudulauncher_passat_pip_mod.apk) | 32 MB | DUDU Launcher with Passat boot screen, PiP multitasking, and ViViMusic queries |
 | **DUDU Launcher VW Logo PiP** | [`dudulauncher_vw_logo_pip_mod.apk`](dudulauncher_vw_logo_pip_mod.apk) | 45 MB | DUDU Launcher with VW Chrome logo, PiP multitasking, and ViViMusic queries |
 | **LED Companion App** | [`dudu_led_bridge.apk`](dudu_led_bridge.apk) | 82 KB | Standalone BLE ambient lighting companion app for generic LEDLAMP / ELK-BLEDOM controllers |
+| **NWD Background Whitelist** | [`tools/nwd_background_daemon/`](tools/nwd_background_daemon/) | Configs | K4811 NWD background manager protection files keeping DUDU, ViPER4Android, ViVi, and Radarbot permanently alive |
 | **Stock Launcher Backup** | [`dudulauncher.apk`](dudulauncher.apk) | 34 MB | Original unmodified DUDU Launcher APK for backup/reference |
 
 ---
@@ -77,6 +79,43 @@ Our unified modification merges all audio processing features into a **single, r
    - Full 1280×720 widescreen layout with sharp typography (`minSdkVersion="21"`, `targetSdkVersion="29"`).
    - Real-time RGB glow preview card with HEX readout and color sliders.
    - Quick-access automotive color presets (**VW Blue**, **Golf R Ice Cyan**, **Audi Red**, **BMW Amber**, **Mercedes Violet**, **Passat Warm White**).
+
+---
+
+## 🛡️ Part 4: K4811 NWD Background Daemon Whitelist & App Persistence
+
+On K4811 (Nowada / NWD UIS8581A) head units, a proprietary multi-tier watchdog and task management system aggressively kills background apps within 5 seconds of leaving the screen.
+
+We identified and configured all **6 NWD Background Process Managers** located in `/data/nwdappconfig/app/`:
+
+1. **`TaskWhitelist.xml`**: Bypasses the 5-second task exit killer (`ExitMode="1"`).
+2. **`BackgroundManager.ini`**: Exempts background processes from memory reclamation.
+3. **`PromotionAppAdjList.ini`**: Promotes process priority to permanent system-level `oom_adj = -900`.
+4. **`OneClearConfig.xml`**: Protects processes against One-Key Clear and system garbage collection (`powernotkill`).
+5. **`DisableWakeAppSelfStart.xml` & `AllowSleepAppSelfStart.xml`**: Permits wake/sleep self-start and persistent restart after deep standby.
+6. **`AppConfig.xml`**: Registers apps as native top-level NWD system applications to avoid audio source conflicts.
+
+### Protected Applications:
+- `com.dudu.autoui` (DUDU Launcher)
+- `com.vivi.vivimusic` (ViVi Music Player)
+- `com.llsl.viper4android` (ViPER4Android Audio FX)
+- `com.vialsoft.radarbot_free` (Radarbot Speed Camera Detector)
+
+Apply automatically using:
+```bash
+bash tools/nwd_background_daemon/apply_whitelist.sh
+```
+
+---
+
+## ⚡ Part 5: DUDU Pure VW Edition (Tencent Legu Encrypted)
+
+For users who want **100% of the original DUDU experience** without decompilation:
+- **Zero integrity crashes**: Stock Tencent Legu encryption and signature integrity remain completely untouched.
+- **Full Domestic Feature Mall**: All 3D car models, online Theme Store, vehicle state telemetry, and dynamic desktop layouts remain functional.
+- **Custom 3D VW Splash**: Official Chinese splash banner replaced with clean 3D Volkswagen roundel.
+- **Native European Weather**: Stock bytecode connects directly to DUDU's official European weather server (`https://abroad-app-eu1.dudu-auto.com/api/app/weather/info`) as soon as the GPS antenna receives real-time satellite coordinates.
+- **Platform Signed (UID 1000)**: Runs as privileged system user (`android.uid.system`).
 
 ---
 
