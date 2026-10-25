@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_bg"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingStart="24dp"
+    android:paddingEnd="24dp"
+    android:paddingTop="12dp"
+    android:paddingBottom="12dp">
+
+    <!-- Driver Temp -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DRIVER"
+            android:textColor="@color/vw_gray_dim"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/hud_temp_driver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="21.5°"
+            android:textColor="@color/vw_cyan"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/hud_seat_driver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="♨ 0"
+            android:textColor="@color/vw_red"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Center Fan / AC info -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CLIMATRONIC"
+            android:textColor="@color/vw_white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:id="@+id/hud_fan_speed"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="140dp"
+            android:layout_height="12dp"
+            android:max="7"
+            android:progress="3"
+            android:layout_marginTop="6dp" />
+
+        <TextView
+            android:id="@+id/hud_ac_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AUTO | A/C ON"
+            android:textColor="@color/vw_blue_light"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+
+    <!-- Passenger Temp -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PASSENGER"
+            android:textColor="@color/vw_gray_dim"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/hud_temp_passenger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="21.5°"
+            android:textColor="@color/vw_cyan"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/hud_seat_passenger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="♨ 0"
+            android:textColor="@color/vw_red"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

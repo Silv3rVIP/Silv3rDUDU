@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/vw_black_bg"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- Top Bar: Status, Outside Temp, CAN State -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingBottom="6dp">
+
+        <TextView
+            android:id="@+id/tv_app_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="PASSAT B7 HIGHLINE COCKPIT"
+            android:textColor="@color/vw_white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_outside_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-- °C"
+            android:textColor="@color/vw_cyan"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginEnd="16dp" />
+
+        <TextView
+            android:id="@+id/tv_can_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/status_disconnected"
+            android:textColor="@color/vw_amber"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <!-- Main Tri-Split Cockpit View -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <!-- LEFT PANE: RPM Tachometer & Coolant -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:background="@drawable/card_bg"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_marginEnd="6dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ENGINE SPEED (RPM)"
+                android:textColor="@color/vw_gray_dim"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_rpm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/vw_white"
+                android:textSize="44sp"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp" />
+
+            <ProgressBar
+                android:id="@+id/pb_rpm"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="14dp"
+                android:max="6000"
+                android:progress="0"
+                android:progressDrawable="@android:drawable/progress_horizontal"
+                android:layout_marginTop="6dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#243042"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="COOLANT TEMP"
+                android:textColor="@color/vw_gray_dim"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_coolant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="90 °C"
+                android:textColor="@color/vw_cyan"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:id="@+id/tv_epb_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PARKING BRAKE: OFF"
+                android:textColor="@color/vw_gray_light"
+                android:textSize="13sp"
+                android:layout_marginTop="12dp" />
+
+            <TextView
+                android:id="@+id/tv_seatbelt_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SEATBELT: BUCKLED"
+                android:textColor="@color/vw_green"
+                android:textSize="13sp"
+                android:layout_marginTop="4dp" />
+        </LinearLayout>
+
+        <!-- CENTER PANE: Speedometer & Passat B7 Vehicle View -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.4"
+            android:background="@drawable/card_bg"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:layout_marginEnd="6dp">
+
+            <!-- Speed Display -->
+            <TextView
+                android:id="@+id/tv_speed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/vw_white"
+                android:textSize="64sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KM / H"
+                android:textColor="@color/vw_blue"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginTop="-8dp" />
+
+            <!-- Passat B7 Sedan Visualizer -->
+            <com.silv3r.passatb7.telemetry.ui.PassatCarView
+                android:id="@+id/view_passat_car"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_margin="4dp" />
+
+            <!-- Instant Consumption Bar -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="4dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="INSTANT:"
+                    android:textColor="@color/vw_gray_dim"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+
+                <ProgressBar
+                    android:id="@+id/pb_instant_fuel"
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="10dp"
+                    android:layout_weight="1"
+                    android:max="25"
+                    android:progress="0"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp" />
+
+                <TextView
+                    android:id="@+id/tv_instant_fuel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.0 L/100km"
+                    android:textColor="@color/vw_cyan"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- RIGHT PANE: Fuel Tank, Battery Voltage & Trip -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:background="@drawable/card_bg"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <!-- Fuel Section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FUEL TANK (PASSAT 70L)"
+                android:textColor="@color/vw_gray_dim"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_fuel_liters"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="-- L"
+                android:textColor="@color/vw_green"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                android:layout_marginTop="6dp" />
+
+            <ProgressBar
+                android:id="@+id/pb_fuel"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:max="70"
+                android:progress="0"
+                android:layout_marginTop="4dp" />
+
+            <!-- Battery Voltage Section -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#243042"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BATTERY &amp; ALTERNATOR"
+                android:textColor="@color/vw_gray_dim"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_battery_voltage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-- V"
+                android:textColor="@color/vw_amber"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:layout_marginTop="2dp" />
+
+            <TextView
+                android:id="@+id/tv_battery_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MONITORING ACTIVE"
+                android:textColor="@color/vw_gray_light"
+                android:textSize="11sp" />
+
+            <!-- Trip summary mini -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#243042"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tv_trip_summary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TRIP: 0.0 km | 0.0 L/100"
+                android:textColor="@color/vw_white"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Bottom Navigation & Controls -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingTop="6dp">
+
+        <TextView
+            android:id="@+id/tv_lifetime_odo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ODO: -- km"
+            android:textColor="@color/vw_gray_light"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_open_history"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:text="@string/btn_history"
+            android:textColor="@color/vw_white"
+            android:textSize="12sp"
+            android:background="@drawable/btn_dark"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/btn_reset_trip"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:text="@string/btn_reset_trip"
+            android:textColor="@color/vw_white"
+            android:textSize="12sp"
+            android:background="@drawable/btn_dark"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp" />
+    </LinearLayout>
+</LinearLayout>

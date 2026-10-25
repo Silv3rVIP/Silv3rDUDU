@@ -1,0 +1,12 @@
+api:
+  listen: ":1984"
+
+rtsp:
+  listen: ":8554"
+
+webrtc:
+  listen: ":8555"
+
+streams:
+  cam360:
+    - exec:screenrecord --output-format=h264 --size 1024x600 --bit-rate 2000000 -

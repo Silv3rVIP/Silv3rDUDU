@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="vw_blue">#0084DE</color>
+    <color name="vw_blue_dark">#004270</color>
+    <color name="vw_blue_light">#40A8FF</color>
+    <color name="vw_red">#E61E28</color>
+    <color name="vw_red_dark">#801015</color>
+    <color name="vw_white">#FFFFFF</color>
+    <color name="vw_gray_light">#D0D5DD</color>
+    <color name="vw_gray_dim">#667085</color>
+    <color name="vw_gray_dark">#1D2939</color>
+    <color name="vw_black_card">#131822</color>
+    <color name="vw_black_bg">#090C10</color>
+    <color name="vw_amber">#FFB020</color>
+    <color name="vw_green">#12B76A</color>
+    <color name="vw_cyan">#06AED4</color>
+    <color name="transparent">#00000000</color>
+</resources>

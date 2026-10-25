@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Passat B7 Telemetry</string>
+    <string name="title_dashboard">MFA Cockpit</string>
+    <string name="title_trip_history">Drive History</string>
+    <string name="title_refuel_log">Fueling Diary</string>
+    
+    <string name="unit_kmh">km/h</string>
+    <string name="unit_rpm">RPM</string>
+    <string name="unit_km">km</string>
+    <string name="unit_liters">L</string>
+    <string name="unit_volts">V</string>
+    <string name="unit_celsius">°C</string>
+    <string name="unit_l_per_100km">L/100km</string>
+    
+    <string name="label_speed">SPEED</string>
+    <string name="label_engine_speed">TACHOMETER</string>
+    <string name="label_fuel_remaining">FUEL REMAINING</string>
+    <string name="label_instant_consumption">INSTANT CONSUMPTION</string>
+    <string name="label_battery_voltage">BATTERY / ALTERNATOR</string>
+    <string name="label_water_temp">COOLANT</string>
+    <string name="label_ambient_temp">OUTSIDE</string>
+    <string name="label_lifetime_odo">ODOMETER</string>
+    <string name="label_trip_dist">TRIP DISTANCE</string>
+    
+    <string name="status_connected">CANBUS: ONLINE (Raise PQ)</string>
+    <string name="status_disconnected">CANBUS: CONNECTING...</string>
+    
+    <string name="btn_history">Trip Log</string>
+    <string name="btn_refuel">Fuel Log</string>
+    <string name="btn_reset_trip">Reset Trip</string>
+    <string name="btn_clear_history">Clear History</string>
+</resources>
