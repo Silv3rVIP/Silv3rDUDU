@@ -1,12 +1,18 @@
 # Temporary build artifacts
 dudu_src/build/
+**/build/
 /tmp/
 *.idsig
 *.apk copy
 dudu_mod_unsigned*
+*unsigned*.apk
+*aligned*.apk
 
-# Keys and dex
+# Keys, certs and dex
 platform.*
+testkey.*
+*.der
+*.pk8
 *.dex
 unpacked_classes.dex
 release_apks/

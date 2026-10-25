@@ -1,0 +1,1012 @@
+  Class descriptor  : 'Lcom/nwd/dsp/uitls/AppUtil;'
+  Access flags      : 0x0001 (PUBLIC)
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+  Static fields     -
+    #0              : (in Lcom/nwd/dsp/uitls/AppUtil;)
+      name          : 'PLAT_K2401'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : "K2401"
+    #1              : (in Lcom/nwd/dsp/uitls/AppUtil;)
+      name          : 'PLAT_N70'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : "N70"
+    #2              : (in Lcom/nwd/dsp/uitls/AppUtil;)
+      name          : 'PLAT_T60'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : "T60"
+    #3              : (in Lcom/nwd/dsp/uitls/AppUtil;)
+      name          : 'PLAT_T60_XC_S2H603'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : "T60_XC"
+    #4              : (in Lcom/nwd/dsp/uitls/AppUtil;)
+      name          : 'TAG'
+      type          : 'Ljava/lang/String;'
+      access        : 0x001a (PRIVATE STATIC FINAL)
+      value         : "dsp3-AppUtil"
+    #5              : (in Lcom/nwd/dsp/uitls/AppUtil;)
+      name          : 'instance'
+      type          : 'Lcom/nwd/dsp/uitls/AppUtil;'
+      access        : 0x000a (PRIVATE STATIC)
+  Instance fields   -
+    #0              : (in Lcom/nwd/dsp/uitls/AppUtil;)
+      name          : 'mContext'
+      type          : 'Landroid/content/Context;'
+      access        : 0x0001 (PUBLIC)
+  Direct methods    -
+    #0              : (in Lcom/nwd/dsp/uitls/AppUtil;)
+      name          : '<init>'
+      type          : '()V'
+      access        : 0x10001 (PUBLIC CONSTRUCTOR)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 1
+      insns size    : 4 16-bit code units
+304f04:                                        |[304f04] com.nwd.dsp.uitls.AppUtil.<init>:()V
+304f14: 7010 df8d 0000                         |0000: invoke-direct {v0}, Ljava/lang/Object;.<init>:()V // method@8ddf
+304f1a: 0e00                                   |0003: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=20
+      locals        :
+        0x0000 - 0x0004 reg=0 this Lcom/nwd/dsp/uitls/AppUtil;
+
+    #1              : (in Lcom/nwd/dsp/uitls/AppUtil;)
+      name          : 'HFrequency'
+      type          : '(ILjava/lang/String;Ljava/lang/String;)Ljava/lang/String;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 5
+      ins           : 3
+      outs          : 3
+      insns size    : 56 16-bit code units
+304cd0:                                        |[304cd0] com.nwd.dsp.uitls.AppUtil.HFrequency:(ILjava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+304ce0: 7110 1285 0200                         |0000: invoke-static {v2}, Lcom/nwd/dsp/uitls/AppUtil;.frequenceToReal:(I)I // method@8512
+304ce6: 0a02                                   |0003: move-result v2
+304ce8: 1300 e703                              |0004: const/16 v0, #int 999 // #3e7
+304cec: 3502 1200                              |0006: if-ge v2, v0, 0018 // +0012
+304cf0: 2204 a710                              |0008: new-instance v4, Ljava/lang/StringBuilder; // type@10a7
+304cf4: 7010 3d8e 0400                         |000a: invoke-direct {v4}, Ljava/lang/StringBuilder;.<init>:()V // method@8e3d
+304cfa: 6e20 438e 2400                         |000d: invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;.append:(I)Ljava/lang/StringBuilder; // method@8e43
+304d00: 6e20 478e 3400                         |0010: invoke-virtual {v4, v3}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@8e47
+304d06: 6e10 508e 0400                         |0013: invoke-virtual {v4}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@8e50
+304d0c: 0c02                                   |0016: move-result-object v2
+304d0e: 1102                                   |0017: return-object v2
+304d10: 8222                                   |0018: int-to-float v2, v2
+304d12: 1503 7a44                              |0019: const/high16 v3, #int 1148846080 // #447a
+304d16: c932                                   |001b: div-float/2addr v2, v3
+304d18: 2203 f810                              |001c: new-instance v3, Ljava/text/DecimalFormat; // type@10f8
+304d1c: 1a00 3f05                              |001e: const-string v0, "0.#" // string@053f
+304d20: 7020 1f8f 0300                         |0020: invoke-direct {v3, v0}, Ljava/text/DecimalFormat;.<init>:(Ljava/lang/String;)V // method@8f1f
+304d26: 8920                                   |0023: float-to-double v0, v2
+304d28: 6e30 218f 0301                         |0024: invoke-virtual {v3, v0, v1}, Ljava/text/DecimalFormat;.format:(D)Ljava/lang/String; // method@8f21
+304d2e: 0c02                                   |0027: move-result-object v2
+304d30: 2203 a710                              |0028: new-instance v3, Ljava/lang/StringBuilder; // type@10a7
+304d34: 7010 3d8e 0300                         |002a: invoke-direct {v3}, Ljava/lang/StringBuilder;.<init>:()V // method@8e3d
+304d3a: 6e20 478e 2300                         |002d: invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@8e47
+304d40: 6e20 478e 4300                         |0030: invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@8e47
+304d46: 6e10 508e 0300                         |0033: invoke-virtual {v3}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@8e50
+304d4c: 0c02                                   |0036: move-result-object v2
+304d4e: 1102                                   |0037: return-object v2
+      catches       : (none)
+      positions     :
+        0x0000 line=124
+        0x0008 line=127
+        0x001c line=130
+        0x0024 line=131
+        0x0028 line=132
+      locals        :
+        0x0000 - 0x0038 reg=2 (null) I
+        0x0000 - 0x0038 reg=3 (null) Ljava/lang/String;
+        0x0000 - 0x0038 reg=4 (null) Ljava/lang/String;
+
+    #2              : (in Lcom/nwd/dsp/uitls/AppUtil;)
+      name          : 'QValue'
+      type          : '(I)I'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 0
+      insns size    : 42 16-bit code units
+30482c:                                        |[30482c] com.nwd.dsp.uitls.AppUtil.QValue:(I)I
+30483c: 1300 0a00                              |0000: const/16 v0, #int 10 // #a
+304840: 2b01 1600 0000                         |0002: packed-switch v1, 00000018 // +00000016
+304846: 2811                                   |0005: goto 0016 // +0011
+304848: 1300 1e00                              |0006: const/16 v0, #int 30 // #1e
+30484c: 280e                                   |0008: goto 0016 // +000e
+30484e: 1300 1a00                              |0009: const/16 v0, #int 26 // #1a
+304852: 280b                                   |000b: goto 0016 // +000b
+304854: 1300 1600                              |000c: const/16 v0, #int 22 // #16
+304858: 2808                                   |000e: goto 0016 // +0008
+30485a: 1300 1200                              |000f: const/16 v0, #int 18 // #12
+30485e: 2805                                   |0011: goto 0016 // +0005
+304860: 1300 0e00                              |0012: const/16 v0, #int 14 // #e
+304864: 2802                                   |0014: goto 0016 // +0002
+304866: 1200                                   |0015: const/4 v0, #int 0 // #0
+304868: 0f00                                   |0016: return v0
+30486a: 0000                                   |0017: nop // spacer
+30486c: 0001 0700 0000 0000 1300 0000 1400 ... |0018: packed-switch-data (18 units)
+      catches       : (none)
+      positions     :
+      locals        :
+
+    #3              : (in Lcom/nwd/dsp/uitls/AppUtil;)
+      name          : 'QgetValue'
+      type          : '(I)I'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 3
+      ins           : 1
+      outs          : 0
+      insns size    : 40 16-bit code units
+304890:                                        |[304890] com.nwd.dsp.uitls.AppUtil.QgetValue:(I)I
+3048a0: 1200                                   |0000: const/4 v0, #int 0 // #0
+3048a2: 3802 2600                              |0001: if-eqz v2, 0027 // +0026
+3048a6: 1301 0a00                              |0003: const/16 v1, #int 10 // #a
+3048aa: 3212 2100                              |0005: if-eq v2, v1, 0026 // +0021
+3048ae: 1301 0e00                              |0007: const/16 v1, #int 14 // #e
+3048b2: 3212 1b00                              |0009: if-eq v2, v1, 0024 // +001b
+3048b6: 1301 1200                              |000b: const/16 v1, #int 18 // #12
+3048ba: 3212 1500                              |000d: if-eq v2, v1, 0022 // +0015
+3048be: 1301 1600                              |000f: const/16 v1, #int 22 // #16
+3048c2: 3212 0f00                              |0011: if-eq v2, v1, 0020 // +000f
+3048c6: 1301 1a00                              |0013: const/16 v1, #int 26 // #1a
+3048ca: 3212 0900                              |0015: if-eq v2, v1, 001e // +0009
+3048ce: 1301 1e00                              |0017: const/16 v1, #int 30 // #1e
+3048d2: 3212 0300                              |0019: if-eq v2, v1, 001c // +0003
+3048d6: 280c                                   |001b: goto 0027 // +000c
+3048d8: 1260                                   |001c: const/4 v0, #int 6 // #6
+3048da: 280a                                   |001d: goto 0027 // +000a
+3048dc: 1250                                   |001e: const/4 v0, #int 5 // #5
+3048de: 2808                                   |001f: goto 0027 // +0008
+3048e0: 1240                                   |0020: const/4 v0, #int 4 // #4
+3048e2: 2806                                   |0021: goto 0027 // +0006
+3048e4: 1230                                   |0022: const/4 v0, #int 3 // #3
+3048e6: 2804                                   |0023: goto 0027 // +0004
+3048e8: 1220                                   |0024: const/4 v0, #int 2 // #2
+3048ea: 2802                                   |0025: goto 0027 // +0002
+3048ec: 1210                                   |0026: const/4 v0, #int 1 // #1
+3048ee: 0f00                                   |0027: return v0
+      catches       : (none)
+      positions     :
+      locals        :
+
+    #4              : (in Lcom/nwd/dsp/uitls/AppUtil;)
+      name          : 'area'
+      type          : '(I)Ljava/lang/String;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 3
+      ins           : 1
+      outs          : 0
+      insns size    : 23 16-bit code units
+304d50:                                        |[304d50] com.nwd.dsp.uitls.AppUtil.area:(I)Ljava/lang/String;
+304d60: 1a00 9650                              |0000: const-string v0, "area_one" // string@5096
+304d64: 3802 1400                              |0002: if-eqz v2, 0016 // +0014
+304d68: 1211                                   |0004: const/4 v1, #int 1 // #1
+304d6a: 3212 0f00                              |0005: if-eq v2, v1, 0014 // +000f
+304d6e: 1221                                   |0007: const/4 v1, #int 2 // #2
+304d70: 3212 0900                              |0008: if-eq v2, v1, 0011 // +0009
+304d74: 1231                                   |000a: const/4 v1, #int 3 // #3
+304d76: 3212 0300                              |000b: if-eq v2, v1, 000e // +0003
+304d7a: 2809                                   |000d: goto 0016 // +0009
+304d7c: 1a00 9550                              |000e: const-string v0, "area_four" // string@5095
+304d80: 2806                                   |0010: goto 0016 // +0006
+304d82: 1a00 9850                              |0011: const-string v0, "area_three" // string@5098
+304d86: 2803                                   |0013: goto 0016 // +0003
+304d88: 1a00 9a50                              |0014: const-string v0, "area_two" // string@509a
+304d8c: 1100                                   |0016: return-object v0
+      catches       : (none)
+      positions     :
+      locals        :
+
+    #5              : (in Lcom/nwd/dsp/uitls/AppUtil;)
+      name          : 'areaHFValue'
+      type          : '(I)I'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 1
+      insns size    : 49 16-bit code units
+3048f0:                                        |[3048f0] com.nwd.dsp.uitls.AppUtil.areaHFValue:(I)I
+304900: 3801 2800                              |0000: if-eqz v1, 0028 // +0028
+304904: 1210                                   |0002: const/4 v0, #int 1 // #1
+304906: 3201 1c00                              |0003: if-eq v1, v0, 001f // +001c
+30490a: 1220                                   |0005: const/4 v0, #int 2 // #2
+30490c: 3201 1000                              |0006: if-eq v1, v0, 0016 // +0010
+304910: 1230                                   |0008: const/4 v0, #int 3 // #3
+304912: 3201 0400                              |0009: if-eq v1, v0, 000d // +0004
+304916: 1201                                   |000b: const/4 v1, #int 0 // #0
+304918: 2824                                   |000c: goto 0030 // +0024
+30491a: 7100 7d85 0000                         |000d: invoke-static {}, Lcom/nwd/dsp/uitls/DspManager;.getInstance:()Lcom/nwd/dsp/uitls/DspManager; // method@857d
+304920: 0c01                                   |0010: move-result-object v1
+304922: 6e10 7585 0100                         |0011: invoke-virtual {v1}, Lcom/nwd/dsp/uitls/DspManager;.getHpf_area_four:()I // method@8575
+304928: 0a01                                   |0014: move-result v1
+30492a: 281b                                   |0015: goto 0030 // +001b
+30492c: 7100 7d85 0000                         |0016: invoke-static {}, Lcom/nwd/dsp/uitls/DspManager;.getInstance:()Lcom/nwd/dsp/uitls/DspManager; // method@857d
+304932: 0c01                                   |0019: move-result-object v1
+304934: 6e10 7985 0100                         |001a: invoke-virtual {v1}, Lcom/nwd/dsp/uitls/DspManager;.getHpf_area_three:()I // method@8579
+30493a: 0a01                                   |001d: move-result v1
+30493c: 2812                                   |001e: goto 0030 // +0012
+30493e: 7100 7d85 0000                         |001f: invoke-static {}, Lcom/nwd/dsp/uitls/DspManager;.getInstance:()Lcom/nwd/dsp/uitls/DspManager; // method@857d
+304944: 0c01                                   |0022: move-result-object v1
+304946: 6e10 7b85 0100                         |0023: invoke-virtual {v1}, Lcom/nwd/dsp/uitls/DspManager;.getHpf_area_two:()I // method@857b
+30494c: 0a01                                   |0026: move-result v1
+30494e: 2809                                   |0027: goto 0030 // +0009
+304950: 7100 7d85 0000                         |0028: invoke-static {}, Lcom/nwd/dsp/uitls/DspManager;.getInstance:()Lcom/nwd/dsp/uitls/DspManager; // method@857d
+304956: 0c01                                   |002b: move-result-object v1
+304958: 6e10 7785 0100                         |002c: invoke-virtual {v1}, Lcom/nwd/dsp/uitls/DspManager;.getHpf_area_one:()I // method@8577
+30495e: 0a01                                   |002f: move-result v1
+304960: 0f01                                   |0030: return v1
+      catches       : (none)
+      positions     :
+        0x000d line=206
+        0x0016 line=203
+        0x001f line=200
+        0x0028 line=197
+      locals        :
+        0x0000 - 0x0031 reg=1 (null) I
+
+    #6              : (in Lcom/nwd/dsp/uitls/AppUtil;)
+      name          : 'areaHQValue'
+      type          : '(I)I'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 1
+      insns size    : 49 16-bit code units
+304964:                                        |[304964] com.nwd.dsp.uitls.AppUtil.areaHQValue:(I)I
+304974: 3801 2800                              |0000: if-eqz v1, 0028 // +0028
+304978: 1210                                   |0002: const/4 v0, #int 1 // #1
+30497a: 3201 1c00                              |0003: if-eq v1, v0, 001f // +001c
+30497e: 1220                                   |0005: const/4 v0, #int 2 // #2
+304980: 3201 1000                              |0006: if-eq v1, v0, 0016 // +0010
+304984: 1230                                   |0008: const/4 v0, #int 3 // #3
+304986: 3201 0400                              |0009: if-eq v1, v0, 000d // +0004
+30498a: 1201                                   |000b: const/4 v1, #int 0 // #0
+30498c: 2824                                   |000c: goto 0030 // +0024
+30498e: 7100 7d85 0000                         |000d: invoke-static {}, Lcom/nwd/dsp/uitls/DspManager;.getInstance:()Lcom/nwd/dsp/uitls/DspManager; // method@857d
+304994: 0c01                                   |0010: move-result-object v1
+304996: 6e10 7685 0100                         |0011: invoke-virtual {v1}, Lcom/nwd/dsp/uitls/DspManager;.getHpf_area_four_qvalue:()I // method@8576
+30499c: 0a01                                   |0014: move-result v1
+30499e: 281b                                   |0015: goto 0030 // +001b
+3049a0: 7100 7d85 0000                         |0016: invoke-static {}, Lcom/nwd/dsp/uitls/DspManager;.getInstance:()Lcom/nwd/dsp/uitls/DspManager; // method@857d
+3049a6: 0c01                                   |0019: move-result-object v1
+3049a8: 6e10 7a85 0100                         |001a: invoke-virtual {v1}, Lcom/nwd/dsp/uitls/DspManager;.getHpf_area_three_qvalue:()I // method@857a
+3049ae: 0a01                                   |001d: move-result v1
+3049b0: 2812                                   |001e: goto 0030 // +0012
+3049b2: 7100 7d85 0000                         |001f: invoke-static {}, Lcom/nwd/dsp/uitls/DspManager;.getInstance:()Lcom/nwd/dsp/uitls/DspManager; // method@857d
+3049b8: 0c01                                   |0022: move-result-object v1
+3049ba: 6e10 7c85 0100                         |0023: invoke-virtual {v1}, Lcom/nwd/dsp/uitls/DspManager;.getHpf_area_two_qvalue:()I // method@857c
+3049c0: 0a01                                   |0026: move-result v1
+3049c2: 2809                                   |0027: goto 0030 // +0009
+3049c4: 7100 7d85 0000                         |0028: invoke-static {}, Lcom/nwd/dsp/uitls/DspManager;.getInstance:()Lcom/nwd/dsp/uitls/DspManager; // method@857d
+3049ca: 0c01                                   |002b: move-result-object v1
+3049cc: 6e10 7885 0100                         |002c: invoke-virtual {v1}, Lcom/nwd/dsp/uitls/DspManager;.getHpf_area_one_qvalue:()I // method@8578
+3049d2: 0a01                                   |002f: move-result v1
+3049d4: 0f01                                   |0030: return v1
+      catches       : (none)
+      positions     :
+        0x000d line=226
+        0x0016 line=223
+        0x001f line=220
+        0x0028 line=217
+      locals        :
+        0x0000 - 0x0031 reg=1 (null) I
+
+    #7              : (in Lcom/nwd/dsp/uitls/AppUtil;)
+      name          : 'areaLFValue'
+      type          : '(I)I'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 1
+      insns size    : 49 16-bit code units
+3049d8:                                        |[3049d8] com.nwd.dsp.uitls.AppUtil.areaLFValue:(I)I
+3049e8: 3801 2800                              |0000: if-eqz v1, 0028 // +0028
+3049ec: 1210                                   |0002: const/4 v0, #int 1 // #1
+3049ee: 3201 1c00                              |0003: if-eq v1, v0, 001f // +001c
+3049f2: 1220                                   |0005: const/4 v0, #int 2 // #2
+3049f4: 3201 1000                              |0006: if-eq v1, v0, 0016 // +0010
+3049f8: 1230                                   |0008: const/4 v0, #int 3 // #3
+3049fa: 3201 0400                              |0009: if-eq v1, v0, 000d // +0004
+3049fe: 1201                                   |000b: const/4 v1, #int 0 // #0
+304a00: 2824                                   |000c: goto 0030 // +0024
+304a02: 7100 7d85 0000                         |000d: invoke-static {}, Lcom/nwd/dsp/uitls/DspManager;.getInstance:()Lcom/nwd/dsp/uitls/DspManager; // method@857d
+304a08: 0c01                                   |0010: move-result-object v1
+304a0a: 6e10 7e85 0100                         |0011: invoke-virtual {v1}, Lcom/nwd/dsp/uitls/DspManager;.getLpf_area_four:()I // method@857e
+304a10: 0a01                                   |0014: move-result v1
+304a12: 281b                                   |0015: goto 0030 // +001b
+304a14: 7100 7d85 0000                         |0016: invoke-static {}, Lcom/nwd/dsp/uitls/DspManager;.getInstance:()Lcom/nwd/dsp/uitls/DspManager; // method@857d
+304a1a: 0c01                                   |0019: move-result-object v1
+304a1c: 6e10 8285 0100                         |001a: invoke-virtual {v1}, Lcom/nwd/dsp/uitls/DspManager;.getLpf_area_three:()I // method@8582
+304a22: 0a01                                   |001d: move-result v1
+304a24: 2812                                   |001e: goto 0030 // +0012
+304a26: 7100 7d85 0000                         |001f: invoke-static {}, Lcom/nwd/dsp/uitls/DspManager;.getInstance:()Lcom/nwd/dsp/uitls/DspManager; // method@857d
+304a2c: 0c01                                   |0022: move-result-object v1
+304a2e: 6e10 8485 0100                         |0023: invoke-virtual {v1}, Lcom/nwd/dsp/uitls/DspManager;.getLpf_area_two:()I // method@8584
+304a34: 0a01                                   |0026: move-result v1
+304a36: 2809                                   |0027: goto 0030 // +0009
+304a38: 7100 7d85 0000                         |0028: invoke-static {}, Lcom/nwd/dsp/uitls/DspManager;.getInstance:()Lcom/nwd/dsp/uitls/DspManager; // method@857d
+304a3e: 0c01                                   |002b: move-result-object v1
+304a40: 6e10 8085 0100                         |002c: invoke-virtual {v1}, Lcom/nwd/dsp/uitls/DspManager;.getLpf_area_one:()I // method@8580
+304a46: 0a01                                   |002f: move-result v1
+304a48: 0f01                                   |0030: return v1
+      catches       : (none)
+      positions     :
+        0x000d line=246
+        0x0016 line=243
+        0x001f line=240
+        0x0028 line=237
+      locals        :
+        0x0000 - 0x0031 reg=1 (null) I
+
+    #8              : (in Lcom/nwd/dsp/uitls/AppUtil;)
+      name          : 'areaLQValue'
+      type          : '(I)I'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 1
+      insns size    : 49 16-bit code units
+304a4c:                                        |[304a4c] com.nwd.dsp.uitls.AppUtil.areaLQValue:(I)I
+304a5c: 3801 2800                              |0000: if-eqz v1, 0028 // +0028
+304a60: 1210                                   |0002: const/4 v0, #int 1 // #1
+304a62: 3201 1c00                              |0003: if-eq v1, v0, 001f // +001c
+304a66: 1220                                   |0005: const/4 v0, #int 2 // #2
+304a68: 3201 1000                              |0006: if-eq v1, v0, 0016 // +0010
+304a6c: 1230                                   |0008: const/4 v0, #int 3 // #3
+304a6e: 3201 0400                              |0009: if-eq v1, v0, 000d // +0004
+304a72: 1201                                   |000b: const/4 v1, #int 0 // #0
+304a74: 2824                                   |000c: goto 0030 // +0024
+304a76: 7100 7d85 0000                         |000d: invoke-static {}, Lcom/nwd/dsp/uitls/DspManager;.getInstance:()Lcom/nwd/dsp/uitls/DspManager; // method@857d
+304a7c: 0c01                                   |0010: move-result-object v1
+304a7e: 6e10 7f85 0100                         |0011: invoke-virtual {v1}, Lcom/nwd/dsp/uitls/DspManager;.getLpf_area_four_qvalue:()I // method@857f
+304a84: 0a01                                   |0014: move-result v1
+304a86: 281b                                   |0015: goto 0030 // +001b
+304a88: 7100 7d85 0000                         |0016: invoke-static {}, Lcom/nwd/dsp/uitls/DspManager;.getInstance:()Lcom/nwd/dsp/uitls/DspManager; // method@857d
+304a8e: 0c01                                   |0019: move-result-object v1
+304a90: 6e10 8385 0100                         |001a: invoke-virtual {v1}, Lcom/nwd/dsp/uitls/DspManager;.getLpf_area_three_qvalue:()I // method@8583
+304a96: 0a01                                   |001d: move-result v1
+304a98: 2812                                   |001e: goto 0030 // +0012
+304a9a: 7100 7d85 0000                         |001f: invoke-static {}, Lcom/nwd/dsp/uitls/DspManager;.getInstance:()Lcom/nwd/dsp/uitls/DspManager; // method@857d
+304aa0: 0c01                                   |0022: move-result-object v1
+304aa2: 6e10 8585 0100                         |0023: invoke-virtual {v1}, Lcom/nwd/dsp/uitls/DspManager;.getLpf_area_two_qvalue:()I // method@8585
+304aa8: 0a01                                   |0026: move-result v1
+304aaa: 2809                                   |0027: goto 0030 // +0009
+304aac: 7100 7d85 0000                         |0028: invoke-static {}, Lcom/nwd/dsp/uitls/DspManager;.getInstance:()Lcom/nwd/dsp/uitls/DspManager; // method@857d
+304ab2: 0c01                                   |002b: move-result-object v1
+304ab4: 6e10 8185 0100                         |002c: invoke-virtual {v1}, Lcom/nwd/dsp/uitls/DspManager;.getLpf_area_one_qvalue:()I // method@8581
+304aba: 0a01                                   |002f: move-result v1
+304abc: 0f01                                   |0030: return v1
+      catches       : (none)
+      positions     :
+        0x000d line=266
+        0x0016 line=263
+        0x001f line=260
+        0x0028 line=257
+      locals        :
+        0x0000 - 0x0031 reg=1 (null) I
+
+    #9              : (in Lcom/nwd/dsp/uitls/AppUtil;)
+      name          : 'bassFrequency'
+      type          : '(I)I'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 0
+      insns size    : 48 16-bit code units
+304ac0:                                        |[304ac0] com.nwd.dsp.uitls.AppUtil.bassFrequency:(I)I
+304ad0: 2b00 1c00 0000                         |0000: packed-switch v0, 0000001c // +0000001c
+304ad6: 2818                                   |0003: goto 001b // +0018
+304ad8: 1300 9001                              |0004: const/16 v0, #int 400 // #190
+304adc: 2815                                   |0006: goto 001b // +0015
+304ade: 1300 2c01                              |0007: const/16 v0, #int 300 // #12c
+304ae2: 2812                                   |0009: goto 001b // +0012
+304ae4: 1300 fa00                              |000a: const/16 v0, #int 250 // #fa
+304ae8: 280f                                   |000c: goto 001b // +000f
+304aea: 1300 c800                              |000d: const/16 v0, #int 200 // #c8
+304aee: 280c                                   |000f: goto 001b // +000c
+304af0: 1300 9600                              |0010: const/16 v0, #int 150 // #96
+304af4: 2809                                   |0012: goto 001b // +0009
+304af6: 1300 6400                              |0013: const/16 v0, #int 100 // #64
+304afa: 2806                                   |0015: goto 001b // +0006
+304afc: 1300 3c00                              |0016: const/16 v0, #int 60 // #3c
+304b00: 2803                                   |0018: goto 001b // +0003
+304b02: 1300 2800                              |0019: const/16 v0, #int 40 // #28
+304b06: 0f00                                   |001b: return v0
+304b08: 0001 0800 0000 0000 1900 0000 1600 ... |001c: packed-switch-data (20 units)
+      catches       : (none)
+      positions     :
+      locals        :
+
+    #10              : (in Lcom/nwd/dsp/uitls/AppUtil;)
+      name          : 'disposeGValue'
+      type          : '([I)[Ljava/lang/String;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 4
+      ins           : 1
+      outs          : 1
+      insns size    : 21 16-bit code units
+304d90:                                        |[304d90] com.nwd.dsp.uitls.AppUtil.disposeGValue:([I)[Ljava/lang/String;
+304da0: 2130                                   |0000: array-length v0, v3
+304da2: 2300 1112                              |0001: new-array v0, v0, [Ljava/lang/String; // type@1211
+304da6: 1201                                   |0003: const/4 v1, #int 0 // #0
+304da8: 2132                                   |0004: array-length v2, v3
+304daa: 3521 0f00                              |0005: if-ge v1, v2, 0014 // +000f
+304dae: 4402 0301                              |0007: aget v2, v3, v1
+304db2: d802 02f4                              |0009: add-int/lit8 v2, v2, #int -12 // #f4
+304db6: 7110 328e 0200                         |000b: invoke-static {v2}, Ljava/lang/String;.valueOf:(I)Ljava/lang/String; // method@8e32
+304dbc: 0c02                                   |000e: move-result-object v2
+304dbe: 4d02 0001                              |000f: aput-object v2, v0, v1
+304dc2: d801 0101                              |0011: add-int/lit8 v1, v1, #int 1 // #01
+304dc6: 28f1                                   |0013: goto 0004 // -000f
+304dc8: 1100                                   |0014: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=106
+        0x0004 line=112
+        0x0007 line=113
+      locals        :
+        0x0000 - 0x0015 reg=3 (null) [I
+
+    #11              : (in Lcom/nwd/dsp/uitls/AppUtil;)
+      name          : 'disposeQValue'
+      type          : '([I)[Ljava/lang/String;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 5
+      ins           : 1
+      outs          : 1
+      insns size    : 23 16-bit code units
+304dcc:                                        |[304dcc] com.nwd.dsp.uitls.AppUtil.disposeQValue:([I)[Ljava/lang/String;
+304ddc: 2140                                   |0000: array-length v0, v4
+304dde: 2300 7f11                              |0001: new-array v0, v0, [F // type@117f
+304de2: 1201                                   |0003: const/4 v1, #int 0 // #0
+304de4: 2142                                   |0004: array-length v2, v4
+304de6: 3521 0d00                              |0005: if-ge v1, v2, 0012 // +000d
+304dea: 4402 0401                              |0007: aget v2, v4, v1
+304dee: 8222                                   |0009: int-to-float v2, v2
+304df0: 1503 2041                              |000a: const/high16 v3, #int 1092616192 // #4120
+304df4: c932                                   |000c: div-float/2addr v2, v3
+304df6: 4b02 0001                              |000d: aput v2, v0, v1
+304dfa: d801 0101                              |000f: add-int/lit8 v1, v1, #int 1 // #01
+304dfe: 28f3                                   |0011: goto 0004 // -000d
+304e00: 7110 0f85 0000                         |0012: invoke-static {v0}, Lcom/nwd/dsp/uitls/AppUtil;.floatToFormat:([F)[Ljava/lang/String; // method@850f
+304e06: 0c04                                   |0015: move-result-object v4
+304e08: 1104                                   |0016: return-object v4
+      catches       : (none)
+      positions     :
+        0x0000 line=95
+        0x0004 line=96
+        0x0007 line=97
+        0x0012 line=99
+      locals        :
+        0x0000 - 0x0017 reg=4 (null) [I
+
+    #12              : (in Lcom/nwd/dsp/uitls/AppUtil;)
+      name          : 'floatToFormat'
+      type          : '([F)[Ljava/lang/String;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 4
+      ins           : 1
+      outs          : 1
+      insns size    : 19 16-bit code units
+304e0c:                                        |[304e0c] com.nwd.dsp.uitls.AppUtil.floatToFormat:([F)[Ljava/lang/String;
+304e1c: 2130                                   |0000: array-length v0, v3
+304e1e: 2300 1112                              |0001: new-array v0, v0, [Ljava/lang/String; // type@1211
+304e22: 1201                                   |0003: const/4 v1, #int 0 // #0
+304e24: 2132                                   |0004: array-length v2, v3
+304e26: 3521 0d00                              |0005: if-ge v1, v2, 0012 // +000d
+304e2a: 4402 0301                              |0007: aget v2, v3, v1
+304e2e: 7110 318e 0200                         |0009: invoke-static {v2}, Ljava/lang/String;.valueOf:(F)Ljava/lang/String; // method@8e31
+304e34: 0c02                                   |000c: move-result-object v2
+304e36: 4d02 0001                              |000d: aput-object v2, v0, v1
+304e3a: d801 0101                              |000f: add-int/lit8 v1, v1, #int 1 // #01
+304e3e: 28f3                                   |0011: goto 0004 // -000d
+304e40: 1100                                   |0012: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=64
+        0x0004 line=65
+        0x0007 line=66
+      locals        :
+        0x0000 - 0x0013 reg=3 (null) [F
+
+    #13              : (in Lcom/nwd/dsp/uitls/AppUtil;)
+      name          : 'floatToFormat'
+      type          : '([I)[Ljava/lang/String;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 8
+      ins           : 1
+      outs          : 3
+      insns size    : 74 16-bit code units
+304e44:                                        |[304e44] com.nwd.dsp.uitls.AppUtil.floatToFormat:([I)[Ljava/lang/String;
+304e54: 2170                                   |0000: array-length v0, v7
+304e56: 2300 1112                              |0001: new-array v0, v0, [Ljava/lang/String; // type@1211
+304e5a: 2201 f810                              |0003: new-instance v1, Ljava/text/DecimalFormat; // type@10f8
+304e5e: 2202 f910                              |0005: new-instance v2, Ljava/text/DecimalFormatSymbols; // type@10f9
+304e62: 6203 9285                              |0007: sget-object v3, Ljava/util/Locale;.US:Ljava/util/Locale; // field@8592
+304e66: 7020 258f 3200                         |0009: invoke-direct {v2, v3}, Ljava/text/DecimalFormatSymbols;.<init>:(Ljava/util/Locale;)V // method@8f25
+304e6c: 1a03 3f05                              |000c: const-string v3, "0.#" // string@053f
+304e70: 7030 208f 3102                         |000e: invoke-direct {v1, v3, v2}, Ljava/text/DecimalFormat;.<init>:(Ljava/lang/String;Ljava/text/DecimalFormatSymbols;)V // method@8f20
+304e76: 6202 8985                              |0011: sget-object v2, Ljava/math/RoundingMode;.DOWN:Ljava/math/RoundingMode; // field@8589
+304e7a: 6e20 248f 2100                         |0013: invoke-virtual {v1, v2}, Ljava/text/DecimalFormat;.setRoundingMode:(Ljava/math/RoundingMode;)V // method@8f24
+304e80: 1202                                   |0016: const/4 v2, #int 0 // #0
+304e82: 2173                                   |0017: array-length v3, v7
+304e84: 3532 3100                              |0018: if-ge v2, v3, 0049 // +0031
+304e88: 4403 0702                              |001a: aget v3, v7, v2
+304e8c: 7110 328e 0300                         |001c: invoke-static {v3}, Ljava/lang/String;.valueOf:(I)Ljava/lang/String; // method@8e32
+304e92: 0c03                                   |001f: move-result-object v3
+304e94: 4d03 0002                              |0020: aput-object v3, v0, v2
+304e98: 4403 0702                              |0022: aget v3, v7, v2
+304e9c: 1304 e803                              |0024: const/16 v4, #int 1000 // #3e8
+304ea0: 3443 2000                              |0026: if-lt v3, v4, 0046 // +0020
+304ea4: 4403 0702                              |0028: aget v3, v7, v2
+304ea8: 8233                                   |002a: int-to-float v3, v3
+304eaa: 1504 7a44                              |002b: const/high16 v4, #int 1148846080 // #447a
+304eae: c943                                   |002d: div-float/2addr v3, v4
+304eb0: 2204 a710                              |002e: new-instance v4, Ljava/lang/StringBuilder; // type@10a7
+304eb4: 7010 3d8e 0400                         |0030: invoke-direct {v4}, Ljava/lang/StringBuilder;.<init>:()V // method@8e3d
+304eba: 8935                                   |0033: float-to-double v5, v3
+304ebc: 6e30 218f 5106                         |0034: invoke-virtual {v1, v5, v6}, Ljava/text/DecimalFormat;.format:(D)Ljava/lang/String; // method@8f21
+304ec2: 0c03                                   |0037: move-result-object v3
+304ec4: 6e20 478e 3400                         |0038: invoke-virtual {v4, v3}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@8e47
+304eca: 1a03 f378                              |003b: const-string v3, "k" // string@78f3
+304ece: 6e20 478e 3400                         |003d: invoke-virtual {v4, v3}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@8e47
+304ed4: 6e10 508e 0400                         |0040: invoke-virtual {v4}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@8e50
+304eda: 0c03                                   |0043: move-result-object v3
+304edc: 4d03 0002                              |0044: aput-object v3, v0, v2
+304ee0: d802 0201                              |0046: add-int/lit8 v2, v2, #int 1 // #01
+304ee4: 28cf                                   |0048: goto 0017 // -0031
+304ee6: 1100                                   |0049: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=72
+        0x0003 line=73
+        0x0011 line=74
+        0x0017 line=75
+        0x001a line=77
+        0x0022 line=78
+        0x0028 line=80
+        0x002e line=81
+      locals        :
+        0x0000 - 0x004a reg=7 (null) [I
+
+    #14              : (in Lcom/nwd/dsp/uitls/AppUtil;)
+      name          : 'floatToInt'
+      type          : '([F)[I'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 4
+      ins           : 1
+      outs          : 0
+      insns size    : 16 16-bit code units
+304ca0:                                        |[304ca0] com.nwd.dsp.uitls.AppUtil.floatToInt:([F)[I
+304cb0: 2130                                   |0000: array-length v0, v3
+304cb2: 2300 8011                              |0001: new-array v0, v0, [I // type@1180
+304cb6: 1201                                   |0003: const/4 v1, #int 0 // #0
+304cb8: 2132                                   |0004: array-length v2, v3
+304cba: 3521 0a00                              |0005: if-ge v1, v2, 000f // +000a
+304cbe: 4402 0301                              |0007: aget v2, v3, v1
+304cc2: 8722                                   |0009: float-to-int v2, v2
+304cc4: 4b02 0001                              |000a: aput v2, v0, v1
+304cc8: d801 0101                              |000c: add-int/lit8 v1, v1, #int 1 // #01
+304ccc: 28f6                                   |000e: goto 0004 // -000a
+304cce: 1100                                   |000f: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=55
+        0x0004 line=56
+        0x0007 line=57
+      locals        :
+        0x0000 - 0x0010 reg=3 (null) [F
+
+    #15              : (in Lcom/nwd/dsp/uitls/AppUtil;)
+      name          : 'frequenceToReal'
+      type          : '(I)I'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 3
+      ins           : 1
+      outs          : 0
+      insns size    : 176 16-bit code units
+304b30:                                        |[304b30] com.nwd.dsp.uitls.AppUtil.frequenceToReal:(I)I
+304b40: 1300 204e                              |0000: const/16 v0, #int 20000 // #4e20
+304b44: 1301 1400                              |0002: const/16 v1, #int 20 // #14
+304b48: 2b02 6600 0000                         |0004: packed-switch v2, 0000006a // +00000066
+304b4e: 1300 1400                              |0007: const/16 v0, #int 20 // #14
+304b52: 2900 5f00                              |0009: goto/16 0068 // +005f
+304b56: 1300 5046                              |000b: const/16 v0, #int 18000 // #4650
+304b5a: 2900 5b00                              |000d: goto/16 0068 // +005b
+304b5e: 1300 803e                              |000f: const/16 v0, #int 16000 // #3e80
+304b62: 2900 5700                              |0011: goto/16 0068 // +0057
+304b66: 1300 d430                              |0013: const/16 v0, #int 12500 // #30d4
+304b6a: 2900 5300                              |0015: goto/16 0068 // +0053
+304b6e: 1300 1027                              |0017: const/16 v0, #int 10000 // #2710
+304b72: 2900 4f00                              |0019: goto/16 0068 // +004f
+304b76: 1300 401f                              |001b: const/16 v0, #int 8000 // #1f40
+304b7a: 284b                                   |001d: goto 0068 // +004b
+304b7c: 1300 9c18                              |001e: const/16 v0, #int 6300 // #189c
+304b80: 2848                                   |0020: goto 0068 // +0048
+304b82: 1300 8813                              |0021: const/16 v0, #int 5000 // #1388
+304b86: 2845                                   |0023: goto 0068 // +0045
+304b88: 1300 a00f                              |0024: const/16 v0, #int 4000 // #fa0
+304b8c: 2842                                   |0026: goto 0068 // +0042
+304b8e: 1300 1c0c                              |0027: const/16 v0, #int 3100 // #c1c
+304b92: 283f                                   |0029: goto 0068 // +003f
+304b94: 1300 c409                              |002a: const/16 v0, #int 2500 // #9c4
+304b98: 283c                                   |002c: goto 0068 // +003c
+304b9a: 1300 d007                              |002d: const/16 v0, #int 2000 // #7d0
+304b9e: 2839                                   |002f: goto 0068 // +0039
+304ba0: 1300 4006                              |0030: const/16 v0, #int 1600 // #640
+304ba4: 2836                                   |0032: goto 0068 // +0036
+304ba6: 1300 b004                              |0033: const/16 v0, #int 1200 // #4b0
+304baa: 2833                                   |0035: goto 0068 // +0033
+304bac: 1300 e803                              |0036: const/16 v0, #int 1000 // #3e8
+304bb0: 2830                                   |0038: goto 0068 // +0030
+304bb2: 1300 2003                              |0039: const/16 v0, #int 800 // #320
+304bb6: 282d                                   |003b: goto 0068 // +002d
+304bb8: 1300 7602                              |003c: const/16 v0, #int 630 // #276
+304bbc: 282a                                   |003e: goto 0068 // +002a
+304bbe: 1300 f401                              |003f: const/16 v0, #int 500 // #1f4
+304bc2: 2827                                   |0041: goto 0068 // +0027
+304bc4: 1300 9001                              |0042: const/16 v0, #int 400 // #190
+304bc8: 2824                                   |0044: goto 0068 // +0024
+304bca: 1300 3b01                              |0045: const/16 v0, #int 315 // #13b
+304bce: 2821                                   |0047: goto 0068 // +0021
+304bd0: 1300 fa00                              |0048: const/16 v0, #int 250 // #fa
+304bd4: 281e                                   |004a: goto 0068 // +001e
+304bd6: 1300 c800                              |004b: const/16 v0, #int 200 // #c8
+304bda: 281b                                   |004d: goto 0068 // +001b
+304bdc: 1300 a000                              |004e: const/16 v0, #int 160 // #a0
+304be0: 2818                                   |0050: goto 0068 // +0018
+304be2: 1300 7d00                              |0051: const/16 v0, #int 125 // #7d
+304be6: 2815                                   |0053: goto 0068 // +0015
+304be8: 1300 6400                              |0054: const/16 v0, #int 100 // #64
+304bec: 2812                                   |0056: goto 0068 // +0012
+304bee: 1300 5000                              |0057: const/16 v0, #int 80 // #50
+304bf2: 280f                                   |0059: goto 0068 // +000f
+304bf4: 1300 3f00                              |005a: const/16 v0, #int 63 // #3f
+304bf8: 280c                                   |005c: goto 0068 // +000c
+304bfa: 1300 3200                              |005d: const/16 v0, #int 50 // #32
+304bfe: 2809                                   |005f: goto 0068 // +0009
+304c00: 1300 2800                              |0060: const/16 v0, #int 40 // #28
+304c04: 2806                                   |0062: goto 0068 // +0006
+304c06: 1300 2000                              |0063: const/16 v0, #int 32 // #20
+304c0a: 2803                                   |0065: goto 0068 // +0003
+304c0c: 1300 1900                              |0066: const/16 v0, #int 25 // #19
+304c10: 0f00                                   |0068: return v0
+304c12: 0000                                   |0069: nop // spacer
+304c14: 0001 2100 0000 0000 0300 0000 6200 ... |006a: packed-switch-data (70 units)
+      catches       : (none)
+      positions     :
+      locals        :
+
+    #16              : (in Lcom/nwd/dsp/uitls/AppUtil;)
+      name          : 'getInstance'
+      type          : '()Lcom/nwd/dsp/uitls/AppUtil;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 0
+      outs          : 1
+      insns size    : 14 16-bit code units
+3047d0:                                        |[3047d0] com.nwd.dsp.uitls.AppUtil.getInstance:()Lcom/nwd/dsp/uitls/AppUtil;
+3047e0: 6200 657c                              |0000: sget-object v0, Lcom/nwd/dsp/uitls/AppUtil;.instance:Lcom/nwd/dsp/uitls/AppUtil; // field@7c65
+3047e4: 3900 0900                              |0002: if-nez v0, 000b // +0009
+3047e8: 2200 860f                              |0004: new-instance v0, Lcom/nwd/dsp/uitls/AppUtil; // type@0f86
+3047ec: 7010 0385 0000                         |0006: invoke-direct {v0}, Lcom/nwd/dsp/uitls/AppUtil;.<init>:()V // method@8503
+3047f2: 6900 657c                              |0009: sput-object v0, Lcom/nwd/dsp/uitls/AppUtil;.instance:Lcom/nwd/dsp/uitls/AppUtil; // field@7c65
+3047f6: 6200 657c                              |000b: sget-object v0, Lcom/nwd/dsp/uitls/AppUtil;.instance:Lcom/nwd/dsp/uitls/AppUtil; // field@7c65
+3047fa: 1100                                   |000d: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=39
+        0x0004 line=40
+        0x000b line=42
+      locals        :
+
+    #17              : (in Lcom/nwd/dsp/uitls/AppUtil;)
+      name          : 'iamgeSetSrc'
+      type          : '(Landroid/widget/ImageView;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 9
+      ins           : 3
+      outs          : 3
+      insns size    : 79 16-bit code units
+304f1c:                                        |[304f1c] com.nwd.dsp.uitls.AppUtil.iamgeSetSrc:(Landroid/widget/ImageView;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
+304f2c: 3806 4e00                              |0000: if-eqz v6, 004e // +004e
+304f30: 3807 4c00                              |0002: if-eqz v7, 004e // +004c
+304f34: 3908 0300                              |0004: if-nez v8, 0007 // +0003
+304f38: 2848                                   |0006: goto 004e // +0048
+304f3a: 1200                                   |0007: const/4 v0, #int 0 // #0
+304f3c: 1211                                   |0008: const/4 v1, #int 1 // #1
+304f3e: 2202 e700                              |0009: new-instance v2, Landroid/graphics/drawable/StateListDrawable; // type@00e7
+304f42: 7010 6b05 0200                         |000b: invoke-direct {v2}, Landroid/graphics/drawable/StateListDrawable;.<init>:()V // method@056b
+304f48: 1403 a700 0101                         |000e: const v3, #float 2.3694e-38 // #010100a7
+304f4e: 1404 a100 0101                         |0011: const v4, #float 2.3694e-38 // #010100a1
+304f54: 2315 8011                              |0014: new-array v5, v1, [I // type@1180
+304f58: 4b03 0500                              |0016: aput v3, v5, v0
+304f5c: 6e30 6c05 5208                         |0018: invoke-virtual {v2, v5, v8}, Landroid/graphics/drawable/StateListDrawable;.addState:([ILandroid/graphics/drawable/Drawable;)V // method@056c
+304f62: 2313 8011                              |001b: new-array v3, v1, [I // type@1180
+304f66: 4b04 0300                              |001d: aput v4, v3, v0
+304f6a: 6e30 6c05 3208                         |001f: invoke-virtual {v2, v3, v8}, Landroid/graphics/drawable/StateListDrawable;.addState:([ILandroid/graphics/drawable/Drawable;)V // method@056c
+304f70: 2318 8011                              |0022: new-array v8, v1, [I // type@1180
+304f74: 1403 59ff fefe                         |0024: const v3, #float -1.69475e+38 // #fefeff59
+304f7a: 4b03 0800                              |0027: aput v3, v8, v0
+304f7e: 6e30 6c05 8207                         |0029: invoke-virtual {v2, v8, v7}, Landroid/graphics/drawable/StateListDrawable;.addState:([ILandroid/graphics/drawable/Drawable;)V // method@056c
+304f84: 6e20 550e 2600                         |002c: invoke-virtual {v6, v2}, Landroid/widget/ImageView;.setImageDrawable:(Landroid/graphics/drawable/Drawable;)V // method@0e55
+304f8a: 281f                                   |002f: goto 004e // +001f
+304f8c: 0d06                                   |0030: move-exception v6
+304f8e: 2317 0f12                              |0031: new-array v7, v1, [Ljava/lang/Object; // type@120f
+304f92: 2208 a710                              |0033: new-instance v8, Ljava/lang/StringBuilder; // type@10a7
+304f96: 7010 3d8e 0800                         |0035: invoke-direct {v8}, Ljava/lang/StringBuilder;.<init>:()V // method@8e3d
+304f9c: 1a01 6d73                              |0038: const-string v1, "iamgeSetSrc errror=" // string@736d
+304fa0: 6e20 478e 1800                         |003a: invoke-virtual {v8, v1}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@8e47
+304fa6: 6e20 468e 6800                         |003d: invoke-virtual {v8, v6}, Ljava/lang/StringBuilder;.append:(Ljava/lang/Object;)Ljava/lang/StringBuilder; // method@8e46
+304fac: 6e10 508e 0800                         |0040: invoke-virtual {v8}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@8e50
+304fb2: 0c08                                   |0043: move-result-object v8
+304fb4: 4d08 0700                              |0044: aput-object v8, v7, v0
+304fb8: 1a08 e25e                              |0046: const-string v8, "dsp3-AppUtil" // string@5ee2
+304fbc: 7120 2668 7800                         |0048: invoke-static {v8, v7}, Lcom/blankj/utilcode/util/LogUtils;.eTag:(Ljava/lang/String;[Ljava/lang/Object;)V // method@6826
+304fc2: 6e10 728e 0600                         |004b: invoke-virtual {v6}, Ljava/lang/Throwable;.printStackTrace:()V // method@8e72
+304fc8: 0e00                                   |004e: return-void
+      catches       : 1
+        0x0009 - 0x002f
+          <any> -> 0x0030
+      positions     :
+        0x0009 line=452
+        0x0018 line=455
+        0x001f line=456
+        0x0029 line=457
+        0x002c line=458
+        0x0033 line=460
+        0x004b line=461
+      locals        :
+        0x0000 - 0x004f reg=6 (null) Landroid/widget/ImageView;
+        0x0000 - 0x004f reg=7 (null) Landroid/graphics/drawable/Drawable;
+        0x0000 - 0x004f reg=8 (null) Landroid/graphics/drawable/Drawable;
+
+    #18              : (in Lcom/nwd/dsp/uitls/AppUtil;)
+      name          : 'intToFloat'
+      type          : '([I)[F'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 4
+      ins           : 1
+      outs          : 0
+      insns size    : 16 16-bit code units
+3047fc:                                        |[3047fc] com.nwd.dsp.uitls.AppUtil.intToFloat:([I)[F
+30480c: 2130                                   |0000: array-length v0, v3
+30480e: 2300 7f11                              |0001: new-array v0, v0, [F // type@117f
+304812: 1201                                   |0003: const/4 v1, #int 0 // #0
+304814: 2132                                   |0004: array-length v2, v3
+304816: 3521 0a00                              |0005: if-ge v1, v2, 000f // +000a
+30481a: 4402 0301                              |0007: aget v2, v3, v1
+30481e: 8222                                   |0009: int-to-float v2, v2
+304820: 4b02 0001                              |000a: aput v2, v0, v1
+304824: d801 0101                              |000c: add-int/lit8 v1, v1, #int 1 // #01
+304828: 28f6                                   |000e: goto 0004 // -000a
+30482a: 1100                                   |000f: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=46
+        0x0004 line=47
+        0x0007 line=48
+      locals        :
+        0x0000 - 0x0010 reg=3 (null) [I
+
+    #19              : (in Lcom/nwd/dsp/uitls/AppUtil;)
+      name          : 'intToStr'
+      type          : '([I)[Ljava/lang/String;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 1
+      insns size    : 5 16-bit code units
+304ee8:                                        |[304ee8] com.nwd.dsp.uitls.AppUtil.intToStr:([I)[Ljava/lang/String;
+304ef8: 7110 1085 0000                         |0000: invoke-static {v0}, Lcom/nwd/dsp/uitls/AppUtil;.floatToFormat:([I)[Ljava/lang/String; // method@8510
+304efe: 0c00                                   |0003: move-result-object v0
+304f00: 1100                                   |0004: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=90
+      locals        :
+        0x0000 - 0x0005 reg=0 (null) [I
+
+    #20              : (in Lcom/nwd/dsp/uitls/AppUtil;)
+      name          : 'isN65OrN61'
+      type          : '()Z'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 2
+      ins           : 0
+      outs          : 0
+      insns size    : 12 16-bit code units
+304780:                                        |[304780] com.nwd.dsp.uitls.AppUtil.isN65OrN61:()Z
+304790: 7100 0b62 0000                         |0000: invoke-static {}, Lcom/android/utils/utils/PlatformUtils;.getSubPlatform:()I // method@620b
+304796: 0a00                                   |0003: move-result v0
+304798: 1301 1400                              |0004: const/16 v1, #int 20 // #14
+30479c: 3310 0400                              |0006: if-ne v0, v1, 000a // +0004
+3047a0: 1210                                   |0008: const/4 v0, #int 1 // #1
+3047a2: 2802                                   |0009: goto 000b // +0002
+3047a4: 1200                                   |000a: const/4 v0, #int 0 // #0
+3047a6: 0f00                                   |000b: return v0
+      catches       : (none)
+      positions     :
+        0x0000 line=502
+      locals        :
+
+    #21              : (in Lcom/nwd/dsp/uitls/AppUtil;)
+      name          : 'isT57'
+      type          : '()Z'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 2
+      ins           : 0
+      outs          : 0
+      insns size    : 12 16-bit code units
+3047a8:                                        |[3047a8] com.nwd.dsp.uitls.AppUtil.isT57:()Z
+3047b8: 7100 0b62 0000                         |0000: invoke-static {}, Lcom/android/utils/utils/PlatformUtils;.getSubPlatform:()I // method@620b
+3047be: 0a00                                   |0003: move-result v0
+3047c0: 1301 1500                              |0004: const/16 v1, #int 21 // #15
+3047c4: 3310 0400                              |0006: if-ne v0, v1, 000a // +0004
+3047c8: 1210                                   |0008: const/4 v0, #int 1 // #1
+3047ca: 2802                                   |0009: goto 000b // +0002
+3047cc: 1200                                   |000a: const/4 v0, #int 0 // #0
+3047ce: 0f00                                   |000b: return v0
+      catches       : (none)
+      positions     :
+        0x0000 line=506
+      locals        :
+
+    #22              : (in Lcom/nwd/dsp/uitls/AppUtil;)
+      name          : 'viewSetBG'
+      type          : '(Landroid/view/View;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 9
+      ins           : 3
+      outs          : 3
+      insns size    : 79 16-bit code units
+304fd8:                                        |[304fd8] com.nwd.dsp.uitls.AppUtil.viewSetBG:(Landroid/view/View;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
+304fe8: 3806 4e00                              |0000: if-eqz v6, 004e // +004e
+304fec: 3807 4c00                              |0002: if-eqz v7, 004e // +004c
+304ff0: 3908 0300                              |0004: if-nez v8, 0007 // +0003
+304ff4: 2848                                   |0006: goto 004e // +0048
+304ff6: 1200                                   |0007: const/4 v0, #int 0 // #0
+304ff8: 1211                                   |0008: const/4 v1, #int 1 // #1
+304ffa: 2202 e700                              |0009: new-instance v2, Landroid/graphics/drawable/StateListDrawable; // type@00e7
+304ffe: 7010 6b05 0200                         |000b: invoke-direct {v2}, Landroid/graphics/drawable/StateListDrawable;.<init>:()V // method@056b
+305004: 1403 a700 0101                         |000e: const v3, #float 2.3694e-38 // #010100a7
+30500a: 1404 a100 0101                         |0011: const v4, #float 2.3694e-38 // #010100a1
+305010: 2315 8011                              |0014: new-array v5, v1, [I // type@1180
+305014: 4b03 0500                              |0016: aput v3, v5, v0
+305018: 6e30 6c05 5208                         |0018: invoke-virtual {v2, v5, v8}, Landroid/graphics/drawable/StateListDrawable;.addState:([ILandroid/graphics/drawable/Drawable;)V // method@056c
+30501e: 2313 8011                              |001b: new-array v3, v1, [I // type@1180
+305022: 4b04 0300                              |001d: aput v4, v3, v0
+305026: 6e30 6c05 3208                         |001f: invoke-virtual {v2, v3, v8}, Landroid/graphics/drawable/StateListDrawable;.addState:([ILandroid/graphics/drawable/Drawable;)V // method@056c
+30502c: 2318 8011                              |0022: new-array v8, v1, [I // type@1180
+305030: 1403 59ff fefe                         |0024: const v3, #float -1.69475e+38 // #fefeff59
+305036: 4b03 0800                              |0027: aput v3, v8, v0
+30503a: 6e30 6c05 8207                         |0029: invoke-virtual {v2, v8, v7}, Landroid/graphics/drawable/StateListDrawable;.addState:([ILandroid/graphics/drawable/Drawable;)V // method@056c
+305040: 6e20 590a 2600                         |002c: invoke-virtual {v6, v2}, Landroid/view/View;.setBackground:(Landroid/graphics/drawable/Drawable;)V // method@0a59
+305046: 281f                                   |002f: goto 004e // +001f
+305048: 0d06                                   |0030: move-exception v6
+30504a: 2317 0f12                              |0031: new-array v7, v1, [Ljava/lang/Object; // type@120f
+30504e: 2208 a710                              |0033: new-instance v8, Ljava/lang/StringBuilder; // type@10a7
+305052: 7010 3d8e 0800                         |0035: invoke-direct {v8}, Ljava/lang/StringBuilder;.<init>:()V // method@8e3d
+305058: 1a01 ecae                              |0038: const-string v1, "viewSetBG errror=" // string@aeec
+30505c: 6e20 478e 1800                         |003a: invoke-virtual {v8, v1}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@8e47
+305062: 6e20 468e 6800                         |003d: invoke-virtual {v8, v6}, Ljava/lang/StringBuilder;.append:(Ljava/lang/Object;)Ljava/lang/StringBuilder; // method@8e46
+305068: 6e10 508e 0800                         |0040: invoke-virtual {v8}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@8e50
+30506e: 0c08                                   |0043: move-result-object v8
+305070: 4d08 0700                              |0044: aput-object v8, v7, v0
+305074: 1a08 e25e                              |0046: const-string v8, "dsp3-AppUtil" // string@5ee2
+305078: 7120 2668 7800                         |0048: invoke-static {v8, v7}, Lcom/blankj/utilcode/util/LogUtils;.eTag:(Ljava/lang/String;[Ljava/lang/Object;)V // method@6826
+30507e: 6e10 728e 0600                         |004b: invoke-virtual {v6}, Ljava/lang/Throwable;.printStackTrace:()V // method@8e72
+305084: 0e00                                   |004e: return-void
+      catches       : 1
+        0x0009 - 0x002f
+          <any> -> 0x0030
+      positions     :
+        0x0009 line=468
+        0x0018 line=471
+        0x001f line=472
+        0x0029 line=473
+        0x002c line=474
+        0x0033 line=476
+        0x004b line=477
+      locals        :
+        0x0000 - 0x004f reg=6 (null) Landroid/view/View;
+        0x0000 - 0x004f reg=7 (null) Landroid/graphics/drawable/Drawable;
+        0x0000 - 0x004f reg=8 (null) Landroid/graphics/drawable/Drawable;
+
+    #23              : (in Lcom/nwd/dsp/uitls/AppUtil;)
+      name          : 'viewSetBG'
+      type          : '(Landroid/view/View;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 10
+      ins           : 4
+      outs          : 3
+      insns size    : 87 16-bit code units
+305094:                                        |[305094] com.nwd.dsp.uitls.AppUtil.viewSetBG:(Landroid/view/View;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
+3050a4: 3807 5600                              |0000: if-eqz v7, 0056 // +0056
+3050a8: 3908 0300                              |0002: if-nez v8, 0005 // +0003
+3050ac: 2852                                   |0004: goto 0056 // +0052
+3050ae: 1209                                   |0005: const/4 v9, #int 0 // #0
+3050b0: 1210                                   |0006: const/4 v0, #int 1 // #1
+3050b2: 2201 e700                              |0007: new-instance v1, Landroid/graphics/drawable/StateListDrawable; // type@00e7
+3050b6: 7010 6b05 0100                         |0009: invoke-direct {v1}, Landroid/graphics/drawable/StateListDrawable;.<init>:()V // method@056b
+3050bc: 1402 a700 0101                         |000c: const v2, #float 2.3694e-38 // #010100a7
+3050c2: 1403 a100 0101                         |000f: const v3, #float 2.3694e-38 // #010100a1
+3050c8: 1404 9e00 0101                         |0012: const v4, #float 2.3694e-38 // #0101009e
+3050ce: 2305 8011                              |0015: new-array v5, v0, [I // type@1180
+3050d2: 4b02 0509                              |0017: aput v2, v5, v9
+3050d6: 6e30 6c05 5108                         |0019: invoke-virtual {v1, v5, v8}, Landroid/graphics/drawable/StateListDrawable;.addState:([ILandroid/graphics/drawable/Drawable;)V // method@056c
+3050dc: 2302 8011                              |001c: new-array v2, v0, [I // type@1180
+3050e0: 4b03 0209                              |001e: aput v3, v2, v9
+3050e4: 6e30 6c05 2108                         |0020: invoke-virtual {v1, v2, v8}, Landroid/graphics/drawable/StateListDrawable;.addState:([ILandroid/graphics/drawable/Drawable;)V // method@056c
+3050ea: 2302 8011                              |0023: new-array v2, v0, [I // type@1180
+3050ee: 4b04 0209                              |0025: aput v4, v2, v9
+3050f2: 6e30 6c05 2108                         |0027: invoke-virtual {v1, v2, v8}, Landroid/graphics/drawable/StateListDrawable;.addState:([ILandroid/graphics/drawable/Drawable;)V // method@056c
+3050f8: 2308 8011                              |002a: new-array v8, v0, [I // type@1180
+3050fc: 1402 59ff fefe                         |002c: const v2, #float -1.69475e+38 // #fefeff59
+305102: 4b02 0809                              |002f: aput v2, v8, v9
+305106: 6e30 6c05 8107                         |0031: invoke-virtual {v1, v8, v7}, Landroid/graphics/drawable/StateListDrawable;.addState:([ILandroid/graphics/drawable/Drawable;)V // method@056c
+30510c: 6e20 590a 1600                         |0034: invoke-virtual {v6, v1}, Landroid/view/View;.setBackground:(Landroid/graphics/drawable/Drawable;)V // method@0a59
+305112: 281f                                   |0037: goto 0056 // +001f
+305114: 0d06                                   |0038: move-exception v6
+305116: 2307 0f12                              |0039: new-array v7, v0, [Ljava/lang/Object; // type@120f
+30511a: 2208 a710                              |003b: new-instance v8, Ljava/lang/StringBuilder; // type@10a7
+30511e: 7010 3d8e 0800                         |003d: invoke-direct {v8}, Ljava/lang/StringBuilder;.<init>:()V // method@8e3d
+305124: 1a00 ecae                              |0040: const-string v0, "viewSetBG errror=" // string@aeec
+305128: 6e20 478e 0800                         |0042: invoke-virtual {v8, v0}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@8e47
+30512e: 6e20 468e 6800                         |0045: invoke-virtual {v8, v6}, Ljava/lang/StringBuilder;.append:(Ljava/lang/Object;)Ljava/lang/StringBuilder; // method@8e46
+305134: 6e10 508e 0800                         |0048: invoke-virtual {v8}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@8e50
+30513a: 0c08                                   |004b: move-result-object v8
+30513c: 4d08 0709                              |004c: aput-object v8, v7, v9
+305140: 1a08 e25e                              |004e: const-string v8, "dsp3-AppUtil" // string@5ee2
+305144: 7120 2668 7800                         |0050: invoke-static {v8, v7}, Lcom/blankj/utilcode/util/LogUtils;.eTag:(Ljava/lang/String;[Ljava/lang/Object;)V // method@6826
+30514a: 6e10 728e 0600                         |0053: invoke-virtual {v6}, Ljava/lang/Throwable;.printStackTrace:()V // method@8e72
+305150: 0e00                                   |0056: return-void
+      catches       : 1
+        0x0007 - 0x0037
+          <any> -> 0x0038
+      positions     :
+        0x0007 line=484
+        0x0019 line=488
+        0x0020 line=489
+        0x0027 line=490
+        0x0031 line=491
+        0x0034 line=492
+        0x003b line=494
+        0x0053 line=495
+      locals        :
+        0x0000 - 0x0057 reg=6 (null) Landroid/view/View;
+        0x0000 - 0x0057 reg=7 (null) Landroid/graphics/drawable/Drawable;
+        0x0000 - 0x0057 reg=8 (null) Landroid/graphics/drawable/Drawable;
+        0x0000 - 0x0057 reg=9 (null) Landroid/graphics/drawable/Drawable;
+
+  Virtual methods   -
+  source_file_idx   : 2858 (AppUtil.java)
+
+Class #2351            -

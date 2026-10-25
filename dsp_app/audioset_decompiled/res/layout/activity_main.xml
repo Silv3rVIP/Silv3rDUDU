@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/mrl" android:background="@mipmap/main_fragment_bg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_main" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_left" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dp_15">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="@dimen/px_350" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dp_15">
+                <View android:layout_width="wrap_content" android:layout_height="0.0dp" android:layout_weight="0.5" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/main_btn_dts1" android:background="@drawable/selector_button" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+                    <ImageView android:id="@id/iv_dts1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_15" android:layout_marginRight="@dimen/dp_10" android:src="@mipmap/menu_eq_n" />
+                    <TextView android:textSize="18.0sp" android:textColor="@android:color/white" android:id="@id/tv_dts1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_dts" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/main_btn_eq1" android:background="@drawable/selector_button" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_marginTop="@dimen/dp_20" android:layout_weight="1.0">
+                    <ImageView android:id="@id/iv_eq1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_15" android:layout_marginRight="@dimen/dp_10" android:src="@mipmap/menu_eq_n" />
+                    <TextView android:textSize="18.0sp" android:textColor="@android:color/white" android:id="@id/tv_eq1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_eq_tuning" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/main_btn_site1" android:background="@drawable/selector_button" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_marginTop="@dimen/dp_20" android:layout_weight="1.0">
+                    <ImageView android:id="@id/iv_site1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_15" android:layout_marginRight="@dimen/dp_10" android:src="@mipmap/menu_sound_n" />
+                    <TextView android:textSize="18.0sp" android:textColor="@android:color/white" android:id="@id/tv_site1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_sound_field" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/main_btn_track1" android:background="@drawable/selector_button" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_marginTop="@dimen/dp_20" android:layout_weight="1.0">
+                    <ImageView android:id="@id/iv_track1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_15" android:layout_marginRight="@dimen/dp_10" android:src="@mipmap/menu_channel_n" />
+                    <TextView android:textSize="18.0sp" android:textColor="@android:color/white" android:id="@id/tv_track1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_channel_setup" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/main_btn_bass1" android:background="@drawable/selector_button" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_marginTop="@dimen/dp_20" android:layout_weight="1.0">
+                    <ImageView android:id="@id/iv_bass1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_15" android:layout_marginRight="@dimen/dp_10" android:src="@mipmap/menu_output_n" />
+                    <TextView android:textSize="18.0sp" android:textColor="@android:color/white" android:id="@id/tv_bass1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_output_volume" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/main_btn_king1" android:background="@drawable/selector_button" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_marginTop="@dimen/dp_20" android:layout_weight="1.0">
+                    <ImageView android:id="@id/iv_king1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_15" android:layout_marginRight="@dimen/dp_10" android:src="@mipmap/menu_latency_n" />
+                    <TextView android:textSize="18.0sp" android:textColor="@android:color/white" android:id="@id/tv_king1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_latency_volume" />
+                </LinearLayout>
+                <View android:layout_width="wrap_content" android:layout_height="0.0dp" android:layout_weight="0.5" />
+            </LinearLayout>
+            <View android:background="@color/gray" android:layout_width="0.5px" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dp_30" android:layout_marginTop="@dimen/dp_33" android:layout_marginBottom="@dimen/dp_33" />
+        </LinearLayout>
+        <com.nwd.audioset.view.nwdview.NoScrollViewPager android:id="@id/view_pager" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toRightOf="@id/ll_left" android:layout_above="@id/main_ll" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/main_ll" android:layout_width="match_parent" android:layout_height="@dimen/main_bottom_ll_height" android:layout_alignParentBottom="true">
+            <Button android:id="@id/main_btn_left1" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+            <Button android:id="@id/main_btn_dts" android:background="@drawable/main_bottom_dts_bg" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+            <Button android:id="@id/main_btn_eq" android:background="@drawable/main_bottom_eq_bg" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+            <Button android:id="@id/main_btn_site" android:background="@drawable/main_bottom_yinchang_bg" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+            <Button android:id="@id/main_btn_track" android:background="@drawable/main_bottom_shengdao_bg" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+            <Button android:id="@id/main_btn_bass" android:background="@drawable/main_bottom_diyin_bg" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+            <Button android:id="@id/main_btn_king" android:background="@drawable/main_bottom_king_bg" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+            <Button android:id="@id/main_btn_right1" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+    <include android:id="@id/layout_start" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/view_start" />
+</RelativeLayout>

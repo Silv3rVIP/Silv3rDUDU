@@ -1,0 +1,150 @@
+  Class descriptor  : 'Lcom/nwd/dsp/uitls/SettingController;'
+  Access flags      : 0x0001 (PUBLIC)
+  Superclass        : 'Lcom/android/utils/utils/AbsServiceControllerHelper;'
+  Interfaces        -
+  Static fields     -
+    #0              : (in Lcom/nwd/dsp/uitls/SettingController;)
+      name          : 'instance'
+      type          : 'Lcom/nwd/dsp/uitls/SettingController;'
+      access        : 0x000a (PRIVATE STATIC)
+  Instance fields   -
+  Direct methods    -
+    #0              : (in Lcom/nwd/dsp/uitls/SettingController;)
+      name          : '<init>'
+      type          : '(Landroid/content/Context;)V'
+      access        : 0x10002 (PRIVATE CONSTRUCTOR)
+      code          -
+      registers     : 2
+      ins           : 2
+      outs          : 2
+      insns size    : 4 16-bit code units
+30e29c:                                        |[30e29c] com.nwd.dsp.uitls.SettingController.<init>:(Landroid/content/Context;)V
+30e2ac: 7020 d261 1000                         |0000: invoke-direct {v0, v1}, Lcom/android/utils/utils/AbsServiceControllerHelper;.<init>:(Landroid/content/Context;)V // method@61d2
+30e2b2: 0e00                                   |0003: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=22
+      locals        :
+        0x0000 - 0x0004 reg=0 this Lcom/nwd/dsp/uitls/SettingController;
+        0x0000 - 0x0004 reg=1 (null) Landroid/content/Context;
+
+    #1              : (in Lcom/nwd/dsp/uitls/SettingController;)
+      name          : 'getInstance'
+      type          : '(Landroid/content/Context;)Lcom/nwd/dsp/uitls/SettingController;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 2
+      insns size    : 14 16-bit code units
+30e270:                                        |[30e270] com.nwd.dsp.uitls.SettingController.getInstance:(Landroid/content/Context;)Lcom/nwd/dsp/uitls/SettingController;
+30e280: 6200 7b7d                              |0000: sget-object v0, Lcom/nwd/dsp/uitls/SettingController;.instance:Lcom/nwd/dsp/uitls/SettingController; // field@7d7b
+30e284: 3900 0900                              |0002: if-nez v0, 000b // +0009
+30e288: 2200 a20f                              |0004: new-instance v0, Lcom/nwd/dsp/uitls/SettingController; // type@0fa2
+30e28c: 7020 1186 1000                         |0006: invoke-direct {v0, v1}, Lcom/nwd/dsp/uitls/SettingController;.<init>:(Landroid/content/Context;)V // method@8611
+30e292: 6900 7b7d                              |0009: sput-object v0, Lcom/nwd/dsp/uitls/SettingController;.instance:Lcom/nwd/dsp/uitls/SettingController; // field@7d7b
+30e296: 6201 7b7d                              |000b: sget-object v1, Lcom/nwd/dsp/uitls/SettingController;.instance:Lcom/nwd/dsp/uitls/SettingController; // field@7d7b
+30e29a: 1101                                   |000d: return-object v1
+      catches       : (none)
+      positions     :
+        0x0000 line=26
+        0x0004 line=27
+        0x000b line=29
+      locals        :
+        0x0000 - 0x000e reg=1 (null) Landroid/content/Context;
+
+  Virtual methods   -
+    #0              : (in Lcom/nwd/dsp/uitls/SettingController;)
+      name          : 'doRelease'
+      type          : '()V'
+      access        : 0x0004 (PROTECTED)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 1
+      insns size    : 7 16-bit code units
+30e2b4:                                        |[30e2b4] com.nwd.dsp.uitls.SettingController.doRelease:()V
+30e2c4: 6e10 1386 0100                         |0000: invoke-virtual {v1}, Lcom/nwd/dsp/uitls/SettingController;.disconnectService:()V // method@8613
+30e2ca: 1200                                   |0003: const/4 v0, #int 0 // #0
+30e2cc: 6900 7b7d                              |0004: sput-object v0, Lcom/nwd/dsp/uitls/SettingController;.instance:Lcom/nwd/dsp/uitls/SettingController; // field@7d7b
+30e2d0: 0e00                                   |0006: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=34
+        0x0004 line=35
+      locals        :
+        0x0000 - 0x0007 reg=1 this Lcom/nwd/dsp/uitls/SettingController;
+
+    #1              : (in Lcom/nwd/dsp/uitls/SettingController;)
+      name          : 'doServiceConnected'
+      type          : '(Landroid/content/ComponentName;Landroid/os/IBinder;)V'
+      access        : 0x0004 (PROTECTED)
+      code          -
+      registers     : 4
+      ins           : 3
+      outs          : 2
+      insns size    : 14 16-bit code units
+30e2d4:                                        |[30e2d4] com.nwd.dsp.uitls.SettingController.doServiceConnected:(Landroid/content/ComponentName;Landroid/os/IBinder;)V
+30e2e4: 1a02 8c49                              |0000: const-string v2, "YCH" // string@498c
+30e2e8: 1a00 7f3e                              |0002: const-string v0, "SettingController中服务连接成功" // string@3e7f
+30e2ec: 7120 5308 0200                         |0004: invoke-static {v2, v0}, Landroid/util/Log;.e:(Ljava/lang/String;Ljava/lang/String;)I // method@0853
+30e2f2: 7110 e18b 0300                         |0007: invoke-static {v3}, Lcom/nwd/setting/service/SettingFeature$Stub;.asInterface:(Landroid/os/IBinder;)Lcom/nwd/setting/service/SettingFeature; // method@8be1
+30e2f8: 0c02                                   |000a: move-result-object v2
+30e2fa: 5b12 7c7d                              |000b: iput-object v2, v1, Lcom/nwd/dsp/uitls/SettingController;.mFeature:Ljava/lang/Object; // field@7d7c
+30e2fe: 0e00                                   |000d: return-void
+      catches       : (none)
+      positions     :
+        0x0004 line=47
+        0x0007 line=48
+      locals        :
+        0x0000 - 0x000e reg=1 this Lcom/nwd/dsp/uitls/SettingController;
+        0x0000 - 0x000e reg=2 (null) Landroid/content/ComponentName;
+        0x0000 - 0x000e reg=3 (null) Landroid/os/IBinder;
+
+    #2              : (in Lcom/nwd/dsp/uitls/SettingController;)
+      name          : 'doServiceDisconnected'
+      type          : '(Landroid/content/ComponentName;)V'
+      access        : 0x0004 (PROTECTED)
+      code          -
+      registers     : 3
+      ins           : 2
+      outs          : 2
+      insns size    : 8 16-bit code units
+30e300:                                        |[30e300] com.nwd.dsp.uitls.SettingController.doServiceDisconnected:(Landroid/content/ComponentName;)V
+30e310: 1a02 8c49                              |0000: const-string v2, "YCH" // string@498c
+30e314: 1a00 7e3e                              |0002: const-string v0, "SettingController中服务断开连接" // string@3e7e
+30e318: 7120 5308 0200                         |0004: invoke-static {v2, v0}, Landroid/util/Log;.e:(Ljava/lang/String;Ljava/lang/String;)I // method@0853
+30e31e: 0e00                                   |0007: return-void
+      catches       : (none)
+      positions     :
+        0x0004 line=41
+      locals        :
+        0x0000 - 0x0008 reg=1 this Lcom/nwd/dsp/uitls/SettingController;
+        0x0000 - 0x0008 reg=2 (null) Landroid/content/ComponentName;
+
+    #3              : (in Lcom/nwd/dsp/uitls/SettingController;)
+      name          : 'getServiceIntent'
+      type          : '()Landroid/content/Intent;'
+      access        : 0x0004 (PROTECTED)
+      code          -
+      registers     : 4
+      ins           : 1
+      outs          : 3
+      insns size    : 14 16-bit code units
+30e244:                                        |[30e244] com.nwd.dsp.uitls.SettingController.getServiceIntent:()Landroid/content/Intent;
+30e254: 2200 6f00                              |0000: new-instance v0, Landroid/content/Intent; // type@006f
+30e258: 7010 6e02 0000                         |0002: invoke-direct {v0}, Landroid/content/Intent;.<init>:()V // method@026e
+30e25e: 1a01 b858                              |0005: const-string v1, "com.nwd.setting.service" // string@58b8
+30e262: 1a02 be58                              |0007: const-string v2, "com.nwd.setting.service.SettingService" // string@58be
+30e266: 6e30 9d02 1002                         |0009: invoke-virtual {v0, v1, v2}, Landroid/content/Intent;.setClassName:(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent; // method@029d
+30e26c: 0c00                                   |000c: move-result-object v0
+30e26e: 1100                                   |000d: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=54
+      locals        :
+        0x0000 - 0x000e reg=3 this Lcom/nwd/dsp/uitls/SettingController;
+
+  source_file_idx   : 15997 (SettingController.java)
+
+Class #3199            -

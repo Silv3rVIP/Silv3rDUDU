@@ -1,0 +1,52 @@
+  Class descriptor  : 'Lcom/nwd/audioset/view/fragment/site/SiteFragment$3;'
+  Access flags      : 0x0000 ()
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+    #0              : 'Landroid/os/Handler$Callback;'
+  Static fields     -
+  Instance fields   -
+    #0              : (in Lcom/nwd/audioset/view/fragment/site/SiteFragment$3;)
+      name          : 'this$0'
+      type          : 'Lcom/nwd/audioset/view/fragment/site/SiteFragment;'
+      access        : 0x1010 (FINAL SYNTHETIC)
+  Direct methods    -
+    #0              : (in Lcom/nwd/audioset/view/fragment/site/SiteFragment$3;)
+      name          : '<init>'
+      type          : '(Lcom/nwd/audioset/view/fragment/site/SiteFragment;)V'
+      access        : 0x10000 (CONSTRUCTOR)
+      code          -
+      registers     : 2
+      ins           : 2
+      outs          : 1
+      insns size    : 6 16-bit code units
+2f707c:                                        |[2f707c] com.nwd.audioset.view.fragment.site.SiteFragment$3.<init>:(Lcom/nwd/audioset/view/fragment/site/SiteFragment;)V
+2f708c: 5b01 897a                              |0000: iput-object v1, v0, Lcom/nwd/audioset/view/fragment/site/SiteFragment$3;.this$0:Lcom/nwd/audioset/view/fragment/site/SiteFragment; // field@7a89
+2f7090: 7010 df8d 0000                         |0002: invoke-direct {v0}, Ljava/lang/Object;.<init>:()V // method@8ddf
+2f7096: 0e00                                   |0005: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=310
+      locals        :
+        0x0000 - 0x0006 reg=0 this Lcom/nwd/audioset/view/fragment/site/SiteFragment$3;
+        0x0000 - 0x0006 reg=1 (null) Lcom/nwd/audioset/view/fragment/site/SiteFragment;
+
+  Virtual methods   -
+    #0              : (in Lcom/nwd/audioset/view/fragment/site/SiteFragment$3;)
+      name          : 'handleMessage'
+      type          : '(Landroid/os/Message;)Z'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 2
+      ins           : 2
+      outs          : 0
+      insns size    : 2 16-bit code units
+2f7068:                                        |[2f7068] com.nwd.audioset.view.fragment.site.SiteFragment$3.handleMessage:(Landroid/os/Message;)Z
+2f7078: 1201                                   |0000: const/4 v1, #int 0 // #0
+2f707a: 0f01                                   |0001: return v1
+      catches       : (none)
+      positions     :
+      locals        :
+
+  source_file_idx   : 16063 (SiteFragment.java)
+
+Class #2302            -

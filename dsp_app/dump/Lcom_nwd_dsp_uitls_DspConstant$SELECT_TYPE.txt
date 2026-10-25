@@ -1,0 +1,44 @@
+  Class descriptor  : 'Lcom/nwd/dsp/uitls/DspConstant$SELECT_TYPE;'
+  Access flags      : 0x0011 (PUBLIC FINAL)
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+  Static fields     -
+    #0              : (in Lcom/nwd/dsp/uitls/DspConstant$SELECT_TYPE;)
+      name          : 'G'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : "gain"
+    #1              : (in Lcom/nwd/dsp/uitls/DspConstant$SELECT_TYPE;)
+      name          : 'NON'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : "non"
+    #2              : (in Lcom/nwd/dsp/uitls/DspConstant$SELECT_TYPE;)
+      name          : 'Q'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : "qain"
+  Instance fields   -
+  Direct methods    -
+    #0              : (in Lcom/nwd/dsp/uitls/DspConstant$SELECT_TYPE;)
+      name          : '<init>'
+      type          : '()V'
+      access        : 0x10001 (PUBLIC CONSTRUCTOR)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 1
+      insns size    : 4 16-bit code units
+306fdc:                                        |[306fdc] com.nwd.dsp.uitls.DspConstant$SELECT_TYPE.<init>:()V
+306fec: 7010 df8d 0000                         |0000: invoke-direct {v0}, Ljava/lang/Object;.<init>:()V // method@8ddf
+306ff2: 0e00                                   |0003: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=144
+      locals        :
+        0x0000 - 0x0004 reg=0 this Lcom/nwd/dsp/uitls/DspConstant$SELECT_TYPE;
+
+  Virtual methods   -
+  source_file_idx   : 5749 (DspConstant.java)
+
+Class #2366            -

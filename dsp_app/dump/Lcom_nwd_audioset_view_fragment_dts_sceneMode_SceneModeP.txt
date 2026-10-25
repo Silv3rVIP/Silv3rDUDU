@@ -1,0 +1,30 @@
+  Class descriptor  : 'Lcom/nwd/audioset/view/fragment/dts/sceneMode/SceneModeP;'
+  Access flags      : 0x0001 (PUBLIC)
+  Superclass        : 'Lcom/nwd/audioset/mvpbase/BasePresenter;'
+  Interfaces        -
+  Static fields     -
+  Instance fields   -
+  Direct methods    -
+    #0              : (in Lcom/nwd/audioset/view/fragment/dts/sceneMode/SceneModeP;)
+      name          : '<init>'
+      type          : '(Landroidx/fragment/app/Fragment;)V'
+      access        : 0x10001 (PUBLIC CONSTRUCTOR)
+      code          -
+      registers     : 2
+      ins           : 2
+      outs          : 2
+      insns size    : 4 16-bit code units
+2ef1d0:                                        |[2ef1d0] com.nwd.audioset.view.fragment.dts.sceneMode.SceneModeP.<init>:(Landroidx/fragment/app/Fragment;)V
+2ef1e0: 7020 be80 1000                         |0000: invoke-direct {v0, v1}, Lcom/nwd/audioset/mvpbase/BasePresenter;.<init>:(Landroidx/fragment/app/Fragment;)V // method@80be
+2ef1e6: 0e00                                   |0003: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=13
+      locals        :
+        0x0000 - 0x0004 reg=0 this Lcom/nwd/audioset/view/fragment/dts/sceneMode/SceneModeP;
+        0x0000 - 0x0004 reg=1 (null) Landroidx/fragment/app/Fragment;
+
+  Virtual methods   -
+  source_file_idx   : 15909 (SceneModeP.java)
+
+Class #3183            -

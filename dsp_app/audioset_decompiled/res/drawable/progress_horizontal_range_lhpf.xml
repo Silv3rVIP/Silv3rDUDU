@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <bitmap android:src="@mipmap/emperor_range_bar_n" />
+    </item>
+    <item android:id="@android:id/progress">
+        <clip>
+            <bitmap android:src="@mipmap/gaoditong_bar_d" />
+        </clip>
+    </item>
+</layer-list>

@@ -1,0 +1,246 @@
+  Class descriptor  : 'Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment$9;'
+  Access flags      : 0x0000 ()
+  Superclass        : 'Landroidx/recyclerview/widget/RecyclerView$OnScrollListener;'
+  Interfaces        -
+  Static fields     -
+  Instance fields   -
+    #0              : (in Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment$9;)
+      name          : 'this$0'
+      type          : 'Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment;'
+      access        : 0x1010 (FINAL SYNTHETIC)
+  Direct methods    -
+    #0              : (in Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment$9;)
+      name          : '<init>'
+      type          : '(Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment;)V'
+      access        : 0x10000 (CONSTRUCTOR)
+      code          -
+      registers     : 2
+      ins           : 2
+      outs          : 1
+      insns size    : 6 16-bit code units
+2ecd84:                                        |[2ecd84] com.nwd.audioset.view.fragment.dts.bass.BassFragment$9.<init>:(Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment;)V
+2ecd94: 5b01 7b79                              |0000: iput-object v1, v0, Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment$9;.this$0:Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment; // field@797b
+2ecd98: 7010 4f51 0000                         |0002: invoke-direct {v0}, Landroidx/recyclerview/widget/RecyclerView$OnScrollListener;.<init>:()V // method@514f
+2ecd9e: 0e00                                   |0005: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=450
+      locals        :
+        0x0000 - 0x0006 reg=0 this Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment$9;
+        0x0000 - 0x0006 reg=1 (null) Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment;
+
+  Virtual methods   -
+    #0              : (in Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment$9;)
+      name          : 'onScrollStateChanged'
+      type          : '(Landroidx/recyclerview/widget/RecyclerView;I)V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 4
+      ins           : 3
+      outs          : 3
+      insns size    : 26 16-bit code units
+2ecda0:                                        |[2ecda0] com.nwd.audioset.view.fragment.dts.bass.BassFragment$9.onScrollStateChanged:(Landroidx/recyclerview/widget/RecyclerView;I)V
+2ecdb0: 6f30 5051 2103                         |0000: invoke-super {v1, v2, v3}, Landroidx/recyclerview/widget/RecyclerView$OnScrollListener;.onScrollStateChanged:(Landroidx/recyclerview/widget/RecyclerView;I)V // method@5150
+2ecdb6: 2202 a710                              |0003: new-instance v2, Ljava/lang/StringBuilder; // type@10a7
+2ecdba: 7010 3d8e 0200                         |0005: invoke-direct {v2}, Ljava/lang/StringBuilder;.<init>:()V // method@8e3d
+2ecdc0: 1a00 8174                              |0008: const-string v0, "innerScrollListener  : newState = " // string@7481
+2ecdc4: 6e20 478e 0200                         |000a: invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@8e47
+2ecdca: 6e20 438e 3200                         |000d: invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;.append:(I)Ljava/lang/StringBuilder; // method@8e43
+2ecdd0: 6e10 508e 0200                         |0010: invoke-virtual {v2}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@8e50
+2ecdd6: 0c02                                   |0013: move-result-object v2
+2ecdd8: 1a03 ea5e                              |0014: const-string v3, "dsp3-Dts-BassFragment" // string@5eea
+2ecddc: 7120 5108 2300                         |0016: invoke-static {v3, v2}, Landroid/util/Log;.d:(Ljava/lang/String;Ljava/lang/String;)I // method@0851
+2ecde2: 0e00                                   |0019: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=495
+        0x0003 line=496
+      locals        :
+        0x0000 - 0x001a reg=1 this Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment$9;
+        0x0000 - 0x001a reg=2 (null) Landroidx/recyclerview/widget/RecyclerView;
+        0x0000 - 0x001a reg=3 (null) I
+
+    #1              : (in Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment$9;)
+      name          : 'onScrolled'
+      type          : '(Landroidx/recyclerview/widget/RecyclerView;II)V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 8
+      ins           : 4
+      outs          : 4
+      insns size    : 283 16-bit code units
+2ecde4:                                        |[2ecde4] com.nwd.audioset.view.fragment.dts.bass.BassFragment$9.onScrolled:(Landroidx/recyclerview/widget/RecyclerView;II)V
+2ecdf4: 6f40 5151 5476                         |0000: invoke-super {v4, v5, v6, v7}, Landroidx/recyclerview/widget/RecyclerView$OnScrollListener;.onScrolled:(Landroidx/recyclerview/widget/RecyclerView;II)V // method@5151
+2ecdfa: 2206 a710                              |0003: new-instance v6, Ljava/lang/StringBuilder; // type@10a7
+2ecdfe: 7010 3d8e 0600                         |0005: invoke-direct {v6}, Ljava/lang/StringBuilder;.<init>:()V // method@8e3d
+2ece04: 1a00 8074                              |0008: const-string v0, "innerScrollListener  : dy = " // string@7480
+2ece08: 6e20 478e 0600                         |000a: invoke-virtual {v6, v0}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@8e47
+2ece0e: 6e20 438e 7600                         |000d: invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;.append:(I)Ljava/lang/StringBuilder; // method@8e43
+2ece14: 6e10 508e 0600                         |0010: invoke-virtual {v6}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@8e50
+2ece1a: 0c06                                   |0013: move-result-object v6
+2ece1c: 1a07 ea5e                              |0014: const-string v7, "dsp3-Dts-BassFragment" // string@5eea
+2ece20: 7120 5108 6700                         |0016: invoke-static {v7, v6}, Landroid/util/Log;.d:(Ljava/lang/String;Ljava/lang/String;)I // method@0851
+2ece26: 5446 7b79                              |0019: iget-object v6, v4, Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment$9;.this$0:Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment; // field@797b
+2ece2a: 7110 e981 0600                         |001b: invoke-static {v6}, Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment;.access$400:(Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment;)Landroidx/recyclerview/widget/RecyclerView; // method@81e9
+2ece30: 0c06                                   |001e: move-result-object v6
+2ece32: 1600 9600                              |001f: const-wide/16 v0, #int 150 // #96
+2ece36: 1212                                   |0021: const/4 v2, #int 1 // #1
+2ece38: 3365 4f00                              |0022: if-ne v5, v6, 0071 // +004f
+2ece3c: 5446 7b79                              |0024: iget-object v6, v4, Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment$9;.this$0:Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment; // field@797b
+2ece40: 7110 ec81 0600                         |0026: invoke-static {v6}, Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment;.access$700:(Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment;)Lcom/nwd/audioset/utils/recyclerview/VerticalPagerSnapHelper; // method@81ec
+2ece46: 0c06                                   |0029: move-result-object v6
+2ece48: 6e10 8f52 0500                         |002a: invoke-virtual {v5}, Landroidx/recyclerview/widget/RecyclerView;.getLayoutManager:()Landroidx/recyclerview/widget/RecyclerView$LayoutManager; // method@528f
+2ece4e: 0c03                                   |002d: move-result-object v3
+2ece50: 6e20 6481 3600                         |002e: invoke-virtual {v6, v3}, Lcom/nwd/audioset/utils/recyclerview/VerticalPagerSnapHelper;.findSnapView:(Landroidx/recyclerview/widget/RecyclerView$LayoutManager;)Landroid/view/View; // method@8164
+2ece56: 0c06                                   |0031: move-result-object v6
+2ece58: 3806 e800                              |0032: if-eqz v6, 011a // +00e8
+2ece5c: 6e10 8f52 0500                         |0034: invoke-virtual {v5}, Landroidx/recyclerview/widget/RecyclerView;.getLayoutManager:()Landroidx/recyclerview/widget/RecyclerView$LayoutManager; // method@528f
+2ece62: 0c05                                   |0037: move-result-object v5
+2ece64: 6e20 db50 6500                         |0038: invoke-virtual {v5, v6}, Landroidx/recyclerview/widget/RecyclerView$LayoutManager;.getPosition:(Landroid/view/View;)I // method@50db
+2ece6a: 0a05                                   |003b: move-result v5
+2ece6c: 2206 a710                              |003c: new-instance v6, Ljava/lang/StringBuilder; // type@10a7
+2ece70: 7010 3d8e 0600                         |003e: invoke-direct {v6}, Ljava/lang/StringBuilder;.<init>:()V // method@8e3d
+2ece76: 1a03 e691                              |0041: const-string v3, "onScrollStateChanged font : position = " // string@91e6
+2ece7a: 6e20 478e 3600                         |0043: invoke-virtual {v6, v3}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@8e47
+2ece80: 6e20 438e 5600                         |0046: invoke-virtual {v6, v5}, Ljava/lang/StringBuilder;.append:(I)Ljava/lang/StringBuilder; // method@8e43
+2ece86: 6e10 508e 0600                         |0049: invoke-virtual {v6}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@8e50
+2ece8c: 0c06                                   |004c: move-result-object v6
+2ece8e: 7120 5108 6700                         |004d: invoke-static {v7, v6}, Landroid/util/Log;.d:(Ljava/lang/String;Ljava/lang/String;)I // method@0851
+2ece94: 7100 7006 0000                         |0050: invoke-static {}, Landroid/os/Message;.obtain:()Landroid/os/Message; // method@0670
+2ece9a: 0c06                                   |0053: move-result-object v6
+2ece9c: 5962 e300                              |0054: iput v2, v6, Landroid/os/Message;.what:I // field@00e3
+2ecea0: b125                                   |0056: sub-int/2addr v5, v2
+2ecea2: 7110 9d8d 0500                         |0057: invoke-static {v5}, Ljava/lang/Integer;.valueOf:(I)Ljava/lang/Integer; // method@8d9d
+2ecea8: 0c05                                   |005a: move-result-object v5
+2eceaa: 5b65 e100                              |005b: iput-object v5, v6, Landroid/os/Message;.obj:Ljava/lang/Object; // field@00e1
+2eceae: 5445 7b79                              |005d: iget-object v5, v4, Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment$9;.this$0:Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment; // field@797b
+2eceb2: 7110 ed81 0500                         |005f: invoke-static {v5}, Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment;.access$800:(Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment;)Landroid/os/Handler; // method@81ed
+2eceb8: 0c05                                   |0062: move-result-object v5
+2eceba: 6e20 5006 2500                         |0063: invoke-virtual {v5, v2}, Landroid/os/Handler;.removeMessages:(I)V // method@0650
+2ecec0: 5445 7b79                              |0066: iget-object v5, v4, Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment$9;.this$0:Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment; // field@797b
+2ecec4: 7110 ed81 0500                         |0068: invoke-static {v5}, Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment;.access$800:(Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment;)Landroid/os/Handler; // method@81ed
+2ececa: 0c05                                   |006b: move-result-object v5
+2ececc: 6e40 5506 6510                         |006c: invoke-virtual {v5, v6, v0, v1}, Landroid/os/Handler;.sendMessageDelayed:(Landroid/os/Message;J)Z // method@0655
+2eced2: 2900 ab00                              |006f: goto/16 011a // +00ab
+2eced6: 5446 7b79                              |0071: iget-object v6, v4, Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment$9;.this$0:Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment; // field@797b
+2eceda: 7110 ea81 0600                         |0073: invoke-static {v6}, Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment;.access$500:(Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment;)Landroidx/recyclerview/widget/RecyclerView; // method@81ea
+2ecee0: 0c06                                   |0076: move-result-object v6
+2ecee2: 3365 4f00                              |0077: if-ne v5, v6, 00c6 // +004f
+2ecee6: 5446 7b79                              |0079: iget-object v6, v4, Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment$9;.this$0:Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment; // field@797b
+2eceea: 7110 ee81 0600                         |007b: invoke-static {v6}, Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment;.access$900:(Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment;)Lcom/nwd/audioset/utils/recyclerview/VerticalPagerSnapHelper; // method@81ee
+2ecef0: 0c06                                   |007e: move-result-object v6
+2ecef2: 6e10 8f52 0500                         |007f: invoke-virtual {v5}, Landroidx/recyclerview/widget/RecyclerView;.getLayoutManager:()Landroidx/recyclerview/widget/RecyclerView$LayoutManager; // method@528f
+2ecef8: 0c03                                   |0082: move-result-object v3
+2ecefa: 6e20 6481 3600                         |0083: invoke-virtual {v6, v3}, Lcom/nwd/audioset/utils/recyclerview/VerticalPagerSnapHelper;.findSnapView:(Landroidx/recyclerview/widget/RecyclerView$LayoutManager;)Landroid/view/View; // method@8164
+2ecf00: 0c06                                   |0086: move-result-object v6
+2ecf02: 3806 9300                              |0087: if-eqz v6, 011a // +0093
+2ecf06: 6e10 8f52 0500                         |0089: invoke-virtual {v5}, Landroidx/recyclerview/widget/RecyclerView;.getLayoutManager:()Landroidx/recyclerview/widget/RecyclerView$LayoutManager; // method@528f
+2ecf0c: 0c05                                   |008c: move-result-object v5
+2ecf0e: 6e20 db50 6500                         |008d: invoke-virtual {v5, v6}, Landroidx/recyclerview/widget/RecyclerView$LayoutManager;.getPosition:(Landroid/view/View;)I // method@50db
+2ecf14: 0a05                                   |0090: move-result v5
+2ecf16: 2206 a710                              |0091: new-instance v6, Ljava/lang/StringBuilder; // type@10a7
+2ecf1a: 7010 3d8e 0600                         |0093: invoke-direct {v6}, Ljava/lang/StringBuilder;.<init>:()V // method@8e3d
+2ecf20: 1a03 e591                              |0096: const-string v3, "onScrollStateChanged behind : position = " // string@91e5
+2ecf24: 6e20 478e 3600                         |0098: invoke-virtual {v6, v3}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@8e47
+2ecf2a: 6e20 438e 5600                         |009b: invoke-virtual {v6, v5}, Ljava/lang/StringBuilder;.append:(I)Ljava/lang/StringBuilder; // method@8e43
+2ecf30: 6e10 508e 0600                         |009e: invoke-virtual {v6}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@8e50
+2ecf36: 0c06                                   |00a1: move-result-object v6
+2ecf38: 7120 5108 6700                         |00a2: invoke-static {v7, v6}, Landroid/util/Log;.d:(Ljava/lang/String;Ljava/lang/String;)I // method@0851
+2ecf3e: 7100 7006 0000                         |00a5: invoke-static {}, Landroid/os/Message;.obtain:()Landroid/os/Message; // method@0670
+2ecf44: 0c06                                   |00a8: move-result-object v6
+2ecf46: 1227                                   |00a9: const/4 v7, #int 2 // #2
+2ecf48: 5967 e300                              |00aa: iput v7, v6, Landroid/os/Message;.what:I // field@00e3
+2ecf4c: b125                                   |00ac: sub-int/2addr v5, v2
+2ecf4e: 7110 9d8d 0500                         |00ad: invoke-static {v5}, Ljava/lang/Integer;.valueOf:(I)Ljava/lang/Integer; // method@8d9d
+2ecf54: 0c05                                   |00b0: move-result-object v5
+2ecf56: 5b65 e100                              |00b1: iput-object v5, v6, Landroid/os/Message;.obj:Ljava/lang/Object; // field@00e1
+2ecf5a: 5445 7b79                              |00b3: iget-object v5, v4, Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment$9;.this$0:Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment; // field@797b
+2ecf5e: 7110 ed81 0500                         |00b5: invoke-static {v5}, Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment;.access$800:(Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment;)Landroid/os/Handler; // method@81ed
+2ecf64: 0c05                                   |00b8: move-result-object v5
+2ecf66: 6e20 5006 7500                         |00b9: invoke-virtual {v5, v7}, Landroid/os/Handler;.removeMessages:(I)V // method@0650
+2ecf6c: 5445 7b79                              |00bc: iget-object v5, v4, Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment$9;.this$0:Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment; // field@797b
+2ecf70: 7110 ed81 0500                         |00be: invoke-static {v5}, Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment;.access$800:(Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment;)Landroid/os/Handler; // method@81ed
+2ecf76: 0c05                                   |00c1: move-result-object v5
+2ecf78: 6e40 5506 6510                         |00c2: invoke-virtual {v5, v6, v0, v1}, Landroid/os/Handler;.sendMessageDelayed:(Landroid/os/Message;J)Z // method@0655
+2ecf7e: 2855                                   |00c5: goto 011a // +0055
+2ecf80: 5446 7b79                              |00c6: iget-object v6, v4, Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment$9;.this$0:Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment; // field@797b
+2ecf84: 7110 eb81 0600                         |00c8: invoke-static {v6}, Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment;.access$600:(Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment;)Landroidx/recyclerview/widget/RecyclerView; // method@81eb
+2ecf8a: 0c06                                   |00cb: move-result-object v6
+2ecf8c: 3365 4e00                              |00cc: if-ne v5, v6, 011a // +004e
+2ecf90: 5446 7b79                              |00ce: iget-object v6, v4, Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment$9;.this$0:Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment; // field@797b
+2ecf94: 7110 e681 0600                         |00d0: invoke-static {v6}, Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment;.access$1000:(Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment;)Lcom/nwd/audioset/utils/recyclerview/VerticalPagerSnapHelper; // method@81e6
+2ecf9a: 0c06                                   |00d3: move-result-object v6
+2ecf9c: 6e10 8f52 0500                         |00d4: invoke-virtual {v5}, Landroidx/recyclerview/widget/RecyclerView;.getLayoutManager:()Landroidx/recyclerview/widget/RecyclerView$LayoutManager; // method@528f
+2ecfa2: 0c03                                   |00d7: move-result-object v3
+2ecfa4: 6e20 6481 3600                         |00d8: invoke-virtual {v6, v3}, Lcom/nwd/audioset/utils/recyclerview/VerticalPagerSnapHelper;.findSnapView:(Landroidx/recyclerview/widget/RecyclerView$LayoutManager;)Landroid/view/View; // method@8164
+2ecfaa: 0c06                                   |00db: move-result-object v6
+2ecfac: 3806 3e00                              |00dc: if-eqz v6, 011a // +003e
+2ecfb0: 6e10 8f52 0500                         |00de: invoke-virtual {v5}, Landroidx/recyclerview/widget/RecyclerView;.getLayoutManager:()Landroidx/recyclerview/widget/RecyclerView$LayoutManager; // method@528f
+2ecfb6: 0c05                                   |00e1: move-result-object v5
+2ecfb8: 6e20 db50 6500                         |00e2: invoke-virtual {v5, v6}, Landroidx/recyclerview/widget/RecyclerView$LayoutManager;.getPosition:(Landroid/view/View;)I // method@50db
+2ecfbe: 0a05                                   |00e5: move-result v5
+2ecfc0: 2206 a710                              |00e6: new-instance v6, Ljava/lang/StringBuilder; // type@10a7
+2ecfc4: 7010 3d8e 0600                         |00e8: invoke-direct {v6}, Ljava/lang/StringBuilder;.<init>:()V // method@8e3d
+2ecfca: 1a03 e791                              |00eb: const-string v3, "onScrollStateChanged heavy_bass : position = " // string@91e7
+2ecfce: 6e20 478e 3600                         |00ed: invoke-virtual {v6, v3}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@8e47
+2ecfd4: 6e20 438e 5600                         |00f0: invoke-virtual {v6, v5}, Ljava/lang/StringBuilder;.append:(I)Ljava/lang/StringBuilder; // method@8e43
+2ecfda: 6e10 508e 0600                         |00f3: invoke-virtual {v6}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@8e50
+2ecfe0: 0c06                                   |00f6: move-result-object v6
+2ecfe2: 7120 5108 6700                         |00f7: invoke-static {v7, v6}, Landroid/util/Log;.d:(Ljava/lang/String;Ljava/lang/String;)I // method@0851
+2ecfe8: 7100 7006 0000                         |00fa: invoke-static {}, Landroid/os/Message;.obtain:()Landroid/os/Message; // method@0670
+2ecfee: 0c06                                   |00fd: move-result-object v6
+2ecff0: 1237                                   |00fe: const/4 v7, #int 3 // #3
+2ecff2: 5967 e300                              |00ff: iput v7, v6, Landroid/os/Message;.what:I // field@00e3
+2ecff6: b125                                   |0101: sub-int/2addr v5, v2
+2ecff8: 7110 9d8d 0500                         |0102: invoke-static {v5}, Ljava/lang/Integer;.valueOf:(I)Ljava/lang/Integer; // method@8d9d
+2ecffe: 0c05                                   |0105: move-result-object v5
+2ed000: 5b65 e100                              |0106: iput-object v5, v6, Landroid/os/Message;.obj:Ljava/lang/Object; // field@00e1
+2ed004: 5445 7b79                              |0108: iget-object v5, v4, Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment$9;.this$0:Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment; // field@797b
+2ed008: 7110 ed81 0500                         |010a: invoke-static {v5}, Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment;.access$800:(Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment;)Landroid/os/Handler; // method@81ed
+2ed00e: 0c05                                   |010d: move-result-object v5
+2ed010: 6e20 5006 7500                         |010e: invoke-virtual {v5, v7}, Landroid/os/Handler;.removeMessages:(I)V // method@0650
+2ed016: 5445 7b79                              |0111: iget-object v5, v4, Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment$9;.this$0:Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment; // field@797b
+2ed01a: 7110 ed81 0500                         |0113: invoke-static {v5}, Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment;.access$800:(Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment;)Landroid/os/Handler; // method@81ed
+2ed020: 0c05                                   |0116: move-result-object v5
+2ed022: 6e40 5506 6510                         |0117: invoke-virtual {v5, v6, v0, v1}, Landroid/os/Handler;.sendMessageDelayed:(Landroid/os/Message;J)Z // method@0655
+2ed028: 0e00                                   |011a: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=454
+        0x0003 line=455
+        0x0019 line=456
+        0x0024 line=457
+        0x0034 line=459
+        0x003c line=460
+        0x0050 line=461
+        0x0054 line=462
+        0x0057 line=463
+        0x005d line=464
+        0x0066 line=465
+        0x0071 line=467
+        0x0079 line=468
+        0x0089 line=470
+        0x0091 line=471
+        0x00a5 line=472
+        0x00aa line=473
+        0x00ad line=474
+        0x00b3 line=475
+        0x00bc line=476
+        0x00c6 line=479
+        0x00ce line=480
+        0x00de line=482
+        0x00e6 line=483
+        0x00fa line=484
+        0x00ff line=485
+        0x0102 line=486
+        0x0108 line=487
+        0x0111 line=488
+      locals        :
+        0x0000 - 0x011b reg=4 this Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment$9;
+        0x0000 - 0x011b reg=5 (null) Landroidx/recyclerview/widget/RecyclerView;
+        0x0000 - 0x011b reg=6 (null) I
+        0x0000 - 0x011b reg=7 (null) I
+
+  source_file_idx   : 3548 (BassFragment.java)
+
+Class #3179            -

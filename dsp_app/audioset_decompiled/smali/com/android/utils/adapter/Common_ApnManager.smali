@@ -1,0 +1,29 @@
+.class Lcom/android/utils/adapter/Common_ApnManager;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Lcom/android/utils/adapter/IApnManager;
+
+
+# static fields
+.field private static final APN:Ljava/lang/String; = "content://telephony/carriers/preferapn"
+
+
+# direct methods
+.method constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public getApnURI()Ljava/lang/String;
+    .locals 1
+
+    const-string v0, "content://telephony/carriers/preferapn"
+
+    return-object v0
+.end method

@@ -1,0 +1,44 @@
+  Class descriptor  : 'Lcom/nwd/audioset/view/fragment/dts/bass/FrequencyAdapter$MyViewHolder;'
+  Access flags      : 0x0001 (PUBLIC)
+  Superclass        : 'Landroidx/recyclerview/widget/RecyclerView$ViewHolder;'
+  Interfaces        -
+  Static fields     -
+  Instance fields   -
+    #0              : (in Lcom/nwd/audioset/view/fragment/dts/bass/FrequencyAdapter$MyViewHolder;)
+      name          : 'index'
+      type          : 'I'
+      access        : 0x0000 ()
+    #1              : (in Lcom/nwd/audioset/view/fragment/dts/bass/FrequencyAdapter$MyViewHolder;)
+      name          : 'this$0'
+      type          : 'Lcom/nwd/audioset/view/fragment/dts/bass/FrequencyAdapter;'
+      access        : 0x1010 (FINAL SYNTHETIC)
+  Direct methods    -
+    #0              : (in Lcom/nwd/audioset/view/fragment/dts/bass/FrequencyAdapter$MyViewHolder;)
+      name          : '<init>'
+      type          : '(Lcom/nwd/audioset/view/fragment/dts/bass/FrequencyAdapter;Landroid/view/View;I)V'
+      access        : 0x10001 (PUBLIC CONSTRUCTOR)
+      code          -
+      registers     : 4
+      ins           : 4
+      outs          : 2
+      insns size    : 8 16-bit code units
+2ee8fc:                                        |[2ee8fc] com.nwd.audioset.view.fragment.dts.bass.FrequencyAdapter$MyViewHolder.<init>:(Lcom/nwd/audioset/view/fragment/dts/bass/FrequencyAdapter;Landroid/view/View;I)V
+2ee90c: 5b01 b479                              |0000: iput-object v1, v0, Lcom/nwd/audioset/view/fragment/dts/bass/FrequencyAdapter$MyViewHolder;.this$0:Lcom/nwd/audioset/view/fragment/dts/bass/FrequencyAdapter; // field@79b4
+2ee910: 7020 ee51 2000                         |0002: invoke-direct {v0, v2}, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;.<init>:(Landroid/view/View;)V // method@51ee
+2ee916: 5903 b279                              |0005: iput v3, v0, Lcom/nwd/audioset/view/fragment/dts/bass/FrequencyAdapter$MyViewHolder;.index:I // field@79b2
+2ee91a: 0e00                                   |0007: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=64
+        0x0002 line=65
+        0x0005 line=66
+      locals        :
+        0x0000 - 0x0008 reg=0 this Lcom/nwd/audioset/view/fragment/dts/bass/FrequencyAdapter$MyViewHolder;
+        0x0000 - 0x0008 reg=1 (null) Lcom/nwd/audioset/view/fragment/dts/bass/FrequencyAdapter;
+        0x0000 - 0x0008 reg=2 (null) Landroid/view/View;
+        0x0000 - 0x0008 reg=3 (null) I
+
+  Virtual methods   -
+  source_file_idx   : 6829 (FrequencyAdapter.java)
+
+Class #3181            -

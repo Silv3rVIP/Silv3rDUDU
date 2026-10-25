@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <boolean name="ZDATA_SKIN_MAKE" value="false" />
+    <boolean name="ZDATA_UI_ADJUST_ERROR" value="false" />
+    <boolean name="ZDATA_NORMAL_NAVI_SELECTED_CLASS" value="true" />
+    <boolean name="ZDATA_OPEN_KEY_DEBUG" value="false" />
+    <boolean name="ZDATA_MUSIC_ITEM_EXPAND" value="false" />
+    <boolean name="ZDATA_AUTO_ACTION_HLD" value="false" />
+    <string name="ZDATA_HLD2_DEVICE2"></string>
+    <boolean name="ZDATA_MINIM_MUSIC_LAST_IS_LIST" value="false" />
+    <boolean name="ZDATA_CHANNEL_TEST_RES" value="true" />
+    <boolean name="ZDATA_FRIST_LOAD_PAPER" value="false" />
+    <long name="ZDATA_DUDU_INSTALL_TIME" value="1788726021970" />
+    <boolean name="ZDATA_LAUNCHER_SHOW_STATE" value="true" />
+    <int name="ZDATA_LAST_SELECT_REGION" value="100" />
+    <boolean name="ZDATA_LS_UI_ADJUST" value="false" />
+    <string name="ZDATA_HLD2_DEVICE"></string>
+    <int name="ZDATA_PIP_SAME_SCREEN_WIDTH" value="455" />
+    <long name="ZDATA_LAST_RESTART_TIME" value="1788727192910" />
+    <boolean name="ZDATA_MINIM_MUSIC_LAST_IS_LRC" value="false" />
+    <string name="ZDATA_PAPER_LAST_PATH_NIGHT">/data/user/0/com.dudu.autoui/cache/paper/FA61DCD14EC52C3BC98FF5B673BB41F7.png</string>
+    <string name="ZDATA_RECENT_APPS">|com.nwd.n.remote||com.dudu.setting||com.android.chrome||com.llsl.viper4android||com.nwd.android.phone||com.android.dialer|</string>
+    <string name="SDATA_DUDU_DEV_CLAZZ"></string>
+    <boolean name="ZDATA_PLAN_WARN" value="false" />
+</map>

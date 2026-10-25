@@ -1,0 +1,875 @@
+  Class descriptor  : 'Lcom/nwd/audioset/view/fragment/dts/DtsFragment;'
+  Access flags      : 0x0001 (PUBLIC)
+  Superclass        : 'Lcom/nwd/audioset/mvpbase/BaseFragment;'
+  Interfaces        -
+    #0              : 'Landroid/view/View$OnClickListener;'
+    #1              : 'Lcom/nwd/audioset/view/fragment/dts/SwitchListener;'
+  Static fields     -
+    #0              : (in Lcom/nwd/audioset/view/fragment/dts/DtsFragment;)
+      name          : 'DEF_GIAN'
+      type          : 'I'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 5
+    #1              : (in Lcom/nwd/audioset/view/fragment/dts/DtsFragment;)
+      name          : 'TAG'
+      type          : 'Ljava/lang/String;'
+      access        : 0x001a (PRIVATE STATIC FINAL)
+      value         : "dsp3-DtsFragment"
+  Instance fields   -
+    #0              : (in Lcom/nwd/audioset/view/fragment/dts/DtsFragment;)
+      name          : 'bassFragment'
+      type          : 'Landroidx/fragment/app/Fragment;'
+      access        : 0x0002 (PRIVATE)
+    #1              : (in Lcom/nwd/audioset/view/fragment/dts/DtsFragment;)
+      name          : 'bass_tv'
+      type          : 'Lcom/nwd/audioset/view/nwdview/StrokeTextView;'
+      access        : 0x0002 (PRIVATE)
+    #2              : (in Lcom/nwd/audioset/view/fragment/dts/DtsFragment;)
+      name          : 'binding'
+      type          : 'Lcom/nwd/audioset/databinding/FrgDtsBinding;'
+      access        : 0x0002 (PRIVATE)
+    #3              : (in Lcom/nwd/audioset/view/fragment/dts/DtsFragment;)
+      name          : 'sceneModeDtsFragment'
+      type          : 'Landroidx/fragment/app/Fragment;'
+      access        : 0x0002 (PRIVATE)
+    #4              : (in Lcom/nwd/audioset/view/fragment/dts/DtsFragment;)
+      name          : 'scene_mode_tv'
+      type          : 'Lcom/nwd/audioset/view/nwdview/StrokeTextView;'
+      access        : 0x0002 (PRIVATE)
+    #5              : (in Lcom/nwd/audioset/view/fragment/dts/DtsFragment;)
+      name          : 'soundGatheringFragment'
+      type          : 'Landroidx/fragment/app/Fragment;'
+      access        : 0x0002 (PRIVATE)
+    #6              : (in Lcom/nwd/audioset/view/fragment/dts/DtsFragment;)
+      name          : 'sound_gathering_tv'
+      type          : 'Lcom/nwd/audioset/view/nwdview/StrokeTextView;'
+      access        : 0x0002 (PRIVATE)
+    #7              : (in Lcom/nwd/audioset/view/fragment/dts/DtsFragment;)
+      name          : 'surroundModeFragment'
+      type          : 'Landroidx/fragment/app/Fragment;'
+      access        : 0x0002 (PRIVATE)
+    #8              : (in Lcom/nwd/audioset/view/fragment/dts/DtsFragment;)
+      name          : 'surround_mode_tv'
+      type          : 'Lcom/nwd/audioset/view/nwdview/StrokeTextView;'
+      access        : 0x0002 (PRIVATE)
+    #9              : (in Lcom/nwd/audioset/view/fragment/dts/DtsFragment;)
+      name          : 'virtualFragment'
+      type          : 'Landroidx/fragment/app/Fragment;'
+      access        : 0x0002 (PRIVATE)
+    #10              : (in Lcom/nwd/audioset/view/fragment/dts/DtsFragment;)
+      name          : 'virtual_tv'
+      type          : 'Lcom/nwd/audioset/view/nwdview/StrokeTextView;'
+      access        : 0x0002 (PRIVATE)
+  Direct methods    -
+    #0              : (in Lcom/nwd/audioset/view/fragment/dts/DtsFragment;)
+      name          : '<init>'
+      type          : '()V'
+      access        : 0x10001 (PUBLIC CONSTRUCTOR)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 1
+      insns size    : 4 16-bit code units
+2ec378:                                        |[2ec378] com.nwd.audioset.view.fragment.dts.DtsFragment.<init>:()V
+2ec388: 7010 ab80 0000                         |0000: invoke-direct {v0}, Lcom/nwd/audioset/mvpbase/BaseFragment;.<init>:()V // method@80ab
+2ec38e: 0e00                                   |0003: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=39
+      locals        :
+        0x0000 - 0x0004 reg=0 this Lcom/nwd/audioset/view/fragment/dts/DtsFragment;
+
+    #1              : (in Lcom/nwd/audioset/view/fragment/dts/DtsFragment;)
+      name          : 'access$000'
+      type          : '(Lcom/nwd/audioset/view/fragment/dts/DtsFragment;)Landroidx/fragment/app/Fragment;'
+      access        : 0x1008 (STATIC SYNTHETIC)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 0
+      insns size    : 3 16-bit code units
+2ec310:                                        |[2ec310] com.nwd.audioset.view.fragment.dts.DtsFragment.access$000:(Lcom/nwd/audioset/view/fragment/dts/DtsFragment;)Landroidx/fragment/app/Fragment;
+2ec320: 5400 6879                              |0000: iget-object v0, v0, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.sceneModeDtsFragment:Landroidx/fragment/app/Fragment; // field@7968
+2ec324: 1100                                   |0002: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=39
+      locals        :
+        0x0000 - 0x0003 reg=0 (null) Lcom/nwd/audioset/view/fragment/dts/DtsFragment;
+
+    #2              : (in Lcom/nwd/audioset/view/fragment/dts/DtsFragment;)
+      name          : 'access$002'
+      type          : '(Lcom/nwd/audioset/view/fragment/dts/DtsFragment;Landroidx/fragment/app/Fragment;)Landroidx/fragment/app/Fragment;'
+      access        : 0x1008 (STATIC SYNTHETIC)
+      code          -
+      registers     : 2
+      ins           : 2
+      outs          : 0
+      insns size    : 3 16-bit code units
+2ec328:                                        |[2ec328] com.nwd.audioset.view.fragment.dts.DtsFragment.access$002:(Lcom/nwd/audioset/view/fragment/dts/DtsFragment;Landroidx/fragment/app/Fragment;)Landroidx/fragment/app/Fragment;
+2ec338: 5b01 6879                              |0000: iput-object v1, v0, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.sceneModeDtsFragment:Landroidx/fragment/app/Fragment; // field@7968
+2ec33c: 1101                                   |0002: return-object v1
+      catches       : (none)
+      positions     :
+        0x0000 line=39
+      locals        :
+        0x0000 - 0x0003 reg=0 (null) Lcom/nwd/audioset/view/fragment/dts/DtsFragment;
+        0x0000 - 0x0003 reg=1 (null) Landroidx/fragment/app/Fragment;
+
+    #3              : (in Lcom/nwd/audioset/view/fragment/dts/DtsFragment;)
+      name          : 'access$100'
+      type          : '(Lcom/nwd/audioset/view/fragment/dts/DtsFragment;Landroidx/fragment/app/Fragment;)V'
+      access        : 0x1008 (STATIC SYNTHETIC)
+      code          -
+      registers     : 2
+      ins           : 2
+      outs          : 2
+      insns size    : 4 16-bit code units
+2ec390:                                        |[2ec390] com.nwd.audioset.view.fragment.dts.DtsFragment.access$100:(Lcom/nwd/audioset/view/fragment/dts/DtsFragment;Landroidx/fragment/app/Fragment;)V
+2ec3a0: 7020 cc81 1000                         |0000: invoke-direct {v0, v1}, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.showFragment:(Landroidx/fragment/app/Fragment;)V // method@81cc
+2ec3a6: 0e00                                   |0003: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=39
+      locals        :
+        0x0000 - 0x0004 reg=0 (null) Lcom/nwd/audioset/view/fragment/dts/DtsFragment;
+        0x0000 - 0x0004 reg=1 (null) Landroidx/fragment/app/Fragment;
+
+    #4              : (in Lcom/nwd/audioset/view/fragment/dts/DtsFragment;)
+      name          : 'access$200'
+      type          : '(Lcom/nwd/audioset/view/fragment/dts/DtsFragment;Ljava/lang/String;)V'
+      access        : 0x1008 (STATIC SYNTHETIC)
+      code          -
+      registers     : 2
+      ins           : 2
+      outs          : 2
+      insns size    : 4 16-bit code units
+2ec3a8:                                        |[2ec3a8] com.nwd.audioset.view.fragment.dts.DtsFragment.access$200:(Lcom/nwd/audioset/view/fragment/dts/DtsFragment;Ljava/lang/String;)V
+2ec3b8: 7020 cd81 1000                         |0000: invoke-direct {v0, v1}, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.updateButtonBgUi:(Ljava/lang/String;)V // method@81cd
+2ec3be: 0e00                                   |0003: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=39
+      locals        :
+        0x0000 - 0x0004 reg=0 (null) Lcom/nwd/audioset/view/fragment/dts/DtsFragment;
+        0x0000 - 0x0004 reg=1 (null) Ljava/lang/String;
+
+    #5              : (in Lcom/nwd/audioset/view/fragment/dts/DtsFragment;)
+      name          : 'changeView'
+      type          : '()V'
+      access        : 0x0002 (PRIVATE)
+      code          -
+      registers     : 6
+      ins           : 1
+      outs          : 4
+      insns size    : 109 16-bit code units
+2ec3c0:                                        |[2ec3c0] com.nwd.audioset.view.fragment.dts.DtsFragment.changeView:()V
+2ec3d0: 2200 190f                              |0000: new-instance v0, Lcom/nwd/audioset/utils/ViewAdapter; // type@0f19
+2ec3d4: 6e10 c781 0500                         |0002: invoke-virtual {v5}, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.requireContext:()Landroid/content/Context; // method@81c7
+2ec3da: 0c01                                   |0005: move-result-object v1
+2ec3dc: 7020 3081 1000                         |0006: invoke-direct {v0, v1}, Lcom/nwd/audioset/utils/ViewAdapter;.<init>:(Landroid/content/Context;)V // method@8130
+2ec3e2: 5451 6579                              |0009: iget-object v1, v5, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.binding:Lcom/nwd/audioset/databinding/FrgDtsBinding; // field@7965
+2ec3e6: 5411 3777                              |000b: iget-object v1, v1, Lcom/nwd/audioset/databinding/FrgDtsBinding;.sceneModeTv:Lcom/nwd/audioset/view/nwdview/StrokeTextView; // field@7737
+2ec3ea: 1402 d201 077f                         |000d: const v2, #float 1.79455e+38 // #7f0701d2
+2ec3f0: 6e30 3881 1002                         |0010: invoke-virtual {v0, v1, v2}, Lcom/nwd/audioset/utils/ViewAdapter;.setMarginTop:(Landroid/view/View;I)V // method@8138
+2ec3f6: 5451 6579                              |0013: iget-object v1, v5, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.binding:Lcom/nwd/audioset/databinding/FrgDtsBinding; // field@7965
+2ec3fa: 5411 3777                              |0015: iget-object v1, v1, Lcom/nwd/audioset/databinding/FrgDtsBinding;.sceneModeTv:Lcom/nwd/audioset/view/nwdview/StrokeTextView; // field@7737
+2ec3fe: 1402 d101 077f                         |0017: const v2, #float 1.79455e+38 // #7f0701d1
+2ec404: 6e30 3681 1002                         |001a: invoke-virtual {v0, v1, v2}, Lcom/nwd/audioset/utils/ViewAdapter;.setMarginLeft:(Landroid/view/View;I)V // method@8136
+2ec40a: 5451 6579                              |001d: iget-object v1, v5, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.binding:Lcom/nwd/audioset/databinding/FrgDtsBinding; // field@7965
+2ec40e: 5411 3777                              |001f: iget-object v1, v1, Lcom/nwd/audioset/databinding/FrgDtsBinding;.sceneModeTv:Lcom/nwd/audioset/view/nwdview/StrokeTextView; // field@7737
+2ec412: 1402 d001 077f                         |0021: const v2, #float 1.79455e+38 // #7f0701d0
+2ec418: 1403 d501 077f                         |0024: const v3, #float 1.79455e+38 // #7f0701d5
+2ec41e: 6e40 3b81 1023                         |0027: invoke-virtual {v0, v1, v3, v2}, Lcom/nwd/audioset/utils/ViewAdapter;.setSize:(Landroid/view/View;II)V // method@813b
+2ec424: 5451 6579                              |002a: iget-object v1, v5, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.binding:Lcom/nwd/audioset/databinding/FrgDtsBinding; // field@7965
+2ec428: 5411 3777                              |002c: iget-object v1, v1, Lcom/nwd/audioset/databinding/FrgDtsBinding;.sceneModeTv:Lcom/nwd/audioset/view/nwdview/StrokeTextView; // field@7737
+2ec42c: 1404 d401 077f                         |002e: const v4, #float 1.79455e+38 // #7f0701d4
+2ec432: 6e30 3d81 1004                         |0031: invoke-virtual {v0, v1, v4}, Lcom/nwd/audioset/utils/ViewAdapter;.setTextSize:(Landroid/widget/TextView;I)V // method@813d
+2ec438: 5451 6579                              |0034: iget-object v1, v5, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.binding:Lcom/nwd/audioset/databinding/FrgDtsBinding; // field@7965
+2ec43c: 5411 3b77                              |0036: iget-object v1, v1, Lcom/nwd/audioset/databinding/FrgDtsBinding;.virtualTv:Lcom/nwd/audioset/view/nwdview/StrokeTextView; // field@773b
+2ec440: 6e40 3b81 1023                         |0038: invoke-virtual {v0, v1, v3, v2}, Lcom/nwd/audioset/utils/ViewAdapter;.setSize:(Landroid/view/View;II)V // method@813b
+2ec446: 5451 6579                              |003b: iget-object v1, v5, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.binding:Lcom/nwd/audioset/databinding/FrgDtsBinding; // field@7965
+2ec44a: 5411 3b77                              |003d: iget-object v1, v1, Lcom/nwd/audioset/databinding/FrgDtsBinding;.virtualTv:Lcom/nwd/audioset/view/nwdview/StrokeTextView; // field@773b
+2ec44e: 6e30 3d81 1004                         |003f: invoke-virtual {v0, v1, v4}, Lcom/nwd/audioset/utils/ViewAdapter;.setTextSize:(Landroid/widget/TextView;I)V // method@813d
+2ec454: 5451 6579                              |0042: iget-object v1, v5, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.binding:Lcom/nwd/audioset/databinding/FrgDtsBinding; // field@7965
+2ec458: 5411 3877                              |0044: iget-object v1, v1, Lcom/nwd/audioset/databinding/FrgDtsBinding;.soundGatheringTv:Lcom/nwd/audioset/view/nwdview/StrokeTextView; // field@7738
+2ec45c: 6e40 3b81 1023                         |0046: invoke-virtual {v0, v1, v3, v2}, Lcom/nwd/audioset/utils/ViewAdapter;.setSize:(Landroid/view/View;II)V // method@813b
+2ec462: 5451 6579                              |0049: iget-object v1, v5, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.binding:Lcom/nwd/audioset/databinding/FrgDtsBinding; // field@7965
+2ec466: 5411 3877                              |004b: iget-object v1, v1, Lcom/nwd/audioset/databinding/FrgDtsBinding;.soundGatheringTv:Lcom/nwd/audioset/view/nwdview/StrokeTextView; // field@7738
+2ec46a: 6e30 3d81 1004                         |004d: invoke-virtual {v0, v1, v4}, Lcom/nwd/audioset/utils/ViewAdapter;.setTextSize:(Landroid/widget/TextView;I)V // method@813d
+2ec470: 5451 6579                              |0050: iget-object v1, v5, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.binding:Lcom/nwd/audioset/databinding/FrgDtsBinding; // field@7965
+2ec474: 5411 3977                              |0052: iget-object v1, v1, Lcom/nwd/audioset/databinding/FrgDtsBinding;.surroundModeTv:Lcom/nwd/audioset/view/nwdview/StrokeTextView; // field@7739
+2ec478: 6e40 3b81 1023                         |0054: invoke-virtual {v0, v1, v3, v2}, Lcom/nwd/audioset/utils/ViewAdapter;.setSize:(Landroid/view/View;II)V // method@813b
+2ec47e: 5451 6579                              |0057: iget-object v1, v5, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.binding:Lcom/nwd/audioset/databinding/FrgDtsBinding; // field@7965
+2ec482: 5411 3977                              |0059: iget-object v1, v1, Lcom/nwd/audioset/databinding/FrgDtsBinding;.surroundModeTv:Lcom/nwd/audioset/view/nwdview/StrokeTextView; // field@7739
+2ec486: 6e30 3d81 1004                         |005b: invoke-virtual {v0, v1, v4}, Lcom/nwd/audioset/utils/ViewAdapter;.setTextSize:(Landroid/widget/TextView;I)V // method@813d
+2ec48c: 5451 6579                              |005e: iget-object v1, v5, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.binding:Lcom/nwd/audioset/databinding/FrgDtsBinding; // field@7965
+2ec490: 5411 3477                              |0060: iget-object v1, v1, Lcom/nwd/audioset/databinding/FrgDtsBinding;.bassTv:Lcom/nwd/audioset/view/nwdview/StrokeTextView; // field@7734
+2ec494: 6e40 3b81 1023                         |0062: invoke-virtual {v0, v1, v3, v2}, Lcom/nwd/audioset/utils/ViewAdapter;.setSize:(Landroid/view/View;II)V // method@813b
+2ec49a: 5451 6579                              |0065: iget-object v1, v5, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.binding:Lcom/nwd/audioset/databinding/FrgDtsBinding; // field@7965
+2ec49e: 5411 3477                              |0067: iget-object v1, v1, Lcom/nwd/audioset/databinding/FrgDtsBinding;.bassTv:Lcom/nwd/audioset/view/nwdview/StrokeTextView; // field@7734
+2ec4a2: 6e30 3d81 1004                         |0069: invoke-virtual {v0, v1, v4}, Lcom/nwd/audioset/utils/ViewAdapter;.setTextSize:(Landroid/widget/TextView;I)V // method@813d
+2ec4a8: 0e00                                   |006c: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=89
+        0x0009 line=90
+        0x0013 line=91
+        0x001d line=92
+        0x002a line=93
+        0x0034 line=95
+        0x003b line=96
+        0x0042 line=98
+        0x0049 line=99
+        0x0050 line=101
+        0x0057 line=102
+        0x005e line=104
+        0x0065 line=105
+      locals        :
+        0x0000 - 0x006d reg=5 this Lcom/nwd/audioset/view/fragment/dts/DtsFragment;
+
+    #6              : (in Lcom/nwd/audioset/view/fragment/dts/DtsFragment;)
+      name          : 'setButtonBG'
+      type          : '()V'
+      access        : 0x0002 (PRIVATE)
+      code          -
+      registers     : 5
+      ins           : 1
+      outs          : 3
+      insns size    : 50 16-bit code units
+2ec814:                                        |[2ec814] com.nwd.audioset.view.fragment.dts.DtsFragment.setButtonBG:()V
+2ec824: 5440 6679                              |0000: iget-object v0, v4, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.mContext:Landroid/content/Context; // field@7966
+2ec828: 7110 ea80 0000                         |0002: invoke-static {v0}, Lcom/nwd/audioset/utils/InternationalPictureUtils;.getInstance:(Landroid/content/Context;)Lcom/nwd/audioset/utils/InternationalPictureUtils; // method@80ea
+2ec82e: 0c00                                   |0005: move-result-object v0
+2ec830: 5401 5478                              |0006: iget-object v1, v0, Lcom/nwd/audioset/utils/InternationalPictureUtils;.eq_btn_d:Ljava/lang/String; // field@7854
+2ec834: 1402 5300 0d7f                         |0008: const v2, #float 1.87423e+38 // #7f0d0053
+2ec83a: 6e30 e880 1002                         |000b: invoke-virtual {v0, v1, v2}, Lcom/nwd/audioset/utils/InternationalPictureUtils;.getDrawable:(Ljava/lang/String;I)Landroid/graphics/drawable/Drawable; // method@80e8
+2ec840: 0c01                                   |000e: move-result-object v1
+2ec842: 5402 5778                              |000f: iget-object v2, v0, Lcom/nwd/audioset/utils/InternationalPictureUtils;.eq_btn_n:Ljava/lang/String; // field@7857
+2ec846: 1403 5600 0d7f                         |0011: const v3, #float 1.87423e+38 // #7f0d0056
+2ec84c: 6e30 e880 2003                         |0014: invoke-virtual {v0, v2, v3}, Lcom/nwd/audioset/utils/InternationalPictureUtils;.getDrawable:(Ljava/lang/String;I)Landroid/graphics/drawable/Drawable; // method@80e8
+2ec852: 0c00                                   |0017: move-result-object v0
+2ec854: 5442 6979                              |0018: iget-object v2, v4, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.scene_mode_tv:Lcom/nwd/audioset/view/nwdview/StrokeTextView; // field@7969
+2ec858: 7130 1985 0201                         |001a: invoke-static {v2, v0, v1}, Lcom/nwd/dsp/uitls/AppUtil;.viewSetBG:(Landroid/view/View;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V // method@8519
+2ec85e: 5442 6f79                              |001d: iget-object v2, v4, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.virtual_tv:Lcom/nwd/audioset/view/nwdview/StrokeTextView; // field@796f
+2ec862: 7130 1985 0201                         |001f: invoke-static {v2, v0, v1}, Lcom/nwd/dsp/uitls/AppUtil;.viewSetBG:(Landroid/view/View;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V // method@8519
+2ec868: 5442 6b79                              |0022: iget-object v2, v4, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.sound_gathering_tv:Lcom/nwd/audioset/view/nwdview/StrokeTextView; // field@796b
+2ec86c: 7130 1985 0201                         |0024: invoke-static {v2, v0, v1}, Lcom/nwd/dsp/uitls/AppUtil;.viewSetBG:(Landroid/view/View;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V // method@8519
+2ec872: 5442 6d79                              |0027: iget-object v2, v4, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.surround_mode_tv:Lcom/nwd/audioset/view/nwdview/StrokeTextView; // field@796d
+2ec876: 7130 1985 0201                         |0029: invoke-static {v2, v0, v1}, Lcom/nwd/dsp/uitls/AppUtil;.viewSetBG:(Landroid/view/View;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V // method@8519
+2ec87c: 5442 6479                              |002c: iget-object v2, v4, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.bass_tv:Lcom/nwd/audioset/view/nwdview/StrokeTextView; // field@7964
+2ec880: 7130 1985 0201                         |002e: invoke-static {v2, v0, v1}, Lcom/nwd/dsp/uitls/AppUtil;.viewSetBG:(Landroid/view/View;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V // method@8519
+2ec886: 0e00                                   |0031: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=240
+        0x0006 line=241
+        0x000f line=242
+        0x0018 line=243
+        0x001d line=244
+        0x0022 line=245
+        0x0027 line=246
+        0x002c line=247
+      locals        :
+        0x0000 - 0x0032 reg=4 this Lcom/nwd/audioset/view/fragment/dts/DtsFragment;
+
+    #7              : (in Lcom/nwd/audioset/view/fragment/dts/DtsFragment;)
+      name          : 'setSwitchData'
+      type          : '(Z)V'
+      access        : 0x0002 (PRIVATE)
+      code          -
+      registers     : 4
+      ins           : 2
+      outs          : 2
+      insns size    : 93 16-bit code units
+2ec8cc:                                        |[2ec8cc] com.nwd.audioset.view.fragment.dts.DtsFragment.setSwitchData:(Z)V
+2ec8dc: 2200 a710                              |0000: new-instance v0, Ljava/lang/StringBuilder; // type@10a7
+2ec8e0: 7010 3d8e 0000                         |0002: invoke-direct {v0}, Ljava/lang/StringBuilder;.<init>:()V // method@8e3d
+2ec8e6: 1a01 405f                              |0005: const-string v1, "dts Switch = " // string@5f40
+2ec8ea: 6e20 478e 1000                         |0007: invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@8e47
+2ec8f0: 6e20 488e 3000                         |000a: invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;.append:(Z)Ljava/lang/StringBuilder; // method@8e48
+2ec8f6: 6e10 508e 0000                         |000d: invoke-virtual {v0}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@8e50
+2ec8fc: 0c00                                   |0010: move-result-object v0
+2ec8fe: 1a01 eb5e                              |0011: const-string v1, "dsp3-DtsFragment" // string@5eeb
+2ec902: 7120 5108 0100                         |0013: invoke-static {v1, v0}, Landroid/util/Log;.d:(Ljava/lang/String;Ljava/lang/String;)I // method@0851
+2ec908: 5420 6f79                              |0016: iget-object v0, v2, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.virtual_tv:Lcom/nwd/audioset/view/nwdview/StrokeTextView; // field@796f
+2ec90c: 3900 0300                              |0018: if-nez v0, 001b // +0003
+2ec910: 0e00                                   |001a: return-void
+2ec912: 6e20 1884 3000                         |001b: invoke-virtual {v0, v3}, Lcom/nwd/audioset/view/nwdview/StrokeTextView;.setEnabled:(Z)V // method@8418
+2ec918: 5420 6b79                              |001e: iget-object v0, v2, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.sound_gathering_tv:Lcom/nwd/audioset/view/nwdview/StrokeTextView; // field@796b
+2ec91c: 6e20 1884 3000                         |0020: invoke-virtual {v0, v3}, Lcom/nwd/audioset/view/nwdview/StrokeTextView;.setEnabled:(Z)V // method@8418
+2ec922: 5420 6d79                              |0023: iget-object v0, v2, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.surround_mode_tv:Lcom/nwd/audioset/view/nwdview/StrokeTextView; // field@796d
+2ec926: 6e20 1884 3000                         |0025: invoke-virtual {v0, v3}, Lcom/nwd/audioset/view/nwdview/StrokeTextView;.setEnabled:(Z)V // method@8418
+2ec92c: 5420 6479                              |0028: iget-object v0, v2, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.bass_tv:Lcom/nwd/audioset/view/nwdview/StrokeTextView; // field@7964
+2ec930: 6e20 1884 3000                         |002a: invoke-virtual {v0, v3}, Lcom/nwd/audioset/view/nwdview/StrokeTextView;.setEnabled:(Z)V // method@8418
+2ec936: 3803 1900                              |002d: if-eqz v3, 0046 // +0019
+2ec93a: 5423 6f79                              |002f: iget-object v3, v2, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.virtual_tv:Lcom/nwd/audioset/view/nwdview/StrokeTextView; // field@796f
+2ec93e: 1500 803f                              |0031: const/high16 v0, #int 1065353216 // #3f80
+2ec942: 6e20 1784 0300                         |0033: invoke-virtual {v3, v0}, Lcom/nwd/audioset/view/nwdview/StrokeTextView;.setAlpha:(F)V // method@8417
+2ec948: 5423 6b79                              |0036: iget-object v3, v2, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.sound_gathering_tv:Lcom/nwd/audioset/view/nwdview/StrokeTextView; // field@796b
+2ec94c: 6e20 1784 0300                         |0038: invoke-virtual {v3, v0}, Lcom/nwd/audioset/view/nwdview/StrokeTextView;.setAlpha:(F)V // method@8417
+2ec952: 5423 6d79                              |003b: iget-object v3, v2, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.surround_mode_tv:Lcom/nwd/audioset/view/nwdview/StrokeTextView; // field@796d
+2ec956: 6e20 1784 0300                         |003d: invoke-virtual {v3, v0}, Lcom/nwd/audioset/view/nwdview/StrokeTextView;.setAlpha:(F)V // method@8417
+2ec95c: 5423 6479                              |0040: iget-object v3, v2, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.bass_tv:Lcom/nwd/audioset/view/nwdview/StrokeTextView; // field@7964
+2ec960: 6e20 1784 0300                         |0042: invoke-virtual {v3, v0}, Lcom/nwd/audioset/view/nwdview/StrokeTextView;.setAlpha:(F)V // method@8417
+2ec966: 2817                                   |0045: goto 005c // +0017
+2ec968: 5423 6f79                              |0046: iget-object v3, v2, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.virtual_tv:Lcom/nwd/audioset/view/nwdview/StrokeTextView; // field@796f
+2ec96c: 1500 003f                              |0048: const/high16 v0, #int 1056964608 // #3f00
+2ec970: 6e20 1784 0300                         |004a: invoke-virtual {v3, v0}, Lcom/nwd/audioset/view/nwdview/StrokeTextView;.setAlpha:(F)V // method@8417
+2ec976: 5423 6b79                              |004d: iget-object v3, v2, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.sound_gathering_tv:Lcom/nwd/audioset/view/nwdview/StrokeTextView; // field@796b
+2ec97a: 6e20 1784 0300                         |004f: invoke-virtual {v3, v0}, Lcom/nwd/audioset/view/nwdview/StrokeTextView;.setAlpha:(F)V // method@8417
+2ec980: 5423 6d79                              |0052: iget-object v3, v2, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.surround_mode_tv:Lcom/nwd/audioset/view/nwdview/StrokeTextView; // field@796d
+2ec984: 6e20 1784 0300                         |0054: invoke-virtual {v3, v0}, Lcom/nwd/audioset/view/nwdview/StrokeTextView;.setAlpha:(F)V // method@8417
+2ec98a: 5423 6479                              |0057: iget-object v3, v2, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.bass_tv:Lcom/nwd/audioset/view/nwdview/StrokeTextView; // field@7964
+2ec98e: 6e20 1784 0300                         |0059: invoke-virtual {v3, v0}, Lcom/nwd/audioset/view/nwdview/StrokeTextView;.setAlpha:(F)V // method@8417
+2ec994: 0e00                                   |005c: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=130
+        0x0016 line=131
+        0x001b line=134
+        0x001e line=135
+        0x0023 line=136
+        0x0028 line=137
+        0x002f line=140
+        0x0036 line=141
+        0x003b line=142
+        0x0040 line=143
+        0x0046 line=145
+        0x004d line=146
+        0x0052 line=147
+        0x0057 line=148
+      locals        :
+        0x0000 - 0x005d reg=2 this Lcom/nwd/audioset/view/fragment/dts/DtsFragment;
+        0x0000 - 0x005d reg=3 (null) Z
+
+    #8              : (in Lcom/nwd/audioset/view/fragment/dts/DtsFragment;)
+      name          : 'showFragment'
+      type          : '(Landroidx/fragment/app/Fragment;)V'
+      access        : 0x0002 (PRIVATE)
+      code          -
+      registers     : 5
+      ins           : 2
+      outs          : 3
+      insns size    : 84 16-bit code units
+2ec9ac:                                        |[2ec9ac] com.nwd.audioset.view.fragment.dts.DtsFragment.showFragment:(Landroidx/fragment/app/Fragment;)V
+2ec9bc: 2200 a710                              |0000: new-instance v0, Ljava/lang/StringBuilder; // type@10a7
+2ec9c0: 7010 3d8e 0000                         |0002: invoke-direct {v0}, Ljava/lang/StringBuilder;.<init>:()V // method@8e3d
+2ec9c6: 1a01 fba5                              |0005: const-string v1, "showFragment : " // string@a5fb
+2ec9ca: 6e20 478e 1000                         |0007: invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@8e47
+2ec9d0: 6e10 e28d 0400                         |000a: invoke-virtual {v4}, Ljava/lang/Object;.getClass:()Ljava/lang/Class; // method@8de2
+2ec9d6: 0c01                                   |000d: move-result-object v1
+2ec9d8: 6e10 558d 0100                         |000e: invoke-virtual {v1}, Ljava/lang/Class;.getName:()Ljava/lang/String; // method@8d55
+2ec9de: 0c01                                   |0011: move-result-object v1
+2ec9e0: 6e20 478e 1000                         |0012: invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@8e47
+2ec9e6: 6e10 508e 0000                         |0015: invoke-virtual {v0}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@8e50
+2ec9ec: 0c00                                   |0018: move-result-object v0
+2ec9ee: 1a01 eb5e                              |0019: const-string v1, "dsp3-DtsFragment" // string@5eeb
+2ec9f2: 7120 5108 0100                         |001b: invoke-static {v1, v0}, Landroid/util/Log;.d:(Ljava/lang/String;Ljava/lang/String;)I // method@0851
+2ec9f8: 6e10 bc81 0300                         |001e: invoke-virtual {v3}, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.getChildFragmentManager:()Landroidx/fragment/app/FragmentManager; // method@81bc
+2ec9fe: 0c00                                   |0021: move-result-object v0
+2eca00: 6e10 4348 0000                         |0022: invoke-virtual {v0}, Landroidx/fragment/app/FragmentManager;.beginTransaction:()Landroidx/fragment/app/FragmentTransaction; // method@4843
+2eca06: 0c01                                   |0025: move-result-object v1
+2eca08: 6e10 4d48 0000                         |0026: invoke-virtual {v0}, Landroidx/fragment/app/FragmentManager;.getFragments:()Ljava/util/List; // method@484d
+2eca0e: 0c00                                   |0029: move-result-object v0
+2eca10: 3800 1600                              |002a: if-eqz v0, 0040 // +0016
+2eca14: 7210 fc8f 0000                         |002c: invoke-interface {v0}, Ljava/util/List;.iterator:()Ljava/util/Iterator; // method@8ffc
+2eca1a: 0c00                                   |002f: move-result-object v0
+2eca1c: 7210 d48f 0000                         |0030: invoke-interface {v0}, Ljava/util/Iterator;.hasNext:()Z // method@8fd4
+2eca22: 0a02                                   |0033: move-result v2
+2eca24: 3802 0c00                              |0034: if-eqz v2, 0040 // +000c
+2eca28: 7210 d58f 0000                         |0036: invoke-interface {v0}, Ljava/util/Iterator;.next:()Ljava/lang/Object; // method@8fd5
+2eca2e: 0c02                                   |0039: move-result-object v2
+2eca30: 1f02 5308                              |003a: check-cast v2, Landroidx/fragment/app/Fragment; // type@0853
+2eca34: 6e20 8b49 2100                         |003c: invoke-virtual {v1, v2}, Landroidx/fragment/app/FragmentTransaction;.hide:(Landroidx/fragment/app/Fragment;)Landroidx/fragment/app/FragmentTransaction; // method@498b
+2eca3a: 28f1                                   |003f: goto 0030 // -000f
+2eca3c: 6e10 0d47 0400                         |0040: invoke-virtual {v4}, Landroidx/fragment/app/Fragment;.isAdded:()Z // method@470d
+2eca42: 0a00                                   |0043: move-result v0
+2eca44: 3800 0600                              |0044: if-eqz v0, 004a // +0006
+2eca48: 6e20 9e49 4100                         |0046: invoke-virtual {v1, v4}, Landroidx/fragment/app/FragmentTransaction;.show:(Landroidx/fragment/app/Fragment;)Landroidx/fragment/app/FragmentTransaction; // method@499e
+2eca4e: 2807                                   |0049: goto 0050 // +0007
+2eca50: 1400 f600 097f                         |004a: const v0, #float 1.82109e+38 // #7f0900f6
+2eca56: 6e30 7d49 0104                         |004d: invoke-virtual {v1, v0, v4}, Landroidx/fragment/app/FragmentTransaction;.add:(ILandroidx/fragment/app/Fragment;)Landroidx/fragment/app/FragmentTransaction; // method@497d
+2eca5c: 6e10 8549 0100                         |0050: invoke-virtual {v1}, Landroidx/fragment/app/FragmentTransaction;.commitAllowingStateLoss:()I // method@4985
+2eca62: 0e00                                   |0053: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=212
+        0x001e line=213
+        0x0022 line=214
+        0x0026 line=215
+        0x002c line=217
+        0x003c line=218
+        0x0040 line=221
+        0x0046 line=222
+        0x004d line=224
+        0x0050 line=226
+      locals        :
+        0x0000 - 0x0054 reg=3 this Lcom/nwd/audioset/view/fragment/dts/DtsFragment;
+        0x0000 - 0x0054 reg=4 (null) Landroidx/fragment/app/Fragment;
+
+    #9              : (in Lcom/nwd/audioset/view/fragment/dts/DtsFragment;)
+      name          : 'updateButtonBgUi'
+      type          : '(Ljava/lang/String;)V'
+      access        : 0x0002 (PRIVATE)
+      code          -
+      registers     : 4
+      ins           : 2
+      outs          : 2
+      insns size    : 56 16-bit code units
+2eca64:                                        |[2eca64] com.nwd.audioset.view.fragment.dts.DtsFragment.updateButtonBgUi:(Ljava/lang/String;)V
+2eca74: 5420 6979                              |0000: iget-object v0, v2, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.scene_mode_tv:Lcom/nwd/audioset/view/nwdview/StrokeTextView; // field@7969
+2eca78: 1a01 e79a                              |0002: const-string v1, "scene_mode" // string@9ae7
+2eca7c: 6e20 0e8e 3100                         |0004: invoke-virtual {v1, v3}, Ljava/lang/String;.equals:(Ljava/lang/Object;)Z // method@8e0e
+2eca82: 0a01                                   |0007: move-result v1
+2eca84: 6e20 1b84 1000                         |0008: invoke-virtual {v0, v1}, Lcom/nwd/audioset/view/nwdview/StrokeTextView;.setSelected:(Z)V // method@841b
+2eca8a: 5420 6f79                              |000b: iget-object v0, v2, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.virtual_tv:Lcom/nwd/audioset/view/nwdview/StrokeTextView; // field@796f
+2eca8e: 1a01 04af                              |000d: const-string v1, "virtual" // string@af04
+2eca92: 6e20 0e8e 3100                         |000f: invoke-virtual {v1, v3}, Ljava/lang/String;.equals:(Ljava/lang/Object;)Z // method@8e0e
+2eca98: 0a01                                   |0012: move-result v1
+2eca9a: 6e20 1b84 1000                         |0013: invoke-virtual {v0, v1}, Lcom/nwd/audioset/view/nwdview/StrokeTextView;.setSelected:(Z)V // method@841b
+2ecaa0: 5420 6b79                              |0016: iget-object v0, v2, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.sound_gathering_tv:Lcom/nwd/audioset/view/nwdview/StrokeTextView; // field@796b
+2ecaa4: 1a01 e9a6                              |0018: const-string v1, "sound_gathering" // string@a6e9
+2ecaa8: 6e20 0e8e 3100                         |001a: invoke-virtual {v1, v3}, Ljava/lang/String;.equals:(Ljava/lang/Object;)Z // method@8e0e
+2ecaae: 0a01                                   |001d: move-result v1
+2ecab0: 6e20 1b84 1000                         |001e: invoke-virtual {v0, v1}, Lcom/nwd/audioset/view/nwdview/StrokeTextView;.setSelected:(Z)V // method@841b
+2ecab6: 5420 6d79                              |0021: iget-object v0, v2, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.surround_mode_tv:Lcom/nwd/audioset/view/nwdview/StrokeTextView; // field@796d
+2ecaba: 1a01 25a9                              |0023: const-string v1, "surround_mode" // string@a925
+2ecabe: 6e20 0e8e 3100                         |0025: invoke-virtual {v1, v3}, Ljava/lang/String;.equals:(Ljava/lang/Object;)Z // method@8e0e
+2ecac4: 0a01                                   |0028: move-result v1
+2ecac6: 6e20 1b84 1000                         |0029: invoke-virtual {v0, v1}, Lcom/nwd/audioset/view/nwdview/StrokeTextView;.setSelected:(Z)V // method@841b
+2ecacc: 5420 6479                              |002c: iget-object v0, v2, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.bass_tv:Lcom/nwd/audioset/view/nwdview/StrokeTextView; // field@7964
+2ecad0: 1a01 7e51                              |002e: const-string v1, "bass" // string@517e
+2ecad4: 6e20 0e8e 3100                         |0030: invoke-virtual {v1, v3}, Ljava/lang/String;.equals:(Ljava/lang/Object;)Z // method@8e0e
+2ecada: 0a03                                   |0033: move-result v3
+2ecadc: 6e20 1b84 3000                         |0034: invoke-virtual {v0, v3}, Lcom/nwd/audioset/view/nwdview/StrokeTextView;.setSelected:(Z)V // method@841b
+2ecae2: 0e00                                   |0037: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=230
+        0x000b line=231
+        0x0016 line=232
+        0x0021 line=233
+        0x002c line=234
+      locals        :
+        0x0000 - 0x0038 reg=2 this Lcom/nwd/audioset/view/fragment/dts/DtsFragment;
+        0x0000 - 0x0038 reg=3 (null) Ljava/lang/String;
+
+  Virtual methods   -
+    #0              : (in Lcom/nwd/audioset/view/fragment/dts/DtsFragment;)
+      name          : 'getLayountView'
+      type          : '()Landroid/view/ViewGroup;'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 1
+      insns size    : 21 16-bit code units
+2ec2d4:                                        |[2ec2d4] com.nwd.audioset.view.fragment.dts.DtsFragment.getLayountView:()Landroid/view/ViewGroup;
+2ec2e4: 6e10 bd81 0100                         |0000: invoke-virtual {v1}, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.getContext:()Landroid/content/Context; // method@81bd
+2ec2ea: 0c00                                   |0003: move-result-object v0
+2ec2ec: 7110 f708 0000                         |0004: invoke-static {v0}, Landroid/view/LayoutInflater;.from:(Landroid/content/Context;)Landroid/view/LayoutInflater; // method@08f7
+2ec2f2: 0c00                                   |0007: move-result-object v0
+2ec2f4: 7110 1480 0000                         |0008: invoke-static {v0}, Lcom/nwd/audioset/databinding/FrgDtsBinding;.inflate:(Landroid/view/LayoutInflater;)Lcom/nwd/audioset/databinding/FrgDtsBinding; // method@8014
+2ec2fa: 0c00                                   |000b: move-result-object v0
+2ec2fc: 5b10 6579                              |000c: iput-object v0, v1, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.binding:Lcom/nwd/audioset/databinding/FrgDtsBinding; // field@7965
+2ec300: 6e10 1380 0000                         |000e: invoke-virtual {v0}, Lcom/nwd/audioset/databinding/FrgDtsBinding;.getRoot:()Landroid/view/View; // method@8013
+2ec306: 0c00                                   |0011: move-result-object v0
+2ec308: 1f00 1002                              |0012: check-cast v0, Landroid/view/ViewGroup; // type@0210
+2ec30c: 1100                                   |0014: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=51
+        0x000e line=52
+      locals        :
+        0x0000 - 0x0015 reg=1 this Lcom/nwd/audioset/view/fragment/dts/DtsFragment;
+
+    #1              : (in Lcom/nwd/audioset/view/fragment/dts/DtsFragment;)
+      name          : 'getPrenseter'
+      type          : '()Lcom/nwd/audioset/mvpbase/BasePresenter;'
+      access        : 0x1041 (PUBLIC BRIDGE SYNTHETIC)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 1
+      insns size    : 5 16-bit code units
+2ec340:                                        |[2ec340] com.nwd.audioset.view.fragment.dts.DtsFragment.getPrenseter:()Lcom/nwd/audioset/mvpbase/BasePresenter;
+2ec350: 6e10 c081 0100                         |0000: invoke-virtual {v1}, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.getPrenseter:()Lcom/nwd/audioset/view/fragment/dts/DtsP; // method@81c0
+2ec356: 0c00                                   |0003: move-result-object v0
+2ec358: 1100                                   |0004: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=39
+      locals        :
+        0x0000 - 0x0005 reg=1 this Lcom/nwd/audioset/view/fragment/dts/DtsFragment;
+
+    #2              : (in Lcom/nwd/audioset/view/fragment/dts/DtsFragment;)
+      name          : 'getPrenseter'
+      type          : '()Lcom/nwd/audioset/view/fragment/dts/DtsP;'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 2
+      insns size    : 6 16-bit code units
+2ec35c:                                        |[2ec35c] com.nwd.audioset.view.fragment.dts.DtsFragment.getPrenseter:()Lcom/nwd/audioset/view/fragment/dts/DtsP;
+2ec36c: 2200 2a0f                              |0000: new-instance v0, Lcom/nwd/audioset/view/fragment/dts/DtsP; // type@0f2a
+2ec370: 7020 ce81 1000                         |0002: invoke-direct {v0, v1}, Lcom/nwd/audioset/view/fragment/dts/DtsP;.<init>:(Landroidx/fragment/app/Fragment;)V // method@81ce
+2ec376: 1100                                   |0005: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=155
+      locals        :
+        0x0000 - 0x0006 reg=1 this Lcom/nwd/audioset/view/fragment/dts/DtsFragment;
+
+    #3              : (in Lcom/nwd/audioset/view/fragment/dts/DtsFragment;)
+      name          : 'initData'
+      type          : '()V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 2
+      insns size    : 28 16-bit code units
+2ec4ac:                                        |[2ec4ac] com.nwd.audioset.view.fragment.dts.DtsFragment.initData:()V
+2ec4bc: 7100 7d85 0000                         |0000: invoke-static {}, Lcom/nwd/dsp/uitls/DspManager;.getInstance:()Lcom/nwd/dsp/uitls/DspManager; // method@857d
+2ec4c2: 0c00                                   |0003: move-result-object v0
+2ec4c4: 6e10 7085 0000                         |0004: invoke-virtual {v0}, Lcom/nwd/dsp/uitls/DspManager;.getDtsFunctionSwitch:()Z // method@8570
+2ec4ca: 0a00                                   |0007: move-result v0
+2ec4cc: 7020 ca81 0100                         |0008: invoke-direct {v1, v0}, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.setSwitchData:(Z)V // method@81ca
+2ec4d2: 5410 6879                              |000b: iget-object v0, v1, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.sceneModeDtsFragment:Landroidx/fragment/app/Fragment; // field@7968
+2ec4d6: 3800 0e00                              |000d: if-eqz v0, 001b // +000e
+2ec4da: 5410 6879                              |000f: iget-object v0, v1, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.sceneModeDtsFragment:Landroidx/fragment/app/Fragment; // field@7968
+2ec4de: 1f00 390f                              |0011: check-cast v0, Lcom/nwd/audioset/view/fragment/dts/sceneMode/SceneModeDtsFragment; // type@0f39
+2ec4e2: 6e10 1582 0000                         |0013: invoke-virtual {v0}, Lcom/nwd/audioset/view/fragment/dts/sceneMode/SceneModeDtsFragment;.initData:()V // method@8215
+2ec4e8: 2805                                   |0016: goto 001b // +0005
+2ec4ea: 0d00                                   |0017: move-exception v0
+2ec4ec: 6e10 798d 0000                         |0018: invoke-virtual {v0}, Ljava/lang/Exception;.printStackTrace:()V // method@8d79
+2ec4f2: 0e00                                   |001b: return-void
+      catches       : 1
+        0x0000 - 0x0016
+          Ljava/lang/Exception; -> 0x0017
+      positions     :
+        0x0000 line=120
+        0x0008 line=121
+        0x000b line=122
+        0x000f line=123
+        0x0018 line=126
+      locals        :
+        0x0000 - 0x001c reg=1 this Lcom/nwd/audioset/view/fragment/dts/DtsFragment;
+
+    #4              : (in Lcom/nwd/audioset/view/fragment/dts/DtsFragment;)
+      name          : 'initView'
+      type          : '()V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 3
+      ins           : 1
+      outs          : 2
+      insns size    : 99 16-bit code units
+2ec504:                                        |[2ec504] com.nwd.audioset.view.fragment.dts.DtsFragment.initView:()V
+2ec514: 1a00 eb5e                              |0000: const-string v0, "dsp3-DtsFragment" // string@5eeb
+2ec518: 1a01 8416                              |0002: const-string v1, "DtsFragment init" // string@1684
+2ec51c: 7120 5108 1000                         |0004: invoke-static {v0, v1}, Landroid/util/Log;.d:(Ljava/lang/String;Ljava/lang/String;)I // method@0851
+2ec522: 5420 6779                              |0007: iget-object v0, v2, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.mRootView:Landroid/view/View; // field@7967
+2ec526: 1401 7002 097f                         |0009: const v1, #float 1.82117e+38 // #7f090270
+2ec52c: 6e20 a509 1000                         |000c: invoke-virtual {v0, v1}, Landroid/view/View;.findViewById:(I)Landroid/view/View; // method@09a5
+2ec532: 0c00                                   |000f: move-result-object v0
+2ec534: 1f00 6e0f                              |0010: check-cast v0, Lcom/nwd/audioset/view/nwdview/StrokeTextView; // type@0f6e
+2ec538: 5b20 6979                              |0012: iput-object v0, v2, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.scene_mode_tv:Lcom/nwd/audioset/view/nwdview/StrokeTextView; // field@7969
+2ec53c: 5420 6779                              |0014: iget-object v0, v2, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.mRootView:Landroid/view/View; // field@7967
+2ec540: 1401 4f03 097f                         |0016: const v1, #float 1.82121e+38 // #7f09034f
+2ec546: 6e20 a509 1000                         |0019: invoke-virtual {v0, v1}, Landroid/view/View;.findViewById:(I)Landroid/view/View; // method@09a5
+2ec54c: 0c00                                   |001c: move-result-object v0
+2ec54e: 1f00 6e0f                              |001d: check-cast v0, Lcom/nwd/audioset/view/nwdview/StrokeTextView; // type@0f6e
+2ec552: 5b20 6f79                              |001f: iput-object v0, v2, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.virtual_tv:Lcom/nwd/audioset/view/nwdview/StrokeTextView; // field@796f
+2ec556: 5420 6779                              |0021: iget-object v0, v2, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.mRootView:Landroid/view/View; // field@7967
+2ec55a: 1401 ab02 097f                         |0023: const v1, #float 1.82118e+38 // #7f0902ab
+2ec560: 6e20 a509 1000                         |0026: invoke-virtual {v0, v1}, Landroid/view/View;.findViewById:(I)Landroid/view/View; // method@09a5
+2ec566: 0c00                                   |0029: move-result-object v0
+2ec568: 1f00 6e0f                              |002a: check-cast v0, Lcom/nwd/audioset/view/nwdview/StrokeTextView; // type@0f6e
+2ec56c: 5b20 6b79                              |002c: iput-object v0, v2, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.sound_gathering_tv:Lcom/nwd/audioset/view/nwdview/StrokeTextView; // field@796b
+2ec570: 5420 6779                              |002e: iget-object v0, v2, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.mRootView:Landroid/view/View; // field@7967
+2ec574: 1401 f302 097f                         |0030: const v1, #float 1.8212e+38 // #7f0902f3
+2ec57a: 6e20 a509 1000                         |0033: invoke-virtual {v0, v1}, Landroid/view/View;.findViewById:(I)Landroid/view/View; // method@09a5
+2ec580: 0c00                                   |0036: move-result-object v0
+2ec582: 1f00 6e0f                              |0037: check-cast v0, Lcom/nwd/audioset/view/nwdview/StrokeTextView; // type@0f6e
+2ec586: 5b20 6d79                              |0039: iput-object v0, v2, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.surround_mode_tv:Lcom/nwd/audioset/view/nwdview/StrokeTextView; // field@796d
+2ec58a: 5420 6779                              |003b: iget-object v0, v2, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.mRootView:Landroid/view/View; // field@7967
+2ec58e: 1401 8900 097f                         |003d: const v1, #float 1.82107e+38 // #7f090089
+2ec594: 6e20 a509 1000                         |0040: invoke-virtual {v0, v1}, Landroid/view/View;.findViewById:(I)Landroid/view/View; // method@09a5
+2ec59a: 0c00                                   |0043: move-result-object v0
+2ec59c: 1f00 6e0f                              |0044: check-cast v0, Lcom/nwd/audioset/view/nwdview/StrokeTextView; // type@0f6e
+2ec5a0: 5b20 6479                              |0046: iput-object v0, v2, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.bass_tv:Lcom/nwd/audioset/view/nwdview/StrokeTextView; // field@7964
+2ec5a4: 7010 c881 0200                         |0048: invoke-direct {v2}, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.setButtonBG:()V // method@81c8
+2ec5aa: 5420 6979                              |004b: iget-object v0, v2, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.scene_mode_tv:Lcom/nwd/audioset/view/nwdview/StrokeTextView; // field@7969
+2ec5ae: 2201 280f                              |004d: new-instance v1, Lcom/nwd/audioset/view/fragment/dts/DtsFragment$1; // type@0f28
+2ec5b2: 7020 b381 2100                         |004f: invoke-direct {v1, v2}, Lcom/nwd/audioset/view/fragment/dts/DtsFragment$1;.<init>:(Lcom/nwd/audioset/view/fragment/dts/DtsFragment;)V // method@81b3
+2ec5b8: 6e20 1484 1000                         |0052: invoke-virtual {v0, v1}, Lcom/nwd/audioset/view/nwdview/StrokeTextView;.post:(Ljava/lang/Runnable;)Z // method@8414
+2ec5be: 6e10 c781 0200                         |0055: invoke-virtual {v2}, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.requireContext:()Landroid/content/Context; // method@81c7
+2ec5c4: 0c00                                   |0058: move-result-object v0
+2ec5c6: 7110 2981 0000                         |0059: invoke-static {v0}, Lcom/nwd/audioset/utils/Utils;.isLand:(Landroid/content/Context;)Z // method@8129
+2ec5cc: 0a00                                   |005c: move-result v0
+2ec5ce: 3800 0500                              |005d: if-eqz v0, 0062 // +0005
+2ec5d2: 7010 ba81 0200                         |005f: invoke-direct {v2}, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.changeView:()V // method@81ba
+2ec5d8: 0e00                                   |0062: return-void
+      catches       : (none)
+      positions     :
+        0x0004 line=61
+        0x0007 line=62
+        0x0014 line=63
+        0x0021 line=64
+        0x002e line=65
+        0x003b line=66
+        0x0048 line=67
+        0x004b line=68
+        0x0055 line=82
+        0x005f line=84
+      locals        :
+        0x0000 - 0x0063 reg=2 this Lcom/nwd/audioset/view/fragment/dts/DtsFragment;
+
+    #5              : (in Lcom/nwd/audioset/view/fragment/dts/DtsFragment;)
+      name          : 'onClick'
+      type          : '(Landroid/view/View;)V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 3
+      ins           : 2
+      outs          : 2
+      insns size    : 142 16-bit code units
+2ec5dc:                                        |[2ec5dc] com.nwd.audioset.view.fragment.dts.DtsFragment.onClick:(Landroid/view/View;)V
+2ec5ec: 6e10 c109 0200                         |0000: invoke-virtual {v2}, Landroid/view/View;.getId:()I // method@09c1
+2ec5f2: 0a02                                   |0003: move-result v2
+2ec5f4: 1400 7002 097f                         |0004: const v0, #float 1.82117e+38 // #7f090270
+2ec5fa: 3302 1b00                              |0007: if-ne v2, v0, 0022 // +001b
+2ec5fe: 5412 6879                              |0009: iget-object v2, v1, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.sceneModeDtsFragment:Landroidx/fragment/app/Fragment; // field@7968
+2ec602: 3902 0c00                              |000b: if-nez v2, 0017 // +000c
+2ec606: 2202 390f                              |000d: new-instance v2, Lcom/nwd/audioset/view/fragment/dts/sceneMode/SceneModeDtsFragment; // type@0f39
+2ec60a: 7010 0e82 0200                         |000f: invoke-direct {v2}, Lcom/nwd/audioset/view/fragment/dts/sceneMode/SceneModeDtsFragment;.<init>:()V // method@820e
+2ec610: 6e20 1c82 1200                         |0012: invoke-virtual {v2, v1}, Lcom/nwd/audioset/view/fragment/dts/sceneMode/SceneModeDtsFragment;.setSwitchListener:(Lcom/nwd/audioset/view/fragment/dts/SwitchListener;)V // method@821c
+2ec616: 5b12 6879                              |0015: iput-object v2, v1, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.sceneModeDtsFragment:Landroidx/fragment/app/Fragment; // field@7968
+2ec61a: 5412 6879                              |0017: iget-object v2, v1, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.sceneModeDtsFragment:Landroidx/fragment/app/Fragment; // field@7968
+2ec61e: 7020 cc81 2100                         |0019: invoke-direct {v1, v2}, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.showFragment:(Landroidx/fragment/app/Fragment;)V // method@81cc
+2ec624: 1a02 e79a                              |001c: const-string v2, "scene_mode" // string@9ae7
+2ec628: 7020 cd81 2100                         |001e: invoke-direct {v1, v2}, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.updateButtonBgUi:(Ljava/lang/String;)V // method@81cd
+2ec62e: 286c                                   |0021: goto 008d // +006c
+2ec630: 1400 4f03 097f                         |0022: const v0, #float 1.82121e+38 // #7f09034f
+2ec636: 3302 1800                              |0025: if-ne v2, v0, 003d // +0018
+2ec63a: 5412 6e79                              |0027: iget-object v2, v1, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.virtualFragment:Landroidx/fragment/app/Fragment; // field@796e
+2ec63e: 3902 0900                              |0029: if-nez v2, 0032 // +0009
+2ec642: 2202 410f                              |002b: new-instance v2, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment; // type@0f41
+2ec646: 7010 5482 0200                         |002d: invoke-direct {v2}, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.<init>:()V // method@8254
+2ec64c: 5b12 6e79                              |0030: iput-object v2, v1, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.virtualFragment:Landroidx/fragment/app/Fragment; // field@796e
+2ec650: 5412 6e79                              |0032: iget-object v2, v1, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.virtualFragment:Landroidx/fragment/app/Fragment; // field@796e
+2ec654: 7020 cc81 2100                         |0034: invoke-direct {v1, v2}, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.showFragment:(Landroidx/fragment/app/Fragment;)V // method@81cc
+2ec65a: 1a02 04af                              |0037: const-string v2, "virtual" // string@af04
+2ec65e: 7020 cd81 2100                         |0039: invoke-direct {v1, v2}, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.updateButtonBgUi:(Ljava/lang/String;)V // method@81cd
+2ec664: 2851                                   |003c: goto 008d // +0051
+2ec666: 1400 ab02 097f                         |003d: const v0, #float 1.82118e+38 // #7f0902ab
+2ec66c: 3302 1800                              |0040: if-ne v2, v0, 0058 // +0018
+2ec670: 5412 6a79                              |0042: iget-object v2, v1, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.soundGatheringFragment:Landroidx/fragment/app/Fragment; // field@796a
+2ec674: 3902 0900                              |0044: if-nez v2, 004d // +0009
+2ec678: 2202 3c0f                              |0046: new-instance v2, Lcom/nwd/audioset/view/fragment/dts/soundGathering/SoundGatheringFragment; // type@0f3c
+2ec67c: 7010 2382 0200                         |0048: invoke-direct {v2}, Lcom/nwd/audioset/view/fragment/dts/soundGathering/SoundGatheringFragment;.<init>:()V // method@8223
+2ec682: 5b12 6a79                              |004b: iput-object v2, v1, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.soundGatheringFragment:Landroidx/fragment/app/Fragment; // field@796a
+2ec686: 5412 6a79                              |004d: iget-object v2, v1, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.soundGatheringFragment:Landroidx/fragment/app/Fragment; // field@796a
+2ec68a: 7020 cc81 2100                         |004f: invoke-direct {v1, v2}, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.showFragment:(Landroidx/fragment/app/Fragment;)V // method@81cc
+2ec690: 1a02 e9a6                              |0052: const-string v2, "sound_gathering" // string@a6e9
+2ec694: 7020 cd81 2100                         |0054: invoke-direct {v1, v2}, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.updateButtonBgUi:(Ljava/lang/String;)V // method@81cd
+2ec69a: 2836                                   |0057: goto 008d // +0036
+2ec69c: 1400 f302 097f                         |0058: const v0, #float 1.8212e+38 // #7f0902f3
+2ec6a2: 3302 1800                              |005b: if-ne v2, v0, 0073 // +0018
+2ec6a6: 5412 6c79                              |005d: iget-object v2, v1, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.surroundModeFragment:Landroidx/fragment/app/Fragment; // field@796c
+2ec6aa: 3902 0900                              |005f: if-nez v2, 0068 // +0009
+2ec6ae: 2202 3f0f                              |0061: new-instance v2, Lcom/nwd/audioset/view/fragment/dts/surroundMode/SurroundModeFragment; // type@0f3f
+2ec6b2: 7010 3d82 0200                         |0063: invoke-direct {v2}, Lcom/nwd/audioset/view/fragment/dts/surroundMode/SurroundModeFragment;.<init>:()V // method@823d
+2ec6b8: 5b12 6c79                              |0066: iput-object v2, v1, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.surroundModeFragment:Landroidx/fragment/app/Fragment; // field@796c
+2ec6bc: 5412 6c79                              |0068: iget-object v2, v1, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.surroundModeFragment:Landroidx/fragment/app/Fragment; // field@796c
+2ec6c0: 7020 cc81 2100                         |006a: invoke-direct {v1, v2}, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.showFragment:(Landroidx/fragment/app/Fragment;)V // method@81cc
+2ec6c6: 1a02 25a9                              |006d: const-string v2, "surround_mode" // string@a925
+2ec6ca: 7020 cd81 2100                         |006f: invoke-direct {v1, v2}, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.updateButtonBgUi:(Ljava/lang/String;)V // method@81cd
+2ec6d0: 281b                                   |0072: goto 008d // +001b
+2ec6d2: 1400 8900 097f                         |0073: const v0, #float 1.82107e+38 // #7f090089
+2ec6d8: 3302 1700                              |0076: if-ne v2, v0, 008d // +0017
+2ec6dc: 5412 6379                              |0078: iget-object v2, v1, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.bassFragment:Landroidx/fragment/app/Fragment; // field@7963
+2ec6e0: 3902 0900                              |007a: if-nez v2, 0083 // +0009
+2ec6e4: 2202 350f                              |007c: new-instance v2, Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment; // type@0f35
+2ec6e8: 7010 e381 0200                         |007e: invoke-direct {v2}, Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment;.<init>:()V // method@81e3
+2ec6ee: 5b12 6379                              |0081: iput-object v2, v1, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.bassFragment:Landroidx/fragment/app/Fragment; // field@7963
+2ec6f2: 5412 6379                              |0083: iget-object v2, v1, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.bassFragment:Landroidx/fragment/app/Fragment; // field@7963
+2ec6f6: 7020 cc81 2100                         |0085: invoke-direct {v1, v2}, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.showFragment:(Landroidx/fragment/app/Fragment;)V // method@81cc
+2ec6fc: 1a02 7e51                              |0088: const-string v2, "bass" // string@517e
+2ec700: 7020 cd81 2100                         |008a: invoke-direct {v1, v2}, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.updateButtonBgUi:(Ljava/lang/String;)V // method@81cd
+2ec706: 0e00                                   |008d: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=174
+        0x0009 line=176
+        0x000d line=177
+        0x0012 line=178
+        0x0015 line=179
+        0x0017 line=181
+        0x001e line=182
+        0x0027 line=184
+        0x002b line=185
+        0x0032 line=187
+        0x0039 line=188
+        0x0042 line=190
+        0x0046 line=191
+        0x004d line=193
+        0x0054 line=194
+        0x005d line=196
+        0x0061 line=197
+        0x0068 line=199
+        0x006f line=200
+        0x0078 line=202
+        0x007c line=203
+        0x0083 line=205
+        0x008a line=206
+      locals        :
+        0x0000 - 0x008e reg=1 this Lcom/nwd/audioset/view/fragment/dts/DtsFragment;
+        0x0000 - 0x008e reg=2 (null) Landroid/view/View;
+
+    #6              : (in Lcom/nwd/audioset/view/fragment/dts/DtsFragment;)
+      name          : 'onConfigurationChanged'
+      type          : '(Landroid/content/res/Configuration;)V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 4
+      ins           : 2
+      outs          : 2
+      insns size    : 84 16-bit code units
+2ec708:                                        |[2ec708] com.nwd.audioset.view.fragment.dts.DtsFragment.onConfigurationChanged:(Landroid/content/res/Configuration;)V
+2ec718: 6f20 b480 3200                         |0000: invoke-super {v2, v3}, Lcom/nwd/audioset/mvpbase/BaseFragment;.onConfigurationChanged:(Landroid/content/res/Configuration;)V // method@80b4
+2ec71e: 5423 6979                              |0003: iget-object v3, v2, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.scene_mode_tv:Lcom/nwd/audioset/view/nwdview/StrokeTextView; // field@7969
+2ec722: 6e10 c181 0200                         |0005: invoke-virtual {v2}, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.getResources:()Landroid/content/res/Resources; // method@81c1
+2ec728: 0c00                                   |0008: move-result-object v0
+2ec72a: 1401 e200 0e7f                         |0009: const v1, #float 1.88755e+38 // #7f0e00e2
+2ec730: 6e20 4103 1000                         |000c: invoke-virtual {v0, v1}, Landroid/content/res/Resources;.getString:(I)Ljava/lang/String; // method@0341
+2ec736: 0c00                                   |000f: move-result-object v0
+2ec738: 6e20 1c84 0300                         |0010: invoke-virtual {v3, v0}, Lcom/nwd/audioset/view/nwdview/StrokeTextView;.setText:(Ljava/lang/CharSequence;)V // method@841c
+2ec73e: 5423 6f79                              |0013: iget-object v3, v2, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.virtual_tv:Lcom/nwd/audioset/view/nwdview/StrokeTextView; // field@796f
+2ec742: 6e10 c181 0200                         |0015: invoke-virtual {v2}, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.getResources:()Landroid/content/res/Resources; // method@81c1
+2ec748: 0c00                                   |0018: move-result-object v0
+2ec74a: 1401 0301 0e7f                         |0019: const v1, #float 1.88756e+38 // #7f0e0103
+2ec750: 6e20 4103 1000                         |001c: invoke-virtual {v0, v1}, Landroid/content/res/Resources;.getString:(I)Ljava/lang/String; // method@0341
+2ec756: 0c00                                   |001f: move-result-object v0
+2ec758: 6e20 1c84 0300                         |0020: invoke-virtual {v3, v0}, Lcom/nwd/audioset/view/nwdview/StrokeTextView;.setText:(Ljava/lang/CharSequence;)V // method@841c
+2ec75e: 5423 6b79                              |0023: iget-object v3, v2, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.sound_gathering_tv:Lcom/nwd/audioset/view/nwdview/StrokeTextView; // field@796b
+2ec762: 6e10 c181 0200                         |0025: invoke-virtual {v2}, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.getResources:()Landroid/content/res/Resources; // method@81c1
+2ec768: 0c00                                   |0028: move-result-object v0
+2ec76a: 1401 e300 0e7f                         |0029: const v1, #float 1.88755e+38 // #7f0e00e3
+2ec770: 6e20 4103 1000                         |002c: invoke-virtual {v0, v1}, Landroid/content/res/Resources;.getString:(I)Ljava/lang/String; // method@0341
+2ec776: 0c00                                   |002f: move-result-object v0
+2ec778: 6e20 1c84 0300                         |0030: invoke-virtual {v3, v0}, Lcom/nwd/audioset/view/nwdview/StrokeTextView;.setText:(Ljava/lang/CharSequence;)V // method@841c
+2ec77e: 5423 6d79                              |0033: iget-object v3, v2, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.surround_mode_tv:Lcom/nwd/audioset/view/nwdview/StrokeTextView; // field@796d
+2ec782: 6e10 c181 0200                         |0035: invoke-virtual {v2}, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.getResources:()Landroid/content/res/Resources; // method@81c1
+2ec788: 0c00                                   |0038: move-result-object v0
+2ec78a: 1401 0201 0e7f                         |0039: const v1, #float 1.88756e+38 // #7f0e0102
+2ec790: 6e20 4103 1000                         |003c: invoke-virtual {v0, v1}, Landroid/content/res/Resources;.getString:(I)Ljava/lang/String; // method@0341
+2ec796: 0c00                                   |003f: move-result-object v0
+2ec798: 6e20 1c84 0300                         |0040: invoke-virtual {v3, v0}, Lcom/nwd/audioset/view/nwdview/StrokeTextView;.setText:(Ljava/lang/CharSequence;)V // method@841c
+2ec79e: 5423 6479                              |0043: iget-object v3, v2, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.bass_tv:Lcom/nwd/audioset/view/nwdview/StrokeTextView; // field@7964
+2ec7a2: 6e10 c181 0200                         |0045: invoke-virtual {v2}, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.getResources:()Landroid/content/res/Resources; // method@81c1
+2ec7a8: 0c00                                   |0048: move-result-object v0
+2ec7aa: 1401 df00 0e7f                         |0049: const v1, #float 1.88755e+38 // #7f0e00df
+2ec7b0: 6e20 4103 1000                         |004c: invoke-virtual {v0, v1}, Landroid/content/res/Resources;.getString:(I)Ljava/lang/String; // method@0341
+2ec7b6: 0c00                                   |004f: move-result-object v0
+2ec7b8: 6e20 1c84 0300                         |0050: invoke-virtual {v3, v0}, Lcom/nwd/audioset/view/nwdview/StrokeTextView;.setText:(Ljava/lang/CharSequence;)V // method@841c
+2ec7be: 0e00                                   |0053: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=110
+        0x0003 line=111
+        0x0013 line=112
+        0x0023 line=113
+        0x0033 line=114
+        0x0043 line=115
+      locals        :
+        0x0000 - 0x0054 reg=2 this Lcom/nwd/audioset/view/fragment/dts/DtsFragment;
+        0x0000 - 0x0054 reg=3 (null) Landroid/content/res/Configuration;
+
+    #7              : (in Lcom/nwd/audioset/view/fragment/dts/DtsFragment;)
+      name          : 'onSwitchData'
+      type          : '(Z)V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 2
+      ins           : 2
+      outs          : 2
+      insns size    : 26 16-bit code units
+2ec7c0:                                        |[2ec7c0] com.nwd.audioset.view.fragment.dts.DtsFragment.onSwitchData:(Z)V
+2ec7d0: 7020 ca81 1000                         |0000: invoke-direct {v0, v1}, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.setSwitchData:(Z)V // method@81ca
+2ec7d6: 6e10 bb81 0000                         |0003: invoke-virtual {v0}, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.getActivity:()Landroidx/fragment/app/FragmentActivity; // method@81bb
+2ec7dc: 0c01                                   |0006: move-result-object v1
+2ec7de: 2011 000f                              |0007: instance-of v1, v1, Lcom/nwd/audioset/home_horizontalActivity1; // type@0f00
+2ec7e2: 3801 1000                              |0009: if-eqz v1, 0019 // +0010
+2ec7e6: 6e10 bb81 0000                         |000b: invoke-virtual {v0}, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.getActivity:()Landroidx/fragment/app/FragmentActivity; // method@81bb
+2ec7ec: 0c01                                   |000e: move-result-object v1
+2ec7ee: 1f01 000f                              |000f: check-cast v1, Lcom/nwd/audioset/home_horizontalActivity1; // type@0f00
+2ec7f2: 6e10 8f80 0100                         |0011: invoke-virtual {v1}, Lcom/nwd/audioset/home_horizontalActivity1;.setSwitchData:()V // method@808f
+2ec7f8: 2805                                   |0014: goto 0019 // +0005
+2ec7fa: 0d01                                   |0015: move-exception v1
+2ec7fc: 6e10 798d 0100                         |0016: invoke-virtual {v1}, Ljava/lang/Exception;.printStackTrace:()V // method@8d79
+2ec802: 0e00                                   |0019: return-void
+      catches       : 1
+        0x0000 - 0x0014
+          Ljava/lang/Exception; -> 0x0015
+      positions     :
+        0x0000 line=256
+        0x0003 line=257
+        0x000b line=258
+        0x0016 line=260
+      locals        :
+        0x0000 - 0x001a reg=0 this Lcom/nwd/audioset/view/fragment/dts/DtsFragment;
+        0x0000 - 0x001a reg=1 (null) Z
+
+    #8              : (in Lcom/nwd/audioset/view/fragment/dts/DtsFragment;)
+      name          : 'setListener'
+      type          : '()V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 2
+      insns size    : 26 16-bit code units
+2ec888:                                        |[2ec888] com.nwd.audioset.view.fragment.dts.DtsFragment.setListener:()V
+2ec898: 5410 6979                              |0000: iget-object v0, v1, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.scene_mode_tv:Lcom/nwd/audioset/view/nwdview/StrokeTextView; // field@7969
+2ec89c: 6e20 1a84 1000                         |0002: invoke-virtual {v0, v1}, Lcom/nwd/audioset/view/nwdview/StrokeTextView;.setOnClickListener:(Landroid/view/View$OnClickListener;)V // method@841a
+2ec8a2: 5410 6f79                              |0005: iget-object v0, v1, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.virtual_tv:Lcom/nwd/audioset/view/nwdview/StrokeTextView; // field@796f
+2ec8a6: 6e20 1a84 1000                         |0007: invoke-virtual {v0, v1}, Lcom/nwd/audioset/view/nwdview/StrokeTextView;.setOnClickListener:(Landroid/view/View$OnClickListener;)V // method@841a
+2ec8ac: 5410 6b79                              |000a: iget-object v0, v1, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.sound_gathering_tv:Lcom/nwd/audioset/view/nwdview/StrokeTextView; // field@796b
+2ec8b0: 6e20 1a84 1000                         |000c: invoke-virtual {v0, v1}, Lcom/nwd/audioset/view/nwdview/StrokeTextView;.setOnClickListener:(Landroid/view/View$OnClickListener;)V // method@841a
+2ec8b6: 5410 6d79                              |000f: iget-object v0, v1, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.surround_mode_tv:Lcom/nwd/audioset/view/nwdview/StrokeTextView; // field@796d
+2ec8ba: 6e20 1a84 1000                         |0011: invoke-virtual {v0, v1}, Lcom/nwd/audioset/view/nwdview/StrokeTextView;.setOnClickListener:(Landroid/view/View$OnClickListener;)V // method@841a
+2ec8c0: 5410 6479                              |0014: iget-object v0, v1, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.bass_tv:Lcom/nwd/audioset/view/nwdview/StrokeTextView; // field@7964
+2ec8c4: 6e20 1a84 1000                         |0016: invoke-virtual {v0, v1}, Lcom/nwd/audioset/view/nwdview/StrokeTextView;.setOnClickListener:(Landroid/view/View$OnClickListener;)V // method@841a
+2ec8ca: 0e00                                   |0019: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=165
+        0x0005 line=166
+        0x000a line=167
+        0x000f line=168
+        0x0014 line=169
+      locals        :
+        0x0000 - 0x001a reg=1 this Lcom/nwd/audioset/view/fragment/dts/DtsFragment;
+
+    #9              : (in Lcom/nwd/audioset/view/fragment/dts/DtsFragment;)
+      name          : 'setViewBinding'
+      type          : '()V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 0
+      insns size    : 1 16-bit code units
+2ec998:                                        |[2ec998] com.nwd.audioset.view.fragment.dts.DtsFragment.setViewBinding:()V
+2ec9a8: 0e00                                   |0000: return-void
+      catches       : (none)
+      positions     :
+      locals        :
+
+  source_file_idx   : 5765 (DtsFragment.java)
+
+Class #3481            -

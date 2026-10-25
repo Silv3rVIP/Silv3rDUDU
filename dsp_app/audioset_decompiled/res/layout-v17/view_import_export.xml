@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/layout_import_export" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/bass_fragment_right_height_low_width_margin_top" android:layout_marginBottom="@dimen/bass_fragment_right_height_low_width_margin_bottom" android:layout_marginStart="@dimen/bass_fragment_right_height_low_width_margin_left" android:layout_marginEnd="@dimen/bass_fragment_right_height_low_width_margin_right">
+        <RelativeLayout android:orientation="vertical" android:id="@id/ll_set_list_bg" android:background="@mipmap/set_list_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bass_fragment_right_height_low_width_margin_left" android:layout_marginTop="@dimen/setting_item_margin_top" android:layout_marginRight="@dimen/bass_fragment_right_height_low_width_margin_right" android:layout_marginBottom="@dimen/setting_item_margin_top">
+            <ListView android:id="@id/listView_eq" android:layout_width="match_parent" android:layout_height="@dimen/setting_dialog_height" android:divider="@android:color/transparent" android:layout_above="@id/layout_btn" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/layout_btn" android:paddingBottom="30.0dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/dialog_linearlayout">
+                <com.nwd.audioset.view.nwdview.StrokeTextView android:textSize="@dimen/save_dialog_textsize" android:textColor="@android:color/white" android:gravity="center" android:id="@id/btn_use" android:layout_width="@dimen/save_dialog_button_width" android:layout_height="@dimen/save_dialog_button_height" android:text="@string/user_eq_use" />
+                <com.nwd.audioset.view.nwdview.StrokeTextView android:textSize="@dimen/save_dialog_textsize" android:textColor="@android:color/white" android:gravity="center" android:id="@id/btn_import" android:layout_width="@dimen/save_dialog_button_width" android:layout_height="@dimen/save_dialog_button_height" android:layout_marginLeft="@dimen/user_setting_btn_import_margin_left" android:text="@string/file_import" />
+                <com.nwd.audioset.view.nwdview.StrokeTextView android:textSize="@dimen/save_dialog_textsize" android:textColor="@android:color/white" android:gravity="center" android:id="@id/btn_export" android:layout_width="@dimen/save_dialog_button_width" android:layout_height="@dimen/save_dialog_button_height" android:layout_marginLeft="@dimen/user_setting_btn_import_margin_left" android:text="@string/export" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</merge>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/bass_fragment_right_h_low_three_ll_rl_l_three_sp_test_size" android:textColor="#ffffff" android:ellipsize="marquee" android:gravity="center" android:id="@android:id/text1" android:background="@drawable/sp_delect_tv" android:layout_width="@dimen/bass_fragment_right_h_low_three_ll_rl_l_three_btn_width" android:layout_height="@dimen/bass_fragment_right_h_low_three_ll_rl_l_three_btn_ll_height" android:singleLine="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

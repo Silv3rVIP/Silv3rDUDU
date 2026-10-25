@@ -1,0 +1,435 @@
+  Class descriptor  : 'Lcom/nwd/dsp/uitls/DspConstant;'
+  Access flags      : 0x0001 (PUBLIC)
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+  Static fields     -
+    #0              : (in Lcom/nwd/dsp/uitls/DspConstant;)
+      name          : 'AUDIOTYPE'
+      type          : 'I'
+      access        : 0x0009 (PUBLIC STATIC)
+      value         : 0
+    #1              : (in Lcom/nwd/dsp/uitls/DspConstant;)
+      name          : 'CUSTOMIZE_EQ_PATH'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : null
+    #2              : (in Lcom/nwd/dsp/uitls/DspConstant;)
+      name          : 'DEFAULTFREQUENCE'
+      type          : '[I'
+      access        : 0x0009 (PUBLIC STATIC)
+      value         : null
+    #3              : (in Lcom/nwd/dsp/uitls/DspConstant;)
+      name          : 'DEFAULT_DSPCONFIG_PATH'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : null
+    #4              : (in Lcom/nwd/dsp/uitls/DspConstant;)
+      name          : 'DEFAULT_DSPCONFIG_PATH2'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : null
+    #5              : (in Lcom/nwd/dsp/uitls/DspConstant;)
+      name          : 'DSP_DEFAULT_PATH'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : null
+    #6              : (in Lcom/nwd/dsp/uitls/DspConstant;)
+      name          : 'DSP_DEVICE_PATH_7604'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : "/sys/devices/virtual/misc/ak7604-dsp/user_dsp_exist"
+    #7              : (in Lcom/nwd/dsp/uitls/DspConstant;)
+      name          : 'DSP_DEVICE_PATH_7735'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : "/sys/devices/virtual/misc/ak7735-dsp/user_dsp_exist"
+    #8              : (in Lcom/nwd/dsp/uitls/DspConstant;)
+      name          : 'DSP_DEVICE_PATH_DSP_NAME'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : "/sys/devices/virtual/misc/ak7604-dsp/user_dsp_name"
+    #9              : (in Lcom/nwd/dsp/uitls/DspConstant;)
+      name          : 'DSP_DEVICE_PATH_DTS'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : "/sys/devices/virtual/misc/ak7604-dsp/user_dts_exist"
+    #10              : (in Lcom/nwd/dsp/uitls/DspConstant;)
+      name          : 'DSP_EQ_GAIN_MAX_PATH'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : null
+    #11              : (in Lcom/nwd/dsp/uitls/DspConstant;)
+      name          : 'DSP_FACTORYCONFIG_PATH'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : null
+    #12              : (in Lcom/nwd/dsp/uitls/DspConstant;)
+      name          : 'DSP_TYPE_SYS_NWD'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : "sys.nwd.dsp.type"
+    #13              : (in Lcom/nwd/dsp/uitls/DspConstant;)
+      name          : 'FEATURE_CONFIG_PATH'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : null
+    #14              : (in Lcom/nwd/dsp/uitls/DspConstant;)
+      name          : 'Gain10_TWO32'
+      type          : '[I'
+      access        : 0x0009 (PUBLIC STATIC)
+      value         : null
+    #15              : (in Lcom/nwd/dsp/uitls/DspConstant;)
+      name          : 'ISPRINTLOG'
+      type          : 'Z'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : true
+    #16              : (in Lcom/nwd/dsp/uitls/DspConstant;)
+      name          : 'IS_SEND_END'
+      type          : 'Z'
+      access        : 0x0009 (PUBLIC STATIC)
+      value         : false
+    #17              : (in Lcom/nwd/dsp/uitls/DspConstant;)
+      name          : 'KEY_DEVICE_INSTRUMENT_HEIGHT'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : "key_instrument_height"
+    #18              : (in Lcom/nwd/dsp/uitls/DspConstant;)
+      name          : 'KEY_DSP_4CH'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : "sys/devices/virtual/misc/ak7604-dsp/user_dsp_4ch"
+    #19              : (in Lcom/nwd/dsp/uitls/DspConstant;)
+      name          : 'KEY_SYS_DSP_PORT_UI2'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : "persist.nwd.dsp.port.ui2"
+    #20              : (in Lcom/nwd/dsp/uitls/DspConstant;)
+      name          : 'KEY_SYS_DSP_START_SHOW'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : "persist.nwd.dsp.start.show"
+    #21              : (in Lcom/nwd/dsp/uitls/DspConstant;)
+      name          : 'KEY_SYS_DSP_WIDE_UI'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : "persist.nwd.dsp.wide.ui"
+    #22              : (in Lcom/nwd/dsp/uitls/DspConstant;)
+      name          : 'KEY_SYS_DTS_HIDE'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : "persist.nwd.dsp.force.no.dts"
+    #23              : (in Lcom/nwd/dsp/uitls/DspConstant;)
+      name          : 'LOG'
+      type          : 'Lcom/android/utils/log/JLog;'
+      access        : 0x001a (PRIVATE STATIC FINAL)
+      value         : null
+    #24              : (in Lcom/nwd/dsp/uitls/DspConstant;)
+      name          : 'LOW_MEMORY'
+      type          : 'Z'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : false
+    #25              : (in Lcom/nwd/dsp/uitls/DspConstant;)
+      name          : 'LOW_MEMORY_K2501'
+      type          : 'Z'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : false
+    #26              : (in Lcom/nwd/dsp/uitls/DspConstant;)
+      name          : 'PRESET_EQ3_PATH'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : null
+    #27              : (in Lcom/nwd/dsp/uitls/DspConstant;)
+      name          : 'PRESET_EQ_PATH'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : null
+    #28              : (in Lcom/nwd/dsp/uitls/DspConstant;)
+      name          : 'key_dsp_double_bass'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : "dsp_double_bass"
+    #29              : (in Lcom/nwd/dsp/uitls/DspConstant;)
+      name          : 'key_eq_color_bg_end'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : "eq_color_bg_end"
+    #30              : (in Lcom/nwd/dsp/uitls/DspConstant;)
+      name          : 'key_eq_color_bg_start'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : "eq_color_bg_start"
+    #31              : (in Lcom/nwd/dsp/uitls/DspConstant;)
+      name          : 'key_eq_color_line'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : "eq_color_line"
+    #32              : (in Lcom/nwd/dsp/uitls/DspConstant;)
+      name          : 'key_seekbar_bg'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : "seekbar_bg"
+    #33              : (in Lcom/nwd/dsp/uitls/DspConstant;)
+      name          : 'key_seekbar_progress'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : "seekbar_progress"
+  Instance fields   -
+  Direct methods    -
+    #0              : (in Lcom/nwd/dsp/uitls/DspConstant;)
+      name          : '<clinit>'
+      type          : '()V'
+      access        : 0x10008 (STATIC CONSTRUCTOR)
+      code          -
+      registers     : 4
+      ins           : 0
+      outs          : 4
+      insns size    : 330 16-bit code units
+307130:                                        |[307130] com.nwd.dsp.uitls.DspConstant.<clinit>:()V
+307140: 2200 3a0b                              |0000: new-instance v0, Lcom/android/utils/log/JLog; // type@0b3a
+307144: 1211                                   |0002: const/4 v1, #int 1 // #1
+307146: 1a02 7416                              |0003: const-string v2, "DspConstant" // string@1674
+30714a: 1233                                   |0005: const/4 v3, #int 3 // #3
+30714c: 7040 be5d 2031                         |0006: invoke-direct {v0, v2, v1, v3}, Lcom/android/utils/log/JLog;.<init>:(Ljava/lang/String;ZI)V // method@5dbe
+307152: 6900 e67c                              |0009: sput-object v0, Lcom/nwd/dsp/uitls/DspConstant;.LOG:Lcom/android/utils/log/JLog; // field@7ce6
+307156: 2200 a710                              |000b: new-instance v0, Ljava/lang/StringBuilder; // type@10a7
+30715a: 7010 3d8e 0000                         |000d: invoke-direct {v0}, Ljava/lang/StringBuilder;.<init>:()V // method@8e3d
+307160: 7100 fb61 0000                         |0010: invoke-static {}, Lcom/android/utils/utils/NwdConfigUtils;.getConfigPath:()Ljava/lang/String; // method@61fb
+307166: 0c02                                   |0013: move-result-object v2
+307168: 6e20 478e 2000                         |0014: invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@8e47
+30716e: 1a02 d704                              |0017: const-string v2, "/app/eq_customize" // string@04d7
+307172: 6e20 478e 2000                         |0019: invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@8e47
+307178: 6e10 508e 0000                         |001c: invoke-virtual {v0}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@8e50
+30717e: 0c00                                   |001f: move-result-object v0
+307180: 6900 d07c                              |0020: sput-object v0, Lcom/nwd/dsp/uitls/DspConstant;.CUSTOMIZE_EQ_PATH:Ljava/lang/String; // field@7cd0
+307184: 6200 cc00                              |0022: sget-object v0, Landroid/os/Build;.DISPLAY:Ljava/lang/String; // field@00cc
+307188: 1a02 0d1e                              |0024: const-string v2, "K2" // string@1e0d
+30718c: 6e20 268e 2000                         |0026: invoke-virtual {v0, v2}, Ljava/lang/String;.startsWith:(Ljava/lang/String;)Z // method@8e26
+307192: 0a00                                   |0029: move-result v0
+307194: 6a00 e77c                              |002a: sput-boolean v0, Lcom/nwd/dsp/uitls/DspConstant;.LOW_MEMORY:Z // field@7ce7
+307198: 6200 cc00                              |002c: sget-object v0, Landroid/os/Build;.DISPLAY:Ljava/lang/String; // field@00cc
+30719c: 1a02 171e                              |002e: const-string v2, "K2501_" // string@1e17
+3071a0: 6e20 268e 2000                         |0030: invoke-virtual {v0, v2}, Ljava/lang/String;.startsWith:(Ljava/lang/String;)Z // method@8e26
+3071a6: 0a00                                   |0033: move-result v0
+3071a8: 6a00 e87c                              |0034: sput-boolean v0, Lcom/nwd/dsp/uitls/DspConstant;.LOW_MEMORY_K2501:Z // field@7ce8
+3071ac: 2200 a710                              |0036: new-instance v0, Ljava/lang/StringBuilder; // type@10a7
+3071b0: 7010 3d8e 0000                         |0038: invoke-direct {v0}, Ljava/lang/StringBuilder;.<init>:()V // method@8e3d
+3071b6: 7100 fb61 0000                         |003b: invoke-static {}, Lcom/android/utils/utils/NwdConfigUtils;.getConfigPath:()Ljava/lang/String; // method@61fb
+3071bc: 0c02                                   |003e: move-result-object v2
+3071be: 6e20 478e 2000                         |003f: invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@8e47
+3071c4: 1a02 d504                              |0042: const-string v2, "/app/eq" // string@04d5
+3071c8: 6e20 478e 2000                         |0044: invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@8e47
+3071ce: 6e10 508e 0000                         |0047: invoke-virtual {v0}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@8e50
+3071d4: 0c00                                   |004a: move-result-object v0
+3071d6: 6900 ea7c                              |004b: sput-object v0, Lcom/nwd/dsp/uitls/DspConstant;.PRESET_EQ_PATH:Ljava/lang/String; // field@7cea
+3071da: 2200 a710                              |004d: new-instance v0, Ljava/lang/StringBuilder; // type@10a7
+3071de: 7010 3d8e 0000                         |004f: invoke-direct {v0}, Ljava/lang/StringBuilder;.<init>:()V // method@8e3d
+3071e4: 7100 fb61 0000                         |0052: invoke-static {}, Lcom/android/utils/utils/NwdConfigUtils;.getConfigPath:()Ljava/lang/String; // method@61fb
+3071ea: 0c02                                   |0055: move-result-object v2
+3071ec: 6e20 478e 2000                         |0056: invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@8e47
+3071f2: 1a02 d604                              |0059: const-string v2, "/app/eq3" // string@04d6
+3071f6: 6e20 478e 2000                         |005b: invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@8e47
+3071fc: 6e10 508e 0000                         |005e: invoke-virtual {v0}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@8e50
+307202: 0c00                                   |0061: move-result-object v0
+307204: 6900 e97c                              |0062: sput-object v0, Lcom/nwd/dsp/uitls/DspConstant;.PRESET_EQ3_PATH:Ljava/lang/String; // field@7ce9
+307208: 2200 a710                              |0064: new-instance v0, Ljava/lang/StringBuilder; // type@10a7
+30720c: 7010 3d8e 0000                         |0066: invoke-direct {v0}, Ljava/lang/StringBuilder;.<init>:()V // method@8e3d
+307212: 7100 fb61 0000                         |0069: invoke-static {}, Lcom/android/utils/utils/NwdConfigUtils;.getConfigPath:()Ljava/lang/String; // method@61fb
+307218: 0c02                                   |006c: move-result-object v2
+30721a: 6e20 478e 2000                         |006d: invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@8e47
+307220: 1a02 ca04                              |0070: const-string v2, "/app/UartConfig.ini" // string@04ca
+307224: 6e20 478e 2000                         |0072: invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@8e47
+30722a: 6e10 508e 0000                         |0075: invoke-virtual {v0}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@8e50
+307230: 0c00                                   |0078: move-result-object v0
+307232: 6900 d97c                              |0079: sput-object v0, Lcom/nwd/dsp/uitls/DspConstant;.DSP_EQ_GAIN_MAX_PATH:Ljava/lang/String; // field@7cd9
+307236: 2200 a710                              |007b: new-instance v0, Ljava/lang/StringBuilder; // type@10a7
+30723a: 7010 3d8e 0000                         |007d: invoke-direct {v0}, Ljava/lang/StringBuilder;.<init>:()V // method@8e3d
+307240: 7100 fb61 0000                         |0080: invoke-static {}, Lcom/android/utils/utils/NwdConfigUtils;.getConfigPath:()Ljava/lang/String; // method@61fb
+307246: 0c02                                   |0083: move-result-object v2
+307248: 6e20 478e 2000                         |0084: invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@8e47
+30724e: 1a02 c404                              |0087: const-string v2, "/app/FactoryConfig.ini" // string@04c4
+307252: 6e20 478e 2000                         |0089: invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@8e47
+307258: 6e10 508e 0000                         |008c: invoke-virtual {v0}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@8e50
+30725e: 0c00                                   |008f: move-result-object v0
+307260: 6900 da7c                              |0090: sput-object v0, Lcom/nwd/dsp/uitls/DspConstant;.DSP_FACTORYCONFIG_PATH:Ljava/lang/String; // field@7cda
+307264: 2200 a710                              |0092: new-instance v0, Ljava/lang/StringBuilder; // type@10a7
+307268: 7010 3d8e 0000                         |0094: invoke-direct {v0}, Ljava/lang/StringBuilder;.<init>:()V // method@8e3d
+30726e: 7100 fb61 0000                         |0097: invoke-static {}, Lcom/android/utils/utils/NwdConfigUtils;.getConfigPath:()Ljava/lang/String; // method@61fb
+307274: 0c02                                   |009a: move-result-object v2
+307276: 6e20 478e 2000                         |009b: invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@8e47
+30727c: 1a02 c304                              |009e: const-string v2, "/app/DspDefault.ini" // string@04c3
+307280: 6e20 478e 2000                         |00a0: invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@8e47
+307286: 6e10 508e 0000                         |00a3: invoke-virtual {v0}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@8e50
+30728c: 0c00                                   |00a6: move-result-object v0
+30728e: 6900 d47c                              |00a7: sput-object v0, Lcom/nwd/dsp/uitls/DspConstant;.DSP_DEFAULT_PATH:Ljava/lang/String; // field@7cd4
+307292: 2200 a710                              |00a9: new-instance v0, Ljava/lang/StringBuilder; // type@10a7
+307296: 7010 3d8e 0000                         |00ab: invoke-direct {v0}, Ljava/lang/StringBuilder;.<init>:()V // method@8e3d
+30729c: 7100 fb61 0000                         |00ae: invoke-static {}, Lcom/android/utils/utils/NwdConfigUtils;.getConfigPath:()Ljava/lang/String; // method@61fb
+3072a2: 0c02                                   |00b1: move-result-object v2
+3072a4: 6e20 478e 2000                         |00b2: invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@8e47
+3072aa: 1a02 cc04                              |00b5: const-string v2, "/app/WindowFeatureConfig.ini" // string@04cc
+3072ae: 6e20 478e 2000                         |00b7: invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@8e47
+3072b4: 6e10 508e 0000                         |00ba: invoke-virtual {v0}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@8e50
+3072ba: 0c00                                   |00bd: move-result-object v0
+3072bc: 6900 dc7c                              |00be: sput-object v0, Lcom/nwd/dsp/uitls/DspConstant;.FEATURE_CONFIG_PATH:Ljava/lang/String; // field@7cdc
+3072c0: 2200 a710                              |00c0: new-instance v0, Ljava/lang/StringBuilder; // type@10a7
+3072c4: 7010 3d8e 0000                         |00c2: invoke-direct {v0}, Ljava/lang/StringBuilder;.<init>:()V // method@8e3d
+3072ca: 7100 fb61 0000                         |00c5: invoke-static {}, Lcom/android/utils/utils/NwdConfigUtils;.getConfigPath:()Ljava/lang/String; // method@61fb
+3072d0: 0c02                                   |00c8: move-result-object v2
+3072d2: 6e20 478e 2000                         |00c9: invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@8e47
+3072d8: 1a02 d404                              |00cc: const-string v2, "/app/dspUi/DspConfig.ini" // string@04d4
+3072dc: 6e20 478e 2000                         |00ce: invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@8e47
+3072e2: 6e10 508e 0000                         |00d1: invoke-virtual {v0}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@8e50
+3072e8: 0c00                                   |00d4: move-result-object v0
+3072ea: 6900 d27c                              |00d5: sput-object v0, Lcom/nwd/dsp/uitls/DspConstant;.DEFAULT_DSPCONFIG_PATH:Ljava/lang/String; // field@7cd2
+3072ee: 2200 a710                              |00d7: new-instance v0, Ljava/lang/StringBuilder; // type@10a7
+3072f2: 7010 3d8e 0000                         |00d9: invoke-direct {v0}, Ljava/lang/StringBuilder;.<init>:()V // method@8e3d
+3072f8: 7100 fb61 0000                         |00dc: invoke-static {}, Lcom/android/utils/utils/NwdConfigUtils;.getConfigPath:()Ljava/lang/String; // method@61fb
+3072fe: 0c02                                   |00df: move-result-object v2
+307300: 6e20 478e 2000                         |00e0: invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@8e47
+307306: 1a02 c204                              |00e3: const-string v2, "/app/DspConfig.ini" // string@04c2
+30730a: 6e20 478e 2000                         |00e5: invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@8e47
+307310: 6e10 508e 0000                         |00e8: invoke-virtual {v0}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@8e50
+307316: 0c00                                   |00eb: move-result-object v0
+307318: 6900 d37c                              |00ec: sput-object v0, Lcom/nwd/dsp/uitls/DspConstant;.DEFAULT_DSPCONFIG_PATH2:Ljava/lang/String; // field@7cd3
+30731c: 6a01 df7c                              |00ee: sput-boolean v1, Lcom/nwd/dsp/uitls/DspConstant;.IS_SEND_END:Z // field@7cdf
+307320: 7100 fd85 0000                         |00f0: invoke-static {}, Lcom/nwd/dsp/uitls/DspUtils;.getAudioType:()I // method@85fd
+307326: 0a00                                   |00f3: move-result v0
+307328: 6700 cf7c                              |00f4: sput v0, Lcom/nwd/dsp/uitls/DspConstant;.AUDIOTYPE:I // field@7ccf
+30732c: 1300 2000                              |00f6: const/16 v0, #int 32 // #20
+307330: 2300 8011                              |00f8: new-array v0, v0, [I // type@1180
+307334: 2600 0c00 0000                         |00fa: fill-array-data v0, 00000106 // +0000000c
+30733a: 6900 d17c                              |00fd: sput-object v0, Lcom/nwd/dsp/uitls/DspConstant;.DEFAULTFREQUENCE:[I // field@7cd1
+30733e: 1300 0a00                              |00ff: const/16 v0, #int 10 // #a
+307342: 2300 8011                              |0101: new-array v0, v0, [I // type@1180
+307346: 6900 dd7c                              |0103: sput-object v0, Lcom/nwd/dsp/uitls/DspConstant;.Gain10_TWO32:[I // field@7cdd
+30734a: 0e00                                   |0105: return-void
+30734c: 0003 0400 2000 0000 1400 0000 1900 ... |0106: array-data (68 units)
+      catches       : (none)
+      positions     :
+        0x0000 line=14
+        0x000b line=17
+        0x0022 line=158
+        0x002c line=159
+        0x0036 line=204
+        0x004d line=206
+        0x0064 line=209
+        0x007b line=211
+        0x0092 line=213
+        0x00a9 line=220
+        0x00c0 line=222
+        0x00d7 line=223
+        0x00ee line=248
+        0x00f0 line=250
+        0x00fa line=252
+        0x0103 line=256
+      locals        :
+
+    #1              : (in Lcom/nwd/dsp/uitls/DspConstant;)
+      name          : '<init>'
+      type          : '()V'
+      access        : 0x10001 (PUBLIC CONSTRUCTOR)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 1
+      insns size    : 4 16-bit code units
+3073d4:                                        |[3073d4] com.nwd.dsp.uitls.DspConstant.<init>:()V
+3073e4: 7010 df8d 0000                         |0000: invoke-direct {v0}, Ljava/lang/Object;.<init>:()V // method@8ddf
+3073ea: 0e00                                   |0003: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=13
+      locals        :
+        0x0000 - 0x0004 reg=0 this Lcom/nwd/dsp/uitls/DspConstant;
+
+    #2              : (in Lcom/nwd/dsp/uitls/DspConstant;)
+      name          : 'getConfigValue'
+      type          : '(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 5
+      ins           : 2
+      outs          : 2
+      insns size    : 73 16-bit code units
+307068:                                        |[307068] com.nwd.dsp.uitls.DspConstant.getConfigValue:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+307078: 1200                                   |0000: const/4 v0, #int 0 // #0
+30707a: 2201 5310                              |0001: new-instance v1, Ljava/io/File; // type@1053
+30707e: 7020 808c 3100                         |0003: invoke-direct {v1, v3}, Ljava/io/File;.<init>:(Ljava/lang/String;)V // method@8c80
+307084: 6e10 888c 0100                         |0006: invoke-virtual {v1}, Ljava/io/File;.exists:()Z // method@8c88
+30708a: 0a01                                   |0009: move-result v1
+30708c: 3901 0300                              |000a: if-nez v1, 000d // +0003
+307090: 1100                                   |000c: return-object v0
+307092: 2201 1c11                              |000d: new-instance v1, Ljava/util/Properties; // type@111c
+307096: 7010 2790 0100                         |000f: invoke-direct {v1}, Ljava/util/Properties;.<init>:()V // method@9027
+30709c: 2202 5610                              |0012: new-instance v2, Ljava/io/FileInputStream; // type@1056
+3070a0: 7020 a28c 3200                         |0014: invoke-direct {v2, v3}, Ljava/io/FileInputStream;.<init>:(Ljava/lang/String;)V // method@8ca2
+3070a6: 6e20 3090 2100                         |0017: invoke-virtual {v1, v2}, Ljava/util/Properties;.load:(Ljava/io/InputStream;)V // method@9030
+3070ac: 2805                                   |001a: goto 001f // +0005
+3070ae: 0d03                                   |001b: move-exception v3
+3070b0: 6e10 798d 0300                         |001c: invoke-virtual {v3}, Ljava/lang/Exception;.printStackTrace:()V // method@8d79
+3070b6: 6e20 2a90 4100                         |001f: invoke-virtual {v1, v4}, Ljava/util/Properties;.containsKey:(Ljava/lang/Object;)Z // method@902a
+3070bc: 0a03                                   |0022: move-result v3
+3070be: 3803 0600                              |0023: if-eqz v3, 0029 // +0006
+3070c2: 6e20 2c90 4100                         |0025: invoke-virtual {v1, v4}, Ljava/util/Properties;.getProperty:(Ljava/lang/String;)Ljava/lang/String; // method@902c
+3070c8: 0c00                                   |0028: move-result-object v0
+3070ca: 2203 a710                              |0029: new-instance v3, Ljava/lang/StringBuilder; // type@10a7
+3070ce: 7010 3d8e 0300                         |002b: invoke-direct {v3}, Ljava/lang/StringBuilder;.<init>:()V // method@8e3d
+3070d4: 1a01 0779                              |002e: const-string v1, "keyName=" // string@7907
+3070d8: 6e20 478e 1300                         |0030: invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@8e47
+3070de: 6e20 478e 4300                         |0033: invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@8e47
+3070e4: 1a04 0a04                              |0036: const-string v4, ", value=" // string@040a
+3070e8: 6e20 478e 4300                         |0038: invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@8e47
+3070ee: 6e20 478e 0300                         |003b: invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@8e47
+3070f4: 6e10 508e 0300                         |003e: invoke-virtual {v3}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@8e50
+3070fa: 0c03                                   |0041: move-result-object v3
+3070fc: 1204                                   |0042: const/4 v4, #int 0 // #0
+3070fe: 2344 0f12                              |0043: new-array v4, v4, [Ljava/lang/Object; // type@120f
+307102: 7120 2668 4300                         |0045: invoke-static {v3, v4}, Lcom/blankj/utilcode/util/LogUtils;.eTag:(Ljava/lang/String;[Ljava/lang/Object;)V // method@6826
+307108: 1100                                   |0048: return-object v0
+      catches       : 3
+        0x0001 - 0x0012
+          Ljava/lang/Exception; -> 0x0048
+        0x0012 - 0x001a
+          Ljava/lang/Exception; -> 0x001b
+        0x001c - 0x0048
+          Ljava/lang/Exception; -> 0x0048
+      positions     :
+        0x0001 line=286
+        0x000d line=290
+        0x0012 line=292
+        0x001c line=294
+        0x001f line=298
+        0x0025 line=299
+        0x0029 line=301
+      locals        :
+        0x0000 - 0x0049 reg=3 (null) Ljava/lang/String;
+        0x0000 - 0x0049 reg=4 (null) Ljava/lang/String;
+
+    #3              : (in Lcom/nwd/dsp/uitls/DspConstant;)
+      name          : 'isShowSparkView'
+      type          : '()Z'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 0
+      outs          : 0
+      insns size    : 13 16-bit code units
+30703c:                                        |[30703c] com.nwd.dsp.uitls.DspConstant.isShowSparkView:()Z
+30704c: 6300 e77c                              |0000: sget-boolean v0, Lcom/nwd/dsp/uitls/DspConstant;.LOW_MEMORY:Z // field@7ce7
+307050: 3800 0900                              |0002: if-eqz v0, 000b // +0009
+307054: 6300 e87c                              |0004: sget-boolean v0, Lcom/nwd/dsp/uitls/DspConstant;.LOW_MEMORY_K2501:Z // field@7ce8
+307058: 3800 0300                              |0006: if-eqz v0, 0009 // +0003
+30705c: 2803                                   |0008: goto 000b // +0003
+30705e: 1200                                   |0009: const/4 v0, #int 0 // #0
+307060: 2802                                   |000a: goto 000c // +0002
+307062: 1210                                   |000b: const/4 v0, #int 1 // #1
+307064: 0f00                                   |000c: return v0
+      catches       : (none)
+      positions     :
+        0x0000 line=271
+      locals        :
+
+  Virtual methods   -
+  source_file_idx   : 5749 (DspConstant.java)
+
+Class #2370            -

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_save_eq" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/user_setting_save_eq_margin_top" android:layout_marginBottom="@dimen/bass_fragment_right_height_low_width_margin_bottom">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/user_setting_save_eq_margin_left" android:layout_marginRight="@dimen/user_setting_save_eq_margin_left">
+            <TextView android:textSize="@dimen/save_dialog_textsize" android:textColor="@color/white" android:id="@id/tv_save_eq_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/customer_eq_save_file" />
+            <LinearLayout android:orientation="horizontal" style="@style/dialog_linearlayout">
+                <TextView android:gravity="right" android:id="@id/tv_dsp_type" android:text="@string/dsp_type" style="@style/customer_audio_dialog_textView_setting" />
+                <EditText android:enabled="false" android:id="@id/et_dsp_type" android:text="7604" style="@style/customer_audio_editView_dialog__setting" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" style="@style/dialog_linearlayout">
+                <TextView android:gravity="right" android:id="@id/tv_car_type" android:text="@string/car_type" style="@style/customer_audio_dialog_textView_setting" />
+                <EditText android:id="@id/et_car_type" android:hint="@string/only_input_letter_digital" style="@style/customer_audio_editView_dialog__setting" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" style="@style/dialog_linearlayout">
+                <TextView android:gravity="right" android:id="@id/tv_dsp_setting_date" android:text="@string/dsp_setting_date" style="@style/customer_audio_dialog_textView_setting" />
+                <EditText android:enabled="false" android:id="@id/et_date" style="@style/customer_audio_editView_dialog__setting" />
+            </LinearLayout>
+            <TextView android:textColor="@android:color/holo_red_dark" android:id="@id/tv_alert_txxt_replace" android:visibility="gone" android:layout_width="wrap_content" android:layout_marginLeft="5.0dp" android:layout_marginTop="5.0dp" android:text="@string/alert_filename_repeat" android:singleLine="true" style="@style/customer_audio_dialog_textView_setting" />
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/layout_btn" android:layout_marginTop="10.0dp" style="@style/dialog_linearlayout">
+                <com.nwd.audioset.view.nwdview.StrokeTextView android:textSize="@dimen/save_dialog_textsize" android:textColor="@android:color/white" android:gravity="center" android:id="@id/yes" android:layout_width="@dimen/save_dialog_button_width" android:layout_height="@dimen/save_dialog_button_height" android:text="@string/audio_enter" />
+                <com.nwd.audioset.view.nwdview.StrokeTextView android:textSize="@dimen/save_dialog_textsize" android:textColor="@android:color/white" android:gravity="center" android:id="@id/no" android:layout_width="@dimen/save_dialog_button_width" android:layout_height="@dimen/save_dialog_button_height" android:layout_marginLeft="50.0dp" android:text="@string/audio_cancel" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</merge>

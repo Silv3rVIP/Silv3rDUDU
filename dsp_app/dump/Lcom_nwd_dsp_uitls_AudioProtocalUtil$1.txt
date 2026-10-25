@@ -1,0 +1,212 @@
+  Class descriptor  : 'Lcom/nwd/dsp/uitls/AudioProtocalUtil$1;'
+  Access flags      : 0x0010 (FINAL)
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+    #0              : 'Ljava/lang/Runnable;'
+  Static fields     -
+  Instance fields   -
+  Direct methods    -
+    #0              : (in Lcom/nwd/dsp/uitls/AudioProtocalUtil$1;)
+      name          : '<init>'
+      type          : '()V'
+      access        : 0x10000 (CONSTRUCTOR)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 1
+      insns size    : 4 16-bit code units
+305160:                                        |[305160] com.nwd.dsp.uitls.AudioProtocalUtil$1.<init>:()V
+305170: 7010 df8d 0000                         |0000: invoke-direct {v0}, Ljava/lang/Object;.<init>:()V // method@8ddf
+305176: 0e00                                   |0003: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=329
+      locals        :
+        0x0000 - 0x0004 reg=0 this Lcom/nwd/dsp/uitls/AudioProtocalUtil$1;
+
+  Virtual methods   -
+    #0              : (in Lcom/nwd/dsp/uitls/AudioProtocalUtil$1;)
+      name          : 'run'
+      type          : '()V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 7
+      ins           : 1
+      outs          : 3
+      insns size    : 295 16-bit code units
+305178:                                        |[305178] com.nwd.dsp.uitls.AudioProtocalUtil$1.run:()V
+305188: 1a00 e35e                              |0000: const-string v0, "dsp3-AudioProtocalUtil" // string@5ee3
+30518c: 1201                                   |0002: const/4 v1, #int 0 // #0
+30518e: 6a01 df7c                              |0003: sput-boolean v1, Lcom/nwd/dsp/uitls/DspConstant;.IS_SEND_END:Z // field@7cdf
+305192: 7100 9c6c 0000                         |0005: invoke-static {}, Lcom/blankj/utilcode/util/Utils;.getApp:()Landroid/app/Application; // method@6c9c
+305198: 0c02                                   |0008: move-result-object v2
+30519a: 7110 1886 0200                         |0009: invoke-static {v2}, Lcom/nwd/dsp/uitls/SettingController;.getInstance:(Landroid/content/Context;)Lcom/nwd/dsp/uitls/SettingController; // method@8618
+3051a0: 0c02                                   |000c: move-result-object v2
+3051a2: 6e10 1786 0200                         |000d: invoke-virtual {v2}, Lcom/nwd/dsp/uitls/SettingController;.getFeature:()Ljava/lang/Object; // method@8617
+3051a8: 0c02                                   |0010: move-result-object v2
+3051aa: 1f02 3410                              |0011: check-cast v2, Lcom/nwd/setting/service/SettingFeature; // type@1034
+3051ae: 1303 0b00                              |0013: const/16 v3, #int 11 // #b
+3051b2: 6204 dd7c                              |0015: sget-object v4, Lcom/nwd/dsp/uitls/DspConstant;.Gain10_TWO32:[I // field@7cdd
+3051b6: 4401 0401                              |0017: aget v1, v4, v1
+3051ba: 8d11                                   |0019: int-to-byte v1, v1
+3051bc: 7230 1e8c 3201                         |001a: invoke-interface {v2, v3, v1}, Lcom/nwd/setting/service/SettingFeature;.setDspAudio:(BB)V // method@8c1e
+3051c2: 7100 9c6c 0000                         |001d: invoke-static {}, Lcom/blankj/utilcode/util/Utils;.getApp:()Landroid/app/Application; // method@6c9c
+3051c8: 0c01                                   |0020: move-result-object v1
+3051ca: 7110 1886 0100                         |0021: invoke-static {v1}, Lcom/nwd/dsp/uitls/SettingController;.getInstance:(Landroid/content/Context;)Lcom/nwd/dsp/uitls/SettingController; // method@8618
+3051d0: 0c01                                   |0024: move-result-object v1
+3051d2: 6e10 1786 0100                         |0025: invoke-virtual {v1}, Lcom/nwd/dsp/uitls/SettingController;.getFeature:()Ljava/lang/Object; // method@8617
+3051d8: 0c01                                   |0028: move-result-object v1
+3051da: 1f01 3410                              |0029: check-cast v1, Lcom/nwd/setting/service/SettingFeature; // type@1034
+3051de: 1302 0c00                              |002b: const/16 v2, #int 12 // #c
+3051e2: 6203 dd7c                              |002d: sget-object v3, Lcom/nwd/dsp/uitls/DspConstant;.Gain10_TWO32:[I // field@7cdd
+3051e6: 1214                                   |002f: const/4 v4, #int 1 // #1
+3051e8: 4403 0304                              |0030: aget v3, v3, v4
+3051ec: 8d33                                   |0032: int-to-byte v3, v3
+3051ee: 7230 1e8c 2103                         |0033: invoke-interface {v1, v2, v3}, Lcom/nwd/setting/service/SettingFeature;.setDspAudio:(BB)V // method@8c1e
+3051f4: 7100 9c6c 0000                         |0036: invoke-static {}, Lcom/blankj/utilcode/util/Utils;.getApp:()Landroid/app/Application; // method@6c9c
+3051fa: 0c01                                   |0039: move-result-object v1
+3051fc: 7110 1886 0100                         |003a: invoke-static {v1}, Lcom/nwd/dsp/uitls/SettingController;.getInstance:(Landroid/content/Context;)Lcom/nwd/dsp/uitls/SettingController; // method@8618
+305202: 0c01                                   |003d: move-result-object v1
+305204: 6e10 1786 0100                         |003e: invoke-virtual {v1}, Lcom/nwd/dsp/uitls/SettingController;.getFeature:()Ljava/lang/Object; // method@8617
+30520a: 0c01                                   |0041: move-result-object v1
+30520c: 1f01 3410                              |0042: check-cast v1, Lcom/nwd/setting/service/SettingFeature; // type@1034
+305210: 1302 0d00                              |0044: const/16 v2, #int 13 // #d
+305214: 6203 dd7c                              |0046: sget-object v3, Lcom/nwd/dsp/uitls/DspConstant;.Gain10_TWO32:[I // field@7cdd
+305218: 1225                                   |0048: const/4 v5, #int 2 // #2
+30521a: 4403 0305                              |0049: aget v3, v3, v5
+30521e: 8d33                                   |004b: int-to-byte v3, v3
+305220: 7230 1e8c 2103                         |004c: invoke-interface {v1, v2, v3}, Lcom/nwd/setting/service/SettingFeature;.setDspAudio:(BB)V // method@8c1e
+305226: 7100 9c6c 0000                         |004f: invoke-static {}, Lcom/blankj/utilcode/util/Utils;.getApp:()Landroid/app/Application; // method@6c9c
+30522c: 0c01                                   |0052: move-result-object v1
+30522e: 7110 1886 0100                         |0053: invoke-static {v1}, Lcom/nwd/dsp/uitls/SettingController;.getInstance:(Landroid/content/Context;)Lcom/nwd/dsp/uitls/SettingController; // method@8618
+305234: 0c01                                   |0056: move-result-object v1
+305236: 6e10 1786 0100                         |0057: invoke-virtual {v1}, Lcom/nwd/dsp/uitls/SettingController;.getFeature:()Ljava/lang/Object; // method@8617
+30523c: 0c01                                   |005a: move-result-object v1
+30523e: 1f01 3410                              |005b: check-cast v1, Lcom/nwd/setting/service/SettingFeature; // type@1034
+305242: 1302 0e00                              |005d: const/16 v2, #int 14 // #e
+305246: 6203 dd7c                              |005f: sget-object v3, Lcom/nwd/dsp/uitls/DspConstant;.Gain10_TWO32:[I // field@7cdd
+30524a: 1235                                   |0061: const/4 v5, #int 3 // #3
+30524c: 4403 0305                              |0062: aget v3, v3, v5
+305250: 8d33                                   |0064: int-to-byte v3, v3
+305252: 7230 1e8c 2103                         |0065: invoke-interface {v1, v2, v3}, Lcom/nwd/setting/service/SettingFeature;.setDspAudio:(BB)V // method@8c1e
+305258: 7100 9c6c 0000                         |0068: invoke-static {}, Lcom/blankj/utilcode/util/Utils;.getApp:()Landroid/app/Application; // method@6c9c
+30525e: 0c01                                   |006b: move-result-object v1
+305260: 7110 1886 0100                         |006c: invoke-static {v1}, Lcom/nwd/dsp/uitls/SettingController;.getInstance:(Landroid/content/Context;)Lcom/nwd/dsp/uitls/SettingController; // method@8618
+305266: 0c01                                   |006f: move-result-object v1
+305268: 6e10 1786 0100                         |0070: invoke-virtual {v1}, Lcom/nwd/dsp/uitls/SettingController;.getFeature:()Ljava/lang/Object; // method@8617
+30526e: 0c01                                   |0073: move-result-object v1
+305270: 1f01 3410                              |0074: check-cast v1, Lcom/nwd/setting/service/SettingFeature; // type@1034
+305274: 1302 0f00                              |0076: const/16 v2, #int 15 // #f
+305278: 6203 dd7c                              |0078: sget-object v3, Lcom/nwd/dsp/uitls/DspConstant;.Gain10_TWO32:[I // field@7cdd
+30527c: 1245                                   |007a: const/4 v5, #int 4 // #4
+30527e: 4403 0305                              |007b: aget v3, v3, v5
+305282: 8d33                                   |007d: int-to-byte v3, v3
+305284: 7230 1e8c 2103                         |007e: invoke-interface {v1, v2, v3}, Lcom/nwd/setting/service/SettingFeature;.setDspAudio:(BB)V // method@8c1e
+30528a: 7100 9c6c 0000                         |0081: invoke-static {}, Lcom/blankj/utilcode/util/Utils;.getApp:()Landroid/app/Application; // method@6c9c
+305290: 0c01                                   |0084: move-result-object v1
+305292: 7110 1886 0100                         |0085: invoke-static {v1}, Lcom/nwd/dsp/uitls/SettingController;.getInstance:(Landroid/content/Context;)Lcom/nwd/dsp/uitls/SettingController; // method@8618
+305298: 0c01                                   |0088: move-result-object v1
+30529a: 6e10 1786 0100                         |0089: invoke-virtual {v1}, Lcom/nwd/dsp/uitls/SettingController;.getFeature:()Ljava/lang/Object; // method@8617
+3052a0: 0c01                                   |008c: move-result-object v1
+3052a2: 1f01 3410                              |008d: check-cast v1, Lcom/nwd/setting/service/SettingFeature; // type@1034
+3052a6: 1302 1000                              |008f: const/16 v2, #int 16 // #10
+3052aa: 6203 dd7c                              |0091: sget-object v3, Lcom/nwd/dsp/uitls/DspConstant;.Gain10_TWO32:[I // field@7cdd
+3052ae: 1255                                   |0093: const/4 v5, #int 5 // #5
+3052b0: 4403 0305                              |0094: aget v3, v3, v5
+3052b4: 8d33                                   |0096: int-to-byte v3, v3
+3052b6: 7230 1e8c 2103                         |0097: invoke-interface {v1, v2, v3}, Lcom/nwd/setting/service/SettingFeature;.setDspAudio:(BB)V // method@8c1e
+3052bc: 7100 9c6c 0000                         |009a: invoke-static {}, Lcom/blankj/utilcode/util/Utils;.getApp:()Landroid/app/Application; // method@6c9c
+3052c2: 0c01                                   |009d: move-result-object v1
+3052c4: 7110 1886 0100                         |009e: invoke-static {v1}, Lcom/nwd/dsp/uitls/SettingController;.getInstance:(Landroid/content/Context;)Lcom/nwd/dsp/uitls/SettingController; // method@8618
+3052ca: 0c01                                   |00a1: move-result-object v1
+3052cc: 6e10 1786 0100                         |00a2: invoke-virtual {v1}, Lcom/nwd/dsp/uitls/SettingController;.getFeature:()Ljava/lang/Object; // method@8617
+3052d2: 0c01                                   |00a5: move-result-object v1
+3052d4: 1f01 3410                              |00a6: check-cast v1, Lcom/nwd/setting/service/SettingFeature; // type@1034
+3052d8: 1302 1100                              |00a8: const/16 v2, #int 17 // #11
+3052dc: 6203 dd7c                              |00aa: sget-object v3, Lcom/nwd/dsp/uitls/DspConstant;.Gain10_TWO32:[I // field@7cdd
+3052e0: 1265                                   |00ac: const/4 v5, #int 6 // #6
+3052e2: 4403 0305                              |00ad: aget v3, v3, v5
+3052e6: 8d33                                   |00af: int-to-byte v3, v3
+3052e8: 7230 1e8c 2103                         |00b0: invoke-interface {v1, v2, v3}, Lcom/nwd/setting/service/SettingFeature;.setDspAudio:(BB)V // method@8c1e
+3052ee: 7100 9c6c 0000                         |00b3: invoke-static {}, Lcom/blankj/utilcode/util/Utils;.getApp:()Landroid/app/Application; // method@6c9c
+3052f4: 0c01                                   |00b6: move-result-object v1
+3052f6: 7110 1886 0100                         |00b7: invoke-static {v1}, Lcom/nwd/dsp/uitls/SettingController;.getInstance:(Landroid/content/Context;)Lcom/nwd/dsp/uitls/SettingController; // method@8618
+3052fc: 0c01                                   |00ba: move-result-object v1
+3052fe: 6e10 1786 0100                         |00bb: invoke-virtual {v1}, Lcom/nwd/dsp/uitls/SettingController;.getFeature:()Ljava/lang/Object; // method@8617
+305304: 0c01                                   |00be: move-result-object v1
+305306: 1f01 3410                              |00bf: check-cast v1, Lcom/nwd/setting/service/SettingFeature; // type@1034
+30530a: 1302 1200                              |00c1: const/16 v2, #int 18 // #12
+30530e: 6203 dd7c                              |00c3: sget-object v3, Lcom/nwd/dsp/uitls/DspConstant;.Gain10_TWO32:[I // field@7cdd
+305312: 1275                                   |00c5: const/4 v5, #int 7 // #7
+305314: 4403 0305                              |00c6: aget v3, v3, v5
+305318: 8d33                                   |00c8: int-to-byte v3, v3
+30531a: 7230 1e8c 2103                         |00c9: invoke-interface {v1, v2, v3}, Lcom/nwd/setting/service/SettingFeature;.setDspAudio:(BB)V // method@8c1e
+305320: 7100 9c6c 0000                         |00cc: invoke-static {}, Lcom/blankj/utilcode/util/Utils;.getApp:()Landroid/app/Application; // method@6c9c
+305326: 0c01                                   |00cf: move-result-object v1
+305328: 7110 1886 0100                         |00d0: invoke-static {v1}, Lcom/nwd/dsp/uitls/SettingController;.getInstance:(Landroid/content/Context;)Lcom/nwd/dsp/uitls/SettingController; // method@8618
+30532e: 0c01                                   |00d3: move-result-object v1
+305330: 6e10 1786 0100                         |00d4: invoke-virtual {v1}, Lcom/nwd/dsp/uitls/SettingController;.getFeature:()Ljava/lang/Object; // method@8617
+305336: 0c01                                   |00d7: move-result-object v1
+305338: 1f01 3410                              |00d8: check-cast v1, Lcom/nwd/setting/service/SettingFeature; // type@1034
+30533c: 1302 1300                              |00da: const/16 v2, #int 19 // #13
+305340: 6203 dd7c                              |00dc: sget-object v3, Lcom/nwd/dsp/uitls/DspConstant;.Gain10_TWO32:[I // field@7cdd
+305344: 1305 0800                              |00de: const/16 v5, #int 8 // #8
+305348: 4403 0305                              |00e0: aget v3, v3, v5
+30534c: 8d33                                   |00e2: int-to-byte v3, v3
+30534e: 7230 1e8c 2103                         |00e3: invoke-interface {v1, v2, v3}, Lcom/nwd/setting/service/SettingFeature;.setDspAudio:(BB)V // method@8c1e
+305354: 7100 9c6c 0000                         |00e6: invoke-static {}, Lcom/blankj/utilcode/util/Utils;.getApp:()Landroid/app/Application; // method@6c9c
+30535a: 0c01                                   |00e9: move-result-object v1
+30535c: 7110 1886 0100                         |00ea: invoke-static {v1}, Lcom/nwd/dsp/uitls/SettingController;.getInstance:(Landroid/content/Context;)Lcom/nwd/dsp/uitls/SettingController; // method@8618
+305362: 0c01                                   |00ed: move-result-object v1
+305364: 6e10 1786 0100                         |00ee: invoke-virtual {v1}, Lcom/nwd/dsp/uitls/SettingController;.getFeature:()Ljava/lang/Object; // method@8617
+30536a: 0c01                                   |00f1: move-result-object v1
+30536c: 1f01 3410                              |00f2: check-cast v1, Lcom/nwd/setting/service/SettingFeature; // type@1034
+305370: 1302 1400                              |00f4: const/16 v2, #int 20 // #14
+305374: 6203 dd7c                              |00f6: sget-object v3, Lcom/nwd/dsp/uitls/DspConstant;.Gain10_TWO32:[I // field@7cdd
+305378: 1305 0900                              |00f8: const/16 v5, #int 9 // #9
+30537c: 4403 0305                              |00fa: aget v3, v3, v5
+305380: 8d33                                   |00fc: int-to-byte v3, v3
+305382: 7230 1e8c 2103                         |00fd: invoke-interface {v1, v2, v3}, Lcom/nwd/setting/service/SettingFeature;.setDspAudio:(BB)V // method@8c1e
+305388: 2201 a710                              |0100: new-instance v1, Ljava/lang/StringBuilder; // type@10a7
+30538c: 7010 3d8e 0100                         |0102: invoke-direct {v1}, Ljava/lang/StringBuilder;.<init>:()V // method@8e3d
+305392: 1a02 a2b0                              |0105: const-string v2, "发送10段Eq数据: " // string@b0a2
+305396: 6e20 478e 2100                         |0107: invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@8e47
+30539c: 6202 dd7c                              |010a: sget-object v2, Lcom/nwd/dsp/uitls/DspConstant;.Gain10_TWO32:[I // field@7cdd
+3053a0: 7110 758f 0200                         |010c: invoke-static {v2}, Ljava/util/Arrays;.toString:([I)Ljava/lang/String; // method@8f75
+3053a6: 0c02                                   |010f: move-result-object v2
+3053a8: 6e20 478e 2100                         |0110: invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@8e47
+3053ae: 6e10 508e 0100                         |0113: invoke-virtual {v1}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@8e50
+3053b4: 0c01                                   |0116: move-result-object v1
+3053b6: 7120 5308 1000                         |0117: invoke-static {v0, v1}, Landroid/util/Log;.e:(Ljava/lang/String;Ljava/lang/String;)I // method@0853
+3053bc: 6a04 df7c                              |011a: sput-boolean v4, Lcom/nwd/dsp/uitls/DspConstant;.IS_SEND_END:Z // field@7cdf
+3053c0: 280a                                   |011c: goto 0126 // +000a
+3053c2: 0d01                                   |011d: move-exception v1
+3053c4: 6e10 798d 0100                         |011e: invoke-virtual {v1}, Ljava/lang/Exception;.printStackTrace:()V // method@8d79
+3053ca: 1a01 82b0                              |0121: const-string v1, "假32段发送10段MCU数据报错 " // string@b082
+3053ce: 7120 5308 1000                         |0123: invoke-static {v0, v1}, Landroid/util/Log;.e:(Ljava/lang/String;Ljava/lang/String;)I // method@0853
+3053d4: 0e00                                   |0126: return-void
+      catches       : 1
+        0x0003 - 0x011c
+          Ljava/lang/Exception; -> 0x011d
+      positions     :
+        0x0003 line=334
+        0x0005 line=336
+        0x001d line=337
+        0x0036 line=338
+        0x004f line=339
+        0x0068 line=340
+        0x0081 line=341
+        0x009a line=342
+        0x00b3 line=343
+        0x00cc line=344
+        0x00e6 line=345
+        0x0100 line=347
+        0x011a line=348
+        0x011e line=350
+        0x0123 line=351
+      locals        :
+        0x0000 - 0x0127 reg=6 this Lcom/nwd/dsp/uitls/AudioProtocalUtil$1;
+
+  source_file_idx   : 3137 (AudioProtocalUtil.java)
+
+Class #2352            -

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="@dimen/site_fragment_left_rl_height" android:layout_marginTop="0.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/seekbar_gain_value" android:text="0" style="@style/textview_common_eq_vertical_setting" />
+    <com.nwd.audioset.view.nwdview.VerticalSeekBar2 android:layout_gravity="center_horizontal" android:id="@id/seekbar" android:paddingTop="@dimen/vertical_seekbar_paddingtop" android:paddingBottom="@dimen/vertical_seekbar_paddingbottom" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1.0" style="@style/myCommonSeekBar" />
+    <TextView android:id="@id/seekbar_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/subwoofer" style="@style/textview_common_eq_vertical_setting" />
+</LinearLayout>

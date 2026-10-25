@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/site_fragment_big_ll_margin_top" android:layout_marginBottom="@dimen/site_fragment_big_ll_margin_bottom" android:layout_marginStart="@dimen/site_fragment_big_ll_margin_left" android:layout_marginEnd="@dimen/site_fragment_big_ll_margin_right"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:id="@id/ll_yinchang_bg" android:background="@mipmap/yinchang_bg" android:layout_width="match_parent" android:layout_height="match_parent"
+      xmlns:seekbar="http://schemas.android.com/apk/res-auto">
+        <RelativeLayout android:id="@id/rl_site_mode" android:layout_width="@dimen/site_fragment_left_rl_width" android:layout_height="@dimen/site_fragment_left_rl_height" android:layout_marginTop="@dimen/site_fragment_left_rl_margin_top" android:layout_marginBottom="@dimen/site_fragment_left_rl_margin_bottom" android:layout_centerVertical="true" android:layout_marginStart="@dimen/site_fragment_left_rl_margin_left" android:layout_marginEnd="@dimen/site_fragment_left_rl_margin_right">
+            <Button android:id="@id/site_mode_left" android:background="@drawable/site_zuojiashi_btn_bg" android:layout_width="@dimen/site_fragment_left_btn_width" android:layout_height="@dimen/site_fragment_left_btn_height" />
+            <Button android:id="@id/site_mode_right" android:background="@drawable/site_youjiashi_btn_bg" android:layout_width="@dimen/site_fragment_left_btn_width" android:layout_height="@dimen/site_fragment_left_btn_height" android:layout_alignParentEnd="true" />
+            <Button android:id="@id/site_mode_behind" android:background="@drawable/site_houpai_btn_bg" android:layout_width="@dimen/site_fragment_left_btn_width" android:layout_height="@dimen/site_fragment_left_btn_height" android:layout_alignParentBottom="true" />
+            <Button android:id="@id/site_mode_center" android:background="@drawable/site_all_btn_bg" android:layout_width="@dimen/site_fragment_left_btn_width" android:layout_height="@dimen/site_fragment_left_btn_height" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" />
+            <Button android:id="@id/site_reset" android:background="@drawable/site_reset_btn_bg" android:layout_width="@dimen/site_fragment_reset_btn_width" android:layout_height="@dimen/site_fragment_reset_btn_height" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/site_fragment_right_rl_margin_top" android:layout_marginBottom="@dimen/site_fragment_right_rl_margin_bottom" android:layout_centerVertical="true" android:layout_marginStart="@dimen/site_fragment_right_rl_margin_left" android:layout_marginEnd="@dimen/site_fragment_right_rl_margin_right" android:layout_toEndOf="@id/rl_site_mode">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/rl_yinchang" android:layout_width="@dimen/site_fragment_right_btn_height" android:layout_height="match_parent">
+                    <RelativeLayout android:id="@id/rl_yinchang1" android:layout_width="@dimen/site_fragment_ringht_rl_width" android:layout_height="@dimen/site_fragment_ringht_rl_height" android:layout_centerInParent="true">
+                        <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@mipmap/yinchang_che" />
+                        <com.nwd.audioset.view.nwdview.FaderBalanceView android:id="@id/fb_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+                    </RelativeLayout>
+                    <Button android:id="@id/top_move_btn" android:background="@drawable/site_top_move_btn_bg" android:layout_width="@dimen/site_fragment_right_move_btn_width" android:layout_height="@dimen/site_fragment_right_move_btn_height" android:layout_marginTop="@dimen/site_fragment_right_move_btn_margin_top" android:layout_centerHorizontal="true" />
+                    <Button android:id="@id/left_move_btn" android:background="@drawable/site_left_move_btn_bg" android:layout_width="@dimen/site_fragment_right_move_btn_width" android:layout_height="@dimen/site_fragment_right_move_btn_height" android:layout_centerVertical="true" />
+                    <Button android:id="@id/right_move_btn" android:background="@drawable/site_right_move_btn_bg" android:layout_width="@dimen/site_fragment_right_move_btn_width" android:layout_height="@dimen/site_fragment_right_move_btn_height" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+                    <Button android:id="@id/bottom_move_btn" android:background="@drawable/site_bottom_move_btn_bg" android:layout_width="@dimen/site_fragment_right_move_btn_width" android:layout_height="@dimen/site_fragment_right_move_btn_height" android:layout_marginBottom="@dimen/site_fragment_right_move_btn_margin_top" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <com.nwd.audioset.view.nwdview.SeekBarView android:layout_gravity="center_vertical" android:id="@id/eq_1" android:visibility="gone" android:layout_width="@dimen/audio_setting_common_item_width" android:layout_height="wrap_content" seekbar:name="0">
+                    <include layout="@layout/layout_common_seekbar_vertical_view" />
+                </com.nwd.audioset.view.nwdview.SeekBarView>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

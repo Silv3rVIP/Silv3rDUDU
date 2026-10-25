@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/rootLL" android:background="@mipmap/main_fragment_bg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_gaoditong_bg" android:background="@mipmap/yinchang_bg" android:paddingTop="@dimen/king_fragment_big_ll_padding_top" android:paddingBottom="@dimen/bass_fragment_big_ll_margin_bottom" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/king_fragment_big_ll_margin_top">
+        <LinearLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="25.0sp" android:textColor="@color/white" android:id="@id/tv_user_setting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dp" android:text="@string/user_setting" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="-25.0dp">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="@dimen/setting_left_ll_width" android:layout_height="match_parent">
+                <com.nwd.audioset.view.nwdview.StrokeTextView android:textSize="23.0sp" android:textColor="#fdfdfd" android:gravity="center" android:id="@id/btn_save_eq" android:layout_width="@dimen/setting_left_ll_button_width" android:layout_height="@dimen/setting_left_ll_button_width" android:text="@string/user_eq_save" />
+                <com.nwd.audioset.view.nwdview.StrokeTextView android:textSize="23.0sp" android:textColor="#fdfdfd" android:gravity="center" android:id="@id/btn_import_export" android:layout_width="@dimen/setting_left_ll_button_width" android:layout_height="@dimen/setting_left_ll_button_width" android:layout_marginTop="@dimen/bass_fragment_left_ll_button_margin_top" android:text="@string/user_eq_list" />
+                <com.nwd.audioset.view.nwdview.StrokeTextView android:textSize="23.0sp" android:textColor="#fdfdfd" android:gravity="center" android:id="@id/btn_version" android:layout_width="@dimen/setting_left_ll_button_width" android:layout_height="@dimen/setting_left_ll_button_width" android:layout_marginTop="@dimen/bass_fragment_left_ll_button_margin_top" android:text="@string/user_about" />
+            </LinearLayout>
+            <View android:background="@color/black" android:layout_width="1.0px" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dp_10" android:layout_marginTop="@dimen/dp_38" android:layout_marginRight="@dimen/dp_10" android:layout_marginBottom="@dimen/dp_38" />
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="-20.0dp">
+                <include layout="@layout/view_save_eq" />
+                <include android:visibility="gone" layout="@layout/view_import_export" />
+                <include android:visibility="gone" layout="@layout/view_version" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

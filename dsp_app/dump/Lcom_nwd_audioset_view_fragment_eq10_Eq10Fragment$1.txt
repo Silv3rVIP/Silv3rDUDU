@@ -1,0 +1,69 @@
+  Class descriptor  : 'Lcom/nwd/audioset/view/fragment/eq10/Eq10Fragment$1;'
+  Access flags      : 0x0000 ()
+  Superclass        : 'Landroid/os/Handler;'
+  Interfaces        -
+  Static fields     -
+  Instance fields   -
+    #0              : (in Lcom/nwd/audioset/view/fragment/eq10/Eq10Fragment$1;)
+      name          : 'this$0'
+      type          : 'Lcom/nwd/audioset/view/fragment/eq10/Eq10Fragment;'
+      access        : 0x1010 (FINAL SYNTHETIC)
+  Direct methods    -
+    #0              : (in Lcom/nwd/audioset/view/fragment/eq10/Eq10Fragment$1;)
+      name          : '<init>'
+      type          : '(Lcom/nwd/audioset/view/fragment/eq10/Eq10Fragment;)V'
+      access        : 0x10000 (CONSTRUCTOR)
+      code          -
+      registers     : 2
+      ins           : 2
+      outs          : 1
+      insns size    : 6 16-bit code units
+2f1004:                                        |[2f1004] com.nwd.audioset.view.fragment.eq10.Eq10Fragment$1.<init>:(Lcom/nwd/audioset/view/fragment/eq10/Eq10Fragment;)V
+2f1014: 5b01 1d7a                              |0000: iput-object v1, v0, Lcom/nwd/audioset/view/fragment/eq10/Eq10Fragment$1;.this$0:Lcom/nwd/audioset/view/fragment/eq10/Eq10Fragment; // field@7a1d
+2f1018: 7010 3906 0000                         |0002: invoke-direct {v0}, Landroid/os/Handler;.<init>:()V // method@0639
+2f101e: 0e00                                   |0005: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=475
+      locals        :
+        0x0000 - 0x0006 reg=0 this Lcom/nwd/audioset/view/fragment/eq10/Eq10Fragment$1;
+        0x0000 - 0x0006 reg=1 (null) Lcom/nwd/audioset/view/fragment/eq10/Eq10Fragment;
+
+  Virtual methods   -
+    #0              : (in Lcom/nwd/audioset/view/fragment/eq10/Eq10Fragment$1;)
+      name          : 'handleMessage'
+      type          : '(Landroid/os/Message;)V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 4
+      ins           : 2
+      outs          : 3
+      insns size    : 28 16-bit code units
+2f1020:                                        |[2f1020] com.nwd.audioset.view.fragment.eq10.Eq10Fragment$1.handleMessage:(Landroid/os/Message;)V
+2f1030: 5230 e300                              |0000: iget v0, v3, Landroid/os/Message;.what:I // field@00e3
+2f1034: 3800 1000                              |0002: if-eqz v0, 0012 // +0010
+2f1038: 1221                                   |0004: const/4 v1, #int 2 // #2
+2f103a: 3210 0300                              |0005: if-eq v0, v1, 0008 // +0003
+2f103e: 2814                                   |0007: goto 001b // +0014
+2f1040: 5420 1d7a                              |0008: iget-object v0, v2, Lcom/nwd/audioset/view/fragment/eq10/Eq10Fragment$1;.this$0:Lcom/nwd/audioset/view/fragment/eq10/Eq10Fragment; // field@7a1d
+2f1044: 5231 df00                              |000a: iget v1, v3, Landroid/os/Message;.arg1:I // field@00df
+2f1048: 5233 e000                              |000c: iget v3, v3, Landroid/os/Message;.arg2:I // field@00e0
+2f104c: 6e30 7e82 1003                         |000e: invoke-virtual {v0, v1, v3}, Lcom/nwd/audioset/view/fragment/eq10/Eq10Fragment;.updateDSPAudio:(II)V // method@827e
+2f1052: 280a                                   |0011: goto 001b // +000a
+2f1054: 5420 1d7a                              |0012: iget-object v0, v2, Lcom/nwd/audioset/view/fragment/eq10/Eq10Fragment$1;.this$0:Lcom/nwd/audioset/view/fragment/eq10/Eq10Fragment; // field@7a1d
+2f1058: 5231 df00                              |0014: iget v1, v3, Landroid/os/Message;.arg1:I // field@00df
+2f105c: 5233 e000                              |0016: iget v3, v3, Landroid/os/Message;.arg2:I // field@00e0
+2f1060: 6e30 7d82 1003                         |0018: invoke-virtual {v0, v1, v3}, Lcom/nwd/audioset/view/fragment/eq10/Eq10Fragment;.updateAudio:(II)V // method@827d
+2f1066: 0e00                                   |001b: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=480
+        0x0008 line=489
+        0x0012 line=486
+      locals        :
+        0x0000 - 0x001c reg=2 this Lcom/nwd/audioset/view/fragment/eq10/Eq10Fragment$1;
+        0x0000 - 0x001c reg=3 (null) Landroid/os/Message;
+
+  source_file_idx   : 6126 (Eq10Fragment.java)
+
+Class #2298            -

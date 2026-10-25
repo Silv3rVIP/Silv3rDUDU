@@ -1,0 +1,99 @@
+  Class descriptor  : 'Lcom/nwd/dsp/uitls/DspConstant$DTS_SP_DATA;'
+  Access flags      : 0x0011 (PUBLIC FINAL)
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+  Static fields     -
+    #0              : (in Lcom/nwd/dsp/uitls/DspConstant$DTS_SP_DATA;)
+      name          : 'BASS_GAIN_AFTER'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : "dts_bass_gain_after"
+    #1              : (in Lcom/nwd/dsp/uitls/DspConstant$DTS_SP_DATA;)
+      name          : 'BASS_GAIN_FRONT'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : "dts_bass_gain_front"
+    #2              : (in Lcom/nwd/dsp/uitls/DspConstant$DTS_SP_DATA;)
+      name          : 'BASS_GAIN_MIDDLE'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : "dts_bass_gain_middle"
+    #3              : (in Lcom/nwd/dsp/uitls/DspConstant$DTS_SP_DATA;)
+      name          : 'BASS_OPTION_AFTER'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : "dts_bass_option_after"
+    #4              : (in Lcom/nwd/dsp/uitls/DspConstant$DTS_SP_DATA;)
+      name          : 'BASS_OPTION_FRONT'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : "dts_bass_option_front"
+    #5              : (in Lcom/nwd/dsp/uitls/DspConstant$DTS_SP_DATA;)
+      name          : 'BASS_OPTION_MIDDLE'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : "dts_bass_option_middle"
+    #6              : (in Lcom/nwd/dsp/uitls/DspConstant$DTS_SP_DATA;)
+      name          : 'DTS_FUN_SWITCH'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : "dts_fun_switch"
+    #7              : (in Lcom/nwd/dsp/uitls/DspConstant$DTS_SP_DATA;)
+      name          : 'SCENE_MODE'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : "dts_scene_mode"
+    #8              : (in Lcom/nwd/dsp/uitls/DspConstant$DTS_SP_DATA;)
+      name          : 'SOUND_GATHERING_AFTER'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : "dts_sound_gathering_after"
+    #9              : (in Lcom/nwd/dsp/uitls/DspConstant$DTS_SP_DATA;)
+      name          : 'SOUND_GATHERING_FRONT'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : "dts_sound_gathering_front"
+    #10              : (in Lcom/nwd/dsp/uitls/DspConstant$DTS_SP_DATA;)
+      name          : 'SOUND_GATHERING_MIDDLE'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : "dts_sound_gathering_middle"
+    #11              : (in Lcom/nwd/dsp/uitls/DspConstant$DTS_SP_DATA;)
+      name          : 'SURROUND_MODE_FRONT'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : "dts_surround_mode_front"
+    #12              : (in Lcom/nwd/dsp/uitls/DspConstant$DTS_SP_DATA;)
+      name          : 'SURROUND_MODE_MIDDLE'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : "dts_surround_mode_middle"
+    #13              : (in Lcom/nwd/dsp/uitls/DspConstant$DTS_SP_DATA;)
+      name          : 'VIRTUAL_MIDDLE'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : "dts_virtual_middle"
+  Instance fields   -
+  Direct methods    -
+    #0              : (in Lcom/nwd/dsp/uitls/DspConstant$DTS_SP_DATA;)
+      name          : '<init>'
+      type          : '()V'
+      access        : 0x10001 (PUBLIC CONSTRUCTOR)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 1
+      insns size    : 4 16-bit code units
+306f7c:                                        |[306f7c] com.nwd.dsp.uitls.DspConstant$DTS_SP_DATA.<init>:()V
+306f8c: 7010 df8d 0000                         |0000: invoke-direct {v0}, Ljava/lang/Object;.<init>:()V // method@8ddf
+306f92: 0e00                                   |0003: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=55
+      locals        :
+        0x0000 - 0x0004 reg=0 this Lcom/nwd/dsp/uitls/DspConstant$DTS_SP_DATA;
+
+  Virtual methods   -
+  source_file_idx   : 5749 (DspConstant.java)
+
+Class #2362            -

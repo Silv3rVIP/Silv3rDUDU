@@ -1,0 +1,69 @@
+  Class descriptor  : 'Lcom/nwd/dsp/uitls/DspData$SingletonClassInstance;'
+  Access flags      : 0x0000 ()
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+  Static fields     -
+    #0              : (in Lcom/nwd/dsp/uitls/DspData$SingletonClassInstance;)
+      name          : 'instance'
+      type          : 'Lcom/nwd/dsp/uitls/DspData;'
+      access        : 0x001a (PRIVATE STATIC FINAL)
+  Instance fields   -
+  Direct methods    -
+    #0              : (in Lcom/nwd/dsp/uitls/DspData$SingletonClassInstance;)
+      name          : '<clinit>'
+      type          : '()V'
+      access        : 0x10008 (STATIC CONSTRUCTOR)
+      code          -
+      registers     : 1
+      ins           : 0
+      outs          : 1
+      insns size    : 8 16-bit code units
+307404:                                        |[307404] com.nwd.dsp.uitls.DspData$SingletonClassInstance.<clinit>:()V
+307414: 2200 9b0f                              |0000: new-instance v0, Lcom/nwd/dsp/uitls/DspData; // type@0f9b
+307418: 7010 5c85 0000                         |0002: invoke-direct {v0}, Lcom/nwd/dsp/uitls/DspData;.<init>:()V // method@855c
+30741e: 6900 f17c                              |0005: sput-object v0, Lcom/nwd/dsp/uitls/DspData$SingletonClassInstance;.instance:Lcom/nwd/dsp/uitls/DspData; // field@7cf1
+307422: 0e00                                   |0007: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=142
+      locals        :
+
+    #1              : (in Lcom/nwd/dsp/uitls/DspData$SingletonClassInstance;)
+      name          : '<init>'
+      type          : '()V'
+      access        : 0x10002 (PRIVATE CONSTRUCTOR)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 1
+      insns size    : 4 16-bit code units
+307424:                                        |[307424] com.nwd.dsp.uitls.DspData$SingletonClassInstance.<init>:()V
+307434: 7010 df8d 0000                         |0000: invoke-direct {v0}, Ljava/lang/Object;.<init>:()V // method@8ddf
+30743a: 0e00                                   |0003: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=141
+      locals        :
+        0x0000 - 0x0004 reg=0 this Lcom/nwd/dsp/uitls/DspData$SingletonClassInstance;
+
+    #2              : (in Lcom/nwd/dsp/uitls/DspData$SingletonClassInstance;)
+      name          : 'access$000'
+      type          : '()Lcom/nwd/dsp/uitls/DspData;'
+      access        : 0x1008 (STATIC SYNTHETIC)
+      code          -
+      registers     : 1
+      ins           : 0
+      outs          : 0
+      insns size    : 3 16-bit code units
+3073ec:                                        |[3073ec] com.nwd.dsp.uitls.DspData$SingletonClassInstance.access$000:()Lcom/nwd/dsp/uitls/DspData;
+3073fc: 6200 f17c                              |0000: sget-object v0, Lcom/nwd/dsp/uitls/DspData$SingletonClassInstance;.instance:Lcom/nwd/dsp/uitls/DspData; // field@7cf1
+307400: 1100                                   |0002: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=141
+      locals        :
+
+  Virtual methods   -
+  source_file_idx   : 5751 (DspData.java)
+
+Class #2371            -

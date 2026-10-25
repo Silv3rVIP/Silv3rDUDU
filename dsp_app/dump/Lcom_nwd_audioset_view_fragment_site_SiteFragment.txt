@@ -1,0 +1,1711 @@
+  Class descriptor  : 'Lcom/nwd/audioset/view/fragment/site/SiteFragment;'
+  Access flags      : 0x0001 (PUBLIC)
+  Superclass        : 'Lcom/nwd/audioset/mvpbase/BaseFragment;'
+  Interfaces        -
+    #0              : 'Landroid/view/View$OnClickListener;'
+    #1              : 'Lcom/nwd/audioset/view/nwdview/FaderBalanceView$OnBallMoveListener;'
+    #2              : 'Landroid/widget/SeekBar$OnSeekBarChangeListener;'
+  Static fields     -
+    #0              : (in Lcom/nwd/audioset/view/fragment/site/SiteFragment;)
+      name          : 'ADJUST_OFFSET'
+      type          : 'I'
+      access        : 0x001a (PRIVATE STATIC FINAL)
+      value         : 3
+    #1              : (in Lcom/nwd/audioset/view/fragment/site/SiteFragment;)
+      name          : 'TAG'
+      type          : 'Ljava/lang/String;'
+      access        : 0x001a (PRIVATE STATIC FINAL)
+      value         : "dsp3-SiteFragment"
+  Instance fields   -
+    #0              : (in Lcom/nwd/audioset/view/fragment/site/SiteFragment;)
+      name          : 'binding'
+      type          : 'Lcom/nwd/audioset/databinding/FragmentSiteBinding;'
+      access        : 0x0002 (PRIVATE)
+    #1              : (in Lcom/nwd/audioset/view/fragment/site/SiteFragment;)
+      name          : 'binding1'
+      type          : 'Lcom/nwd/audioset/databinding/FragmentSite1Binding;'
+      access        : 0x0002 (PRIVATE)
+    #2              : (in Lcom/nwd/audioset/view/fragment/site/SiteFragment;)
+      name          : 'bottom_move_btn'
+      type          : 'Landroid/widget/Button;'
+      access        : 0x0002 (PRIVATE)
+    #3              : (in Lcom/nwd/audioset/view/fragment/site/SiteFragment;)
+      name          : 'center_mode_btn'
+      type          : 'Landroid/widget/Button;'
+      access        : 0x0002 (PRIVATE)
+    #4              : (in Lcom/nwd/audioset/view/fragment/site/SiteFragment;)
+      name          : 'fb_view'
+      type          : 'Lcom/nwd/audioset/view/nwdview/FaderBalanceView;'
+      access        : 0x0002 (PRIVATE)
+    #5              : (in Lcom/nwd/audioset/view/fragment/site/SiteFragment;)
+      name          : 'hou_mode_btn'
+      type          : 'Landroid/widget/Button;'
+      access        : 0x0002 (PRIVATE)
+    #6              : (in Lcom/nwd/audioset/view/fragment/site/SiteFragment;)
+      name          : 'isG5Portrait'
+      type          : 'Z'
+      access        : 0x0001 (PUBLIC)
+    #7              : (in Lcom/nwd/audioset/view/fragment/site/SiteFragment;)
+      name          : 'left_mode_btn'
+      type          : 'Landroid/widget/Button;'
+      access        : 0x0002 (PRIVATE)
+    #8              : (in Lcom/nwd/audioset/view/fragment/site/SiteFragment;)
+      name          : 'left_move_btn'
+      type          : 'Landroid/widget/Button;'
+      access        : 0x0002 (PRIVATE)
+    #9              : (in Lcom/nwd/audioset/view/fragment/site/SiteFragment;)
+      name          : 'mHandler'
+      type          : 'Landroid/os/Handler;'
+      access        : 0x0002 (PRIVATE)
+    #10              : (in Lcom/nwd/audioset/view/fragment/site/SiteFragment;)
+      name          : 'mMaxEqValue'
+      type          : 'I'
+      access        : 0x0002 (PRIVATE)
+    #11              : (in Lcom/nwd/audioset/view/fragment/site/SiteFragment;)
+      name          : 'reset_btn'
+      type          : 'Landroid/widget/Button;'
+      access        : 0x0002 (PRIVATE)
+    #12              : (in Lcom/nwd/audioset/view/fragment/site/SiteFragment;)
+      name          : 'right_mode_btn'
+      type          : 'Landroid/widget/Button;'
+      access        : 0x0002 (PRIVATE)
+    #13              : (in Lcom/nwd/audioset/view/fragment/site/SiteFragment;)
+      name          : 'right_move_btn'
+      type          : 'Landroid/widget/Button;'
+      access        : 0x0002 (PRIVATE)
+    #14              : (in Lcom/nwd/audioset/view/fragment/site/SiteFragment;)
+      name          : 'seekbar'
+      type          : 'Lcom/nwd/audioset/view/nwdview/SeekBarView;'
+      access        : 0x0002 (PRIVATE)
+    #15              : (in Lcom/nwd/audioset/view/fragment/site/SiteFragment;)
+      name          : 'seekbarShow'
+      type          : 'Z'
+      access        : 0x0002 (PRIVATE)
+    #16              : (in Lcom/nwd/audioset/view/fragment/site/SiteFragment;)
+      name          : 'top_move_btn'
+      type          : 'Landroid/widget/Button;'
+      access        : 0x0002 (PRIVATE)
+  Direct methods    -
+    #0              : (in Lcom/nwd/audioset/view/fragment/site/SiteFragment;)
+      name          : '<init>'
+      type          : '()V'
+      access        : 0x10001 (PUBLIC CONSTRUCTOR)
+      code          -
+      registers     : 3
+      ins           : 1
+      outs          : 2
+      insns size    : 19 16-bit code units
+2f7178:                                        |[2f7178] com.nwd.audioset.view.fragment.site.SiteFragment.<init>:()V
+2f7188: 7010 ab80 0200                         |0000: invoke-direct {v2}, Lcom/nwd/audioset/mvpbase/BaseFragment;.<init>:()V // method@80ab
+2f718e: 1200                                   |0003: const/4 v0, #int 0 // #0
+2f7190: 5c20 927a                              |0004: iput-boolean v0, v2, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.isG5Portrait:Z // field@7a92
+2f7194: 2200 2801                              |0006: new-instance v0, Landroid/os/Handler; // type@0128
+2f7198: 2201 4b0f                              |0008: new-instance v1, Lcom/nwd/audioset/view/fragment/site/SiteFragment$3; // type@0f4b
+2f719c: 7020 ad82 2100                         |000a: invoke-direct {v1, v2}, Lcom/nwd/audioset/view/fragment/site/SiteFragment$3;.<init>:(Lcom/nwd/audioset/view/fragment/site/SiteFragment;)V // method@82ad
+2f71a2: 7020 3a06 1000                         |000d: invoke-direct {v0, v1}, Landroid/os/Handler;.<init>:(Landroid/os/Handler$Callback;)V // method@063a
+2f71a8: 5b20 967a                              |0010: iput-object v0, v2, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.mHandler:Landroid/os/Handler; // field@7a96
+2f71ac: 0e00                                   |0012: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=43
+        0x0004 line=55
+        0x0006 line=310
+      locals        :
+        0x0000 - 0x0013 reg=2 this Lcom/nwd/audioset/view/fragment/site/SiteFragment;
+
+    #1              : (in Lcom/nwd/audioset/view/fragment/site/SiteFragment;)
+      name          : 'access$000'
+      type          : '(Lcom/nwd/audioset/view/fragment/site/SiteFragment;)V'
+      access        : 0x1008 (STATIC SYNTHETIC)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 1
+      insns size    : 4 16-bit code units
+2f71b0:                                        |[2f71b0] com.nwd.audioset.view.fragment.site.SiteFragment.access$000:(Lcom/nwd/audioset/view/fragment/site/SiteFragment;)V
+2f71c0: 7010 c782 0000                         |0000: invoke-direct {v0}, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.updateLeftUi:()V // method@82c7
+2f71c6: 0e00                                   |0003: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=43
+      locals        :
+        0x0000 - 0x0004 reg=0 (null) Lcom/nwd/audioset/view/fragment/site/SiteFragment;
+
+    #2              : (in Lcom/nwd/audioset/view/fragment/site/SiteFragment;)
+      name          : 'access$100'
+      type          : '(Lcom/nwd/audioset/view/fragment/site/SiteFragment;)V'
+      access        : 0x1008 (STATIC SYNTHETIC)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 1
+      insns size    : 4 16-bit code units
+2f71c8:                                        |[2f71c8] com.nwd.audioset.view.fragment.site.SiteFragment.access$100:(Lcom/nwd/audioset/view/fragment/site/SiteFragment;)V
+2f71d8: 7010 c882 0000                         |0000: invoke-direct {v0}, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.updateRightUi:()V // method@82c8
+2f71de: 0e00                                   |0003: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=43
+      locals        :
+        0x0000 - 0x0004 reg=0 (null) Lcom/nwd/audioset/view/fragment/site/SiteFragment;
+
+    #3              : (in Lcom/nwd/audioset/view/fragment/site/SiteFragment;)
+      name          : 'newInstance'
+      type          : '()Lcom/nwd/audioset/view/fragment/site/SiteFragment;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 3
+      ins           : 0
+      outs          : 2
+      insns size    : 19 16-bit code units
+2f7124:                                        |[2f7124] com.nwd.audioset.view.fragment.site.SiteFragment.newInstance:()Lcom/nwd/audioset/view/fragment/site/SiteFragment;
+2f7134: 1210                                   |0000: const/4 v0, #int 1 // #1
+2f7136: 2300 0f12                              |0001: new-array v0, v0, [Ljava/lang/Object; // type@120f
+2f713a: 1201                                   |0003: const/4 v1, #int 0 // #0
+2f713c: 1a02 658e                              |0004: const-string v2, "new SiteFragment()" // string@8e65
+2f7140: 4d02 0001                              |0006: aput-object v2, v0, v1
+2f7144: 1a01 f05e                              |0008: const-string v1, "dsp3-SiteFragment" // string@5ef0
+2f7148: 7120 2668 0100                         |000a: invoke-static {v1, v0}, Lcom/blankj/utilcode/util/LogUtils;.eTag:(Ljava/lang/String;[Ljava/lang/Object;)V // method@6826
+2f714e: 2200 4c0f                              |000d: new-instance v0, Lcom/nwd/audioset/view/fragment/site/SiteFragment; // type@0f4c
+2f7152: 7010 af82 0000                         |000f: invoke-direct {v0}, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.<init>:()V // method@82af
+2f7158: 1100                                   |0012: return-object v0
+      catches       : (none)
+      positions     :
+        0x000a line=57
+        0x000d line=58
+      locals        :
+
+    #4              : (in Lcom/nwd/audioset/view/fragment/site/SiteFragment;)
+      name          : 'updateDspUi'
+      type          : '()V'
+      access        : 0x0002 (PRIVATE)
+      code          -
+      registers     : 9
+      ins           : 1
+      outs          : 3
+      insns size    : 368 16-bit code units
+2f792c:                                        |[2f792c] com.nwd.audioset.view.fragment.site.SiteFragment.updateDspUi:()V
+2f793c: 5480 957a                              |0000: iget-object v0, v8, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.mContext:Landroid/content/Context; // field@7a95
+2f7940: 7110 ea80 0000                         |0002: invoke-static {v0}, Lcom/nwd/audioset/utils/InternationalPictureUtils;.getInstance:(Landroid/content/Context;)Lcom/nwd/audioset/utils/InternationalPictureUtils; // method@80ea
+2f7946: 0c00                                   |0005: move-result-object v0
+2f7948: 5401 bf78                              |0006: iget-object v1, v0, Lcom/nwd/audioset/utils/InternationalPictureUtils;.yinchang_btn_zuojiashi_d:Ljava/lang/String; // field@78bf
+2f794c: 12f2                                   |0008: const/4 v2, #int -1 // #ff
+2f794e: 6e30 e880 1002                         |0009: invoke-virtual {v0, v1, v2}, Lcom/nwd/audioset/utils/InternationalPictureUtils;.getDrawable:(Ljava/lang/String;I)Landroid/graphics/drawable/Drawable; // method@80e8
+2f7954: 0c01                                   |000c: move-result-object v1
+2f7956: 5403 c078                              |000d: iget-object v3, v0, Lcom/nwd/audioset/utils/InternationalPictureUtils;.yinchang_btn_zuojiashi_n:Ljava/lang/String; // field@78c0
+2f795a: 6e30 e880 3002                         |000f: invoke-virtual {v0, v3, v2}, Lcom/nwd/audioset/utils/InternationalPictureUtils;.getDrawable:(Ljava/lang/String;I)Landroid/graphics/drawable/Drawable; // method@80e8
+2f7960: 0c03                                   |0012: move-result-object v3
+2f7962: 5484 937a                              |0013: iget-object v4, v8, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.left_mode_btn:Landroid/widget/Button; // field@7a93
+2f7966: 7130 1985 3401                         |0015: invoke-static {v4, v3, v1}, Lcom/nwd/dsp/uitls/AppUtil;.viewSetBG:(Landroid/view/View;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V // method@8519
+2f796c: 5401 bb78                              |0018: iget-object v1, v0, Lcom/nwd/audioset/utils/InternationalPictureUtils;.yinchang_btn_youjiashi_d:Ljava/lang/String; // field@78bb
+2f7970: 6e30 e880 1002                         |001a: invoke-virtual {v0, v1, v2}, Lcom/nwd/audioset/utils/InternationalPictureUtils;.getDrawable:(Ljava/lang/String;I)Landroid/graphics/drawable/Drawable; // method@80e8
+2f7976: 0c01                                   |001d: move-result-object v1
+2f7978: 5403 bc78                              |001e: iget-object v3, v0, Lcom/nwd/audioset/utils/InternationalPictureUtils;.yinchang_btn_youjiashi_n:Ljava/lang/String; // field@78bc
+2f797c: 6e30 e880 3002                         |0020: invoke-virtual {v0, v3, v2}, Lcom/nwd/audioset/utils/InternationalPictureUtils;.getDrawable:(Ljava/lang/String;I)Landroid/graphics/drawable/Drawable; // method@80e8
+2f7982: 0c03                                   |0023: move-result-object v3
+2f7984: 5484 9a7a                              |0024: iget-object v4, v8, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.right_mode_btn:Landroid/widget/Button; // field@7a9a
+2f7988: 7130 1985 3401                         |0026: invoke-static {v4, v3, v1}, Lcom/nwd/dsp/uitls/AppUtil;.viewSetBG:(Landroid/view/View;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V // method@8519
+2f798e: 5401 b978                              |0029: iget-object v1, v0, Lcom/nwd/audioset/utils/InternationalPictureUtils;.yinchang_btn_houpai_d:Ljava/lang/String; // field@78b9
+2f7992: 6e30 e880 1002                         |002b: invoke-virtual {v0, v1, v2}, Lcom/nwd/audioset/utils/InternationalPictureUtils;.getDrawable:(Ljava/lang/String;I)Landroid/graphics/drawable/Drawable; // method@80e8
+2f7998: 0c01                                   |002e: move-result-object v1
+2f799a: 5403 ba78                              |002f: iget-object v3, v0, Lcom/nwd/audioset/utils/InternationalPictureUtils;.yinchang_btn_houpai_n:Ljava/lang/String; // field@78ba
+2f799e: 6e30 e880 3002                         |0031: invoke-virtual {v0, v3, v2}, Lcom/nwd/audioset/utils/InternationalPictureUtils;.getDrawable:(Ljava/lang/String;I)Landroid/graphics/drawable/Drawable; // method@80e8
+2f79a4: 0c03                                   |0034: move-result-object v3
+2f79a6: 5484 917a                              |0035: iget-object v4, v8, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.hou_mode_btn:Landroid/widget/Button; // field@7a91
+2f79aa: 7130 1985 3401                         |0037: invoke-static {v4, v3, v1}, Lcom/nwd/dsp/uitls/AppUtil;.viewSetBG:(Landroid/view/View;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V // method@8519
+2f79b0: 5401 bd78                              |003a: iget-object v1, v0, Lcom/nwd/audioset/utils/InternationalPictureUtils;.yinchang_btn_zhongxin_d:Ljava/lang/String; // field@78bd
+2f79b4: 6e30 e880 1002                         |003c: invoke-virtual {v0, v1, v2}, Lcom/nwd/audioset/utils/InternationalPictureUtils;.getDrawable:(Ljava/lang/String;I)Landroid/graphics/drawable/Drawable; // method@80e8
+2f79ba: 0c01                                   |003f: move-result-object v1
+2f79bc: 5403 be78                              |0040: iget-object v3, v0, Lcom/nwd/audioset/utils/InternationalPictureUtils;.yinchang_btn_zhongxin_n:Ljava/lang/String; // field@78be
+2f79c0: 6e30 e880 3002                         |0042: invoke-virtual {v0, v3, v2}, Lcom/nwd/audioset/utils/InternationalPictureUtils;.getDrawable:(Ljava/lang/String;I)Landroid/graphics/drawable/Drawable; // method@80e8
+2f79c6: 0c03                                   |0045: move-result-object v3
+2f79c8: 5484 8f7a                              |0046: iget-object v4, v8, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.center_mode_btn:Landroid/widget/Button; // field@7a8f
+2f79cc: 7130 1985 3401                         |0048: invoke-static {v4, v3, v1}, Lcom/nwd/dsp/uitls/AppUtil;.viewSetBG:(Landroid/view/View;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V // method@8519
+2f79d2: 5401 b778                              |004b: iget-object v1, v0, Lcom/nwd/audioset/utils/InternationalPictureUtils;.yinchang_btn_fuwei_d:Ljava/lang/String; // field@78b7
+2f79d6: 6e30 e880 1002                         |004d: invoke-virtual {v0, v1, v2}, Lcom/nwd/audioset/utils/InternationalPictureUtils;.getDrawable:(Ljava/lang/String;I)Landroid/graphics/drawable/Drawable; // method@80e8
+2f79dc: 0c01                                   |0050: move-result-object v1
+2f79de: 5403 b878                              |0051: iget-object v3, v0, Lcom/nwd/audioset/utils/InternationalPictureUtils;.yinchang_btn_fuwei_n:Ljava/lang/String; // field@78b8
+2f79e2: 6e30 e880 3002                         |0053: invoke-virtual {v0, v3, v2}, Lcom/nwd/audioset/utils/InternationalPictureUtils;.getDrawable:(Ljava/lang/String;I)Landroid/graphics/drawable/Drawable; // method@80e8
+2f79e8: 0c03                                   |0056: move-result-object v3
+2f79ea: 5484 997a                              |0057: iget-object v4, v8, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.reset_btn:Landroid/widget/Button; // field@7a99
+2f79ee: 7130 1985 3401                         |0059: invoke-static {v4, v3, v1}, Lcom/nwd/dsp/uitls/AppUtil;.viewSetBG:(Landroid/view/View;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V // method@8519
+2f79f4: 5401 b678                              |005c: iget-object v1, v0, Lcom/nwd/audioset/utils/InternationalPictureUtils;.yinchang_bg:Ljava/lang/String; // field@78b6
+2f79f8: 6e30 e880 1002                         |005e: invoke-virtual {v0, v1, v2}, Lcom/nwd/audioset/utils/InternationalPictureUtils;.getDrawable:(Ljava/lang/String;I)Landroid/graphics/drawable/Drawable; // method@80e8
+2f79fe: 0c01                                   |0061: move-result-object v1
+2f7a00: 5483 987a                              |0062: iget-object v3, v8, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.mRootView:Landroid/view/View; // field@7a98
+2f7a04: 1404 e301 097f                         |0064: const v4, #float 1.82114e+38 // #7f0901e3
+2f7a0a: 6e20 a509 4300                         |0067: invoke-virtual {v3, v4}, Landroid/view/View;.findViewById:(I)Landroid/view/View; // method@09a5
+2f7a10: 0c03                                   |006a: move-result-object v3
+2f7a12: 7130 1985 1301                         |006b: invoke-static {v3, v1, v1}, Lcom/nwd/dsp/uitls/AppUtil;.viewSetBG:(Landroid/view/View;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V // method@8519
+2f7a18: 5401 c178                              |006e: iget-object v1, v0, Lcom/nwd/audioset/utils/InternationalPictureUtils;.yinchang_che:Ljava/lang/String; // field@78c1
+2f7a1c: 6e30 e880 1002                         |0070: invoke-virtual {v0, v1, v2}, Lcom/nwd/audioset/utils/InternationalPictureUtils;.getDrawable:(Ljava/lang/String;I)Landroid/graphics/drawable/Drawable; // method@80e8
+2f7a22: 0c01                                   |0073: move-result-object v1
+2f7a24: 5483 987a                              |0074: iget-object v3, v8, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.mRootView:Landroid/view/View; // field@7a98
+2f7a28: 1404 a001 097f                         |0076: const v4, #float 1.82113e+38 // #7f0901a0
+2f7a2e: 6e20 a509 4300                         |0079: invoke-virtual {v3, v4}, Landroid/view/View;.findViewById:(I)Landroid/view/View; // method@09a5
+2f7a34: 0c03                                   |007c: move-result-object v3
+2f7a36: 1f03 6e02                              |007d: check-cast v3, Landroid/widget/ImageView; // type@026e
+2f7a3a: 7130 1485 1301                         |007f: invoke-static {v3, v1, v1}, Lcom/nwd/dsp/uitls/AppUtil;.iamgeSetSrc:(Landroid/widget/ImageView;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V // method@8514
+2f7a40: 5401 a778                              |0082: iget-object v1, v0, Lcom/nwd/audioset/utils/InternationalPictureUtils;.site_top_move:Ljava/lang/String; // field@78a7
+2f7a44: 6e30 e880 1002                         |0084: invoke-virtual {v0, v1, v2}, Lcom/nwd/audioset/utils/InternationalPictureUtils;.getDrawable:(Ljava/lang/String;I)Landroid/graphics/drawable/Drawable; // method@80e8
+2f7a4a: 0c01                                   |0087: move-result-object v1
+2f7a4c: 5483 987a                              |0088: iget-object v3, v8, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.mRootView:Landroid/view/View; // field@7a98
+2f7a50: 1404 1003 097f                         |008a: const v4, #float 1.8212e+38 // #7f090310
+2f7a56: 6e20 a509 4300                         |008d: invoke-virtual {v3, v4}, Landroid/view/View;.findViewById:(I)Landroid/view/View; // method@09a5
+2f7a5c: 0c03                                   |0090: move-result-object v3
+2f7a5e: 7130 1985 1301                         |0091: invoke-static {v3, v1, v1}, Lcom/nwd/dsp/uitls/AppUtil;.viewSetBG:(Landroid/view/View;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V // method@8519
+2f7a64: 5403 a478                              |0094: iget-object v3, v0, Lcom/nwd/audioset/utils/InternationalPictureUtils;.site_bottom_move:Ljava/lang/String; // field@78a4
+2f7a68: 6e30 e880 3002                         |0096: invoke-virtual {v0, v3, v2}, Lcom/nwd/audioset/utils/InternationalPictureUtils;.getDrawable:(Ljava/lang/String;I)Landroid/graphics/drawable/Drawable; // method@80e8
+2f7a6e: 0c03                                   |0099: move-result-object v3
+2f7a70: 5485 987a                              |009a: iget-object v5, v8, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.mRootView:Landroid/view/View; // field@7a98
+2f7a74: 1406 9600 097f                         |009c: const v6, #float 1.82107e+38 // #7f090096
+2f7a7a: 6e20 a509 6500                         |009f: invoke-virtual {v5, v6}, Landroid/view/View;.findViewById:(I)Landroid/view/View; // method@09a5
+2f7a80: 0c05                                   |00a2: move-result-object v5
+2f7a82: 7130 1985 3503                         |00a3: invoke-static {v5, v3, v3}, Lcom/nwd/dsp/uitls/AppUtil;.viewSetBG:(Landroid/view/View;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V // method@8519
+2f7a88: 5403 a578                              |00a6: iget-object v3, v0, Lcom/nwd/audioset/utils/InternationalPictureUtils;.site_left_move:Ljava/lang/String; // field@78a5
+2f7a8c: 6e30 e880 3002                         |00a8: invoke-virtual {v0, v3, v2}, Lcom/nwd/audioset/utils/InternationalPictureUtils;.getDrawable:(Ljava/lang/String;I)Landroid/graphics/drawable/Drawable; // method@80e8
+2f7a92: 0c03                                   |00ab: move-result-object v3
+2f7a94: 5485 987a                              |00ac: iget-object v5, v8, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.mRootView:Landroid/view/View; // field@7a98
+2f7a98: 1407 b101 097f                         |00ae: const v7, #float 1.82113e+38 // #7f0901b1
+2f7a9e: 6e20 a509 7500                         |00b1: invoke-virtual {v5, v7}, Landroid/view/View;.findViewById:(I)Landroid/view/View; // method@09a5
+2f7aa4: 0c05                                   |00b4: move-result-object v5
+2f7aa6: 7130 1985 3503                         |00b5: invoke-static {v5, v3, v3}, Lcom/nwd/dsp/uitls/AppUtil;.viewSetBG:(Landroid/view/View;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V // method@8519
+2f7aac: 5403 a678                              |00b8: iget-object v3, v0, Lcom/nwd/audioset/utils/InternationalPictureUtils;.site_right_move:Ljava/lang/String; // field@78a6
+2f7ab0: 6e30 e880 3002                         |00ba: invoke-virtual {v0, v3, v2}, Lcom/nwd/audioset/utils/InternationalPictureUtils;.getDrawable:(Ljava/lang/String;I)Landroid/graphics/drawable/Drawable; // method@80e8
+2f7ab6: 0c00                                   |00bd: move-result-object v0
+2f7ab8: 5482 987a                              |00be: iget-object v2, v8, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.mRootView:Landroid/view/View; // field@7a98
+2f7abc: 1403 4302 097f                         |00c0: const v3, #float 1.82116e+38 // #7f090243
+2f7ac2: 6e20 a509 3200                         |00c3: invoke-virtual {v2, v3}, Landroid/view/View;.findViewById:(I)Landroid/view/View; // method@09a5
+2f7ac8: 0c02                                   |00c6: move-result-object v2
+2f7aca: 7130 1985 0200                         |00c7: invoke-static {v2, v0, v0}, Lcom/nwd/dsp/uitls/AppUtil;.viewSetBG:(Landroid/view/View;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V // method@8519
+2f7ad0: 3801 a500                              |00ca: if-eqz v1, 016f // +00a5
+2f7ad4: 5480 987a                              |00cc: iget-object v0, v8, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.mRootView:Landroid/view/View; // field@7a98
+2f7ad8: 6e20 a509 4000                         |00ce: invoke-virtual {v0, v4}, Landroid/view/View;.findViewById:(I)Landroid/view/View; // method@09a5
+2f7ade: 0c00                                   |00d1: move-result-object v0
+2f7ae0: 6e10 c809 0000                         |00d2: invoke-virtual {v0}, Landroid/view/View;.getLayoutParams:()Landroid/view/ViewGroup$LayoutParams; // method@09c8
+2f7ae6: 0c00                                   |00d5: move-result-object v0
+2f7ae8: 1f00 7c02                              |00d6: check-cast v0, Landroid/widget/RelativeLayout$LayoutParams; // type@027c
+2f7aec: 5481 957a                              |00d8: iget-object v1, v8, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.mContext:Landroid/content/Context; // field@7a95
+2f7af0: 6e10 4502 0100                         |00da: invoke-virtual {v1}, Landroid/content/Context;.getResources:()Landroid/content/res/Resources; // method@0245
+2f7af6: 0c01                                   |00dd: move-result-object v1
+2f7af8: 1402 5d03 077f                         |00de: const v2, #float 1.79463e+38 // #7f07035d
+2f7afe: 6e20 2c03 2100                         |00e1: invoke-virtual {v1, v2}, Landroid/content/res/Resources;.getDimension:(I)F // method@032c
+2f7b04: 0a01                                   |00e4: move-result v1
+2f7b06: 8711                                   |00e5: float-to-int v1, v1
+2f7b08: 5901 6b01                              |00e6: iput v1, v0, Landroid/widget/RelativeLayout$LayoutParams;.width:I // field@016b
+2f7b0c: 5481 957a                              |00e8: iget-object v1, v8, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.mContext:Landroid/content/Context; // field@7a95
+2f7b10: 6e10 4502 0100                         |00ea: invoke-virtual {v1}, Landroid/content/Context;.getResources:()Landroid/content/res/Resources; // method@0245
+2f7b16: 0c01                                   |00ed: move-result-object v1
+2f7b18: 1404 5903 077f                         |00ee: const v4, #float 1.79463e+38 // #7f070359
+2f7b1e: 6e20 2c03 4100                         |00f1: invoke-virtual {v1, v4}, Landroid/content/res/Resources;.getDimension:(I)F // method@032c
+2f7b24: 0a01                                   |00f4: move-result v1
+2f7b26: 8711                                   |00f5: float-to-int v1, v1
+2f7b28: 5901 6701                              |00f6: iput v1, v0, Landroid/widget/RelativeLayout$LayoutParams;.height:I // field@0167
+2f7b2c: 5480 987a                              |00f8: iget-object v0, v8, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.mRootView:Landroid/view/View; // field@7a98
+2f7b30: 6e20 a509 6000                         |00fa: invoke-virtual {v0, v6}, Landroid/view/View;.findViewById:(I)Landroid/view/View; // method@09a5
+2f7b36: 0c00                                   |00fd: move-result-object v0
+2f7b38: 6e10 c809 0000                         |00fe: invoke-virtual {v0}, Landroid/view/View;.getLayoutParams:()Landroid/view/ViewGroup$LayoutParams; // method@09c8
+2f7b3e: 0c00                                   |0101: move-result-object v0
+2f7b40: 1f00 7c02                              |0102: check-cast v0, Landroid/widget/RelativeLayout$LayoutParams; // type@027c
+2f7b44: 5481 957a                              |0104: iget-object v1, v8, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.mContext:Landroid/content/Context; // field@7a95
+2f7b48: 6e10 4502 0100                         |0106: invoke-virtual {v1}, Landroid/content/Context;.getResources:()Landroid/content/res/Resources; // method@0245
+2f7b4e: 0c01                                   |0109: move-result-object v1
+2f7b50: 6e20 2c03 2100                         |010a: invoke-virtual {v1, v2}, Landroid/content/res/Resources;.getDimension:(I)F // method@032c
+2f7b56: 0a01                                   |010d: move-result v1
+2f7b58: 8711                                   |010e: float-to-int v1, v1
+2f7b5a: 5901 6b01                              |010f: iput v1, v0, Landroid/widget/RelativeLayout$LayoutParams;.width:I // field@016b
+2f7b5e: 5481 957a                              |0111: iget-object v1, v8, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.mContext:Landroid/content/Context; // field@7a95
+2f7b62: 6e10 4502 0100                         |0113: invoke-virtual {v1}, Landroid/content/Context;.getResources:()Landroid/content/res/Resources; // method@0245
+2f7b68: 0c01                                   |0116: move-result-object v1
+2f7b6a: 6e20 2c03 4100                         |0117: invoke-virtual {v1, v4}, Landroid/content/res/Resources;.getDimension:(I)F // method@032c
+2f7b70: 0a01                                   |011a: move-result v1
+2f7b72: 8711                                   |011b: float-to-int v1, v1
+2f7b74: 5901 6701                              |011c: iput v1, v0, Landroid/widget/RelativeLayout$LayoutParams;.height:I // field@0167
+2f7b78: 5480 987a                              |011e: iget-object v0, v8, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.mRootView:Landroid/view/View; // field@7a98
+2f7b7c: 6e20 a509 7000                         |0120: invoke-virtual {v0, v7}, Landroid/view/View;.findViewById:(I)Landroid/view/View; // method@09a5
+2f7b82: 0c00                                   |0123: move-result-object v0
+2f7b84: 6e10 c809 0000                         |0124: invoke-virtual {v0}, Landroid/view/View;.getLayoutParams:()Landroid/view/ViewGroup$LayoutParams; // method@09c8
+2f7b8a: 0c00                                   |0127: move-result-object v0
+2f7b8c: 1f00 7c02                              |0128: check-cast v0, Landroid/widget/RelativeLayout$LayoutParams; // type@027c
+2f7b90: 5481 957a                              |012a: iget-object v1, v8, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.mContext:Landroid/content/Context; // field@7a95
+2f7b94: 6e10 4502 0100                         |012c: invoke-virtual {v1}, Landroid/content/Context;.getResources:()Landroid/content/res/Resources; // method@0245
+2f7b9a: 0c01                                   |012f: move-result-object v1
+2f7b9c: 6e20 2c03 2100                         |0130: invoke-virtual {v1, v2}, Landroid/content/res/Resources;.getDimension:(I)F // method@032c
+2f7ba2: 0a01                                   |0133: move-result v1
+2f7ba4: 8711                                   |0134: float-to-int v1, v1
+2f7ba6: 5901 6b01                              |0135: iput v1, v0, Landroid/widget/RelativeLayout$LayoutParams;.width:I // field@016b
+2f7baa: 5481 957a                              |0137: iget-object v1, v8, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.mContext:Landroid/content/Context; // field@7a95
+2f7bae: 6e10 4502 0100                         |0139: invoke-virtual {v1}, Landroid/content/Context;.getResources:()Landroid/content/res/Resources; // method@0245
+2f7bb4: 0c01                                   |013c: move-result-object v1
+2f7bb6: 6e20 2c03 4100                         |013d: invoke-virtual {v1, v4}, Landroid/content/res/Resources;.getDimension:(I)F // method@032c
+2f7bbc: 0a01                                   |0140: move-result v1
+2f7bbe: 8711                                   |0141: float-to-int v1, v1
+2f7bc0: 5901 6701                              |0142: iput v1, v0, Landroid/widget/RelativeLayout$LayoutParams;.height:I // field@0167
+2f7bc4: 5480 987a                              |0144: iget-object v0, v8, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.mRootView:Landroid/view/View; // field@7a98
+2f7bc8: 6e20 a509 3000                         |0146: invoke-virtual {v0, v3}, Landroid/view/View;.findViewById:(I)Landroid/view/View; // method@09a5
+2f7bce: 0c00                                   |0149: move-result-object v0
+2f7bd0: 6e10 c809 0000                         |014a: invoke-virtual {v0}, Landroid/view/View;.getLayoutParams:()Landroid/view/ViewGroup$LayoutParams; // method@09c8
+2f7bd6: 0c00                                   |014d: move-result-object v0
+2f7bd8: 1f00 7c02                              |014e: check-cast v0, Landroid/widget/RelativeLayout$LayoutParams; // type@027c
+2f7bdc: 5481 957a                              |0150: iget-object v1, v8, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.mContext:Landroid/content/Context; // field@7a95
+2f7be0: 6e10 4502 0100                         |0152: invoke-virtual {v1}, Landroid/content/Context;.getResources:()Landroid/content/res/Resources; // method@0245
+2f7be6: 0c01                                   |0155: move-result-object v1
+2f7be8: 6e20 2c03 2100                         |0156: invoke-virtual {v1, v2}, Landroid/content/res/Resources;.getDimension:(I)F // method@032c
+2f7bee: 0a01                                   |0159: move-result v1
+2f7bf0: 8711                                   |015a: float-to-int v1, v1
+2f7bf2: 5901 6b01                              |015b: iput v1, v0, Landroid/widget/RelativeLayout$LayoutParams;.width:I // field@016b
+2f7bf6: 5481 957a                              |015d: iget-object v1, v8, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.mContext:Landroid/content/Context; // field@7a95
+2f7bfa: 6e10 4502 0100                         |015f: invoke-virtual {v1}, Landroid/content/Context;.getResources:()Landroid/content/res/Resources; // method@0245
+2f7c00: 0c01                                   |0162: move-result-object v1
+2f7c02: 6e20 2c03 4100                         |0163: invoke-virtual {v1, v4}, Landroid/content/res/Resources;.getDimension:(I)F // method@032c
+2f7c08: 0a01                                   |0166: move-result v1
+2f7c0a: 8711                                   |0167: float-to-int v1, v1
+2f7c0c: 5901 6701                              |0168: iput v1, v0, Landroid/widget/RelativeLayout$LayoutParams;.height:I // field@0167
+2f7c10: 2805                                   |016a: goto 016f // +0005
+2f7c12: 0d00                                   |016b: move-exception v0
+2f7c14: 6e10 728e 0000                         |016c: invoke-virtual {v0}, Ljava/lang/Throwable;.printStackTrace:()V // method@8e72
+2f7c1a: 0e00                                   |016f: return-void
+      catches       : 1
+        0x0000 - 0x016a
+          <any> -> 0x016b
+      positions     :
+        0x0000 line=322
+        0x0006 line=323
+        0x000d line=324
+        0x0013 line=325
+        0x0018 line=327
+        0x001e line=328
+        0x0024 line=329
+        0x0029 line=331
+        0x002f line=332
+        0x0035 line=333
+        0x003a line=335
+        0x0040 line=336
+        0x0046 line=337
+        0x004b line=339
+        0x0051 line=340
+        0x0057 line=341
+        0x005c line=343
+        0x0062 line=344
+        0x006e line=346
+        0x0074 line=347
+        0x0082 line=350
+        0x0088 line=351
+        0x0094 line=352
+        0x009a line=353
+        0x00a6 line=355
+        0x00ac line=356
+        0x00b8 line=358
+        0x00be line=359
+        0x00cc line=361
+        0x00d8 line=362
+        0x00e8 line=363
+        0x00f8 line=364
+        0x0104 line=365
+        0x0111 line=366
+        0x011e line=367
+        0x012a line=368
+        0x0137 line=369
+        0x0144 line=370
+        0x0150 line=371
+        0x015d line=372
+        0x016c line=375
+      locals        :
+        0x0000 - 0x0170 reg=8 this Lcom/nwd/audioset/view/fragment/site/SiteFragment;
+
+    #5              : (in Lcom/nwd/audioset/view/fragment/site/SiteFragment;)
+      name          : 'updateLeftUi'
+      type          : '()V'
+      access        : 0x0002 (PRIVATE)
+      code          -
+      registers     : 8
+      ins           : 1
+      outs          : 2
+      insns size    : 93 16-bit code units
+2f7c28:                                        |[2f7c28] com.nwd.audioset.view.fragment.site.SiteFragment.updateLeftUi:()V
+2f7c38: 7100 7d85 0000                         |0000: invoke-static {}, Lcom/nwd/dsp/uitls/DspManager;.getInstance:()Lcom/nwd/dsp/uitls/DspManager; // method@857d
+2f7c3e: 0c00                                   |0003: move-result-object v0
+2f7c40: 6e10 8c85 0000                         |0004: invoke-virtual {v0}, Lcom/nwd/dsp/uitls/DspManager;.getMbalance:()I // method@858c
+2f7c46: 0a00                                   |0007: move-result v0
+2f7c48: 7100 7d85 0000                         |0008: invoke-static {}, Lcom/nwd/dsp/uitls/DspManager;.getInstance:()Lcom/nwd/dsp/uitls/DspManager; // method@857d
+2f7c4e: 0c01                                   |000b: move-result-object v1
+2f7c50: 6e10 9185 0100                         |000c: invoke-virtual {v1}, Lcom/nwd/dsp/uitls/DspManager;.getMfader:()I // method@8591
+2f7c56: 0a01                                   |000f: move-result v1
+2f7c58: 5472 937a                              |0010: iget-object v2, v7, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.left_mode_btn:Landroid/widget/Button; // field@7a93
+2f7c5c: 1233                                   |0012: const/4 v3, #int 3 // #3
+2f7c5e: 1214                                   |0013: const/4 v4, #int 1 // #1
+2f7c60: 1205                                   |0014: const/4 v5, #int 0 // #0
+2f7c62: 3802 0e00                              |0015: if-eqz v2, 0023 // +000e
+2f7c66: 5472 937a                              |0017: iget-object v2, v7, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.left_mode_btn:Landroid/widget/Button; // field@7a93
+2f7c6a: 3331 0600                              |0019: if-ne v1, v3, 001f // +0006
+2f7c6e: 3330 0400                              |001b: if-ne v0, v3, 001f // +0004
+2f7c72: 1216                                   |001d: const/4 v6, #int 1 // #1
+2f7c74: 2802                                   |001e: goto 0020 // +0002
+2f7c76: 1206                                   |001f: const/4 v6, #int 0 // #0
+2f7c78: 6e20 570d 6200                         |0020: invoke-virtual {v2, v6}, Landroid/widget/Button;.setSelected:(Z)V // method@0d57
+2f7c7e: 5472 9a7a                              |0023: iget-object v2, v7, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.right_mode_btn:Landroid/widget/Button; // field@7a9a
+2f7c82: 3802 1000                              |0025: if-eqz v2, 0035 // +0010
+2f7c86: 5472 9a7a                              |0027: iget-object v2, v7, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.right_mode_btn:Landroid/widget/Button; // field@7a9a
+2f7c8a: 3331 0800                              |0029: if-ne v1, v3, 0031 // +0008
+2f7c8e: 1303 0b00                              |002b: const/16 v3, #int 11 // #b
+2f7c92: 3330 0400                              |002d: if-ne v0, v3, 0031 // +0004
+2f7c96: 1213                                   |002f: const/4 v3, #int 1 // #1
+2f7c98: 2802                                   |0030: goto 0032 // +0002
+2f7c9a: 1203                                   |0031: const/4 v3, #int 0 // #0
+2f7c9c: 6e20 570d 3200                         |0032: invoke-virtual {v2, v3}, Landroid/widget/Button;.setSelected:(Z)V // method@0d57
+2f7ca2: 5472 917a                              |0035: iget-object v2, v7, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.hou_mode_btn:Landroid/widget/Button; // field@7a91
+2f7ca6: 1273                                   |0037: const/4 v3, #int 7 // #7
+2f7ca8: 3802 1000                              |0038: if-eqz v2, 0048 // +0010
+2f7cac: 5472 917a                              |003a: iget-object v2, v7, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.hou_mode_btn:Landroid/widget/Button; // field@7a91
+2f7cb0: 1306 0c00                              |003c: const/16 v6, #int 12 // #c
+2f7cb4: 3361 0600                              |003e: if-ne v1, v6, 0044 // +0006
+2f7cb8: 3330 0400                              |0040: if-ne v0, v3, 0044 // +0004
+2f7cbc: 1216                                   |0042: const/4 v6, #int 1 // #1
+2f7cbe: 2802                                   |0043: goto 0045 // +0002
+2f7cc0: 1206                                   |0044: const/4 v6, #int 0 // #0
+2f7cc2: 6e20 570d 6200                         |0045: invoke-virtual {v2, v6}, Landroid/widget/Button;.setSelected:(Z)V // method@0d57
+2f7cc8: 5472 8f7a                              |0048: iget-object v2, v7, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.center_mode_btn:Landroid/widget/Button; // field@7a8f
+2f7ccc: 3802 1200                              |004a: if-eqz v2, 005c // +0012
+2f7cd0: 5472 8f7a                              |004c: iget-object v2, v7, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.center_mode_btn:Landroid/widget/Button; // field@7a8f
+2f7cd4: 3331 0500                              |004e: if-ne v1, v3, 0053 // +0005
+2f7cd8: 3330 0300                              |0050: if-ne v0, v3, 0053 // +0003
+2f7cdc: 2802                                   |0052: goto 0054 // +0002
+2f7cde: 1204                                   |0053: const/4 v4, #int 0 // #0
+2f7ce0: 6e20 570d 4200                         |0054: invoke-virtual {v2, v4}, Landroid/widget/Button;.setSelected:(Z)V // method@0d57
+2f7ce6: 2805                                   |0057: goto 005c // +0005
+2f7ce8: 0d00                                   |0058: move-exception v0
+2f7cea: 6e10 798d 0000                         |0059: invoke-virtual {v0}, Ljava/lang/Exception;.printStackTrace:()V // method@8d79
+2f7cf0: 0e00                                   |005c: return-void
+      catches       : 1
+        0x0000 - 0x0057
+          Ljava/lang/Exception; -> 0x0058
+      positions     :
+        0x0000 line=229
+        0x0008 line=231
+        0x0010 line=232
+        0x0017 line=233
+        0x0023 line=234
+        0x0027 line=235
+        0x0035 line=236
+        0x003a line=237
+        0x0048 line=238
+        0x004c line=239
+        0x0059 line=241
+      locals        :
+        0x0000 - 0x005d reg=7 this Lcom/nwd/audioset/view/fragment/site/SiteFragment;
+
+    #6              : (in Lcom/nwd/audioset/view/fragment/site/SiteFragment;)
+      name          : 'updateRightUi'
+      type          : '()V'
+      access        : 0x0002 (PRIVATE)
+      code          -
+      registers     : 6
+      ins           : 1
+      outs          : 3
+      insns size    : 61 16-bit code units
+2f7d04:                                        |[2f7d04] com.nwd.audioset.view.fragment.site.SiteFragment.updateRightUi:()V
+2f7d14: 7100 7d85 0000                         |0000: invoke-static {}, Lcom/nwd/dsp/uitls/DspManager;.getInstance:()Lcom/nwd/dsp/uitls/DspManager; // method@857d
+2f7d1a: 0c00                                   |0003: move-result-object v0
+2f7d1c: 6e10 8c85 0000                         |0004: invoke-virtual {v0}, Lcom/nwd/dsp/uitls/DspManager;.getMbalance:()I // method@858c
+2f7d22: 0a00                                   |0007: move-result v0
+2f7d24: 7100 7d85 0000                         |0008: invoke-static {}, Lcom/nwd/dsp/uitls/DspManager;.getInstance:()Lcom/nwd/dsp/uitls/DspManager; // method@857d
+2f7d2a: 0c01                                   |000b: move-result-object v1
+2f7d2c: 6e10 9185 0100                         |000c: invoke-virtual {v1}, Lcom/nwd/dsp/uitls/DspManager;.getMfader:()I // method@8591
+2f7d32: 0a01                                   |000f: move-result v1
+2f7d34: 1a02 f05e                              |0010: const-string v2, "dsp3-SiteFragment" // string@5ef0
+2f7d38: 2203 a710                              |0012: new-instance v3, Ljava/lang/StringBuilder; // type@10a7
+2f7d3c: 7010 3d8e 0300                         |0014: invoke-direct {v3}, Ljava/lang/StringBuilder;.<init>:()V // method@8e3d
+2f7d42: 1a04 2802                              |0017: const-string v4, " 传入的X为: " // string@0228
+2f7d46: 6e20 478e 4300                         |0019: invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@8e47
+2f7d4c: 6e20 438e 0300                         |001c: invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;.append:(I)Ljava/lang/StringBuilder; // method@8e43
+2f7d52: 1a04 6400                              |001f: const-string v4, "  传入的Y为: " // string@0064
+2f7d56: 6e20 478e 4300                         |0021: invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@8e47
+2f7d5c: 6e20 438e 1300                         |0024: invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;.append:(I)Ljava/lang/StringBuilder; // method@8e43
+2f7d62: 6e10 508e 0300                         |0027: invoke-virtual {v3}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@8e50
+2f7d68: 0c03                                   |002a: move-result-object v3
+2f7d6a: 7120 5308 3200                         |002b: invoke-static {v2, v3}, Landroid/util/Log;.e:(Ljava/lang/String;Ljava/lang/String;)I // method@0853
+2f7d70: 5452 907a                              |002e: iget-object v2, v5, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.fb_view:Lcom/nwd/audioset/view/nwdview/FaderBalanceView; // field@7a90
+2f7d74: 3802 0c00                              |0030: if-eqz v2, 003c // +000c
+2f7d78: 5452 907a                              |0032: iget-object v2, v5, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.fb_view:Lcom/nwd/audioset/view/nwdview/FaderBalanceView; // field@7a90
+2f7d7c: 6e30 4d83 0201                         |0034: invoke-virtual {v2, v0, v1}, Lcom/nwd/audioset/view/nwdview/FaderBalanceView;.setXY:(II)V // method@834d
+2f7d82: 2805                                   |0037: goto 003c // +0005
+2f7d84: 0d00                                   |0038: move-exception v0
+2f7d86: 6e10 798d 0000                         |0039: invoke-virtual {v0}, Ljava/lang/Exception;.printStackTrace:()V // method@8d79
+2f7d8c: 0e00                                   |003c: return-void
+      catches       : 1
+        0x0000 - 0x0037
+          Ljava/lang/Exception; -> 0x0038
+      positions     :
+        0x0000 line=215
+        0x0008 line=217
+        0x0012 line=218
+        0x002e line=219
+        0x0032 line=220
+        0x0039 line=222
+      locals        :
+        0x0000 - 0x003d reg=5 this Lcom/nwd/audioset/view/fragment/site/SiteFragment;
+
+    #7              : (in Lcom/nwd/audioset/view/fragment/site/SiteFragment;)
+      name          : 'updateUiWidth'
+      type          : '()V'
+      access        : 0x0002 (PRIVATE)
+      code          -
+      registers     : 16
+      ins           : 1
+      outs          : 2
+      insns size    : 677 16-bit code units
+2f7da0:                                        |[2f7da0] com.nwd.audioset.view.fragment.site.SiteFragment.updateUiWidth:()V
+2f7db0: 1a00 ee03                              |0000: const-string v0, ", screenHeight=" // string@03ee
+2f7db4: 1a01 52ad                              |0002: const-string v1, "updateUiWidth width=" // string@ad52
+2f7db8: 1a02 f05e                              |0004: const-string v2, "dsp3-SiteFragment" // string@5ef0
+2f7dbc: 54f3 957a                              |0006: iget-object v3, v15, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.mContext:Landroid/content/Context; // field@7a95
+2f7dc0: 1a04 63af                              |0008: const-string v4, "window" // string@af63
+2f7dc4: 6e20 4a02 4300                         |000a: invoke-virtual {v3, v4}, Landroid/content/Context;.getSystemService:(Ljava/lang/String;)Ljava/lang/Object; // method@024a
+2f7dca: 0c03                                   |000d: move-result-object v3
+2f7dcc: 1f03 2302                              |000e: check-cast v3, Landroid/view/WindowManager; // type@0223
+2f7dd0: 2204 bd01                              |0010: new-instance v4, Landroid/util/DisplayMetrics; // type@01bd
+2f7dd4: 7010 5008 0400                         |0012: invoke-direct {v4}, Landroid/util/DisplayMetrics;.<init>:()V // method@0850
+2f7dda: 7210 dc0b 0300                         |0015: invoke-interface {v3}, Landroid/view/WindowManager;.getDefaultDisplay:()Landroid/view/Display; // method@0bdc
+2f7de0: 0c03                                   |0018: move-result-object v3
+2f7de2: 6e20 ad08 4300                         |0019: invoke-virtual {v3, v4}, Landroid/view/Display;.getMetrics:(Landroid/util/DisplayMetrics;)V // method@08ad
+2f7de8: 6e10 b782 0f00                         |001c: invoke-virtual {v15}, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.getResources:()Landroid/content/res/Resources; // method@82b7
+2f7dee: 0c03                                   |001f: move-result-object v3
+2f7df0: 6e10 2b03 0300                         |0020: invoke-virtual {v3}, Landroid/content/res/Resources;.getConfiguration:()Landroid/content/res/Configuration; // method@032b
+2f7df6: 0c03                                   |0023: move-result-object v3
+2f7df8: 5233 4f00                              |0024: iget v3, v3, Landroid/content/res/Configuration;.screenWidthDp:I // field@004f
+2f7dfc: 8233                                   |0026: int-to-float v3, v3
+2f7dfe: 6e10 b782 0f00                         |0027: invoke-virtual {v15}, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.getResources:()Landroid/content/res/Resources; // method@82b7
+2f7e04: 0c05                                   |002a: move-result-object v5
+2f7e06: 6e10 2f03 0500                         |002b: invoke-virtual {v5}, Landroid/content/res/Resources;.getDisplayMetrics:()Landroid/util/DisplayMetrics; // method@032f
+2f7e0c: 0c05                                   |002e: move-result-object v5
+2f7e0e: 5255 0d01                              |002f: iget v5, v5, Landroid/util/DisplayMetrics;.density:F // field@010d
+2f7e12: a803 0305                              |0031: mul-float v3, v3, v5
+2f7e16: 6e10 b782 0f00                         |0033: invoke-virtual {v15}, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.getResources:()Landroid/content/res/Resources; // method@82b7
+2f7e1c: 0c05                                   |0036: move-result-object v5
+2f7e1e: 6e10 2b03 0500                         |0037: invoke-virtual {v5}, Landroid/content/res/Resources;.getConfiguration:()Landroid/content/res/Configuration; // method@032b
+2f7e24: 0c05                                   |003a: move-result-object v5
+2f7e26: 5255 4d00                              |003b: iget v5, v5, Landroid/content/res/Configuration;.screenHeightDp:I // field@004d
+2f7e2a: 8255                                   |003d: int-to-float v5, v5
+2f7e2c: 6e10 b782 0f00                         |003e: invoke-virtual {v15}, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.getResources:()Landroid/content/res/Resources; // method@82b7
+2f7e32: 0c06                                   |0041: move-result-object v6
+2f7e34: 6e10 2f03 0600                         |0042: invoke-virtual {v6}, Landroid/content/res/Resources;.getDisplayMetrics:()Landroid/util/DisplayMetrics; // method@032f
+2f7e3a: 0c06                                   |0045: move-result-object v6
+2f7e3c: 5266 0d01                              |0046: iget v6, v6, Landroid/util/DisplayMetrics;.density:F // field@010d
+2f7e40: a805 0506                              |0048: mul-float v5, v5, v6
+2f7e44: 2206 a710                              |004a: new-instance v6, Ljava/lang/StringBuilder; // type@10a7
+2f7e48: 7010 3d8e 0600                         |004c: invoke-direct {v6}, Ljava/lang/StringBuilder;.<init>:()V // method@8e3d
+2f7e4e: 6e20 478e 1600                         |004f: invoke-virtual {v6, v1}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@8e47
+2f7e54: 6e20 428e 3600                         |0052: invoke-virtual {v6, v3}, Ljava/lang/StringBuilder;.append:(F)Ljava/lang/StringBuilder; // method@8e42
+2f7e5a: 6e20 478e 0600                         |0055: invoke-virtual {v6, v0}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@8e47
+2f7e60: 5247 0f01                              |0058: iget v7, v4, Landroid/util/DisplayMetrics;.heightPixels:I // field@010f
+2f7e64: 6e20 438e 7600                         |005a: invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;.append:(I)Ljava/lang/StringBuilder; // method@8e43
+2f7e6a: 1a07 1604                              |005d: const-string v7, ", 可用height=" // string@0416
+2f7e6e: 6e20 478e 7600                         |005f: invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@8e47
+2f7e74: 6e20 428e 5600                         |0062: invoke-virtual {v6, v5}, Ljava/lang/StringBuilder;.append:(F)Ljava/lang/StringBuilder; // method@8e42
+2f7e7a: 6e10 508e 0600                         |0065: invoke-virtual {v6}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@8e50
+2f7e80: 0c06                                   |0068: move-result-object v6
+2f7e82: 7120 5108 6200                         |0069: invoke-static {v2, v6}, Landroid/util/Log;.d:(Ljava/lang/String;Ljava/lang/String;)I // method@0851
+2f7e88: 7100 8f7f 0000                         |006c: invoke-static {}, Lcom/nwd/audioset/application/DspApplication;.getInstance:()Lcom/nwd/audioset/application/DspApplication; // method@7f8f
+2f7e8e: 0c06                                   |006f: move-result-object v6
+2f7e90: 5266 b874                              |0070: iget v6, v6, Lcom/nwd/audioset/application/DspApplication;.instrumentHeight:I // field@74b8
+2f7e94: 3d06 3f00                              |0072: if-lez v6, 00b1 // +003f
+2f7e98: 7100 8f7f 0000                         |0074: invoke-static {}, Lcom/nwd/audioset/application/DspApplication;.getInstance:()Lcom/nwd/audioset/application/DspApplication; // method@7f8f
+2f7e9e: 0c06                                   |0077: move-result-object v6
+2f7ea0: 5266 af74                              |0078: iget v6, v6, Lcom/nwd/audioset/application/DspApplication;.appScreenHeightDp:I // field@74af
+2f7ea4: 3d06 3700                              |007a: if-lez v6, 00b1 // +0037
+2f7ea8: 7100 8f7f 0000                         |007c: invoke-static {}, Lcom/nwd/audioset/application/DspApplication;.getInstance:()Lcom/nwd/audioset/application/DspApplication; // method@7f8f
+2f7eae: 0c05                                   |007f: move-result-object v5
+2f7eb0: 5255 af74                              |0080: iget v5, v5, Lcom/nwd/audioset/application/DspApplication;.appScreenHeightDp:I // field@74af
+2f7eb4: 8255                                   |0082: int-to-float v5, v5
+2f7eb6: 6e10 b782 0f00                         |0083: invoke-virtual {v15}, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.getResources:()Landroid/content/res/Resources; // method@82b7
+2f7ebc: 0c06                                   |0086: move-result-object v6
+2f7ebe: 6e10 2f03 0600                         |0087: invoke-virtual {v6}, Landroid/content/res/Resources;.getDisplayMetrics:()Landroid/util/DisplayMetrics; // method@032f
+2f7ec4: 0c06                                   |008a: move-result-object v6
+2f7ec6: 5266 0d01                              |008b: iget v6, v6, Landroid/util/DisplayMetrics;.density:F // field@010d
+2f7eca: a805 0506                              |008d: mul-float v5, v5, v6
+2f7ece: 2206 a710                              |008f: new-instance v6, Ljava/lang/StringBuilder; // type@10a7
+2f7ed2: 7010 3d8e 0600                         |0091: invoke-direct {v6}, Ljava/lang/StringBuilder;.<init>:()V // method@8e3d
+2f7ed8: 6e20 478e 1600                         |0094: invoke-virtual {v6, v1}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@8e47
+2f7ede: 6e20 428e 3600                         |0097: invoke-virtual {v6, v3}, Ljava/lang/StringBuilder;.append:(F)Ljava/lang/StringBuilder; // method@8e42
+2f7ee4: 6e20 478e 0600                         |009a: invoke-virtual {v6, v0}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@8e47
+2f7eea: 5240 0f01                              |009d: iget v0, v4, Landroid/util/DisplayMetrics;.heightPixels:I // field@010f
+2f7eee: 6e20 438e 0600                         |009f: invoke-virtual {v6, v0}, Ljava/lang/StringBuilder;.append:(I)Ljava/lang/StringBuilder; // method@8e43
+2f7ef4: 1a00 6c04                              |00a2: const-string v0, ",更新 可用height=" // string@046c
+2f7ef8: 6e20 478e 0600                         |00a4: invoke-virtual {v6, v0}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@8e47
+2f7efe: 6e20 428e 5600                         |00a7: invoke-virtual {v6, v5}, Ljava/lang/StringBuilder;.append:(F)Ljava/lang/StringBuilder; // method@8e42
+2f7f04: 6e10 508e 0600                         |00aa: invoke-virtual {v6}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@8e50
+2f7f0a: 0c00                                   |00ad: move-result-object v0
+2f7f0c: 7120 5108 0200                         |00ae: invoke-static {v2, v0}, Landroid/util/Log;.d:(Ljava/lang/String;Ljava/lang/String;)I // method@0851
+2f7f12: 54f0 957a                              |00b1: iget-object v0, v15, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.mContext:Landroid/content/Context; // field@7a95
+2f7f16: 7110 2d81 0000                         |00b3: invoke-static {v0}, Lcom/nwd/audioset/utils/Utils;.isPortrait:(Landroid/content/Context;)Z // method@812d
+2f7f1c: 0a00                                   |00b6: move-result v0
+2f7f1e: 7100 8f7f 0000                         |00b7: invoke-static {}, Lcom/nwd/audioset/application/DspApplication;.getInstance:()Lcom/nwd/audioset/application/DspApplication; // method@7f8f
+2f7f24: 0c01                                   |00ba: move-result-object v1
+2f7f26: 5511 b974                              |00bb: iget-boolean v1, v1, Lcom/nwd/audioset/application/DspApplication;.isG5JTPortrait:Z // field@74b9
+2f7f2a: 3901 e701                              |00bd: if-nez v1, 02a4 // +01e7
+2f7f2e: 1401 9c02 097f                         |00bf: const v1, #float 1.82118e+38 // #7f09029c
+2f7f34: 1402 9802 097f                         |00c2: const v2, #float 1.82118e+38 // #7f090298
+2f7f3a: 1404 9902 097f                         |00c5: const v4, #float 1.82118e+38 // #7f090299
+2f7f40: 1406 9b02 097f                         |00c8: const v6, #float 1.82118e+38 // #7f09029b
+2f7f46: 1407 5e02 097f                         |00cb: const v7, #float 1.82117e+38 // #7f09025e
+2f7f4c: 1408 9a02 097f                         |00ce: const v8, #float 1.82118e+38 // #7f09029a
+2f7f52: 1409 5a02 097f                         |00d1: const v9, #float 1.82116e+38 // #7f09025a
+2f7f58: 140a 5f02 097f                         |00d4: const v10, #float 1.82117e+38 // #7f09025f
+2f7f5e: 3800 d900                              |00d7: if-eqz v0, 01b0 // +00d9
+2f7f62: 6e20 b282 9f00                         |00d9: invoke-virtual {v15, v9}, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.findViewById:(I)Landroid/view/View; // method@82b2
+2f7f68: 0c00                                   |00dc: move-result-object v0
+2f7f6a: 6e10 c809 0000                         |00dd: invoke-virtual {v0}, Landroid/view/View;.getLayoutParams:()Landroid/view/ViewGroup$LayoutParams; // method@09c8
+2f7f70: 0c00                                   |00e0: move-result-object v0
+2f7f72: 1f00 7c02                              |00e1: check-cast v0, Landroid/widget/RelativeLayout$LayoutParams; // type@027c
+2f7f76: 893b                                   |00e3: float-to-double v11, v3
+2f7f78: 180d c3f5 285c 8fc2 d53f               |00e4: const-wide v13, #double 0.34 // #3fd5c28f5c28f5c3
+2f7f82: 7120 6e8d cb00                         |00e9: invoke-static {v11, v12}, Ljava/lang/Double;.isNaN:(D)Z // method@8d6e
+2f7f88: ad0d 0d0b                              |00ec: mul-double v13, v13, v11
+2f7f8c: 8ad3                                   |00ee: double-to-int v3, v13
+2f7f8e: 5903 6b01                              |00ef: iput v3, v0, Landroid/widget/RelativeLayout$LayoutParams;.width:I // field@016b
+2f7f92: 5903 6701                              |00f1: iput v3, v0, Landroid/widget/RelativeLayout$LayoutParams;.height:I // field@0167
+2f7f96: 1309 1900                              |00f3: const/16 v9, #int 25 // #19
+2f7f9a: 5909 6801                              |00f5: iput v9, v0, Landroid/widget/RelativeLayout$LayoutParams;.leftMargin:I // field@0168
+2f7f9e: 6e20 b282 8f00                         |00f7: invoke-virtual {v15, v8}, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.findViewById:(I)Landroid/view/View; // method@82b2
+2f7fa4: 0c00                                   |00fa: move-result-object v0
+2f7fa6: 6e10 c809 0000                         |00fb: invoke-virtual {v0}, Landroid/view/View;.getLayoutParams:()Landroid/view/ViewGroup$LayoutParams; // method@09c8
+2f7fac: 0c00                                   |00fe: move-result-object v0
+2f7fae: 8338                                   |00ff: int-to-double v8, v3
+2f7fb0: 180d 21b0 7268 91ed dc3f               |0100: const-wide v13, #double 0.452 // #3fdced916872b021
+2f7fba: 7120 6e8d 9800                         |0105: invoke-static {v8, v9}, Ljava/lang/Double;.isNaN:(D)Z // method@8d6e
+2f7fc0: ad0d 0d08                              |0108: mul-double v13, v13, v8
+2f7fc4: 8ad3                                   |010a: double-to-int v3, v13
+2f7fc6: 5903 2401                              |010b: iput v3, v0, Landroid/view/ViewGroup$LayoutParams;.width:I // field@0124
+2f7fca: 5903 2301                              |010d: iput v3, v0, Landroid/view/ViewGroup$LayoutParams;.height:I // field@0123
+2f7fce: 6e20 b282 6f00                         |010f: invoke-virtual {v15, v6}, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.findViewById:(I)Landroid/view/View; // method@82b2
+2f7fd4: 0c00                                   |0112: move-result-object v0
+2f7fd6: 6e10 c809 0000                         |0113: invoke-virtual {v0}, Landroid/view/View;.getLayoutParams:()Landroid/view/ViewGroup$LayoutParams; // method@09c8
+2f7fdc: 0c00                                   |0116: move-result-object v0
+2f7fde: 5903 2401                              |0117: iput v3, v0, Landroid/view/ViewGroup$LayoutParams;.width:I // field@0124
+2f7fe2: 5903 2301                              |0119: iput v3, v0, Landroid/view/ViewGroup$LayoutParams;.height:I // field@0123
+2f7fe6: 6e20 b282 4f00                         |011b: invoke-virtual {v15, v4}, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.findViewById:(I)Landroid/view/View; // method@82b2
+2f7fec: 0c00                                   |011e: move-result-object v0
+2f7fee: 6e10 c809 0000                         |011f: invoke-virtual {v0}, Landroid/view/View;.getLayoutParams:()Landroid/view/ViewGroup$LayoutParams; // method@09c8
+2f7ff4: 0c00                                   |0122: move-result-object v0
+2f7ff6: 5903 2401                              |0123: iput v3, v0, Landroid/view/ViewGroup$LayoutParams;.width:I // field@0124
+2f7ffa: 5903 2301                              |0125: iput v3, v0, Landroid/view/ViewGroup$LayoutParams;.height:I // field@0123
+2f7ffe: 6e20 b282 2f00                         |0127: invoke-virtual {v15, v2}, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.findViewById:(I)Landroid/view/View; // method@82b2
+2f8004: 0c00                                   |012a: move-result-object v0
+2f8006: 6e10 c809 0000                         |012b: invoke-virtual {v0}, Landroid/view/View;.getLayoutParams:()Landroid/view/ViewGroup$LayoutParams; // method@09c8
+2f800c: 0c00                                   |012e: move-result-object v0
+2f800e: 5903 2401                              |012f: iput v3, v0, Landroid/view/ViewGroup$LayoutParams;.width:I // field@0124
+2f8012: 5903 2301                              |0131: iput v3, v0, Landroid/view/ViewGroup$LayoutParams;.height:I // field@0123
+2f8016: 6e20 b282 1f00                         |0133: invoke-virtual {v15, v1}, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.findViewById:(I)Landroid/view/View; // method@82b2
+2f801c: 0c00                                   |0136: move-result-object v0
+2f801e: 6e10 c809 0000                         |0137: invoke-virtual {v0}, Landroid/view/View;.getLayoutParams:()Landroid/view/ViewGroup$LayoutParams; // method@09c8
+2f8024: 0c00                                   |013a: move-result-object v0
+2f8026: 1801 3108 ac1c 5a64 db3f               |013b: const-wide v1, #double 0.428 // #3fdb645a1cac0831
+2f8030: 7120 6e8d 9800                         |0140: invoke-static {v8, v9}, Ljava/lang/Double;.isNaN:(D)Z // method@8d6e
+2f8036: ad08 0801                              |0143: mul-double v8, v8, v1
+2f803a: 8a81                                   |0145: double-to-int v1, v8
+2f803c: 5901 2401                              |0146: iput v1, v0, Landroid/view/ViewGroup$LayoutParams;.width:I // field@0124
+2f8040: 5901 2301                              |0148: iput v1, v0, Landroid/view/ViewGroup$LayoutParams;.height:I // field@0123
+2f8044: 6e20 b282 7f00                         |014a: invoke-virtual {v15, v7}, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.findViewById:(I)Landroid/view/View; // method@82b2
+2f804a: 0c00                                   |014d: move-result-object v0
+2f804c: 6e10 c809 0000                         |014e: invoke-virtual {v0}, Landroid/view/View;.getLayoutParams:()Landroid/view/ViewGroup$LayoutParams; // method@09c8
+2f8052: 0c00                                   |0151: move-result-object v0
+2f8054: 1f00 6f02                              |0152: check-cast v0, Landroid/widget/LinearLayout$LayoutParams; // type@026f
+2f8058: 54f1 957a                              |0154: iget-object v1, v15, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.mContext:Landroid/content/Context; // field@7a95
+2f805c: 6e10 4502 0100                         |0156: invoke-virtual {v1}, Landroid/content/Context;.getResources:()Landroid/content/res/Resources; // method@0245
+2f8062: 0c01                                   |0159: move-result-object v1
+2f8064: 1402 5703 077f                         |015a: const v2, #float 1.79463e+38 // #7f070357
+2f806a: 6e20 2c03 2100                         |015d: invoke-virtual {v1, v2}, Landroid/content/res/Resources;.getDimension:(I)F // method@032c
+2f8070: 0a01                                   |0160: move-result v1
+2f8072: 1502 0040                              |0161: const/high16 v2, #int 1073741824 // #4000
+2f8076: c925                                   |0163: div-float/2addr v5, v2
+2f8078: 1802 a470 3d0a d7a3 e03f               |0164: const-wide v2, #double 0.52 // #3fe0a3d70a3d70a4
+2f8082: 7120 6e8d cb00                         |0169: invoke-static {v11, v12}, Ljava/lang/Double;.isNaN:(D)Z // method@8d6e
+2f8088: ad02 020b                              |016c: mul-double v2, v2, v11
+2f808c: 8a22                                   |016e: double-to-int v2, v2
+2f808e: 55f3 9d7a                              |016f: iget-boolean v3, v15, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.seekbarShow:Z // field@7a9d
+2f8092: 3803 0d00                              |0171: if-eqz v3, 017e // +000d
+2f8096: 1802 295c 8fc2 f528 dc3f               |0173: const-wide v2, #double 0.44 // #3fdc28f5c28f5c29
+2f80a0: 7120 6e8d cb00                         |0178: invoke-static {v11, v12}, Ljava/lang/Double;.isNaN:(D)Z // method@8d6e
+2f80a6: ad0b 0b02                              |017b: mul-double v11, v11, v2
+2f80aa: 8ab2                                   |017d: double-to-int v2, v11
+2f80ac: 2e03 0105                              |017e: cmpg-float v3, v1, v5
+2f80b0: 3b03 0300                              |0180: if-gez v3, 0183 // +0003
+2f80b4: 0151                                   |0182: move v1, v5
+2f80b6: 8713                                   |0183: float-to-int v3, v1
+2f80b8: d803 0337                              |0184: add-int/lit8 v3, v3, #int 55 // #37
+2f80bc: 5903 6001                              |0186: iput v3, v0, Landroid/widget/LinearLayout$LayoutParams;.height:I // field@0160
+2f80c0: 5902 6501                              |0188: iput v2, v0, Landroid/widget/LinearLayout$LayoutParams;.width:I // field@0165
+2f80c4: 6e20 b282 af00                         |018a: invoke-virtual {v15, v10}, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.findViewById:(I)Landroid/view/View; // method@82b2
+2f80ca: 0c00                                   |018d: move-result-object v0
+2f80cc: 6e10 c809 0000                         |018e: invoke-virtual {v0}, Landroid/view/View;.getLayoutParams:()Landroid/view/ViewGroup$LayoutParams; // method@09c8
+2f80d2: 0c00                                   |0191: move-result-object v0
+2f80d4: 8322                                   |0192: int-to-double v2, v2
+2f80d6: 1804 cdcc cccc cccc e43f               |0193: const-wide v4, #double 0.65 // #3fe4cccccccccccd
+2f80e0: 7120 6e8d 3200                         |0198: invoke-static {v2, v3}, Ljava/lang/Double;.isNaN:(D)Z // method@8d6e
+2f80e6: ad02 0204                              |019b: mul-double v2, v2, v4
+2f80ea: 8a22                                   |019d: double-to-int v2, v2
+2f80ec: 5902 2401                              |019e: iput v2, v0, Landroid/view/ViewGroup$LayoutParams;.width:I // field@0124
+2f80f0: 8911                                   |01a0: float-to-double v1, v1
+2f80f2: 1803 2506 8195 438b e83f               |01a1: const-wide v3, #double 0.767 // #3fe88b4395810625
+2f80fc: 7120 6e8d 2100                         |01a6: invoke-static {v1, v2}, Ljava/lang/Double;.isNaN:(D)Z // method@8d6e
+2f8102: ad01 0103                              |01a9: mul-double v1, v1, v3
+2f8106: 8a11                                   |01ab: double-to-int v1, v1
+2f8108: 5901 2301                              |01ac: iput v1, v0, Landroid/view/ViewGroup$LayoutParams;.height:I // field@0123
+2f810c: 2900 f600                              |01ae: goto/16 02a4 // +00f6
+2f8110: 893b                                   |01b0: float-to-double v11, v3
+2f8112: 180d 39b4 c876 be9f da3f               |01b1: const-wide v13, #double 0.416 // #3fda9fbe76c8b439
+2f811c: 7120 6e8d cb00                         |01b6: invoke-static {v11, v12}, Ljava/lang/Double;.isNaN:(D)Z // method@8d6e
+2f8122: ad0b 0b0d                              |01b9: mul-double v11, v11, v13
+2f8126: 8ab0                                   |01bb: double-to-int v0, v11
+2f8128: 6e20 b282 af00                         |01bc: invoke-virtual {v15, v10}, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.findViewById:(I)Landroid/view/View; // method@82b2
+2f812e: 0c03                                   |01bf: move-result-object v3
+2f8130: 6e10 c809 0300                         |01c0: invoke-virtual {v3}, Landroid/view/View;.getLayoutParams:()Landroid/view/ViewGroup$LayoutParams; // method@09c8
+2f8136: 0c03                                   |01c3: move-result-object v3
+2f8138: 830a                                   |01c4: int-to-double v10, v0
+2f813a: 180c 6210 5839 b4c8 e63f               |01c5: const-wide v12, #double 0.712 // #3fe6c8b439581062
+2f8144: 7120 6e8d ba00                         |01ca: invoke-static {v10, v11}, Ljava/lang/Double;.isNaN:(D)Z // method@8d6e
+2f814a: ad0a 0a0c                              |01cd: mul-double v10, v10, v12
+2f814e: 8aaa                                   |01cf: double-to-int v10, v10
+2f8150: 593a 2401                              |01d0: iput v10, v3, Landroid/view/ViewGroup$LayoutParams;.width:I // field@0124
+2f8154: 895a                                   |01d2: float-to-double v10, v5
+2f8156: 180c f2d2 4d62 1058 e53f               |01d3: const-wide v12, #double 0.667 // #3fe55810624dd2f2
+2f8160: 7120 6e8d ba00                         |01d8: invoke-static {v10, v11}, Ljava/lang/Double;.isNaN:(D)Z // method@8d6e
+2f8166: ad0a 0a0c                              |01db: mul-double v10, v10, v12
+2f816a: 8aaa                                   |01dd: double-to-int v10, v10
+2f816c: 593a 2301                              |01de: iput v10, v3, Landroid/view/ViewGroup$LayoutParams;.height:I // field@0123
+2f8170: 7100 8f7f 0000                         |01e0: invoke-static {}, Lcom/nwd/audioset/application/DspApplication;.getInstance:()Lcom/nwd/audioset/application/DspApplication; // method@7f8f
+2f8176: 0c03                                   |01e3: move-result-object v3
+2f8178: 5533 b974                              |01e4: iget-boolean v3, v3, Lcom/nwd/audioset/application/DspApplication;.isG5JTPortrait:Z // field@74b9
+2f817c: 3903 3300                              |01e6: if-nez v3, 0219 // +0033
+2f8180: 6e20 b282 7f00                         |01e8: invoke-virtual {v15, v7}, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.findViewById:(I)Landroid/view/View; // method@82b2
+2f8186: 0c03                                   |01eb: move-result-object v3
+2f8188: 6e10 c809 0300                         |01ec: invoke-virtual {v3}, Landroid/view/View;.getLayoutParams:()Landroid/view/ViewGroup$LayoutParams; // method@09c8
+2f818e: 0c03                                   |01ef: move-result-object v3
+2f8190: 5930 2401                              |01f0: iput v0, v3, Landroid/view/ViewGroup$LayoutParams;.width:I // field@0124
+2f8194: 1500 5c44                              |01f2: const/high16 v0, #int 1146880000 // #445c
+2f8198: 2e00 0500                              |01f4: cmpg-float v0, v5, v0
+2f819c: 3c00 2300                              |01f6: if-gtz v0, 0219 // +0023
+2f81a0: 1400 d101 097f                         |01f8: const v0, #float 1.82114e+38 // #7f0901d1
+2f81a6: 6e20 b282 0f00                         |01fb: invoke-virtual {v15, v0}, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.findViewById:(I)Landroid/view/View; // method@82b2
+2f81ac: 0c00                                   |01fe: move-result-object v0
+2f81ae: 6e10 c809 0000                         |01ff: invoke-virtual {v0}, Landroid/view/View;.getLayoutParams:()Landroid/view/ViewGroup$LayoutParams; // method@09c8
+2f81b4: 0c00                                   |0202: move-result-object v0
+2f81b6: 1f00 6f02                              |0203: check-cast v0, Landroid/widget/LinearLayout$LayoutParams; // type@026f
+2f81ba: 1403 d201 097f                         |0205: const v3, #float 1.82114e+38 // #7f0901d2
+2f81c0: 6e20 b282 3f00                         |0208: invoke-virtual {v15, v3}, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.findViewById:(I)Landroid/view/View; // method@82b2
+2f81c6: 0c03                                   |020b: move-result-object v3
+2f81c8: 6e10 c809 0300                         |020c: invoke-virtual {v3}, Landroid/view/View;.getLayoutParams:()Landroid/view/ViewGroup$LayoutParams; // method@09c8
+2f81ce: 0c03                                   |020f: move-result-object v3
+2f81d0: 1f03 6f02                              |0210: check-cast v3, Landroid/widget/LinearLayout$LayoutParams; // type@026f
+2f81d4: 1405 cdcc cc3d                         |0212: const v5, #float 0.1 // #3dcccccd
+2f81da: 5905 6401                              |0215: iput v5, v0, Landroid/widget/LinearLayout$LayoutParams;.weight:F // field@0164
+2f81de: 5935 6401                              |0217: iput v5, v3, Landroid/widget/LinearLayout$LayoutParams;.weight:F // field@0164
+2f81e2: 7100 8f7f 0000                         |0219: invoke-static {}, Lcom/nwd/audioset/application/DspApplication;.getInstance:()Lcom/nwd/audioset/application/DspApplication; // method@7f8f
+2f81e8: 0c00                                   |021c: move-result-object v0
+2f81ea: 5200 bf74                              |021d: iget v0, v0, Lcom/nwd/audioset/application/DspApplication;.widthPixels:I // field@74bf
+2f81ee: 1303 0005                              |021f: const/16 v3, #int 1280 // #500
+2f81f2: 3330 8300                              |0221: if-ne v0, v3, 02a4 // +0083
+2f81f6: 7100 8f7f 0000                         |0223: invoke-static {}, Lcom/nwd/audioset/application/DspApplication;.getInstance:()Lcom/nwd/audioset/application/DspApplication; // method@7f8f
+2f81fc: 0c00                                   |0226: move-result-object v0
+2f81fe: 5200 b674                              |0227: iget v0, v0, Lcom/nwd/audioset/application/DspApplication;.heightPixels:I // field@74b6
+2f8202: 1303 d002                              |0229: const/16 v3, #int 720 // #2d0
+2f8206: 3330 7900                              |022b: if-ne v0, v3, 02a4 // +0079
+2f820a: 54f0 957a                              |022d: iget-object v0, v15, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.mContext:Landroid/content/Context; // field@7a95
+2f820e: 6e10 4502 0000                         |022f: invoke-virtual {v0}, Landroid/content/Context;.getResources:()Landroid/content/res/Resources; // method@0245
+2f8214: 0c00                                   |0232: move-result-object v0
+2f8216: 1403 5303 077f                         |0233: const v3, #float 1.79463e+38 // #7f070353
+2f821c: 6e20 2c03 3000                         |0236: invoke-virtual {v0, v3}, Landroid/content/res/Resources;.getDimension:(I)F // method@032c
+2f8222: 0a00                                   |0239: move-result v0
+2f8224: 8700                                   |023a: float-to-int v0, v0
+2f8226: 54f3 957a                              |023b: iget-object v3, v15, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.mContext:Landroid/content/Context; // field@7a95
+2f822a: 6e10 4502 0300                         |023d: invoke-virtual {v3}, Landroid/content/Context;.getResources:()Landroid/content/res/Resources; // method@0245
+2f8230: 0c03                                   |0240: move-result-object v3
+2f8232: 1405 4c03 077f                         |0241: const v5, #float 1.79463e+38 // #7f07034c
+2f8238: 6e20 2c03 5300                         |0244: invoke-virtual {v3, v5}, Landroid/content/res/Resources;.getDimension:(I)F // method@032c
+2f823e: 0a03                                   |0247: move-result v3
+2f8240: 8733                                   |0248: float-to-int v3, v3
+2f8242: 54f5 957a                              |0249: iget-object v5, v15, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.mContext:Landroid/content/Context; // field@7a95
+2f8246: 6e10 4502 0500                         |024b: invoke-virtual {v5}, Landroid/content/Context;.getResources:()Landroid/content/res/Resources; // method@0245
+2f824c: 0c05                                   |024e: move-result-object v5
+2f824e: 1407 5603 077f                         |024f: const v7, #float 1.79463e+38 // #7f070356
+2f8254: 6e20 2c03 7500                         |0252: invoke-virtual {v5, v7}, Landroid/content/res/Resources;.getDimension:(I)F // method@032c
+2f825a: 0a05                                   |0255: move-result v5
+2f825c: 8755                                   |0256: float-to-int v5, v5
+2f825e: 6e20 b282 9f00                         |0257: invoke-virtual {v15, v9}, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.findViewById:(I)Landroid/view/View; // method@82b2
+2f8264: 0c07                                   |025a: move-result-object v7
+2f8266: 6e10 c809 0700                         |025b: invoke-virtual {v7}, Landroid/view/View;.getLayoutParams:()Landroid/view/ViewGroup$LayoutParams; // method@09c8
+2f826c: 0c07                                   |025e: move-result-object v7
+2f826e: 5970 2401                              |025f: iput v0, v7, Landroid/view/ViewGroup$LayoutParams;.width:I // field@0124
+2f8272: 5970 2301                              |0261: iput v0, v7, Landroid/view/ViewGroup$LayoutParams;.height:I // field@0123
+2f8276: 6e20 b282 8f00                         |0263: invoke-virtual {v15, v8}, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.findViewById:(I)Landroid/view/View; // method@82b2
+2f827c: 0c00                                   |0266: move-result-object v0
+2f827e: 6e10 c809 0000                         |0267: invoke-virtual {v0}, Landroid/view/View;.getLayoutParams:()Landroid/view/ViewGroup$LayoutParams; // method@09c8
+2f8284: 0c00                                   |026a: move-result-object v0
+2f8286: 5903 2401                              |026b: iput v3, v0, Landroid/view/ViewGroup$LayoutParams;.width:I // field@0124
+2f828a: 5903 2301                              |026d: iput v3, v0, Landroid/view/ViewGroup$LayoutParams;.height:I // field@0123
+2f828e: 6e20 b282 6f00                         |026f: invoke-virtual {v15, v6}, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.findViewById:(I)Landroid/view/View; // method@82b2
+2f8294: 0c00                                   |0272: move-result-object v0
+2f8296: 6e10 c809 0000                         |0273: invoke-virtual {v0}, Landroid/view/View;.getLayoutParams:()Landroid/view/ViewGroup$LayoutParams; // method@09c8
+2f829c: 0c00                                   |0276: move-result-object v0
+2f829e: 5903 2401                              |0277: iput v3, v0, Landroid/view/ViewGroup$LayoutParams;.width:I // field@0124
+2f82a2: 5903 2301                              |0279: iput v3, v0, Landroid/view/ViewGroup$LayoutParams;.height:I // field@0123
+2f82a6: 6e20 b282 2f00                         |027b: invoke-virtual {v15, v2}, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.findViewById:(I)Landroid/view/View; // method@82b2
+2f82ac: 0c00                                   |027e: move-result-object v0
+2f82ae: 6e10 c809 0000                         |027f: invoke-virtual {v0}, Landroid/view/View;.getLayoutParams:()Landroid/view/ViewGroup$LayoutParams; // method@09c8
+2f82b4: 0c00                                   |0282: move-result-object v0
+2f82b6: 5903 2401                              |0283: iput v3, v0, Landroid/view/ViewGroup$LayoutParams;.width:I // field@0124
+2f82ba: 5903 2301                              |0285: iput v3, v0, Landroid/view/ViewGroup$LayoutParams;.height:I // field@0123
+2f82be: 6e20 b282 4f00                         |0287: invoke-virtual {v15, v4}, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.findViewById:(I)Landroid/view/View; // method@82b2
+2f82c4: 0c00                                   |028a: move-result-object v0
+2f82c6: 6e10 c809 0000                         |028b: invoke-virtual {v0}, Landroid/view/View;.getLayoutParams:()Landroid/view/ViewGroup$LayoutParams; // method@09c8
+2f82cc: 0c00                                   |028e: move-result-object v0
+2f82ce: 5903 2401                              |028f: iput v3, v0, Landroid/view/ViewGroup$LayoutParams;.width:I // field@0124
+2f82d2: 5903 2301                              |0291: iput v3, v0, Landroid/view/ViewGroup$LayoutParams;.height:I // field@0123
+2f82d6: 6e20 b282 1f00                         |0293: invoke-virtual {v15, v1}, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.findViewById:(I)Landroid/view/View; // method@82b2
+2f82dc: 0c00                                   |0296: move-result-object v0
+2f82de: 6e10 c809 0000                         |0297: invoke-virtual {v0}, Landroid/view/View;.getLayoutParams:()Landroid/view/ViewGroup$LayoutParams; // method@09c8
+2f82e4: 0c00                                   |029a: move-result-object v0
+2f82e6: 5905 2401                              |029b: iput v5, v0, Landroid/view/ViewGroup$LayoutParams;.width:I // field@0124
+2f82ea: 5905 2301                              |029d: iput v5, v0, Landroid/view/ViewGroup$LayoutParams;.height:I // field@0123
+2f82ee: 2805                                   |029f: goto 02a4 // +0005
+2f82f0: 0d00                                   |02a0: move-exception v0
+2f82f2: 6e10 728e 0000                         |02a1: invoke-virtual {v0}, Ljava/lang/Throwable;.printStackTrace:()V // method@8e72
+2f82f8: 0e00                                   |02a4: return-void
+      catches       : 11
+        0x0006 - 0x00e3
+          <any> -> 0x02a0
+        0x00ef - 0x00ff
+          <any> -> 0x02a0
+        0x010b - 0x013b
+          <any> -> 0x02a0
+        0x0146 - 0x0161
+          <any> -> 0x02a0
+        0x016f - 0x0171
+          <any> -> 0x02a0
+        0x0186 - 0x0192
+          <any> -> 0x02a0
+        0x019e - 0x01a0
+          <any> -> 0x02a0
+        0x01ac - 0x01ae
+          <any> -> 0x02a0
+        0x01bc - 0x01c4
+          <any> -> 0x02a0
+        0x01d0 - 0x01d2
+          <any> -> 0x02a0
+        0x01de - 0x029f
+          <any> -> 0x02a0
+      positions     :
+        0x0006 line=384
+        0x0010 line=385
+        0x0015 line=386
+        0x001c line=389
+        0x0033 line=390
+        0x004a line=391
+        0x006c line=393
+        0x007c line=394
+        0x008f line=395
+        0x00b1 line=397
+        0x00b7 line=398
+        0x00d9 line=401
+        0x00e9 line=403
+        0x00ef line=404
+        0x00f1 line=405
+        0x00f5 line=406
+        0x00f7 line=407
+        0x0105 line=408
+        0x010b line=409
+        0x010d line=410
+        0x010f line=411
+        0x0117 line=412
+        0x0119 line=413
+        0x011b line=414
+        0x0123 line=415
+        0x0125 line=416
+        0x0127 line=417
+        0x012f line=418
+        0x0131 line=419
+        0x0133 line=420
+        0x0140 line=421
+        0x0146 line=422
+        0x0148 line=423
+        0x014a line=426
+        0x0154 line=427
+        0x0169 line=429
+        0x016f line=430
+        0x0178 line=431
+        0x0186 line=436
+        0x0188 line=437
+        0x018a line=438
+        0x0198 line=439
+        0x01a6 line=440
+        0x01b6 line=445
+        0x01bc line=446
+        0x01ca line=447
+        0x01d8 line=448
+        0x01e0 line=450
+        0x01e8 line=451
+        0x01f0 line=452
+        0x01fb line=454
+        0x0208 line=455
+        0x0215 line=456
+        0x0217 line=457
+        0x0219 line=461
+        0x022d line=462
+        0x023b line=463
+        0x0249 line=464
+        0x0257 line=465
+        0x025f line=466
+        0x0261 line=467
+        0x0263 line=468
+        0x026b line=469
+        0x026d line=470
+        0x026f line=471
+        0x0277 line=472
+        0x0279 line=473
+        0x027b line=474
+        0x0283 line=475
+        0x0285 line=476
+        0x0287 line=477
+        0x028f line=478
+        0x0291 line=479
+        0x0293 line=480
+        0x029b line=481
+        0x029d line=482
+        0x02a1 line=488
+      locals        :
+        0x0000 - 0x02a5 reg=15 this Lcom/nwd/audioset/view/fragment/site/SiteFragment;
+
+  Virtual methods   -
+    #0              : (in Lcom/nwd/audioset/view/fragment/site/SiteFragment;)
+      name          : 'getLayountView'
+      type          : '()Landroid/view/ViewGroup;'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 1
+      insns size    : 48 16-bit code units
+2f7098:                                        |[2f7098] com.nwd.audioset.view.fragment.site.SiteFragment.getLayountView:()Landroid/view/ViewGroup;
+2f70a8: 7100 8f7f 0000                         |0000: invoke-static {}, Lcom/nwd/audioset/application/DspApplication;.getInstance:()Lcom/nwd/audioset/application/DspApplication; // method@7f8f
+2f70ae: 0c00                                   |0003: move-result-object v0
+2f70b0: 5500 b974                              |0004: iget-boolean v0, v0, Lcom/nwd/audioset/application/DspApplication;.isG5JTPortrait:Z // field@74b9
+2f70b4: 5c10 927a                              |0006: iput-boolean v0, v1, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.isG5Portrait:Z // field@7a92
+2f70b8: 3800 1500                              |0008: if-eqz v0, 001d // +0015
+2f70bc: 6e10 b382 0100                         |000a: invoke-virtual {v1}, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.getContext:()Landroid/content/Context; // method@82b3
+2f70c2: 0c00                                   |000d: move-result-object v0
+2f70c4: 7110 f708 0000                         |000e: invoke-static {v0}, Landroid/view/LayoutInflater;.from:(Landroid/content/Context;)Landroid/view/LayoutInflater; // method@08f7
+2f70ca: 0c00                                   |0011: move-result-object v0
+2f70cc: 7110 f77f 0000                         |0012: invoke-static {v0}, Lcom/nwd/audioset/databinding/FragmentSite1Binding;.inflate:(Landroid/view/LayoutInflater;)Lcom/nwd/audioset/databinding/FragmentSite1Binding; // method@7ff7
+2f70d2: 0c00                                   |0015: move-result-object v0
+2f70d4: 5b10 8d7a                              |0016: iput-object v0, v1, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.binding1:Lcom/nwd/audioset/databinding/FragmentSite1Binding; // field@7a8d
+2f70d8: 6e10 f67f 0000                         |0018: invoke-virtual {v0}, Lcom/nwd/audioset/databinding/FragmentSite1Binding;.getRoot:()Landroid/widget/RelativeLayout; // method@7ff6
+2f70de: 0c00                                   |001b: move-result-object v0
+2f70e0: 1100                                   |001c: return-object v0
+2f70e2: 6e10 b382 0100                         |001d: invoke-virtual {v1}, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.getContext:()Landroid/content/Context; // method@82b3
+2f70e8: 0c00                                   |0020: move-result-object v0
+2f70ea: 7110 f708 0000                         |0021: invoke-static {v0}, Landroid/view/LayoutInflater;.from:(Landroid/content/Context;)Landroid/view/LayoutInflater; // method@08f7
+2f70f0: 0c00                                   |0024: move-result-object v0
+2f70f2: 7110 fd7f 0000                         |0025: invoke-static {v0}, Lcom/nwd/audioset/databinding/FragmentSiteBinding;.inflate:(Landroid/view/LayoutInflater;)Lcom/nwd/audioset/databinding/FragmentSiteBinding; // method@7ffd
+2f70f8: 0c00                                   |0028: move-result-object v0
+2f70fa: 5b10 8c7a                              |0029: iput-object v0, v1, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.binding:Lcom/nwd/audioset/databinding/FragmentSiteBinding; // field@7a8c
+2f70fe: 6e10 fc7f 0000                         |002b: invoke-virtual {v0}, Lcom/nwd/audioset/databinding/FragmentSiteBinding;.getRoot:()Landroid/widget/LinearLayout; // method@7ffc
+2f7104: 0c00                                   |002e: move-result-object v0
+2f7106: 1100                                   |002f: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=62
+        0x000a line=64
+        0x0018 line=65
+        0x001d line=67
+        0x002b line=68
+      locals        :
+        0x0000 - 0x0030 reg=1 this Lcom/nwd/audioset/view/fragment/site/SiteFragment;
+
+    #1              : (in Lcom/nwd/audioset/view/fragment/site/SiteFragment;)
+      name          : 'getPrenseter'
+      type          : '()Lcom/nwd/audioset/mvpbase/BasePresenter;'
+      access        : 0x1041 (PUBLIC BRIDGE SYNTHETIC)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 1
+      insns size    : 5 16-bit code units
+2f7108:                                        |[2f7108] com.nwd.audioset.view.fragment.site.SiteFragment.getPrenseter:()Lcom/nwd/audioset/mvpbase/BasePresenter;
+2f7118: 6e10 b682 0100                         |0000: invoke-virtual {v1}, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.getPrenseter:()Lcom/nwd/audioset/view/fragment/site/SiteP; // method@82b6
+2f711e: 0c00                                   |0003: move-result-object v0
+2f7120: 1100                                   |0004: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=43
+      locals        :
+        0x0000 - 0x0005 reg=1 this Lcom/nwd/audioset/view/fragment/site/SiteFragment;
+
+    #2              : (in Lcom/nwd/audioset/view/fragment/site/SiteFragment;)
+      name          : 'getPrenseter'
+      type          : '()Lcom/nwd/audioset/view/fragment/site/SiteP;'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 2
+      insns size    : 6 16-bit code units
+2f715c:                                        |[2f715c] com.nwd.audioset.view.fragment.site.SiteFragment.getPrenseter:()Lcom/nwd/audioset/view/fragment/site/SiteP;
+2f716c: 2200 4d0f                              |0000: new-instance v0, Lcom/nwd/audioset/view/fragment/site/SiteP; // type@0f4d
+2f7170: 7020 ca82 1000                         |0002: invoke-direct {v0, v1}, Lcom/nwd/audioset/view/fragment/site/SiteP;.<init>:(Landroidx/fragment/app/Fragment;)V // method@82ca
+2f7176: 1100                                   |0005: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=194
+      locals        :
+        0x0000 - 0x0006 reg=1 this Lcom/nwd/audioset/view/fragment/site/SiteFragment;
+
+    #3              : (in Lcom/nwd/audioset/view/fragment/site/SiteFragment;)
+      name          : 'initData'
+      type          : '()V'
+      access        : 0x0004 (PROTECTED)
+      code          -
+      registers     : 3
+      ins           : 1
+      outs          : 3
+      insns size    : 8 16-bit code units
+2f71e0:                                        |[2f71e0] com.nwd.audioset.view.fragment.site.SiteFragment.initData:()V
+2f71f0: 5420 907a                              |0000: iget-object v0, v2, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.fb_view:Lcom/nwd/audioset/view/nwdview/FaderBalanceView; // field@7a90
+2f71f4: 1301 0e00                              |0002: const/16 v1, #int 14 // #e
+2f71f8: 6e30 4b83 1001                         |0004: invoke-virtual {v0, v1, v1}, Lcom/nwd/audioset/view/nwdview/FaderBalanceView;.setMaxValueXY:(II)V // method@834b
+2f71fe: 0e00                                   |0007: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=155
+      locals        :
+        0x0000 - 0x0008 reg=2 this Lcom/nwd/audioset/view/fragment/site/SiteFragment;
+
+    #4              : (in Lcom/nwd/audioset/view/fragment/site/SiteFragment;)
+      name          : 'initView'
+      type          : '()V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 6
+      ins           : 1
+      outs          : 3
+      insns size    : 276 16-bit code units
+2f7200:                                        |[2f7200] com.nwd.audioset.view.fragment.site.SiteFragment.initView:()V
+2f7210: 5450 987a                              |0000: iget-object v0, v5, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.mRootView:Landroid/view/View; // field@7a98
+2f7214: 1401 b101 097f                         |0002: const v1, #float 1.82113e+38 // #7f0901b1
+2f721a: 6e20 a509 1000                         |0005: invoke-virtual {v0, v1}, Landroid/view/View;.findViewById:(I)Landroid/view/View; // method@09a5
+2f7220: 0c00                                   |0008: move-result-object v0
+2f7222: 1f00 5902                              |0009: check-cast v0, Landroid/widget/Button; // type@0259
+2f7226: 5b50 947a                              |000b: iput-object v0, v5, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.left_move_btn:Landroid/widget/Button; // field@7a94
+2f722a: 5450 987a                              |000d: iget-object v0, v5, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.mRootView:Landroid/view/View; // field@7a98
+2f722e: 1401 4302 097f                         |000f: const v1, #float 1.82116e+38 // #7f090243
+2f7234: 6e20 a509 1000                         |0012: invoke-virtual {v0, v1}, Landroid/view/View;.findViewById:(I)Landroid/view/View; // method@09a5
+2f723a: 0c00                                   |0015: move-result-object v0
+2f723c: 1f00 5902                              |0016: check-cast v0, Landroid/widget/Button; // type@0259
+2f7240: 5b50 9b7a                              |0018: iput-object v0, v5, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.right_move_btn:Landroid/widget/Button; // field@7a9b
+2f7244: 5450 987a                              |001a: iget-object v0, v5, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.mRootView:Landroid/view/View; // field@7a98
+2f7248: 1401 1003 097f                         |001c: const v1, #float 1.8212e+38 // #7f090310
+2f724e: 6e20 a509 1000                         |001f: invoke-virtual {v0, v1}, Landroid/view/View;.findViewById:(I)Landroid/view/View; // method@09a5
+2f7254: 0c00                                   |0022: move-result-object v0
+2f7256: 1f00 5902                              |0023: check-cast v0, Landroid/widget/Button; // type@0259
+2f725a: 5b50 9e7a                              |0025: iput-object v0, v5, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.top_move_btn:Landroid/widget/Button; // field@7a9e
+2f725e: 5450 987a                              |0027: iget-object v0, v5, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.mRootView:Landroid/view/View; // field@7a98
+2f7262: 1401 9600 097f                         |0029: const v1, #float 1.82107e+38 // #7f090096
+2f7268: 6e20 a509 1000                         |002c: invoke-virtual {v0, v1}, Landroid/view/View;.findViewById:(I)Landroid/view/View; // method@09a5
+2f726e: 0c00                                   |002f: move-result-object v0
+2f7270: 1f00 5902                              |0030: check-cast v0, Landroid/widget/Button; // type@0259
+2f7274: 5b50 8e7a                              |0032: iput-object v0, v5, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.bottom_move_btn:Landroid/widget/Button; // field@7a8e
+2f7278: 5450 987a                              |0034: iget-object v0, v5, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.mRootView:Landroid/view/View; // field@7a98
+2f727c: 1401 9a02 097f                         |0036: const v1, #float 1.82118e+38 // #7f09029a
+2f7282: 6e20 a509 1000                         |0039: invoke-virtual {v0, v1}, Landroid/view/View;.findViewById:(I)Landroid/view/View; // method@09a5
+2f7288: 0c00                                   |003c: move-result-object v0
+2f728a: 1f00 5902                              |003d: check-cast v0, Landroid/widget/Button; // type@0259
+2f728e: 5b50 937a                              |003f: iput-object v0, v5, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.left_mode_btn:Landroid/widget/Button; // field@7a93
+2f7292: 5450 987a                              |0041: iget-object v0, v5, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.mRootView:Landroid/view/View; // field@7a98
+2f7296: 1401 9b02 097f                         |0043: const v1, #float 1.82118e+38 // #7f09029b
+2f729c: 6e20 a509 1000                         |0046: invoke-virtual {v0, v1}, Landroid/view/View;.findViewById:(I)Landroid/view/View; // method@09a5
+2f72a2: 0c00                                   |0049: move-result-object v0
+2f72a4: 1f00 5902                              |004a: check-cast v0, Landroid/widget/Button; // type@0259
+2f72a8: 5b50 9a7a                              |004c: iput-object v0, v5, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.right_mode_btn:Landroid/widget/Button; // field@7a9a
+2f72ac: 5450 987a                              |004e: iget-object v0, v5, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.mRootView:Landroid/view/View; // field@7a98
+2f72b0: 1401 9802 097f                         |0050: const v1, #float 1.82118e+38 // #7f090298
+2f72b6: 6e20 a509 1000                         |0053: invoke-virtual {v0, v1}, Landroid/view/View;.findViewById:(I)Landroid/view/View; // method@09a5
+2f72bc: 0c00                                   |0056: move-result-object v0
+2f72be: 1f00 5902                              |0057: check-cast v0, Landroid/widget/Button; // type@0259
+2f72c2: 5b50 917a                              |0059: iput-object v0, v5, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.hou_mode_btn:Landroid/widget/Button; // field@7a91
+2f72c6: 5450 987a                              |005b: iget-object v0, v5, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.mRootView:Landroid/view/View; // field@7a98
+2f72ca: 1401 9c02 097f                         |005d: const v1, #float 1.82118e+38 // #7f09029c
+2f72d0: 6e20 a509 1000                         |0060: invoke-virtual {v0, v1}, Landroid/view/View;.findViewById:(I)Landroid/view/View; // method@09a5
+2f72d6: 0c00                                   |0063: move-result-object v0
+2f72d8: 1f00 5902                              |0064: check-cast v0, Landroid/widget/Button; // type@0259
+2f72dc: 5b50 997a                              |0066: iput-object v0, v5, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.reset_btn:Landroid/widget/Button; // field@7a99
+2f72e0: 5450 987a                              |0068: iget-object v0, v5, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.mRootView:Landroid/view/View; // field@7a98
+2f72e4: 1401 9902 097f                         |006a: const v1, #float 1.82118e+38 // #7f090299
+2f72ea: 6e20 a509 1000                         |006d: invoke-virtual {v0, v1}, Landroid/view/View;.findViewById:(I)Landroid/view/View; // method@09a5
+2f72f0: 0c00                                   |0070: move-result-object v0
+2f72f2: 1f00 5902                              |0071: check-cast v0, Landroid/widget/Button; // type@0259
+2f72f6: 5b50 8f7a                              |0073: iput-object v0, v5, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.center_mode_btn:Landroid/widget/Button; // field@7a8f
+2f72fa: 5450 987a                              |0075: iget-object v0, v5, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.mRootView:Landroid/view/View; // field@7a98
+2f72fe: 1401 1e01 097f                         |0077: const v1, #float 1.8211e+38 // #7f09011e
+2f7304: 6e20 a509 1000                         |007a: invoke-virtual {v0, v1}, Landroid/view/View;.findViewById:(I)Landroid/view/View; // method@09a5
+2f730a: 0c00                                   |007d: move-result-object v0
+2f730c: 1f00 5c0f                              |007e: check-cast v0, Lcom/nwd/audioset/view/nwdview/FaderBalanceView; // type@0f5c
+2f7310: 5b50 907a                              |0080: iput-object v0, v5, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.fb_view:Lcom/nwd/audioset/view/nwdview/FaderBalanceView; // field@7a90
+2f7314: 6200 da7c                              |0082: sget-object v0, Lcom/nwd/dsp/uitls/DspConstant;.DSP_FACTORYCONFIG_PATH:Ljava/lang/String; // field@7cda
+2f7318: 1a01 2461                              |0084: const-string v1, "eq_force_32_segment" // string@6124
+2f731c: 1212                                   |0086: const/4 v2, #int 1 // #1
+2f731e: 7130 0f86 1002                         |0087: invoke-static {v0, v1, v2}, Lcom/nwd/dsp/uitls/LoadDataUtils;.loadKeyValueFromSD:(Ljava/lang/String;Ljava/lang/String;I)I // method@860f
+2f7324: 0a00                                   |008a: move-result v0
+2f7326: 1a01 f05e                              |008b: const-string v1, "dsp3-SiteFragment" // string@5ef0
+2f732a: 2203 a710                              |008d: new-instance v3, Ljava/lang/StringBuilder; // type@10a7
+2f732e: 7010 3d8e 0300                         |008f: invoke-direct {v3}, Ljava/lang/StringBuilder;.<init>:()V // method@8e3d
+2f7334: 1a04 6f74                              |0092: const-string v4, "initView force32Eq=" // string@746f
+2f7338: 6e20 478e 4300                         |0094: invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@8e47
+2f733e: 6e20 438e 0300                         |0097: invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;.append:(I)Ljava/lang/StringBuilder; // method@8e43
+2f7344: 6e10 508e 0300                         |009a: invoke-virtual {v3}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@8e50
+2f734a: 0c03                                   |009d: move-result-object v3
+2f734c: 7120 5108 3100                         |009e: invoke-static {v1, v3}, Landroid/util/Log;.d:(Ljava/lang/String;Ljava/lang/String;)I // method@0851
+2f7352: 7100 0386 0000                         |00a1: invoke-static {}, Lcom/nwd/dsp/uitls/DspUtils;.is10EQ:()Z // method@8603
+2f7358: 0a01                                   |00a4: move-result v1
+2f735a: 3801 6300                              |00a5: if-eqz v1, 0108 // +0063
+2f735e: 3320 6100                              |00a7: if-ne v0, v2, 0108 // +0061
+2f7362: 5450 987a                              |00a9: iget-object v0, v5, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.mRootView:Landroid/view/View; // field@7a98
+2f7366: 1401 0d01 097f                         |00ab: const v1, #float 1.8211e+38 // #7f09010d
+2f736c: 6e20 a509 1000                         |00ae: invoke-virtual {v0, v1}, Landroid/view/View;.findViewById:(I)Landroid/view/View; // method@09a5
+2f7372: 0c00                                   |00b1: move-result-object v0
+2f7374: 1f00 6b0f                              |00b2: check-cast v0, Lcom/nwd/audioset/view/nwdview/SeekBarView; // type@0f6b
+2f7378: 5b50 9c7a                              |00b4: iput-object v0, v5, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.seekbar:Lcom/nwd/audioset/view/nwdview/SeekBarView; // field@7a9c
+2f737c: 1201                                   |00b6: const/4 v1, #int 0 // #0
+2f737e: 6e20 eb83 1000                         |00b7: invoke-virtual {v0, v1}, Lcom/nwd/audioset/view/nwdview/SeekBarView;.setVisibility:(I)V // method@83eb
+2f7384: 6e10 b382 0500                         |00ba: invoke-virtual {v5}, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.getContext:()Landroid/content/Context; // method@82b3
+2f738a: 0c00                                   |00bd: move-result-object v0
+2f738c: 6e10 3302 0000                         |00be: invoke-virtual {v0}, Landroid/content/Context;.getContentResolver:()Landroid/content/ContentResolver; // method@0233
+2f7392: 0c00                                   |00c1: move-result-object v0
+2f7394: 1a01 275f                              |00c2: const-string v1, "dsp_max_eq" // string@5f27
+2f7398: 7120 cc89 1000                         |00c4: invoke-static {v0, v1}, Lcom/nwd/kernel/source/SettingTableKey;.getIntValue:(Landroid/content/ContentResolver;Ljava/lang/String;)I // method@89cc
+2f739e: 0a00                                   |00c7: move-result v0
+2f73a0: 5950 977a                              |00c8: iput v0, v5, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.mMaxEqValue:I // field@7a97
+2f73a4: 3900 0500                              |00ca: if-nez v0, 00cf // +0005
+2f73a8: 1260                                   |00cc: const/4 v0, #int 6 // #6
+2f73aa: 5950 977a                              |00cd: iput v0, v5, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.mMaxEqValue:I // field@7a97
+2f73ae: 5450 9c7a                              |00cf: iget-object v0, v5, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.seekbar:Lcom/nwd/audioset/view/nwdview/SeekBarView; // field@7a9c
+2f73b2: 1231                                   |00d1: const/4 v1, #int 3 // #3
+2f73b4: 6e20 e483 1000                         |00d2: invoke-virtual {v0, v1}, Lcom/nwd/audioset/view/nwdview/SeekBarView;.setAdjustOffset:(I)V // method@83e4
+2f73ba: 5450 9c7a                              |00d5: iget-object v0, v5, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.seekbar:Lcom/nwd/audioset/view/nwdview/SeekBarView; // field@7a9c
+2f73be: 1403 0401 0e7f                         |00d7: const v3, #float 1.88756e+38 // #7f0e0104
+2f73c4: 6e20 b882 3500                         |00da: invoke-virtual {v5, v3}, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.getString:(I)Ljava/lang/String; // method@82b8
+2f73ca: 0c03                                   |00dd: move-result-object v3
+2f73cc: 6e20 e883 3000                         |00de: invoke-virtual {v0, v3}, Lcom/nwd/audioset/view/nwdview/SeekBarView;.setName:(Ljava/lang/String;)V // method@83e8
+2f73d2: 5450 9c7a                              |00e1: iget-object v0, v5, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.seekbar:Lcom/nwd/audioset/view/nwdview/SeekBarView; // field@7a9c
+2f73d6: 5253 977a                              |00e3: iget v3, v5, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.mMaxEqValue:I // field@7a97
+2f73da: 6e20 e783 3000                         |00e5: invoke-virtual {v0, v3}, Lcom/nwd/audioset/view/nwdview/SeekBarView;.setMax:(I)V // method@83e7
+2f73e0: 5450 9c7a                              |00e8: iget-object v0, v5, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.seekbar:Lcom/nwd/audioset/view/nwdview/SeekBarView; // field@7a9c
+2f73e4: 6e20 e983 5000                         |00ea: invoke-virtual {v0, v5}, Lcom/nwd/audioset/view/nwdview/SeekBarView;.setOnSeekBarChangeListener:(Landroid/widget/SeekBar$OnSeekBarChangeListener;)V // method@83e9
+2f73ea: 6e10 b382 0500                         |00ed: invoke-virtual {v5}, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.getContext:()Landroid/content/Context; // method@82b3
+2f73f0: 0c00                                   |00f0: move-result-object v0
+2f73f2: 1a03 fe60                              |00f1: const-string v3, "eq_64hz" // string@60fe
+2f73f6: 7110 9d8d 0100                         |00f3: invoke-static {v1}, Ljava/lang/Integer;.valueOf:(I)Ljava/lang/Integer; // method@8d9d
+2f73fc: 0c01                                   |00f6: move-result-object v1
+2f73fe: 7130 fb80 3001                         |00f7: invoke-static {v0, v3, v1}, Lcom/nwd/audioset/utils/SharePreferenceUtils;.get:(Landroid/content/Context;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object; // method@80fb
+2f7404: 0c00                                   |00fa: move-result-object v0
+2f7406: 1f00 8c10                              |00fb: check-cast v0, Ljava/lang/Integer; // type@108c
+2f740a: 6e10 948d 0000                         |00fd: invoke-virtual {v0}, Ljava/lang/Integer;.intValue:()I // method@8d94
+2f7410: 0a00                                   |0100: move-result v0
+2f7412: 5451 9c7a                              |0101: iget-object v1, v5, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.seekbar:Lcom/nwd/audioset/view/nwdview/SeekBarView; // field@7a9c
+2f7416: 6e20 e683 0100                         |0103: invoke-virtual {v1, v0}, Lcom/nwd/audioset/view/nwdview/SeekBarView;.setGainValue:(I)V // method@83e6
+2f741c: 5c52 9d7a                              |0106: iput-boolean v2, v5, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.seekbarShow:Z // field@7a9d
+2f7420: 7010 c982 0500                         |0108: invoke-direct {v5}, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.updateUiWidth:()V // method@82c9
+2f7426: 7010 c682 0500                         |010b: invoke-direct {v5}, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.updateDspUi:()V // method@82c6
+2f742c: 2805                                   |010e: goto 0113 // +0005
+2f742e: 0d00                                   |010f: move-exception v0
+2f7430: 6e10 798d 0000                         |0110: invoke-virtual {v0}, Ljava/lang/Exception;.printStackTrace:()V // method@8d79
+2f7436: 0e00                                   |0113: return-void
+      catches       : 1
+        0x0000 - 0x010e
+          Ljava/lang/Exception; -> 0x010f
+      positions     :
+        0x0000 line=79
+        0x000d line=80
+        0x001a line=81
+        0x0027 line=82
+        0x0034 line=84
+        0x0041 line=85
+        0x004e line=86
+        0x005b line=87
+        0x0068 line=88
+        0x0075 line=89
+        0x0082 line=92
+        0x008d line=93
+        0x00a1 line=94
+        0x00a9 line=96
+        0x00b7 line=97
+        0x00ba line=98
+        0x00cd line=100
+        0x00cf line=102
+        0x00d5 line=103
+        0x00e1 line=106
+        0x00e8 line=107
+        0x00ed line=109
+        0x0101 line=110
+        0x0106 line=112
+        0x0108 line=114
+        0x010b line=115
+        0x0110 line=117
+      locals        :
+        0x0000 - 0x0114 reg=5 this Lcom/nwd/audioset/view/fragment/site/SiteFragment;
+
+    #5              : (in Lcom/nwd/audioset/view/fragment/site/SiteFragment;)
+      name          : 'onBallMove'
+      type          : '(II)V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 5
+      ins           : 3
+      outs          : 3
+      insns size    : 41 16-bit code units
+2f7448:                                        |[2f7448] com.nwd.audioset.view.fragment.site.SiteFragment.onBallMove:(II)V
+2f7458: 2200 a710                              |0000: new-instance v0, Ljava/lang/StringBuilder; // type@10a7
+2f745c: 7010 3d8e 0000                         |0002: invoke-direct {v0}, Ljava/lang/StringBuilder;.<init>:()V // method@8e3d
+2f7462: 1a01 2c02                              |0005: const-string v1, " 回调的X为: " // string@022c
+2f7466: 6e20 478e 1000                         |0007: invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@8e47
+2f746c: 6e20 438e 3000                         |000a: invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;.append:(I)Ljava/lang/StringBuilder; // method@8e43
+2f7472: 1a01 6700                              |000d: const-string v1, "  回调的Y为: " // string@0067
+2f7476: 6e20 478e 1000                         |000f: invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@8e47
+2f747c: 6e20 438e 4000                         |0012: invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;.append:(I)Ljava/lang/StringBuilder; // method@8e43
+2f7482: 6e10 508e 0000                         |0015: invoke-virtual {v0}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@8e50
+2f7488: 0c00                                   |0018: move-result-object v0
+2f748a: 1a01 f05e                              |0019: const-string v1, "dsp3-SiteFragment" // string@5ef0
+2f748e: 7120 5308 0100                         |001b: invoke-static {v1, v0}, Landroid/util/Log;.e:(Ljava/lang/String;Ljava/lang/String;)I // method@0853
+2f7494: 7100 7d85 0000                         |001e: invoke-static {}, Lcom/nwd/dsp/uitls/DspManager;.getInstance:()Lcom/nwd/dsp/uitls/DspManager; // method@857d
+2f749a: 0c00                                   |0021: move-result-object v0
+2f749c: 6e30 df85 4003                         |0022: invoke-virtual {v0, v4, v3}, Lcom/nwd/dsp/uitls/DspManager;.sendSiteData:(II)V // method@85df
+2f74a2: 7010 c782 0200                         |0025: invoke-direct {v2}, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.updateLeftUi:()V // method@82c7
+2f74a8: 0e00                                   |0028: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=247
+        0x001e line=248
+        0x0025 line=249
+      locals        :
+        0x0000 - 0x0029 reg=2 this Lcom/nwd/audioset/view/fragment/site/SiteFragment;
+        0x0000 - 0x0029 reg=3 (null) I
+        0x0000 - 0x0029 reg=4 (null) I
+
+    #6              : (in Lcom/nwd/audioset/view/fragment/site/SiteFragment;)
+      name          : 'onClick'
+      type          : '(Landroid/view/View;)V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 6
+      ins           : 2
+      outs          : 3
+      insns size    : 164 16-bit code units
+2f74ac:                                        |[2f74ac] com.nwd.audioset.view.fragment.site.SiteFragment.onClick:(Landroid/view/View;)V
+2f74bc: 7100 7d85 0000                         |0000: invoke-static {}, Lcom/nwd/dsp/uitls/DspManager;.getInstance:()Lcom/nwd/dsp/uitls/DspManager; // method@857d
+2f74c2: 0c00                                   |0003: move-result-object v0
+2f74c4: 6e10 9185 0000                         |0004: invoke-virtual {v0}, Lcom/nwd/dsp/uitls/DspManager;.getMfader:()I // method@8591
+2f74ca: 0a00                                   |0007: move-result v0
+2f74cc: 7100 7d85 0000                         |0008: invoke-static {}, Lcom/nwd/dsp/uitls/DspManager;.getInstance:()Lcom/nwd/dsp/uitls/DspManager; // method@857d
+2f74d2: 0c01                                   |000b: move-result-object v1
+2f74d4: 6e10 8c85 0100                         |000c: invoke-virtual {v1}, Lcom/nwd/dsp/uitls/DspManager;.getMbalance:()I // method@858c
+2f74da: 0a01                                   |000f: move-result v1
+2f74dc: 6e10 c109 0500                         |0010: invoke-virtual {v5}, Landroid/view/View;.getId:()I // method@09c1
+2f74e2: 0a05                                   |0013: move-result v5
+2f74e4: 1402 b101 097f                         |0014: const v2, #float 1.82113e+38 // #7f0901b1
+2f74ea: 3325 1000                              |0017: if-ne v5, v2, 0027 // +0010
+2f74ee: 3901 0300                              |0019: if-nez v1, 001c // +0003
+2f74f2: 0e00                                   |001b: return-void
+2f74f4: 7100 7d85 0000                         |001c: invoke-static {}, Lcom/nwd/dsp/uitls/DspManager;.getInstance:()Lcom/nwd/dsp/uitls/DspManager; // method@857d
+2f74fa: 0c05                                   |001f: move-result-object v5
+2f74fc: d801 01ff                              |0020: add-int/lit8 v1, v1, #int -1 // #ff
+2f7500: 6e30 df85 0501                         |0022: invoke-virtual {v5, v0, v1}, Lcom/nwd/dsp/uitls/DspManager;.sendSiteData:(II)V // method@85df
+2f7506: 2900 7800                              |0025: goto/16 009d // +0078
+2f750a: 1402 4302 097f                         |0027: const v2, #float 1.82116e+38 // #7f090243
+2f7510: 1303 0e00                              |002a: const/16 v3, #int 14 // #e
+2f7514: 3325 0f00                              |002c: if-ne v5, v2, 003b // +000f
+2f7518: 3431 0300                              |002e: if-lt v1, v3, 0031 // +0003
+2f751c: 0e00                                   |0030: return-void
+2f751e: 7100 7d85 0000                         |0031: invoke-static {}, Lcom/nwd/dsp/uitls/DspManager;.getInstance:()Lcom/nwd/dsp/uitls/DspManager; // method@857d
+2f7524: 0c05                                   |0034: move-result-object v5
+2f7526: d801 0101                              |0035: add-int/lit8 v1, v1, #int 1 // #01
+2f752a: 6e30 df85 0501                         |0037: invoke-virtual {v5, v0, v1}, Lcom/nwd/dsp/uitls/DspManager;.sendSiteData:(II)V // method@85df
+2f7530: 2863                                   |003a: goto 009d // +0063
+2f7532: 1402 1003 097f                         |003b: const v2, #float 1.8212e+38 // #7f090310
+2f7538: 3325 0f00                              |003e: if-ne v5, v2, 004d // +000f
+2f753c: 3900 0300                              |0040: if-nez v0, 0043 // +0003
+2f7540: 0e00                                   |0042: return-void
+2f7542: 7100 7d85 0000                         |0043: invoke-static {}, Lcom/nwd/dsp/uitls/DspManager;.getInstance:()Lcom/nwd/dsp/uitls/DspManager; // method@857d
+2f7548: 0c05                                   |0046: move-result-object v5
+2f754a: d800 00ff                              |0047: add-int/lit8 v0, v0, #int -1 // #ff
+2f754e: 6e30 df85 0501                         |0049: invoke-virtual {v5, v0, v1}, Lcom/nwd/dsp/uitls/DspManager;.sendSiteData:(II)V // method@85df
+2f7554: 2851                                   |004c: goto 009d // +0051
+2f7556: 1402 9600 097f                         |004d: const v2, #float 1.82107e+38 // #7f090096
+2f755c: 3325 0f00                              |0050: if-ne v5, v2, 005f // +000f
+2f7560: 3430 0300                              |0052: if-lt v0, v3, 0055 // +0003
+2f7564: 0e00                                   |0054: return-void
+2f7566: 7100 7d85 0000                         |0055: invoke-static {}, Lcom/nwd/dsp/uitls/DspManager;.getInstance:()Lcom/nwd/dsp/uitls/DspManager; // method@857d
+2f756c: 0c05                                   |0058: move-result-object v5
+2f756e: d800 0001                              |0059: add-int/lit8 v0, v0, #int 1 // #01
+2f7572: 6e30 df85 0501                         |005b: invoke-virtual {v5, v0, v1}, Lcom/nwd/dsp/uitls/DspManager;.sendSiteData:(II)V // method@85df
+2f7578: 283f                                   |005e: goto 009d // +003f
+2f757a: 1400 9a02 097f                         |005f: const v0, #float 1.82118e+38 // #7f09029a
+2f7580: 1231                                   |0062: const/4 v1, #int 3 // #3
+2f7582: 3305 0a00                              |0063: if-ne v5, v0, 006d // +000a
+2f7586: 7100 7d85 0000                         |0065: invoke-static {}, Lcom/nwd/dsp/uitls/DspManager;.getInstance:()Lcom/nwd/dsp/uitls/DspManager; // method@857d
+2f758c: 0c05                                   |0068: move-result-object v5
+2f758e: 6e30 df85 1501                         |0069: invoke-virtual {v5, v1, v1}, Lcom/nwd/dsp/uitls/DspManager;.sendSiteData:(II)V // method@85df
+2f7594: 2831                                   |006c: goto 009d // +0031
+2f7596: 1400 9b02 097f                         |006d: const v0, #float 1.82118e+38 // #7f09029b
+2f759c: 3305 0c00                              |0070: if-ne v5, v0, 007c // +000c
+2f75a0: 7100 7d85 0000                         |0072: invoke-static {}, Lcom/nwd/dsp/uitls/DspManager;.getInstance:()Lcom/nwd/dsp/uitls/DspManager; // method@857d
+2f75a6: 0c05                                   |0075: move-result-object v5
+2f75a8: 1300 0b00                              |0076: const/16 v0, #int 11 // #b
+2f75ac: 6e30 df85 1500                         |0078: invoke-virtual {v5, v1, v0}, Lcom/nwd/dsp/uitls/DspManager;.sendSiteData:(II)V // method@85df
+2f75b2: 2822                                   |007b: goto 009d // +0022
+2f75b4: 1400 9802 097f                         |007c: const v0, #float 1.82118e+38 // #7f090298
+2f75ba: 1271                                   |007f: const/4 v1, #int 7 // #7
+2f75bc: 3305 0c00                              |0080: if-ne v5, v0, 008c // +000c
+2f75c0: 7100 7d85 0000                         |0082: invoke-static {}, Lcom/nwd/dsp/uitls/DspManager;.getInstance:()Lcom/nwd/dsp/uitls/DspManager; // method@857d
+2f75c6: 0c05                                   |0085: move-result-object v5
+2f75c8: 1300 0c00                              |0086: const/16 v0, #int 12 // #c
+2f75cc: 6e30 df85 0501                         |0088: invoke-virtual {v5, v0, v1}, Lcom/nwd/dsp/uitls/DspManager;.sendSiteData:(II)V // method@85df
+2f75d2: 2812                                   |008b: goto 009d // +0012
+2f75d4: 1400 9902 097f                         |008c: const v0, #float 1.82118e+38 // #7f090299
+2f75da: 3205 0700                              |008f: if-eq v5, v0, 0096 // +0007
+2f75de: 1400 9c02 097f                         |0091: const v0, #float 1.82118e+38 // #7f09029c
+2f75e4: 3305 0900                              |0094: if-ne v5, v0, 009d // +0009
+2f75e8: 7100 7d85 0000                         |0096: invoke-static {}, Lcom/nwd/dsp/uitls/DspManager;.getInstance:()Lcom/nwd/dsp/uitls/DspManager; // method@857d
+2f75ee: 0c05                                   |0099: move-result-object v5
+2f75f0: 6e30 df85 1501                         |009a: invoke-virtual {v5, v1, v1}, Lcom/nwd/dsp/uitls/DspManager;.sendSiteData:(II)V // method@85df
+2f75f6: 7010 c782 0400                         |009d: invoke-direct {v4}, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.updateLeftUi:()V // method@82c7
+2f75fc: 7010 c882 0400                         |00a0: invoke-direct {v4}, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.updateRightUi:()V // method@82c8
+2f7602: 0e00                                   |00a3: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=161
+        0x0008 line=162
+        0x0010 line=164
+        0x001c line=167
+        0x0031 line=170
+        0x0043 line=173
+        0x0055 line=176
+        0x0065 line=178
+        0x0072 line=180
+        0x0082 line=182
+        0x0096 line=184
+        0x009d line=186
+        0x00a0 line=187
+      locals        :
+        0x0000 - 0x00a4 reg=4 this Lcom/nwd/audioset/view/fragment/site/SiteFragment;
+        0x0000 - 0x00a4 reg=5 (null) Landroid/view/View;
+
+    #7              : (in Lcom/nwd/audioset/view/fragment/site/SiteFragment;)
+      name          : 'onDestroy'
+      type          : '()V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 3
+      ins           : 1
+      outs          : 2
+      insns size    : 15 16-bit code units
+2f7604:                                        |[2f7604] com.nwd.audioset.view.fragment.site.SiteFragment.onDestroy:()V
+2f7614: 6f10 b680 0200                         |0000: invoke-super {v2}, Lcom/nwd/audioset/mvpbase/BaseFragment;.onDestroy:()V // method@80b6
+2f761a: 5420 967a                              |0003: iget-object v0, v2, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.mHandler:Landroid/os/Handler; // field@7a96
+2f761e: 1201                                   |0005: const/4 v1, #int 0 // #0
+2f7620: 6e20 4f06 1000                         |0006: invoke-virtual {v0, v1}, Landroid/os/Handler;.removeCallbacksAndMessages:(Ljava/lang/Object;)V // method@064f
+2f7626: 2805                                   |0009: goto 000e // +0005
+2f7628: 0d00                                   |000a: move-exception v0
+2f762a: 6e10 728e 0000                         |000b: invoke-virtual {v0}, Ljava/lang/Throwable;.printStackTrace:()V // method@8e72
+2f7630: 0e00                                   |000e: return-void
+      catches       : 1
+        0x0003 - 0x0009
+          <any> -> 0x000a
+      positions     :
+        0x0000 line=204
+        0x0003 line=206
+        0x000b line=208
+      locals        :
+        0x0000 - 0x000f reg=2 this Lcom/nwd/audioset/view/fragment/site/SiteFragment;
+
+    #8              : (in Lcom/nwd/audioset/view/fragment/site/SiteFragment;)
+      name          : 'onProgressChanged'
+      type          : '(Landroid/widget/SeekBar;IZ)V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 4
+      ins           : 4
+      outs          : 3
+      insns size    : 49 16-bit code units
+2f7640:                                        |[2f7640] com.nwd.audioset.view.fragment.site.SiteFragment.onProgressChanged:(Landroid/widget/SeekBar;IZ)V
+2f7650: 5401 9c7a                              |0000: iget-object v1, v0, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.seekbar:Lcom/nwd/audioset/view/nwdview/SeekBarView; // field@7a9c
+2f7654: 3901 0300                              |0002: if-nez v1, 0005 // +0003
+2f7658: 0e00                                   |0004: return-void
+2f765a: 1a01 f05e                              |0005: const-string v1, "dsp3-SiteFragment" // string@5ef0
+2f765e: 2202 a710                              |0007: new-instance v2, Ljava/lang/StringBuilder; // type@10a7
+2f7662: 7010 3d8e 0200                         |0009: invoke-direct {v2}, Ljava/lang/StringBuilder;.<init>:()V // method@8e3d
+2f7668: 1a03 b991                              |000c: const-string v3, "onProgressChanged 值= " // string@91b9
+2f766c: 6e20 478e 3200                         |000e: invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@8e47
+2f7672: 5403 9c7a                              |0011: iget-object v3, v0, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.seekbar:Lcom/nwd/audioset/view/nwdview/SeekBarView; // field@7a9c
+2f7676: 6e10 dc83 0300                         |0013: invoke-virtual {v3}, Lcom/nwd/audioset/view/nwdview/SeekBarView;.getValue:()I // method@83dc
+2f767c: 0a03                                   |0016: move-result v3
+2f767e: 6e20 438e 3200                         |0017: invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;.append:(I)Ljava/lang/StringBuilder; // method@8e43
+2f7684: 6e10 508e 0200                         |001a: invoke-virtual {v2}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@8e50
+2f768a: 0c02                                   |001d: move-result-object v2
+2f768c: 7120 5108 2100                         |001e: invoke-static {v1, v2}, Landroid/util/Log;.d:(Ljava/lang/String;Ljava/lang/String;)I // method@0851
+2f7692: 1201                                   |0021: const/4 v1, #int 0 // #0
+2f7694: 5402 9c7a                              |0022: iget-object v2, v0, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.seekbar:Lcom/nwd/audioset/view/nwdview/SeekBarView; // field@7a9c
+2f7698: 6e10 dc83 0200                         |0024: invoke-virtual {v2}, Lcom/nwd/audioset/view/nwdview/SeekBarView;.getValue:()I // method@83dc
+2f769e: 0a02                                   |0027: move-result v2
+2f76a0: 6e30 c582 1002                         |0028: invoke-virtual {v0, v1, v2}, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.updateDSPAudio:(ZI)V // method@82c5
+2f76a6: 2805                                   |002b: goto 0030 // +0005
+2f76a8: 0d01                                   |002c: move-exception v1
+2f76aa: 6e10 728e 0100                         |002d: invoke-virtual {v1}, Ljava/lang/Throwable;.printStackTrace:()V // method@8e72
+2f76b0: 0e00                                   |0030: return-void
+      catches       : 1
+        0x0000 - 0x002b
+          <any> -> 0x002c
+      positions     :
+        0x0000 line=256
+        0x0007 line=258
+        0x0022 line=259
+        0x002d line=261
+      locals        :
+        0x0000 - 0x0031 reg=0 this Lcom/nwd/audioset/view/fragment/site/SiteFragment;
+        0x0000 - 0x0031 reg=1 (null) Landroid/widget/SeekBar;
+        0x0000 - 0x0031 reg=2 (null) I
+        0x0000 - 0x0031 reg=3 (null) Z
+
+    #9              : (in Lcom/nwd/audioset/view/fragment/site/SiteFragment;)
+      name          : 'onStartTrackingTouch'
+      type          : '(Landroid/widget/SeekBar;)V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 2
+      ins           : 2
+      outs          : 0
+      insns size    : 1 16-bit code units
+2f76c0:                                        |[2f76c0] com.nwd.audioset.view.fragment.site.SiteFragment.onStartTrackingTouch:(Landroid/widget/SeekBar;)V
+2f76d0: 0e00                                   |0000: return-void
+      catches       : (none)
+      positions     :
+      locals        :
+
+    #10              : (in Lcom/nwd/audioset/view/fragment/site/SiteFragment;)
+      name          : 'onStopTrackingTouch'
+      type          : '(Landroid/widget/SeekBar;)V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 4
+      ins           : 2
+      outs          : 3
+      insns size    : 49 16-bit code units
+2f76d4:                                        |[2f76d4] com.nwd.audioset.view.fragment.site.SiteFragment.onStopTrackingTouch:(Landroid/widget/SeekBar;)V
+2f76e4: 5423 9c7a                              |0000: iget-object v3, v2, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.seekbar:Lcom/nwd/audioset/view/nwdview/SeekBarView; // field@7a9c
+2f76e8: 3903 0300                              |0002: if-nez v3, 0005 // +0003
+2f76ec: 0e00                                   |0004: return-void
+2f76ee: 1a03 f05e                              |0005: const-string v3, "dsp3-SiteFragment" // string@5ef0
+2f76f2: 2200 a710                              |0007: new-instance v0, Ljava/lang/StringBuilder; // type@10a7
+2f76f6: 7010 3d8e 0000                         |0009: invoke-direct {v0}, Ljava/lang/StringBuilder;.<init>:()V // method@8e3d
+2f76fc: 1a01 2192                              |000c: const-string v1, "onStopTrackingTouch 值= " // string@9221
+2f7700: 6e20 478e 1000                         |000e: invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@8e47
+2f7706: 5421 9c7a                              |0011: iget-object v1, v2, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.seekbar:Lcom/nwd/audioset/view/nwdview/SeekBarView; // field@7a9c
+2f770a: 6e10 dc83 0100                         |0013: invoke-virtual {v1}, Lcom/nwd/audioset/view/nwdview/SeekBarView;.getValue:()I // method@83dc
+2f7710: 0a01                                   |0016: move-result v1
+2f7712: 6e20 438e 1000                         |0017: invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;.append:(I)Ljava/lang/StringBuilder; // method@8e43
+2f7718: 6e10 508e 0000                         |001a: invoke-virtual {v0}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@8e50
+2f771e: 0c00                                   |001d: move-result-object v0
+2f7720: 7120 5108 0300                         |001e: invoke-static {v3, v0}, Landroid/util/Log;.d:(Ljava/lang/String;Ljava/lang/String;)I // method@0851
+2f7726: 1203                                   |0021: const/4 v3, #int 0 // #0
+2f7728: 5420 9c7a                              |0022: iget-object v0, v2, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.seekbar:Lcom/nwd/audioset/view/nwdview/SeekBarView; // field@7a9c
+2f772c: 6e10 dc83 0000                         |0024: invoke-virtual {v0}, Lcom/nwd/audioset/view/nwdview/SeekBarView;.getValue:()I // method@83dc
+2f7732: 0a00                                   |0027: move-result v0
+2f7734: 6e30 c582 3200                         |0028: invoke-virtual {v2, v3, v0}, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.updateDSPAudio:(ZI)V // method@82c5
+2f773a: 2805                                   |002b: goto 0030 // +0005
+2f773c: 0d03                                   |002c: move-exception v3
+2f773e: 6e10 728e 0300                         |002d: invoke-virtual {v3}, Ljava/lang/Throwable;.printStackTrace:()V // method@8e72
+2f7744: 0e00                                   |0030: return-void
+      catches       : 1
+        0x0000 - 0x002b
+          <any> -> 0x002c
+      positions     :
+        0x0000 line=273
+        0x0007 line=275
+        0x0022 line=276
+        0x002d line=278
+      locals        :
+        0x0000 - 0x0031 reg=2 this Lcom/nwd/audioset/view/fragment/site/SiteFragment;
+        0x0000 - 0x0031 reg=3 (null) Landroid/widget/SeekBar;
+
+    #11              : (in Lcom/nwd/audioset/view/fragment/site/SiteFragment;)
+      name          : 'setListener'
+      type          : '()V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 2
+      insns size    : 51 16-bit code units
+2f7754:                                        |[2f7754] com.nwd.audioset.view.fragment.site.SiteFragment.setListener:()V
+2f7764: 5410 947a                              |0000: iget-object v0, v1, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.left_move_btn:Landroid/widget/Button; // field@7a94
+2f7768: 6e20 560d 1000                         |0002: invoke-virtual {v0, v1}, Landroid/widget/Button;.setOnClickListener:(Landroid/view/View$OnClickListener;)V // method@0d56
+2f776e: 5410 9b7a                              |0005: iget-object v0, v1, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.right_move_btn:Landroid/widget/Button; // field@7a9b
+2f7772: 6e20 560d 1000                         |0007: invoke-virtual {v0, v1}, Landroid/widget/Button;.setOnClickListener:(Landroid/view/View$OnClickListener;)V // method@0d56
+2f7778: 5410 9e7a                              |000a: iget-object v0, v1, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.top_move_btn:Landroid/widget/Button; // field@7a9e
+2f777c: 6e20 560d 1000                         |000c: invoke-virtual {v0, v1}, Landroid/widget/Button;.setOnClickListener:(Landroid/view/View$OnClickListener;)V // method@0d56
+2f7782: 5410 8e7a                              |000f: iget-object v0, v1, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.bottom_move_btn:Landroid/widget/Button; // field@7a8e
+2f7786: 6e20 560d 1000                         |0011: invoke-virtual {v0, v1}, Landroid/widget/Button;.setOnClickListener:(Landroid/view/View$OnClickListener;)V // method@0d56
+2f778c: 5410 937a                              |0014: iget-object v0, v1, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.left_mode_btn:Landroid/widget/Button; // field@7a93
+2f7790: 6e20 560d 1000                         |0016: invoke-virtual {v0, v1}, Landroid/widget/Button;.setOnClickListener:(Landroid/view/View$OnClickListener;)V // method@0d56
+2f7796: 5410 9a7a                              |0019: iget-object v0, v1, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.right_mode_btn:Landroid/widget/Button; // field@7a9a
+2f779a: 6e20 560d 1000                         |001b: invoke-virtual {v0, v1}, Landroid/widget/Button;.setOnClickListener:(Landroid/view/View$OnClickListener;)V // method@0d56
+2f77a0: 5410 917a                              |001e: iget-object v0, v1, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.hou_mode_btn:Landroid/widget/Button; // field@7a91
+2f77a4: 6e20 560d 1000                         |0020: invoke-virtual {v0, v1}, Landroid/widget/Button;.setOnClickListener:(Landroid/view/View$OnClickListener;)V // method@0d56
+2f77aa: 5410 8f7a                              |0023: iget-object v0, v1, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.center_mode_btn:Landroid/widget/Button; // field@7a8f
+2f77ae: 6e20 560d 1000                         |0025: invoke-virtual {v0, v1}, Landroid/widget/Button;.setOnClickListener:(Landroid/view/View$OnClickListener;)V // method@0d56
+2f77b4: 5410 997a                              |0028: iget-object v0, v1, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.reset_btn:Landroid/widget/Button; // field@7a99
+2f77b8: 6e20 560d 1000                         |002a: invoke-virtual {v0, v1}, Landroid/widget/Button;.setOnClickListener:(Landroid/view/View$OnClickListener;)V // method@0d56
+2f77be: 5410 907a                              |002d: iget-object v0, v1, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.fb_view:Lcom/nwd/audioset/view/nwdview/FaderBalanceView; // field@7a90
+2f77c2: 6e20 4c83 1000                         |002f: invoke-virtual {v0, v1}, Lcom/nwd/audioset/view/nwdview/FaderBalanceView;.setOnBallMoveListener:(Lcom/nwd/audioset/view/nwdview/FaderBalanceView$OnBallMoveListener;)V // method@834c
+2f77c8: 0e00                                   |0032: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=124
+        0x0005 line=125
+        0x000a line=126
+        0x000f line=127
+        0x0014 line=129
+        0x0019 line=130
+        0x001e line=131
+        0x0023 line=132
+        0x0028 line=133
+        0x002d line=135
+      locals        :
+        0x0000 - 0x0033 reg=1 this Lcom/nwd/audioset/view/fragment/site/SiteFragment;
+
+    #12              : (in Lcom/nwd/audioset/view/fragment/site/SiteFragment;)
+      name          : 'setUserVisibleHint'
+      type          : '(Z)V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 4
+      ins           : 2
+      outs          : 3
+      insns size    : 16 16-bit code units
+2f77cc:                                        |[2f77cc] com.nwd.audioset.view.fragment.site.SiteFragment.setUserVisibleHint:(Z)V
+2f77dc: 6f20 bb80 3200                         |0000: invoke-super {v2, v3}, Lcom/nwd/audioset/mvpbase/BaseFragment;.setUserVisibleHint:(Z)V // method@80bb
+2f77e2: 3803 0c00                              |0003: if-eqz v3, 000f // +000c
+2f77e6: 2203 490f                              |0005: new-instance v3, Lcom/nwd/audioset/view/fragment/site/SiteFragment$1; // type@0f49
+2f77ea: 7020 a982 2300                         |0007: invoke-direct {v3, v2}, Lcom/nwd/audioset/view/fragment/site/SiteFragment$1;.<init>:(Lcom/nwd/audioset/view/fragment/site/SiteFragment;)V // method@82a9
+2f77f0: 1600 0000                              |000a: const-wide/16 v0, #int 0 // #0
+2f77f4: 7130 0f81 0301                         |000c: invoke-static {v3, v0, v1}, Lcom/nwd/audioset/utils/ThreadManager;.executeOnMainThreadDelay:(Ljava/lang/Runnable;J)V // method@810f
+2f77fa: 0e00                                   |000f: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=141
+        0x0005 line=143
+      locals        :
+        0x0000 - 0x0010 reg=2 this Lcom/nwd/audioset/view/fragment/site/SiteFragment;
+        0x0000 - 0x0010 reg=3 (null) Z
+
+    #13              : (in Lcom/nwd/audioset/view/fragment/site/SiteFragment;)
+      name          : 'setViewBinding'
+      type          : '()V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 0
+      insns size    : 1 16-bit code units
+2f77fc:                                        |[2f77fc] com.nwd.audioset.view.fragment.site.SiteFragment.setViewBinding:()V
+2f780c: 0e00                                   |0000: return-void
+      catches       : (none)
+      positions     :
+      locals        :
+
+    #14              : (in Lcom/nwd/audioset/view/fragment/site/SiteFragment;)
+      name          : 'updateDSPAudio'
+      type          : '(ZI)V'
+      access        : 0x0004 (PROTECTED)
+      code          -
+      registers     : 6
+      ins           : 3
+      outs          : 4
+      insns size    : 127 16-bit code units
+2f7810:                                        |[2f7810] com.nwd.audioset.view.fragment.site.SiteFragment.updateDSPAudio:(ZI)V
+2f7820: 1a00 f05e                              |0000: const-string v0, "dsp3-SiteFragment" // string@5ef0
+2f7824: 2201 a710                              |0002: new-instance v1, Ljava/lang/StringBuilder; // type@10a7
+2f7828: 7010 3d8e 0100                         |0004: invoke-direct {v1}, Ljava/lang/StringBuilder;.<init>:()V // method@8e3d
+2f782e: 1a02 b8ac                              |0007: const-string v2, "updateDSPAudio setDspAudio 发送0x0c:eq-64hz 2段 value11=" // string@acb8
+2f7832: 6e20 478e 2100                         |0009: invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@8e47
+2f7838: 6e20 438e 5100                         |000c: invoke-virtual {v1, v5}, Ljava/lang/StringBuilder;.append:(I)Ljava/lang/StringBuilder; // method@8e43
+2f783e: 1a02 ac03                              |000f: const-string v2, ", isInit=" // string@03ac
+2f7842: 6e20 478e 2100                         |0011: invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@8e47
+2f7848: 6e20 488e 4100                         |0014: invoke-virtual {v1, v4}, Ljava/lang/StringBuilder;.append:(Z)Ljava/lang/StringBuilder; // method@8e48
+2f784e: 1a02 6803                              |0017: const-string v2, ", Instance=" // string@0368
+2f7852: 6e20 478e 2100                         |0019: invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@8e47
+2f7858: 7100 9c6c 0000                         |001c: invoke-static {}, Lcom/blankj/utilcode/util/Utils;.getApp:()Landroid/app/Application; // method@6c9c
+2f785e: 0c02                                   |001f: move-result-object v2
+2f7860: 7110 1886 0200                         |0020: invoke-static {v2}, Lcom/nwd/dsp/uitls/SettingController;.getInstance:(Landroid/content/Context;)Lcom/nwd/dsp/uitls/SettingController; // method@8618
+2f7866: 0c02                                   |0023: move-result-object v2
+2f7868: 6e10 1786 0200                         |0024: invoke-virtual {v2}, Lcom/nwd/dsp/uitls/SettingController;.getFeature:()Ljava/lang/Object; // method@8617
+2f786e: 0c02                                   |0027: move-result-object v2
+2f7870: 6e20 468e 2100                         |0028: invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;.append:(Ljava/lang/Object;)Ljava/lang/StringBuilder; // method@8e46
+2f7876: 6e10 508e 0100                         |002b: invoke-virtual {v1}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@8e50
+2f787c: 0c01                                   |002e: move-result-object v1
+2f787e: 7120 5108 1000                         |002f: invoke-static {v0, v1}, Landroid/util/Log;.d:(Ljava/lang/String;Ljava/lang/String;)I // method@0851
+2f7884: 5430 9c7a                              |0032: iget-object v0, v3, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.seekbar:Lcom/nwd/audioset/view/nwdview/SeekBarView; // field@7a9c
+2f7888: 3800 4a00                              |0034: if-eqz v0, 007e // +004a
+2f788c: 5430 9c7a                              |0036: iget-object v0, v3, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.seekbar:Lcom/nwd/audioset/view/nwdview/SeekBarView; // field@7a9c
+2f7890: 6e20 e683 5000                         |0038: invoke-virtual {v0, v5}, Lcom/nwd/audioset/view/nwdview/SeekBarView;.setGainValue:(I)V // method@83e6
+2f7896: 6e10 b382 0300                         |003b: invoke-virtual {v3}, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.getContext:()Landroid/content/Context; // method@82b3
+2f789c: 0c00                                   |003e: move-result-object v0
+2f789e: 1a01 fe60                              |003f: const-string v1, "eq_64hz" // string@60fe
+2f78a2: 7110 9d8d 0500                         |0041: invoke-static {v5}, Ljava/lang/Integer;.valueOf:(I)Ljava/lang/Integer; // method@8d9d
+2f78a8: 0c02                                   |0044: move-result-object v2
+2f78aa: 7130 fe80 1002                         |0045: invoke-static {v0, v1, v2}, Lcom/nwd/audioset/utils/SharePreferenceUtils;.put:(Landroid/content/Context;Ljava/lang/String;Ljava/lang/Object;)V // method@80fe
+2f78b0: 3804 0f00                              |0048: if-eqz v4, 0057 // +000f
+2f78b4: 5434 967a                              |004a: iget-object v4, v3, Lcom/nwd/audioset/view/fragment/site/SiteFragment;.mHandler:Landroid/os/Handler; // field@7a96
+2f78b8: 2200 4a0f                              |004c: new-instance v0, Lcom/nwd/audioset/view/fragment/site/SiteFragment$2; // type@0f4a
+2f78bc: 7030 ab82 3005                         |004e: invoke-direct {v0, v3, v5}, Lcom/nwd/audioset/view/fragment/site/SiteFragment$2;.<init>:(Lcom/nwd/audioset/view/fragment/site/SiteFragment;I)V // method@82ab
+2f78c2: 1601 e803                              |0051: const-wide/16 v1, #int 1000 // #3e8
+2f78c6: 6e40 4c06 0421                         |0053: invoke-virtual {v4, v0, v1, v2}, Landroid/os/Handler;.postDelayed:(Ljava/lang/Runnable;J)Z // method@064c
+2f78cc: 2828                                   |0056: goto 007e // +0028
+2f78ce: 7100 9c6c 0000                         |0057: invoke-static {}, Lcom/blankj/utilcode/util/Utils;.getApp:()Landroid/app/Application; // method@6c9c
+2f78d4: 0c04                                   |005a: move-result-object v4
+2f78d6: 7110 1886 0400                         |005b: invoke-static {v4}, Lcom/nwd/dsp/uitls/SettingController;.getInstance:(Landroid/content/Context;)Lcom/nwd/dsp/uitls/SettingController; // method@8618
+2f78dc: 0c04                                   |005e: move-result-object v4
+2f78de: 6e10 1786 0400                         |005f: invoke-virtual {v4}, Lcom/nwd/dsp/uitls/SettingController;.getFeature:()Ljava/lang/Object; // method@8617
+2f78e4: 0c04                                   |0062: move-result-object v4
+2f78e6: 3804 1b00                              |0063: if-eqz v4, 007e // +001b
+2f78ea: 7100 9c6c 0000                         |0065: invoke-static {}, Lcom/blankj/utilcode/util/Utils;.getApp:()Landroid/app/Application; // method@6c9c
+2f78f0: 0c04                                   |0068: move-result-object v4
+2f78f2: 7110 1886 0400                         |0069: invoke-static {v4}, Lcom/nwd/dsp/uitls/SettingController;.getInstance:(Landroid/content/Context;)Lcom/nwd/dsp/uitls/SettingController; // method@8618
+2f78f8: 0c04                                   |006c: move-result-object v4
+2f78fa: 6e10 1786 0400                         |006d: invoke-virtual {v4}, Lcom/nwd/dsp/uitls/SettingController;.getFeature:()Ljava/lang/Object; // method@8617
+2f7900: 0c04                                   |0070: move-result-object v4
+2f7902: 1f04 3410                              |0071: check-cast v4, Lcom/nwd/setting/service/SettingFeature; // type@1034
+2f7906: 1300 0c00                              |0073: const/16 v0, #int 12 // #c
+2f790a: 8d55                                   |0075: int-to-byte v5, v5
+2f790c: 7230 1e8c 0405                         |0076: invoke-interface {v4, v0, v5}, Lcom/nwd/setting/service/SettingFeature;.setDspAudio:(BB)V // method@8c1e
+2f7912: 2805                                   |0079: goto 007e // +0005
+2f7914: 0d04                                   |007a: move-exception v4
+2f7916: 6e10 728e 0400                         |007b: invoke-virtual {v4}, Ljava/lang/Throwable;.printStackTrace:()V // method@8e72
+2f791c: 0e00                                   |007e: return-void
+      catches       : 1
+        0x0000 - 0x0079
+          <any> -> 0x007a
+      positions     :
+        0x0002 line=284
+        0x0032 line=285
+        0x0036 line=286
+        0x003b line=287
+        0x004a line=289
+        0x0057 line=302
+        0x0065 line=303
+        0x007b line=307
+      locals        :
+        0x0000 - 0x007f reg=3 this Lcom/nwd/audioset/view/fragment/site/SiteFragment;
+        0x0000 - 0x007f reg=4 (null) Z
+        0x0000 - 0x007f reg=5 (null) I
+
+  source_file_idx   : 16063 (SiteFragment.java)
+
+Class #3489            -

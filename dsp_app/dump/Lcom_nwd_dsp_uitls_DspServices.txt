@@ -1,0 +1,296 @@
+  Class descriptor  : 'Lcom/nwd/dsp/uitls/DspServices;'
+  Access flags      : 0x0001 (PUBLIC)
+  Superclass        : 'Landroid/app/Service;'
+  Interfaces        -
+  Static fields     -
+    #0              : (in Lcom/nwd/dsp/uitls/DspServices;)
+      name          : 'TAG'
+      type          : 'Ljava/lang/String;'
+      access        : 0x001a (PRIVATE STATIC FINAL)
+      value         : "dsp3-DspServices-ych"
+  Instance fields   -
+    #0              : (in Lcom/nwd/dsp/uitls/DspServices;)
+      name          : 'mHandler'
+      type          : 'Landroid/os/Handler;'
+      access        : 0x0002 (PRIVATE)
+  Direct methods    -
+    #0              : (in Lcom/nwd/dsp/uitls/DspServices;)
+      name          : '<init>'
+      type          : '()V'
+      access        : 0x10001 (PUBLIC CONSTRUCTOR)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 1
+      insns size    : 11 16-bit code units
+30c21c:                                        |[30c21c] com.nwd.dsp.uitls.DspServices.<init>:()V
+30c22c: 7010 f001 0100                         |0000: invoke-direct {v1}, Landroid/app/Service;.<init>:()V // method@01f0
+30c232: 2200 2801                              |0003: new-instance v0, Landroid/os/Handler; // type@0128
+30c236: 7010 3906 0000                         |0005: invoke-direct {v0}, Landroid/os/Handler;.<init>:()V // method@0639
+30c23c: 5b10 787d                              |0008: iput-object v0, v1, Lcom/nwd/dsp/uitls/DspServices;.mHandler:Landroid/os/Handler; // field@7d78
+30c240: 0e00                                   |000a: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=20
+        0x0003 line=111
+      locals        :
+        0x0000 - 0x000b reg=1 this Lcom/nwd/dsp/uitls/DspServices;
+
+    #1              : (in Lcom/nwd/dsp/uitls/DspServices;)
+      name          : 'access$000'
+      type          : '(Lcom/nwd/dsp/uitls/DspServices;)Landroid/os/Handler;'
+      access        : 0x1008 (STATIC SYNTHETIC)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 0
+      insns size    : 3 16-bit code units
+30c188:                                        |[30c188] com.nwd.dsp.uitls.DspServices.access$000:(Lcom/nwd/dsp/uitls/DspServices;)Landroid/os/Handler;
+30c198: 5400 787d                              |0000: iget-object v0, v0, Lcom/nwd/dsp/uitls/DspServices;.mHandler:Landroid/os/Handler; // field@7d78
+30c19c: 1100                                   |0002: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=20
+      locals        :
+        0x0000 - 0x0003 reg=0 (null) Lcom/nwd/dsp/uitls/DspServices;
+
+    #2              : (in Lcom/nwd/dsp/uitls/DspServices;)
+      name          : 'start'
+      type          : '(Landroid/content/Context;)V'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 7
+      ins           : 1
+      outs          : 3
+      insns size    : 70 16-bit code units
+30c3b4:                                        |[30c3b4] com.nwd.dsp.uitls.DspServices.start:(Landroid/content/Context;)V
+30c3c4: 1c00 9f0f                              |0000: const-class v0, Lcom/nwd/dsp/uitls/DspServices; // type@0f9f
+30c3c8: 1a01 e85e                              |0002: const-string v1, "dsp3-DspServices-ych" // string@5ee8
+30c3cc: 1202                                   |0004: const/4 v2, #int 0 // #0
+30c3ce: 1213                                   |0005: const/4 v3, #int 1 // #1
+30c3d0: 7110 806a 0000                         |0006: invoke-static {v0}, Lcom/blankj/utilcode/util/ServiceUtils;.isServiceRunning:(Ljava/lang/Class;)Z // method@6a80
+30c3d6: 0a04                                   |0009: move-result v4
+30c3d8: 3904 1800                              |000a: if-nez v4, 0022 // +0018
+30c3dc: 2334 0f12                              |000c: new-array v4, v3, [Ljava/lang/Object; // type@120f
+30c3e0: 1a05 7c16                              |000e: const-string v5, "DspServices 服务没启动,去启动" // string@167c
+30c3e4: 4d05 0402                              |0010: aput-object v5, v4, v2
+30c3e8: 7120 2668 4100                         |0012: invoke-static {v1, v4}, Lcom/blankj/utilcode/util/LogUtils;.eTag:(Ljava/lang/String;[Ljava/lang/Object;)V // method@6826
+30c3ee: 6e10 2b02 0600                         |0015: invoke-virtual {v6}, Landroid/content/Context;.getApplicationContext:()Landroid/content/Context; // method@022b
+30c3f4: 0c06                                   |0018: move-result-object v6
+30c3f6: 2204 6f00                              |0019: new-instance v4, Landroid/content/Intent; // type@006f
+30c3fa: 7030 6f02 6400                         |001b: invoke-direct {v4, v6, v0}, Landroid/content/Intent;.<init>:(Landroid/content/Context;Ljava/lang/Class;)V // method@026f
+30c400: 6e20 5f02 4600                         |001e: invoke-virtual {v6, v4}, Landroid/content/Context;.startService:(Landroid/content/Intent;)Landroid/content/ComponentName; // method@025f
+30c406: 2824                                   |0021: goto 0045 // +0024
+30c408: 2336 0f12                              |0022: new-array v6, v3, [Ljava/lang/Object; // type@120f
+30c40c: 1a00 7b16                              |0024: const-string v0, "DspServices isRuning" // string@167b
+30c410: 4d00 0602                              |0026: aput-object v0, v6, v2
+30c414: 7120 2668 6100                         |0028: invoke-static {v1, v6}, Lcom/blankj/utilcode/util/LogUtils;.eTag:(Ljava/lang/String;[Ljava/lang/Object;)V // method@6826
+30c41a: 281a                                   |002b: goto 0045 // +001a
+30c41c: 0d06                                   |002c: move-exception v6
+30c41e: 2330 0f12                              |002d: new-array v0, v3, [Ljava/lang/Object; // type@120f
+30c422: 2203 a710                              |002f: new-instance v3, Ljava/lang/StringBuilder; // type@10a7
+30c426: 7010 3d8e 0300                         |0031: invoke-direct {v3}, Ljava/lang/StringBuilder;.<init>:()V // method@8e3d
+30c42c: 1a04 dba7                              |0034: const-string v4, "starting DspServices error:" // string@a7db
+30c430: 6e20 478e 4300                         |0036: invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@8e47
+30c436: 6e20 468e 6300                         |0039: invoke-virtual {v3, v6}, Ljava/lang/StringBuilder;.append:(Ljava/lang/Object;)Ljava/lang/StringBuilder; // method@8e46
+30c43c: 6e10 508e 0300                         |003c: invoke-virtual {v3}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@8e50
+30c442: 0c06                                   |003f: move-result-object v6
+30c444: 4d06 0002                              |0040: aput-object v6, v0, v2
+30c448: 7120 2668 0100                         |0042: invoke-static {v1, v0}, Lcom/blankj/utilcode/util/LogUtils;.eTag:(Ljava/lang/String;[Ljava/lang/Object;)V // method@6826
+30c44e: 0e00                                   |0045: return-void
+      catches       : 1
+        0x0006 - 0x002b
+          <any> -> 0x002c
+      positions     :
+        0x0000 line=26
+        0x0012 line=28
+        0x0015 line=29
+        0x0019 line=30
+        0x001e line=31
+        0x0028 line=33
+        0x002f line=36
+      locals        :
+        0x0000 - 0x0046 reg=6 (null) Landroid/content/Context;
+
+  Virtual methods   -
+    #0              : (in Lcom/nwd/dsp/uitls/DspServices;)
+      name          : 'onBind'
+      type          : '(Landroid/content/Intent;)Landroid/os/IBinder;'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 2
+      ins           : 2
+      outs          : 0
+      insns size    : 2 16-bit code units
+30c1a0:                                        |[30c1a0] com.nwd.dsp.uitls.DspServices.onBind:(Landroid/content/Intent;)Landroid/os/IBinder;
+30c1b0: 1201                                   |0000: const/4 v1, #int 0 // #0
+30c1b2: 1101                                   |0001: return-object v1
+      catches       : (none)
+      positions     :
+      locals        :
+
+    #1              : (in Lcom/nwd/dsp/uitls/DspServices;)
+      name          : 'onCreate'
+      type          : '()V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 7
+      ins           : 1
+      outs          : 3
+      insns size    : 148 16-bit code units
+30c244:                                        |[30c244] com.nwd.dsp.uitls.DspServices.onCreate:()V
+30c254: 6f10 f101 0600                         |0000: invoke-super {v6}, Landroid/app/Service;.onCreate:()V // method@01f1
+30c25a: 1210                                   |0003: const/4 v0, #int 1 // #1
+30c25c: 2301 0f12                              |0004: new-array v1, v0, [Ljava/lang/Object; // type@120f
+30c260: 2202 a710                              |0006: new-instance v2, Ljava/lang/StringBuilder; // type@10a7
+30c264: 7010 3d8e 0200                         |0008: invoke-direct {v2}, Ljava/lang/StringBuilder;.<init>:()V // method@8e3d
+30c26a: 1a03 7f16                              |000b: const-string v3, "DspServices服务的onCreate() AUDIOTYPE=" // string@167f
+30c26e: 6e20 478e 3200                         |000d: invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@8e47
+30c274: 6003 cf7c                              |0010: sget v3, Lcom/nwd/dsp/uitls/DspConstant;.AUDIOTYPE:I // field@7ccf
+30c278: 6e20 438e 3200                         |0012: invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;.append:(I)Ljava/lang/StringBuilder; // method@8e43
+30c27e: 1a03 8103                              |0015: const-string v3, ", dsp version:" // string@0381
+30c282: 6e20 478e 3200                         |0017: invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@8e47
+30c288: 7100 f962 0000                         |001a: invoke-static {}, Lcom/blankj/utilcode/util/AppUtils;.getAppVersionCode:()I // method@62f9
+30c28e: 0a03                                   |001d: move-result v3
+30c290: 6e20 438e 3200                         |001e: invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;.append:(I)Ljava/lang/StringBuilder; // method@8e43
+30c296: 6e10 508e 0200                         |0021: invoke-virtual {v2}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@8e50
+30c29c: 0c02                                   |0024: move-result-object v2
+30c29e: 1203                                   |0025: const/4 v3, #int 0 // #0
+30c2a0: 4d02 0103                              |0026: aput-object v2, v1, v3
+30c2a4: 1a02 e85e                              |0028: const-string v2, "dsp3-DspServices-ych" // string@5ee8
+30c2a8: 7120 2668 1200                         |002a: invoke-static {v2, v1}, Lcom/blankj/utilcode/util/LogUtils;.eTag:(Ljava/lang/String;[Ljava/lang/Object;)V // method@6826
+30c2ae: 6001 cf7c                              |002d: sget v1, Lcom/nwd/dsp/uitls/DspConstant;.AUDIOTYPE:I // field@7ccf
+30c2b2: 1304 ff00                              |002f: const/16 v4, #int 255 // #ff
+30c2b6: 3341 1700                              |0031: if-ne v1, v4, 0048 // +0017
+30c2ba: 1a01 9cb0                              |0033: const-string v1, "去连接设置服务," // string@b09c
+30c2be: 7120 5308 1200                         |0035: invoke-static {v2, v1}, Landroid/util/Log;.e:(Ljava/lang/String;Ljava/lang/String;)I // method@0853
+30c2c4: 7100 9c6c 0000                         |0038: invoke-static {}, Lcom/blankj/utilcode/util/Utils;.getApp:()Landroid/app/Application; // method@6c9c
+30c2ca: 0c01                                   |003b: move-result-object v1
+30c2cc: 7110 1886 0100                         |003c: invoke-static {v1}, Lcom/nwd/dsp/uitls/SettingController;.getInstance:(Landroid/content/Context;)Lcom/nwd/dsp/uitls/SettingController; // method@8618
+30c2d2: 0c01                                   |003f: move-result-object v1
+30c2d4: 2204 9e0f                              |0040: new-instance v4, Lcom/nwd/dsp/uitls/DspServices$1; // type@0f9e
+30c2d8: 7020 ee85 6400                         |0042: invoke-direct {v4, v6}, Lcom/nwd/dsp/uitls/DspServices$1;.<init>:(Lcom/nwd/dsp/uitls/DspServices;)V // method@85ee
+30c2de: 6e20 1286 4100                         |0045: invoke-virtual {v1, v4}, Lcom/nwd/dsp/uitls/SettingController;.connectService:(Lcom/android/utils/utils/AbsServiceControllerHelper$OnServiceConnectSuccessListener;)V // method@8612
+30c2e4: 7100 4c6a 0000                         |0048: invoke-static {}, Lcom/blankj/utilcode/util/SPUtils;.getInstance:()Lcom/blankj/utilcode/util/SPUtils; // method@6a4c
+30c2ea: 0c01                                   |004b: move-result-object v1
+30c2ec: 1a04 c763                              |004c: const-string v4, "first_boot" // string@63c7
+30c2f0: 6e30 496a 4100                         |004e: invoke-virtual {v1, v4, v0}, Lcom/blankj/utilcode/util/SPUtils;.getBoolean:(Ljava/lang/String;Z)Z // method@6a49
+30c2f6: 0a00                                   |0051: move-result v0
+30c2f8: 2201 a710                              |0052: new-instance v1, Ljava/lang/StringBuilder; // type@10a7
+30c2fc: 7010 3d8e 0100                         |0054: invoke-direct {v1}, Ljava/lang/StringBuilder;.<init>:()V // method@8e3d
+30c302: 1a05 e2b0                              |0057: const-string v5, "是否是第一次开机: " // string@b0e2
+30c306: 6e20 478e 5100                         |0059: invoke-virtual {v1, v5}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@8e47
+30c30c: 6e20 488e 0100                         |005c: invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;.append:(Z)Ljava/lang/StringBuilder; // method@8e48
+30c312: 6e10 508e 0100                         |005f: invoke-virtual {v1}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@8e50
+30c318: 0c01                                   |0062: move-result-object v1
+30c31a: 7120 5308 1200                         |0063: invoke-static {v2, v1}, Landroid/util/Log;.e:(Ljava/lang/String;Ljava/lang/String;)I // method@0853
+30c320: 3800 1500                              |0066: if-eqz v0, 007b // +0015
+30c324: 1a00 02b1                              |0068: const-string v0, "第一次开机,去把自定义一,变成默认值" // string@b102
+30c328: 7120 5308 0200                         |006a: invoke-static {v2, v0}, Landroid/util/Log;.e:(Ljava/lang/String;Ljava/lang/String;)I // method@0853
+30c32e: 7100 4c6a 0000                         |006d: invoke-static {}, Lcom/blankj/utilcode/util/SPUtils;.getInstance:()Lcom/blankj/utilcode/util/SPUtils; // method@6a4c
+30c334: 0c00                                   |0070: move-result-object v0
+30c336: 6e30 636a 4003                         |0071: invoke-virtual {v0, v4, v3}, Lcom/blankj/utilcode/util/SPUtils;.put:(Ljava/lang/String;Z)V // method@6a63
+30c33c: 7100 7d85 0000                         |0074: invoke-static {}, Lcom/nwd/dsp/uitls/DspManager;.getInstance:()Lcom/nwd/dsp/uitls/DspManager; // method@857d
+30c342: 0c00                                   |0077: move-result-object v0
+30c344: 6e10 c285 0000                         |0078: invoke-virtual {v0}, Lcom/nwd/dsp/uitls/DspManager;.resetSystem:()V // method@85c2
+30c34a: 7100 0386 0000                         |007b: invoke-static {}, Lcom/nwd/dsp/uitls/DspUtils;.is10EQ:()Z // method@8603
+30c350: 0a00                                   |007e: move-result v0
+30c352: 3900 0a00                              |007f: if-nez v0, 0089 // +000a
+30c356: 7100 7d85 0000                         |0081: invoke-static {}, Lcom/nwd/dsp/uitls/DspManager;.getInstance:()Lcom/nwd/dsp/uitls/DspManager; // method@857d
+30c35c: 0c00                                   |0084: move-result-object v0
+30c35e: 6e10 db85 0000                         |0085: invoke-virtual {v0}, Lcom/nwd/dsp/uitls/DspManager;.sendInitData:()V // method@85db
+30c364: 2808                                   |0088: goto 0090 // +0008
+30c366: 7100 7d85 0000                         |0089: invoke-static {}, Lcom/nwd/dsp/uitls/DspManager;.getInstance:()Lcom/nwd/dsp/uitls/DspManager; // method@857d
+30c36c: 0c00                                   |008c: move-result-object v0
+30c36e: 6e10 e085 0000                         |008d: invoke-virtual {v0}, Lcom/nwd/dsp/uitls/DspManager;.set10EQDate:()V // method@85e0
+30c374: 7110 0185 0600                         |0090: invoke-static {v6}, Lcom/nwd/dsp/uitls/AccStatusBroadcast;.registerAppChangeReceiver:(Landroid/content/Context;)V // method@8501
+30c37a: 0e00                                   |0093: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=42
+        0x0006 line=43
+        0x002d line=47
+        0x0035 line=48
+        0x0038 line=49
+        0x0048 line=66
+        0x0052 line=67
+        0x006a line=69
+        0x006d line=70
+        0x0074 line=71
+        0x007b line=77
+        0x0081 line=79
+        0x0089 line=81
+        0x0090 line=87
+      locals        :
+        0x0000 - 0x0094 reg=6 this Lcom/nwd/dsp/uitls/DspServices;
+
+    #2              : (in Lcom/nwd/dsp/uitls/DspServices;)
+      name          : 'onDestroy'
+      type          : '()V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 4
+      ins           : 1
+      outs          : 2
+      insns size    : 20 16-bit code units
+30c37c:                                        |[30c37c] com.nwd.dsp.uitls.DspServices.onDestroy:()V
+30c38c: 6f10 f201 0300                         |0000: invoke-super {v3}, Landroid/app/Service;.onDestroy:()V // method@01f2
+30c392: 1210                                   |0003: const/4 v0, #int 1 // #1
+30c394: 2300 0f12                              |0004: new-array v0, v0, [Ljava/lang/Object; // type@120f
+30c398: 1201                                   |0006: const/4 v1, #int 0 // #0
+30c39a: 1a02 8116                              |0007: const-string v2, "DspServices服务的ononDestroy()" // string@1681
+30c39e: 4d02 0001                              |0009: aput-object v2, v0, v1
+30c3a2: 1a01 e85e                              |000b: const-string v1, "dsp3-DspServices-ych" // string@5ee8
+30c3a6: 7120 2668 0100                         |000d: invoke-static {v1, v0}, Lcom/blankj/utilcode/util/LogUtils;.eTag:(Ljava/lang/String;[Ljava/lang/Object;)V // method@6826
+30c3ac: 7110 0285 0300                         |0010: invoke-static {v3}, Lcom/nwd/dsp/uitls/AccStatusBroadcast;.unregisterAppChangeReceiver:(Landroid/content/Context;)V // method@8502
+30c3b2: 0e00                                   |0013: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=106
+        0x000d line=107
+        0x0010 line=108
+      locals        :
+        0x0000 - 0x0014 reg=3 this Lcom/nwd/dsp/uitls/DspServices;
+
+    #3              : (in Lcom/nwd/dsp/uitls/DspServices;)
+      name          : 'onStartCommand'
+      type          : '(Landroid/content/Intent;II)I'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 5
+      ins           : 4
+      outs          : 2
+      insns size    : 43 16-bit code units
+30c1b4:                                        |[30c1b4] com.nwd.dsp.uitls.DspServices.onStartCommand:(Landroid/content/Intent;II)I
+30c1c4: 1212                                   |0000: const/4 v2, #int 1 // #1
+30c1c6: 2323 0f12                              |0001: new-array v3, v2, [Ljava/lang/Object; // type@120f
+30c1ca: 2204 a710                              |0003: new-instance v4, Ljava/lang/StringBuilder; // type@10a7
+30c1ce: 7010 3d8e 0400                         |0005: invoke-direct {v4}, Ljava/lang/StringBuilder;.<init>:()V // method@8e3d
+30c1d4: 1a00 8016                              |0008: const-string v0, "DspServices服务的onStartCommand() versionName:" // string@1680
+30c1d8: 6e20 478e 0400                         |000a: invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@8e47
+30c1de: 7110 8168 0100                         |000d: invoke-static {v1}, Lcom/blankj/utilcode/util/MyAppUtil;.getAppVersionName:(Landroid/content/Context;)Ljava/lang/String; // method@6881
+30c1e4: 0c00                                   |0010: move-result-object v0
+30c1e6: 6e20 478e 0400                         |0011: invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@8e47
+30c1ec: 1a00 6703                              |0014: const-string v0, ", Build.DISPLAY=" // string@0367
+30c1f0: 6e20 478e 0400                         |0016: invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@8e47
+30c1f6: 6200 cc00                              |0019: sget-object v0, Landroid/os/Build;.DISPLAY:Ljava/lang/String; // field@00cc
+30c1fa: 6e20 478e 0400                         |001b: invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@8e47
+30c200: 6e10 508e 0400                         |001e: invoke-virtual {v4}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@8e50
+30c206: 0c04                                   |0021: move-result-object v4
+30c208: 1200                                   |0022: const/4 v0, #int 0 // #0
+30c20a: 4d04 0300                              |0023: aput-object v4, v3, v0
+30c20e: 1a04 e85e                              |0025: const-string v4, "dsp3-DspServices-ych" // string@5ee8
+30c212: 7120 2668 3400                         |0027: invoke-static {v4, v3}, Lcom/blankj/utilcode/util/LogUtils;.eTag:(Ljava/lang/String;[Ljava/lang/Object;)V // method@6826
+30c218: 0f02                                   |002a: return v2
+      catches       : (none)
+      positions     :
+        0x0003 line=100
+      locals        :
+        0x0000 - 0x002b reg=1 this Lcom/nwd/dsp/uitls/DspServices;
+        0x0000 - 0x002b reg=2 (null) Landroid/content/Intent;
+        0x0000 - 0x002b reg=3 (null) I
+        0x0000 - 0x002b reg=4 (null) I
+
+  source_file_idx   : 5757 (DspServices.java)
+
+Class #2375            -

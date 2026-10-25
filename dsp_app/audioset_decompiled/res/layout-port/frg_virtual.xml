@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/virtual_reset_iv" android:background="@drawable/common_reset_but_bg" android:layout_width="@dimen/dp_114" android:layout_height="@dimen/dp_54" android:layout_marginTop="@dimen/dp_60" android:layout_below="@id/virtual_switch_fl" />
+    <ImageView android:id="@id/car_iv" android:layout_width="@dimen/dp_348" android:layout_height="@dimen/dp_491" android:layout_marginTop="@dimen/dp_51" android:src="@mipmap/dts_car_port" />
+    <ImageView android:id="@id/dts_sound_tl_iv" android:background="@mipmap/dts_sound_bottom" android:layout_width="@dimen/dp_86" android:layout_height="@dimen/dp_60" android:layout_marginTop="@dimen/dp_125" android:layout_alignTop="@id/car_iv" android:rotation="-90.0" />
+    <ImageView android:id="@id/dts_sound_tr_iv" android:background="@mipmap/dts_sound_bottom" android:layout_width="@dimen/dp_86" android:layout_height="@dimen/dp_60" android:layout_marginBottom="@dimen/dp_115" android:layout_alignBottom="@id/car_iv" android:rotation="-90.0" />
+    <ImageView android:id="@id/dts_sound_bl_iv" android:background="@mipmap/dts_sound_bottom" android:layout_width="@dimen/dp_86" android:layout_height="@dimen/dp_60" android:layout_marginTop="@dimen/dp_125" android:layout_alignTop="@id/car_iv" android:rotation="90.0" />
+    <ImageView android:id="@id/dts_sound_br_iv" android:background="@mipmap/dts_sound_bottom" android:layout_width="@dimen/dp_86" android:layout_height="@dimen/dp_60" android:layout_marginBottom="@dimen/dp_115" android:layout_alignBottom="@id/car_iv" android:rotation="90.0" />
+    <TextView android:textSize="@dimen/dts_virtual_switch_text_size" android:textColor="@color/white" android:gravity="right|center" android:id="@id/virtual_switch_tv" android:layout_width="0.0dp" android:layout_height="@dimen/dp_64" android:text="@string/str_virtual_mode" android:layout_alignTop="@id/virtual_switch_fl" />
+    <FrameLayout android:id="@id/virtual_switch_fl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_100" android:layout_alignTop="@id/car_iv">
+        <ImageView android:layout_gravity="center" android:id="@id/virtual_switch_iv" android:background="@drawable/selector_dts_switch" android:layout_width="@dimen/dts_switch_width" android:layout_height="@dimen/dts_switch_height" />
+    </FrameLayout>
+    <ImageView android:id="@id/virtual_mask_iv" android:background="@mipmap/dts_virtual_mask_port" android:layout_width="0.0dp" android:layout_height="0.0dp" android:layout_marginTop="@dimen/dp_56" android:layout_marginBottom="@dimen/dp_108" android:layout_alignTop="@id/car_iv" android:layout_alignBottom="@id/car_iv" />
+</RelativeLayout>

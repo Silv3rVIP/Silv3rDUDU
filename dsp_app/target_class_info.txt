@@ -1,0 +1,438 @@
+
+==================== Lcom/nwd/dsp/uitls/DspManager; ====================
+FIELDS:
+  Ljava/lang/String; TAG
+  Z dsp_double_bass
+  I hpf_area_four
+  I hpf_area_four_qvalue
+  I hpf_area_one
+  I hpf_area_one_qvalue
+  I hpf_area_three
+  I hpf_area_three_qvalue
+  I hpf_area_two
+  I hpf_area_two_qvalue
+  Z isEq4CH
+  I lpf_area_four
+  I lpf_area_four_qvalue
+  I lpf_area_one
+  I lpf_area_one_qvalue
+  I lpf_area_three
+  I lpf_area_three_qvalue
+  I lpf_area_two
+  I lpf_area_two_qvalue
+  Lcom/nwd/dsp/uitls/DspData; mDspData
+  Ljava/lang/String; mDspEQType
+  Lcom/nwd/dsp/uitls/DspManager; mDspManager
+  F mEqDiff
+  [I mEqFrequence
+  [I mEqGain
+  I mEqGainMax
+  [I mEqGainOriginal
+  [I mEqQValue
+  Z mRound_switch
+  I marea_one_frequence
+  I marea_one_qValue
+  I marea_three_frequence
+  I marea_three_qValue
+  I marea_two_frequence
+  I marea_two_qValue
+  I mbalance
+  I mbass_bugle
+  I mbass_bugle_delay
+  Z mbass_bugle_mute
+  Z mbass_bugle_opp
+  I mcenter_bugle
+  I mcenter_bugle_delay
+  Z mcenter_bugle_mute
+  Z mcenter_bugle_opp
+  Z mcenter_linkage
+  Z mdengxiang
+  I mfader
+  I mfront_left
+  I mfront_left_delay
+  Z mfront_left_mute
+  Z mfront_left_opp
+  Z mfront_linkage
+  I mfront_right
+  I mfront_right_delay
+  Z mfront_right_mute
+  Z mfront_right_opp
+  I msuf_left
+  I msuf_left_delay
+  Z msuf_left_mute
+  Z msuf_left_opp
+  Z msuf_linkage
+  I msuf_right
+  I msuf_right_delay
+  Z msuf_right_mute
+  Z msuf_right_opp
+  I pf_area
+  I pf_dbb_area
+  Z used_customize
+METHODS:
+  <init>
+  deleteCustomizeEqDataFile
+  getCustomizeConfigList
+  getCustomizeConfigListByPath
+  getDtsBassGain
+  getDtsBassOption
+  getDtsFunctionSwitch
+  getDtsSceneData
+  getDtsSpData
+  getDtsVirtualMiddle
+  getFrequence
+  getHpf_area_four
+  getHpf_area_four_qvalue
+  getHpf_area_one
+  getHpf_area_one_qvalue
+  getHpf_area_three
+  getHpf_area_three_qvalue
+  getHpf_area_two
+  getHpf_area_two_qvalue
+  getInstance
+  getLpf_area_four
+  getLpf_area_four_qvalue
+  getLpf_area_one
+  getLpf_area_one_qvalue
+  getLpf_area_three
+  getLpf_area_three_qvalue
+  getLpf_area_two
+  getLpf_area_two_qvalue
+  getMarea_one_frequence
+  getMarea_one_qValue
+  getMarea_three_frequence
+  getMarea_three_qValue
+  getMarea_two_frequence
+  getMarea_two_qValue
+  getMbalance
+  getMbass_bugle
+  getMbass_bugle_delay
+  getMcenter_bugle
+  getMcenter_bugle_delay
+  getMfader
+  getMfront_left
+  getMfront_left_delay
+  getMfront_right
+  getMfront_right_delay
+  getMsuf_left
+  getMsuf_left_delay
+  getMsuf_right
+  getMsuf_right_delay
+  getOneGain
+  getOneValue
+  getPf_area
+  getPf_dbb_area
+  getSystemProp
+  getmDspEQType
+  getmEqDiff
+  getmEqGain
+  getmEqGainMax
+  getmEqQValue
+  initBugleData
+  initDspConstant
+  initDtsData
+  initParam
+  intArrayToString
+  isCustomizeEQExists
+  isMbass_bugle_mute
+  isMbass_bugle_opp
+  isMcenter_bugle_mute
+  isMcenter_bugle_opp
+  isMcenter_linkage
+  isMfront_left_mute
+  isMfront_left_opp
+  isMfront_linkage
+  isMfront_right_mute
+  isMfront_right_opp
+  isMsuf_left_mute
+  isMsuf_left_opp
+  isMsuf_linkage
+  isMsuf_right_mute
+  isMsuf_right_opp
+  isOnlyFourBugle
+  isOpenDengxiang
+  isShowStart
+  isSupportDts
+  isUsed_customize
+  ismRound_switch
+  loadEqDataFromSD
+  loadOtherSPDate
+  loadSPData
+  resetSystem
+  saveCustomizeEqDataFile
+  saveEqDataToSD
+  send10EQGain
+  send32EQGain
+  send32EQModeData
+  send32EQModeData
+  sendAreaData
+  sendAreayData
+  sendBugleData
+  sendBugleDataMute
+  sendBugleDelayData
+  sendBugleOppData
+  sendDBBAreaData
+  sendDBBReset
+  sendDengxiangData
+  sendDtsBassGrow
+  sendDtsFunctionSwitch
+  sendDtsSceneMode
+  sendDtsSoundFocus
+  sendDtsSurroundMode
+  sendDtsVirtualMiddle
+  sendF2Data
+  sendHLData
+  sendHLPFReset
+  sendInitData
+  sendKingReset
+  sendReset
+  sendRound3DDate
+  sendSiteData
+  set10EQDate
+  setDtsSpData
+  setMcenter_linkage
+  setMfront_linkage
+  setMsuf_linkage
+  setOneGain
+  setOneQValue
+  setSystemProp
+  setSystemProp
+  setUsed_customize
+  setmDsp10EQType
+  setmDspEQType
+
+==================== Lcom/nwd/dsp/uitls/DspConstant; ====================
+FIELDS:
+  I AUDIOTYPE
+  Ljava/lang/String; CUSTOMIZE_EQ_PATH
+  [I DEFAULTFREQUENCE
+  Ljava/lang/String; DEFAULT_DSPCONFIG_PATH
+  Ljava/lang/String; DEFAULT_DSPCONFIG_PATH2
+  Ljava/lang/String; DSP_DEFAULT_PATH
+  Ljava/lang/String; DSP_DEVICE_PATH_7604
+  Ljava/lang/String; DSP_DEVICE_PATH_7735
+  Ljava/lang/String; DSP_DEVICE_PATH_DSP_NAME
+  Ljava/lang/String; DSP_DEVICE_PATH_DTS
+  Ljava/lang/String; DSP_EQ_GAIN_MAX_PATH
+  Ljava/lang/String; DSP_FACTORYCONFIG_PATH
+  Ljava/lang/String; DSP_TYPE_SYS_NWD
+  Ljava/lang/String; FEATURE_CONFIG_PATH
+  [I Gain10_TWO32
+  Z ISPRINTLOG
+  Z IS_SEND_END
+  Ljava/lang/String; KEY_DEVICE_INSTRUMENT_HEIGHT
+  Ljava/lang/String; KEY_DSP_4CH
+  Ljava/lang/String; KEY_SYS_DSP_PORT_UI2
+  Ljava/lang/String; KEY_SYS_DSP_START_SHOW
+  Ljava/lang/String; KEY_SYS_DSP_WIDE_UI
+  Ljava/lang/String; KEY_SYS_DTS_HIDE
+  Lcom/android/utils/log/JLog; LOG
+  Z LOW_MEMORY
+  Z LOW_MEMORY_K2501
+  Ljava/lang/String; PRESET_EQ3_PATH
+  Ljava/lang/String; PRESET_EQ_PATH
+  Ljava/lang/String; key_dsp_double_bass
+  Ljava/lang/String; key_eq_color_bg_end
+  Ljava/lang/String; key_eq_color_bg_start
+  Ljava/lang/String; key_eq_color_line
+  Ljava/lang/String; key_seekbar_bg
+  Ljava/lang/String; key_seekbar_progress
+METHODS:
+  <clinit>
+  <init>
+  getConfigValue
+  isShowSparkView
+
+==================== Lcom/nwd/dsp/uitls/AudioProtocalUtil; ====================
+FIELDS:
+  B DATA_DSP_32PART_PARAM
+  B DATA_DSP_ALL_32PART_PARAM
+  B DATA_DSP_ALL_OTHER_PARAM
+  B DATA_DSP_BASS_ENHANCE
+  B DATA_DSP_DELAY_TIME
+  B DATA_DSP_DENGXIANG
+  B DATA_DSP_DTS
+  B DATA_DSP_HLPF
+  B DATA_DSP_PHASE
+  B DATA_DSP_ROUN3D
+  B DATA_DSP_SITE
+  B DATA_DSP_VALUE
+  Ljava/lang/String; TAG
+  Ljava/lang/Runnable; runner
+METHODS:
+  <clinit>
+  <init>
+  send32EQData
+  sendAreayData
+  sendBugleData
+  sendBugleDataMute
+  sendBugleOppData
+  sendDelayData
+  sendDengxiangData
+  sendDtsBassGrow
+  sendDtsFunctionSwitch
+  sendDtsSceneModeData
+  sendDtsSoundFocus
+  sendDtsSurroundMode
+  sendDtsVirtualMiddle
+  sendHpfData
+  sendLpfData
+  sendOneEQData
+  sendOtherAll
+  sendRound3DDate
+  sendSiteData
+  writeDataToCPU
+  writeDataToMCU
+  writeDataToMCU
+  writeDataToMCU
+  writeDataToMCU
+  writeDataToMCU10eq
+
+==================== Lcom/nwd/dsp/uitls/DspAlgorithm; ====================
+FIELDS:
+  I BALANCE_REDUCE
+  I FAD_REDUCE
+  [I FREQUENCY
+  [I HEAD
+  Lcom/android/utils/log/JLog; LOG
+  I MAX_BALANCE
+  I MIN_BALANCE
+  I SPEAK_MUTE
+  I m680GainTemp
+  F m680QTemp
+  I m750GainTemp
+  F m750QTemp
+METHODS:
+  <clinit>
+  <init>
+  Calc_Biquad
+  ak7602_double2doublecoefficient
+  getEqI2cData
+  getSoundFieldData
+  int2Bytes
+  max
+  min
+  sat
+
+==================== Lcom/nwd/dsp/uitls/SettingController; ====================
+FIELDS:
+  Lcom/nwd/dsp/uitls/SettingController; instance
+  Ljava/lang/Object; mFeature
+METHODS:
+  <init>
+  connectService
+  disconnectService
+  doRelease
+  doServiceConnected
+  doServiceDisconnected
+  getFeature
+  getInstance
+  getServiceIntent
+
+==================== Lcom/nwd/dsp/uitls/DspUtils; ====================
+FIELDS:
+  Ljava/lang/String; TAG
+METHODS:
+  <init>
+  CalcBiquad
+  ak7602_double2doublecoefficient
+  byteToStr
+  copy
+  eq32To10
+  getAudioType
+  getConfigList
+  getDspAudioType
+  getMax
+  getMcuVerTime
+  intArrayToStr
+  is10EQ
+  isArm7604Dsp
+  isArmDsp
+  isMcuCtrlAudioIc
+  isPresetEQType
+  printByteData
+  printByteData32
+  readSysNodeValue
+  strToIntArray
+
+==================== Lcom/nwd/dsp/uitls/DspData; ====================
+FIELDS:
+  Ljava/lang/String; BASS_BUGLE
+  Ljava/lang/String; BASS_BUGLE_DELAY
+  Ljava/lang/String; BASS_BUGLE_MUTE
+  Ljava/lang/String; BASS_BUGLE_OPP
+  Ljava/lang/String; CENTER_BUGLE
+  Ljava/lang/String; CENTER_BUGLE_DELAY
+  Ljava/lang/String; CENTER_BUGLE_MUTE
+  Ljava/lang/String; CENTER_BUGLE_OPP
+  Ljava/lang/String; CENTER_LINKAGE
+  Ljava/lang/String; FIRST_BOOT
+  Ljava/lang/String; FRONT_LEFT
+  Ljava/lang/String; FRONT_LEFT_DELAY
+  Ljava/lang/String; FRONT_LEFT_MUTE
+  Ljava/lang/String; FRONT_LEFT_OPP
+  Ljava/lang/String; FRONT_LINKAGE
+  Ljava/lang/String; FRONT_RIGHT
+  Ljava/lang/String; FRONT_RIGHT_DELAY
+  Ljava/lang/String; FRONT_RIGHT_MUTE
+  Ljava/lang/String; FRONT_RIGHT_OPP
+  Ljava/lang/String; HPF_AREA_FOUR
+  Ljava/lang/String; HPF_AREA_FOUR_QVALUE
+  Ljava/lang/String; HPF_AREA_ONE
+  Ljava/lang/String; HPF_AREA_ONE_QVALUE
+  Ljava/lang/String; HPF_AREA_THREE
+  Ljava/lang/String; HPF_AREA_THREE_QVALUE
+  Ljava/lang/String; HPF_AREA_TWO
+  Ljava/lang/String; HPF_AREA_TWO_QVALUE
+  Ljava/lang/String; KEY_BALANCE
+  Ljava/lang/String; KEY_BASS_LOUD
+  Ljava/lang/String; KEY_EQ_TYPE
+  Ljava/lang/String; KEY_FADER
+  Ljava/lang/String; KEY_PART_FREQUENCE
+  Ljava/lang/String; KEY_PART_GAIN
+  Ljava/lang/String; KEY_PART_GAIN_MAX
+  Ljava/lang/String; KEY_PART_QVALUE
+  Ljava/lang/String; LPF_AREA_FOUR
+  Ljava/lang/String; LPF_AREA_FOUR_QVALUE
+  Ljava/lang/String; LPF_AREA_ONE
+  Ljava/lang/String; LPF_AREA_ONE_QVALUE
+  Ljava/lang/String; LPF_AREA_THREE
+  Ljava/lang/String; LPF_AREA_THREE_QVALUE
+  Ljava/lang/String; LPF_AREA_TWO
+  Ljava/lang/String; LPF_AREA_TWO_QVALUE
+  Ljava/lang/String; MAREA_ONE_FREQUENCE
+  Ljava/lang/String; MAREA_ONE_QVALUE
+  Ljava/lang/String; MAREA_THREE_FREQUENCE
+  Ljava/lang/String; MAREA_THREE_QVALUE
+  Ljava/lang/String; MAREA_TWO_FREQUENCE
+  Ljava/lang/String; MAREA_TWO_QVALUE
+  Ljava/lang/String; PF_AREA
+  Ljava/lang/String; PF_DBB_AREA
+  Ljava/lang/String; ROUND_SWITCH
+  Ljava/lang/String; SAVE_FILE_NAME
+  Ljava/lang/String; SUF_LEFT
+  Ljava/lang/String; SUF_LEFT_DELAY
+  Ljava/lang/String; SUF_LEFT_MUTE
+  Ljava/lang/String; SUF_LEFT_OPP
+  Ljava/lang/String; SUF_LINKAGE
+  Ljava/lang/String; SUF_RIGHT
+  Ljava/lang/String; SUF_RIGHT_DELAY
+  Ljava/lang/String; SUF_RIGHT_MUTE
+  Ljava/lang/String; SUF_RIGHT_OPP
+  Ljava/lang/String; TAG
+METHODS:
+  <clinit>
+  <init>
+  getInstance
+  getSpBoolen
+  getSpFrequence
+  getSpGain
+  getSpInt
+  getSpQValue
+  getSpStr
+  initAudioIcType
+  save
+  save
+  save
+  save
+  saveEqAll

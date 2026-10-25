@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <string name="FWD">1;2;3</string>
+    <string name="FWD_3">{&quot;d&quot;:3,&quot;e&quot;:145,&quot;f&quot;:10,&quot;g&quot;:-1,&quot;h&quot;:53,&quot;i&quot;:0,&quot;j&quot;:0,&quot;k&quot;:0,&quot;a&quot;:3,&quot;b&quot;:&quot;WHITE&quot;,&quot;c&quot;:2}</string>
+    <string name="FWD_2">{&quot;d&quot;:2,&quot;e&quot;:145,&quot;f&quot;:10,&quot;g&quot;:-1,&quot;h&quot;:10,&quot;i&quot;:0,&quot;j&quot;:0,&quot;k&quot;:0,&quot;a&quot;:2,&quot;b&quot;:&quot;Music&quot;,&quot;c&quot;:2}</string>
+    <string name="FWD_1">{&quot;d&quot;:3,&quot;e&quot;:145,&quot;f&quot;:10,&quot;g&quot;:-65527,&quot;h&quot;:50,&quot;i&quot;:0,&quot;j&quot;:0,&quot;k&quot;:0,&quot;a&quot;:1,&quot;b&quot;:&quot;Red&quot;,&quot;c&quot;:2}</string>
+</map>

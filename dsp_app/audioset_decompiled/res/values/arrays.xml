@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="common_eq_list">
+        <item>audio_eq_standard</item>
+        <item>audio_eq_pop</item>
+        <item>audio_eq_rock</item>
+        <item>audio_eq_class</item>
+        <item>audio_eq_jazz</item>
+        <item>audio_eq_custom</item>
+    </string-array>
+    <string-array name="sloce_array">
+        <item>@string/str_off_db</item>
+        <item>@string/str_6db</item>
+        <item>@string/str_12db</item>
+        <item>@string/str_18db</item>
+        <item>@string/str_24db</item>
+        <item>@string/str_36db</item>
+        <item>@string/str_48db</item>
+    </string-array>
+</resources>

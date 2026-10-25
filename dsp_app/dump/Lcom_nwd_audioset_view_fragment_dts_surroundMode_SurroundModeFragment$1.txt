@@ -1,0 +1,66 @@
+  Class descriptor  : 'Lcom/nwd/audioset/view/fragment/dts/surroundMode/SurroundModeFragment$1;'
+  Access flags      : 0x0000 ()
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+    #0              : 'Lcom/nwd/audioset/utils/ViewUtils$ViewTreeCallBack;'
+  Static fields     -
+  Instance fields   -
+    #0              : (in Lcom/nwd/audioset/view/fragment/dts/surroundMode/SurroundModeFragment$1;)
+      name          : 'this$0'
+      type          : 'Lcom/nwd/audioset/view/fragment/dts/surroundMode/SurroundModeFragment;'
+      access        : 0x1010 (FINAL SYNTHETIC)
+  Direct methods    -
+    #0              : (in Lcom/nwd/audioset/view/fragment/dts/surroundMode/SurroundModeFragment$1;)
+      name          : '<init>'
+      type          : '(Lcom/nwd/audioset/view/fragment/dts/surroundMode/SurroundModeFragment;)V'
+      access        : 0x10000 (CONSTRUCTOR)
+      code          -
+      registers     : 2
+      ins           : 2
+      outs          : 1
+      insns size    : 6 16-bit code units
+2efed8:                                        |[2efed8] com.nwd.audioset.view.fragment.dts.surroundMode.SurroundModeFragment$1.<init>:(Lcom/nwd/audioset/view/fragment/dts/surroundMode/SurroundModeFragment;)V
+2efee8: 5b01 ef79                              |0000: iput-object v1, v0, Lcom/nwd/audioset/view/fragment/dts/surroundMode/SurroundModeFragment$1;.this$0:Lcom/nwd/audioset/view/fragment/dts/surroundMode/SurroundModeFragment; // field@79ef
+2efeec: 7010 df8d 0000                         |0002: invoke-direct {v0}, Ljava/lang/Object;.<init>:()V // method@8ddf
+2efef2: 0e00                                   |0005: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=86
+      locals        :
+        0x0000 - 0x0006 reg=0 this Lcom/nwd/audioset/view/fragment/dts/surroundMode/SurroundModeFragment$1;
+        0x0000 - 0x0006 reg=1 (null) Lcom/nwd/audioset/view/fragment/dts/surroundMode/SurroundModeFragment;
+
+  Virtual methods   -
+    #0              : (in Lcom/nwd/audioset/view/fragment/dts/surroundMode/SurroundModeFragment$1;)
+      name          : 'onGlobalLayout'
+      type          : '()V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 4
+      ins           : 1
+      outs          : 1
+      insns size    : 25 16-bit code units
+2efef4:                                        |[2efef4] com.nwd.audioset.view.fragment.dts.surroundMode.SurroundModeFragment$1.onGlobalLayout:()V
+2eff04: 1220                                   |0000: const/4 v0, #int 2 // #2
+2eff06: 2300 9b11                              |0001: new-array v0, v0, [Landroid/view/View; // type@119b
+2eff0a: 5431 ef79                              |0003: iget-object v1, v3, Lcom/nwd/audioset/view/fragment/dts/surroundMode/SurroundModeFragment$1;.this$0:Lcom/nwd/audioset/view/fragment/dts/surroundMode/SurroundModeFragment; // field@79ef
+2eff0e: 7110 3e82 0100                         |0005: invoke-static {v1}, Lcom/nwd/audioset/view/fragment/dts/surroundMode/SurroundModeFragment;.access$000:(Lcom/nwd/audioset/view/fragment/dts/surroundMode/SurroundModeFragment;)Landroid/widget/TextView; // method@823e
+2eff14: 0c01                                   |0008: move-result-object v1
+2eff16: 1202                                   |0009: const/4 v2, #int 0 // #0
+2eff18: 4d01 0002                              |000a: aput-object v1, v0, v2
+2eff1c: 5431 ef79                              |000c: iget-object v1, v3, Lcom/nwd/audioset/view/fragment/dts/surroundMode/SurroundModeFragment$1;.this$0:Lcom/nwd/audioset/view/fragment/dts/surroundMode/SurroundModeFragment; // field@79ef
+2eff20: 7110 3f82 0100                         |000e: invoke-static {v1}, Lcom/nwd/audioset/view/fragment/dts/surroundMode/SurroundModeFragment;.access$100:(Lcom/nwd/audioset/view/fragment/dts/surroundMode/SurroundModeFragment;)Landroid/widget/TextView; // method@823f
+2eff26: 0c01                                   |0011: move-result-object v1
+2eff28: 1212                                   |0012: const/4 v2, #int 1 // #1
+2eff2a: 4d01 0002                              |0013: aput-object v1, v0, v2
+2eff2e: 7110 4381 0000                         |0015: invoke-static {v0}, Lcom/nwd/audioset/utils/ViewUtils;.setMaxHeight:([Landroid/view/View;)V // method@8143
+2eff34: 0e00                                   |0018: return-void
+      catches       : (none)
+      positions     :
+        0x0003 line=89
+      locals        :
+        0x0000 - 0x0019 reg=3 this Lcom/nwd/audioset/view/fragment/dts/surroundMode/SurroundModeFragment$1;
+
+  source_file_idx   : 16230 (SurroundModeFragment.java)
+
+Class #3186            -

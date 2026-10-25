@@ -1,0 +1,66 @@
+  Class descriptor  : 'Lcom/nwd/dsp/uitls/DspConstant$BIQUAD_TYPE;'
+  Access flags      : 0x0601 (PUBLIC INTERFACE ABSTRACT)
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+  Static fields     -
+    #0              : (in Lcom/nwd/dsp/uitls/DspConstant$BIQUAD_TYPE;)
+      name          : 'BIQUAD_TYPE_BPF'
+      type          : 'I'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 7
+    #1              : (in Lcom/nwd/dsp/uitls/DspConstant$BIQUAD_TYPE;)
+      name          : 'BIQUAD_TYPE_DUMMY'
+      type          : 'I'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 1
+    #2              : (in Lcom/nwd/dsp/uitls/DspConstant$BIQUAD_TYPE;)
+      name          : 'BIQUAD_TYPE_EQ'
+      type          : 'I'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 2
+    #3              : (in Lcom/nwd/dsp/uitls/DspConstant$BIQUAD_TYPE;)
+      name          : 'BIQUAD_TYPE_HIGH_SHELF'
+      type          : 'I'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 10
+    #4              : (in Lcom/nwd/dsp/uitls/DspConstant$BIQUAD_TYPE;)
+      name          : 'BIQUAD_TYPE_HPF_12DB'
+      type          : 'I'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 5
+    #5              : (in Lcom/nwd/dsp/uitls/DspConstant$BIQUAD_TYPE;)
+      name          : 'BIQUAD_TYPE_HPF_6DB'
+      type          : 'I'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 6
+    #6              : (in Lcom/nwd/dsp/uitls/DspConstant$BIQUAD_TYPE;)
+      name          : 'BIQUAD_TYPE_LOW_SHELF'
+      type          : 'I'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 9
+    #7              : (in Lcom/nwd/dsp/uitls/DspConstant$BIQUAD_TYPE;)
+      name          : 'BIQUAD_TYPE_LPF_12DB'
+      type          : 'I'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 3
+    #8              : (in Lcom/nwd/dsp/uitls/DspConstant$BIQUAD_TYPE;)
+      name          : 'BIQUAD_TYPE_LPF_6DB'
+      type          : 'I'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 4
+    #9              : (in Lcom/nwd/dsp/uitls/DspConstant$BIQUAD_TYPE;)
+      name          : 'BIQUAD_TYPE_NOTCH'
+      type          : 'I'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 8
+    #10              : (in Lcom/nwd/dsp/uitls/DspConstant$BIQUAD_TYPE;)
+      name          : 'DSP_RATE'
+      type          : 'I'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 44100
+  Instance fields   -
+  Direct methods    -
+  Virtual methods   -
+  source_file_idx   : 5749 (DspConstant.java)
+
+Class #2358            -

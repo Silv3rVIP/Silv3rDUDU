@@ -1,0 +1,71 @@
+  Class descriptor  : 'Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment$2;'
+  Access flags      : 0x0000 ()
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+    #0              : 'Lcom/nwd/audioset/utils/ViewUtils$ViewTreeCallBack;'
+  Static fields     -
+  Instance fields   -
+    #0              : (in Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment$2;)
+      name          : 'this$0'
+      type          : 'Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment;'
+      access        : 0x1010 (FINAL SYNTHETIC)
+  Direct methods    -
+    #0              : (in Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment$2;)
+      name          : '<init>'
+      type          : '(Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment;)V'
+      access        : 0x10000 (CONSTRUCTOR)
+      code          -
+      registers     : 2
+      ins           : 2
+      outs          : 1
+      insns size    : 6 16-bit code units
+2ecb64:                                        |[2ecb64] com.nwd.audioset.view.fragment.dts.bass.BassFragment$2.<init>:(Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment;)V
+2ecb74: 5b01 7179                              |0000: iput-object v1, v0, Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment$2;.this$0:Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment; // field@7971
+2ecb78: 7010 df8d 0000                         |0002: invoke-direct {v0}, Ljava/lang/Object;.<init>:()V // method@8ddf
+2ecb7e: 0e00                                   |0005: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=151
+      locals        :
+        0x0000 - 0x0006 reg=0 this Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment$2;
+        0x0000 - 0x0006 reg=1 (null) Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment;
+
+  Virtual methods   -
+    #0              : (in Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment$2;)
+      name          : 'onGlobalLayout'
+      type          : '()V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 4
+      ins           : 1
+      outs          : 1
+      insns size    : 34 16-bit code units
+2ecb80:                                        |[2ecb80] com.nwd.audioset.view.fragment.dts.bass.BassFragment$2.onGlobalLayout:()V
+2ecb90: 1230                                   |0000: const/4 v0, #int 3 // #3
+2ecb92: 2300 9b11                              |0001: new-array v0, v0, [Landroid/view/View; // type@119b
+2ecb96: 5431 7179                              |0003: iget-object v1, v3, Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment$2;.this$0:Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment; // field@7971
+2ecb9a: 7110 e581 0100                         |0005: invoke-static {v1}, Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment;.access$100:(Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment;)Landroid/widget/TextView; // method@81e5
+2ecba0: 0c01                                   |0008: move-result-object v1
+2ecba2: 1202                                   |0009: const/4 v2, #int 0 // #0
+2ecba4: 4d01 0002                              |000a: aput-object v1, v0, v2
+2ecba8: 5431 7179                              |000c: iget-object v1, v3, Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment$2;.this$0:Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment; // field@7971
+2ecbac: 7110 e781 0100                         |000e: invoke-static {v1}, Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment;.access$200:(Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment;)Landroid/widget/TextView; // method@81e7
+2ecbb2: 0c01                                   |0011: move-result-object v1
+2ecbb4: 1212                                   |0012: const/4 v2, #int 1 // #1
+2ecbb6: 4d01 0002                              |0013: aput-object v1, v0, v2
+2ecbba: 5431 7179                              |0015: iget-object v1, v3, Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment$2;.this$0:Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment; // field@7971
+2ecbbe: 7110 e881 0100                         |0017: invoke-static {v1}, Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment;.access$300:(Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment;)Landroid/widget/TextView; // method@81e8
+2ecbc4: 0c01                                   |001a: move-result-object v1
+2ecbc6: 1222                                   |001b: const/4 v2, #int 2 // #2
+2ecbc8: 4d01 0002                              |001c: aput-object v1, v0, v2
+2ecbcc: 7110 4381 0000                         |001e: invoke-static {v0}, Lcom/nwd/audioset/utils/ViewUtils;.setMaxHeight:([Landroid/view/View;)V // method@8143
+2ecbd2: 0e00                                   |0021: return-void
+      catches       : (none)
+      positions     :
+        0x0003 line=154
+      locals        :
+        0x0000 - 0x0022 reg=3 this Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment$2;
+
+  source_file_idx   : 3548 (BassFragment.java)
+
+Class #3178            -

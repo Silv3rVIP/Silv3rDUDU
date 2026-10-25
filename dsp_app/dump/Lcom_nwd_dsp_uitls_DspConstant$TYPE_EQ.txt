@@ -1,0 +1,64 @@
+  Class descriptor  : 'Lcom/nwd/dsp/uitls/DspConstant$TYPE_EQ;'
+  Access flags      : 0x0011 (PUBLIC FINAL)
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+  Static fields     -
+    #0              : (in Lcom/nwd/dsp/uitls/DspConstant$TYPE_EQ;)
+      name          : 'CLASSIC'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : "classic"
+    #1              : (in Lcom/nwd/dsp/uitls/DspConstant$TYPE_EQ;)
+      name          : 'CUSTOMIZE'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : "customize"
+    #2              : (in Lcom/nwd/dsp/uitls/DspConstant$TYPE_EQ;)
+      name          : 'CUSTOMIZETWO'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : "customizetwo"
+    #3              : (in Lcom/nwd/dsp/uitls/DspConstant$TYPE_EQ;)
+      name          : 'JAZZ'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : "jazz"
+    #4              : (in Lcom/nwd/dsp/uitls/DspConstant$TYPE_EQ;)
+      name          : 'POP'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : "pop"
+    #5              : (in Lcom/nwd/dsp/uitls/DspConstant$TYPE_EQ;)
+      name          : 'ROCK'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : "rock"
+    #6              : (in Lcom/nwd/dsp/uitls/DspConstant$TYPE_EQ;)
+      name          : 'STANDARD'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : "standard"
+  Instance fields   -
+  Direct methods    -
+    #0              : (in Lcom/nwd/dsp/uitls/DspConstant$TYPE_EQ;)
+      name          : '<init>'
+      type          : '()V'
+      access        : 0x10001 (PUBLIC CONSTRUCTOR)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 1
+      insns size    : 4 16-bit code units
+30700c:                                        |[30700c] com.nwd.dsp.uitls.DspConstant$TYPE_EQ.<init>:()V
+30701c: 7010 df8d 0000                         |0000: invoke-direct {v0}, Ljava/lang/Object;.<init>:()V // method@8ddf
+307022: 0e00                                   |0003: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=125
+      locals        :
+        0x0000 - 0x0004 reg=0 this Lcom/nwd/dsp/uitls/DspConstant$TYPE_EQ;
+
+  Virtual methods   -
+  source_file_idx   : 5749 (DspConstant.java)
+
+Class #2368            -

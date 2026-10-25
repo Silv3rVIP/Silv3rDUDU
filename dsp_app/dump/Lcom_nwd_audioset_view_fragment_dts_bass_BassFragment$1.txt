@@ -1,0 +1,72 @@
+  Class descriptor  : 'Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment$1;'
+  Access flags      : 0x0000 ()
+  Superclass        : 'Landroid/os/Handler;'
+  Interfaces        -
+  Static fields     -
+  Instance fields   -
+    #0              : (in Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment$1;)
+      name          : 'this$0'
+      type          : 'Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment;'
+      access        : 0x1010 (FINAL SYNTHETIC)
+  Direct methods    -
+    #0              : (in Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment$1;)
+      name          : '<init>'
+      type          : '(Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment;Landroid/os/Looper;)V'
+      access        : 0x10000 (CONSTRUCTOR)
+      code          -
+      registers     : 3
+      ins           : 3
+      outs          : 2
+      insns size    : 6 16-bit code units
+2ecafc:                                        |[2ecafc] com.nwd.audioset.view.fragment.dts.bass.BassFragment$1.<init>:(Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment;Landroid/os/Looper;)V
+2ecb0c: 5b01 7079                              |0000: iput-object v1, v0, Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment$1;.this$0:Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment; // field@7970
+2ecb10: 7020 3b06 2000                         |0002: invoke-direct {v0, v2}, Landroid/os/Handler;.<init>:(Landroid/os/Looper;)V // method@063b
+2ecb16: 0e00                                   |0005: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=83
+      locals        :
+        0x0000 - 0x0006 reg=0 this Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment$1;
+        0x0000 - 0x0006 reg=1 (null) Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment;
+        0x0000 - 0x0006 reg=2 (null) Landroid/os/Looper;
+
+  Virtual methods   -
+    #0              : (in Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment$1;)
+      name          : 'handleMessage'
+      type          : '(Landroid/os/Message;)V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 4
+      ins           : 2
+      outs          : 3
+      insns size    : 29 16-bit code units
+2ecb18:                                        |[2ecb18] com.nwd.audioset.view.fragment.dts.bass.BassFragment$1.handleMessage:(Landroid/os/Message;)V
+2ecb28: 6f20 4106 3200                         |0000: invoke-super {v2, v3}, Landroid/os/Handler;.handleMessage:(Landroid/os/Message;)V // method@0641
+2ecb2e: 5230 e300                              |0003: iget v0, v3, Landroid/os/Message;.what:I // field@00e3
+2ecb32: 1211                                   |0005: const/4 v1, #int 1 // #1
+2ecb34: 3210 0900                              |0006: if-eq v0, v1, 000f // +0009
+2ecb38: 1221                                   |0008: const/4 v1, #int 2 // #2
+2ecb3a: 3210 0600                              |0009: if-eq v0, v1, 000f // +0006
+2ecb3e: 1231                                   |000b: const/4 v1, #int 3 // #3
+2ecb40: 3210 0300                              |000c: if-eq v0, v1, 000f // +0003
+2ecb44: 280e                                   |000e: goto 001c // +000e
+2ecb46: 5433 e100                              |000f: iget-object v3, v3, Landroid/os/Message;.obj:Ljava/lang/Object; // field@00e1
+2ecb4a: 1f03 8c10                              |0011: check-cast v3, Ljava/lang/Integer; // type@108c
+2ecb4e: 6e10 948d 0300                         |0013: invoke-virtual {v3}, Ljava/lang/Integer;.intValue:()I // method@8d94
+2ecb54: 0a03                                   |0016: move-result v3
+2ecb56: 5421 7079                              |0017: iget-object v1, v2, Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment$1;.this$0:Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment; // field@7970
+2ecb5a: 7130 e481 0103                         |0019: invoke-static {v1, v0, v3}, Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment;.access$000:(Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment;II)V // method@81e4
+2ecb60: 0e00                                   |001c: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=87
+        0x0003 line=88
+        0x000f line=93
+        0x0017 line=94
+      locals        :
+        0x0000 - 0x001d reg=2 this Lcom/nwd/audioset/view/fragment/dts/bass/BassFragment$1;
+        0x0000 - 0x001d reg=3 (null) Landroid/os/Message;
+
+  source_file_idx   : 3548 (BassFragment.java)
+
+Class #2291            -

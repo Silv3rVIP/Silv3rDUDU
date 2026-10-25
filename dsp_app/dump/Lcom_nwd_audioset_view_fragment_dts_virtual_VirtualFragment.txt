@@ -1,0 +1,697 @@
+  Class descriptor  : 'Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;'
+  Access flags      : 0x0001 (PUBLIC)
+  Superclass        : 'Lcom/nwd/audioset/mvpbase/BaseFragment;'
+  Interfaces        -
+    #0              : 'Landroid/view/View$OnClickListener;'
+  Static fields     -
+  Instance fields   -
+    #0              : (in Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;)
+      name          : 'binding'
+      type          : 'Lcom/nwd/audioset/databinding/FrgVirtualBinding;'
+      access        : 0x0002 (PRIVATE)
+    #1              : (in Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;)
+      name          : 'car_iv'
+      type          : 'Landroid/widget/ImageView;'
+      access        : 0x0002 (PRIVATE)
+    #2              : (in Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;)
+      name          : 'dts_car'
+      type          : 'Landroid/graphics/drawable/Drawable;'
+      access        : 0x0002 (PRIVATE)
+    #3              : (in Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;)
+      name          : 'dts_sound_bl_iv'
+      type          : 'Landroid/widget/ImageView;'
+      access        : 0x0002 (PRIVATE)
+    #4              : (in Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;)
+      name          : 'dts_sound_bottom'
+      type          : 'Landroid/graphics/drawable/Drawable;'
+      access        : 0x0002 (PRIVATE)
+    #5              : (in Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;)
+      name          : 'dts_sound_br_iv'
+      type          : 'Landroid/widget/ImageView;'
+      access        : 0x0002 (PRIVATE)
+    #6              : (in Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;)
+      name          : 'dts_sound_tl_iv'
+      type          : 'Landroid/widget/ImageView;'
+      access        : 0x0002 (PRIVATE)
+    #7              : (in Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;)
+      name          : 'dts_sound_tr_iv'
+      type          : 'Landroid/widget/ImageView;'
+      access        : 0x0002 (PRIVATE)
+    #8              : (in Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;)
+      name          : 'dts_switch_close'
+      type          : 'Landroid/graphics/drawable/Drawable;'
+      access        : 0x0002 (PRIVATE)
+    #9              : (in Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;)
+      name          : 'dts_switch_open'
+      type          : 'Landroid/graphics/drawable/Drawable;'
+      access        : 0x0002 (PRIVATE)
+    #10              : (in Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;)
+      name          : 'eq_mode_d'
+      type          : 'Landroid/graphics/drawable/Drawable;'
+      access        : 0x0002 (PRIVATE)
+    #11              : (in Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;)
+      name          : 'eq_mode_n'
+      type          : 'Landroid/graphics/drawable/Drawable;'
+      access        : 0x0002 (PRIVATE)
+    #12              : (in Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;)
+      name          : 'virtual_mask'
+      type          : 'Landroid/graphics/drawable/Drawable;'
+      access        : 0x0002 (PRIVATE)
+    #13              : (in Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;)
+      name          : 'virtual_mask_iv'
+      type          : 'Landroid/widget/ImageView;'
+      access        : 0x0002 (PRIVATE)
+    #14              : (in Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;)
+      name          : 'virtual_reset_iv'
+      type          : 'Landroid/widget/ImageView;'
+      access        : 0x0002 (PRIVATE)
+    #15              : (in Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;)
+      name          : 'virtual_switch_iv'
+      type          : 'Landroid/widget/ImageView;'
+      access        : 0x0002 (PRIVATE)
+    #16              : (in Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;)
+      name          : 'virtual_switch_tv'
+      type          : 'Landroid/widget/TextView;'
+      access        : 0x0002 (PRIVATE)
+  Direct methods    -
+    #0              : (in Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;)
+      name          : '<init>'
+      type          : '()V'
+      access        : 0x10001 (PUBLIC CONSTRUCTOR)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 1
+      insns size    : 4 16-bit code units
+2f0984:                                        |[2f0984] com.nwd.audioset.view.fragment.dts.virtual.VirtualFragment.<init>:()V
+2f0994: 7010 ab80 0000                         |0000: invoke-direct {v0}, Lcom/nwd/audioset/mvpbase/BaseFragment;.<init>:()V // method@80ab
+2f099a: 0e00                                   |0003: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=29
+      locals        :
+        0x0000 - 0x0004 reg=0 this Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;
+
+    #1              : (in Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;)
+      name          : 'changeView'
+      type          : '()V'
+      access        : 0x0002 (PRIVATE)
+      code          -
+      registers     : 8
+      ins           : 1
+      outs          : 6
+      insns size    : 226 16-bit code units
+2f099c:                                        |[2f099c] com.nwd.audioset.view.fragment.dts.virtual.VirtualFragment.changeView:()V
+2f09ac: 2206 190f                              |0000: new-instance v6, Lcom/nwd/audioset/utils/ViewAdapter; // type@0f19
+2f09b0: 6e10 5682 0700                         |0002: invoke-virtual {v7}, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.getContext:()Landroid/content/Context; // method@8256
+2f09b6: 0c00                                   |0005: move-result-object v0
+2f09b8: 7020 3081 0600                         |0006: invoke-direct {v6, v0}, Lcom/nwd/audioset/utils/ViewAdapter;.<init>:(Landroid/content/Context;)V // method@8130
+2f09be: 5470 1a7a                              |0009: iget-object v0, v7, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.virtual_reset_iv:Landroid/widget/ImageView; // field@7a1a
+2f09c2: 1401 d201 077f                         |000b: const v1, #float 1.79455e+38 // #7f0701d2
+2f09c8: 6e30 3881 0601                         |000e: invoke-virtual {v6, v0, v1}, Lcom/nwd/audioset/utils/ViewAdapter;.setMarginTop:(Landroid/view/View;I)V // method@8138
+2f09ce: 5470 1a7a                              |0011: iget-object v0, v7, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.virtual_reset_iv:Landroid/widget/ImageView; // field@7a1a
+2f09d2: 1401 df01 077f                         |0013: const v1, #float 1.79455e+38 // #7f0701df
+2f09d8: 6e30 3681 0601                         |0016: invoke-virtual {v6, v0, v1}, Lcom/nwd/audioset/utils/ViewAdapter;.setMarginLeft:(Landroid/view/View;I)V // method@8136
+2f09de: 5470 1a7a                              |0019: iget-object v0, v7, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.virtual_reset_iv:Landroid/widget/ImageView; // field@7a1a
+2f09e2: 1402 e001 077f                         |001b: const v2, #float 1.79456e+38 // #7f0701e0
+2f09e8: 1403 d001 077f                         |001e: const v3, #float 1.79455e+38 // #7f0701d0
+2f09ee: 6e40 3b81 0632                         |0021: invoke-virtual {v6, v0, v2, v3}, Lcom/nwd/audioset/utils/ViewAdapter;.setSize:(Landroid/view/View;II)V // method@813b
+2f09f4: 5470 0b7a                              |0024: iget-object v0, v7, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.car_iv:Landroid/widget/ImageView; // field@7a0b
+2f09f8: 1402 d801 077f                         |0026: const v2, #float 1.79455e+38 // #7f0701d8
+2f09fe: 1403 d601 077f                         |0029: const v3, #float 1.79455e+38 // #7f0701d6
+2f0a04: 6e40 3b81 0632                         |002c: invoke-virtual {v6, v0, v2, v3}, Lcom/nwd/audioset/utils/ViewAdapter;.setSize:(Landroid/view/View;II)V // method@813b
+2f0a0a: 5470 0b7a                              |002f: iget-object v0, v7, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.car_iv:Landroid/widget/ImageView; // field@7a0b
+2f0a0e: 1402 d701 077f                         |0031: const v2, #float 1.79455e+38 // #7f0701d7
+2f0a14: 6e30 3881 0602                         |0034: invoke-virtual {v6, v0, v2}, Lcom/nwd/audioset/utils/ViewAdapter;.setMarginTop:(Landroid/view/View;I)V // method@8138
+2f0a1a: 5470 0b7a                              |0037: iget-object v0, v7, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.car_iv:Landroid/widget/ImageView; // field@7a0b
+2f0a1e: 6e30 3681 0601                         |0039: invoke-virtual {v6, v0, v1}, Lcom/nwd/audioset/utils/ViewAdapter;.setMarginLeft:(Landroid/view/View;I)V // method@8136
+2f0a24: 5470 0a7a                              |003c: iget-object v0, v7, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.binding:Lcom/nwd/audioset/databinding/FrgVirtualBinding; // field@7a0a
+2f0a28: 5401 8a77                              |003e: iget-object v1, v0, Lcom/nwd/audioset/databinding/FrgVirtualBinding;.virtualMaskIv:Landroid/widget/ImageView; // field@778a
+2f0a2c: 1402 ed01 077f                         |0040: const v2, #float 1.79456e+38 // #7f0701ed
+2f0a32: 1403 ef01 077f                         |0043: const v3, #float 1.79456e+38 // #7f0701ef
+2f0a38: 1404 ee01 077f                         |0046: const v4, #float 1.79456e+38 // #7f0701ee
+2f0a3e: 1405 ec01 077f                         |0049: const v5, #float 1.79456e+38 // #7f0701ec
+2f0a44: 0760                                   |004c: move-object v0, v6
+2f0a46: 7406 3981 0000                         |004d: invoke-virtual/range {v0, v1, v2, v3, v4, v5}, Lcom/nwd/audioset/utils/ViewAdapter;.setMargins:(Landroid/view/View;IIII)V // method@8139
+2f0a4c: 5470 0a7a                              |0050: iget-object v0, v7, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.binding:Lcom/nwd/audioset/databinding/FrgVirtualBinding; // field@7a0a
+2f0a50: 5400 8677                              |0052: iget-object v0, v0, Lcom/nwd/audioset/databinding/FrgVirtualBinding;.dtsSoundTlIv:Landroid/widget/ImageView; // field@7786
+2f0a54: 1401 c701 077f                         |0054: const v1, #float 1.79455e+38 // #7f0701c7
+2f0a5a: 1402 9301 077f                         |0057: const v2, #float 1.79454e+38 // #7f070193
+2f0a60: 6e40 3b81 0612                         |005a: invoke-virtual {v6, v0, v2, v1}, Lcom/nwd/audioset/utils/ViewAdapter;.setSize:(Landroid/view/View;II)V // method@813b
+2f0a66: 5470 0a7a                              |005d: iget-object v0, v7, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.binding:Lcom/nwd/audioset/databinding/FrgVirtualBinding; // field@7a0a
+2f0a6a: 5400 8677                              |005f: iget-object v0, v0, Lcom/nwd/audioset/databinding/FrgVirtualBinding;.dtsSoundTlIv:Landroid/widget/ImageView; // field@7786
+2f0a6e: 1403 e501 077f                         |0061: const v3, #float 1.79456e+38 // #7f0701e5
+2f0a74: 6e30 3881 0603                         |0064: invoke-virtual {v6, v0, v3}, Lcom/nwd/audioset/utils/ViewAdapter;.setMarginTop:(Landroid/view/View;I)V // method@8138
+2f0a7a: 5470 0a7a                              |0067: iget-object v0, v7, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.binding:Lcom/nwd/audioset/databinding/FrgVirtualBinding; // field@7a0a
+2f0a7e: 5400 8677                              |0069: iget-object v0, v0, Lcom/nwd/audioset/databinding/FrgVirtualBinding;.dtsSoundTlIv:Landroid/widget/ImageView; // field@7786
+2f0a82: 1403 a101 077f                         |006b: const v3, #float 1.79454e+38 // #7f0701a1
+2f0a88: 6e30 3681 0603                         |006e: invoke-virtual {v6, v0, v3}, Lcom/nwd/audioset/utils/ViewAdapter;.setMarginLeft:(Landroid/view/View;I)V // method@8136
+2f0a8e: 5470 0a7a                              |0071: iget-object v0, v7, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.binding:Lcom/nwd/audioset/databinding/FrgVirtualBinding; // field@7a0a
+2f0a92: 5400 8777                              |0073: iget-object v0, v0, Lcom/nwd/audioset/databinding/FrgVirtualBinding;.dtsSoundTrIv:Landroid/widget/ImageView; // field@7787
+2f0a96: 6e40 3b81 0612                         |0075: invoke-virtual {v6, v0, v2, v1}, Lcom/nwd/audioset/utils/ViewAdapter;.setSize:(Landroid/view/View;II)V // method@813b
+2f0a9c: 5470 0a7a                              |0078: iget-object v0, v7, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.binding:Lcom/nwd/audioset/databinding/FrgVirtualBinding; // field@7a0a
+2f0aa0: 5400 8777                              |007a: iget-object v0, v0, Lcom/nwd/audioset/databinding/FrgVirtualBinding;.dtsSoundTrIv:Landroid/widget/ImageView; // field@7787
+2f0aa4: 1404 9f01 077f                         |007c: const v4, #float 1.79454e+38 // #7f07019f
+2f0aaa: 6e30 3781 0604                         |007f: invoke-virtual {v6, v0, v4}, Lcom/nwd/audioset/utils/ViewAdapter;.setMarginRight:(Landroid/view/View;I)V // method@8137
+2f0ab0: 5470 0a7a                              |0082: iget-object v0, v7, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.binding:Lcom/nwd/audioset/databinding/FrgVirtualBinding; // field@7a0a
+2f0ab4: 5400 8477                              |0084: iget-object v0, v0, Lcom/nwd/audioset/databinding/FrgVirtualBinding;.dtsSoundBlIv:Landroid/widget/ImageView; // field@7784
+2f0ab8: 6e40 3b81 0612                         |0086: invoke-virtual {v6, v0, v2, v1}, Lcom/nwd/audioset/utils/ViewAdapter;.setSize:(Landroid/view/View;II)V // method@813b
+2f0abe: 5470 0a7a                              |0089: iget-object v0, v7, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.binding:Lcom/nwd/audioset/databinding/FrgVirtualBinding; // field@7a0a
+2f0ac2: 5400 8477                              |008b: iget-object v0, v0, Lcom/nwd/audioset/databinding/FrgVirtualBinding;.dtsSoundBlIv:Landroid/widget/ImageView; // field@7784
+2f0ac6: 1405 a601 077f                         |008d: const v5, #float 1.79454e+38 // #7f0701a6
+2f0acc: 6e30 3581 0605                         |0090: invoke-virtual {v6, v0, v5}, Lcom/nwd/audioset/utils/ViewAdapter;.setMarginBottom:(Landroid/view/View;I)V // method@8135
+2f0ad2: 5470 0a7a                              |0093: iget-object v0, v7, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.binding:Lcom/nwd/audioset/databinding/FrgVirtualBinding; // field@7a0a
+2f0ad6: 5400 8477                              |0095: iget-object v0, v0, Lcom/nwd/audioset/databinding/FrgVirtualBinding;.dtsSoundBlIv:Landroid/widget/ImageView; // field@7784
+2f0ada: 6e30 3681 0603                         |0097: invoke-virtual {v6, v0, v3}, Lcom/nwd/audioset/utils/ViewAdapter;.setMarginLeft:(Landroid/view/View;I)V // method@8136
+2f0ae0: 5470 0a7a                              |009a: iget-object v0, v7, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.binding:Lcom/nwd/audioset/databinding/FrgVirtualBinding; // field@7a0a
+2f0ae4: 5400 8577                              |009c: iget-object v0, v0, Lcom/nwd/audioset/databinding/FrgVirtualBinding;.dtsSoundBrIv:Landroid/widget/ImageView; // field@7785
+2f0ae8: 6e40 3b81 0612                         |009e: invoke-virtual {v6, v0, v2, v1}, Lcom/nwd/audioset/utils/ViewAdapter;.setSize:(Landroid/view/View;II)V // method@813b
+2f0aee: 5470 0a7a                              |00a1: iget-object v0, v7, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.binding:Lcom/nwd/audioset/databinding/FrgVirtualBinding; // field@7a0a
+2f0af2: 5400 8577                              |00a3: iget-object v0, v0, Lcom/nwd/audioset/databinding/FrgVirtualBinding;.dtsSoundBrIv:Landroid/widget/ImageView; // field@7785
+2f0af6: 6e30 3581 0605                         |00a5: invoke-virtual {v6, v0, v5}, Lcom/nwd/audioset/utils/ViewAdapter;.setMarginBottom:(Landroid/view/View;I)V // method@8135
+2f0afc: 5470 0a7a                              |00a8: iget-object v0, v7, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.binding:Lcom/nwd/audioset/databinding/FrgVirtualBinding; // field@7a0a
+2f0b00: 5400 8577                              |00aa: iget-object v0, v0, Lcom/nwd/audioset/databinding/FrgVirtualBinding;.dtsSoundBrIv:Landroid/widget/ImageView; // field@7785
+2f0b04: 6e30 3781 0604                         |00ac: invoke-virtual {v6, v0, v4}, Lcom/nwd/audioset/utils/ViewAdapter;.setMarginRight:(Landroid/view/View;I)V // method@8137
+2f0b0a: 5470 0a7a                              |00af: iget-object v0, v7, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.binding:Lcom/nwd/audioset/databinding/FrgVirtualBinding; // field@7a0a
+2f0b0e: 5400 8e77                              |00b1: iget-object v0, v0, Lcom/nwd/audioset/databinding/FrgVirtualBinding;.virtualSwitchTv:Landroid/widget/TextView; // field@778e
+2f0b12: 1401 df02 077f                         |00b3: const v1, #float 1.79461e+38 // #7f0702df
+2f0b18: 6e30 3681 0601                         |00b6: invoke-virtual {v6, v0, v1}, Lcom/nwd/audioset/utils/ViewAdapter;.setMarginLeft:(Landroid/view/View;I)V // method@8136
+2f0b1e: 5470 0a7a                              |00b9: iget-object v0, v7, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.binding:Lcom/nwd/audioset/databinding/FrgVirtualBinding; // field@7a0a
+2f0b22: 5400 8e77                              |00bb: iget-object v0, v0, Lcom/nwd/audioset/databinding/FrgVirtualBinding;.virtualSwitchTv:Landroid/widget/TextView; // field@778e
+2f0b26: 1401 f101 077f                         |00bd: const v1, #float 1.79456e+38 // #7f0701f1
+2f0b2c: 6e30 3d81 0601                         |00c0: invoke-virtual {v6, v0, v1}, Lcom/nwd/audioset/utils/ViewAdapter;.setTextSize:(Landroid/widget/TextView;I)V // method@813d
+2f0b32: 5470 0a7a                              |00c3: iget-object v0, v7, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.binding:Lcom/nwd/audioset/databinding/FrgVirtualBinding; // field@7a0a
+2f0b36: 5400 8e77                              |00c5: iget-object v0, v0, Lcom/nwd/audioset/databinding/FrgVirtualBinding;.virtualSwitchTv:Landroid/widget/TextView; // field@778e
+2f0b3a: 6e20 3c81 0600                         |00c7: invoke-virtual {v6, v0}, Lcom/nwd/audioset/utils/ViewAdapter;.setSizeWrap:(Landroid/view/View;)V // method@813c
+2f0b40: 5470 0a7a                              |00ca: iget-object v0, v7, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.binding:Lcom/nwd/audioset/databinding/FrgVirtualBinding; // field@7a0a
+2f0b44: 5400 8c77                              |00cc: iget-object v0, v0, Lcom/nwd/audioset/databinding/FrgVirtualBinding;.virtualSwitchFl:Landroid/widget/FrameLayout; // field@778c
+2f0b48: 1401 f001 077f                         |00ce: const v1, #float 1.79456e+38 // #7f0701f0
+2f0b4e: 6e30 3681 0601                         |00d1: invoke-virtual {v6, v0, v1}, Lcom/nwd/audioset/utils/ViewAdapter;.setMarginLeft:(Landroid/view/View;I)V // method@8136
+2f0b54: 5470 0a7a                              |00d4: iget-object v0, v7, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.binding:Lcom/nwd/audioset/databinding/FrgVirtualBinding; // field@7a0a
+2f0b58: 5400 8d77                              |00d6: iget-object v0, v0, Lcom/nwd/audioset/databinding/FrgVirtualBinding;.virtualSwitchIv:Landroid/widget/ImageView; // field@778d
+2f0b5c: 1401 ea01 077f                         |00d8: const v1, #float 1.79456e+38 // #7f0701ea
+2f0b62: 1402 e701 077f                         |00db: const v2, #float 1.79456e+38 // #7f0701e7
+2f0b68: 6e40 3b81 0621                         |00de: invoke-virtual {v6, v0, v1, v2}, Lcom/nwd/audioset/utils/ViewAdapter;.setSize:(Landroid/view/View;II)V // method@813b
+2f0b6e: 0e00                                   |00e1: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=70
+        0x0009 line=71
+        0x0011 line=72
+        0x0019 line=73
+        0x0024 line=75
+        0x002f line=76
+        0x0037 line=77
+        0x003c line=79
+        0x0050 line=82
+        0x005d line=83
+        0x0067 line=84
+        0x0071 line=86
+        0x0078 line=87
+        0x0082 line=89
+        0x0089 line=90
+        0x0093 line=91
+        0x009a line=93
+        0x00a1 line=94
+        0x00a8 line=95
+        0x00af line=97
+        0x00b9 line=98
+        0x00c3 line=99
+        0x00ca line=101
+        0x00d4 line=102
+      locals        :
+        0x0000 - 0x00e2 reg=7 this Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;
+
+    #2              : (in Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;)
+      name          : 'setButtonBG'
+      type          : '()V'
+      access        : 0x0002 (PRIVATE)
+      code          -
+      registers     : 5
+      ins           : 1
+      outs          : 3
+      insns size    : 271 16-bit code units
+2f0d70:                                        |[2f0d70] com.nwd.audioset.view.fragment.dts.virtual.VirtualFragment.setButtonBG:()V
+2f0d80: 5440 167a                              |0000: iget-object v0, v4, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.mContext:Landroid/content/Context; // field@7a16
+2f0d84: 7110 ea80 0000                         |0002: invoke-static {v0}, Lcom/nwd/audioset/utils/InternationalPictureUtils;.getInstance:(Landroid/content/Context;)Lcom/nwd/audioset/utils/InternationalPictureUtils; // method@80ea
+2f0d8a: 0c00                                   |0005: move-result-object v0
+2f0d8c: 5441 147a                              |0006: iget-object v1, v4, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.eq_mode_d:Landroid/graphics/drawable/Drawable; // field@7a14
+2f0d90: 3901 0d00                              |0008: if-nez v1, 0015 // +000d
+2f0d94: 5401 3f78                              |000a: iget-object v1, v0, Lcom/nwd/audioset/utils/InternationalPictureUtils;.commen_reset_d:Ljava/lang/String; // field@783f
+2f0d98: 1402 1e00 0d7f                         |000c: const v2, #float 1.87422e+38 // #7f0d001e
+2f0d9e: 6e30 e880 1002                         |000f: invoke-virtual {v0, v1, v2}, Lcom/nwd/audioset/utils/InternationalPictureUtils;.getDrawable:(Ljava/lang/String;I)Landroid/graphics/drawable/Drawable; // method@80e8
+2f0da4: 0c01                                   |0012: move-result-object v1
+2f0da6: 5b41 147a                              |0013: iput-object v1, v4, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.eq_mode_d:Landroid/graphics/drawable/Drawable; // field@7a14
+2f0daa: 5441 157a                              |0015: iget-object v1, v4, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.eq_mode_n:Landroid/graphics/drawable/Drawable; // field@7a15
+2f0dae: 3901 0d00                              |0017: if-nez v1, 0024 // +000d
+2f0db2: 5401 4078                              |0019: iget-object v1, v0, Lcom/nwd/audioset/utils/InternationalPictureUtils;.commen_reset_n:Ljava/lang/String; // field@7840
+2f0db6: 1402 1f00 0d7f                         |001b: const v2, #float 1.87422e+38 // #7f0d001f
+2f0dbc: 6e30 e880 1002                         |001e: invoke-virtual {v0, v1, v2}, Lcom/nwd/audioset/utils/InternationalPictureUtils;.getDrawable:(Ljava/lang/String;I)Landroid/graphics/drawable/Drawable; // method@80e8
+2f0dc2: 0c01                                   |0021: move-result-object v1
+2f0dc4: 5b41 157a                              |0022: iput-object v1, v4, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.eq_mode_n:Landroid/graphics/drawable/Drawable; // field@7a15
+2f0dc8: 5441 1a7a                              |0024: iget-object v1, v4, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.virtual_reset_iv:Landroid/widget/ImageView; // field@7a1a
+2f0dcc: 5442 157a                              |0026: iget-object v2, v4, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.eq_mode_n:Landroid/graphics/drawable/Drawable; // field@7a15
+2f0dd0: 5443 147a                              |0028: iget-object v3, v4, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.eq_mode_d:Landroid/graphics/drawable/Drawable; // field@7a14
+2f0dd4: 7130 1985 2103                         |002a: invoke-static {v1, v2, v3}, Lcom/nwd/dsp/uitls/AppUtil;.viewSetBG:(Landroid/view/View;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V // method@8519
+2f0dda: 5441 0c7a                              |002d: iget-object v1, v4, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.dts_car:Landroid/graphics/drawable/Drawable; // field@7a0c
+2f0dde: 3901 2300                              |002f: if-nez v1, 0052 // +0023
+2f0de2: 6e10 5682 0400                         |0031: invoke-virtual {v4}, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.getContext:()Landroid/content/Context; // method@8256
+2f0de8: 0c01                                   |0034: move-result-object v1
+2f0dea: 7110 2981 0100                         |0035: invoke-static {v1}, Lcom/nwd/audioset/utils/Utils;.isLand:(Landroid/content/Context;)Z // method@8129
+2f0df0: 0a01                                   |0038: move-result v1
+2f0df2: 3801 0e00                              |0039: if-eqz v1, 0047 // +000e
+2f0df6: 5401 4378                              |003b: iget-object v1, v0, Lcom/nwd/audioset/utils/InternationalPictureUtils;.dts_car:Ljava/lang/String; // field@7843
+2f0dfa: 1402 3400 0d7f                         |003d: const v2, #float 1.87422e+38 // #7f0d0034
+2f0e00: 6e30 e880 1002                         |0040: invoke-virtual {v0, v1, v2}, Lcom/nwd/audioset/utils/InternationalPictureUtils;.getDrawable:(Ljava/lang/String;I)Landroid/graphics/drawable/Drawable; // method@80e8
+2f0e06: 0c01                                   |0043: move-result-object v1
+2f0e08: 5b41 0c7a                              |0044: iput-object v1, v4, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.dts_car:Landroid/graphics/drawable/Drawable; // field@7a0c
+2f0e0c: 280c                                   |0046: goto 0052 // +000c
+2f0e0e: 5401 4378                              |0047: iget-object v1, v0, Lcom/nwd/audioset/utils/InternationalPictureUtils;.dts_car:Ljava/lang/String; // field@7843
+2f0e12: 1402 3500 0d7f                         |0049: const v2, #float 1.87422e+38 // #7f0d0035
+2f0e18: 6e30 e880 1002                         |004c: invoke-virtual {v0, v1, v2}, Lcom/nwd/audioset/utils/InternationalPictureUtils;.getDrawable:(Ljava/lang/String;I)Landroid/graphics/drawable/Drawable; // method@80e8
+2f0e1e: 0c01                                   |004f: move-result-object v1
+2f0e20: 5b41 0c7a                              |0050: iput-object v1, v4, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.dts_car:Landroid/graphics/drawable/Drawable; // field@7a0c
+2f0e24: 5441 0b7a                              |0052: iget-object v1, v4, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.car_iv:Landroid/widget/ImageView; // field@7a0b
+2f0e28: 5442 0c7a                              |0054: iget-object v2, v4, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.dts_car:Landroid/graphics/drawable/Drawable; // field@7a0c
+2f0e2c: 5443 0c7a                              |0056: iget-object v3, v4, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.dts_car:Landroid/graphics/drawable/Drawable; // field@7a0c
+2f0e30: 7130 1985 2103                         |0058: invoke-static {v1, v2, v3}, Lcom/nwd/dsp/uitls/AppUtil;.viewSetBG:(Landroid/view/View;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V // method@8519
+2f0e36: 5441 137a                              |005b: iget-object v1, v4, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.dts_switch_open:Landroid/graphics/drawable/Drawable; // field@7a13
+2f0e3a: 3901 0d00                              |005d: if-nez v1, 006a // +000d
+2f0e3e: 5401 5078                              |005f: iget-object v1, v0, Lcom/nwd/audioset/utils/InternationalPictureUtils;.dts_switch_open:Ljava/lang/String; // field@7850
+2f0e42: 1402 4e00 0d7f                         |0061: const v2, #float 1.87423e+38 // #7f0d004e
+2f0e48: 6e30 e880 1002                         |0064: invoke-virtual {v0, v1, v2}, Lcom/nwd/audioset/utils/InternationalPictureUtils;.getDrawable:(Ljava/lang/String;I)Landroid/graphics/drawable/Drawable; // method@80e8
+2f0e4e: 0c01                                   |0067: move-result-object v1
+2f0e50: 5b41 137a                              |0068: iput-object v1, v4, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.dts_switch_open:Landroid/graphics/drawable/Drawable; // field@7a13
+2f0e54: 5441 127a                              |006a: iget-object v1, v4, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.dts_switch_close:Landroid/graphics/drawable/Drawable; // field@7a12
+2f0e58: 3901 0d00                              |006c: if-nez v1, 0079 // +000d
+2f0e5c: 5401 4f78                              |006e: iget-object v1, v0, Lcom/nwd/audioset/utils/InternationalPictureUtils;.dts_switch_close:Ljava/lang/String; // field@784f
+2f0e60: 1402 4d00 0d7f                         |0070: const v2, #float 1.87423e+38 // #7f0d004d
+2f0e66: 6e30 e880 1002                         |0073: invoke-virtual {v0, v1, v2}, Lcom/nwd/audioset/utils/InternationalPictureUtils;.getDrawable:(Ljava/lang/String;I)Landroid/graphics/drawable/Drawable; // method@80e8
+2f0e6c: 0c01                                   |0076: move-result-object v1
+2f0e6e: 5b41 127a                              |0077: iput-object v1, v4, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.dts_switch_close:Landroid/graphics/drawable/Drawable; // field@7a12
+2f0e72: 5441 1b7a                              |0079: iget-object v1, v4, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.virtual_switch_iv:Landroid/widget/ImageView; // field@7a1b
+2f0e76: 5442 127a                              |007b: iget-object v2, v4, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.dts_switch_close:Landroid/graphics/drawable/Drawable; // field@7a12
+2f0e7a: 5443 137a                              |007d: iget-object v3, v4, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.dts_switch_open:Landroid/graphics/drawable/Drawable; // field@7a13
+2f0e7e: 7130 1985 2103                         |007f: invoke-static {v1, v2, v3}, Lcom/nwd/dsp/uitls/AppUtil;.viewSetBG:(Landroid/view/View;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V // method@8519
+2f0e84: 5441 0e7a                              |0082: iget-object v1, v4, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.dts_sound_bottom:Landroid/graphics/drawable/Drawable; // field@7a0e
+2f0e88: 3901 0d00                              |0084: if-nez v1, 0091 // +000d
+2f0e8c: 5401 4b78                              |0086: iget-object v1, v0, Lcom/nwd/audioset/utils/InternationalPictureUtils;.dts_sound_bottom:Ljava/lang/String; // field@784b
+2f0e90: 1402 4000 0d7f                         |0088: const v2, #float 1.87422e+38 // #7f0d0040
+2f0e96: 6e30 e880 1002                         |008b: invoke-virtual {v0, v1, v2}, Lcom/nwd/audioset/utils/InternationalPictureUtils;.getDrawable:(Ljava/lang/String;I)Landroid/graphics/drawable/Drawable; // method@80e8
+2f0e9c: 0c01                                   |008e: move-result-object v1
+2f0e9e: 5b41 0e7a                              |008f: iput-object v1, v4, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.dts_sound_bottom:Landroid/graphics/drawable/Drawable; // field@7a0e
+2f0ea2: 5441 0d7a                              |0091: iget-object v1, v4, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.dts_sound_bl_iv:Landroid/widget/ImageView; // field@7a0d
+2f0ea6: 5442 0e7a                              |0093: iget-object v2, v4, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.dts_sound_bottom:Landroid/graphics/drawable/Drawable; // field@7a0e
+2f0eaa: 5443 0e7a                              |0095: iget-object v3, v4, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.dts_sound_bottom:Landroid/graphics/drawable/Drawable; // field@7a0e
+2f0eae: 7130 1985 2103                         |0097: invoke-static {v1, v2, v3}, Lcom/nwd/dsp/uitls/AppUtil;.viewSetBG:(Landroid/view/View;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V // method@8519
+2f0eb4: 5441 0f7a                              |009a: iget-object v1, v4, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.dts_sound_br_iv:Landroid/widget/ImageView; // field@7a0f
+2f0eb8: 5442 0e7a                              |009c: iget-object v2, v4, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.dts_sound_bottom:Landroid/graphics/drawable/Drawable; // field@7a0e
+2f0ebc: 5443 0e7a                              |009e: iget-object v3, v4, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.dts_sound_bottom:Landroid/graphics/drawable/Drawable; // field@7a0e
+2f0ec0: 7130 1985 2103                         |00a0: invoke-static {v1, v2, v3}, Lcom/nwd/dsp/uitls/AppUtil;.viewSetBG:(Landroid/view/View;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V // method@8519
+2f0ec6: 5441 107a                              |00a3: iget-object v1, v4, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.dts_sound_tl_iv:Landroid/widget/ImageView; // field@7a10
+2f0eca: 5442 0e7a                              |00a5: iget-object v2, v4, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.dts_sound_bottom:Landroid/graphics/drawable/Drawable; // field@7a0e
+2f0ece: 5443 0e7a                              |00a7: iget-object v3, v4, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.dts_sound_bottom:Landroid/graphics/drawable/Drawable; // field@7a0e
+2f0ed2: 7130 1985 2103                         |00a9: invoke-static {v1, v2, v3}, Lcom/nwd/dsp/uitls/AppUtil;.viewSetBG:(Landroid/view/View;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V // method@8519
+2f0ed8: 5441 117a                              |00ac: iget-object v1, v4, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.dts_sound_tr_iv:Landroid/widget/ImageView; // field@7a11
+2f0edc: 5442 0e7a                              |00ae: iget-object v2, v4, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.dts_sound_bottom:Landroid/graphics/drawable/Drawable; // field@7a0e
+2f0ee0: 5443 0e7a                              |00b0: iget-object v3, v4, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.dts_sound_bottom:Landroid/graphics/drawable/Drawable; // field@7a0e
+2f0ee4: 7130 1985 2103                         |00b2: invoke-static {v1, v2, v3}, Lcom/nwd/dsp/uitls/AppUtil;.viewSetBG:(Landroid/view/View;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V // method@8519
+2f0eea: 5441 187a                              |00b5: iget-object v1, v4, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.virtual_mask:Landroid/graphics/drawable/Drawable; // field@7a18
+2f0eee: 3901 2300                              |00b7: if-nez v1, 00da // +0023
+2f0ef2: 6e10 5682 0400                         |00b9: invoke-virtual {v4}, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.getContext:()Landroid/content/Context; // method@8256
+2f0ef8: 0c01                                   |00bc: move-result-object v1
+2f0efa: 7110 2981 0100                         |00bd: invoke-static {v1}, Lcom/nwd/audioset/utils/Utils;.isLand:(Landroid/content/Context;)Z // method@8129
+2f0f00: 0a01                                   |00c0: move-result v1
+2f0f02: 3801 0e00                              |00c1: if-eqz v1, 00cf // +000e
+2f0f06: 5401 5178                              |00c3: iget-object v1, v0, Lcom/nwd/audioset/utils/InternationalPictureUtils;.dts_virtual_mask:Ljava/lang/String; // field@7851
+2f0f0a: 1402 4f00 0d7f                         |00c5: const v2, #float 1.87423e+38 // #7f0d004f
+2f0f10: 6e30 e880 1002                         |00c8: invoke-virtual {v0, v1, v2}, Lcom/nwd/audioset/utils/InternationalPictureUtils;.getDrawable:(Ljava/lang/String;I)Landroid/graphics/drawable/Drawable; // method@80e8
+2f0f16: 0c00                                   |00cb: move-result-object v0
+2f0f18: 5b40 187a                              |00cc: iput-object v0, v4, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.virtual_mask:Landroid/graphics/drawable/Drawable; // field@7a18
+2f0f1c: 280c                                   |00ce: goto 00da // +000c
+2f0f1e: 5401 5278                              |00cf: iget-object v1, v0, Lcom/nwd/audioset/utils/InternationalPictureUtils;.dts_virtual_mask_port:Ljava/lang/String; // field@7852
+2f0f22: 1402 5000 0d7f                         |00d1: const v2, #float 1.87423e+38 // #7f0d0050
+2f0f28: 6e30 e880 1002                         |00d4: invoke-virtual {v0, v1, v2}, Lcom/nwd/audioset/utils/InternationalPictureUtils;.getDrawable:(Ljava/lang/String;I)Landroid/graphics/drawable/Drawable; // method@80e8
+2f0f2e: 0c00                                   |00d7: move-result-object v0
+2f0f30: 5b40 187a                              |00d8: iput-object v0, v4, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.virtual_mask:Landroid/graphics/drawable/Drawable; // field@7a18
+2f0f34: 5440 197a                              |00da: iget-object v0, v4, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.virtual_mask_iv:Landroid/widget/ImageView; // field@7a19
+2f0f38: 5441 187a                              |00dc: iget-object v1, v4, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.virtual_mask:Landroid/graphics/drawable/Drawable; // field@7a18
+2f0f3c: 5442 187a                              |00de: iget-object v2, v4, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.virtual_mask:Landroid/graphics/drawable/Drawable; // field@7a18
+2f0f40: 7130 1985 1002                         |00e0: invoke-static {v0, v1, v2}, Lcom/nwd/dsp/uitls/AppUtil;.viewSetBG:(Landroid/view/View;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V // method@8519
+2f0f46: 7100 8f7f 0000                         |00e3: invoke-static {}, Lcom/nwd/audioset/application/DspApplication;.getInstance:()Lcom/nwd/audioset/application/DspApplication; // method@7f8f
+2f0f4c: 0c00                                   |00e6: move-result-object v0
+2f0f4e: 5200 bf74                              |00e7: iget v0, v0, Lcom/nwd/audioset/application/DspApplication;.widthPixels:I // field@74bf
+2f0f52: 1301 6009                              |00e9: const/16 v1, #int 2400 // #960
+2f0f56: 3310 2300                              |00eb: if-ne v0, v1, 010e // +0023
+2f0f5a: 7100 8f7f 0000                         |00ed: invoke-static {}, Lcom/nwd/audioset/application/DspApplication;.getInstance:()Lcom/nwd/audioset/application/DspApplication; // method@7f8f
+2f0f60: 0c00                                   |00f0: move-result-object v0
+2f0f62: 5200 b674                              |00f1: iget v0, v0, Lcom/nwd/audioset/application/DspApplication;.heightPixels:I // field@74b6
+2f0f66: 1301 8003                              |00f3: const/16 v1, #int 896 // #380
+2f0f6a: 3210 0c00                              |00f5: if-eq v0, v1, 0101 // +000c
+2f0f6e: 7100 8f7f 0000                         |00f7: invoke-static {}, Lcom/nwd/audioset/application/DspApplication;.getInstance:()Lcom/nwd/audioset/application/DspApplication; // method@7f8f
+2f0f74: 0c00                                   |00fa: move-result-object v0
+2f0f76: 5200 b674                              |00fb: iget v0, v0, Lcom/nwd/audioset/application/DspApplication;.heightPixels:I // field@74b6
+2f0f7a: 1301 8403                              |00fd: const/16 v1, #int 900 // #384
+2f0f7e: 3310 0f00                              |00ff: if-ne v0, v1, 010e // +000f
+2f0f82: 5440 0a7a                              |0101: iget-object v0, v4, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.binding:Lcom/nwd/audioset/databinding/FrgVirtualBinding; // field@7a0a
+2f0f86: 5400 8877                              |0103: iget-object v0, v0, Lcom/nwd/audioset/databinding/FrgVirtualBinding;.rlRoot:Landroid/widget/RelativeLayout; // field@7788
+2f0f8a: 1211                                   |0105: const/4 v1, #int 1 // #1
+2f0f8c: 6e20 270f 1000                         |0106: invoke-virtual {v0, v1}, Landroid/widget/RelativeLayout;.setGravity:(I)V // method@0f27
+2f0f92: 2805                                   |0109: goto 010e // +0005
+2f0f94: 0d00                                   |010a: move-exception v0
+2f0f96: 6e10 798d 0000                         |010b: invoke-virtual {v0}, Ljava/lang/Exception;.printStackTrace:()V // method@8d79
+2f0f9c: 0e00                                   |010e: return-void
+      catches       : 1
+        0x0000 - 0x0109
+          Ljava/lang/Exception; -> 0x010a
+      positions     :
+        0x0000 line=148
+        0x0006 line=149
+        0x000a line=150
+        0x0015 line=152
+        0x0019 line=153
+        0x0024 line=155
+        0x002d line=156
+        0x0031 line=157
+        0x003b line=158
+        0x0047 line=160
+        0x0052 line=163
+        0x005b line=164
+        0x005f line=165
+        0x006a line=167
+        0x006e line=168
+        0x0079 line=170
+        0x0082 line=172
+        0x0086 line=173
+        0x0091 line=175
+        0x009a line=176
+        0x00a3 line=177
+        0x00ac line=178
+        0x00b5 line=181
+        0x00b9 line=182
+        0x00c3 line=183
+        0x00cf line=185
+        0x00da line=188
+        0x00e3 line=190
+        0x0101 line=191
+        0x010b line=194
+      locals        :
+        0x0000 - 0x010f reg=4 this Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;
+
+  Virtual methods   -
+    #0              : (in Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;)
+      name          : 'getLayountView'
+      type          : '()Landroid/view/ViewGroup;'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 1
+      insns size    : 19 16-bit code units
+2f0914:                                        |[2f0914] com.nwd.audioset.view.fragment.dts.virtual.VirtualFragment.getLayountView:()Landroid/view/ViewGroup;
+2f0924: 6e10 5682 0100                         |0000: invoke-virtual {v1}, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.getContext:()Landroid/content/Context; // method@8256
+2f092a: 0c00                                   |0003: move-result-object v0
+2f092c: 7110 f708 0000                         |0004: invoke-static {v0}, Landroid/view/LayoutInflater;.from:(Landroid/content/Context;)Landroid/view/LayoutInflater; // method@08f7
+2f0932: 0c00                                   |0007: move-result-object v0
+2f0934: 7110 2b80 0000                         |0008: invoke-static {v0}, Lcom/nwd/audioset/databinding/FrgVirtualBinding;.inflate:(Landroid/view/LayoutInflater;)Lcom/nwd/audioset/databinding/FrgVirtualBinding; // method@802b
+2f093a: 0c00                                   |000b: move-result-object v0
+2f093c: 5b10 0a7a                              |000c: iput-object v0, v1, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.binding:Lcom/nwd/audioset/databinding/FrgVirtualBinding; // field@7a0a
+2f0940: 6e10 2a80 0000                         |000e: invoke-virtual {v0}, Lcom/nwd/audioset/databinding/FrgVirtualBinding;.getRoot:()Landroid/widget/RelativeLayout; // method@802a
+2f0946: 0c00                                   |0011: move-result-object v0
+2f0948: 1100                                   |0012: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=41
+        0x000e line=42
+      locals        :
+        0x0000 - 0x0013 reg=1 this Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;
+
+    #1              : (in Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;)
+      name          : 'getPrenseter'
+      type          : '()Lcom/nwd/audioset/mvpbase/BasePresenter;'
+      access        : 0x1041 (PUBLIC BRIDGE SYNTHETIC)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 1
+      insns size    : 5 16-bit code units
+2f094c:                                        |[2f094c] com.nwd.audioset.view.fragment.dts.virtual.VirtualFragment.getPrenseter:()Lcom/nwd/audioset/mvpbase/BasePresenter;
+2f095c: 6e10 5982 0100                         |0000: invoke-virtual {v1}, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.getPrenseter:()Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualP; // method@8259
+2f0962: 0c00                                   |0003: move-result-object v0
+2f0964: 1100                                   |0004: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=29
+      locals        :
+        0x0000 - 0x0005 reg=1 this Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;
+
+    #2              : (in Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;)
+      name          : 'getPrenseter'
+      type          : '()Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualP;'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 2
+      insns size    : 6 16-bit code units
+2f0968:                                        |[2f0968] com.nwd.audioset.view.fragment.dts.virtual.VirtualFragment.getPrenseter:()Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualP;
+2f0978: 2200 420f                              |0000: new-instance v0, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualP; // type@0f42
+2f097c: 7020 6382 1000                         |0002: invoke-direct {v0, v1}, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualP;.<init>:(Landroidx/fragment/app/Fragment;)V // method@8263
+2f0982: 1100                                   |0005: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=131
+      locals        :
+        0x0000 - 0x0006 reg=1 this Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;
+
+    #3              : (in Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;)
+      name          : 'initData'
+      type          : '()V'
+      access        : 0x0004 (PROTECTED)
+      code          -
+      registers     : 3
+      ins           : 1
+      outs          : 2
+      insns size    : 25 16-bit code units
+2f0b70:                                        |[2f0b70] com.nwd.audioset.view.fragment.dts.virtual.VirtualFragment.initData:()V
+2f0b80: 7100 7d85 0000                         |0000: invoke-static {}, Lcom/nwd/dsp/uitls/DspManager;.getInstance:()Lcom/nwd/dsp/uitls/DspManager; // method@857d
+2f0b86: 0c00                                   |0003: move-result-object v0
+2f0b88: 6e10 7385 0000                         |0004: invoke-virtual {v0}, Lcom/nwd/dsp/uitls/DspManager;.getDtsVirtualMiddle:()Z // method@8573
+2f0b8e: 0a00                                   |0007: move-result v0
+2f0b90: 5421 1b7a                              |0008: iget-object v1, v2, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.virtual_switch_iv:Landroid/widget/ImageView; // field@7a1b
+2f0b94: 6e20 600e 0100                         |000a: invoke-virtual {v1, v0}, Landroid/widget/ImageView;.setSelected:(Z)V // method@0e60
+2f0b9a: 5421 197a                              |000d: iget-object v1, v2, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.virtual_mask_iv:Landroid/widget/ImageView; // field@7a19
+2f0b9e: 3800 0400                              |000f: if-eqz v0, 0013 // +0004
+2f0ba2: 1200                                   |0011: const/4 v0, #int 0 // #0
+2f0ba4: 2803                                   |0012: goto 0015 // +0003
+2f0ba6: 1300 0800                              |0013: const/16 v0, #int 8 // #8
+2f0baa: 6e20 630e 0100                         |0015: invoke-virtual {v1, v0}, Landroid/widget/ImageView;.setVisibility:(I)V // method@0e63
+2f0bb0: 0e00                                   |0018: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=112
+        0x0008 line=113
+        0x000d line=114
+      locals        :
+        0x0000 - 0x0019 reg=2 this Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;
+
+    #4              : (in Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;)
+      name          : 'initView'
+      type          : '()V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 3
+      ins           : 1
+      outs          : 2
+      insns size    : 134 16-bit code units
+2f0bb4:                                        |[2f0bb4] com.nwd.audioset.view.fragment.dts.virtual.VirtualFragment.initView:()V
+2f0bc4: 5420 177a                              |0000: iget-object v0, v2, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.mRootView:Landroid/view/View; // field@7a17
+2f0bc8: 1401 4b03 097f                         |0002: const v1, #float 1.82121e+38 // #7f09034b
+2f0bce: 6e20 a509 1000                         |0005: invoke-virtual {v0, v1}, Landroid/view/View;.findViewById:(I)Landroid/view/View; // method@09a5
+2f0bd4: 0c00                                   |0008: move-result-object v0
+2f0bd6: 1f00 6e02                              |0009: check-cast v0, Landroid/widget/ImageView; // type@026e
+2f0bda: 5b20 1a7a                              |000b: iput-object v0, v2, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.virtual_reset_iv:Landroid/widget/ImageView; // field@7a1a
+2f0bde: 5420 177a                              |000d: iget-object v0, v2, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.mRootView:Landroid/view/View; // field@7a17
+2f0be2: 1401 a700 097f                         |000f: const v1, #float 1.82108e+38 // #7f0900a7
+2f0be8: 6e20 a509 1000                         |0012: invoke-virtual {v0, v1}, Landroid/view/View;.findViewById:(I)Landroid/view/View; // method@09a5
+2f0bee: 0c00                                   |0015: move-result-object v0
+2f0bf0: 1f00 6e02                              |0016: check-cast v0, Landroid/widget/ImageView; // type@026e
+2f0bf4: 5b20 0b7a                              |0018: iput-object v0, v2, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.car_iv:Landroid/widget/ImageView; // field@7a0b
+2f0bf8: 5420 177a                              |001a: iget-object v0, v2, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.mRootView:Landroid/view/View; // field@7a17
+2f0bfc: 1401 4d03 097f                         |001c: const v1, #float 1.82121e+38 // #7f09034d
+2f0c02: 6e20 a509 1000                         |001f: invoke-virtual {v0, v1}, Landroid/view/View;.findViewById:(I)Landroid/view/View; // method@09a5
+2f0c08: 0c00                                   |0022: move-result-object v0
+2f0c0a: 1f00 6e02                              |0023: check-cast v0, Landroid/widget/ImageView; // type@026e
+2f0c0e: 5b20 1b7a                              |0025: iput-object v0, v2, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.virtual_switch_iv:Landroid/widget/ImageView; // field@7a1b
+2f0c12: 5420 177a                              |0027: iget-object v0, v2, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.mRootView:Landroid/view/View; // field@7a17
+2f0c16: 1401 fe00 097f                         |0029: const v1, #float 1.82109e+38 // #7f0900fe
+2f0c1c: 6e20 a509 1000                         |002c: invoke-virtual {v0, v1}, Landroid/view/View;.findViewById:(I)Landroid/view/View; // method@09a5
+2f0c22: 0c00                                   |002f: move-result-object v0
+2f0c24: 1f00 6e02                              |0030: check-cast v0, Landroid/widget/ImageView; // type@026e
+2f0c28: 5b20 107a                              |0032: iput-object v0, v2, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.dts_sound_tl_iv:Landroid/widget/ImageView; // field@7a10
+2f0c2c: 5420 177a                              |0034: iget-object v0, v2, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.mRootView:Landroid/view/View; // field@7a17
+2f0c30: 1401 0001 097f                         |0036: const v1, #float 1.82109e+38 // #7f090100
+2f0c36: 6e20 a509 1000                         |0039: invoke-virtual {v0, v1}, Landroid/view/View;.findViewById:(I)Landroid/view/View; // method@09a5
+2f0c3c: 0c00                                   |003c: move-result-object v0
+2f0c3e: 1f00 6e02                              |003d: check-cast v0, Landroid/widget/ImageView; // type@026e
+2f0c42: 5b20 117a                              |003f: iput-object v0, v2, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.dts_sound_tr_iv:Landroid/widget/ImageView; // field@7a11
+2f0c46: 5420 177a                              |0041: iget-object v0, v2, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.mRootView:Landroid/view/View; // field@7a17
+2f0c4a: 1401 f800 097f                         |0043: const v1, #float 1.82109e+38 // #7f0900f8
+2f0c50: 6e20 a509 1000                         |0046: invoke-virtual {v0, v1}, Landroid/view/View;.findViewById:(I)Landroid/view/View; // method@09a5
+2f0c56: 0c00                                   |0049: move-result-object v0
+2f0c58: 1f00 6e02                              |004a: check-cast v0, Landroid/widget/ImageView; // type@026e
+2f0c5c: 5b20 0d7a                              |004c: iput-object v0, v2, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.dts_sound_bl_iv:Landroid/widget/ImageView; // field@7a0d
+2f0c60: 5420 177a                              |004e: iget-object v0, v2, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.mRootView:Landroid/view/View; // field@7a17
+2f0c64: 1401 fa00 097f                         |0050: const v1, #float 1.82109e+38 // #7f0900fa
+2f0c6a: 6e20 a509 1000                         |0053: invoke-virtual {v0, v1}, Landroid/view/View;.findViewById:(I)Landroid/view/View; // method@09a5
+2f0c70: 0c00                                   |0056: move-result-object v0
+2f0c72: 1f00 6e02                              |0057: check-cast v0, Landroid/widget/ImageView; // type@026e
+2f0c76: 5b20 0f7a                              |0059: iput-object v0, v2, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.dts_sound_br_iv:Landroid/widget/ImageView; // field@7a0f
+2f0c7a: 5420 177a                              |005b: iget-object v0, v2, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.mRootView:Landroid/view/View; // field@7a17
+2f0c7e: 1401 4e03 097f                         |005d: const v1, #float 1.82121e+38 // #7f09034e
+2f0c84: 6e20 a509 1000                         |0060: invoke-virtual {v0, v1}, Landroid/view/View;.findViewById:(I)Landroid/view/View; // method@09a5
+2f0c8a: 0c00                                   |0063: move-result-object v0
+2f0c8c: 1f00 8e02                              |0064: check-cast v0, Landroid/widget/TextView; // type@028e
+2f0c90: 5b20 1c7a                              |0066: iput-object v0, v2, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.virtual_switch_tv:Landroid/widget/TextView; // field@7a1c
+2f0c94: 5420 177a                              |0068: iget-object v0, v2, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.mRootView:Landroid/view/View; // field@7a17
+2f0c98: 1401 4a03 097f                         |006a: const v1, #float 1.82121e+38 // #7f09034a
+2f0c9e: 6e20 a509 1000                         |006d: invoke-virtual {v0, v1}, Landroid/view/View;.findViewById:(I)Landroid/view/View; // method@09a5
+2f0ca4: 0c00                                   |0070: move-result-object v0
+2f0ca6: 1f00 6e02                              |0071: check-cast v0, Landroid/widget/ImageView; // type@026e
+2f0caa: 5b20 197a                              |0073: iput-object v0, v2, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.virtual_mask_iv:Landroid/widget/ImageView; // field@7a19
+2f0cae: 7010 6082 0200                         |0075: invoke-direct {v2}, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.setButtonBG:()V // method@8260
+2f0cb4: 6e10 5f82 0200                         |0078: invoke-virtual {v2}, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.requireContext:()Landroid/content/Context; // method@825f
+2f0cba: 0c00                                   |007b: move-result-object v0
+2f0cbc: 7110 2981 0000                         |007c: invoke-static {v0}, Lcom/nwd/audioset/utils/Utils;.isLand:(Landroid/content/Context;)Z // method@8129
+2f0cc2: 0a00                                   |007f: move-result v0
+2f0cc4: 3800 0500                              |0080: if-eqz v0, 0085 // +0005
+2f0cc8: 7010 5582 0200                         |0082: invoke-direct {v2}, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.changeView:()V // method@8255
+2f0cce: 0e00                                   |0085: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=50
+        0x000d line=51
+        0x001a line=52
+        0x0027 line=54
+        0x0034 line=55
+        0x0041 line=56
+        0x004e line=57
+        0x005b line=59
+        0x0068 line=61
+        0x0075 line=62
+        0x0078 line=63
+        0x0082 line=65
+      locals        :
+        0x0000 - 0x0086 reg=2 this Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;
+
+    #5              : (in Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;)
+      name          : 'onClick'
+      type          : '(Landroid/view/View;)V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 4
+      ins           : 2
+      outs          : 2
+      insns size    : 44 16-bit code units
+2f0cd0:                                        |[2f0cd0] com.nwd.audioset.view.fragment.dts.virtual.VirtualFragment.onClick:(Landroid/view/View;)V
+2f0ce0: 5420 1a7a                              |0000: iget-object v0, v2, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.virtual_reset_iv:Landroid/widget/ImageView; // field@7a1a
+2f0ce4: 3303 0e00                              |0002: if-ne v3, v0, 0010 // +000e
+2f0ce8: 7100 7d85 0000                         |0004: invoke-static {}, Lcom/nwd/dsp/uitls/DspManager;.getInstance:()Lcom/nwd/dsp/uitls/DspManager; // method@857d
+2f0cee: 0c03                                   |0007: move-result-object v3
+2f0cf0: 1200                                   |0008: const/4 v0, #int 0 // #0
+2f0cf2: 6e20 d785 0300                         |0009: invoke-virtual {v3, v0}, Lcom/nwd/dsp/uitls/DspManager;.sendDtsVirtualMiddle:(I)V // method@85d7
+2f0cf8: 6e10 5b82 0200                         |000c: invoke-virtual {v2}, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.initData:()V // method@825b
+2f0cfe: 281c                                   |000f: goto 002b // +001c
+2f0d00: 5420 1b7a                              |0010: iget-object v0, v2, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.virtual_switch_iv:Landroid/widget/ImageView; // field@7a1b
+2f0d04: 3303 1900                              |0012: if-ne v3, v0, 002b // +0019
+2f0d08: 6e10 200a 0300                         |0014: invoke-virtual {v3}, Landroid/view/View;.isSelected:()Z // method@0a20
+2f0d0e: 0a01                                   |0017: move-result v1
+2f0d10: df01 0101                              |0018: xor-int/lit8 v1, v1, #int 1 // #01
+2f0d14: 6e20 600e 1000                         |001a: invoke-virtual {v0, v1}, Landroid/widget/ImageView;.setSelected:(Z)V // method@0e60
+2f0d1a: 7100 7d85 0000                         |001d: invoke-static {}, Lcom/nwd/dsp/uitls/DspManager;.getInstance:()Lcom/nwd/dsp/uitls/DspManager; // method@857d
+2f0d20: 0c00                                   |0020: move-result-object v0
+2f0d22: 6e10 200a 0300                         |0021: invoke-virtual {v3}, Landroid/view/View;.isSelected:()Z // method@0a20
+2f0d28: 0a03                                   |0024: move-result v3
+2f0d2a: 6e20 d785 3000                         |0025: invoke-virtual {v0, v3}, Lcom/nwd/dsp/uitls/DspManager;.sendDtsVirtualMiddle:(I)V // method@85d7
+2f0d30: 6e10 5b82 0200                         |0028: invoke-virtual {v2}, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.initData:()V // method@825b
+2f0d36: 0e00                                   |002b: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=119
+        0x0004 line=120
+        0x000c line=121
+        0x0010 line=122
+        0x0014 line=123
+        0x001d line=124
+        0x0028 line=125
+      locals        :
+        0x0000 - 0x002c reg=2 this Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;
+        0x0000 - 0x002c reg=3 (null) Landroid/view/View;
+
+    #6              : (in Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;)
+      name          : 'onConfigurationChanged'
+      type          : '(Landroid/content/res/Configuration;)V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 4
+      ins           : 2
+      outs          : 2
+      insns size    : 20 16-bit code units
+2f0d38:                                        |[2f0d38] com.nwd.audioset.view.fragment.dts.virtual.VirtualFragment.onConfigurationChanged:(Landroid/content/res/Configuration;)V
+2f0d48: 6f20 b480 3200                         |0000: invoke-super {v2, v3}, Lcom/nwd/audioset/mvpbase/BaseFragment;.onConfigurationChanged:(Landroid/content/res/Configuration;)V // method@80b4
+2f0d4e: 5423 1c7a                              |0003: iget-object v3, v2, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.virtual_switch_tv:Landroid/widget/TextView; // field@7a1c
+2f0d52: 6e10 5a82 0200                         |0005: invoke-virtual {v2}, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.getResources:()Landroid/content/res/Resources; // method@825a
+2f0d58: 0c00                                   |0008: move-result-object v0
+2f0d5a: 1401 0301 0e7f                         |0009: const v1, #float 1.88756e+38 // #7f0e0103
+2f0d60: 6e20 4103 1000                         |000c: invoke-virtual {v0, v1}, Landroid/content/res/Resources;.getString:(I)Ljava/lang/String; // method@0341
+2f0d66: 0c00                                   |000f: move-result-object v0
+2f0d68: 6e20 1a10 0300                         |0010: invoke-virtual {v3, v0}, Landroid/widget/TextView;.setText:(Ljava/lang/CharSequence;)V // method@101a
+2f0d6e: 0e00                                   |0013: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=107
+        0x0003 line=108
+      locals        :
+        0x0000 - 0x0014 reg=2 this Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;
+        0x0000 - 0x0014 reg=3 (null) Landroid/content/res/Configuration;
+
+    #7              : (in Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;)
+      name          : 'setListener'
+      type          : '()V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 2
+      insns size    : 11 16-bit code units
+2f0fb0:                                        |[2f0fb0] com.nwd.audioset.view.fragment.dts.virtual.VirtualFragment.setListener:()V
+2f0fc0: 5410 1a7a                              |0000: iget-object v0, v1, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.virtual_reset_iv:Landroid/widget/ImageView; // field@7a1a
+2f0fc4: 6e20 5d0e 1000                         |0002: invoke-virtual {v0, v1}, Landroid/widget/ImageView;.setOnClickListener:(Landroid/view/View$OnClickListener;)V // method@0e5d
+2f0fca: 5410 1b7a                              |0005: iget-object v0, v1, Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;.virtual_switch_iv:Landroid/widget/ImageView; // field@7a1b
+2f0fce: 6e20 5d0e 1000                         |0007: invoke-virtual {v0, v1}, Landroid/widget/ImageView;.setOnClickListener:(Landroid/view/View$OnClickListener;)V // method@0e5d
+2f0fd4: 0e00                                   |000a: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=141
+        0x0005 line=142
+      locals        :
+        0x0000 - 0x000b reg=1 this Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;
+
+    #8              : (in Lcom/nwd/audioset/view/fragment/dts/virtual/VirtualFragment;)
+      name          : 'setViewBinding'
+      type          : '()V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 0
+      insns size    : 1 16-bit code units
+2f0fd8:                                        |[2f0fd8] com.nwd.audioset.view.fragment.dts.virtual.VirtualFragment.setViewBinding:()V
+2f0fe8: 0e00                                   |0000: return-void
+      catches       : (none)
+      positions     :
+      locals        :
+
+  source_file_idx   : 18555 (VirtualFragment.java)
+
+Class #3486            -

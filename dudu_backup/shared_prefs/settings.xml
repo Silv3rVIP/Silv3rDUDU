@@ -1,0 +1,557 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <boolean name="SDATA_LAUNCHER_PROMPT_SHOW_OUT_TEMP_VIEW" value="false" />
+    <boolean name="SDATA_LAUNCHER_PROMPT_SHOW_CAR_ELEC_VIEW" value="false" />
+    <boolean name="SDATA_BYD_USE_DM_MODEL" value="true" />
+    <string name="SDATA_INCAR_NAME">Not Selected</string>
+    <int name="SDATA_BAIDIAN_POPUP_LONG_CLICK" value="1" />
+    <boolean name="SDATA_DELAY_REFRESH_APPINFO" value="false" />
+    <string name="SDATA_AUTO_CLICK_TITLE">[]</string>
+    <int name="SDATA_LAUNCHER_ITEM_SORT_1" value="6" />
+    <int name="SDATA_HUD_YJ_BLE1_SPEED" value="0" />
+    <boolean name="SDATA_LED_SCENE_SHOW" value="false" />
+    <string name="SDATA_ITEM_APP9_CLASS">1:com.nwd.can.setting</string>
+    <string name="SDATA_STATE_BAR_SKIN_NIGHT">com.wow.carlauncher.dnbskin</string>
+    <boolean name="SDATA_HRZQ_SET_TYPE_JIAODIAN" value="true" />
+    <boolean name="SDATA_LAUNCHER_PROMPT_SHOW_PERSON" value="false" />
+    <string name="SDATA_BYD_CAR_CONTROL_CHECK"></string>
+    <int name="SDATA_LAUNCHER_ITEM_SORT_4" value="8" />
+    <int name="SDATA_LAUNCHER_ITEM_SORT_5" value="2" />
+    <int name="SDATA_LAUNCHER_ITEM_SORT_2" value="5" />
+    <int name="SDATA_LAUNCHER_ITEM_SORT_3" value="7" />
+    <int name="SDATA_LAUNCHER_ITEM_SORT_8" value="3" />
+    <int name="SDATA_LAUNCHER_ITEM_SORT_6" value="9" />
+    <int name="SDATA_LAUNCHER_ITEM_SORT_7" value="10" />
+    <int name="SDATA_LAUNCHER_DLAYOUT_SCALE" value="142" />
+    <boolean name="SDATA_LAUNCHER_LAYOUT_USE_MINI2" value="false" />
+    <int name="SDATA_FWD_SCENE_MUSIC_3" value="-106" />
+    <boolean name="SDATA_NEIZHI_GO_NAV_WIDGET" value="false" />
+    <int name="SDATA_EDGE_GESTURE_RIGHT_SHORT" value="4" />
+    <int name="SDATA_FWD_SCENE_MUSIC_2" value="-1" />
+    <string name="SDATA_AP_TIME_CHECK_PASS"></string>
+    <int name="SDATA_FWD_SCENE_MUSIC_1" value="-1" />
+    <string name="SDATA_ITEM_APP12_CLASS">1:com.ledlamp</string>
+    <int name="SDATA_FWD_SCENE_MUSIC_0" value="-1" />
+    <boolean name="SDATA_HUD_CLB_BLE1_AUTOLIGHT" value="true" />
+    <boolean name="SDATA_STATEBAR_BYD_CHAIR_OPEN_POPUP" value="true" />
+    <boolean name="ZDATA_FRIST_OPEN_SKIN" value="false" />
+    <string name="SDATA_FK2_STUDY_OPEN_APP3_NAME"></string>
+    <boolean name="SDATA_NAV_ADAS_REPLACE_CAR" value="false" />
+    <float name="SDATA_TY_WARN_NUM_MAX" value="2.6" />
+    <boolean name="SDATA_BYD_CAR_INFO" value="true" />
+    <boolean name="SDATA_LAUNCHER_PROMPT_SHOW_FK2_VIEW" value="true" />
+    <int name="SDATA_EDGE_GESTURE_RIGHT_SIZE2" value="2" />
+    <boolean name="SDATA_LOAD_CHECK_DIANCHI" value="true" />
+    <int name="SDATA_TTS_AUDIO_STREAM" value="3" />
+    <boolean name="SDATA_DUDU_AMAP_MUTE" value="false" />
+    <int name="SDATA_WIDGET_CAR3D_PENDANT_OPACITY" value="30" />
+    <boolean name="SDATA_MINIM_USE_PROMPT" value="true" />
+    <boolean name="SDATA_DUDU_AMAP_AUTO_EXIT_XUNHANG" value="false" />
+    <boolean name="SDATA_ITEM_MUSIC_TITLE_USE_APPNAME" value="true" />
+    <boolean name="SDATA_WARN_POPUP_RED_BORDER" value="true" />
+    <int name="SDATA_HUD_CLB_BLE1_SPEED" value="0" />
+    <string name="SDATA_ITEM_APP4_CLASS">1:com.android.chrome</string>
+    <string name="SDATA_DOCK3_CLASS">1:com.android.chrome</string>
+    <string name="SDATA_FK2_NAME"></string>
+    <int name="SDATA_LED_CONTROLLER" value="0" />
+    <boolean name="SDATA_AMAP_SYNC_SKIN" value="true" />
+    <int name="SDATA_LAUNCHER_SHU_ITEM_SORT_7" value="7" />
+    <int name="SDATA_LAUNCHER_SHU_ITEM_SORT_8" value="8" />
+    <boolean name="SDATA_LAUNCHER_ITEM_OPEN_999" value="false" />
+    <int name="SDATA_WIDGET_PAPER_ITEM_OPACITY" value="80" />
+    <int name="SDATA_SCREEN_CORNER_SHOW_TYPE" value="1" />
+    <int name="SDATA_LAUNCHER_SHU_ITEM_SORT_5" value="5" />
+    <boolean name="SDATA_SKIN_CENTER" value="true" />
+    <int name="SDATA_LAUNCHER_SHU_ITEM_SORT_6" value="6" />
+    <int name="SDATA_LAUNCHER_SHU_ITEM_SORT_3" value="3" />
+    <boolean name="SDATA_WEATHER_USE_ANIM" value="false" />
+    <int name="SDATA_LAUNCHER_SHU_ITEM_SORT_4" value="4" />
+    <int name="SDATA_EG_CHECK_LONG_TIME" value="0" />
+    <int name="SDATA_LAUNCHER_SHU_ITEM_SORT_1" value="1" />
+    <boolean name="SDATA_HUD_DJ_BLE_ZQT" value="false" />
+    <int name="SDATA_LAUNCHER_SHU_ITEM_SORT_2" value="2" />
+    <int name="SDATA_WIFI_TIME_CHECK_JIANGE" value="15" />
+    <boolean name="ZDATA_DEV_CAN_USE_SWIDGET" value="false" />
+    <string name="SDATA_APP_SKIN_DAY">com.dudu.autoui.theme.flymenight</string>
+    <string name="SDATA_FK_STUDY_OPEN_APP3_NAME"></string>
+    <boolean name="SDATA_MINI_ENERGY_FLOW_USE_TP" value="false" />
+    <boolean name="SDATA_AIRCON_POPUP" value="false" />
+    <boolean name="SDATA_LAUNCHER_PROMPT_SHOW_SET" value="true" />
+    <int name="SDATA_STATE_BAR_OPACITY" value="100" />
+    <boolean name="SDATA_ITEM_NAV_TITLE_USE_APPNAME" value="true" />
+    <int name="SDATA_LED_LIGHT_NIGHT" value="7" />
+    <int name="SDATA_TY_WARN_YOULIANG" value="10" />
+    <boolean name="SDATA_WIDGET_USE_CHANGE" value="true" />
+    <int name="SDATA_LAUNCHER_PENDANT_LOAD_MODE" value="2" />
+    <string name="SDATA_AP_TIME_CHECK_SSID"></string>
+    <boolean name="SDATA_LAUNCHER_DEFAULT_LEFT_TO_RIGHT" value="false" />
+    <int name="SDATA_FWD_SCENE_BACK_CAR_N_3" value="-1" />
+    <boolean name="SDATA_NEIZHI_GO_PAPER_WIDGET" value="false" />
+    <boolean name="SDATA_LAUNCHER_SHU_ITEM_OPEN_4" value="true" />
+    <boolean name="SDATA_LAUNCHER_PROMPT_SHOW_LED_VIEW" value="true" />
+    <boolean name="SDATA_LAUNCHER_SHU_ITEM_OPEN_3" value="true" />
+    <boolean name="SDATA_LAUNCHER_SHU_ITEM_OPEN_2" value="true" />
+    <boolean name="SDATA_LAUNCHER_SHU_ITEM_OPEN_1" value="true" />
+    <boolean name="SDATA_LAUNCHER_SHU_ITEM_OPEN_8" value="false" />
+    <boolean name="SDATA_LAUNCHER_SHU_ITEM_OPEN_7" value="false" />
+    <boolean name="SDATA_LAUNCHER_SHU_ITEM_OPEN_6" value="true" />
+    <boolean name="SDATA_LAUNCHER_SHU_ITEM_OPEN_5" value="true" />
+    <int name="SDATA_MINIM_GROUP2_ITEM4" value="104" />
+    <string name="SDATA_OBD_NAME">OBDBLE&#0;&#0;&#0;&#0;&#0;&#0;&#0;&#0;&#0;&#0;&#0;&#0;&#0;&#0;&#0;&#0;&#0;&#0;&#0;&#0;&#0;&#0;&#0;(81:23:45:67:89:BA)</string>
+    <int name="SDATA_EDGE_GESTURE_RIGHT_LONG" value="0" />
+    <boolean name="SDATA_BYD_ALLOW_ALL_OPEN_BACK" value="false" />
+    <int name="SDATA_APP_WIDGET_SHOW_TYPE" value="2" />
+    <boolean name="SDATA_OPEN_EDGE_GESTURE" value="false" />
+    <int name="SDATA_WIDGET_PAPER_NIGHT_MASK" value="1" />
+    <string name="SDATA_ITEM_APP7_CLASS">1:com.llsl.viper4android</string>
+    <int name="SDATA_EDGE_GESTURE_BOTTOM_LONG" value="0" />
+    <boolean name="SDATA_STATEBAR_ANDROID_USE_HV" value="false" />
+    <boolean name="SDATA_HOME_FULL" value="true" />
+    <int name="SDATA_FIXED_TIME_END" value="0" />
+    <string name="SDATA_FK_STUDY_OPEN_APP4_NAME"></string>
+    <boolean name="SDATA_LAUNCHER_LAYOUT_USE_2K" value="true" />
+    <boolean name="SDATA_WIFI_TIME_CHECK_OPEN" value="false" />
+    <int name="SDATA_EDGE_GESTURE_LEFT_SIZE" value="2" />
+    <boolean name="SDATA_LAUNCHER_LOOP_WIDGET_OPEN_3" value="false" />
+    <boolean name="SDATA_LAUNCHER_LOOP_WIDGET_OPEN_2" value="false" />
+    <boolean name="SDATA_MY_PHONE_ALLOW_SHARE_SCREEN" value="true" />
+    <boolean name="SDATA_LAUNCHER_LOOP_WIDGET_OPEN_1" value="false" />
+    <boolean name="SDATA_LAUNCHER_LOOP_WIDGET_OPEN_0" value="true" />
+    <boolean name="SDATA_LAUNCHER_REQUEST_RECORD_AUDIO" value="true" />
+    <boolean name="SDATA_LAUNCHER_PROMPT_SHOW_BTPHONE_VIEW" value="false" />
+    <int name="SDATA_LAYOUT2_PENDANT_MODEL" value="0" />
+    <boolean name="SDATA_LAUNCHER_LOOP_WIDGET_OPEN_6" value="true" />
+    <int name="SDATA_HUD_CLB_BLE2_SPEED2_QUJIAN" value="70" />
+    <boolean name="SDATA_LAUNCHER_LOOP_WIDGET_OPEN_4" value="false" />
+    <string name="SDATA_APP_ICON_DAY"></string>
+    <boolean name="SDATA_LAUNCHER_LAYOUT_USE_2K_LAYOUT2" value="false" />
+    <string name="SDATA_DOCK1_CLASS">com.dudu.action.show_all_app</string>
+    <int name="SDATA_MUSIC_WIDGET_WORK_TYPE" value="2" />
+    <boolean name="SDATA_LAUNCHER_SHU_ITEM_OPEN_15" value="false" />
+    <int name="SDATA_MINIM_ITEM1" value="102" />
+    <boolean name="SDATA_LAUNCHER_SHU_ITEM_OPEN_16" value="false" />
+    <int name="SDATA_MINIM_ITEM3" value="108" />
+    <int name="SDATA_MINIM_ITEM2" value="106" />
+    <string name="SDATA_FANGKONG_NAME">Not Selected</string>
+    <string name="SDATA_AIRCON_POPUP_AUTO_SHOW"></string>
+    <int name="SDATA_MINIM_ITEM4" value="100" />
+    <boolean name="SDATA_LAUNCHER_PROMPT_SHOW_OBD" value="true" />
+    <boolean name="SDATA_LAUNCHER_SHU_ITEM_OPEN_11" value="false" />
+    <boolean name="SDATA_LED_FOLLOW" value="false" />
+    <boolean name="SDATA_LAUNCHER_SHU_ITEM_OPEN_10" value="true" />
+    <boolean name="SDATA_LAUNCHER_SHU_ITEM_OPEN_13" value="false" />
+    <int name="SDATA_HUD_CLB_BLE2_LIGHT" value="1" />
+    <boolean name="SDATA_LAUNCHER_WIDGET_CHANGE_USE_ANIM" value="false" />
+    <int name="SDATA_TP_RB" value="3" />
+    <boolean name="SDATA_STATEBAR_ANDROID_USE_AIR" value="false" />
+    <int name="SDATA_TP_RF" value="2" />
+    <boolean name="SDATA_LAUNCHER_PROMPT_SHOW_HUD" value="true" />
+    <boolean name="SDATA_SHOW_DOOR_POPUP" value="false" />
+    <boolean name="SDATA_LAUNCHER_ALLOW_HOME_LOOP" value="true" />
+    <string name="SDATA_LED_NAME"></string>
+    <string name="SDATA_DATE_FROMAT">dd.MMM EEEE HH:mm</string>
+    <int name="SDATA_WIDGET_WITH_LOAD" value="1" />
+    <boolean name="SDATA_NEIZHI_GO_SYSTEM_LAUNCHER" value="true" />
+    <boolean name="SDATA_WIDGET_PAPER_USE_ITEM_OPACITY" value="true" />
+    <boolean name="SDATA_NEIZHI_NAV_USE_DOCK" value="true" />
+    <string name="SDATA_FK2_STUDY_OPEN_APP4_NAME"></string>
+    <int name="SDATA_MINIM_GROUP2_ITEM1" value="107" />
+    <boolean name="SDATA_ITEM_2CLICK_GO_APP" value="true" />
+    <int name="SDATA_MINIM_GROUP2_ITEM2" value="100" />
+    <int name="SDATA_MINIM_GROUP2_ITEM3" value="101" />
+    <int name="SDATA_FRIST_SPEED_TYPE" value="4" />
+    <string name="SDATA_LED_ADDRESS"></string>
+    <boolean name="SDATA_ITEM_MUSIC_TITLE_SHOW_LRC" value="false" />
+    <int name="SDATA_FWD_SCENE_BACK_CAR_N_0" value="-1" />
+    <int name="SDATA_FWD_SCENE_BACK_CAR_N_1" value="-1" />
+    <int name="SDATA_FWD_SCENE_BACK_CAR_N_2" value="-1" />
+    <string name="SDATA_MINIM_PIP3_CLAZZ">cn.kuwo.kwmusiccar</string>
+    <boolean name="SDATA_LOCATION_LOAD_COMPATIBLE" value="false" />
+    <boolean name="SDATA_WEATHER_USE_CELSIUS_DEGREE" value="true" />
+    <string name="SDATA_NORMAL_NAVI_CLASS">com.vialsoft.radarbot_free</string>
+    <boolean name="SDATA_USE_SCREEN_CORNER" value="false" />
+    <boolean name="SDATA_MUSIC_GO_APP" value="false" />
+    <int name="SDATA_EDGE_GESTURE_RIGHT_LONG2" value="0" />
+    <int name="SDATA_FWD_SCENE_BACK_CAR_0" value="-1" />
+    <int name="SDATA_FWD_SCENE_BACK_CAR_1" value="-1" />
+    <int name="SDATA_QP_DOCK_NUM" value="8" />
+    <boolean name="SDATA_LAUNCHER_PROMPT_SHOW_OBD_DL_VIEW" value="true" />
+    <boolean name="SDATA_DC_PLAYER_USE_LRC" value="false" />
+    <int name="SDATA_EDGE_GESTURE_RIGHT_LONG3" value="0" />
+    <string name="SDATA_ITEM_APP6_CLASS">1:com.nwd.android.phone</string>
+    <int name="SDATA_EDGE_GESTURE_LEFT_LONG" value="0" />
+    <string name="SDATA_APP_ICON_NIGHT"></string>
+    <int name="SDATA_FWD_SCENE_BACK_CAR_2" value="-1" />
+    <int name="SDATA_FWD_SCENE_BACK_CAR_3" value="-105" />
+    <int name="SDATA_USE_SCREEN_CORNER_TOP" value="30" />
+    <string name="SDATA_INCAR_ADDRESS"></string>
+    <int name="SDATA_NAV_WIDGET_WORK_TYPE" value="2" />
+    <boolean name="SDATA_LAUNCHER_PROMPT_SHOW_INCAR_SD_VIEW" value="false" />
+    <int name="SDATA_APP_WIDGET_PAGE_TRAN" value="0" />
+    <int name="SDATA_TTS_VOLUME" value="10" />
+    <boolean name="SDATA_TOUCH_PAD_SHOW" value="false" />
+    <int name="SDATA_PIP_DPI_LEVEL" value="176" />
+    <string name="SDATA_QP_DOCK7_CLASS">com.nwd.android.phone</string>
+    <boolean name="SDATA_LOAD_CHECK_QUANXIAN" value="true" />
+    <int name="SDATA_HUD_DJ_BLE_LEVEL" value="-1" />
+    <boolean name="SDATA_PIP_SAME_SCREEN_USE" value="true" />
+    <boolean name="SDATA_PAPER_PROMPT_BG_AUTO_CHANGE" value="true" />
+    <boolean name="SDATA_LS_PROMPT_CAR_OBD_FIRST" value="true" />
+    <boolean name="SDATA_PROMPT_WS_GROUP" value="true" />
+    <boolean name="SDATA_BYD_SEND_FREQ_TO_AMBIENT_LIGHT" value="false" />
+    <int name="SDATA_WIDGET_PAPER_CHANGE_TRAN" value="0" />
+    <string name="SDATA_QP_DOCK1_CLASS">com.dudu.driving</string>
+    <int name="SDATA_WIDGET_PAPER_PENDANT_OPACITY" value="80" />
+    <string name="SDATA_MINIM_PIP2_CLAZZ">com.kugou.android.auto</string>
+    <int name="SDATA_TIME_MODE" value="1" />
+    <int name="SDATA_WIDGET_NAV_PENDANT_OPACITY" value="10" />
+    <boolean name="SDATA_STATEBAR_ANDROID_USE_TIANCHUANG" value="false" />
+    <boolean name="SDATA_APP_POPUP_USE_NEW_MODEL" value="false" />
+    <string name="SDATA_QP_DOCK2_CLASS">io.github.huskydg.magisk</string>
+    <boolean name="SDATA_LAUNCHER_LAYOUT_USE_DAIYU" value="true" />
+    <string name="SDATA_FK2_STUDY_OPEN_APP4"></string>
+    <string name="SDATA_STATE_BAR_SKIN_DAY">com.wow.carlauncher.nbskin</string>
+    <boolean name="SDATA_LAUNCHER_LAYOUT_USE_MINI" value="false" />
+    <string name="SDATA_FK2_STUDY_OPEN_APP3"></string>
+    <boolean name="SDATA_LAUNCHER_WIDGET_MUSIC_COVER_BG_SHOW" value="true" />
+    <string name="SDATA_FK2_STUDY_OPEN_APP2"></string>
+    <string name="SDATA_FK2_STUDY_OPEN_APP1"></string>
+    <boolean name="SDATA_STATEBAR_ANDROID_USE_FP" value="false" />
+    <boolean name="SDATA_APP_LEFT_TO_RIGHT" value="false" />
+    <string name="SDATA_ITEM_APP5_CLASS">1:com.mixplorer</string>
+    <boolean name="SDATA_SETTING_MODE_STARTER" value="false" />
+    <string name="SDATA_QP_DOCK8_CLASS">com.dudu.action.show_all_app</string>
+    <int name="SDATA_STATE_BAR_SCALE" value="150" />
+    <string name="SDATA_QP_DOCK3_CLASS">com.speedsoftware.rootexplorer</string>
+    <boolean name="SDATA_STATEBAR_ANDROID_USE_TASK" value="true" />
+    <boolean name="SDATA_USER_SUPER_STATEBAR" value="false" />
+    <boolean name="SDATA_POPUP_USE_ANIMATION" value="true" />
+    <boolean name="SDATA_OPEN_FK2" value="false" />
+    <string name="SDATA_QP_DOCK6_CLASS">com.android.dialer</string>
+    <boolean name="SDATA_NAV_WIDGET_USE_NAV_INFO" value="false" />
+    <string name="SDATA_ITEM_APP11_CLASS">1:com.nwd.n.remote</string>
+    <int name="SDATA_QP_AUTO_CLOSE_TIME_OUT" value="0" />
+    <int name="SDATA_DUDU_AMAP_SET_AIM_LESS_MODE" value="3" />
+    <boolean name="SDATA_LAUNCHER_PROMPT_SHOW_DVR_VIEW" value="true" />
+    <long name="LOGIN_USER_ID" value="539002" />
+    <string name="SDATA_PIP_SAME_SCREEN_APP">com.vivi.vivimusic</string>
+    <boolean name="SDATA_LAUNCHER_PROMPT_SHOW_OBD_SW_VIEW" value="false" />
+    <int name="SDATA_HUD_CLB_BLE2_SPEED3" value="0" />
+    <int name="SDATA_HUD_CLB_BLE2_SPEED2" value="0" />
+    <int name="SDATA_HUD_CLB_BLE2_SPEED1" value="0" />
+    <int name="SDATA_LOCATION_SPEED2_QUJIAN" value="255" />
+    <string name="SDATA_FK_STUDY_OPEN_APP1_NAME"></string>
+    <boolean name="SDATA_EQ_SHARE" value="true" />
+    <int name="SDATA_CONSOLE_MARK" value="1" />
+    <string name="SDATA_FK2_STUDY_OPEN_APP2_NAME"></string>
+    <boolean name="SDATA_NAV_GO_APP" value="false" />
+    <int name="SDATA_CAR3D_BODY_COLOR" value="2" />
+    <boolean name="SDATA_LAUNCHER_PROMPT_SHOW_INCAR_WD_VIEW" value="false" />
+    <string name="SDATA_ITEM_APP1_CLASS">3:com.dudu.action.show_all_app</string>
+    <boolean name="SDATA_OBD_STRICT_MODE" value="false" />
+    <int name="SDATA_FWD_SCENE_OPEN_DOOR_0" value="-1" />
+    <int name="SDATA_MUSIC_CONTROLLER" value="99" />
+    <int name="SDATA_FWD_SCENE_OPEN_DOOR_2" value="-1" />
+    <string name="SDATA_STATE_BAR_SKIN_PATHS"></string>
+    <int name="SDATA_FWD_SCENE_OPEN_DOOR_1" value="-1" />
+    <int name="SDATA_TRIP_ITEM_OPEN_TYPE" value="1" />
+    <int name="SDATA_FWD_SCENE_OPEN_DOOR_3" value="-101" />
+    <int name="SDATA_FWD_CONTROLLER" value="2" />
+    <boolean name="SDATA_HUD_YJ_BLE1_AUTOLIGHT" value="true" />
+    <string name="SDATA_QP_DOCK4_CLASS">com.android.chrome</string>
+    <boolean name="SDATA_NAV_ITEM_FORCE_SHOW" value="true" />
+    <boolean name="SDATA_MUSIC_WIDGET_OPEN_FFT" value="false" />
+    <int name="SDATA_FWD_SCENE_DEFAULT_N_0" value="-1" />
+    <int name="SDATA_FWD_SCENE_DEFAULT_N_1" value="-1" />
+    <int name="SDATA_FWD_SCENE_DEFAULT_N_2" value="-1" />
+    <string name="SDATA_APP_SKIN_NIGHT">com.dudu.autoui.theme.flymenight</string>
+    <boolean name="SDATA_LAUNCHER_PROMPT_SHOW_LOCATION" value="true" />
+    <int name="SDATA_FWD_SCENE_DEFAULT_N_3" value="-1" />
+    <string name="SDATA_UN_CAR_INFO_USE_ITEMS">[1900][1902][1903][1904][1905][1911][1906][1907][1908][1909][1910][1002][1003][1004][1005][1006][1007][1008][1009][1010][1011][1012][1013][1014][1015][1016][1101][1102]</string>
+    <string name="SDATA_ITEM_APP2_CLASS">1:com.ivicar.avm</string>
+    <int name="SDATA_ITEM_MUSIC_TITLE_ACTION" value="2" />
+    <string name="SDATA_ITEM_APP10_CLASS">1:com.dergoogler.mmrl</string>
+    <boolean name="SDATA_CAR3D_FOG" value="false" />
+    <long name="SDATA_LAST_CHECK_SKIN_UPDATE_TIME" value="1788937085866" />
+    <int name="SDATA_WIDGET_NAV_ITEM_OPACITY" value="5" />
+    <boolean name="SDATA_DUDU_AMAP_SET_BZGS" value="false" />
+    <string name="SDATA_QP_DOCK5_CLASS">com.ivicar.avm</string>
+    <int name="SDATA_TOP_HEAD_OPEN_TYPE" value="1" />
+    <string name="ZDATA_NORMAL_MUSIC_USE_CLAZZ">com.vivi.vivimusic</string>
+    <int name="SDATA_FANGKONG_CONTROLLER2" value="10000" />
+    <boolean name="SDATA_LOCATION_STREET_NUM" value="false" />
+    <int name="SDATA_BYD_SKY_LIGHT_POPUP_CLOSE_TIMEOUT" value="5" />
+    <boolean name="SDATA_BYD_MUSIC_SEND_TO_CAR" value="true" />
+    <string name="SDATA_DOCK2_CLASS">1:com.ivicar.avm</string>
+    <int name="SDATA_BTAUTO_USE_SDK" value="1" />
+    <int name="SDATA_FWD_SCENE_MUSIC_N_2" value="-1" />
+    <boolean name="SDATA_MINIM_USE_DOCK" value="false" />
+    <int name="SDATA_FWD_SCENE_MUSIC_N_3" value="-1" />
+    <boolean name="SDATA_BYD_TURN_LIGHT_TYPE_OLD" value="false" />
+    <int name="SDATA_FWD_SCENE_MUSIC_N_0" value="-1" />
+    <int name="SDATA_FWD_SCENE_MUSIC_N_1" value="-1" />
+    <int name="SDATA_MINIM_GROUP1_ITEM1" value="104" />
+    <int name="SDATA_MINIM_GROUP1_ITEM2" value="107" />
+    <int name="SDATA_EDGE_GESTURE_RIGHT_SIZE" value="2" />
+    <int name="SDATA_APP_WIDGET_ROWS" value="5" />
+    <int name="SDATA_AP_TIME_CHECK_OPEN_JIANGE" value="15" />
+    <string name="SDATA_MINIM_CAR_INFO_USE_ITEMS">[1900][1003][1902][1906][1002][1004][1904][1907][1005][1006][1007][1010][1903][1905][1911][1908][1909][1910][1008][1009][1011][1012][1013][1014][1015][1016][1101][1102]</string>
+    <boolean name="SDATA_SHU_ITEM_USE_THREE" value="true" />
+    <int name="SDATA_EDGE_GESTURE_BOTTOM_SIZE" value="2" />
+    <int name="SDATA_BYD_LIGHT_USE_TYPE" value="1" />
+    <string name="SDATA_MUSIC_QUCIK_CHANGE_CLASS3"></string>
+    <boolean name="SDATA_MUSIC_LRC_USE_DUDU" value="false" />
+    <string name="SDATA_WIDGET_HZH_APP2">com.vivi.vivimusic</string>
+    <int name="SDATA_LAUNCHER_SHU_ITEM_SORT_999" value="999" />
+    <string name="SDATA_WIDGET_HZH_APP3">com.zjinnova.zlink</string>
+    <string name="SDATA_ITEM_APP3_CLASS">1:com.fvision.camera</string>
+    <int name="SDATA_SHARE_SCREEN_SCALE_TYPE" value="2" />
+    <boolean name="SDATA_LAUNCHER_PROMPT_SHOW_NIO" value="true" />
+    <boolean name="SDATA_DUDUNAV_NAV_END_SEARCH_PARK" value="false" />
+    <boolean name="SDATA_LAUNCHER_SHU_ITEM_OPEN_999" value="true" />
+    <string name="SDATA_LOCATION_NOTICE_FILTER"></string>
+    <string name="SDATA_MUSIC_QUCIK_CHANGE_CLASS1"></string>
+    <string name="SDATA_MUSIC_QUCIK_CHANGE_CLASS2"></string>
+    <boolean name="SDATA_LAUNCHER_PROMPT_SHOW_DVR" value="true" />
+    <string name="SDATA_CAR3D_NUM_TXT">DUDUAUTO</string>
+    <int name="SDATA_EDGE_GESTURE_BOTTOM_SHORT" value="4" />
+    <boolean name="SDATA_USE_NOTICE_POPUP" value="true" />
+    <boolean name="ZDATA_TISHI_NIO_AUTO_CONNECT" value="true" />
+    <boolean name="SDATA_NEIZHI_CHANGE_THEME" value="false" />
+    <string name="SDATA_MUSIC_LRC_LOCAL_PATH"></string>
+    <string name="SDATA_MINIM_PIP1_CLAZZ">com.vivi.vivimusic</string>
+    <int name="SDATA_EDGE_GESTURE_BOTTOM_SIZE2" value="2" />
+    <int name="SDATA_LAUNCHER_SHU_ITEM_SORT_16" value="16" />
+    <int name="SDATA_LAUNCHER_SHU_ITEM_SORT_15" value="15" />
+    <int name="SDATA_EDGE_GESTURE_BOTTOM_SHORT3" value="0" />
+    <int name="SDATA_LAUNCHER_SHU_ITEM_SORT_13" value="0" />
+    <int name="SDATA_STATEBAR_TIME_SHOW_MODE" value="0" />
+    <int name="SDATA_EDGE_GESTURE_BOTTOM_SHORT2" value="0" />
+    <int name="SDATA_LAUNCHER_SHU_ITEM_SORT_11" value="11" />
+    <int name="SDATA_LAUNCHER_SHU_ITEM_SORT_10" value="10" />
+    <string name="SDATA_HUD_NAME">Not Selected</string>
+    <boolean name="SDATA_DOCK_OPEN_FFT" value="false" />
+    <int name="SDATA_EDGE_GESTURE_RIGHT_SHORT3" value="0" />
+    <int name="SDATA_NAV_TYPE" value="1" />
+    <boolean name="SDATA_MINIM_HOME_HIDE_ITEM" value="true" />
+    <string name="SDATA_CENTER_DATE_FROMAT"></string>
+    <boolean name="SDATA_SHOW_MUSIC_QUICK_BUTTON" value="false" />
+    <int name="SDATA_INCAR_CONTROLLER" value="0" />
+    <boolean name="SDATA_AP_TIME_CHECK_OPEN" value="false" />
+    <boolean name="SDATA_LAUNCHER_PROMPT_SHOW_FK" value="true" />
+    <boolean name="SDATA_DUDU_AMAP_LEFT_SHOW_CAMERA" value="false" />
+    <boolean name="SDATA_USE_MY_PHONE" value="true" />
+    <boolean name="SDATA_LAUNCHER_PROMPT_SHOW_OBD_YL_VIEW" value="false" />
+    <boolean name="SDATA_LAUNCHER_DLAYOUT_USE_MINI" value="true" />
+    <string name="SDATA_APP_SKIN_DAY2">com.wow.carlauncher.theme</string>
+    <boolean name="SDATA_WIDGET_NAV_SHOW_OBD" value="true" />
+    <int name="SDATA_EDGE_GESTURE_RIGHT_SHORT2" value="0" />
+    <int name="SDATA_TAIYA_UNIT" value="1" />
+    <boolean name="SDATA_HUD_CLB_BLE2_SHOW_LRC" value="false" />
+    <int name="SDATA_LOCATION_DELAY_TIME" value="5" />
+    <boolean name="SDATA_ITEM_MUSIC_CAN_SWITCH_LRC" value="false" />
+    <int name="SDATA_LAUNCHER_MODEL" value="1" />
+    <boolean name="SDATA_NEIZHI_RESTART_APP" value="true" />
+    <boolean name="SDATA_PROMPT_USE_TIME_REPLACE_HEAD" value="true" />
+    <boolean name="SDATA_NEIZHI_FK" value="false" />
+    <boolean name="SDATA_DUDU_AMAP_SET_BMSF" value="true" />
+    <boolean name="SDATA_LS_SYNC_CAR_INFO_TO_MOBILE" value="false" />
+    <int name="SDATA_HUD_CLB_BLE1_TYPE" value="0" />
+    <boolean name="SDATA_BYD_TURN_LIGHT_POPUP" value="false" />
+    <boolean name="SDATA_7870_CHANGE_JI_AN" value="false" />
+    <string name="SDATA_FANGKONG_ADDRESS"></string>
+    <boolean name="SDATA_PAPER_VIDEO_AUTO_GO_NEXT" value="false" />
+    <boolean name="SDATA_NEIZHI_FWD" value="false" />
+    <boolean name="SDATA_LAUNCHER_PROMPT_SHOW_BT_GPS_VIEW" value="true" />
+    <int name="SDATA_DUDU_AMAP_CAR_HEAD" value="1" />
+    <boolean name="SDATA_BYD_DUDU_DN_SYN_TO_AUTO" value="false" />
+    <boolean name="SDATA_DUDU_AMAP_AUTO_XUNHANG" value="true" />
+    <int name="SDATA_HUD_CLB_BLE2_CLOSE_SCREEN" value="20" />
+    <int name="SDATA_BAIDIAN_POPUP_CLICK" value="0" />
+    <int name="SDATA_LAUNCHER_LAYOUT2_SCALE" value="180" />
+    <string name="SDATA_HIDE_APPS">[dje073.android.audiorecorder];[com.nwd.usb2cvbs];[com.nwd.radio];[com.nwd.guidebookskin];[com.nwd.android.video.ui];[com.nwd.android.music.ui];[com.android.settings];[com.android.launcher];[com.android.car.setting];</string>
+    <string name="SDATA_BYD_SEND_SPEAK2"></string>
+    <string name="SDATA_BYD_SEND_SPEAK1"></string>
+    <boolean name="SDATA_MINIM_ITEM_SHOW" value="true" />
+    <boolean name="SDATA_LAUNCHER_OPEN_CHECK_UPDATE" value="true" />
+    <boolean name="SDATA_HICAR_SHOW_ICON" value="true" />
+    <string name="SDATA_BYD_SEND_SPEAK4"></string>
+    <string name="SDATA_BYD_SEND_SPEAK3"></string>
+    <boolean name="SDATA_DUDU_AMAP_CRUISE_MUTE" value="false" />
+    <boolean name="SDATA_ITEM_ENERGY_FLOW_ANIM_USE_IMG" value="false" />
+    <string name="LOGIN_USER_INFO">{&quot;canUseNio&quot;:1,&quot;developer&quot;:0,&quot;hasHld&quot;:1,&quot;internalTesters&quot;:0,&quot;isChannelBind&quot;:0,&quot;memberNumber&quot;:8720322,&quot;nickname&quot;:&quot;Silvio Suljic&quot;,&quot;remark&quot;:&quot;Silvio &quot;,&quot;token&quot;:&quot;5f176bd2cec4488091951beca1a011e3ce6c383166b240479d&quot;,&quot;userId&quot;:539002,&quot;userPic&quot;:&quot;https://thirdwx.qlogo.cn/mmopen/vi_32/DYAIOgq83epGicQicRumdT9E5p4k8zA5oz5GdQickEozpuE9jY4vKIMzQW9qzeibFGvg3E9svbzF5zISsCZyF9o3lwpNBdWMdBibUX7M4zY0zCCh75Ff4cMl7VA/132&quot;,&quot;vipExpireTime&quot;:21078,&quot;vipType&quot;:1}</string>
+    <boolean name="SDATA_DUDU_AMAP_SET_DBYD" value="true" />
+    <string name="SDATA_UN_BYD_CAR_CONTROL"></string>
+    <int name="SDATA_BAIDIAN_POPUP_ALPHA" value="6" />
+    <boolean name="SDATA_OPEN_SYSTEM_LAUNCHER" value="false" />
+    <boolean name="SDATA_NEIZHI_DOWNLOAD" value="false" />
+    <int name="SDATA_HUD_CONTROLLER" value="0" />
+    <int name="SDATA_DOCK_ICON_NUM" value="7" />
+    <long name="ZDATA_LAUNCHER_LAST_CHECK_UPDATE_TIME" value="1792879199000" />
+    <string name="SDATA_FK_STUDY_OPEN_APP3"></string>
+    <int name="SDATA_EDGE_GESTURE_LEFT_LONG2" value="0" />
+    <string name="SDATA_FK_STUDY_OPEN_APP2"></string>
+    <int name="SDATA_EDGE_GESTURE_LEFT_LONG3" value="0" />
+    <boolean name="SDATA_SYN_SET_ANDROID_DN" value="false" />
+    <int name="SDATA_TY_CONTROLLER" value="0" />
+    <int name="SDATA_STATE_BAR_DOCK_NUM" value="4" />
+    <string name="SDATA_FK_STUDY_OPEN_APP4"></string>
+    <boolean name="SDATA_MINIM_USE_SKIN_PAPER" value="false" />
+    <boolean name="SDATA_MINIM_USE_MAX_PROMPT" value="false" />
+    <string name="SDATA_FK_STUDY_OPEN_APP1"></string>
+    <int name="SDATA_HUD_YJ_BLE1_LIGHT" value="1" />
+    <int name="SDATA_HUD_DJ_BLE_ENGINE_INFO" value="0" />
+    <int name="SDATA_FWD_SCENE_DEFAULT_0" value="-1" />
+    <int name="SDATA_FWD_SCENE_DEFAULT_1" value="-1" />
+    <int name="SDATA_FWD_SCENE_DEFAULT_2" value="3" />
+    <int name="SDATA_FWD_SCENE_DEFAULT_3" value="-103" />
+    <int name="SDATA_DAY_NIGHT_DENGGUANG_DELAY_TIME" value="10" />
+    <boolean name="SDATA_LAUNCHER_PROMPT_SHOW_WIFI" value="true" />
+    <boolean name="SDATA_LOAD_OPEN_BLE" value="true" />
+    <int name="SDATA_WIDGET_PAPER_CHANGE_TIME" value="60" />
+    <boolean name="SDATA_WIDGET_PAPER_AUTO_CHANGE" value="true" />
+    <boolean name="SDATA_MINIM_USE_CAR3D" value="false" />
+    <int name="SDATA_LOCATION_SPEED1_QUJIAN" value="0" />
+    <boolean name="SDATA_NEIZHI_USER_PERSION" value="false" />
+    <boolean name="SDATA_LAUNCHER_ITEM_OPEN_10" value="false" />
+    <boolean name="SDATA_LAUNCHER_ITEM_OPEN_11" value="true" />
+    <string name="SDATA_SUPER_CONSOLE_OPENAPP2"></string>
+    <string name="SDATA_SUPER_CONSOLE_OPENAPP1"></string>
+    <int name="SDATA_HUD_CLB_BLE1_LIGHT" value="0" />
+    <int name="SDATA_DAY_NIGHT_CHANGE_MODEL" value="6" />
+    <string name="SDATA_DRIVER_APP_CLAZZ">com.wow.carlauncher.driver.ls.jj</string>
+    <string name="SDATA_ITEM_APP8_CLASS">1:com.nwd.audioset</string>
+    <boolean name="SDATA_LAUNCHER_ITEM_OPEN_13" value="true" />
+    <boolean name="SDATA_SUPER_CONSOLE_USE" value="false" />
+    <boolean name="SDATA_LAUNCHER_ITEM_OPEN_15" value="false" />
+    <string name="SDATA_HUD_ADDRESS"></string>
+    <boolean name="SDATA_LAUNCHER_ITEM_OPEN_16" value="false" />
+    <int name="SDATA_EDGE_GESTURE_BOTTOM_LONG3" value="0" />
+    <int name="SDATA_EDGE_GESTURE_BOTTOM_LONG2" value="0" />
+    <boolean name="SDATA_LAUNCHER_PROMPT_SHOW_WEATHER_VIEW" value="false" />
+    <int name="SDATA_APP_WIDGET_COLUMNS" value="6" />
+    <int name="SDATA_DAIYU_MINIM_FIX_MODE" value="1" />
+    <string name="SDATA_DOCK5_CLASS">1:io.homeassistant.companion.android</string>
+    <string name="SDATA_BYD_CAR_CONTROL_USE_MINIM"></string>
+    <boolean name="SDATA_PAPER_USE_PENDANT" value="true" />
+    <int name="SDATA_DUDU_AMAP_TILT" value="60" />
+    <boolean name="SDATA_HICAR_SHOW_MEDIA" value="true" />
+    <boolean name="SDATA_CAR3D_USE_PENDANT" value="false" />
+    <boolean name="SDATA_LAUNCHER_WIDGET_USE_NEW_MODEL" value="false" />
+    <int name="SDATA_BAIDIAN_POPUP_Y" value="0" />
+    <int name="SDATA_ITEM_MUSIC_DEFAULT_TYPE" value="2" />
+    <string name="SDATA_FK2_ADDRESS"></string>
+    <int name="SDATA_BAIDIAN_POPUP_X" value="0" />
+    <string name="SDATA_DUDUTTS_CLAZZ"></string>
+    <string name="SDATA_DOCK4_CLASS">1:com.wstxda.viper4android</string>
+    <int name="SDATA_BYD_MUSIC_SEND_ICON" value="11" />
+    <int name="SDATA_WIDGET_MUSIC_LRC_SIZE" value="0" />
+    <int name="SDATA_USE_SCREEN_CORNER_BOTTOM" value="30" />
+    <boolean name="SDATA_FILE_MANAGE" value="true" />
+    <boolean name="SDATA_MINIM_ITEM_BG_USE_GS" value="false" />
+    <int name="SDATA_FWD_SCENEOPEN_DOOR_N_0" value="-1" />
+    <boolean name="SDATA_NEIZHI_STORE" value="true" />
+    <int name="SDATA_FWD_SCENEOPEN_DOOR_N_2" value="-1" />
+    <int name="SDATA_FWD_SCENEOPEN_DOOR_N_1" value="-1" />
+    <int name="SDATA_ITEM_MINI_APPS_NUM" value="2" />
+    <int name="SDATA_FWD_SCENEOPEN_DOOR_N_3" value="-1" />
+    <boolean name="SDATA_LAUNCHER_PROMPT_SHOW_INCAR" value="true" />
+    <boolean name="SDATA_OBD_READ_VOLTAGE" value="true" />
+    <boolean name="SDATA_OBD_QUICK_MODEL" value="false" />
+    <int name="SDATA_CHANGE_SKIN_LIANGDU" value="534" />
+    <boolean name="SDATA_CHANGE_SKIN_LIANGDU_FANZHUAN" value="false" />
+    <boolean name="SDATA_REVERSE_WARNING_DELAY" value="false" />
+    <int name="SDATA_FWD_SCENE_OVERSPEED_N_2" value="-1" />
+    <int name="SDATA_FWD_SCENE_OVERSPEED_N_3" value="-1" />
+    <int name="SDATA_FWD_SCENE_OVERSPEED_N_0" value="-1" />
+    <boolean name="SDATA_LAUNCHER_ITEM_OPEN_8" value="true" />
+    <int name="SDATA_FWD_SCENE_OVERSPEED_N_1" value="-1" />
+    <boolean name="SDATA_LAUNCHER_ITEM_OPEN_7" value="false" />
+    <boolean name="SDATA_LAUNCHER_ITEM_OPEN_6" value="false" />
+    <boolean name="SDATA_LAUNCHER_ITEM_OPEN_5" value="true" />
+    <string name="SDATA_AMAP_CLAZZ_NAME">com.vialsoft.radarbot_free</string>
+    <boolean name="SDATA_LAUNCHER_ITEM_OPEN_4" value="false" />
+    <boolean name="SDATA_LAUNCHER_ITEM_OPEN_3" value="false" />
+    <boolean name="SDATA_LAUNCHER_ITEM_OPEN_2" value="true" />
+    <boolean name="SDATA_LAUNCHER_ITEM_OPEN_1" value="false" />
+    <boolean name="SDATA_LOCATION_DELAY_LOADED" value="false" />
+    <boolean name="SDATA_NEIZHI_DRIVING" value="true" />
+    <float name="SDATA_TY_WARN_NUM_MIN" value="2.4" />
+    <int name="SDATA_EDGE_GESTURE_LEFT_SHORT3" value="0" />
+    <boolean name="SDATA_NEIZHI_HUD_STYLE" value="false" />
+    <int name="SDATA_EDGE_GESTURE_LEFT_SHORT2" value="0" />
+    <boolean name="SDATA_SUPER_CONSOLE_LAUNCHER_USE" value="true" />
+    <boolean name="SDATA_LAUNCHER_PROMPT_SHOW_AP_VIEW" value="true" />
+    <int name="SDATA_WIDGET_CAR3D_ITEM_OPACITY" value="10" />
+    <string name="SDATA_FK_STUDY_OPEN_APP2_NAME"></string>
+    <boolean name="SDATA_FWD_USE_DN_MODE" value="false" />
+    <int name="SDATA_TOP_TIME_OPEN_TYPE" value="1" />
+    <string name="SDATA_OBD_ADDRESS">81:23:45:67:89:BA</string>
+    <boolean name="SDATA_CHECK_PIP" value="true" />
+    <boolean name="SDATA_LAUNCHER_PROMPT_SHOW_FWD" value="true" />
+    <int name="SDATA_EDGE_GESTURE_LEFT_SIZE2" value="2" />
+    <int name="SDATA_LAUNCHER_DAIYU_LEFT_TO_RIGHT" value="1" />
+    <int name="SDATA_BYD_AC_POPUP_CLOSE_TIMEOUT" value="0" />
+    <boolean name="SDATA_OBD_CHECK_ERROR_CODE" value="false" />
+    <int name="SDATA_TP_LB" value="1" />
+    <int name="SDATA_EDGE_GESTURE_LEFT_SHORT" value="4" />
+    <boolean name="SDATA_NEIZHI_VOICE_SELECT" value="false" />
+    <int name="SDATA_TP_LF" value="0" />
+    <string name="SDATA_WIFI_TIME_CHECK_SSID"></string>
+    <boolean name="SDATA_ITEM_BYD_ENERGY_RIGHT_TO_LEFT" value="false" />
+    <string name="SDATA_WIDGET_CAR_NUM">J78-K-684</string>
+    <boolean name="SDATA_QUICK_PANEL_DOCK_ICON_USE_SKIN" value="false" />
+    <int name="SDATA_LAUNCHER_ITEM_SORT_11" value="4" />
+    <boolean name="SDATA_FULL_HIDE_NAVBAR" value="false" />
+    <int name="SDATA_LAUNCHER_ITEM_SORT_10" value="11" />
+    <boolean name="SDATA_DUDU_AMAP_SET_GSYX" value="true" />
+    <int name="SDATA_LAUNCHER_ITEM_SORT_15" value="12" />
+    <int name="SDATA_ITEM_APPS_NUM" value="2" />
+    <int name="SDATA_LAUNCHER_ITEM_SORT_16" value="13" />
+    <int name="SDATA_LAUNCHER_ITEM_SORT_13" value="1" />
+    <int name="SDATA_SPEED_UNIT" value="1" />
+    <string name="SDATA_TARY_ITEM_SORT">{&quot;101&quot;:0,&quot;102&quot;:6,&quot;902&quot;:8,&quot;103&quot;:1,&quot;903&quot;:19,&quot;104&quot;:2,&quot;905&quot;:9,&quot;201&quot;:12,&quot;106&quot;:3,&quot;906&quot;:10,&quot;202&quot;:14,&quot;107&quot;:4,&quot;203&quot;:17,&quot;108&quot;:5,&quot;908&quot;:7,&quot;204&quot;:15,&quot;205&quot;:11,&quot;909&quot;:20,&quot;206&quot;:18,&quot;208&quot;:16,&quot;209&quot;:13}</string>
+    <int name="SDATA_LOCATION_SPEED1" value="13" />
+    <int name="SDATA_LOCATION_SPEED2" value="13" />
+    <boolean name="SDATA_BYD_AC_POPUP_MSG_SHOW" value="true" />
+    <boolean name="SDATA_LAUNCHER_PROMPT_SHOW_TY" value="true" />
+    <float name="SDATA_OBD_DIANYA_JZ" value="0.0" />
+    <int name="SDATA_LOCATION_SPEED3" value="13" />
+    <boolean name="SDATA_NEIZHI_CAR_METER" value="true" />
+    <int name="SDATA_STATEBAR_STYLE" value="1" />
+    <int name="SDATA_LAUNCHER_LOOP_WIDGET_SORT_6" value="6" />
+    <int name="SDATA_LAUNCHER_LOOP_WIDGET_SORT_4" value="4" />
+    <int name="SDATA_FIXED_TIME_START" value="0" />
+    <int name="SDATA_LED_LIGHT_DAY" value="15" />
+    <int name="SDATA_NOTICE_POPUP_LOCATION" value="1" />
+    <string name="SDATA_WIDGET_HZH_DEFAULT_APP">com.vialsoft.radarbot_free</string>
+    <boolean name="SDATA_LAUNCHER_SHOW_DOCK" value="false" />
+    <int name="SDATA_FWD_SCENE_OVERSPEED_1" value="-1" />
+    <int name="SDATA_FWD_SCENE_OVERSPEED_2" value="-1" />
+    <int name="SDATA_FWD_SCENE_OVERSPEED_3" value="-106" />
+    <boolean name="SDATA_NEIZHI_ITEMSHOW" value="false" />
+    <boolean name="SDATA_ADAS_USE_CAR_DIS" value="true" />
+    <int name="SDATA_FWD_SCENE_OVERSPEED_0" value="-1" />
+    <int name="SDATA_LAUNCHER_LOOP_WIDGET_SORT_2" value="2" />
+    <int name="SDATA_LAUNCHER_LOOP_WIDGET_SORT_3" value="3" />
+    <int name="SDATA_LAUNCHER_LOOP_WIDGET_SORT_0" value="0" />
+    <int name="SDATA_LAUNCHER_LOOP_WIDGET_SORT_1" value="1" />
+    <int name="SDATA_WIFI_TIME_CHECK_TYPE" value="2" />
+    <int name="SDATA_CAR3D_KJC" value="4" />
+    <boolean name="SDATA_STATEBAR_ANDROID_USE_360" value="false" />
+    <boolean name="SDATA_LAUNCHER_LAYOUT_DAIYU_FANGDA" value="true" />
+    <boolean name="SDATA_LAUNCHER_PROMPT_SHOW_SJ" value="true" />
+    <boolean name="SDATA_WIDGET_DUDUMAP_NAV_AUTO_ZOOM" value="false" />
+    <boolean name="SDATA_SYS_NAV_FOLLOW" value="true" />
+    <boolean name="SDATA_NEIZHI_AC_POPUP" value="false" />
+    <int name="SDATA_OBD_CONTROLLER" value="0" />
+    <string name="SDATA_WIFI_TIME_CHECK_PASSWORD"></string>
+    <string name="SDATA_FK2_STUDY_OPEN_APP1_NAME"></string>
+    <boolean name="SDATA_OPEN_LS_DVR" value="false" />
+    <int name="SDATA_FANGKONG_CONTROLLER" value="0" />
+    <int name="SDATA_HUD_DJ_BLE_SPEED" value="-1" />
+    <int name="SDATA_HUD_CLB_BLE2_SPEED1_QUJIAN" value="30" />
+    <int name="SDATA_LAUNCHER_ITEM_SORT_999" value="14" />
+    <boolean name="SDATA_OBD_YJ_NET_HAVE_TP" value="false" />
+    <boolean name="ZDATA_APP_FRIST_OPEN" value="false" />
+</map>

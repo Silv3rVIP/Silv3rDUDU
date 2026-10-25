@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_audio_effect_bg" android:background="@mipmap/yinchang_bg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/framelayout_all_seekbarview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/ll_audio_effect" android:layout_centerHorizontal="true">
+        <com.nwd.audioset.view.nwdview.SeekBarView android:id="@id/eq_0" android:layout_width="@dimen/audio_setting_common_item_width" android:layout_height="wrap_content">
+            <include android:id="@id/seekb_0" layout="@layout/layout_common_seekbar_vertical_view" />
+        </com.nwd.audioset.view.nwdview.SeekBarView>
+        <com.nwd.audioset.view.nwdview.SeekBarView android:id="@id/eq_1" android:layout_width="@dimen/audio_setting_common_item_width" android:layout_height="wrap_content">
+            <include android:id="@id/seekb_1" layout="@layout/layout_common_seekbar_vertical_view" />
+        </com.nwd.audioset.view.nwdview.SeekBarView>
+        <com.nwd.audioset.view.nwdview.SeekBarView android:id="@id/eq_2" android:layout_width="@dimen/audio_setting_common_item_width" android:layout_height="wrap_content">
+            <include android:id="@id/seekb_2" layout="@layout/layout_common_seekbar_vertical_view" />
+        </com.nwd.audioset.view.nwdview.SeekBarView>
+        <com.nwd.audioset.view.nwdview.SeekBarView android:id="@id/eq_3" android:layout_width="@dimen/audio_setting_common_item_width" android:layout_height="wrap_content">
+            <include android:id="@id/seekb_3" layout="@layout/layout_common_seekbar_vertical_view" />
+        </com.nwd.audioset.view.nwdview.SeekBarView>
+        <com.nwd.audioset.view.nwdview.SeekBarView android:id="@id/eq_4" android:layout_width="@dimen/audio_setting_common_item_width" android:layout_height="wrap_content">
+            <include android:id="@id/seekb_4" layout="@layout/layout_common_seekbar_vertical_view" />
+        </com.nwd.audioset.view.nwdview.SeekBarView>
+        <com.nwd.audioset.view.nwdview.SeekBarView android:id="@id/eq_5" android:layout_width="@dimen/audio_setting_common_item_width" android:layout_height="wrap_content">
+            <include android:id="@id/seekb_5" layout="@layout/layout_common_seekbar_vertical_view" />
+        </com.nwd.audioset.view.nwdview.SeekBarView>
+        <com.nwd.audioset.view.nwdview.SeekBarView android:id="@id/eq_6" android:layout_width="@dimen/audio_setting_common_item_width" android:layout_height="wrap_content">
+            <include android:id="@id/seekb_6" layout="@layout/layout_common_seekbar_vertical_view" />
+        </com.nwd.audioset.view.nwdview.SeekBarView>
+        <com.nwd.audioset.view.nwdview.SeekBarView android:id="@id/eq_7" android:layout_width="@dimen/audio_setting_common_item_width" android:layout_height="wrap_content">
+            <include android:id="@id/seekb_7" layout="@layout/layout_common_seekbar_vertical_view" />
+        </com.nwd.audioset.view.nwdview.SeekBarView>
+        <com.nwd.audioset.view.nwdview.SeekBarView android:id="@id/eq_8" android:layout_width="@dimen/audio_setting_common_item_width" android:layout_height="wrap_content">
+            <include android:id="@id/seekb_8" layout="@layout/layout_common_seekbar_vertical_view" />
+        </com.nwd.audioset.view.nwdview.SeekBarView>
+        <com.nwd.audioset.view.nwdview.SeekBarView android:id="@id/eq_9" android:layout_width="@dimen/audio_setting_common_item_width" android:layout_height="wrap_content">
+            <include android:id="@id/seekb_9" layout="@layout/layout_common_seekbar_vertical_view" />
+        </com.nwd.audioset.view.nwdview.SeekBarView>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/ll_audio_effect" android:layout_width="match_parent" android:layout_height="@dimen/audio_effect_height" android:layout_marginTop="@dimen/audio_effect_margin_top" android:layout_marginBottom="@dimen/dp_38">
+        <LinearLayout android:gravity="right|center" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageButton android:gravity="center" android:id="@id/iv_audio_effect_pre" android:background="@drawable/btn_audio_effect_pre_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="3.0">
+            <TextView android:id="@id/tv_audio_effect_type" android:background="@mipmap/bg_tv_audio_effect_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.0dp" style="@style/textview_common_eq_vertical_setting" />
+        </LinearLayout>
+        <LinearLayout android:gravity="left|center" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageButton android:gravity="center" android:id="@id/iv_audio_effect_next" android:background="@drawable/btn_audio_effect_next_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/sp_20" android:textColor="#ffc6c6c6" android:id="@id/tv_loudness" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/idengxiang" android:layout_above="@id/bt_audio_effect_loudness" android:layout_centerHorizontal="true" />
+            <ImageButton android:id="@id/bt_audio_effect_loudness" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_audio_loudness_selector" android:layout_above="@id/bt_audio_effect_default" android:layout_centerHorizontal="true" style="@style/textview_audio_effect_type" />
+        </LinearLayout>
+        <Button android:textSize="@dimen/sp_20" android:id="@id/bt_audio_effect_default" android:background="@drawable/btn_audio_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_38" android:text="@string/huifumoren" style="@style/textview_audio_effect_type" />
+    </LinearLayout>
+</LinearLayout>

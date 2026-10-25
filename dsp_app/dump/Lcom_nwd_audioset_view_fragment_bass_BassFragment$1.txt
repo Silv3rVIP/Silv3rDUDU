@@ -1,0 +1,90 @@
+  Class descriptor  : 'Lcom/nwd/audioset/view/fragment/bass/BassFragment$1;'
+  Access flags      : 0x0000 ()
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+    #0              : 'Ljava/lang/Runnable;'
+  Static fields     -
+  Instance fields   -
+    #0              : (in Lcom/nwd/audioset/view/fragment/bass/BassFragment$1;)
+      name          : 'this$0'
+      type          : 'Lcom/nwd/audioset/view/fragment/bass/BassFragment;'
+      access        : 0x1010 (FINAL SYNTHETIC)
+  Direct methods    -
+    #0              : (in Lcom/nwd/audioset/view/fragment/bass/BassFragment$1;)
+      name          : '<init>'
+      type          : '(Lcom/nwd/audioset/view/fragment/bass/BassFragment;)V'
+      access        : 0x10000 (CONSTRUCTOR)
+      code          -
+      registers     : 2
+      ins           : 2
+      outs          : 1
+      insns size    : 6 16-bit code units
+2e5c14:                                        |[2e5c14] com.nwd.audioset.view.fragment.bass.BassFragment$1.<init>:(Lcom/nwd/audioset/view/fragment/bass/BassFragment;)V
+2e5c24: 5b01 e978                              |0000: iput-object v1, v0, Lcom/nwd/audioset/view/fragment/bass/BassFragment$1;.this$0:Lcom/nwd/audioset/view/fragment/bass/BassFragment; // field@78e9
+2e5c28: 7010 df8d 0000                         |0002: invoke-direct {v0}, Ljava/lang/Object;.<init>:()V // method@8ddf
+2e5c2e: 0e00                                   |0005: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=231
+      locals        :
+        0x0000 - 0x0006 reg=0 this Lcom/nwd/audioset/view/fragment/bass/BassFragment$1;
+        0x0000 - 0x0006 reg=1 (null) Lcom/nwd/audioset/view/fragment/bass/BassFragment;
+
+  Virtual methods   -
+    #0              : (in Lcom/nwd/audioset/view/fragment/bass/BassFragment$1;)
+      name          : 'run'
+      type          : '()V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 5
+      ins           : 1
+      outs          : 3
+      insns size    : 66 16-bit code units
+2e5c30:                                        |[2e5c30] com.nwd.audioset.view.fragment.bass.BassFragment$1.run:()V
+2e5c40: 5440 e978                              |0000: iget-object v0, v4, Lcom/nwd/audioset/view/fragment/bass/BassFragment$1;.this$0:Lcom/nwd/audioset/view/fragment/bass/BassFragment; // field@78e9
+2e5c44: 7110 6e81 0000                         |0002: invoke-static {v0}, Lcom/nwd/audioset/view/fragment/bass/BassFragment;.access$000:(Lcom/nwd/audioset/view/fragment/bass/BassFragment;)V // method@816e
+2e5c4a: 5440 e978                              |0005: iget-object v0, v4, Lcom/nwd/audioset/view/fragment/bass/BassFragment$1;.this$0:Lcom/nwd/audioset/view/fragment/bass/BassFragment; // field@78e9
+2e5c4e: 7110 6f81 0000                         |0007: invoke-static {v0}, Lcom/nwd/audioset/view/fragment/bass/BassFragment;.access$100:(Lcom/nwd/audioset/view/fragment/bass/BassFragment;)V // method@816f
+2e5c54: 5440 e978                              |000a: iget-object v0, v4, Lcom/nwd/audioset/view/fragment/bass/BassFragment$1;.this$0:Lcom/nwd/audioset/view/fragment/bass/BassFragment; // field@78e9
+2e5c58: 7110 7081 0000                         |000c: invoke-static {v0}, Lcom/nwd/audioset/view/fragment/bass/BassFragment;.access$200:(Lcom/nwd/audioset/view/fragment/bass/BassFragment;)V // method@8170
+2e5c5e: 7100 7d85 0000                         |000f: invoke-static {}, Lcom/nwd/dsp/uitls/DspManager;.getInstance:()Lcom/nwd/dsp/uitls/DspManager; // method@857d
+2e5c64: 0c00                                   |0012: move-result-object v0
+2e5c66: 6e10 9c85 0000                         |0013: invoke-virtual {v0}, Lcom/nwd/dsp/uitls/DspManager;.getPf_area:()I // method@859c
+2e5c6c: 0a00                                   |0016: move-result v0
+2e5c6e: 5441 e978                              |0017: iget-object v1, v4, Lcom/nwd/audioset/view/fragment/bass/BassFragment$1;.this$0:Lcom/nwd/audioset/view/fragment/bass/BassFragment; // field@78e9
+2e5c72: 7110 7181 0100                         |0019: invoke-static {v1}, Lcom/nwd/audioset/view/fragment/bass/BassFragment;.access$300:(Lcom/nwd/audioset/view/fragment/bass/BassFragment;)Lcom/nwd/audioset/view/nwdview/DoubleSeekbar; // method@8171
+2e5c78: 0c01                                   |001c: move-result-object v1
+2e5c7a: 7110 0885 0000                         |001d: invoke-static {v0}, Lcom/nwd/dsp/uitls/AppUtil;.areaHFValue:(I)I // method@8508
+2e5c80: 0a02                                   |0020: move-result v2
+2e5c82: 7110 0a85 0000                         |0021: invoke-static {v0}, Lcom/nwd/dsp/uitls/AppUtil;.areaLFValue:(I)I // method@850a
+2e5c88: 0a03                                   |0024: move-result v3
+2e5c8a: 6e30 1c83 2103                         |0025: invoke-virtual {v1, v2, v3}, Lcom/nwd/audioset/view/nwdview/DoubleSeekbar;.setData:(II)V // method@831c
+2e5c90: 1501 f841                              |0028: const/high16 v1, #int 1106771968 // #41f8
+2e5c94: 1202                                   |002a: const/4 v2, #int 0 // #0
+2e5c96: 1233                                   |002b: const/4 v3, #int 3 // #3
+2e5c98: 3330 0c00                              |002c: if-ne v0, v3, 0038 // +000c
+2e5c9c: 5440 e978                              |002e: iget-object v0, v4, Lcom/nwd/audioset/view/fragment/bass/BassFragment$1;.this$0:Lcom/nwd/audioset/view/fragment/bass/BassFragment; // field@78e9
+2e5ca0: 7110 7181 0000                         |0030: invoke-static {v0}, Lcom/nwd/audioset/view/fragment/bass/BassFragment;.access$300:(Lcom/nwd/audioset/view/fragment/bass/BassFragment;)Lcom/nwd/audioset/view/nwdview/DoubleSeekbar; // method@8171
+2e5ca6: 0c00                                   |0033: move-result-object v0
+2e5ca8: 6e30 1d83 2001                         |0034: invoke-virtual {v0, v2, v1}, Lcom/nwd/audioset/view/nwdview/DoubleSeekbar;.setMaxValue:(FF)V // method@831d
+2e5cae: 280a                                   |0037: goto 0041 // +000a
+2e5cb0: 5440 e978                              |0038: iget-object v0, v4, Lcom/nwd/audioset/view/fragment/bass/BassFragment$1;.this$0:Lcom/nwd/audioset/view/fragment/bass/BassFragment; // field@78e9
+2e5cb4: 7110 7181 0000                         |003a: invoke-static {v0}, Lcom/nwd/audioset/view/fragment/bass/BassFragment;.access$300:(Lcom/nwd/audioset/view/fragment/bass/BassFragment;)Lcom/nwd/audioset/view/nwdview/DoubleSeekbar; // method@8171
+2e5cba: 0c00                                   |003d: move-result-object v0
+2e5cbc: 6e30 1d83 2001                         |003e: invoke-virtual {v0, v2, v1}, Lcom/nwd/audioset/view/nwdview/DoubleSeekbar;.setMaxValue:(FF)V // method@831d
+2e5cc2: 0e00                                   |0041: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=234
+        0x0005 line=235
+        0x000a line=236
+        0x000f line=237
+        0x0017 line=238
+        0x002e line=241
+        0x0038 line=243
+      locals        :
+        0x0000 - 0x0042 reg=4 this Lcom/nwd/audioset/view/fragment/bass/BassFragment$1;
+
+  source_file_idx   : 3548 (BassFragment.java)
+
+Class #2288            -

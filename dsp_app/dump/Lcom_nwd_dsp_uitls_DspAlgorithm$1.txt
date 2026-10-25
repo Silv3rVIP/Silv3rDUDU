@@ -1,0 +1,107 @@
+  Class descriptor  : 'Lcom/nwd/dsp/uitls/DspAlgorithm$1;'
+  Access flags      : 0x1000 (SYNTHETIC)
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+  Static fields     -
+    #0              : (in Lcom/nwd/dsp/uitls/DspAlgorithm$1;)
+      name          : '$SwitchMap$com$nwd$dsp$uitls$DspAlgorithm$BIQUAD_TYPE'
+      type          : '[I'
+      access        : 0x1018 (STATIC FINAL SYNTHETIC)
+  Instance fields   -
+  Direct methods    -
+    #0              : (in Lcom/nwd/dsp/uitls/DspAlgorithm$1;)
+      name          : '<clinit>'
+      type          : '()V'
+      access        : 0x10008 (STATIC CONSTRUCTOR)
+      code          -
+      registers     : 3
+      ins           : 0
+      outs          : 1
+      insns size    : 109 16-bit code units
+3062b8:                                        |[3062b8] com.nwd.dsp.uitls.DspAlgorithm$1.<clinit>:()V
+3062c8: 7100 3d85 0000                         |0000: invoke-static {}, Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;.values:()[Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE; // method@853d
+3062ce: 0c00                                   |0003: move-result-object v0
+3062d0: 2100                                   |0004: array-length v0, v0
+3062d2: 2300 8011                              |0005: new-array v0, v0, [I // type@1180
+3062d6: 6900 757c                              |0007: sput-object v0, Lcom/nwd/dsp/uitls/DspAlgorithm$1;.$SwitchMap$com$nwd$dsp$uitls$DspAlgorithm$BIQUAD_TYPE:[I // field@7c75
+3062da: 6201 787c                              |0009: sget-object v1, Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;.BIQUAD_TYPE_EQ:Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE; // field@7c78
+3062de: 6e10 3b85 0100                         |000b: invoke-virtual {v1}, Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;.ordinal:()I // method@853b
+3062e4: 0a01                                   |000e: move-result v1
+3062e6: 1212                                   |000f: const/4 v2, #int 1 // #1
+3062e8: 4b02 0001                              |0010: aput v2, v0, v1
+3062ec: 6200 757c                              |0012: sget-object v0, Lcom/nwd/dsp/uitls/DspAlgorithm$1;.$SwitchMap$com$nwd$dsp$uitls$DspAlgorithm$BIQUAD_TYPE:[I // field@7c75
+3062f0: 6201 7d7c                              |0014: sget-object v1, Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;.BIQUAD_TYPE_LPF_12DB:Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE; // field@7c7d
+3062f4: 6e10 3b85 0100                         |0016: invoke-virtual {v1}, Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;.ordinal:()I // method@853b
+3062fa: 0a01                                   |0019: move-result v1
+3062fc: 1222                                   |001a: const/4 v2, #int 2 // #2
+3062fe: 4b02 0001                              |001b: aput v2, v0, v1
+306302: 6200 757c                              |001d: sget-object v0, Lcom/nwd/dsp/uitls/DspAlgorithm$1;.$SwitchMap$com$nwd$dsp$uitls$DspAlgorithm$BIQUAD_TYPE:[I // field@7c75
+306306: 6201 7e7c                              |001f: sget-object v1, Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;.BIQUAD_TYPE_LPF_6DB:Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE; // field@7c7e
+30630a: 6e10 3b85 0100                         |0021: invoke-virtual {v1}, Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;.ordinal:()I // method@853b
+306310: 0a01                                   |0024: move-result v1
+306312: 1232                                   |0025: const/4 v2, #int 3 // #3
+306314: 4b02 0001                              |0026: aput v2, v0, v1
+306318: 6200 757c                              |0028: sget-object v0, Lcom/nwd/dsp/uitls/DspAlgorithm$1;.$SwitchMap$com$nwd$dsp$uitls$DspAlgorithm$BIQUAD_TYPE:[I // field@7c75
+30631c: 6201 7a7c                              |002a: sget-object v1, Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;.BIQUAD_TYPE_HPF_12DB:Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE; // field@7c7a
+306320: 6e10 3b85 0100                         |002c: invoke-virtual {v1}, Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;.ordinal:()I // method@853b
+306326: 0a01                                   |002f: move-result v1
+306328: 1242                                   |0030: const/4 v2, #int 4 // #4
+30632a: 4b02 0001                              |0031: aput v2, v0, v1
+30632e: 6200 757c                              |0033: sget-object v0, Lcom/nwd/dsp/uitls/DspAlgorithm$1;.$SwitchMap$com$nwd$dsp$uitls$DspAlgorithm$BIQUAD_TYPE:[I // field@7c75
+306332: 6201 7b7c                              |0035: sget-object v1, Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;.BIQUAD_TYPE_HPF_6DB:Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE; // field@7c7b
+306336: 6e10 3b85 0100                         |0037: invoke-virtual {v1}, Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;.ordinal:()I // method@853b
+30633c: 0a01                                   |003a: move-result v1
+30633e: 1252                                   |003b: const/4 v2, #int 5 // #5
+306340: 4b02 0001                              |003c: aput v2, v0, v1
+306344: 6200 757c                              |003e: sget-object v0, Lcom/nwd/dsp/uitls/DspAlgorithm$1;.$SwitchMap$com$nwd$dsp$uitls$DspAlgorithm$BIQUAD_TYPE:[I // field@7c75
+306348: 6201 777c                              |0040: sget-object v1, Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;.BIQUAD_TYPE_BPF:Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE; // field@7c77
+30634c: 6e10 3b85 0100                         |0042: invoke-virtual {v1}, Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;.ordinal:()I // method@853b
+306352: 0a01                                   |0045: move-result v1
+306354: 1262                                   |0046: const/4 v2, #int 6 // #6
+306356: 4b02 0001                              |0047: aput v2, v0, v1
+30635a: 6200 757c                              |0049: sget-object v0, Lcom/nwd/dsp/uitls/DspAlgorithm$1;.$SwitchMap$com$nwd$dsp$uitls$DspAlgorithm$BIQUAD_TYPE:[I // field@7c75
+30635e: 6201 7f7c                              |004b: sget-object v1, Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;.BIQUAD_TYPE_NOTCH:Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE; // field@7c7f
+306362: 6e10 3b85 0100                         |004d: invoke-virtual {v1}, Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;.ordinal:()I // method@853b
+306368: 0a01                                   |0050: move-result v1
+30636a: 1272                                   |0051: const/4 v2, #int 7 // #7
+30636c: 4b02 0001                              |0052: aput v2, v0, v1
+306370: 6200 757c                              |0054: sget-object v0, Lcom/nwd/dsp/uitls/DspAlgorithm$1;.$SwitchMap$com$nwd$dsp$uitls$DspAlgorithm$BIQUAD_TYPE:[I // field@7c75
+306374: 6201 7c7c                              |0056: sget-object v1, Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;.BIQUAD_TYPE_LOW_SHELF:Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE; // field@7c7c
+306378: 6e10 3b85 0100                         |0058: invoke-virtual {v1}, Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;.ordinal:()I // method@853b
+30637e: 0a01                                   |005b: move-result v1
+306380: 1302 0800                              |005c: const/16 v2, #int 8 // #8
+306384: 4b02 0001                              |005e: aput v2, v0, v1
+306388: 6200 757c                              |0060: sget-object v0, Lcom/nwd/dsp/uitls/DspAlgorithm$1;.$SwitchMap$com$nwd$dsp$uitls$DspAlgorithm$BIQUAD_TYPE:[I // field@7c75
+30638c: 6201 797c                              |0062: sget-object v1, Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;.BIQUAD_TYPE_HIGH_SHELF:Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE; // field@7c79
+306390: 6e10 3b85 0100                         |0064: invoke-virtual {v1}, Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;.ordinal:()I // method@853b
+306396: 0a01                                   |0067: move-result v1
+306398: 1302 0900                              |0068: const/16 v2, #int 9 // #9
+30639c: 4b02 0001                              |006a: aput v2, v0, v1
+3063a0: 0e00                                   |006c: return-void
+      catches       : 9
+        0x0009 - 0x0012
+          Ljava/lang/NoSuchFieldError; -> 0x0012
+        0x0012 - 0x001d
+          Ljava/lang/NoSuchFieldError; -> 0x001d
+        0x001d - 0x0028
+          Ljava/lang/NoSuchFieldError; -> 0x0028
+        0x0028 - 0x0033
+          Ljava/lang/NoSuchFieldError; -> 0x0033
+        0x0033 - 0x003e
+          Ljava/lang/NoSuchFieldError; -> 0x003e
+        0x003e - 0x0049
+          Ljava/lang/NoSuchFieldError; -> 0x0049
+        0x0049 - 0x0054
+          Ljava/lang/NoSuchFieldError; -> 0x0054
+        0x0054 - 0x0060
+          Ljava/lang/NoSuchFieldError; -> 0x0060
+        0x0060 - 0x006c
+          Ljava/lang/NoSuchFieldError; -> 0x006c
+      positions     :
+        0x0000 line=189
+      locals        :
+
+  Virtual methods   -
+  source_file_idx   : 5745 (DspAlgorithm.java)
+
+Class #2354            -

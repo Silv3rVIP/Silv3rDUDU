@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="start" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_40" android:layout_marginStart="@dimen/dp_20">
+        <ImageView android:id="@id/dts_logo_iv" android:layout_width="@dimen/dts_logo_width" android:layout_height="@dimen/dts_logo_height" android:src="@mipmap/dts_logo" />
+        <ImageView android:layout_gravity="bottom" android:id="@id/dts_switch_iv" android:layout_width="@dimen/dts_switch_width" android:layout_height="@dimen/dts_switch_height" android:src="@drawable/selector_dts_switch" android:layout_marginStart="@dimen/dts_switch_margin_left" />
+    </LinearLayout>
+    <HorizontalScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dts_btn_spacing" android:weightSum="3.0" android:layout_marginStart="@dimen/dp_51">
+            <FrameLayout android:id="@id/cinema_mode" android:layout_width="@dimen/dp_280" android:layout_height="@dimen/dp_400">
+                <ImageView android:id="@id/cinema_mode_bg_iv" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@mipmap/dts_cinema_mode" />
+                <ImageView android:id="@id/cinema_mode_cover_iv" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@mipmap/dts_mode_cover" />
+                <TextView android:textSize="@dimen/dts_mode_text_size" android:textColor="@color/c_ff1683f7" android:layout_gravity="center|bottom" android:id="@id/cinema_mode_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dts_mode_text_margin_bottom" android:text="@string/str_cinema_mode" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/music_mode" android:layout_width="@dimen/dp_280" android:layout_height="@dimen/dp_400" android:layout_marginStart="@dimen/dts_btn_spacing">
+                <ImageView android:id="@id/music_mode_bg_iv" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@mipmap/dts_music_mode" />
+                <ImageView android:id="@id/music_mode_cover_iv" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@mipmap/dts_mode_cover" />
+                <TextView android:textSize="@dimen/dts_mode_text_size" android:textColor="@color/c_ff1683f7" android:layout_gravity="center|bottom" android:id="@id/music_mode_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dts_mode_text_margin_bottom" android:text="@string/str_music_mode" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/speciality_mode" android:layout_width="@dimen/dp_280" android:layout_height="@dimen/dp_400" android:layout_marginStart="@dimen/dts_btn_spacing" android:layout_marginEnd="@dimen/dp_51">
+                <ImageView android:id="@id/speciality_mode_bg_iv" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@mipmap/dts_speciality_mode" />
+                <ImageView android:id="@id/speciality_mode_cover_iv" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@mipmap/dts_mode_cover" />
+                <TextView android:textSize="@dimen/dts_mode_text_size" android:textColor="@color/c_ff1683f7" android:layout_gravity="center|bottom" android:id="@id/speciality_mode_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dts_mode_text_margin_bottom" android:text="@string/str_speciality_mode" />
+            </FrameLayout>
+            <View android:layout_width="@dimen/dts_reset_margin_left" android:layout_height="1.0px" />
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>

@@ -1,0 +1,71 @@
+  Class descriptor  : 'Lcom/nwd/audioset/view/fragment/dts/soundGathering/SoundGatheringFragment$1;'
+  Access flags      : 0x0000 ()
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+    #0              : 'Lcom/nwd/audioset/utils/ViewUtils$ViewTreeCallBack;'
+  Static fields     -
+  Instance fields   -
+    #0              : (in Lcom/nwd/audioset/view/fragment/dts/soundGathering/SoundGatheringFragment$1;)
+      name          : 'this$0'
+      type          : 'Lcom/nwd/audioset/view/fragment/dts/soundGathering/SoundGatheringFragment;'
+      access        : 0x1010 (FINAL SYNTHETIC)
+  Direct methods    -
+    #0              : (in Lcom/nwd/audioset/view/fragment/dts/soundGathering/SoundGatheringFragment$1;)
+      name          : '<init>'
+      type          : '(Lcom/nwd/audioset/view/fragment/dts/soundGathering/SoundGatheringFragment;)V'
+      access        : 0x10000 (CONSTRUCTOR)
+      code          -
+      registers     : 2
+      ins           : 2
+      outs          : 1
+      insns size    : 6 16-bit code units
+2ef1e8:                                        |[2ef1e8] com.nwd.audioset.view.fragment.dts.soundGathering.SoundGatheringFragment$1.<init>:(Lcom/nwd/audioset/view/fragment/dts/soundGathering/SoundGatheringFragment;)V
+2ef1f8: 5b01 cc79                              |0000: iput-object v1, v0, Lcom/nwd/audioset/view/fragment/dts/soundGathering/SoundGatheringFragment$1;.this$0:Lcom/nwd/audioset/view/fragment/dts/soundGathering/SoundGatheringFragment; // field@79cc
+2ef1fc: 7010 df8d 0000                         |0002: invoke-direct {v0}, Ljava/lang/Object;.<init>:()V // method@8ddf
+2ef202: 0e00                                   |0005: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=95
+      locals        :
+        0x0000 - 0x0006 reg=0 this Lcom/nwd/audioset/view/fragment/dts/soundGathering/SoundGatheringFragment$1;
+        0x0000 - 0x0006 reg=1 (null) Lcom/nwd/audioset/view/fragment/dts/soundGathering/SoundGatheringFragment;
+
+  Virtual methods   -
+    #0              : (in Lcom/nwd/audioset/view/fragment/dts/soundGathering/SoundGatheringFragment$1;)
+      name          : 'onGlobalLayout'
+      type          : '()V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 4
+      ins           : 1
+      outs          : 1
+      insns size    : 34 16-bit code units
+2ef204:                                        |[2ef204] com.nwd.audioset.view.fragment.dts.soundGathering.SoundGatheringFragment$1.onGlobalLayout:()V
+2ef214: 1230                                   |0000: const/4 v0, #int 3 // #3
+2ef216: 2300 9b11                              |0001: new-array v0, v0, [Landroid/view/View; // type@119b
+2ef21a: 5431 cc79                              |0003: iget-object v1, v3, Lcom/nwd/audioset/view/fragment/dts/soundGathering/SoundGatheringFragment$1;.this$0:Lcom/nwd/audioset/view/fragment/dts/soundGathering/SoundGatheringFragment; // field@79cc
+2ef21e: 7110 2482 0100                         |0005: invoke-static {v1}, Lcom/nwd/audioset/view/fragment/dts/soundGathering/SoundGatheringFragment;.access$000:(Lcom/nwd/audioset/view/fragment/dts/soundGathering/SoundGatheringFragment;)Landroid/widget/TextView; // method@8224
+2ef224: 0c01                                   |0008: move-result-object v1
+2ef226: 1202                                   |0009: const/4 v2, #int 0 // #0
+2ef228: 4d01 0002                              |000a: aput-object v1, v0, v2
+2ef22c: 5431 cc79                              |000c: iget-object v1, v3, Lcom/nwd/audioset/view/fragment/dts/soundGathering/SoundGatheringFragment$1;.this$0:Lcom/nwd/audioset/view/fragment/dts/soundGathering/SoundGatheringFragment; // field@79cc
+2ef230: 7110 2582 0100                         |000e: invoke-static {v1}, Lcom/nwd/audioset/view/fragment/dts/soundGathering/SoundGatheringFragment;.access$100:(Lcom/nwd/audioset/view/fragment/dts/soundGathering/SoundGatheringFragment;)Landroid/widget/TextView; // method@8225
+2ef236: 0c01                                   |0011: move-result-object v1
+2ef238: 1212                                   |0012: const/4 v2, #int 1 // #1
+2ef23a: 4d01 0002                              |0013: aput-object v1, v0, v2
+2ef23e: 5431 cc79                              |0015: iget-object v1, v3, Lcom/nwd/audioset/view/fragment/dts/soundGathering/SoundGatheringFragment$1;.this$0:Lcom/nwd/audioset/view/fragment/dts/soundGathering/SoundGatheringFragment; // field@79cc
+2ef242: 7110 2682 0100                         |0017: invoke-static {v1}, Lcom/nwd/audioset/view/fragment/dts/soundGathering/SoundGatheringFragment;.access$200:(Lcom/nwd/audioset/view/fragment/dts/soundGathering/SoundGatheringFragment;)Landroid/widget/TextView; // method@8226
+2ef248: 0c01                                   |001a: move-result-object v1
+2ef24a: 1222                                   |001b: const/4 v2, #int 2 // #2
+2ef24c: 4d01 0002                              |001c: aput-object v1, v0, v2
+2ef250: 7110 4381 0000                         |001e: invoke-static {v0}, Lcom/nwd/audioset/utils/ViewUtils;.setMaxHeight:([Landroid/view/View;)V // method@8143
+2ef256: 0e00                                   |0021: return-void
+      catches       : (none)
+      positions     :
+        0x0003 line=98
+      locals        :
+        0x0000 - 0x0022 reg=3 this Lcom/nwd/audioset/view/fragment/dts/soundGathering/SoundGatheringFragment$1;
+
+  source_file_idx   : 16106 (SoundGatheringFragment.java)
+
+Class #3184            -

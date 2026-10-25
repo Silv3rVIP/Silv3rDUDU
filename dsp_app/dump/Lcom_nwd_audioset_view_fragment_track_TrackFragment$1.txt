@@ -1,0 +1,58 @@
+  Class descriptor  : 'Lcom/nwd/audioset/view/fragment/track/TrackFragment$1;'
+  Access flags      : 0x0000 ()
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+    #0              : 'Ljava/lang/Runnable;'
+  Static fields     -
+  Instance fields   -
+    #0              : (in Lcom/nwd/audioset/view/fragment/track/TrackFragment$1;)
+      name          : 'this$0'
+      type          : 'Lcom/nwd/audioset/view/fragment/track/TrackFragment;'
+      access        : 0x1010 (FINAL SYNTHETIC)
+  Direct methods    -
+    #0              : (in Lcom/nwd/audioset/view/fragment/track/TrackFragment$1;)
+      name          : '<init>'
+      type          : '(Lcom/nwd/audioset/view/fragment/track/TrackFragment;)V'
+      access        : 0x10000 (CONSTRUCTOR)
+      code          -
+      registers     : 2
+      ins           : 2
+      outs          : 1
+      insns size    : 6 16-bit code units
+2f8370:                                        |[2f8370] com.nwd.audioset.view.fragment.track.TrackFragment$1.<init>:(Lcom/nwd/audioset/view/fragment/track/TrackFragment;)V
+2f8380: 5b01 9f7a                              |0000: iput-object v1, v0, Lcom/nwd/audioset/view/fragment/track/TrackFragment$1;.this$0:Lcom/nwd/audioset/view/fragment/track/TrackFragment; // field@7a9f
+2f8384: 7010 df8d 0000                         |0002: invoke-direct {v0}, Ljava/lang/Object;.<init>:()V // method@8ddf
+2f838a: 0e00                                   |0005: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=550
+      locals        :
+        0x0000 - 0x0006 reg=0 this Lcom/nwd/audioset/view/fragment/track/TrackFragment$1;
+        0x0000 - 0x0006 reg=1 (null) Lcom/nwd/audioset/view/fragment/track/TrackFragment;
+
+  Virtual methods   -
+    #0              : (in Lcom/nwd/audioset/view/fragment/track/TrackFragment$1;)
+      name          : 'run'
+      type          : '()V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 1
+      insns size    : 11 16-bit code units
+2f838c:                                        |[2f838c] com.nwd.audioset.view.fragment.track.TrackFragment$1.run:()V
+2f839c: 5410 9f7a                              |0000: iget-object v0, v1, Lcom/nwd/audioset/view/fragment/track/TrackFragment$1;.this$0:Lcom/nwd/audioset/view/fragment/track/TrackFragment; // field@7a9f
+2f83a0: 7110 ce82 0000                         |0002: invoke-static {v0}, Lcom/nwd/audioset/view/fragment/track/TrackFragment;.access$000:(Lcom/nwd/audioset/view/fragment/track/TrackFragment;)V // method@82ce
+2f83a6: 5410 9f7a                              |0005: iget-object v0, v1, Lcom/nwd/audioset/view/fragment/track/TrackFragment$1;.this$0:Lcom/nwd/audioset/view/fragment/track/TrackFragment; // field@7a9f
+2f83aa: 7110 cf82 0000                         |0007: invoke-static {v0}, Lcom/nwd/audioset/view/fragment/track/TrackFragment;.access$100:(Lcom/nwd/audioset/view/fragment/track/TrackFragment;)V // method@82cf
+2f83b0: 0e00                                   |000a: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=553
+        0x0005 line=554
+      locals        :
+        0x0000 - 0x000b reg=1 this Lcom/nwd/audioset/view/fragment/track/TrackFragment$1;
+
+  source_file_idx   : 17529 (TrackFragment.java)
+
+Class #2303            -

@@ -1,0 +1,65 @@
+  Class descriptor  : 'Lcom/nwd/audioset/home_horizontalActivity1$1;'
+  Access flags      : 0x0000 ()
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+    #0              : 'Ljava/lang/Runnable;'
+  Static fields     -
+  Instance fields   -
+    #0              : (in Lcom/nwd/audioset/home_horizontalActivity1$1;)
+      name          : 'this$0'
+      type          : 'Lcom/nwd/audioset/home_horizontalActivity1;'
+      access        : 0x1010 (FINAL SYNTHETIC)
+  Direct methods    -
+    #0              : (in Lcom/nwd/audioset/home_horizontalActivity1$1;)
+      name          : '<init>'
+      type          : '(Lcom/nwd/audioset/home_horizontalActivity1;)V'
+      access        : 0x10000 (CONSTRUCTOR)
+      code          -
+      registers     : 2
+      ins           : 2
+      outs          : 1
+      insns size    : 6 16-bit code units
+2df754:                                        |[2df754] com.nwd.audioset.home_horizontalActivity1$1.<init>:(Lcom/nwd/audioset/home_horizontalActivity1;)V
+2df764: 5b01 e877                              |0000: iput-object v1, v0, Lcom/nwd/audioset/home_horizontalActivity1$1;.this$0:Lcom/nwd/audioset/home_horizontalActivity1; // field@77e8
+2df768: 7010 df8d 0000                         |0002: invoke-direct {v0}, Ljava/lang/Object;.<init>:()V // method@8ddf
+2df76e: 0e00                                   |0005: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=366
+      locals        :
+        0x0000 - 0x0006 reg=0 this Lcom/nwd/audioset/home_horizontalActivity1$1;
+        0x0000 - 0x0006 reg=1 (null) Lcom/nwd/audioset/home_horizontalActivity1;
+
+  Virtual methods   -
+    #0              : (in Lcom/nwd/audioset/home_horizontalActivity1$1;)
+      name          : 'run'
+      type          : '()V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 4
+      ins           : 1
+      outs          : 2
+      insns size    : 24 16-bit code units
+2df770:                                        |[2df770] com.nwd.audioset.home_horizontalActivity1$1.run:()V
+2df780: 5430 e877                              |0000: iget-object v0, v3, Lcom/nwd/audioset/home_horizontalActivity1$1;.this$0:Lcom/nwd/audioset/home_horizontalActivity1; // field@77e8
+2df784: 7110 7380 0000                         |0002: invoke-static {v0}, Lcom/nwd/audioset/home_horizontalActivity1;.access$100:(Lcom/nwd/audioset/home_horizontalActivity1;)Lcom/nwd/audioset/view/nwdview/NoScrollViewPager; // method@8073
+2df78a: 0c00                                   |0005: move-result-object v0
+2df78c: 5431 e877                              |0006: iget-object v1, v3, Lcom/nwd/audioset/home_horizontalActivity1$1;.this$0:Lcom/nwd/audioset/home_horizontalActivity1; // field@77e8
+2df790: 1202                                   |0008: const/4 v2, #int 0 // #0
+2df792: 7120 7280 2100                         |0009: invoke-static {v1, v2}, Lcom/nwd/audioset/home_horizontalActivity1;.access$000:(Lcom/nwd/audioset/home_horizontalActivity1;I)I // method@8072
+2df798: 0a01                                   |000c: move-result v1
+2df79a: 6e20 b983 1000                         |000d: invoke-virtual {v0, v1}, Lcom/nwd/audioset/view/nwdview/NoScrollViewPager;.setCurrentItem:(I)V // method@83b9
+2df7a0: 5430 e877                              |0010: iget-object v0, v3, Lcom/nwd/audioset/home_horizontalActivity1$1;.this$0:Lcom/nwd/audioset/home_horizontalActivity1; // field@77e8
+2df7a4: 1a01 6c58                              |0012: const-string v1, "com.nwd.audioset.view.fragment.dts.DtsFragment" // string@586c
+2df7a8: 7120 7480 1000                         |0014: invoke-static {v0, v1}, Lcom/nwd/audioset/home_horizontalActivity1;.access$200:(Lcom/nwd/audioset/home_horizontalActivity1;Ljava/lang/String;)V // method@8074
+2df7ae: 0e00                                   |0017: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=371
+        0x0010 line=372
+      locals        :
+        0x0000 - 0x0018 reg=3 this Lcom/nwd/audioset/home_horizontalActivity1$1;
+
+  source_file_idx   : 29408 (home_horizontalActivity1.java)
+
+Class #2258            -

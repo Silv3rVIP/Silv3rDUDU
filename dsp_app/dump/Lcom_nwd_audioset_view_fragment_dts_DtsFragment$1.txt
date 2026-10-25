@@ -1,0 +1,75 @@
+  Class descriptor  : 'Lcom/nwd/audioset/view/fragment/dts/DtsFragment$1;'
+  Access flags      : 0x0000 ()
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+    #0              : 'Ljava/lang/Runnable;'
+  Static fields     -
+  Instance fields   -
+    #0              : (in Lcom/nwd/audioset/view/fragment/dts/DtsFragment$1;)
+      name          : 'this$0'
+      type          : 'Lcom/nwd/audioset/view/fragment/dts/DtsFragment;'
+      access        : 0x1010 (FINAL SYNTHETIC)
+  Direct methods    -
+    #0              : (in Lcom/nwd/audioset/view/fragment/dts/DtsFragment$1;)
+      name          : '<init>'
+      type          : '(Lcom/nwd/audioset/view/fragment/dts/DtsFragment;)V'
+      access        : 0x10000 (CONSTRUCTOR)
+      code          -
+      registers     : 2
+      ins           : 2
+      outs          : 1
+      insns size    : 6 16-bit code units
+2ec258:                                        |[2ec258] com.nwd.audioset.view.fragment.dts.DtsFragment$1.<init>:(Lcom/nwd/audioset/view/fragment/dts/DtsFragment;)V
+2ec268: 5b01 6079                              |0000: iput-object v1, v0, Lcom/nwd/audioset/view/fragment/dts/DtsFragment$1;.this$0:Lcom/nwd/audioset/view/fragment/dts/DtsFragment; // field@7960
+2ec26c: 7010 df8d 0000                         |0002: invoke-direct {v0}, Ljava/lang/Object;.<init>:()V // method@8ddf
+2ec272: 0e00                                   |0005: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=68
+      locals        :
+        0x0000 - 0x0006 reg=0 this Lcom/nwd/audioset/view/fragment/dts/DtsFragment$1;
+        0x0000 - 0x0006 reg=1 (null) Lcom/nwd/audioset/view/fragment/dts/DtsFragment;
+
+  Virtual methods   -
+    #0              : (in Lcom/nwd/audioset/view/fragment/dts/DtsFragment$1;)
+      name          : 'run'
+      type          : '()V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 3
+      ins           : 1
+      outs          : 2
+      insns size    : 40 16-bit code units
+2ec274:                                        |[2ec274] com.nwd.audioset.view.fragment.dts.DtsFragment$1.run:()V
+2ec284: 5420 6079                              |0000: iget-object v0, v2, Lcom/nwd/audioset/view/fragment/dts/DtsFragment$1;.this$0:Lcom/nwd/audioset/view/fragment/dts/DtsFragment; // field@7960
+2ec288: 7110 b681 0000                         |0002: invoke-static {v0}, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.access$000:(Lcom/nwd/audioset/view/fragment/dts/DtsFragment;)Landroidx/fragment/app/Fragment; // method@81b6
+2ec28e: 0c00                                   |0005: move-result-object v0
+2ec290: 3900 1100                              |0006: if-nez v0, 0017 // +0011
+2ec294: 2200 390f                              |0008: new-instance v0, Lcom/nwd/audioset/view/fragment/dts/sceneMode/SceneModeDtsFragment; // type@0f39
+2ec298: 7010 0e82 0000                         |000a: invoke-direct {v0}, Lcom/nwd/audioset/view/fragment/dts/sceneMode/SceneModeDtsFragment;.<init>:()V // method@820e
+2ec29e: 5421 6079                              |000d: iget-object v1, v2, Lcom/nwd/audioset/view/fragment/dts/DtsFragment$1;.this$0:Lcom/nwd/audioset/view/fragment/dts/DtsFragment; // field@7960
+2ec2a2: 6e20 1c82 1000                         |000f: invoke-virtual {v0, v1}, Lcom/nwd/audioset/view/fragment/dts/sceneMode/SceneModeDtsFragment;.setSwitchListener:(Lcom/nwd/audioset/view/fragment/dts/SwitchListener;)V // method@821c
+2ec2a8: 5421 6079                              |0012: iget-object v1, v2, Lcom/nwd/audioset/view/fragment/dts/DtsFragment$1;.this$0:Lcom/nwd/audioset/view/fragment/dts/DtsFragment; // field@7960
+2ec2ac: 7120 b781 0100                         |0014: invoke-static {v1, v0}, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.access$002:(Lcom/nwd/audioset/view/fragment/dts/DtsFragment;Landroidx/fragment/app/Fragment;)Landroidx/fragment/app/Fragment; // method@81b7
+2ec2b2: 5420 6079                              |0017: iget-object v0, v2, Lcom/nwd/audioset/view/fragment/dts/DtsFragment$1;.this$0:Lcom/nwd/audioset/view/fragment/dts/DtsFragment; // field@7960
+2ec2b6: 7110 b681 0000                         |0019: invoke-static {v0}, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.access$000:(Lcom/nwd/audioset/view/fragment/dts/DtsFragment;)Landroidx/fragment/app/Fragment; // method@81b6
+2ec2bc: 0c01                                   |001c: move-result-object v1
+2ec2be: 7120 b881 1000                         |001d: invoke-static {v0, v1}, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.access$100:(Lcom/nwd/audioset/view/fragment/dts/DtsFragment;Landroidx/fragment/app/Fragment;)V // method@81b8
+2ec2c4: 5420 6079                              |0020: iget-object v0, v2, Lcom/nwd/audioset/view/fragment/dts/DtsFragment$1;.this$0:Lcom/nwd/audioset/view/fragment/dts/DtsFragment; // field@7960
+2ec2c8: 1a01 e79a                              |0022: const-string v1, "scene_mode" // string@9ae7
+2ec2cc: 7120 b981 1000                         |0024: invoke-static {v0, v1}, Lcom/nwd/audioset/view/fragment/dts/DtsFragment;.access$200:(Lcom/nwd/audioset/view/fragment/dts/DtsFragment;Ljava/lang/String;)V // method@81b9
+2ec2d2: 0e00                                   |0027: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=73
+        0x0008 line=74
+        0x000d line=75
+        0x0012 line=76
+        0x0017 line=78
+        0x0020 line=79
+      locals        :
+        0x0000 - 0x0028 reg=2 this Lcom/nwd/audioset/view/fragment/dts/DtsFragment$1;
+
+  source_file_idx   : 5765 (DtsFragment.java)
+
+Class #2289            -

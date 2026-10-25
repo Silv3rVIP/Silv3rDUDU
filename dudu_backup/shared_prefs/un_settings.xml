@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <boolean name="SDATA_UN_MINI_ITEM_OPEN_102" value="true" />
+    <string name="SDATA_UN_PIP_CLAZZ">com.vialsoft.radarbot_free</string>
+    <boolean name="SDATA_UN_MINI_ITEM_OPEN_100" value="true" />
+    <boolean name="SDATA_UN_LOST_GPS_TO_STOP_CAR" value="false" />
+    <boolean name="SDATA_UN_ITEM_OPEN_103" value="true" />
+    <boolean name="SDATA_UN_ITEM_OPEN_102" value="false" />
+    <boolean name="SDATA_UN_ITEM_OPEN_101" value="false" />
+    <boolean name="SDATA_UN_ITEM_OPEN_100" value="true" />
+    <boolean name="SDATA_UN_BYD_WIN_FOLLOW" value="false" />
+    <boolean name="SDATA_UN_ITEM_OPEN_104" value="true" />
+    <boolean name="SDATA_UN_ADAS_USE_CAR_DIS" value="true" />
+    <boolean name="SDATA_UN_CAR_BYD_SHOW_CONTROL" value="true" />
+    <int name="SDATA_UN_STOP_CAR_ITEM" value="104" />
+    <int name="SDATA_UN_MINI_ITEM_SORT_100" value="0" />
+    <int name="SDATA_UN_STOP_CAR_HANDLE" value="1" />
+    <int name="SDATA_UN_MINI_ITEM_SORT_102" value="1" />
+    <string name="SDATA_IAPP9">1:com.android.chrome</string>
+    <string name="SDATA_IAPP8">1:com.google.android.youtube</string>
+    <string name="SDATA_IAPP7">1:com.google.android.apps.maps</string>
+    <string name="SDATA_IAPP6">1:com.dergoogler.mmrl</string>
+    <string name="SDATA_IAPP5">1:com.nwd.android.phone</string>
+    <string name="SDATA_IAPP4">1:com.ivicar.avm</string>
+    <string name="SDATA_IAPP3">1:com.ledlamp</string>
+    <string name="SDATA_UN_TARY_ITEM_SORT">{&quot;101&quot;:0,&quot;102&quot;:1,&quot;104&quot;:3,&quot;105&quot;:2,&quot;107&quot;:4,&quot;108&quot;:5,&quot;109&quot;:6}</string>
+    <string name="SDATA_IAPP2">1:com.wstxda.viper4android</string>
+    <string name="SDATA_IAPP1">1:me.knighthat.kreate</string>
+    <int name="SDATA_UN_BYD_E_TYPE" value="1" />
+    <string name="SDATA_UN_DATE_FROMAT">dd.MM.yyyyy HH:mm</string>
+    <boolean name="SDATA_UN_PROMPT_SHOW_108" value="true" />
+    <boolean name="SDATA_UN_PROMPT_SHOW_109" value="true" />
+    <boolean name="SDATA_UN_PROMPT_SHOW_106" value="false" />
+    <boolean name="SDATA_UN_PROMPT_SHOW_107" value="true" />
+    <boolean name="SDATA_UN_PROMPT_SHOW_104" value="true" />
+    <boolean name="SDATA_UN_PROMPT_SHOW_105" value="true" />
+    <boolean name="SDATA_UN_PROMPT_SHOW_102" value="true" />
+    <int name="SDATA_UN_PROMPT_TYPE" value="1" />
+    <boolean name="SDATA_UN_PROMPT_SHOW_103" value="false" />
+    <boolean name="SDATA_UN_CAR_BYD_HBX" value="true" />
+    <int name="SDATA_UN_ITEM_SORT_104" value="4" />
+    <boolean name="SDATA_UN_PROMPT_SHOW_101" value="true" />
+    <boolean name="SDATA_UN_NAV_ADAS_REPLACE_CAR" value="true" />
+    <int name="SDATA_UN_ITEM_SORT_101" value="2" />
+    <int name="SDATA_UN_ITEM_SORT_100" value="1" />
+    <int name="SDATA_UN_ITEM_SORT_103" value="3" />
+    <int name="SDATA_UN_ITEM_SORT_102" value="0" />
+    <int name="SDATA_UN_RUN_CAR_ITEM" value="102" />
+    <boolean name="SDATA_UN_BYD_ENERGY_RIGHT_TO_LEFT" value="false" />
+    <boolean name="SDATA_UN_RIGHT_REPLACE_XF" value="false" />
+    <boolean name="SDATA_UN_CAR_BYD_TC" value="true" />
+</map>

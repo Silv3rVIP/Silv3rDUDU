@@ -1,0 +1,202 @@
+  Class descriptor  : 'Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;'
+  Access flags      : 0x4010 (FINAL ENUM)
+  Superclass        : 'Ljava/lang/Enum;'
+  Interfaces        -
+  Static fields     -
+    #0              : (in Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;)
+      name          : '$VALUES'
+      type          : '[Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;'
+      access        : 0x101a (PRIVATE STATIC FINAL SYNTHETIC)
+    #1              : (in Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;)
+      name          : 'BIQUAD_TYPE_BPF'
+      type          : 'Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;'
+      access        : 0x4019 (PUBLIC STATIC FINAL ENUM)
+    #2              : (in Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;)
+      name          : 'BIQUAD_TYPE_EQ'
+      type          : 'Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;'
+      access        : 0x4019 (PUBLIC STATIC FINAL ENUM)
+    #3              : (in Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;)
+      name          : 'BIQUAD_TYPE_HIGH_SHELF'
+      type          : 'Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;'
+      access        : 0x4019 (PUBLIC STATIC FINAL ENUM)
+    #4              : (in Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;)
+      name          : 'BIQUAD_TYPE_HPF_12DB'
+      type          : 'Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;'
+      access        : 0x4019 (PUBLIC STATIC FINAL ENUM)
+    #5              : (in Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;)
+      name          : 'BIQUAD_TYPE_HPF_6DB'
+      type          : 'Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;'
+      access        : 0x4019 (PUBLIC STATIC FINAL ENUM)
+    #6              : (in Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;)
+      name          : 'BIQUAD_TYPE_LOW_SHELF'
+      type          : 'Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;'
+      access        : 0x4019 (PUBLIC STATIC FINAL ENUM)
+    #7              : (in Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;)
+      name          : 'BIQUAD_TYPE_LPF_12DB'
+      type          : 'Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;'
+      access        : 0x4019 (PUBLIC STATIC FINAL ENUM)
+    #8              : (in Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;)
+      name          : 'BIQUAD_TYPE_LPF_6DB'
+      type          : 'Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;'
+      access        : 0x4019 (PUBLIC STATIC FINAL ENUM)
+    #9              : (in Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;)
+      name          : 'BIQUAD_TYPE_NOTCH'
+      type          : 'Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;'
+      access        : 0x4019 (PUBLIC STATIC FINAL ENUM)
+  Instance fields   -
+  Direct methods    -
+    #0              : (in Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;)
+      name          : '<clinit>'
+      type          : '()V'
+      access        : 0x10008 (STATIC CONSTRUCTOR)
+      code          -
+      registers     : 12
+      ins           : 0
+      outs          : 3
+      insns size    : 132 16-bit code units
+30645c:                                        |[30645c] com.nwd.dsp.uitls.DspAlgorithm$BIQUAD_TYPE.<clinit>:()V
+30646c: 2200 8a0f                              |0000: new-instance v0, Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE; // type@0f8a
+306470: 1201                                   |0002: const/4 v1, #int 0 // #0
+306472: 1a02 aa0c                              |0003: const-string v2, "BIQUAD_TYPE_EQ" // string@0caa
+306476: 7030 3a85 2001                         |0005: invoke-direct {v0, v2, v1}, Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;.<init>:(Ljava/lang/String;I)V // method@853a
+30647c: 6900 787c                              |0008: sput-object v0, Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;.BIQUAD_TYPE_EQ:Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE; // field@7c78
+306480: 2200 8a0f                              |000a: new-instance v0, Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE; // type@0f8a
+306484: 1212                                   |000c: const/4 v2, #int 1 // #1
+306486: 1a03 af0c                              |000d: const-string v3, "BIQUAD_TYPE_LPF_12DB" // string@0caf
+30648a: 7030 3a85 3002                         |000f: invoke-direct {v0, v3, v2}, Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;.<init>:(Ljava/lang/String;I)V // method@853a
+306490: 6900 7d7c                              |0012: sput-object v0, Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;.BIQUAD_TYPE_LPF_12DB:Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE; // field@7c7d
+306494: 2200 8a0f                              |0014: new-instance v0, Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE; // type@0f8a
+306498: 1223                                   |0016: const/4 v3, #int 2 // #2
+30649a: 1a04 b00c                              |0017: const-string v4, "BIQUAD_TYPE_LPF_6DB" // string@0cb0
+30649e: 7030 3a85 4003                         |0019: invoke-direct {v0, v4, v3}, Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;.<init>:(Ljava/lang/String;I)V // method@853a
+3064a4: 6900 7e7c                              |001c: sput-object v0, Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;.BIQUAD_TYPE_LPF_6DB:Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE; // field@7c7e
+3064a8: 2200 8a0f                              |001e: new-instance v0, Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE; // type@0f8a
+3064ac: 1234                                   |0020: const/4 v4, #int 3 // #3
+3064ae: 1a05 ac0c                              |0021: const-string v5, "BIQUAD_TYPE_HPF_12DB" // string@0cac
+3064b2: 7030 3a85 5004                         |0023: invoke-direct {v0, v5, v4}, Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;.<init>:(Ljava/lang/String;I)V // method@853a
+3064b8: 6900 7a7c                              |0026: sput-object v0, Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;.BIQUAD_TYPE_HPF_12DB:Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE; // field@7c7a
+3064bc: 2200 8a0f                              |0028: new-instance v0, Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE; // type@0f8a
+3064c0: 1245                                   |002a: const/4 v5, #int 4 // #4
+3064c2: 1a06 ad0c                              |002b: const-string v6, "BIQUAD_TYPE_HPF_6DB" // string@0cad
+3064c6: 7030 3a85 6005                         |002d: invoke-direct {v0, v6, v5}, Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;.<init>:(Ljava/lang/String;I)V // method@853a
+3064cc: 6900 7b7c                              |0030: sput-object v0, Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;.BIQUAD_TYPE_HPF_6DB:Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE; // field@7c7b
+3064d0: 2200 8a0f                              |0032: new-instance v0, Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE; // type@0f8a
+3064d4: 1256                                   |0034: const/4 v6, #int 5 // #5
+3064d6: 1a07 a80c                              |0035: const-string v7, "BIQUAD_TYPE_BPF" // string@0ca8
+3064da: 7030 3a85 7006                         |0037: invoke-direct {v0, v7, v6}, Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;.<init>:(Ljava/lang/String;I)V // method@853a
+3064e0: 6900 777c                              |003a: sput-object v0, Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;.BIQUAD_TYPE_BPF:Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE; // field@7c77
+3064e4: 2200 8a0f                              |003c: new-instance v0, Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE; // type@0f8a
+3064e8: 1267                                   |003e: const/4 v7, #int 6 // #6
+3064ea: 1a08 b10c                              |003f: const-string v8, "BIQUAD_TYPE_NOTCH" // string@0cb1
+3064ee: 7030 3a85 8007                         |0041: invoke-direct {v0, v8, v7}, Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;.<init>:(Ljava/lang/String;I)V // method@853a
+3064f4: 6900 7f7c                              |0044: sput-object v0, Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;.BIQUAD_TYPE_NOTCH:Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE; // field@7c7f
+3064f8: 2200 8a0f                              |0046: new-instance v0, Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE; // type@0f8a
+3064fc: 1278                                   |0048: const/4 v8, #int 7 // #7
+3064fe: 1a09 ae0c                              |0049: const-string v9, "BIQUAD_TYPE_LOW_SHELF" // string@0cae
+306502: 7030 3a85 9008                         |004b: invoke-direct {v0, v9, v8}, Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;.<init>:(Ljava/lang/String;I)V // method@853a
+306508: 6900 7c7c                              |004e: sput-object v0, Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;.BIQUAD_TYPE_LOW_SHELF:Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE; // field@7c7c
+30650c: 2200 8a0f                              |0050: new-instance v0, Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE; // type@0f8a
+306510: 1309 0800                              |0052: const/16 v9, #int 8 // #8
+306514: 1a0a ab0c                              |0054: const-string v10, "BIQUAD_TYPE_HIGH_SHELF" // string@0cab
+306518: 7030 3a85 a009                         |0056: invoke-direct {v0, v10, v9}, Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;.<init>:(Ljava/lang/String;I)V // method@853a
+30651e: 6900 797c                              |0059: sput-object v0, Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;.BIQUAD_TYPE_HIGH_SHELF:Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE; // field@7c79
+306522: 130a 0900                              |005b: const/16 v10, #int 9 // #9
+306526: 23aa 0312                              |005d: new-array v10, v10, [Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE; // type@1203
+30652a: 620b 787c                              |005f: sget-object v11, Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;.BIQUAD_TYPE_EQ:Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE; // field@7c78
+30652e: 4d0b 0a01                              |0061: aput-object v11, v10, v1
+306532: 6201 7d7c                              |0063: sget-object v1, Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;.BIQUAD_TYPE_LPF_12DB:Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE; // field@7c7d
+306536: 4d01 0a02                              |0065: aput-object v1, v10, v2
+30653a: 6201 7e7c                              |0067: sget-object v1, Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;.BIQUAD_TYPE_LPF_6DB:Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE; // field@7c7e
+30653e: 4d01 0a03                              |0069: aput-object v1, v10, v3
+306542: 6201 7a7c                              |006b: sget-object v1, Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;.BIQUAD_TYPE_HPF_12DB:Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE; // field@7c7a
+306546: 4d01 0a04                              |006d: aput-object v1, v10, v4
+30654a: 6201 7b7c                              |006f: sget-object v1, Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;.BIQUAD_TYPE_HPF_6DB:Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE; // field@7c7b
+30654e: 4d01 0a05                              |0071: aput-object v1, v10, v5
+306552: 6201 777c                              |0073: sget-object v1, Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;.BIQUAD_TYPE_BPF:Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE; // field@7c77
+306556: 4d01 0a06                              |0075: aput-object v1, v10, v6
+30655a: 6201 7f7c                              |0077: sget-object v1, Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;.BIQUAD_TYPE_NOTCH:Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE; // field@7c7f
+30655e: 4d01 0a07                              |0079: aput-object v1, v10, v7
+306562: 6201 7c7c                              |007b: sget-object v1, Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;.BIQUAD_TYPE_LOW_SHELF:Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE; // field@7c7c
+306566: 4d01 0a08                              |007d: aput-object v1, v10, v8
+30656a: 4d00 0a09                              |007f: aput-object v0, v10, v9
+30656e: 690a 767c                              |0081: sput-object v10, Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;.$VALUES:[Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE; // field@7c76
+306572: 0e00                                   |0083: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=10
+        0x000a line=11
+        0x0014 line=12
+        0x001e line=13
+        0x0028 line=14
+        0x0032 line=15
+        0x003c line=16
+        0x0046 line=17
+        0x0050 line=18
+        0x005f line=9
+      locals        :
+
+    #1              : (in Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;)
+      name          : '<init>'
+      type          : '(Ljava/lang/String;I)V'
+      access        : 0x10002 (PRIVATE CONSTRUCTOR)
+      code          -
+      registers     : 3
+      ins           : 3
+      outs          : 3
+      insns size    : 4 16-bit code units
+306574:                                        |[306574] com.nwd.dsp.uitls.DspAlgorithm$BIQUAD_TYPE.<init>:(Ljava/lang/String;I)V
+306584: 7030 728d 1002                         |0000: invoke-direct {v0, v1, v2}, Ljava/lang/Enum;.<init>:(Ljava/lang/String;I)V // method@8d72
+30658a: 0e00                                   |0003: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=9
+      locals        :
+        0x0000 - 0x0004 reg=0 this Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;
+        0x0000 - 0x0004 reg=1 (null) Ljava/lang/String;
+        0x0000 - 0x0004 reg=2 (null) I
+
+    #2              : (in Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;)
+      name          : 'valueOf'
+      type          : '(Ljava/lang/String;)Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 2
+      insns size    : 9 16-bit code units
+306414:                                        |[306414] com.nwd.dsp.uitls.DspAlgorithm$BIQUAD_TYPE.valueOf:(Ljava/lang/String;)Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;
+306424: 1c00 8a0f                              |0000: const-class v0, Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE; // type@0f8a
+306428: 7120 748d 1000                         |0002: invoke-static {v0, v1}, Ljava/lang/Enum;.valueOf:(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum; // method@8d74
+30642e: 0c01                                   |0005: move-result-object v1
+306430: 1f01 8a0f                              |0006: check-cast v1, Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE; // type@0f8a
+306434: 1101                                   |0008: return-object v1
+      catches       : (none)
+      positions     :
+        0x0000 line=9
+      locals        :
+        0x0000 - 0x0009 reg=1 (null) Ljava/lang/String;
+
+    #3              : (in Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;)
+      name          : 'values'
+      type          : '()[Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 1
+      ins           : 0
+      outs          : 1
+      insns size    : 9 16-bit code units
+306438:                                        |[306438] com.nwd.dsp.uitls.DspAlgorithm$BIQUAD_TYPE.values:()[Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;
+306448: 6200 767c                              |0000: sget-object v0, Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;.$VALUES:[Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE; // field@7c76
+30644c: 6e10 6e91 0000                         |0002: invoke-virtual {v0}, [Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE;.clone:()Ljava/lang/Object; // method@916e
+306452: 0c00                                   |0005: move-result-object v0
+306454: 1f00 0312                              |0006: check-cast v0, [Lcom/nwd/dsp/uitls/DspAlgorithm$BIQUAD_TYPE; // type@1203
+306458: 1100                                   |0008: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=9
+      locals        :
+
+  Virtual methods   -
+  source_file_idx   : 5745 (DspAlgorithm.java)
+
+Class #2355            -

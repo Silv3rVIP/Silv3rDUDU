@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/layout_start" android:background="@mipmap/st_bg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:id="@id/ll_st_left1" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.16">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@mipmap/st_onoff_bg" android:layout_width="@dimen/start_view_dts_switch_bg_width" android:layout_height="@dimen/start_view_dts_switch_bg_height" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <TextView android:textSize="@dimen/start_view_textview_size1" android:textColor="@color/white" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_start_dts" />
+            <ImageView android:layout_gravity="center" android:id="@id/dts_switch_iv1" android:layout_width="@dimen/start_view_dts_switch_width" android:layout_height="@dimen/start_view_dts_switch_height" android:layout_marginLeft="@dimen/px_4" android:src="@drawable/selector_dts_switch" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="right|center" android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center" android:id="@id/ll_st_dts" android:background="@drawable/selector_st_dts" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/start_view_ll_margin_left">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/px_18" android:src="@mipmap/st_dts_iv" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_st_md" android:background="@drawable/selector_st_md" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_15" android:layout_marginRight="@dimen/start_view_margin_left">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/st_md_iv" />
+            <TextView android:textSize="@dimen/start_view_textview_size" android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_start_mode" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_st_yinchang" android:background="@drawable/selector_st_yinchang" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_15" android:layout_marginRight="@dimen/start_view_ll_margin_left">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/px_18" android:src="@mipmap/st_yinchang_iv" />
+            <TextView android:textSize="@dimen/start_view_textview_size" android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/px_18" android:layout_marginBottom="@dimen/dp_13" android:text="@string/yinchang" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_st_dts_switch" android:background="@mipmap/st_onoff_bg" android:layout_width="@dimen/start_view_dts_switch_bg_width" android:layout_height="@dimen/start_view_dts_switch_bg_height" android:layout_marginBottom="@dimen/start_view_switch_margin_bottom" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <TextView android:textSize="@dimen/start_view_textview_size1" android:textColor="@color/white" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_start_dts" />
+            <ImageView android:layout_gravity="center" android:id="@id/dts_switch_iv" android:layout_width="@dimen/start_view_dts_switch_width" android:layout_height="@dimen/start_view_dts_switch_height" android:layout_marginLeft="@dimen/px_4" android:src="@drawable/selector_dts_switch" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_st_yinxiao" android:background="@drawable/selector_st_yinxiao" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/start_view_ll_margin_left">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/px_18" android:src="@mipmap/st_yinxiao_iv" />
+            <TextView android:textSize="@dimen/start_view_textview_size" android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/px_18" android:text="@string/yinxiao" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_st_tiaoyin" android:background="@drawable/selector_st_tiaoyin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/start_view_margin_left" android:layout_marginTop="@dimen/dp_15">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/st_tiaoyin_iv" />
+            <TextView android:textSize="@dimen/start_view_textview_size" android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_start_tiaoyin" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_st_dsp" android:background="@drawable/selector_st_dsp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/start_view_ll_margin_left" android:layout_marginTop="@dimen/dp_15">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/px_18" android:src="@mipmap/st_dsp_iv" />
+            <TextView android:textSize="@dimen/start_view_textview_size" android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/px_18" android:layout_marginBottom="@dimen/dp_13" android:text="DSP" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_st_right1" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+</LinearLayout>

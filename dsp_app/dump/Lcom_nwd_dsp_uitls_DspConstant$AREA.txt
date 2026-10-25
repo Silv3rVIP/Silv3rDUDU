@@ -1,0 +1,49 @@
+  Class descriptor  : 'Lcom/nwd/dsp/uitls/DspConstant$AREA;'
+  Access flags      : 0x0011 (PUBLIC FINAL)
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+  Static fields     -
+    #0              : (in Lcom/nwd/dsp/uitls/DspConstant$AREA;)
+      name          : 'AREA_FOUR'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : "area_four"
+    #1              : (in Lcom/nwd/dsp/uitls/DspConstant$AREA;)
+      name          : 'AREA_ONE'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : "area_one"
+    #2              : (in Lcom/nwd/dsp/uitls/DspConstant$AREA;)
+      name          : 'AREA_THREE'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : "area_three"
+    #3              : (in Lcom/nwd/dsp/uitls/DspConstant$AREA;)
+      name          : 'AREA_TWO'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : "area_two"
+  Instance fields   -
+  Direct methods    -
+    #0              : (in Lcom/nwd/dsp/uitls/DspConstant$AREA;)
+      name          : '<init>'
+      type          : '()V'
+      access        : 0x10001 (PUBLIC CONSTRUCTOR)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 1
+      insns size    : 4 16-bit code units
+306f1c:                                        |[306f1c] com.nwd.dsp.uitls.DspConstant$AREA.<init>:()V
+306f2c: 7010 df8d 0000                         |0000: invoke-direct {v0}, Ljava/lang/Object;.<init>:()V // method@8ddf
+306f32: 0e00                                   |0003: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=104
+      locals        :
+        0x0000 - 0x0004 reg=0 this Lcom/nwd/dsp/uitls/DspConstant$AREA;
+
+  Virtual methods   -
+  source_file_idx   : 5749 (DspConstant.java)
+
+Class #2357            -
