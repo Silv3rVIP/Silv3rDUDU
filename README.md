@@ -22,6 +22,7 @@ A complete in-car software and modification suite for **DUDU Launcher** (DuduOS)
 | **LED Companion App** | [`dudu_led_bridge.apk`](dudu_led_bridge.apk) | 82 KB | Standalone BLE ambient lighting companion app for generic LEDLAMP / ELK-BLEDOM controllers |
 | **NWD Background Whitelist** | [`tools/nwd_background_daemon/`](tools/nwd_background_daemon/) | Configs | K4811 NWD background manager protection files keeping DUDU, ViPER4Android, ViVi, and Radarbot permanently alive |
 | **Stock Launcher Backup** | [`dudulauncher.apk`](dudulauncher.apk) | 34 MB | Original unmodified DUDU Launcher APK for backup/reference |
+| **Sound Mixing Persister** | [`tools/sound_mix/`](tools/sound_mix/) | Script | Root daemon in `service.d` locking Sound Mixing to Level 9 across reboots |
 
 ---
 
@@ -154,6 +155,31 @@ python patch_complete.py
 ```
 
 ---
+
+---
+
+## 🎚️ Part 6: Permanent Sound Mixing Fix (Level 9 Persistence)
+
+### The Issue
+On Nowada / K4811 UIS8581A headunits, setting **Car Settings -> Navi software settings -> Sound mixing** to Level `9` resets back to `5` on every cold boot and deep sleep (ACC OFF / ON) wake cycle.
+
+### Root Cause Analysis (Reverse Engineered)
+1. **MCU Default State**: The MCU firmware starts up with its internal DSP mixing ratio hardcoded to `5`.
+2. **UART Status Packet**: On every reboot or ACC wake, the MCU sends a status dump over `/dev/ttyS2` (`[0xF0, 0x04, 0x0E, 0x0A, 0x00, 0x05, 0x27]`).
+3. **Unconditional Android Overwrite**: In `com.nwd.setting.service.SettingManager`, the callback `onGetMixRatio(5)` unconditionally writes `5` to `Settings.System.putInt("mcu_other_setting_volume_mix", 5)` and updates the UI slider, wiping out the user's setting.
+
+### Solution: `sound_mix_persister.sh`
+Located in [`tools/sound_mix/sound_mix_persister.sh`](tools/sound_mix/sound_mix_persister.sh), this lightweight root daemon runs via Magisk's `service.d`:
+- **Hardware UART Injection**: Sends `ð
+ 	+` directly to `/dev/ttyS2`, forcing the MCU's audio DSP mixer to Level 9.
+- **Settings DB Lock**: Updates `mcu_other_setting_volume_mix` to `9`.
+- **Anti-Reset Watchdog**: Detects whenever the MCU resets back to `5` on wake-up and instantly restores Level 9. If the user intentionally changes to another value in Car Settings (e.g. 8 or 10), it dynamically adapts and locks to that new level.
+
+### Deployment:
+```bash
+adb push tools/sound_mix/sound_mix_persister.sh /data/adb/service.d/sound_mix_persister.sh
+adb shell chmod 755 /data/adb/service.d/sound_mix_persister.sh
+```
 
 ## 📄 License
 
